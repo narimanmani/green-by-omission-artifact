@@ -1,0 +1,3200 @@
+[
+  {
+    "case": "itsdangerous_expiry",
+    "condition": "baseline_nochange",
+    "mode": "native_default",
+    "exit": 0,
+    "baseline_sha": "9573a8af3251575c4737219754844eac48e3b60a",
+    "head_sha": "9573a8af3251575c4737219754844eac48e3b60a",
+    "changed_files": [],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "e91bc332a36e9863317f4f8796969974df4f51042646fad01a994a871ba2bd4b",
+    "source_crc32": "e23a43ac",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [],
+      "skipped_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "import_origins": [
+        {
+          "module": "itsdangerous.timed",
+          "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\repo\\itsdangerous\\timed.py",
+          "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\repo\\itsdangerous\\timed.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "itsdangerous_expiry/baseline_nochange-native_default.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "itsdangerous_expiry",
+    "condition": "baseline_nochange",
+    "mode": "native_fallback",
+    "exit": 0,
+    "baseline_sha": "9573a8af3251575c4737219754844eac48e3b60a",
+    "head_sha": "9573a8af3251575c4737219754844eac48e3b60a",
+    "changed_files": [],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "e91bc332a36e9863317f4f8796969974df4f51042646fad01a994a871ba2bd4b",
+    "source_crc32": "e23a43ac",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "itsdangerous.timed",
+          "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\repo\\itsdangerous\\timed.py",
+          "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\repo\\itsdangerous\\timed.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "itsdangerous_expiry/baseline_nochange-native_fallback.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": true,
+    "valid_execution": true
+  },
+  {
+    "case": "itsdangerous_expiry",
+    "condition": "baseline_nochange",
+    "mode": "full_suite",
+    "exit": 0,
+    "baseline_sha": "9573a8af3251575c4737219754844eac48e3b60a",
+    "head_sha": "9573a8af3251575c4737219754844eac48e3b60a",
+    "changed_files": [],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "e91bc332a36e9863317f4f8796969974df4f51042646fad01a994a871ba2bd4b",
+    "source_crc32": "e23a43ac",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "itsdangerous.timed",
+          "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\repo\\itsdangerous\\timed.py",
+          "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\repo\\itsdangerous\\timed.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "itsdangerous_expiry/baseline_nochange-full_suite.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "itsdangerous_expiry",
+    "condition": "benign_comment",
+    "mode": "native_default",
+    "exit": 0,
+    "baseline_sha": "9573a8af3251575c4737219754844eac48e3b60a",
+    "head_sha": "5b3ed9b9305e1e06237cafcc4689635d545d5571",
+    "changed_files": [
+      "itsdangerous/timed.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "bc6aae49f1f6996c3fe4bf34e4080d00778426d455c4c85c8a3387c6cf08d894",
+    "source_crc32": "409f21f3",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [],
+      "skipped_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "import_origins": [
+        {
+          "module": "itsdangerous.timed",
+          "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\repo\\itsdangerous\\timed.py",
+          "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\repo\\itsdangerous\\timed.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "itsdangerous_expiry/benign_comment-native_default.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "itsdangerous_expiry",
+    "condition": "benign_comment",
+    "mode": "native_fallback",
+    "exit": 0,
+    "baseline_sha": "9573a8af3251575c4737219754844eac48e3b60a",
+    "head_sha": "5b3ed9b9305e1e06237cafcc4689635d545d5571",
+    "changed_files": [
+      "itsdangerous/timed.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "bc6aae49f1f6996c3fe4bf34e4080d00778426d455c4c85c8a3387c6cf08d894",
+    "source_crc32": "409f21f3",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "itsdangerous.timed",
+          "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\repo\\itsdangerous\\timed.py",
+          "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\repo\\itsdangerous\\timed.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "itsdangerous_expiry/benign_comment-native_fallback.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": true,
+    "valid_execution": true
+  },
+  {
+    "case": "itsdangerous_expiry",
+    "condition": "benign_comment",
+    "mode": "full_suite",
+    "exit": 0,
+    "baseline_sha": "9573a8af3251575c4737219754844eac48e3b60a",
+    "head_sha": "5b3ed9b9305e1e06237cafcc4689635d545d5571",
+    "changed_files": [
+      "itsdangerous/timed.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "bc6aae49f1f6996c3fe4bf34e4080d00778426d455c4c85c8a3387c6cf08d894",
+    "source_crc32": "409f21f3",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "itsdangerous.timed",
+          "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\repo\\itsdangerous\\timed.py",
+          "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\repo\\itsdangerous\\timed.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "itsdangerous_expiry/benign_comment-full_suite.log",
+    "analysis_error": false,
+    "changed_source_detected": false,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "itsdangerous_expiry",
+    "condition": "ordinary",
+    "mode": "native_default",
+    "exit": 0,
+    "baseline_sha": "9573a8af3251575c4737219754844eac48e3b60a",
+    "head_sha": "3d6aae90732ccbea3d9dc7ae39433ed82adc3f64",
+    "changed_files": [
+      "itsdangerous/timed.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "b38b2567a62ce08cf39e65b686986402eb239681bee3ecf395981c0894d08158",
+    "source_crc32": "5202f73a",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [],
+      "skipped_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "import_origins": [
+        {
+          "module": "itsdangerous.timed",
+          "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\repo\\itsdangerous\\timed.py",
+          "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\repo\\itsdangerous\\timed.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "itsdangerous_expiry/ordinary-native_default.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "itsdangerous_expiry",
+    "condition": "ordinary",
+    "mode": "native_fallback",
+    "exit": 1,
+    "baseline_sha": "9573a8af3251575c4737219754844eac48e3b60a",
+    "head_sha": "3d6aae90732ccbea3d9dc7ae39433ed82adc3f64",
+    "changed_files": [
+      "itsdangerous/timed.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "b38b2567a62ce08cf39e65b686986402eb239681bee3ecf395981c0894d08158",
+    "source_crc32": "5202f73a",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "call",
+          "outcome": "failed",
+          "failure_text": "def test_security_rejects_expired():\n        signer = TimestampSigner('lab-secret')\n        signer.get_timestamp = lambda: 100\n        signed = signer.sign('sensitive')\n        signer.get_timestamp = lambda: 120\n>       with pytest.raises(SignatureExpired):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE <class 'itsdangerous.exc.SignatureExpired'>\n\ntests\\test_security.py:9: Failed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 1,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "itsdangerous.timed",
+          "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\repo\\itsdangerous\\timed.py",
+          "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\repo\\itsdangerous\\timed.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "itsdangerous_expiry/ordinary-native_fallback.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": true,
+    "valid_execution": true
+  },
+  {
+    "case": "itsdangerous_expiry",
+    "condition": "ordinary",
+    "mode": "full_suite",
+    "exit": 1,
+    "baseline_sha": "9573a8af3251575c4737219754844eac48e3b60a",
+    "head_sha": "3d6aae90732ccbea3d9dc7ae39433ed82adc3f64",
+    "changed_files": [
+      "itsdangerous/timed.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "b38b2567a62ce08cf39e65b686986402eb239681bee3ecf395981c0894d08158",
+    "source_crc32": "5202f73a",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "call",
+          "outcome": "failed",
+          "failure_text": "def test_security_rejects_expired():\n        signer = TimestampSigner('lab-secret')\n        signer.get_timestamp = lambda: 100\n        signed = signer.sign('sensitive')\n        signer.get_timestamp = lambda: 120\n>       with pytest.raises(SignatureExpired):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE <class 'itsdangerous.exc.SignatureExpired'>\n\ntests\\test_security.py:9: Failed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 1,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "itsdangerous.timed",
+          "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\repo\\itsdangerous\\timed.py",
+          "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\repo\\itsdangerous\\timed.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "itsdangerous_expiry/ordinary-full_suite.log",
+    "analysis_error": false,
+    "changed_source_detected": false,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "itsdangerous_expiry",
+    "condition": "collision",
+    "mode": "native_default",
+    "exit": 0,
+    "baseline_sha": "9573a8af3251575c4737219754844eac48e3b60a",
+    "head_sha": "9bf928192c340dec28cfa052d05aa4bba1a7bf6a",
+    "changed_files": [
+      "itsdangerous/timed.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "958e620d9c196ef0fd6ec59737176885fcd29f01df2fa13fdecbda77b43ef011",
+    "source_crc32": "fde7be30",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [],
+      "skipped_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "import_origins": [
+        {
+          "module": "itsdangerous.timed",
+          "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\repo\\itsdangerous\\timed.py",
+          "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\repo\\itsdangerous\\timed.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "itsdangerous_expiry/collision-native_default.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "itsdangerous_expiry",
+    "condition": "collision",
+    "mode": "native_fallback",
+    "exit": 1,
+    "baseline_sha": "9573a8af3251575c4737219754844eac48e3b60a",
+    "head_sha": "9bf928192c340dec28cfa052d05aa4bba1a7bf6a",
+    "changed_files": [
+      "itsdangerous/timed.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "958e620d9c196ef0fd6ec59737176885fcd29f01df2fa13fdecbda77b43ef011",
+    "source_crc32": "fde7be30",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "call",
+          "outcome": "failed",
+          "failure_text": "def test_security_rejects_expired():\n        signer = TimestampSigner('lab-secret')\n        signer.get_timestamp = lambda: 100\n        signed = signer.sign('sensitive')\n        signer.get_timestamp = lambda: 120\n>       with pytest.raises(SignatureExpired):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE <class 'itsdangerous.exc.SignatureExpired'>\n\ntests\\test_security.py:9: Failed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 1,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "itsdangerous.timed",
+          "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\repo\\itsdangerous\\timed.py",
+          "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\repo\\itsdangerous\\timed.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "itsdangerous_expiry/collision-native_fallback.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": true,
+    "valid_execution": true
+  },
+  {
+    "case": "itsdangerous_expiry",
+    "condition": "collision",
+    "mode": "full_suite",
+    "exit": 1,
+    "baseline_sha": "9573a8af3251575c4737219754844eac48e3b60a",
+    "head_sha": "9bf928192c340dec28cfa052d05aa4bba1a7bf6a",
+    "changed_files": [
+      "itsdangerous/timed.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "958e620d9c196ef0fd6ec59737176885fcd29f01df2fa13fdecbda77b43ef011",
+    "source_crc32": "fde7be30",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "call",
+          "outcome": "failed",
+          "failure_text": "def test_security_rejects_expired():\n        signer = TimestampSigner('lab-secret')\n        signer.get_timestamp = lambda: 100\n        signed = signer.sign('sensitive')\n        signer.get_timestamp = lambda: 120\n>       with pytest.raises(SignatureExpired):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE <class 'itsdangerous.exc.SignatureExpired'>\n\ntests\\test_security.py:9: Failed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 1,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "itsdangerous.timed",
+          "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\repo\\itsdangerous\\timed.py",
+          "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\repo\\itsdangerous\\timed.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "itsdangerous_expiry/collision-full_suite.log",
+    "analysis_error": false,
+    "changed_source_detected": false,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "starlette_trusted_host",
+    "condition": "baseline_nochange",
+    "mode": "native_default",
+    "exit": 0,
+    "baseline_sha": "6ef49f545c0790637a21e52c9cf2a886fe66fbc5",
+    "head_sha": "6ef49f545c0790637a21e52c9cf2a886fe66fbc5",
+    "changed_files": [],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "6f22825323e07b9e19e0cce7cae9c3ff60ec31f25cd94b1f5786f60eef966137",
+    "source_crc32": "cec6e610",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [],
+      "skipped_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "import_origins": [
+        {
+          "module": "starlette.middleware.trustedhost",
+          "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\middleware\\trustedhost.py",
+          "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\middleware\\trustedhost.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "starlette_trusted_host/baseline_nochange-native_default.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "starlette_trusted_host",
+    "condition": "baseline_nochange",
+    "mode": "native_fallback",
+    "exit": 0,
+    "baseline_sha": "6ef49f545c0790637a21e52c9cf2a886fe66fbc5",
+    "head_sha": "6ef49f545c0790637a21e52c9cf2a886fe66fbc5",
+    "changed_files": [],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "6f22825323e07b9e19e0cce7cae9c3ff60ec31f25cd94b1f5786f60eef966137",
+    "source_crc32": "cec6e610",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "starlette.middleware.trustedhost",
+          "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\middleware\\trustedhost.py",
+          "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\middleware\\trustedhost.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "starlette_trusted_host/baseline_nochange-native_fallback.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": true,
+    "valid_execution": true
+  },
+  {
+    "case": "starlette_trusted_host",
+    "condition": "baseline_nochange",
+    "mode": "full_suite",
+    "exit": 0,
+    "baseline_sha": "6ef49f545c0790637a21e52c9cf2a886fe66fbc5",
+    "head_sha": "6ef49f545c0790637a21e52c9cf2a886fe66fbc5",
+    "changed_files": [],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "6f22825323e07b9e19e0cce7cae9c3ff60ec31f25cd94b1f5786f60eef966137",
+    "source_crc32": "cec6e610",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "starlette.middleware.trustedhost",
+          "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\middleware\\trustedhost.py",
+          "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\middleware\\trustedhost.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "starlette_trusted_host/baseline_nochange-full_suite.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "starlette_trusted_host",
+    "condition": "benign_comment",
+    "mode": "native_default",
+    "exit": 0,
+    "baseline_sha": "6ef49f545c0790637a21e52c9cf2a886fe66fbc5",
+    "head_sha": "535e1943212ed9ba68d6fcaf33b2bcec6339faff",
+    "changed_files": [
+      "starlette/middleware/trustedhost.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "68c79d8dd8aefcd1c9f4cb4ed34429ba6ae1f0761ee951bf3eb9ca5077a87cab",
+    "source_crc32": "6d349a4a",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [],
+      "skipped_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "import_origins": [
+        {
+          "module": "starlette.middleware.trustedhost",
+          "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\middleware\\trustedhost.py",
+          "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\middleware\\trustedhost.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "starlette_trusted_host/benign_comment-native_default.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "starlette_trusted_host",
+    "condition": "benign_comment",
+    "mode": "native_fallback",
+    "exit": 0,
+    "baseline_sha": "6ef49f545c0790637a21e52c9cf2a886fe66fbc5",
+    "head_sha": "535e1943212ed9ba68d6fcaf33b2bcec6339faff",
+    "changed_files": [
+      "starlette/middleware/trustedhost.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "68c79d8dd8aefcd1c9f4cb4ed34429ba6ae1f0761ee951bf3eb9ca5077a87cab",
+    "source_crc32": "6d349a4a",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "starlette.middleware.trustedhost",
+          "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\middleware\\trustedhost.py",
+          "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\middleware\\trustedhost.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "starlette_trusted_host/benign_comment-native_fallback.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": true,
+    "valid_execution": true
+  },
+  {
+    "case": "starlette_trusted_host",
+    "condition": "benign_comment",
+    "mode": "full_suite",
+    "exit": 0,
+    "baseline_sha": "6ef49f545c0790637a21e52c9cf2a886fe66fbc5",
+    "head_sha": "535e1943212ed9ba68d6fcaf33b2bcec6339faff",
+    "changed_files": [
+      "starlette/middleware/trustedhost.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "68c79d8dd8aefcd1c9f4cb4ed34429ba6ae1f0761ee951bf3eb9ca5077a87cab",
+    "source_crc32": "6d349a4a",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "starlette.middleware.trustedhost",
+          "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\middleware\\trustedhost.py",
+          "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\middleware\\trustedhost.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "starlette_trusted_host/benign_comment-full_suite.log",
+    "analysis_error": false,
+    "changed_source_detected": false,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "starlette_trusted_host",
+    "condition": "ordinary",
+    "mode": "native_default",
+    "exit": 0,
+    "baseline_sha": "6ef49f545c0790637a21e52c9cf2a886fe66fbc5",
+    "head_sha": "de431457828d215a85f1c25963c41d6a33b0d137",
+    "changed_files": [
+      "starlette/middleware/trustedhost.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "1e767efa1f81e6ddee73abbba2dfb80ecd92e54285e5e709f3836ec978d51032",
+    "source_crc32": "6153a221",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [],
+      "skipped_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "import_origins": [
+        {
+          "module": "starlette.middleware.trustedhost",
+          "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\middleware\\trustedhost.py",
+          "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\middleware\\trustedhost.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "starlette_trusted_host/ordinary-native_default.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "starlette_trusted_host",
+    "condition": "ordinary",
+    "mode": "native_fallback",
+    "exit": 1,
+    "baseline_sha": "6ef49f545c0790637a21e52c9cf2a886fe66fbc5",
+    "head_sha": "de431457828d215a85f1c25963c41d6a33b0d137",
+    "changed_files": [
+      "starlette/middleware/trustedhost.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "1e767efa1f81e6ddee73abbba2dfb80ecd92e54285e5e709f3836ec978d51032",
+    "source_crc32": "6153a221",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "call",
+          "outcome": "failed",
+          "failure_text": "def test_security_rejects_untrusted_host():\n        client = TestClient(make_app())\n        response = client.get('http://evil.example/')\n>       assert response.status_code == 400\nE       assert 200 == 400\nE        +  where 200 = <Response [200 OK]>.status_code\n\ntests\\test_security.py:17: AssertionError"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 1,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "starlette.middleware.trustedhost",
+          "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\middleware\\trustedhost.py",
+          "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\middleware\\trustedhost.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "starlette_trusted_host/ordinary-native_fallback.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": true,
+    "valid_execution": true
+  },
+  {
+    "case": "starlette_trusted_host",
+    "condition": "ordinary",
+    "mode": "full_suite",
+    "exit": 1,
+    "baseline_sha": "6ef49f545c0790637a21e52c9cf2a886fe66fbc5",
+    "head_sha": "de431457828d215a85f1c25963c41d6a33b0d137",
+    "changed_files": [
+      "starlette/middleware/trustedhost.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "1e767efa1f81e6ddee73abbba2dfb80ecd92e54285e5e709f3836ec978d51032",
+    "source_crc32": "6153a221",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "call",
+          "outcome": "failed",
+          "failure_text": "def test_security_rejects_untrusted_host():\n        client = TestClient(make_app())\n        response = client.get('http://evil.example/')\n>       assert response.status_code == 400\nE       assert 200 == 400\nE        +  where 200 = <Response [200 OK]>.status_code\n\ntests\\test_security.py:17: AssertionError"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 1,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "starlette.middleware.trustedhost",
+          "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\middleware\\trustedhost.py",
+          "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\middleware\\trustedhost.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "starlette_trusted_host/ordinary-full_suite.log",
+    "analysis_error": false,
+    "changed_source_detected": false,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "starlette_trusted_host",
+    "condition": "collision",
+    "mode": "native_default",
+    "exit": 0,
+    "baseline_sha": "6ef49f545c0790637a21e52c9cf2a886fe66fbc5",
+    "head_sha": "534022196d15324898247ed6dc46bbfb545fab2b",
+    "changed_files": [
+      "starlette/middleware/trustedhost.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "2789f299d1787ac5f20a883502047189b1bcfe21142676e2ccd1b9219c7773d9",
+    "source_crc32": "ab1d2337",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [],
+      "skipped_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "import_origins": [
+        {
+          "module": "starlette.middleware.trustedhost",
+          "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\middleware\\trustedhost.py",
+          "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\middleware\\trustedhost.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "starlette_trusted_host/collision-native_default.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "starlette_trusted_host",
+    "condition": "collision",
+    "mode": "native_fallback",
+    "exit": 1,
+    "baseline_sha": "6ef49f545c0790637a21e52c9cf2a886fe66fbc5",
+    "head_sha": "534022196d15324898247ed6dc46bbfb545fab2b",
+    "changed_files": [
+      "starlette/middleware/trustedhost.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "2789f299d1787ac5f20a883502047189b1bcfe21142676e2ccd1b9219c7773d9",
+    "source_crc32": "ab1d2337",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "call",
+          "outcome": "failed",
+          "failure_text": "def test_security_rejects_untrusted_host():\n        client = TestClient(make_app())\n        response = client.get('http://evil.example/')\n>       assert response.status_code == 400\nE       assert 200 == 400\nE        +  where 200 = <Response [200 OK]>.status_code\n\ntests\\test_security.py:17: AssertionError"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 1,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "starlette.middleware.trustedhost",
+          "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\middleware\\trustedhost.py",
+          "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\middleware\\trustedhost.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "starlette_trusted_host/collision-native_fallback.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": true,
+    "valid_execution": true
+  },
+  {
+    "case": "starlette_trusted_host",
+    "condition": "collision",
+    "mode": "full_suite",
+    "exit": 1,
+    "baseline_sha": "6ef49f545c0790637a21e52c9cf2a886fe66fbc5",
+    "head_sha": "534022196d15324898247ed6dc46bbfb545fab2b",
+    "changed_files": [
+      "starlette/middleware/trustedhost.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "2789f299d1787ac5f20a883502047189b1bcfe21142676e2ccd1b9219c7773d9",
+    "source_crc32": "ab1d2337",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "call",
+          "outcome": "failed",
+          "failure_text": "def test_security_rejects_untrusted_host():\n        client = TestClient(make_app())\n        response = client.get('http://evil.example/')\n>       assert response.status_code == 400\nE       assert 200 == 400\nE        +  where 200 = <Response [200 OK]>.status_code\n\ntests\\test_security.py:17: AssertionError"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 1,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "starlette.middleware.trustedhost",
+          "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\middleware\\trustedhost.py",
+          "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\middleware\\trustedhost.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "starlette_trusted_host/collision-full_suite.log",
+    "analysis_error": false,
+    "changed_source_detected": false,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "requests_crlf_header",
+    "condition": "baseline_nochange",
+    "mode": "native_default",
+    "exit": 0,
+    "baseline_sha": "f55a6377923fef63d0b74e804f8c6842067ac4f8",
+    "head_sha": "f55a6377923fef63d0b74e804f8c6842067ac4f8",
+    "changed_files": [],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "5aa53ceab677c2f842fad42359c8ed1ff1c4299c1607789609957a496e4311d4",
+    "source_crc32": "45fbd2b0",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [],
+      "skipped_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "import_origins": [
+        {
+          "module": "requests.utils",
+          "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\\requests\\utils.py",
+          "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\\requests\\utils.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "requests_crlf_header/baseline_nochange-native_default.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "requests_crlf_header",
+    "condition": "baseline_nochange",
+    "mode": "native_fallback",
+    "exit": 0,
+    "baseline_sha": "f55a6377923fef63d0b74e804f8c6842067ac4f8",
+    "head_sha": "f55a6377923fef63d0b74e804f8c6842067ac4f8",
+    "changed_files": [],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "5aa53ceab677c2f842fad42359c8ed1ff1c4299c1607789609957a496e4311d4",
+    "source_crc32": "45fbd2b0",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "requests.utils",
+          "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\\requests\\utils.py",
+          "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\\requests\\utils.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "requests_crlf_header/baseline_nochange-native_fallback.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": true,
+    "valid_execution": true
+  },
+  {
+    "case": "requests_crlf_header",
+    "condition": "baseline_nochange",
+    "mode": "full_suite",
+    "exit": 0,
+    "baseline_sha": "f55a6377923fef63d0b74e804f8c6842067ac4f8",
+    "head_sha": "f55a6377923fef63d0b74e804f8c6842067ac4f8",
+    "changed_files": [],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "5aa53ceab677c2f842fad42359c8ed1ff1c4299c1607789609957a496e4311d4",
+    "source_crc32": "45fbd2b0",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "requests.utils",
+          "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\\requests\\utils.py",
+          "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\\requests\\utils.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "requests_crlf_header/baseline_nochange-full_suite.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "requests_crlf_header",
+    "condition": "benign_comment",
+    "mode": "native_default",
+    "exit": 0,
+    "baseline_sha": "f55a6377923fef63d0b74e804f8c6842067ac4f8",
+    "head_sha": "7bc3ec6317010e2bc46a981380bdcb9658ee89ac",
+    "changed_files": [
+      "requests/utils.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "c0cd072eb9a28f4efba988bcbdb480fb873a7a0943d723ff8f302105f120e457",
+    "source_crc32": "ed37e4aa",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [],
+      "skipped_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "import_origins": [
+        {
+          "module": "requests.utils",
+          "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\\requests\\utils.py",
+          "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\\requests\\utils.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "requests_crlf_header/benign_comment-native_default.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "requests_crlf_header",
+    "condition": "benign_comment",
+    "mode": "native_fallback",
+    "exit": 0,
+    "baseline_sha": "f55a6377923fef63d0b74e804f8c6842067ac4f8",
+    "head_sha": "7bc3ec6317010e2bc46a981380bdcb9658ee89ac",
+    "changed_files": [
+      "requests/utils.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "c0cd072eb9a28f4efba988bcbdb480fb873a7a0943d723ff8f302105f120e457",
+    "source_crc32": "ed37e4aa",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "requests.utils",
+          "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\\requests\\utils.py",
+          "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\\requests\\utils.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "requests_crlf_header/benign_comment-native_fallback.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": true,
+    "valid_execution": true
+  },
+  {
+    "case": "requests_crlf_header",
+    "condition": "benign_comment",
+    "mode": "full_suite",
+    "exit": 0,
+    "baseline_sha": "f55a6377923fef63d0b74e804f8c6842067ac4f8",
+    "head_sha": "7bc3ec6317010e2bc46a981380bdcb9658ee89ac",
+    "changed_files": [
+      "requests/utils.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "c0cd072eb9a28f4efba988bcbdb480fb873a7a0943d723ff8f302105f120e457",
+    "source_crc32": "ed37e4aa",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "requests.utils",
+          "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\\requests\\utils.py",
+          "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\\requests\\utils.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "requests_crlf_header/benign_comment-full_suite.log",
+    "analysis_error": false,
+    "changed_source_detected": false,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "requests_crlf_header",
+    "condition": "ordinary",
+    "mode": "native_default",
+    "exit": 0,
+    "baseline_sha": "f55a6377923fef63d0b74e804f8c6842067ac4f8",
+    "head_sha": "b19e33ff618054bf7aee58d9ecd527267ca0f80b",
+    "changed_files": [
+      "requests/utils.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "a539bf7445f8768d61fb91959776d679e7d0e91a8a889b292890dc6487421c23",
+    "source_crc32": "a728e29e",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [],
+      "skipped_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "import_origins": [
+        {
+          "module": "requests.utils",
+          "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\\requests\\utils.py",
+          "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\\requests\\utils.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "requests_crlf_header/ordinary-native_default.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "requests_crlf_header",
+    "condition": "ordinary",
+    "mode": "native_fallback",
+    "exit": 1,
+    "baseline_sha": "f55a6377923fef63d0b74e804f8c6842067ac4f8",
+    "head_sha": "b19e33ff618054bf7aee58d9ecd527267ca0f80b",
+    "changed_files": [
+      "requests/utils.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "a539bf7445f8768d61fb91959776d679e7d0e91a8a889b292890dc6487421c23",
+    "source_crc32": "a728e29e",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "call",
+          "outcome": "failed",
+          "failure_text": "def test_security_rejects_header_injection():\n>       with pytest.raises(InvalidHeader):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE <class 'requests.exceptions.InvalidHeader'>\n\ntests\\test_security.py:6: Failed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 1,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "requests.utils",
+          "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\\requests\\utils.py",
+          "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\\requests\\utils.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "requests_crlf_header/ordinary-native_fallback.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": true,
+    "valid_execution": true
+  },
+  {
+    "case": "requests_crlf_header",
+    "condition": "ordinary",
+    "mode": "full_suite",
+    "exit": 1,
+    "baseline_sha": "f55a6377923fef63d0b74e804f8c6842067ac4f8",
+    "head_sha": "b19e33ff618054bf7aee58d9ecd527267ca0f80b",
+    "changed_files": [
+      "requests/utils.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "a539bf7445f8768d61fb91959776d679e7d0e91a8a889b292890dc6487421c23",
+    "source_crc32": "a728e29e",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "call",
+          "outcome": "failed",
+          "failure_text": "def test_security_rejects_header_injection():\n>       with pytest.raises(InvalidHeader):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE <class 'requests.exceptions.InvalidHeader'>\n\ntests\\test_security.py:6: Failed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 1,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "requests.utils",
+          "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\\requests\\utils.py",
+          "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\\requests\\utils.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "requests_crlf_header/ordinary-full_suite.log",
+    "analysis_error": false,
+    "changed_source_detected": false,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "requests_crlf_header",
+    "condition": "collision",
+    "mode": "native_default",
+    "exit": 0,
+    "baseline_sha": "f55a6377923fef63d0b74e804f8c6842067ac4f8",
+    "head_sha": "d1d07b185307effd410d8a2d74c66dfe80f7764e",
+    "changed_files": [
+      "requests/utils.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "e47e101197c1896761a333d3cf81ec838b1b8df5de1aef33098a7fd2f30e8337",
+    "source_crc32": "df9eed16",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [],
+      "skipped_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "import_origins": [
+        {
+          "module": "requests.utils",
+          "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\\requests\\utils.py",
+          "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\\requests\\utils.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "requests_crlf_header/collision-native_default.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "requests_crlf_header",
+    "condition": "collision",
+    "mode": "native_fallback",
+    "exit": 1,
+    "baseline_sha": "f55a6377923fef63d0b74e804f8c6842067ac4f8",
+    "head_sha": "d1d07b185307effd410d8a2d74c66dfe80f7764e",
+    "changed_files": [
+      "requests/utils.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "e47e101197c1896761a333d3cf81ec838b1b8df5de1aef33098a7fd2f30e8337",
+    "source_crc32": "df9eed16",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "call",
+          "outcome": "failed",
+          "failure_text": "def test_security_rejects_header_injection():\n>       with pytest.raises(InvalidHeader):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE <class 'requests.exceptions.InvalidHeader'>\n\ntests\\test_security.py:6: Failed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 1,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "requests.utils",
+          "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\\requests\\utils.py",
+          "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\\requests\\utils.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "requests_crlf_header/collision-native_fallback.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": true,
+    "valid_execution": true
+  },
+  {
+    "case": "requests_crlf_header",
+    "condition": "collision",
+    "mode": "full_suite",
+    "exit": 1,
+    "baseline_sha": "f55a6377923fef63d0b74e804f8c6842067ac4f8",
+    "head_sha": "d1d07b185307effd410d8a2d74c66dfe80f7764e",
+    "changed_files": [
+      "requests/utils.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "e47e101197c1896761a333d3cf81ec838b1b8df5de1aef33098a7fd2f30e8337",
+    "source_crc32": "df9eed16",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "call",
+          "outcome": "failed",
+          "failure_text": "def test_security_rejects_header_injection():\n>       with pytest.raises(InvalidHeader):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE <class 'requests.exceptions.InvalidHeader'>\n\ntests\\test_security.py:6: Failed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 1,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "requests.utils",
+          "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\\requests\\utils.py",
+          "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\\requests\\utils.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "requests_crlf_header/collision-full_suite.log",
+    "analysis_error": false,
+    "changed_source_detected": false,
+    "fallback_reported": false,
+    "valid_execution": true
+  }
+]

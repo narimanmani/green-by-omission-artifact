@@ -1,0 +1,42 @@
+{
+  "document_type": "pre_execution_review_checklist",
+  "date": "2026-11-10",
+  "contains_measured_results": false,
+  "must_verify": [
+    "Record actual Ekstazi 5.3.0 artifact SHA256 and effective runtime configuration.",
+    "Cold baseline executes the entire known test universe and passes.",
+    "Warm unchanged baseline demonstrates active test selection.",
+    "Ordinary modified source with intact metadata executes the unchanged affected test.",
+    "Independent full-suite oracle exposes the intended assertion failure in the same modified source.",
+    "Test sources remain byte-identical across conditions.",
+    "Every scenario starts from an identical restored successful baseline.",
+    "Metadata absolute-path effects are controlled or separately documented.",
+    "No stale reports are counted as fresh test executions.",
+    "Native runs do not inherit metadata repaired by an earlier run or by the full-suite oracle.",
+    "Fault record names and target bytes are confined to the synthetic fixture.",
+    "Integrity reference resides outside the injected fault domain.",
+    "Integrity validation includes expected file inventory and recorded provenance.",
+    "Full-suite fallback is observed to execute rather than merely selected by a branch in code.",
+    "Missing measurements remain null or NA; failed setup is not an omission result.",
+    "Native observations under injected faults are labeled as controlled simulation findings.",
+    "Repeated identical runs are not counted as independent fault or project samples.",
+    "Repository plugin presence is separated from CI invocation and protection settings."
+  ],
+  "suggested_result_fields": [
+    "case_id", "fixture_id", "repetition", "strategy", "source_state", "fault_mode",
+    "basis", "execution_status", "exit_code", "test_classes_executed", "methods_executed",
+    "failures", "errors", "oracle_failing_classes", "relevant_omitted_classes",
+    "integrity_status", "fallback_reason", "elapsed_s", "log_paths", "artifact_hashes"
+  ],
+  "acceptable_statuses": [
+    "passed", "assertion_failure", "conservative_rerun", "false_green_under_simulated_fault",
+    "native_parse_or_runtime_error", "setup_blocked", "untested"
+  ],
+  "statistical_guidance": {
+    "primary_unit": "unique fixture + source modification + fault scenario",
+    "paired_factor": "strategy",
+    "deterministic_repeats": "repeatability only; do not inflate independent sample size",
+    "tiny_purposive_corpus": "descriptive counts; no population prevalence inference",
+    "undefined_metrics": "null or NA rather than zero or 100 percent"
+  }
+}

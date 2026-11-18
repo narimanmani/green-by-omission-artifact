@@ -1,0 +1,17 @@
+{
+  "executables": {
+    "java": "/usr/bin/java",
+    "javac": null,
+    "mvn": null,
+    "git": "/usr/local/bin/git",
+    "curl": "/usr/bin/curl"
+  },
+  "https://github.com/apache/commons-lang.git/info/refs?service=git-upload-pack": {
+    "status": 200,
+    "bytes_prefix": 20
+  },
+  "https://repo.maven.apache.org/maven2/org/ekstazi/org.ekstazi.core/5.3.0/org.ekstazi.core-5.3.0.jar": {
+    "status": 200,
+    "bytes_prefix": 20
+  }
+}

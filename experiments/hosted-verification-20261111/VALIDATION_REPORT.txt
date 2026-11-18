@@ -1,0 +1,36 @@
+HOSTED EVIDENCE: INDEPENDENT VALIDATION REPORT
+Verified November 11, 2026. This audit did not run candidate code or workflows.
+
+RESULT: PASS_WITH_SCOPE_LIMITS
+29 / 29 consistency and provenance checks passed.
+
+EXECUTION CHRONOLOGY
+The producer and experimental runs predate this audit. They ran November 9, 2026 UTC (November 8 Pacific), not November 11. Producer run 42576973973 was a successful owner push on main 053f4948451073e4b45aadcea79051966830ad23. Experiment run 42577953803 was a completed pull_request_target run for collaborator PR11 at 2dab362688e99fa92b3a1189920155a5ff20713f.
+
+VERIFIED OBSERVATIONS
+- The baseline executes three real call-phase tests, all passing, with final exit 0.
+- Native selective execution executes one real call, test_valid_header_passes, which passes with final exit 0. The unchanged security rejection test is omitted.
+- Independent complete-oracle execution executes all three tests, with two passes and the header-rejection assertion failing; final exit 1.
+- The AST guard detects the source change and triggers the same three-test oracle failure.
+- The selection job succeeds. The two diagnostic jobs fail. The overall workflow therefore fails. The fresh reporter job succeeds and its log records testmon-required=success for the exact candidate head.
+- The normalized required-status snapshot also reports success and targets the same experimental run.
+- Four downloaded ZIP digests match GitHub artifact digests. Every extracted member matches its ZIP bytes; producer/consumer run and source-revision linkage agree.
+- The preserved baseline SQLite database passes quick_check. Its actual SHA-256 is 51590bb5e106bfd7442537fe5af3f378594ac3b893c00d6377b575004a80f6cc, matching both producer manifest and consumer record. The job log names the exact producer run and the same database hash.
+- Commit-bound source archive comments match base/head. Their trees differ only at the one application-source file reported by GitHub; target-source and dependency-lock hashes match raw artifacts.
+- PR11 is closed, unmerged. Current protection requires a strict testmon-required status and one approving Code Owner review, with administrator enforcement enabled and force/deletion disabled.
+
+INTERPRETATION
+This supports a nonempty selective false pass for a fixed reviewed Requests-derived fixture under a protected-main-produced baseline and distinct contributor account. Its oracle tests are research-authored. It does not establish an unauthorized merge, independent human review, production compromise, or general resistance of the in-process observer to arbitrary hostile candidate code.
+
+LIMITATIONS AND REMAINING EVIDENCE
+- This is verification today of a pre-existing November 9 UTC / November 8 Pacific hosted experiment, not a new execution.
+- The admitted program is one fixed reviewed fixture reconstructed from protected-base policy after byte-for-byte candidate matching. It does not establish safety or attestation against arbitrary candidate Python.
+- The three evaluation tests are research-authored; this evidence does not close the separate original-upstream-test nonempty gap.
+- Distinct GitHub account identities establish account separation. Effective nonadministrator collaborator role requires the separate permission response or owner access record; independent human operators/reviewers are not established.
+- main_protection.json proves the settings observed at collection time. It is not by itself an immutable historical settings snapshot for the experimental timestamp.
+- Probe metadata establishes startup_failure for two collaborator workflow probes. Exact causal attribution to the historical administrative policies needs the corresponding policy/error evidence.
+- The PR is closed unmerged. mergeable=true does not establish that Code Owner review was bypassed or that a merge was permitted while open; historical merge-control/review evidence must be reported separately.
+- The post-selective working database normally changes under native execution; its digest differs from the preserved baseline database. The preserved baseline digest matches producer manifest, consumer result and download log.
+- Required status snapshot is normalized and does not carry a head field; the exact-head binding is independently present in the reporter job log.
+
+Details, hashes and individual assertions are in independent-audit.json.

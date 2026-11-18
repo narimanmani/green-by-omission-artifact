@@ -1,0 +1,304 @@
+{
+  "audit_utc": "2026-11-12T15:58:35.988872+00:00",
+  "status": "PASS_SAVED_SEED_PROVENANCE",
+  "checks_passed": 56,
+  "checks_total": 56,
+  "seed_image_id": "sha256:56559845a6388a7f0141ceea11a76684615db3aa0d34e1f9521686bb508d53e5",
+  "installed_manifest_path": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\experiments\\wxyc-fixed-historical-replay-20261112\\backend-provisioning\\seed-installed-manifest.json",
+  "installed_manifest_sha256": "0f518c86e2911fb9a6911bb8331fa58e1250c3bdcfcea035285b02c99517f280",
+  "tracked_seed_source_file_measurements": 1869,
+  "dependency_regular_file_measurements": 49544,
+  "dependency_relative_symlinks": 117,
+  "locked_installed_package_versions": 937,
+  "checks": [
+    {
+      "name": "seed manifest exact host filename exists",
+      "pass": true,
+      "detail": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\experiments\\wxyc-fixed-historical-replay-20261112\\backend-provisioning\\seed-installed-manifest.json"
+    },
+    {
+      "name": "manifest SHA256 matches seed provenance/result/frozen expected value",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "final eligible result binds exact seed image",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "actual final image inspection matches recorded image",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "saved provisioning explicitly records no study tests/candidate executed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "baseline commit is pinned in installed manifest",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all1869saved seed source measurements match independently audited original Git manifest",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "seed Git measurement head",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "seed Git measurement origin_main",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "seed Git measurement tree",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "seed Git measurement status",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original lock has no changed seed measurement",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nonoptional missing packages or installed version mismatches",
+      "pass": true,
+      "detail": {
+        "installed_packages": 937,
+        "optional_absent": 106
+      }
+    },
+    {
+      "name": "all absent package records are optional",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "manifest entries are unique safe relative dependency paths",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "manifest contains only supported file/symlink records",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all49544regular dependency file measurement records are hash-bound",
+      "pass": true,
+      "detail": {
+        "files": 49544,
+        "bytes": 675496707
+      }
+    },
+    {
+      "name": "all117relative links remain inside copied seed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all links corroborate independently exported resolver measurements",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "manifest counts equal its declared summary",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all29original shared-package members match exact SHA512-accepted archive",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "shared member hashes agree with installed manifest",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "runtime Node/npm versions equal original publisher environment",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Jest ts-jest TypeScript versions equal frozen protocol",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "native binary outputs exist in saved manifest",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "header-prefill boundary uid10001",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "header-prefill boundary expected_network",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "header-prefill boundary no_host_mounts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "header-prefill boundary no_ports",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "header-prefill boundary no_devices",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "header-prefill boundary not_privileged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "header-prefill boundary drop_all_capabilities",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "header-prefill boundary no_new_privileges",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "header-prefill boundary pids512",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "header-prefill boundary memory6GiB",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "header-prefill boundary cpu2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "header-prefill boundary no_credential_env",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "offline-original-rebuild boundary uid10001",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "offline-original-rebuild boundary expected_network",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "offline-original-rebuild boundary no_host_mounts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "offline-original-rebuild boundary no_ports",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "offline-original-rebuild boundary no_devices",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "offline-original-rebuild boundary not_privileged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "offline-original-rebuild boundary drop_all_capabilities",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "offline-original-rebuild boundary no_new_privileges",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "offline-original-rebuild boundary pids512",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "offline-original-rebuild boundary memory6GiB",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "offline-original-rebuild boundary cpu2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "offline-original-rebuild boundary no_credential_env",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "prior administration result/plan retained: PROVISIONING_RESULT.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "prior administration result/plan retained: ATTEMPT1_PROVISIONING_RESULT.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "prior administration result/plan retained: ADMIN_REPAIR_PROVISIONING_RESULT.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "prior administration result/plan retained: FROZEN_ADMIN_REPAIR_PLAN.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "prior administration result/plan retained: FROZEN_HEADER_PREFILL_PLAN.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "header prefill is exact original runtime version and administrative-only",
+      "pass": true,
+      "detail": "Verified complete original node/node-gyp argv; target and checksum sources are public exact v24.19.0."
+    },
+    {
+      "name": "original source rebuild command retained unchanged",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "auditor_subject_execution": false,
+  "verification_limit": "This audit independently validates saved seed measurements, provenance relationships and inspected recorded constraints. It does not execute the image or independently reread each dependency file from the image; the frozen runner must rehash all installed entries and source bytes before each arm.",
+  "claims_boundary": "Eligible dependency/source seed only. No baseline/native/full outcome follows from this audit."
+}

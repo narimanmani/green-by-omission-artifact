@@ -1,0 +1,90 @@
+{
+  "upstream_archive_sha256": "1cf78dc00bd661c551eacf922d8bb0a4a2aa95435e8333366b77a6ccee188908",
+  "protocol_sha256": "113cdb161c67c53588ea5c91024c6b29e74b51c0eb54374ae8a1539b091f2423",
+  "wheels": [
+    {
+      "file": "certifi-2025.8.3-py3-none-any.whl",
+      "name": "certifi",
+      "version": "2025.8.3",
+      "sha256": "f6c12493cfb1b06ba2ff328595af9350c65d6644968e5d3a2ffd78699af217a5",
+      "bytes": 161216
+    },
+    {
+      "file": "charset_normalizer-3.4.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+      "name": "charset-normalizer",
+      "version": "3.4.3",
+      "sha256": "416175faf02e4b0810f1f38bcb54682878a4af94059a1cd63b8747244420801f",
+      "bytes": 151350
+    },
+    {
+      "file": "colorama-0.4.6-py2.py3-none-any.whl",
+      "name": "colorama",
+      "version": "0.4.6",
+      "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+      "bytes": 25335
+    },
+    {
+      "file": "coverage-7.11.0-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl",
+      "name": "coverage",
+      "version": "7.11.0",
+      "sha256": "10ad04ac3a122048688387828b4537bc9cf60c0bf4869c1e9989c46e45690b82",
+      "bytes": 249978
+    },
+    {
+      "file": "idna-3.10-py3-none-any.whl",
+      "name": "idna",
+      "version": "3.10",
+      "sha256": "946d195a0d259cbba61165e88e65941f16e9b36ea6ddb97f00452bae8b1287d3",
+      "bytes": 70442
+    },
+    {
+      "file": "iniconfig-2.1.0-py3-none-any.whl",
+      "name": "iniconfig",
+      "version": "2.1.0",
+      "sha256": "9deba5723312380e77435581c6bf4935c94cbfab9b1ed33ef8d238ea168eb760",
+      "bytes": 6050
+    },
+    {
+      "file": "packaging-25.0-py3-none-any.whl",
+      "name": "packaging",
+      "version": "25.0",
+      "sha256": "29572ef2b1f17581046b3a2227d5c611fb25ec70ca1ba8554b24b0e69331a484",
+      "bytes": 66469
+    },
+    {
+      "file": "pluggy-1.6.0-py3-none-any.whl",
+      "name": "pluggy",
+      "version": "1.6.0",
+      "sha256": "e920276dd6813095e9377c0bc5566d94c932c33b27a3e3945d8389c374dd4746",
+      "bytes": 20538
+    },
+    {
+      "file": "pygments-2.19.2-py3-none-any.whl",
+      "name": "Pygments",
+      "version": "2.19.2",
+      "sha256": "86540386c03d588bb81d44bc3928634ff26449851e99741617ecb9037ee5ec0b",
+      "bytes": 1225217
+    },
+    {
+      "file": "pytest-8.4.2-py3-none-any.whl",
+      "name": "pytest",
+      "version": "8.4.2",
+      "sha256": "872f880de3fc3a5bdc88a11b39c9710c3497a547cfa9320bc3c5e62fbf272e79",
+      "bytes": 365750
+    },
+    {
+      "file": "pytest_testmon-2.3.0-py3-none-any.whl",
+      "name": "pytest-testmon",
+      "version": "2.3.0",
+      "sha256": "fd541506efa483e5a217e6cc5c07c73b382619c218d1ed4ffa80584c34defd77",
+      "bytes": 26512
+    },
+    {
+      "file": "urllib3-2.5.0-py3-none-any.whl",
+      "name": "urllib3",
+      "version": "2.5.0",
+      "sha256": "e6b01673c0fa6a13e374b50871808eb3bf7046c4b125b216f6bf1cc604cff0dc",
+      "bytes": 129795
+    }
+  ]
+}

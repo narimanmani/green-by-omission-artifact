@@ -1,0 +1,16 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "Action completed."
+    }
+  ],
+  "structuredContent": {
+    "content": "{\n  \"name\": \"git-merge-append\",\n  \"version\": \"0.1.0\",\n  \"description\": \"3-way git merge driver for JSON files that are arrays of keyed entries (Drizzle journals, i18n catalogs, feature-flag manifests)\",\n  \"type\": \"module\",\n  \"exports\": {\n    \".\": {\n      \"types\": \"./dist/src/index.d.ts\",\n      \"default\": \"./dist/src/index.js\"\n    }\n  },\n  \"bin\": {\n    \"git-merge-append\": \"dist/src/cli.js\"\n  },\n  \"files\": [\n    \"dist/src\"\n  ],\n  \"scripts\": {\n    \"build\": \"tsc -p tsconfig.build.json\",\n    \"test\": \"vitest run\",\n    \"test:watch\": \"vitest\",\n    \"typecheck\": \"tsc --noEmit\",\n    \"prepublishOnly\": \"npm run build\"\n  },\n  \"keywords\": [\n    \"git\",\n    \"merge-driver\",\n    \"json\",\n    \"drizzle\",\n    \"migrations\",\n    \"journal\",\n    \"i18n\",\n    \"feature-flags\"\n  ],\n  \"author\": \"Jake Bromberg\",\n  \"license\": \"MIT\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/jakebromberg/git-merge-append.git\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/jakebromberg/git-merge-append/issues\"\n  },\n  \"homepage\": \"https://github.com/jakebromberg/git-merge-append#readme\",\n  \"devDependencies\": {\n    \"@types/node\": \"^22\",\n    \"typescript\": \"^5.7\",\n    \"vitest\": \"^3\"\n  }\n}\n",
+    "encoding": "utf-8",
+    "sha": "0a530f013c9284736e1c111f5353d20553ef8156",
+    "display_url": "https://github.com/jakebromberg/git-merge-append/blob/c27805bc50c424d9d6741e6a857ebbd85727e615/package.json",
+    "display_title": "package.json"
+  },
+  "isError": false
+}

@@ -1,0 +1,11 @@
+{
+  "utc": "2026-11-08T00:26:44.377207+00:00",
+  "command": [
+    "gh",
+    "api",
+    "repos/anonymous-owner/ci-selection-testbed/pulls/6/files?per_page=100"
+  ],
+  "exit": 0,
+  "stdout": "[{\"sha\":\"fc4bd84e83e1e8c975f57c2fd495e6ea62a88029\",\"filename\":\"cases/requests_crlf_header/requests/utils.py\",\"status\":\"modified\",\"additions\":1,\"deletions\":1,\"changes\":2,\"blob_url\":\"https://example.invalid/anonymous-research/ci-selection-testbed/blob/2e19136a525aa8cd8774e0b4929955dd29e4a128/cases%2Frequests_crlf_header%2Frequests%2Futils.py\",\"raw_url\":\"https://example.invalid/anonymous-research/ci-selection-testbed/raw/2e19136a525aa8cd8774e0b4929955dd29e4a128/cases%2Frequests_crlf_header%2Frequests%2Futils.py\",\"contents_url\":\"https://example.invalid/anonymous-research/ci-selection-testbed/contents/cases%2Frequests_crlf_header%2Frequests%2Futils.py?ref=2e19136a525aa8cd8774e0b4929955dd29e4a128\",\"patch\":\"@@ -1043,7 +1043,7 @@ def _validate_header_part(header, header_part, header_validator_index):\\n             f\\\"must be of type str or bytes, not {type(header_part)}\\\"\\n         )\\n \\n-    if not validator.match(header_part):\\n+    if False and not validator.match(header_part):\\n         header_kind = \\\"name\\\" if header_validator_index == 0 else \\\"value\\\"\\n         raise InvalidHeader(\\n             f\\\"Invalid leading whitespace, reserved character(s), or return \\\"\"}]",
+  "stderr": ""
+}

@@ -1,0 +1,213 @@
+{
+  "Id": "73ec635f1409e22c687e5a0eb2101cb4de33fd6d89ffc1d76eeb2db3d30efe87",
+  "Created": "2026-11-12T16:24:32.784641368Z",
+  "Path": "node",
+  "Args": [
+    "/opt/replay/run_replay.mjs"
+  ],
+  "State": {
+    "Status": "exited",
+    "Running": false,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 0,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-11-12T16:24:33.270716038Z",
+    "FinishedAt": "2026-11-12T16:28:06.06034088Z"
+  },
+  "Image": "sha256:8eeec120d61f6913fcdbfb8bc8d801b1fac174dea40557446d27fb80c4ae2baa",
+  "ResolvConfPath": "/var/lib/docker/containers/73ec635f1409e22c687e5a0eb2101cb4de33fd6d89ffc1d76eeb2db3d30efe87/resolv.conf",
+  "HostnamePath": "/var/lib/docker/containers/73ec635f1409e22c687e5a0eb2101cb4de33fd6d89ffc1d76eeb2db3d30efe87/hostname",
+  "HostsPath": "/var/lib/docker/containers/73ec635f1409e22c687e5a0eb2101cb4de33fd6d89ffc1d76eeb2db3d30efe87/hosts",
+  "LogPath": "/var/lib/docker/containers/73ec635f1409e22c687e5a0eb2101cb4de33fd6d89ffc1d76eeb2db3d30efe87/73ec635f1409e22c687e5a0eb2101cb4de33fd6d89ffc1d76eeb2db3d30efe87-json.log",
+  "Name": "/sp2027-wxyc-fixed-replay-parallel-20261112-r1",
+  "RestartCount": 0,
+  "Driver": "overlayfs",
+  "Platform": "linux",
+  "MountLabel": "",
+  "ProcessLabel": "",
+  "AppArmorProfile": "",
+  "ExecIDs": null,
+  "HostConfig": {
+    "Binds": null,
+    "ContainerIDFile": "",
+    "LogConfig": {
+      "Type": "json-file",
+      "Config": {}
+    },
+    "NetworkMode": "none",
+    "PortBindings": {},
+    "RestartPolicy": {
+      "Name": "no",
+      "MaximumRetryCount": 0
+    },
+    "AutoRemove": false,
+    "VolumeDriver": "",
+    "VolumesFrom": null,
+    "ConsoleSize": [
+      0,
+      0
+    ],
+    "CapAdd": null,
+    "CapDrop": [
+      "ALL"
+    ],
+    "CgroupnsMode": "private",
+    "Dns": null,
+    "DnsOptions": [],
+    "DnsSearch": [],
+    "ExtraHosts": null,
+    "GroupAdd": null,
+    "IpcMode": "private",
+    "Cgroup": "",
+    "Links": null,
+    "OomScoreAdj": 0,
+    "PidMode": "",
+    "Privileged": false,
+    "PublishAllPorts": false,
+    "ReadonlyRootfs": true,
+    "SecurityOpt": [
+      "no-new-privileges:true"
+    ],
+    "Tmpfs": {
+      "/tmp": "rw,noexec,nosuid,nodev,size=128m,uid=10001,gid=10001,mode=1777",
+      "/work": "rw,exec,nosuid,nodev,size=3g,uid=10001,gid=10001,mode=1777"
+    },
+    "UTSMode": "",
+    "UsernsMode": "",
+    "ShmSize": 67108864,
+    "Runtime": "runc",
+    "Isolation": "",
+    "CpuShares": 0,
+    "Memory": 6442450944,
+    "NanoCpus": 2000000000,
+    "CgroupParent": "",
+    "BlkioWeight": 0,
+    "BlkioWeightDevice": [],
+    "BlkioDeviceReadBps": [],
+    "BlkioDeviceWriteBps": [],
+    "BlkioDeviceReadIOps": [],
+    "BlkioDeviceWriteIOps": [],
+    "CpuPeriod": 0,
+    "CpuQuota": 0,
+    "CpuRealtimePeriod": 0,
+    "CpuRealtimeRuntime": 0,
+    "CpusetCpus": "",
+    "CpusetMems": "",
+    "Devices": [],
+    "DeviceCgroupRules": null,
+    "DeviceRequests": null,
+    "MemoryReservation": 0,
+    "MemorySwap": 6442450944,
+    "MemorySwappiness": null,
+    "OomKillDisable": null,
+    "PidsLimit": 256,
+    "Ulimits": [],
+    "CpuCount": 0,
+    "CpuPercent": 0,
+    "IOMaximumIOps": 0,
+    "IOMaximumBandwidth": 0,
+    "MaskedPaths": [
+      "/proc/acpi",
+      "/proc/asound",
+      "/proc/interrupts",
+      "/proc/kcore",
+      "/proc/keys",
+      "/proc/latency_stats",
+      "/proc/sched_debug",
+      "/proc/scsi",
+      "/proc/timer_list",
+      "/proc/timer_stats",
+      "/sys/devices/virtual/powercap",
+      "/sys/firmware"
+    ],
+    "ReadonlyPaths": [
+      "/proc/bus",
+      "/proc/fs",
+      "/proc/irq",
+      "/proc/sys",
+      "/proc/sysrq-trigger"
+    ],
+    "Init": true
+  },
+  "Storage": {
+    "RootFS": {
+      "Snapshot": {
+        "Name": "overlayfs"
+      }
+    }
+  },
+  "Mounts": [],
+  "Config": {
+    "Hostname": "sp2027-replay",
+    "Domainname": "",
+    "User": "10001:10001",
+    "AttachStdin": false,
+    "AttachStdout": true,
+    "AttachStderr": true,
+    "Tty": false,
+    "OpenStdin": false,
+    "StdinOnce": false,
+    "Env": [
+      "CI=true",
+      "NODE_ENV=test",
+      "EMAIL_ENABLED=false",
+      "HOME=/work/home",
+      "NPM_TOKEN=",
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "NODE_VERSION=24.19.0",
+      "YARN_VERSION=1.22.22"
+    ],
+    "Cmd": null,
+    "Image": "sha256:8eeec120d61f6913fcdbfb8bc8d801b1fac174dea40557446d27fb80c4ae2baa",
+    "Volumes": null,
+    "WorkingDir": "/work",
+    "Entrypoint": [
+      "node",
+      "/opt/replay/run_replay.mjs"
+    ],
+    "Labels": {
+      "sp2027.backend-provisioning": "baseline-only-no-tests",
+      "sp2027.prerequisite-correction": "jq-os-only",
+      "sp2027.repetition": "1",
+      "sp2027.study": "wxyc-fixed-history-parallel-20261112"
+    },
+    "StopTimeout": 5
+  },
+  "NetworkSettings": {
+    "SandboxID": "",
+    "SandboxKey": "",
+    "Ports": {},
+    "Networks": {
+      "none": {
+        "IPAMConfig": null,
+        "Links": null,
+        "Aliases": null,
+        "DriverOpts": null,
+        "GwPriority": 0,
+        "NetworkID": "ff976d5d8b1f16636f03dc430f6688ed8e00f473f70c1448399a5d1ee7823c70",
+        "EndpointID": "",
+        "Gateway": "",
+        "IPAddress": "",
+        "MacAddress": "",
+        "IPPrefixLen": 0,
+        "IPv6Gateway": "",
+        "GlobalIPv6Address": "",
+        "GlobalIPv6PrefixLen": 0,
+        "DNSNames": null
+      }
+    }
+  },
+  "ImageManifestDescriptor": {
+    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+    "digest": "sha256:8eeec120d61f6913fcdbfb8bc8d801b1fac174dea40557446d27fb80c4ae2baa",
+    "size": 2708,
+    "platform": {
+      "architecture": "amd64",
+      "os": "linux"
+    }
+  }
+}

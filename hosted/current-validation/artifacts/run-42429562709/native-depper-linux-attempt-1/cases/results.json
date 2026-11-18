@@ -1,0 +1,3127 @@
+[
+  {
+    "case": "itsdangerous_expiry",
+    "condition": "baseline_nochange",
+    "mode": "native_default",
+    "exit": 0,
+    "baseline_sha": "839ccf7184898e9e4b7fa7f8102ab6af1c631c8e",
+    "head_sha": "839ccf7184898e9e4b7fa7f8102ab6af1c631c8e",
+    "changed_files": [],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "e91bc332a36e9863317f4f8796969974df4f51042646fad01a994a871ba2bd4b",
+    "source_crc32": "e23a43ac",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [],
+      "skipped_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "import_origins": [
+        {
+          "module": "itsdangerous.timed",
+          "actual_file": "/home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo/itsdangerous/timed.py",
+          "expected": "/home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo/itsdangerous/timed.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "itsdangerous_expiry/baseline_nochange-native_default.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "itsdangerous_expiry",
+    "condition": "baseline_nochange",
+    "mode": "native_fallback",
+    "exit": 0,
+    "baseline_sha": "839ccf7184898e9e4b7fa7f8102ab6af1c631c8e",
+    "head_sha": "839ccf7184898e9e4b7fa7f8102ab6af1c631c8e",
+    "changed_files": [],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "e91bc332a36e9863317f4f8796969974df4f51042646fad01a994a871ba2bd4b",
+    "source_crc32": "e23a43ac",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "itsdangerous.timed",
+          "actual_file": "/home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo/itsdangerous/timed.py",
+          "expected": "/home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo/itsdangerous/timed.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "itsdangerous_expiry/baseline_nochange-native_fallback.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": true,
+    "valid_execution": true
+  },
+  {
+    "case": "itsdangerous_expiry",
+    "condition": "baseline_nochange",
+    "mode": "full_suite",
+    "exit": 0,
+    "baseline_sha": "839ccf7184898e9e4b7fa7f8102ab6af1c631c8e",
+    "head_sha": "839ccf7184898e9e4b7fa7f8102ab6af1c631c8e",
+    "changed_files": [],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "e91bc332a36e9863317f4f8796969974df4f51042646fad01a994a871ba2bd4b",
+    "source_crc32": "e23a43ac",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "itsdangerous.timed",
+          "actual_file": "/home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo/itsdangerous/timed.py",
+          "expected": "/home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo/itsdangerous/timed.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "itsdangerous_expiry/baseline_nochange-full_suite.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "itsdangerous_expiry",
+    "condition": "benign_comment",
+    "mode": "native_default",
+    "exit": 0,
+    "baseline_sha": "839ccf7184898e9e4b7fa7f8102ab6af1c631c8e",
+    "head_sha": "17234bfaf52c72b606238723f1f57c13daf73f6c",
+    "changed_files": [
+      "itsdangerous/timed.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "bc6aae49f1f6996c3fe4bf34e4080d00778426d455c4c85c8a3387c6cf08d894",
+    "source_crc32": "409f21f3",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "deselected": [
+        "tests/test_meta.py::test_metadata_build_positive"
+      ],
+      "reports": [
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "itsdangerous.timed",
+          "actual_file": "/home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo/itsdangerous/timed.py",
+          "expected": "/home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo/itsdangerous/timed.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "itsdangerous_expiry/benign_comment-native_default.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "itsdangerous_expiry",
+    "condition": "benign_comment",
+    "mode": "native_fallback",
+    "exit": 0,
+    "baseline_sha": "839ccf7184898e9e4b7fa7f8102ab6af1c631c8e",
+    "head_sha": "17234bfaf52c72b606238723f1f57c13daf73f6c",
+    "changed_files": [
+      "itsdangerous/timed.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "bc6aae49f1f6996c3fe4bf34e4080d00778426d455c4c85c8a3387c6cf08d894",
+    "source_crc32": "409f21f3",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "deselected": [
+        "tests/test_meta.py::test_metadata_build_positive"
+      ],
+      "reports": [
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "itsdangerous.timed",
+          "actual_file": "/home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo/itsdangerous/timed.py",
+          "expected": "/home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo/itsdangerous/timed.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "itsdangerous_expiry/benign_comment-native_fallback.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "itsdangerous_expiry",
+    "condition": "benign_comment",
+    "mode": "full_suite",
+    "exit": 0,
+    "baseline_sha": "839ccf7184898e9e4b7fa7f8102ab6af1c631c8e",
+    "head_sha": "17234bfaf52c72b606238723f1f57c13daf73f6c",
+    "changed_files": [
+      "itsdangerous/timed.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "bc6aae49f1f6996c3fe4bf34e4080d00778426d455c4c85c8a3387c6cf08d894",
+    "source_crc32": "409f21f3",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "itsdangerous.timed",
+          "actual_file": "/home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo/itsdangerous/timed.py",
+          "expected": "/home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo/itsdangerous/timed.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "itsdangerous_expiry/benign_comment-full_suite.log",
+    "analysis_error": false,
+    "changed_source_detected": false,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "itsdangerous_expiry",
+    "condition": "ordinary",
+    "mode": "native_default",
+    "exit": 0,
+    "baseline_sha": "839ccf7184898e9e4b7fa7f8102ab6af1c631c8e",
+    "head_sha": "c2e6eb5bb85203f2f1abc16da628e73a9f902a45",
+    "changed_files": [
+      "itsdangerous/timed.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "b38b2567a62ce08cf39e65b686986402eb239681bee3ecf395981c0894d08158",
+    "source_crc32": "5202f73a",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [],
+      "skipped_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "import_origins": [
+        {
+          "module": "itsdangerous.timed",
+          "actual_file": "/home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo/itsdangerous/timed.py",
+          "expected": "/home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo/itsdangerous/timed.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "itsdangerous_expiry/ordinary-native_default.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "itsdangerous_expiry",
+    "condition": "ordinary",
+    "mode": "native_fallback",
+    "exit": 1,
+    "baseline_sha": "839ccf7184898e9e4b7fa7f8102ab6af1c631c8e",
+    "head_sha": "c2e6eb5bb85203f2f1abc16da628e73a9f902a45",
+    "changed_files": [
+      "itsdangerous/timed.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "b38b2567a62ce08cf39e65b686986402eb239681bee3ecf395981c0894d08158",
+    "source_crc32": "5202f73a",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "call",
+          "outcome": "failed",
+          "failure_text": "def test_security_rejects_expired():\n        signer = TimestampSigner('lab-secret')\n        signer.get_timestamp = lambda: 100\n        signed = signer.sign('sensitive')\n        signer.get_timestamp = lambda: 120\n>       with pytest.raises(SignatureExpired):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE <class 'itsdangerous.exc.SignatureExpired'>\n\ntests/test_security.py:9: Failed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 1,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "itsdangerous.timed",
+          "actual_file": "/home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo/itsdangerous/timed.py",
+          "expected": "/home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo/itsdangerous/timed.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "itsdangerous_expiry/ordinary-native_fallback.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": true,
+    "valid_execution": true
+  },
+  {
+    "case": "itsdangerous_expiry",
+    "condition": "ordinary",
+    "mode": "full_suite",
+    "exit": 1,
+    "baseline_sha": "839ccf7184898e9e4b7fa7f8102ab6af1c631c8e",
+    "head_sha": "c2e6eb5bb85203f2f1abc16da628e73a9f902a45",
+    "changed_files": [
+      "itsdangerous/timed.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "b38b2567a62ce08cf39e65b686986402eb239681bee3ecf395981c0894d08158",
+    "source_crc32": "5202f73a",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "call",
+          "outcome": "failed",
+          "failure_text": "def test_security_rejects_expired():\n        signer = TimestampSigner('lab-secret')\n        signer.get_timestamp = lambda: 100\n        signed = signer.sign('sensitive')\n        signer.get_timestamp = lambda: 120\n>       with pytest.raises(SignatureExpired):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE <class 'itsdangerous.exc.SignatureExpired'>\n\ntests/test_security.py:9: Failed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 1,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "itsdangerous.timed",
+          "actual_file": "/home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo/itsdangerous/timed.py",
+          "expected": "/home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo/itsdangerous/timed.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "itsdangerous_expiry/ordinary-full_suite.log",
+    "analysis_error": false,
+    "changed_source_detected": false,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "itsdangerous_expiry",
+    "condition": "collision",
+    "mode": "native_default",
+    "exit": 0,
+    "baseline_sha": "839ccf7184898e9e4b7fa7f8102ab6af1c631c8e",
+    "head_sha": "2bd0027aaf50a97baae10de401277bd90483f30b",
+    "changed_files": [
+      "itsdangerous/timed.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "958e620d9c196ef0fd6ec59737176885fcd29f01df2fa13fdecbda77b43ef011",
+    "source_crc32": "fde7be30",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [],
+      "skipped_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "import_origins": [
+        {
+          "module": "itsdangerous.timed",
+          "actual_file": "/home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo/itsdangerous/timed.py",
+          "expected": "/home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo/itsdangerous/timed.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "itsdangerous_expiry/collision-native_default.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "itsdangerous_expiry",
+    "condition": "collision",
+    "mode": "native_fallback",
+    "exit": 1,
+    "baseline_sha": "839ccf7184898e9e4b7fa7f8102ab6af1c631c8e",
+    "head_sha": "2bd0027aaf50a97baae10de401277bd90483f30b",
+    "changed_files": [
+      "itsdangerous/timed.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "958e620d9c196ef0fd6ec59737176885fcd29f01df2fa13fdecbda77b43ef011",
+    "source_crc32": "fde7be30",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "call",
+          "outcome": "failed",
+          "failure_text": "def test_security_rejects_expired():\n        signer = TimestampSigner('lab-secret')\n        signer.get_timestamp = lambda: 100\n        signed = signer.sign('sensitive')\n        signer.get_timestamp = lambda: 120\n>       with pytest.raises(SignatureExpired):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE <class 'itsdangerous.exc.SignatureExpired'>\n\ntests/test_security.py:9: Failed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 1,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "itsdangerous.timed",
+          "actual_file": "/home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo/itsdangerous/timed.py",
+          "expected": "/home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo/itsdangerous/timed.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "itsdangerous_expiry/collision-native_fallback.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": true,
+    "valid_execution": true
+  },
+  {
+    "case": "itsdangerous_expiry",
+    "condition": "collision",
+    "mode": "full_suite",
+    "exit": 1,
+    "baseline_sha": "839ccf7184898e9e4b7fa7f8102ab6af1c631c8e",
+    "head_sha": "2bd0027aaf50a97baae10de401277bd90483f30b",
+    "changed_files": [
+      "itsdangerous/timed.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "958e620d9c196ef0fd6ec59737176885fcd29f01df2fa13fdecbda77b43ef011",
+    "source_crc32": "fde7be30",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "call",
+          "outcome": "failed",
+          "failure_text": "def test_security_rejects_expired():\n        signer = TimestampSigner('lab-secret')\n        signer.get_timestamp = lambda: 100\n        signed = signer.sign('sensitive')\n        signer.get_timestamp = lambda: 120\n>       with pytest.raises(SignatureExpired):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE <class 'itsdangerous.exc.SignatureExpired'>\n\ntests/test_security.py:9: Failed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_expired",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_signature_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 1,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_expired",
+        "tests/test_security.py::test_valid_signature_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "itsdangerous.timed",
+          "actual_file": "/home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo/itsdangerous/timed.py",
+          "expected": "/home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo/itsdangerous/timed.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "itsdangerous_expiry/collision-full_suite.log",
+    "analysis_error": false,
+    "changed_source_detected": false,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "starlette_trusted_host",
+    "condition": "baseline_nochange",
+    "mode": "native_default",
+    "exit": 0,
+    "baseline_sha": "a8d0ef7d7525cb575754f60e31f8a251444f769a",
+    "head_sha": "a8d0ef7d7525cb575754f60e31f8a251444f769a",
+    "changed_files": [],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "6f22825323e07b9e19e0cce7cae9c3ff60ec31f25cd94b1f5786f60eef966137",
+    "source_crc32": "cec6e610",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [],
+      "skipped_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "import_origins": [
+        {
+          "module": "starlette.middleware.trustedhost",
+          "actual_file": "/home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/middleware/trustedhost.py",
+          "expected": "/home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/middleware/trustedhost.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "starlette_trusted_host/baseline_nochange-native_default.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "starlette_trusted_host",
+    "condition": "baseline_nochange",
+    "mode": "native_fallback",
+    "exit": 0,
+    "baseline_sha": "a8d0ef7d7525cb575754f60e31f8a251444f769a",
+    "head_sha": "a8d0ef7d7525cb575754f60e31f8a251444f769a",
+    "changed_files": [],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "6f22825323e07b9e19e0cce7cae9c3ff60ec31f25cd94b1f5786f60eef966137",
+    "source_crc32": "cec6e610",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "starlette.middleware.trustedhost",
+          "actual_file": "/home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/middleware/trustedhost.py",
+          "expected": "/home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/middleware/trustedhost.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "starlette_trusted_host/baseline_nochange-native_fallback.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": true,
+    "valid_execution": true
+  },
+  {
+    "case": "starlette_trusted_host",
+    "condition": "baseline_nochange",
+    "mode": "full_suite",
+    "exit": 0,
+    "baseline_sha": "a8d0ef7d7525cb575754f60e31f8a251444f769a",
+    "head_sha": "a8d0ef7d7525cb575754f60e31f8a251444f769a",
+    "changed_files": [],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "6f22825323e07b9e19e0cce7cae9c3ff60ec31f25cd94b1f5786f60eef966137",
+    "source_crc32": "cec6e610",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "starlette.middleware.trustedhost",
+          "actual_file": "/home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/middleware/trustedhost.py",
+          "expected": "/home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/middleware/trustedhost.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "starlette_trusted_host/baseline_nochange-full_suite.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "starlette_trusted_host",
+    "condition": "benign_comment",
+    "mode": "native_default",
+    "exit": 0,
+    "baseline_sha": "a8d0ef7d7525cb575754f60e31f8a251444f769a",
+    "head_sha": "63070d1f36b4913785586b0158f54a4abf0810f2",
+    "changed_files": [
+      "starlette/middleware/trustedhost.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "68c79d8dd8aefcd1c9f4cb4ed34429ba6ae1f0761ee951bf3eb9ca5077a87cab",
+    "source_crc32": "6d349a4a",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "deselected": [
+        "tests/test_meta.py::test_metadata_build_positive"
+      ],
+      "reports": [
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "starlette.middleware.trustedhost",
+          "actual_file": "/home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/middleware/trustedhost.py",
+          "expected": "/home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/middleware/trustedhost.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "starlette_trusted_host/benign_comment-native_default.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "starlette_trusted_host",
+    "condition": "benign_comment",
+    "mode": "native_fallback",
+    "exit": 0,
+    "baseline_sha": "a8d0ef7d7525cb575754f60e31f8a251444f769a",
+    "head_sha": "63070d1f36b4913785586b0158f54a4abf0810f2",
+    "changed_files": [
+      "starlette/middleware/trustedhost.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "68c79d8dd8aefcd1c9f4cb4ed34429ba6ae1f0761ee951bf3eb9ca5077a87cab",
+    "source_crc32": "6d349a4a",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "deselected": [
+        "tests/test_meta.py::test_metadata_build_positive"
+      ],
+      "reports": [
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "starlette.middleware.trustedhost",
+          "actual_file": "/home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/middleware/trustedhost.py",
+          "expected": "/home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/middleware/trustedhost.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "starlette_trusted_host/benign_comment-native_fallback.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "starlette_trusted_host",
+    "condition": "benign_comment",
+    "mode": "full_suite",
+    "exit": 0,
+    "baseline_sha": "a8d0ef7d7525cb575754f60e31f8a251444f769a",
+    "head_sha": "63070d1f36b4913785586b0158f54a4abf0810f2",
+    "changed_files": [
+      "starlette/middleware/trustedhost.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "68c79d8dd8aefcd1c9f4cb4ed34429ba6ae1f0761ee951bf3eb9ca5077a87cab",
+    "source_crc32": "6d349a4a",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "starlette.middleware.trustedhost",
+          "actual_file": "/home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/middleware/trustedhost.py",
+          "expected": "/home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/middleware/trustedhost.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "starlette_trusted_host/benign_comment-full_suite.log",
+    "analysis_error": false,
+    "changed_source_detected": false,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "starlette_trusted_host",
+    "condition": "ordinary",
+    "mode": "native_default",
+    "exit": 1,
+    "baseline_sha": "a8d0ef7d7525cb575754f60e31f8a251444f769a",
+    "head_sha": "49a5d2b014e60149a90775e2c1eeca01ba3068f0",
+    "changed_files": [
+      "starlette/middleware/trustedhost.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "1e767efa1f81e6ddee73abbba2dfb80ecd92e54285e5e709f3836ec978d51032",
+    "source_crc32": "6153a221",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "deselected": [
+        "tests/test_meta.py::test_metadata_build_positive"
+      ],
+      "reports": [
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "call",
+          "outcome": "failed",
+          "failure_text": "def test_security_rejects_untrusted_host():\n        client = TestClient(make_app())\n        response = client.get('http://evil.example/')\n>       assert response.status_code == 400\nE       assert 200 == 400\nE        +  where 200 = <Response [200 OK]>.status_code\n\ntests/test_security.py:17: AssertionError"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 1,
+      "executed_tests": [
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "starlette.middleware.trustedhost",
+          "actual_file": "/home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/middleware/trustedhost.py",
+          "expected": "/home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/middleware/trustedhost.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "starlette_trusted_host/ordinary-native_default.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "starlette_trusted_host",
+    "condition": "ordinary",
+    "mode": "native_fallback",
+    "exit": 1,
+    "baseline_sha": "a8d0ef7d7525cb575754f60e31f8a251444f769a",
+    "head_sha": "49a5d2b014e60149a90775e2c1eeca01ba3068f0",
+    "changed_files": [
+      "starlette/middleware/trustedhost.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "1e767efa1f81e6ddee73abbba2dfb80ecd92e54285e5e709f3836ec978d51032",
+    "source_crc32": "6153a221",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "deselected": [
+        "tests/test_meta.py::test_metadata_build_positive"
+      ],
+      "reports": [
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "call",
+          "outcome": "failed",
+          "failure_text": "def test_security_rejects_untrusted_host():\n        client = TestClient(make_app())\n        response = client.get('http://evil.example/')\n>       assert response.status_code == 400\nE       assert 200 == 400\nE        +  where 200 = <Response [200 OK]>.status_code\n\ntests/test_security.py:17: AssertionError"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 1,
+      "executed_tests": [
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "starlette.middleware.trustedhost",
+          "actual_file": "/home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/middleware/trustedhost.py",
+          "expected": "/home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/middleware/trustedhost.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "starlette_trusted_host/ordinary-native_fallback.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "starlette_trusted_host",
+    "condition": "ordinary",
+    "mode": "full_suite",
+    "exit": 1,
+    "baseline_sha": "a8d0ef7d7525cb575754f60e31f8a251444f769a",
+    "head_sha": "49a5d2b014e60149a90775e2c1eeca01ba3068f0",
+    "changed_files": [
+      "starlette/middleware/trustedhost.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "1e767efa1f81e6ddee73abbba2dfb80ecd92e54285e5e709f3836ec978d51032",
+    "source_crc32": "6153a221",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "call",
+          "outcome": "failed",
+          "failure_text": "def test_security_rejects_untrusted_host():\n        client = TestClient(make_app())\n        response = client.get('http://evil.example/')\n>       assert response.status_code == 400\nE       assert 200 == 400\nE        +  where 200 = <Response [200 OK]>.status_code\n\ntests/test_security.py:17: AssertionError"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 1,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "starlette.middleware.trustedhost",
+          "actual_file": "/home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/middleware/trustedhost.py",
+          "expected": "/home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/middleware/trustedhost.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "starlette_trusted_host/ordinary-full_suite.log",
+    "analysis_error": false,
+    "changed_source_detected": false,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "starlette_trusted_host",
+    "condition": "collision",
+    "mode": "native_default",
+    "exit": 1,
+    "baseline_sha": "a8d0ef7d7525cb575754f60e31f8a251444f769a",
+    "head_sha": "b57f08ee3200eef3d7c042e5135941c31cf2f91b",
+    "changed_files": [
+      "starlette/middleware/trustedhost.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "2789f299d1787ac5f20a883502047189b1bcfe21142676e2ccd1b9219c7773d9",
+    "source_crc32": "ab1d2337",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "deselected": [
+        "tests/test_meta.py::test_metadata_build_positive"
+      ],
+      "reports": [
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "call",
+          "outcome": "failed",
+          "failure_text": "def test_security_rejects_untrusted_host():\n        client = TestClient(make_app())\n        response = client.get('http://evil.example/')\n>       assert response.status_code == 400\nE       assert 200 == 400\nE        +  where 200 = <Response [200 OK]>.status_code\n\ntests/test_security.py:17: AssertionError"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 1,
+      "executed_tests": [
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "starlette.middleware.trustedhost",
+          "actual_file": "/home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/middleware/trustedhost.py",
+          "expected": "/home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/middleware/trustedhost.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "starlette_trusted_host/collision-native_default.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "starlette_trusted_host",
+    "condition": "collision",
+    "mode": "native_fallback",
+    "exit": 1,
+    "baseline_sha": "a8d0ef7d7525cb575754f60e31f8a251444f769a",
+    "head_sha": "b57f08ee3200eef3d7c042e5135941c31cf2f91b",
+    "changed_files": [
+      "starlette/middleware/trustedhost.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "2789f299d1787ac5f20a883502047189b1bcfe21142676e2ccd1b9219c7773d9",
+    "source_crc32": "ab1d2337",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "deselected": [
+        "tests/test_meta.py::test_metadata_build_positive"
+      ],
+      "reports": [
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "call",
+          "outcome": "failed",
+          "failure_text": "def test_security_rejects_untrusted_host():\n        client = TestClient(make_app())\n        response = client.get('http://evil.example/')\n>       assert response.status_code == 400\nE       assert 200 == 400\nE        +  where 200 = <Response [200 OK]>.status_code\n\ntests/test_security.py:17: AssertionError"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 1,
+      "executed_tests": [
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "starlette.middleware.trustedhost",
+          "actual_file": "/home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/middleware/trustedhost.py",
+          "expected": "/home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/middleware/trustedhost.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "starlette_trusted_host/collision-native_fallback.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "starlette_trusted_host",
+    "condition": "collision",
+    "mode": "full_suite",
+    "exit": 1,
+    "baseline_sha": "a8d0ef7d7525cb575754f60e31f8a251444f769a",
+    "head_sha": "b57f08ee3200eef3d7c042e5135941c31cf2f91b",
+    "changed_files": [
+      "starlette/middleware/trustedhost.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "2789f299d1787ac5f20a883502047189b1bcfe21142676e2ccd1b9219c7773d9",
+    "source_crc32": "ab1d2337",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "call",
+          "outcome": "failed",
+          "failure_text": "def test_security_rejects_untrusted_host():\n        client = TestClient(make_app())\n        response = client.get('http://evil.example/')\n>       assert response.status_code == 400\nE       assert 200 == 400\nE        +  where 200 = <Response [200 OK]>.status_code\n\ntests/test_security.py:17: AssertionError"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_host_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 1,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_untrusted_host",
+        "tests/test_security.py::test_valid_host_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "starlette.middleware.trustedhost",
+          "actual_file": "/home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/middleware/trustedhost.py",
+          "expected": "/home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/middleware/trustedhost.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "starlette_trusted_host/collision-full_suite.log",
+    "analysis_error": false,
+    "changed_source_detected": false,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "requests_crlf_header",
+    "condition": "baseline_nochange",
+    "mode": "native_default",
+    "exit": 0,
+    "baseline_sha": "cc66b008617662f2409861341a9d1ee2550d47bc",
+    "head_sha": "cc66b008617662f2409861341a9d1ee2550d47bc",
+    "changed_files": [],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "5aa53ceab677c2f842fad42359c8ed1ff1c4299c1607789609957a496e4311d4",
+    "source_crc32": "45fbd2b0",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [],
+      "skipped_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "import_origins": [
+        {
+          "module": "requests.utils",
+          "actual_file": "/home/runner/work/_temp/evidence/cases/requests_crlf_header/repo/requests/utils.py",
+          "expected": "/home/runner/work/_temp/evidence/cases/requests_crlf_header/repo/requests/utils.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "requests_crlf_header/baseline_nochange-native_default.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "requests_crlf_header",
+    "condition": "baseline_nochange",
+    "mode": "native_fallback",
+    "exit": 0,
+    "baseline_sha": "cc66b008617662f2409861341a9d1ee2550d47bc",
+    "head_sha": "cc66b008617662f2409861341a9d1ee2550d47bc",
+    "changed_files": [],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "5aa53ceab677c2f842fad42359c8ed1ff1c4299c1607789609957a496e4311d4",
+    "source_crc32": "45fbd2b0",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "requests.utils",
+          "actual_file": "/home/runner/work/_temp/evidence/cases/requests_crlf_header/repo/requests/utils.py",
+          "expected": "/home/runner/work/_temp/evidence/cases/requests_crlf_header/repo/requests/utils.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "requests_crlf_header/baseline_nochange-native_fallback.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": true,
+    "valid_execution": true
+  },
+  {
+    "case": "requests_crlf_header",
+    "condition": "baseline_nochange",
+    "mode": "full_suite",
+    "exit": 0,
+    "baseline_sha": "cc66b008617662f2409861341a9d1ee2550d47bc",
+    "head_sha": "cc66b008617662f2409861341a9d1ee2550d47bc",
+    "changed_files": [],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "5aa53ceab677c2f842fad42359c8ed1ff1c4299c1607789609957a496e4311d4",
+    "source_crc32": "45fbd2b0",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "requests.utils",
+          "actual_file": "/home/runner/work/_temp/evidence/cases/requests_crlf_header/repo/requests/utils.py",
+          "expected": "/home/runner/work/_temp/evidence/cases/requests_crlf_header/repo/requests/utils.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "requests_crlf_header/baseline_nochange-full_suite.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "requests_crlf_header",
+    "condition": "benign_comment",
+    "mode": "native_default",
+    "exit": 0,
+    "baseline_sha": "cc66b008617662f2409861341a9d1ee2550d47bc",
+    "head_sha": "5df13ee11d20b7064a15e2fe420cf7f81fd5b8f9",
+    "changed_files": [
+      "requests/utils.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "c0cd072eb9a28f4efba988bcbdb480fb873a7a0943d723ff8f302105f120e457",
+    "source_crc32": "ed37e4aa",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "deselected": [
+        "tests/test_meta.py::test_metadata_build_positive"
+      ],
+      "reports": [
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "requests.utils",
+          "actual_file": "/home/runner/work/_temp/evidence/cases/requests_crlf_header/repo/requests/utils.py",
+          "expected": "/home/runner/work/_temp/evidence/cases/requests_crlf_header/repo/requests/utils.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "requests_crlf_header/benign_comment-native_default.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "requests_crlf_header",
+    "condition": "benign_comment",
+    "mode": "native_fallback",
+    "exit": 0,
+    "baseline_sha": "cc66b008617662f2409861341a9d1ee2550d47bc",
+    "head_sha": "5df13ee11d20b7064a15e2fe420cf7f81fd5b8f9",
+    "changed_files": [
+      "requests/utils.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "c0cd072eb9a28f4efba988bcbdb480fb873a7a0943d723ff8f302105f120e457",
+    "source_crc32": "ed37e4aa",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "deselected": [
+        "tests/test_meta.py::test_metadata_build_positive"
+      ],
+      "reports": [
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "requests.utils",
+          "actual_file": "/home/runner/work/_temp/evidence/cases/requests_crlf_header/repo/requests/utils.py",
+          "expected": "/home/runner/work/_temp/evidence/cases/requests_crlf_header/repo/requests/utils.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "requests_crlf_header/benign_comment-native_fallback.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "requests_crlf_header",
+    "condition": "benign_comment",
+    "mode": "full_suite",
+    "exit": 0,
+    "baseline_sha": "cc66b008617662f2409861341a9d1ee2550d47bc",
+    "head_sha": "5df13ee11d20b7064a15e2fe420cf7f81fd5b8f9",
+    "changed_files": [
+      "requests/utils.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "c0cd072eb9a28f4efba988bcbdb480fb873a7a0943d723ff8f302105f120e457",
+    "source_crc32": "ed37e4aa",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "requests.utils",
+          "actual_file": "/home/runner/work/_temp/evidence/cases/requests_crlf_header/repo/requests/utils.py",
+          "expected": "/home/runner/work/_temp/evidence/cases/requests_crlf_header/repo/requests/utils.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "requests_crlf_header/benign_comment-full_suite.log",
+    "analysis_error": false,
+    "changed_source_detected": false,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "requests_crlf_header",
+    "condition": "ordinary",
+    "mode": "native_default",
+    "exit": 0,
+    "baseline_sha": "cc66b008617662f2409861341a9d1ee2550d47bc",
+    "head_sha": "7eb0e31af35ff7bdf047d8bb130c7a899e9f961e",
+    "changed_files": [
+      "requests/utils.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "a539bf7445f8768d61fb91959776d679e7d0e91a8a889b292890dc6487421c23",
+    "source_crc32": "a728e29e",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [],
+      "skipped_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "import_origins": [
+        {
+          "module": "requests.utils",
+          "actual_file": "/home/runner/work/_temp/evidence/cases/requests_crlf_header/repo/requests/utils.py",
+          "expected": "/home/runner/work/_temp/evidence/cases/requests_crlf_header/repo/requests/utils.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "requests_crlf_header/ordinary-native_default.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "requests_crlf_header",
+    "condition": "ordinary",
+    "mode": "native_fallback",
+    "exit": 1,
+    "baseline_sha": "cc66b008617662f2409861341a9d1ee2550d47bc",
+    "head_sha": "7eb0e31af35ff7bdf047d8bb130c7a899e9f961e",
+    "changed_files": [
+      "requests/utils.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "a539bf7445f8768d61fb91959776d679e7d0e91a8a889b292890dc6487421c23",
+    "source_crc32": "a728e29e",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "call",
+          "outcome": "failed",
+          "failure_text": "def test_security_rejects_header_injection():\n>       with pytest.raises(InvalidHeader):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE <class 'requests.exceptions.InvalidHeader'>\n\ntests/test_security.py:6: Failed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 1,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "requests.utils",
+          "actual_file": "/home/runner/work/_temp/evidence/cases/requests_crlf_header/repo/requests/utils.py",
+          "expected": "/home/runner/work/_temp/evidence/cases/requests_crlf_header/repo/requests/utils.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "requests_crlf_header/ordinary-native_fallback.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": true,
+    "valid_execution": true
+  },
+  {
+    "case": "requests_crlf_header",
+    "condition": "ordinary",
+    "mode": "full_suite",
+    "exit": 1,
+    "baseline_sha": "cc66b008617662f2409861341a9d1ee2550d47bc",
+    "head_sha": "7eb0e31af35ff7bdf047d8bb130c7a899e9f961e",
+    "changed_files": [
+      "requests/utils.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "a539bf7445f8768d61fb91959776d679e7d0e91a8a889b292890dc6487421c23",
+    "source_crc32": "a728e29e",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "call",
+          "outcome": "failed",
+          "failure_text": "def test_security_rejects_header_injection():\n>       with pytest.raises(InvalidHeader):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE <class 'requests.exceptions.InvalidHeader'>\n\ntests/test_security.py:6: Failed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 1,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "requests.utils",
+          "actual_file": "/home/runner/work/_temp/evidence/cases/requests_crlf_header/repo/requests/utils.py",
+          "expected": "/home/runner/work/_temp/evidence/cases/requests_crlf_header/repo/requests/utils.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "requests_crlf_header/ordinary-full_suite.log",
+    "analysis_error": false,
+    "changed_source_detected": false,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "requests_crlf_header",
+    "condition": "collision",
+    "mode": "native_default",
+    "exit": 0,
+    "baseline_sha": "cc66b008617662f2409861341a9d1ee2550d47bc",
+    "head_sha": "f497abfcc9a7b3286d558997904fef10e43d63a8",
+    "changed_files": [
+      "requests/utils.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "e47e101197c1896761a333d3cf81ec838b1b8df5de1aef33098a7fd2f30e8337",
+    "source_crc32": "df9eed16",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "setup",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 0,
+      "executed_tests": [],
+      "skipped_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "import_origins": [
+        {
+          "module": "requests.utils",
+          "actual_file": "/home/runner/work/_temp/evidence/cases/requests_crlf_header/repo/requests/utils.py",
+          "expected": "/home/runner/work/_temp/evidence/cases/requests_crlf_header/repo/requests/utils.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "requests_crlf_header/collision-native_default.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": false,
+    "valid_execution": true
+  },
+  {
+    "case": "requests_crlf_header",
+    "condition": "collision",
+    "mode": "native_fallback",
+    "exit": 1,
+    "baseline_sha": "cc66b008617662f2409861341a9d1ee2550d47bc",
+    "head_sha": "f497abfcc9a7b3286d558997904fef10e43d63a8",
+    "changed_files": [
+      "requests/utils.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "e47e101197c1896761a333d3cf81ec838b1b8df5de1aef33098a7fd2f30e8337",
+    "source_crc32": "df9eed16",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "call",
+          "outcome": "failed",
+          "failure_text": "def test_security_rejects_header_injection():\n>       with pytest.raises(InvalidHeader):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE <class 'requests.exceptions.InvalidHeader'>\n\ntests/test_security.py:6: Failed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 1,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "requests.utils",
+          "actual_file": "/home/runner/work/_temp/evidence/cases/requests_crlf_header/repo/requests/utils.py",
+          "expected": "/home/runner/work/_temp/evidence/cases/requests_crlf_header/repo/requests/utils.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "requests_crlf_header/collision-native_fallback.log",
+    "analysis_error": false,
+    "changed_source_detected": true,
+    "fallback_reported": true,
+    "valid_execution": true
+  },
+  {
+    "case": "requests_crlf_header",
+    "condition": "collision",
+    "mode": "full_suite",
+    "exit": 1,
+    "baseline_sha": "cc66b008617662f2409861341a9d1ee2550d47bc",
+    "head_sha": "f497abfcc9a7b3286d558997904fef10e43d63a8",
+    "changed_files": [
+      "requests/utils.py"
+    ],
+    "non_source_files_unchanged": true,
+    "clean_status_after": "",
+    "source_sha256": "e47e101197c1896761a333d3cf81ec838b1b8df5de1aef33098a7fd2f30e8337",
+    "source_crc32": "df9eed16",
+    "observer": {
+      "collected_after_selection": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "deselected": [],
+      "reports": [
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "call",
+          "outcome": "failed",
+          "failure_text": "def test_security_rejects_header_injection():\n>       with pytest.raises(InvalidHeader):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE <class 'requests.exceptions.InvalidHeader'>\n\ntests/test_security.py:6: Failed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+          "when": "teardown",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "setup",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "call",
+          "outcome": "passed"
+        },
+        {
+          "nodeid": "tests/test_security.py::test_valid_header_passes",
+          "when": "teardown",
+          "outcome": "passed"
+        }
+      ],
+      "collection_errors": [],
+      "exitstatus": 1,
+      "executed_tests": [
+        "tests/test_meta.py::test_metadata_build_positive",
+        "tests/test_security.py::test_security_rejects_header_injection",
+        "tests/test_security.py::test_valid_header_passes"
+      ],
+      "skipped_tests": [],
+      "import_origins": [
+        {
+          "module": "requests.utils",
+          "actual_file": "/home/runner/work/_temp/evidence/cases/requests_crlf_header/repo/requests/utils.py",
+          "expected": "/home/runner/work/_temp/evidence/cases/requests_crlf_header/repo/requests/utils.py",
+          "match_mode": "exact",
+          "matched": true
+        }
+      ],
+      "import_origins_valid": true
+    },
+    "native_plugin_loaded": true,
+    "log": "requests_crlf_header/collision-full_suite.log",
+    "analysis_error": false,
+    "changed_source_detected": false,
+    "fallback_reported": false,
+    "valid_execution": true
+  }
+]

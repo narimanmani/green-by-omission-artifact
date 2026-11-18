@@ -1,0 +1,262 @@
+{
+  "population_inference": "None. These results do not estimate real-world bypass or defect prevalence.",
+  "repetitions": 3,
+  "rows": [
+    {
+      "failures": [
+        2
+      ],
+      "fallbacks": 0,
+      "false_accepts": 0,
+      "fault": "none",
+      "median_elapsed_s": 0.5714726279999809,
+      "runs": 3,
+      "statuses": [
+        "test_failure"
+      ],
+      "strategy": "standard_rts",
+      "tests": [
+        3
+      ]
+    },
+    {
+      "failures": [
+        2
+      ],
+      "fallbacks": 0,
+      "false_accepts": 0,
+      "fault": "none",
+      "median_elapsed_s": 0.478825736999994,
+      "runs": 3,
+      "statuses": [
+        "test_failure"
+      ],
+      "strategy": "fail_closed",
+      "tests": [
+        3
+      ]
+    },
+    {
+      "failures": [
+        2
+      ],
+      "fallbacks": 0,
+      "false_accepts": 0,
+      "fault": "none",
+      "median_elapsed_s": 0.36681280899998114,
+      "runs": 3,
+      "statuses": [
+        "test_failure"
+      ],
+      "strategy": "full_suite",
+      "tests": [
+        4
+      ]
+    },
+    {
+      "failures": [
+        2
+      ],
+      "fallbacks": 0,
+      "false_accepts": 0,
+      "fault": "missing",
+      "median_elapsed_s": 0.5489985529999899,
+      "runs": 3,
+      "statuses": [
+        "test_failure"
+      ],
+      "strategy": "standard_rts",
+      "tests": [
+        4
+      ]
+    },
+    {
+      "failures": [
+        2
+      ],
+      "fallbacks": 3,
+      "false_accepts": 0,
+      "fault": "missing",
+      "median_elapsed_s": 0.38848765999998136,
+      "runs": 3,
+      "statuses": [
+        "test_failure"
+      ],
+      "strategy": "fail_closed",
+      "tests": [
+        4
+      ]
+    },
+    {
+      "failures": [
+        2
+      ],
+      "fallbacks": 0,
+      "false_accepts": 0,
+      "fault": "missing",
+      "median_elapsed_s": 0.471690615,
+      "runs": 3,
+      "statuses": [
+        "test_failure"
+      ],
+      "strategy": "full_suite",
+      "tests": [
+        4
+      ]
+    },
+    {
+      "failures": [
+        2
+      ],
+      "fallbacks": 0,
+      "false_accepts": 0,
+      "fault": "empty",
+      "median_elapsed_s": 0.706861454999995,
+      "runs": 3,
+      "statuses": [
+        "test_failure"
+      ],
+      "strategy": "standard_rts",
+      "tests": [
+        4
+      ]
+    },
+    {
+      "failures": [
+        2
+      ],
+      "fallbacks": 3,
+      "false_accepts": 0,
+      "fault": "empty",
+      "median_elapsed_s": 0.5764052769999921,
+      "runs": 3,
+      "statuses": [
+        "test_failure"
+      ],
+      "strategy": "fail_closed",
+      "tests": [
+        4
+      ]
+    },
+    {
+      "failures": [
+        2
+      ],
+      "fallbacks": 0,
+      "false_accepts": 0,
+      "fault": "empty",
+      "median_elapsed_s": 0.431271277999997,
+      "runs": 3,
+      "statuses": [
+        "test_failure"
+      ],
+      "strategy": "full_suite",
+      "tests": [
+        4
+      ]
+    },
+    {
+      "failures": [
+        0
+      ],
+      "fallbacks": 0,
+      "false_accepts": 0,
+      "fault": "half_truncated",
+      "median_elapsed_s": 0.3251030469999989,
+      "runs": 3,
+      "statuses": [
+        "runner_error"
+      ],
+      "strategy": "standard_rts",
+      "tests": [
+        0
+      ]
+    },
+    {
+      "failures": [
+        2
+      ],
+      "fallbacks": 3,
+      "false_accepts": 0,
+      "fault": "half_truncated",
+      "median_elapsed_s": 0.47363157099999853,
+      "runs": 3,
+      "statuses": [
+        "test_failure"
+      ],
+      "strategy": "fail_closed",
+      "tests": [
+        4
+      ]
+    },
+    {
+      "failures": [
+        2
+      ],
+      "fallbacks": 0,
+      "false_accepts": 0,
+      "fault": "half_truncated",
+      "median_elapsed_s": 0.4697544660000119,
+      "runs": 3,
+      "statuses": [
+        "test_failure"
+      ],
+      "strategy": "full_suite",
+      "tests": [
+        4
+      ]
+    },
+    {
+      "failures": [
+        0
+      ],
+      "fallbacks": 0,
+      "false_accepts": 0,
+      "fault": "garbage",
+      "median_elapsed_s": 0.6327141980000022,
+      "runs": 3,
+      "statuses": [
+        "runner_error"
+      ],
+      "strategy": "standard_rts",
+      "tests": [
+        0
+      ]
+    },
+    {
+      "failures": [
+        2
+      ],
+      "fallbacks": 3,
+      "false_accepts": 0,
+      "fault": "garbage",
+      "median_elapsed_s": 0.6591967169999862,
+      "runs": 3,
+      "statuses": [
+        "test_failure"
+      ],
+      "strategy": "fail_closed",
+      "tests": [
+        4
+      ]
+    },
+    {
+      "failures": [
+        2
+      ],
+      "fallbacks": 0,
+      "false_accepts": 0,
+      "fault": "garbage",
+      "median_elapsed_s": 0.416116068000008,
+      "runs": 3,
+      "statuses": [
+        "test_failure"
+      ],
+      "strategy": "full_suite",
+      "tests": [
+        4
+      ]
+    }
+  ],
+  "statistical_unit": "One deterministic synthetic fixture; repetitions assess repeatability and are not independent security trials."
+}

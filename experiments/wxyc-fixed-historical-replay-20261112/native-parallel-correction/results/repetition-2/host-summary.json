@@ -1,0 +1,35 @@
+{
+  "repetition": 2,
+  "status": "QUALIFYING_ORIGINAL_SECURITY_SOURCE_GUARD_WITNESS",
+  "qualifying_joint_witness": true,
+  "inner_qualifying_joint_witness": true,
+  "outer_container_eligible": true,
+  "arms": {
+    "baseline": {
+      "passed": 8173,
+      "failed": 0,
+      "pending": 0,
+      "todo": 0,
+      "skipped": 0,
+      "other": 0
+    },
+    "selective": {
+      "passed": 8,
+      "failed": 0,
+      "pending": 0,
+      "todo": 0,
+      "skipped": 0,
+      "other": 0
+    },
+    "independent_full": {
+      "passed": 8172,
+      "failed": 1,
+      "pending": 0,
+      "todo": 0,
+      "skipped": 0,
+      "other": 0
+    }
+  },
+  "process_exit": 0,
+  "oom_killed": false
+}

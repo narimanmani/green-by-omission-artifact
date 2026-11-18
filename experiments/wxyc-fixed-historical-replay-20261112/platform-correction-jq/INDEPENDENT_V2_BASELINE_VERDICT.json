@@ -1,0 +1,179 @@
+{
+  "audited_utc": "2026-11-12T16:20:43.312928+00:00",
+  "status": "PASS_RAW_AUDIT_V2_INELIGIBLE_PROCESS_STATUS",
+  "checks_passed": 29,
+  "checks_total": 29,
+  "verdict": "INELIGIBLE_BASELINE: all assertion results passed but actual Jest process exited1. No candidate observation.",
+  "counts": {
+    "unit_files": 471,
+    "original_case_results": 8173,
+    "passed": 8173,
+    "failed": 0,
+    "pending_todo_skipped": 0,
+    "actual_process_exit": 1,
+    "raw_report_success": true
+  },
+  "evidence_sha256": "913e23bc6e63ca27addedcefdd3d4e3170a13f60d7f1d8e0bae3e9513e184206",
+  "candidate_applied": false,
+  "candidate_arms_executed": false,
+  "jq_original_suite_cases_passed": 5,
+  "causality_statement": "Observed original ETL import/catch error and exitCode setter support a shared-process exit-state mechanism. They do not alone prove that this is the sole setter responsible; exact installed Jest environment/CLI/worker semantics require separate primary-source confirmation before an execution-mode correction.",
+  "source_caveat": "Original tests reset exitCode in a distinct reportStrandedResurrections describe block; do not omit this when discussing causality.",
+  "checks": [
+    {
+      "name": "one complete exported envelope",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "gzip bytes/hash verify",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "export payload exactly matches saved evidence",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "embedded raw Jest JSON hash verifies",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all8173original assertion-result entries pass",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all471original unit files included once",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "raw success is true with zero runtime errors and skips",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all case identities/multiplicities exactly equal v1 full original oracle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original designated security guard actually passes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all5original jq-dependent suite cases now pass",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "actual Jest status remains unsuccessful without timeout/spawn failure",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "infrastructure correctly stops before applying candidate",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "before_baseline original tracked bytes/Gitstate unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "before_baseline complete installed dependency identity unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "after_baseline original tracked bytes/Gitstate unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "after_baseline complete installed dependency identity unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cache_before artifact inventory hash verifies",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cache_after artifact inventory hash verifies",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "coverage_artifacts artifact inventory hash verifies",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "final external inventory hash verifies",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "embedded stdout exactly matches retained raw-file digest",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "embedded stderr exactly matches retained raw-file digest",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "baseline cache starts empty",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all19actual host boundaries pass",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "raw stderr identifies original unguarded ETL catch",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "specified alternative coverage/worker failure signatures absent",
+      "pass": true,
+      "detail": {
+        "Failed to collect coverage": 0,
+        "Coverage for": 0,
+        "Cannot log after tests are done": 0,
+        "Jest did not exit": 0,
+        "A worker process": 0,
+        "UnhandledPromiseRejection": 0,
+        "Jest worker encountered": 0
+      }
+    },
+    {
+      "name": "original module has unguarded top-level run catch setting exitCode1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original unit file imports job module and also resets separate exitCode tests",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original native unit CI commands omit serial override",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "auditor_test_execution": false,
+  "scope": "Configured original unit oracle only. All-assertions-pass is not substituted for the required process-success condition."
+}

@@ -1,0 +1,35 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------< research.synthetic:rts-integrity-fixture >--------------
+[INFO] Building rts-integrity-fixture 1.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ rts-integrity-fixture ---
+[INFO] skip non existing resourceDirectory /workspace/scratch/0827c1f80a7f/ekstazi_study/work/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.11.0:compile (default-compile) @ rts-integrity-fixture ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 3 source files with javac [debug target 1.8] to target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ rts-integrity-fixture ---
+[INFO] skip non existing resourceDirectory /workspace/scratch/0827c1f80a7f/ekstazi_study/work/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.11.0:testCompile (default-testCompile) @ rts-integrity-fixture ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 3 source files with javac [debug target 1.8] to target/test-classes
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:5.3.0:select (default) @ rts-integrity-fixture ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  33.158 s
+[INFO] Finished at: 2026-11-10T14:21:12-07:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.ekstazi:ekstazi-maven-plugin:5.3.0:select (default) on project rts-integrity-fixture: Ekstazi cannot attach to the JVM, please specify Ekstazi 'restore' explicitly. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

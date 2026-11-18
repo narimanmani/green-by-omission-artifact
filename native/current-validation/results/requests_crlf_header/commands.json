@@ -1,0 +1,765 @@
+[
+  {
+    "command": [
+      "git",
+      "init",
+      "-b",
+      "main"
+    ],
+    "returncode": 0,
+    "stdout": "Initialized empty Git repository in <user-home>/OneDrive/Documents/ChatGPT/sp2027/native/current-validation/results/requests_crlf_header/repo/.git/\n",
+    "stderr": "",
+    "seconds": 0.11948084831237793
+  },
+  {
+    "command": [
+      "git",
+      "config",
+      "user.name",
+      "Private native selector research"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.13138651847839355
+  },
+  {
+    "command": [
+      "git",
+      "config",
+      "user.email",
+      "research@example.invalid"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.1107792854309082
+  },
+  {
+    "command": [
+      "git",
+      "config",
+      "core.autocrlf",
+      "false"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.10655760765075684
+  },
+  {
+    "command": [
+      "git",
+      "add",
+      "."
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.17453503608703613
+  },
+  {
+    "command": [
+      "git",
+      "commit",
+      "-m",
+      "Exact recovered trusted baseline"
+    ],
+    "returncode": 0,
+    "stdout": "[main (root-commit) f55a637] Exact recovered trusted baseline\n 22 files changed, 5643 insertions(+)\n create mode 100644 build_meta.py\n create mode 100644 pytest.ini\n create mode 100644 requests/__init__.py\n create mode 100644 requests/__version__.py\n create mode 100644 requests/_internal_utils.py\n create mode 100644 requests/adapters.py\n create mode 100644 requests/api.py\n create mode 100644 requests/auth.py\n create mode 100644 requests/certs.py\n create mode 100644 requests/compat.py\n create mode 100644 requests/cookies.py\n create mode 100644 requests/exceptions.py\n create mode 100644 requests/help.py\n create mode 100644 requests/hooks.py\n create mode 100644 requests/models.py\n create mode 100644 requests/packages.py\n create mode 100644 requests/sessions.py\n create mode 100644 requests/status_codes.py\n create mode 100644 requests/structures.py\n create mode 100644 requests/utils.py\n create mode 100644 tests/test_meta.py\n create mode 100644 tests/test_security.py\n",
+    "stderr": "",
+    "seconds": 0.21073484420776367
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "f55a6377923fef63d0b74e804f8c6842067ac4f8\n",
+    "stderr": "",
+    "seconds": 0.11579394340515137
+  },
+  {
+    "command": [
+      "git",
+      "update-ref",
+      "refs/remotes/origin/main",
+      "f55a6377923fef63d0b74e804f8c6842067ac4f8"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.12048506736755371
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "--detach",
+      "f55a6377923fef63d0b74e804f8c6842067ac4f8"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "HEAD is now at f55a637 Exact recovered trusted baseline\n",
+    "seconds": 0.12839937210083008
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--name-only",
+      "main...HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.18290257453918457
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.16126298904418945
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "f55a6377923fef63d0b74e804f8c6842067ac4f8\n",
+    "stderr": "",
+    "seconds": 0.12884783744812012
+  },
+  {
+    "command": [
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nNo changed files detected. Deselecting all tests.\nUse --depper-run-all-on-error to run all tests when no changes are detected.\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive SKIPPED (No files\nchanged)\ntests/test_security.py::test_security_rejects_header_injection SKIPPED\ntests/test_security.py::test_valid_header_passes SKIPPED (No files\nchanged)\n\n=========================== short test summary info ===========================\nSKIPPED [1] tests\\test_meta.py: No files changed\nSKIPPED [2] tests\\test_security.py: No files changed\n============================= 3 skipped in 0.70s ==============================\n",
+    "stderr": "",
+    "seconds": 1.0245187282562256
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.16852450370788574
+  },
+  {
+    "command": [
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug",
+      "--depper-run-all-on-error"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nNo changed files detected. Running all tests (--depper-run-all-on-error enabled).\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_header_injection PASSED\ntests/test_security.py::test_valid_header_passes PASSED\n\n=================================== PASSES ====================================\n=========================== short test summary info ===========================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_security_rejects_header_injection\nPASSED tests/test_security.py::test_valid_header_passes\n============================== 3 passed in 0.56s ==============================\n",
+    "stderr": "",
+    "seconds": 1.0011770725250244
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.1160423755645752
+  },
+  {
+    "command": [
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\nrootdir: <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... collected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_header_injection PASSED\ntests/test_security.py::test_valid_header_passes PASSED\n\n=================================== PASSES ====================================\n=========================== short test summary info ===========================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_security_rejects_header_injection\nPASSED tests/test_security.py::test_valid_header_passes\n============================== 3 passed in 0.08s ==============================\n",
+    "stderr": "",
+    "seconds": 0.3935410976409912
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.12145829200744629
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "--detach",
+      "f55a6377923fef63d0b74e804f8c6842067ac4f8"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "HEAD is now at f55a637 Exact recovered trusted baseline\n",
+    "seconds": 0.1338365077972412
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "-c",
+      "benign_comment"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Switched to a new branch 'benign_comment'\n",
+    "seconds": 0.11633944511413574
+  },
+  {
+    "command": [
+      "git",
+      "add",
+      "--",
+      "requests/utils.py"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.1250290870666504
+  },
+  {
+    "command": [
+      "git",
+      "commit",
+      "-m",
+      "Benign comment control"
+    ],
+    "returncode": 0,
+    "stdout": "[benign_comment 7bc3ec6] Benign comment control\n 1 file changed, 2 insertions(+)\n",
+    "stderr": "",
+    "seconds": 0.19871735572814941
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--name-only",
+      "main...HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "requests/utils.py\n",
+    "stderr": "",
+    "seconds": 0.11519813537597656
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.1298060417175293
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "7bc3ec6317010e2bc46a981380bdcb9658ee89ac\n",
+    "stderr": "",
+    "seconds": 0.1892838478088379
+  },
+  {
+    "command": [
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nDepper: Found 1 changed files\n  - requests/utils.py\n\n=== Dependency Analysis ===\n\nChanged file: requests/utils.py\n\nDepper: No tests affected by these changes\nDeselecting all tests. This may indicate missing test coverage.\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive SKIPPED (No tests\naffected by changes)\ntests/test_security.py::test_security_rejects_header_injection SKIPPED\ntests/test_security.py::test_valid_header_passes SKIPPED (No tests\naffected by changes)\n\n=========================== short test summary info ===========================\nSKIPPED [1] tests\\test_meta.py: No tests affected by changes\nSKIPPED [2] tests\\test_security.py: No tests affected by changes\n============================= 3 skipped in 0.43s ==============================\n",
+    "stderr": "",
+    "seconds": 0.8001866340637207
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.19104623794555664
+  },
+  {
+    "command": [
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug",
+      "--depper-run-all-on-error"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nDepper: Found 1 changed files\n  - requests/utils.py\n\n=== Dependency Analysis ===\n\nChanged file: requests/utils.py\n\nDepper: No tests affected by these changes\nRunning all tests (--depper-run-all-on-error enabled).\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_header_injection PASSED\ntests/test_security.py::test_valid_header_passes PASSED\n\n=================================== PASSES ====================================\n=========================== short test summary info ===========================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_security_rejects_header_injection\nPASSED tests/test_security.py::test_valid_header_passes\n============================== 3 passed in 0.43s ==============================\n",
+    "stderr": "",
+    "seconds": 0.7693781852722168
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.11051297187805176
+  },
+  {
+    "command": [
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\nrootdir: <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... collected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_header_injection PASSED\ntests/test_security.py::test_valid_header_passes PASSED\n\n=================================== PASSES ====================================\n=========================== short test summary info ===========================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_security_rejects_header_injection\nPASSED tests/test_security.py::test_valid_header_passes\n============================== 3 passed in 0.07s ==============================\n",
+    "stderr": "",
+    "seconds": 0.47428035736083984
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.11405038833618164
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "--detach",
+      "f55a6377923fef63d0b74e804f8c6842067ac4f8"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "HEAD is now at f55a637 Exact recovered trusted baseline\n",
+    "seconds": 0.12839221954345703
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "-c",
+      "ordinary"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Switched to a new branch 'ordinary'\n",
+    "seconds": 0.12221312522888184
+  },
+  {
+    "command": [
+      "git",
+      "add",
+      "--",
+      "requests/utils.py"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.12050342559814453
+  },
+  {
+    "command": [
+      "git",
+      "commit",
+      "-m",
+      "Original ordinary source snapshot"
+    ],
+    "returncode": 0,
+    "stdout": "[ordinary b19e33f] Original ordinary source snapshot\n 1 file changed, 1 insertion(+), 1 deletion(-)\n",
+    "stderr": "",
+    "seconds": 0.29087042808532715
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--name-only",
+      "main...HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "requests/utils.py\n",
+    "stderr": "",
+    "seconds": 0.14183640480041504
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.15111565589904785
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "b19e33ff618054bf7aee58d9ecd527267ca0f80b\n",
+    "stderr": "",
+    "seconds": 0.10383319854736328
+  },
+  {
+    "command": [
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nDepper: Found 1 changed files\n  - requests/utils.py\n\n=== Symbol-Level Dependency Analysis ===\n\nChanged file: requests/utils.py\n  Changed symbols: {'_validate_header_part'}\n\nDepper: No tests affected by these changes\nDeselecting all tests. This may indicate missing test coverage.\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive SKIPPED (No tests\naffected by changes)\ntests/test_security.py::test_security_rejects_header_injection SKIPPED\ntests/test_security.py::test_valid_header_passes SKIPPED (No tests\naffected by changes)\n\n=========================== short test summary info ===========================\nSKIPPED [1] tests\\test_meta.py: No tests affected by changes\nSKIPPED [2] tests\\test_security.py: No tests affected by changes\n============================= 3 skipped in 0.56s ==============================\n",
+    "stderr": "",
+    "seconds": 0.8663363456726074
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.11225342750549316
+  },
+  {
+    "command": [
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug",
+      "--depper-run-all-on-error"
+    ],
+    "returncode": 1,
+    "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nDepper: Found 1 changed files\n  - requests/utils.py\n\n=== Symbol-Level Dependency Analysis ===\n\nChanged file: requests/utils.py\n  Changed symbols: {'_validate_header_part'}\n\nDepper: No tests affected by these changes\nRunning all tests (--depper-run-all-on-error enabled).\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_header_injection FAILED\ntests/test_security.py::test_valid_header_passes PASSED\n\n================================== FAILURES ===================================\n___________________ test_security_rejects_header_injection ____________________\n\n    def test_security_rejects_header_injection():\n>       with pytest.raises(InvalidHeader):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE <class 'requests.exceptions.InvalidHeader'>\n\ntests\\test_security.py:6: Failed\n=================================== PASSES ====================================\n=========================== short test summary info ===========================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_valid_header_passes\nFAILED tests/test_security.py::test_security_rejects_header_injection - Failed: DID NOT RAISE <class 'requests.exceptions.InvalidHeader'>\n========================= 1 failed, 2 passed in 0.46s =========================\n",
+    "stderr": "",
+    "seconds": 0.7871925830841064
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.11249089241027832
+  },
+  {
+    "command": [
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no"
+    ],
+    "returncode": 1,
+    "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\nrootdir: <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... collected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_header_injection FAILED\ntests/test_security.py::test_valid_header_passes PASSED\n\n================================== FAILURES ===================================\n___________________ test_security_rejects_header_injection ____________________\n\n    def test_security_rejects_header_injection():\n>       with pytest.raises(InvalidHeader):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE <class 'requests.exceptions.InvalidHeader'>\n\ntests\\test_security.py:6: Failed\n=================================== PASSES ====================================\n=========================== short test summary info ===========================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_valid_header_passes\nFAILED tests/test_security.py::test_security_rejects_header_injection - Failed: DID NOT RAISE <class 'requests.exceptions.InvalidHeader'>\n========================= 1 failed, 2 passed in 0.11s =========================\n",
+    "stderr": "",
+    "seconds": 0.4286339282989502
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.1232905387878418
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "--detach",
+      "f55a6377923fef63d0b74e804f8c6842067ac4f8"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "HEAD is now at f55a637 Exact recovered trusted baseline\n",
+    "seconds": 0.11742019653320312
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "-c",
+      "collision"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Switched to a new branch 'collision'\n",
+    "seconds": 0.11626577377319336
+  },
+  {
+    "command": [
+      "git",
+      "add",
+      "--",
+      "requests/utils.py"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.11303424835205078
+  },
+  {
+    "command": [
+      "git",
+      "commit",
+      "-m",
+      "Original collision source snapshot"
+    ],
+    "returncode": 0,
+    "stdout": "[collision d1d07b1] Original collision source snapshot\n 1 file changed, 2 insertions(+), 1 deletion(-)\n",
+    "stderr": "",
+    "seconds": 0.1964702606201172
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--name-only",
+      "main...HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "requests/utils.py\n",
+    "stderr": "",
+    "seconds": 0.10991740226745605
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.13029766082763672
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "d1d07b185307effd410d8a2d74c66dfe80f7764e\n",
+    "stderr": "",
+    "seconds": 0.10387969017028809
+  },
+  {
+    "command": [
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nDepper: Found 1 changed files\n  - requests/utils.py\n\n=== Symbol-Level Dependency Analysis ===\n\nChanged file: requests/utils.py\n  Changed symbols: {'_validate_header_part'}\n\nDepper: No tests affected by these changes\nDeselecting all tests. This may indicate missing test coverage.\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive SKIPPED (No tests\naffected by changes)\ntests/test_security.py::test_security_rejects_header_injection SKIPPED\ntests/test_security.py::test_valid_header_passes SKIPPED (No tests\naffected by changes)\n\n=========================== short test summary info ===========================\nSKIPPED [1] tests\\test_meta.py: No tests affected by changes\nSKIPPED [2] tests\\test_security.py: No tests affected by changes\n============================= 3 skipped in 0.46s ==============================\n",
+    "stderr": "",
+    "seconds": 0.7745802402496338
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.11211633682250977
+  },
+  {
+    "command": [
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug",
+      "--depper-run-all-on-error"
+    ],
+    "returncode": 1,
+    "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nDepper: Found 1 changed files\n  - requests/utils.py\n\n=== Symbol-Level Dependency Analysis ===\n\nChanged file: requests/utils.py\n  Changed symbols: {'_validate_header_part'}\n\nDepper: No tests affected by these changes\nRunning all tests (--depper-run-all-on-error enabled).\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_header_injection FAILED\ntests/test_security.py::test_valid_header_passes PASSED\n\n================================== FAILURES ===================================\n___________________ test_security_rejects_header_injection ____________________\n\n    def test_security_rejects_header_injection():\n>       with pytest.raises(InvalidHeader):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE <class 'requests.exceptions.InvalidHeader'>\n\ntests\\test_security.py:6: Failed\n=================================== PASSES ====================================\n=========================== short test summary info ===========================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_valid_header_passes\nFAILED tests/test_security.py::test_security_rejects_header_injection - Failed: DID NOT RAISE <class 'requests.exceptions.InvalidHeader'>\n========================= 1 failed, 2 passed in 0.49s =========================\n",
+    "stderr": "",
+    "seconds": 0.8171453475952148
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.12648534774780273
+  },
+  {
+    "command": [
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no"
+    ],
+    "returncode": 1,
+    "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\nrootdir: <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... collected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_header_injection FAILED\ntests/test_security.py::test_valid_header_passes PASSED\n\n================================== FAILURES ===================================\n___________________ test_security_rejects_header_injection ____________________\n\n    def test_security_rejects_header_injection():\n>       with pytest.raises(InvalidHeader):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE <class 'requests.exceptions.InvalidHeader'>\n\ntests\\test_security.py:6: Failed\n=================================== PASSES ====================================\n=========================== short test summary info ===========================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_valid_header_passes\nFAILED tests/test_security.py::test_security_rejects_header_injection - Failed: DID NOT RAISE <class 'requests.exceptions.InvalidHeader'>\n========================= 1 failed, 2 passed in 0.12s =========================\n",
+    "stderr": "",
+    "seconds": 0.5251283645629883
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.14472413063049316
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "--detach",
+      "f55a6377923fef63d0b74e804f8c6842067ac4f8"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "HEAD is now at f55a637 Exact recovered trusted baseline\n",
+    "seconds": 0.11796879768371582
+  },
+  {
+    "command": [
+      "git",
+      "bundle",
+      "create",
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\history.bundle",
+      "--all"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.19789624214172363
+  }
+]

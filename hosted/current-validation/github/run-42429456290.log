@@ -1,0 +1,954 @@
+testmon-required	Set up job	﻿2026-11-08T00:22:31.4555778Z Current runner version: '2.338.2'
+testmon-required	Set up job	2026-11-08T00:22:31.4585085Z ##[group]Runner Image Provisioner
+testmon-required	Set up job	2026-11-08T00:22:31.4586165Z Hosted Compute Agent
+testmon-required	Set up job	2026-11-08T00:22:31.4586884Z Version: 20261028.624
+testmon-required	Set up job	2026-11-08T00:22:31.4587735Z Commit: 54898b74c23fde5556c9b3c3a2290865feef0dfe
+testmon-required	Set up job	2026-11-08T00:22:31.4588907Z Build Date: 2026-10-28T21:51:42Z
+testmon-required	Set up job	2026-11-08T00:22:31.4589764Z Worker ID: {70ff4811-6570-4439-9b4c-3e81f9a67a03}
+testmon-required	Set up job	2026-11-08T00:22:31.4590817Z Region: westus3
+testmon-required	Set up job	2026-11-08T00:22:31.4591503Z Cloud: Azure
+testmon-required	Set up job	2026-11-08T00:22:31.4592339Z ##[endgroup]
+testmon-required	Set up job	2026-11-08T00:22:31.4594142Z ##[group]Operating System
+testmon-required	Set up job	2026-11-08T00:22:31.4594910Z Ubuntu
+testmon-required	Set up job	2026-11-08T00:22:31.4595660Z 24.04.5
+testmon-required	Set up job	2026-11-08T00:22:31.4596286Z LTS
+testmon-required	Set up job	2026-11-08T00:22:31.4596973Z ##[endgroup]
+testmon-required	Set up job	2026-11-08T00:22:31.4597683Z ##[group]Runner Image
+testmon-required	Set up job	2026-11-08T00:22:31.4598744Z Image: ubuntu-24.04
+testmon-required	Set up job	2026-11-08T00:22:31.4599595Z Version: 20261101.360.1
+testmon-required	Set up job	2026-11-08T00:22:31.4600940Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261101.360/images/ubuntu/Ubuntu2404-Readme.md
+testmon-required	Set up job	2026-11-08T00:22:31.4603435Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261101.360
+testmon-required	Set up job	2026-11-08T00:22:31.4604698Z ##[endgroup]
+testmon-required	Set up job	2026-11-08T00:22:31.4606171Z ##[group]GITHUB_TOKEN Permissions
+testmon-required	Set up job	2026-11-08T00:22:31.4608449Z Contents: read
+testmon-required	Set up job	2026-11-08T00:22:31.4609400Z Metadata: read
+testmon-required	Set up job	2026-11-08T00:22:31.4610150Z ##[endgroup]
+testmon-required	Set up job	2026-11-08T00:22:31.4612598Z Secret source: Actions
+testmon-required	Set up job	2026-11-08T00:22:31.4613752Z Cache mode: write
+testmon-required	Set up job	2026-11-08T00:22:31.4614594Z Prepare workflow directory
+testmon-required	Set up job	2026-11-08T00:22:31.5295854Z Prepare all required actions
+testmon-required	Set up job	2026-11-08T00:22:31.5351880Z Getting action download info
+testmon-required	Set up job	2026-11-08T00:22:31.8778753Z Download action repository 'actions/checkout@11d5960a326750d5838078e36cf38b85af677262' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+testmon-required	Set up job	2026-11-08T00:22:31.9803258Z Download action repository 'actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+testmon-required	Set up job	2026-11-08T00:22:32.1506273Z Download action repository 'actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+testmon-required	Set up job	2026-11-08T00:22:32.4747805Z Complete job name: testmon-required
+testmon-required	Require isolated private same-repository inputs	﻿2026-11-08T00:22:32.5368939Z ##[group]Run test "$PRIVATE" = true
+testmon-required	Require isolated private same-repository inputs	2026-11-08T00:22:32.5369957Z [36;1mtest "$PRIVATE" = true[0m
+testmon-required	Require isolated private same-repository inputs	2026-11-08T00:22:32.5370837Z [36;1mtest "$BASE_REPO" = "$HEAD_REPO"[0m
+testmon-required	Require isolated private same-repository inputs	2026-11-08T00:22:32.5392427Z shell: /usr/bin/bash -e {0}
+testmon-required	Require isolated private same-repository inputs	2026-11-08T00:22:32.5393395Z env:
+testmon-required	Require isolated private same-repository inputs	2026-11-08T00:22:32.5394108Z   BASE_SHA: 1d63949857934672de5c13f543174b4dbf0fd7ce
+testmon-required	Require isolated private same-repository inputs	2026-11-08T00:22:32.5395183Z   HEAD_SHA: 9df3cfb451d724850a3cdf6ebc4f57f69968418e
+testmon-required	Require isolated private same-repository inputs	2026-11-08T00:22:32.5396128Z   MODE: selective
+testmon-required	Require isolated private same-repository inputs	2026-11-08T00:22:32.5397017Z   FROZEN_BOOTSTRAP_BASE: edb0a2968fb5149dbc6d6f99f292d3174c840ef3
+testmon-required	Require isolated private same-repository inputs	2026-11-08T00:22:32.5398251Z   PYTHONHASHSEED: 0
+testmon-required	Require isolated private same-repository inputs	2026-11-08T00:22:32.5399143Z   PYTHONDONTWRITEBYTECODE: 1
+testmon-required	Require isolated private same-repository inputs	2026-11-08T00:22:32.5399955Z   PYTEST_DISABLE_PLUGIN_AUTOLOAD: 1
+testmon-required	Require isolated private same-repository inputs	2026-11-08T00:22:32.5400774Z   PRIVATE: true
+testmon-required	Require isolated private same-repository inputs	2026-11-08T00:22:32.5401744Z   BASE_REPO: anonymous-owner/ci-selection-testbed
+testmon-required	Require isolated private same-repository inputs	2026-11-08T00:22:32.5403171Z   HEAD_REPO: anonymous-owner/ci-selection-testbed
+testmon-required	Require isolated private same-repository inputs	2026-11-08T00:22:32.5404285Z ##[endgroup]
+testmon-required	Checkout exact trusted base	﻿2026-11-08T00:22:32.5743444Z ##[group]Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.5744626Z with:
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.5745301Z   ref: 1d63949857934672de5c13f543174b4dbf0fd7ce
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.5746190Z   fetch-depth: 0
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.5746873Z   persist-credentials: false
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.5747631Z   path: trusted
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.5748787Z   repository: anonymous-owner/ci-selection-testbed
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.5755473Z   token: ***
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.5756116Z   ssh-strict: true
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.5756770Z   ssh-user: git
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.5757404Z   clean: true
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.5758156Z   sparse-checkout-cone-mode: true
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.5758981Z   fetch-tags: false
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.5759674Z   show-progress: true
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.5760628Z   lfs: false
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.5761243Z   submodules: false
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.5761934Z   set-safe-directory: true
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.5762704Z   allow-unsafe-pr-checkout: false
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.5763473Z env:
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.5764181Z   BASE_SHA: 1d63949857934672de5c13f543174b4dbf0fd7ce
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.5765206Z   HEAD_SHA: 9df3cfb451d724850a3cdf6ebc4f57f69968418e
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.5766127Z   MODE: selective
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.5766992Z   FROZEN_BOOTSTRAP_BASE: edb0a2968fb5149dbc6d6f99f292d3174c840ef3
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.5768138Z   PYTHONHASHSEED: 0
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.5768840Z   PYTHONDONTWRITEBYTECODE: 1
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.5769637Z   PYTEST_DISABLE_PLUGIN_AUTOLOAD: 1
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.5770433Z ##[endgroup]
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.8594768Z Syncing repository: anonymous-owner/ci-selection-testbed
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.8604148Z ##[group]Getting Git version info
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.8607253Z Working directory is '/home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted'
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.8623454Z [command]/usr/bin/git version
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.8624598Z git version 2.56.0
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.8628959Z ##[endgroup]
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.8635269Z Temporarily overriding HOME='/home/runner/work/_temp/75d48647-af04-442a-8043-22d39cdb2a0d' before making global git config changes
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.8647114Z Adding repository directory to the temporary git global config as a safe directory
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.8658577Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.8664833Z ##[group]Initializing the repository
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.8673232Z [command]/usr/bin/git init /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.8763181Z hint: Using 'master' as the name for the initial branch. This default branch name
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.8765263Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.8768733Z hint: to use in all of your new repositories, which will suppress this warning,
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.8770220Z hint: call:
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.8771331Z hint:
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.8772500Z hint: 	git config --global init.defaultBranch <name>
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.8773691Z hint:
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.8775249Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.8777150Z hint: 'development'. The just-created branch can be renamed via this command:
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.8784258Z hint:
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.8789812Z hint: 	git branch -m <name>
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.8790920Z hint:
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.8792303Z hint: Disable this message with "git config set advice.defaultBranchName false"
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.8795068Z Initialized empty Git repository in /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.git/
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.8799856Z [command]/usr/bin/git remote add origin https://example.invalid/anonymous-research/ci-selection-testbed
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.8846638Z ##[endgroup]
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.8850508Z ##[group]Disabling automatic garbage collection
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.8852316Z [command]/usr/bin/git config --local gc.auto 0
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.8892251Z ##[endgroup]
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.8894139Z ##[group]Setting up auth
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.8896291Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.8922499Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.9338494Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.9344597Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.9537399Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.9562908Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.9766223Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.9802172Z ##[endgroup]
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.9803863Z ##[group]Fetching the repository
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:32.9812542Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6343737Z From https://example.invalid/anonymous-research/ci-selection-testbed
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6344924Z  * [new branch]      main                 -> origin/main
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6345646Z  * [new branch]      setup/original-cases -> origin/setup/original-cases
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6346760Z  * [new branch]      trial/itsdangerous_expiry/collision -> origin/trial/itsdangerous_expiry/collision
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6348127Z  * [new branch]      trial/itsdangerous_expiry/ordinary -> origin/trial/itsdangerous_expiry/ordinary
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6349289Z  * [new branch]      trial/requests_crlf_header/collision -> origin/trial/requests_crlf_header/collision
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6350406Z  * [new branch]      trial/requests_crlf_header/ordinary -> origin/trial/requests_crlf_header/ordinary
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6351554Z  * [new branch]      trial/starlette_trusted_host/collision -> origin/trial/starlette_trusted_host/collision
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6352724Z  * [new branch]      trial/starlette_trusted_host/ordinary -> origin/trial/starlette_trusted_host/ordinary
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6357855Z [command]/usr/bin/git rev-parse --verify --quiet 1d63949857934672de5c13f543174b4dbf0fd7ce^{object}
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6388207Z 1d63949857934672de5c13f543174b4dbf0fd7ce
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6398083Z ##[endgroup]
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6399234Z ##[group]Determining the checkout info
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6400516Z ##[endgroup]
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6401273Z [command]/usr/bin/git sparse-checkout disable
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6442534Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6471096Z ##[group]Checking out the ref
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6474570Z [command]/usr/bin/git checkout --progress --force 1d63949857934672de5c13f543174b4dbf0fd7ce
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6559814Z Note: switching to '1d63949857934672de5c13f543174b4dbf0fd7ce'.
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6560486Z 
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6568884Z You are in 'detached HEAD' state. You can look around, make experimental
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6570425Z changes and commit them, and you can discard any commits you make in this
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6572631Z state without impacting any branches by switching back to a branch.
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6573599Z 
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6574556Z If you want to create a new branch to retain commits you create, you may
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6575767Z do so (now or later) by using -c with the switch command. Example:
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6577005Z 
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6577504Z   git switch -c <new-branch-name>
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6578620Z 
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6579177Z Or undo this operation with:
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6580007Z 
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6580463Z   git switch -
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6581243Z 
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6581987Z Turn off this advice by setting config variable advice.detachedHead to false
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6583012Z 
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6583602Z HEAD is now at 1d63949 Initialize private validation baseline
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6587855Z ##[endgroup]
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6611134Z [command]/usr/bin/git log -1 --format=%H
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6633673Z 1d63949857934672de5c13f543174b4dbf0fd7ce
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6651445Z ##[group]Removing auth
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6652813Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6675436Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6986753Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6987805Z http.https://github.com/.extraheader
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6989590Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.6991927Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.7169963Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.7197592Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+testmon-required	Checkout exact trusted base	2026-11-08T00:22:33.7409175Z ##[endgroup]
+testmon-required	Checkout exact candidate	﻿2026-11-08T00:22:33.7662675Z ##[group]Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.7663153Z with:
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.7663497Z   ref: 9df3cfb451d724850a3cdf6ebc4f57f69968418e
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.7663884Z   fetch-depth: 0
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.7664215Z   persist-credentials: false
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.7664559Z   path: candidate
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.7664969Z   repository: anonymous-owner/ci-selection-testbed
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.7667117Z   token: ***
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.7667432Z   ssh-strict: true
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.7667756Z   ssh-user: git
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.7668312Z   clean: true
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.7668781Z   sparse-checkout-cone-mode: true
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.7669141Z   fetch-tags: false
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.7669462Z   show-progress: true
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.7669786Z   lfs: false
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.7670094Z   submodules: false
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.7670453Z   set-safe-directory: true
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.7670807Z   allow-unsafe-pr-checkout: false
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.7671159Z env:
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.7671524Z   BASE_SHA: 1d63949857934672de5c13f543174b4dbf0fd7ce
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.7671942Z   HEAD_SHA: 9df3cfb451d724850a3cdf6ebc4f57f69968418e
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.7672325Z   MODE: selective
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.7672716Z   FROZEN_BOOTSTRAP_BASE: edb0a2968fb5149dbc6d6f99f292d3174c840ef3
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.7673207Z   PYTHONHASHSEED: 0
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.7673553Z   PYTHONDONTWRITEBYTECODE: 1
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.7673924Z   PYTEST_DISABLE_PLUGIN_AUTOLOAD: 1
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.7674278Z ##[endgroup]
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.8411698Z Syncing repository: anonymous-owner/ci-selection-testbed
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.8415592Z ##[group]Getting Git version info
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.8417321Z Working directory is '/home/runner/work/ci-selection-testbed/ci-selection-testbed/candidate'
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.8445634Z [command]/usr/bin/git version
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.8481428Z git version 2.56.0
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.8498120Z ##[endgroup]
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.8508434Z Temporarily overriding HOME='/home/runner/work/_temp/7be4342e-b3d5-42bd-ac0e-9f00f91eebfa' before making global git config changes
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.8510253Z Adding repository directory to the temporary git global config as a safe directory
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.8551520Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ci-selection-testbed/ci-selection-testbed/candidate
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.8583995Z ##[group]Initializing the repository
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.8588539Z [command]/usr/bin/git init /home/runner/work/ci-selection-testbed/ci-selection-testbed/candidate
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.8632652Z hint: Using 'master' as the name for the initial branch. This default branch name
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.8635633Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.8637588Z hint: to use in all of your new repositories, which will suppress this warning,
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.8639131Z hint: call:
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.8641402Z hint:
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.8642440Z hint: 	git config --global init.defaultBranch <name>
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.8643600Z hint:
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.8644493Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.8645868Z hint: 'development'. The just-created branch can be renamed via this command:
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.8648539Z hint:
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.8653190Z hint: 	git branch -m <name>
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.8656696Z hint:
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.8658240Z hint: Disable this message with "git config set advice.defaultBranchName false"
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.8660081Z Initialized empty Git repository in /home/runner/work/ci-selection-testbed/ci-selection-testbed/candidate/.git/
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.8663651Z [command]/usr/bin/git remote add origin https://example.invalid/anonymous-research/ci-selection-testbed
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.8687702Z ##[endgroup]
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.8689053Z ##[group]Disabling automatic garbage collection
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.8689796Z [command]/usr/bin/git config --local gc.auto 0
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.8718491Z ##[endgroup]
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.8719504Z ##[group]Setting up auth
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.8725899Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.8751167Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.8979899Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.9003522Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.9216568Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.9239634Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.9474031Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.9487086Z ##[endgroup]
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.9488699Z ##[group]Fetching the repository
+testmon-required	Checkout exact candidate	2026-11-08T00:22:33.9496209Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.5822488Z From https://example.invalid/anonymous-research/ci-selection-testbed
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.5823874Z  * [new branch]      main                 -> origin/main
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.5832285Z  * [new branch]      setup/original-cases -> origin/setup/original-cases
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.5833706Z  * [new branch]      trial/itsdangerous_expiry/collision -> origin/trial/itsdangerous_expiry/collision
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.5835368Z  * [new branch]      trial/itsdangerous_expiry/ordinary -> origin/trial/itsdangerous_expiry/ordinary
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.5836734Z  * [new branch]      trial/requests_crlf_header/collision -> origin/trial/requests_crlf_header/collision
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.5838576Z  * [new branch]      trial/requests_crlf_header/ordinary -> origin/trial/requests_crlf_header/ordinary
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.5841441Z  * [new branch]      trial/starlette_trusted_host/collision -> origin/trial/starlette_trusted_host/collision
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.5842450Z  * [new branch]      trial/starlette_trusted_host/ordinary -> origin/trial/starlette_trusted_host/ordinary
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.5843943Z [command]/usr/bin/git rev-parse --verify --quiet 9df3cfb451d724850a3cdf6ebc4f57f69968418e^{object}
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.5844634Z 9df3cfb451d724850a3cdf6ebc4f57f69968418e
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.5846097Z ##[endgroup]
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.5846650Z ##[group]Determining the checkout info
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.5847262Z ##[endgroup]
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.5848801Z [command]/usr/bin/git sparse-checkout disable
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.5879262Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.5906749Z ##[group]Checking out the ref
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.5909977Z [command]/usr/bin/git checkout --progress --force 9df3cfb451d724850a3cdf6ebc4f57f69968418e
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.5995095Z Note: switching to '9df3cfb451d724850a3cdf6ebc4f57f69968418e'.
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.5995883Z 
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.5996755Z You are in 'detached HEAD' state. You can look around, make experimental
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.5998163Z changes and commit them, and you can discard any commits you make in this
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.5999457Z state without impacting any branches by switching back to a branch.
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.6000363Z 
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.6001247Z If you want to create a new branch to retain commits you create, you may
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.6002378Z do so (now or later) by using -c with the switch command. Example:
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.6003520Z 
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.6005292Z   git switch -c <new-branch-name>
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.6005573Z 
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.6005768Z Or undo this operation with:
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.6006047Z 
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.6006191Z   git switch -
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.6006376Z 
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.6006799Z Turn off this advice by setting config variable advice.detachedHead to false
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.6007403Z 
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.6007660Z HEAD is now at 9df3cfb Case 3 collision source-only research condition
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.6008986Z ##[endgroup]
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.6032109Z [command]/usr/bin/git log -1 --format=%H
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.6055046Z 9df3cfb451d724850a3cdf6ebc4f57f69968418e
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.6064002Z ##[group]Removing auth
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.6067472Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.6094590Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.6301386Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.6325143Z http.https://github.com/.extraheader
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.6327757Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.6390575Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.6581471Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.6606723Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+testmon-required	Checkout exact candidate	2026-11-08T00:22:34.6807728Z ##[endgroup]
+testmon-required	Set up Python	﻿2026-11-08T00:22:34.6971076Z ##[group]Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+testmon-required	Set up Python	2026-11-08T00:22:34.6971448Z with:
+testmon-required	Set up Python	2026-11-08T00:22:34.6971662Z   python-version: 3.13
+testmon-required	Set up Python	2026-11-08T00:22:34.6971893Z   check-latest: false
+testmon-required	Set up Python	2026-11-08T00:22:34.6973678Z   token: ***
+testmon-required	Set up Python	2026-11-08T00:22:34.6973888Z   update-environment: true
+testmon-required	Set up Python	2026-11-08T00:22:34.6974122Z   allow-prereleases: false
+testmon-required	Set up Python	2026-11-08T00:22:34.6974360Z   freethreaded: false
+testmon-required	Set up Python	2026-11-08T00:22:34.6974573Z env:
+testmon-required	Set up Python	2026-11-08T00:22:34.6974795Z   BASE_SHA: 1d63949857934672de5c13f543174b4dbf0fd7ce
+testmon-required	Set up Python	2026-11-08T00:22:34.6975103Z   HEAD_SHA: 9df3cfb451d724850a3cdf6ebc4f57f69968418e
+testmon-required	Set up Python	2026-11-08T00:22:34.6975374Z   MODE: selective
+testmon-required	Set up Python	2026-11-08T00:22:34.6975642Z   FROZEN_BOOTSTRAP_BASE: edb0a2968fb5149dbc6d6f99f292d3174c840ef3
+testmon-required	Set up Python	2026-11-08T00:22:34.6975952Z   PYTHONHASHSEED: 0
+testmon-required	Set up Python	2026-11-08T00:22:34.6976173Z   PYTHONDONTWRITEBYTECODE: 1
+testmon-required	Set up Python	2026-11-08T00:22:34.6976420Z   PYTEST_DISABLE_PLUGIN_AUTOLOAD: 1
+testmon-required	Set up Python	2026-11-08T00:22:34.6976821Z ##[endgroup]
+testmon-required	Set up Python	2026-11-08T00:22:34.8103725Z ##[group]Installed versions
+testmon-required	Set up Python	2026-11-08T00:22:34.8214615Z (node:2339) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+testmon-required	Set up Python	2026-11-08T00:22:34.8215427Z Successfully set up CPython (3.13.18)
+testmon-required	Set up Python	2026-11-08T00:22:34.8216758Z (Use `node --trace-deprecation ...` to show where the warning was created)
+testmon-required	Set up Python	2026-11-08T00:22:34.8217554Z ##[endgroup]
+testmon-required	Select immutable runner and dependencies	﻿2026-11-08T00:22:34.8373399Z ##[group]Run if [ "$BASE_SHA" = "$FROZEN_BOOTSTRAP_BASE" ]; then
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:34.8373872Z [36;1mif [ "$BASE_SHA" = "$FROZEN_BOOTSTRAP_BASE" ]; then[0m
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:34.8374230Z [36;1m  test ! -e trusted/.experiment/manifest.json[0m
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:34.8374546Z [36;1m  INPUT_ROOT="$GITHUB_WORKSPACE/candidate"[0m
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:34.8374846Z [36;1m  echo "MODE=bootstrap" >> "$GITHUB_ENV"[0m
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:34.8375110Z [36;1melse[0m
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:34.8375335Z [36;1m  INPUT_ROOT="$GITHUB_WORKSPACE/trusted"[0m
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:34.8375694Z [36;1m  git -C "$INPUT_ROOT" fetch "$GITHUB_WORKSPACE/candidate" "$HEAD_SHA"[0m
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:34.8376019Z [36;1mfi[0m
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:34.8376298Z [36;1mcp -R "$INPUT_ROOT/.experiment/runtime" "$RUNNER_TEMP/runtime"[0m
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:34.8376630Z [36;1mmkdir -p "$RUNNER_TEMP/evidence"[0m
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:34.8376918Z [36;1mecho "REPO_DIR=$INPUT_ROOT" >> "$GITHUB_ENV"[0m
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:34.8377250Z [36;1mecho "EVIDENCE_DIR=$RUNNER_TEMP/evidence" >> "$GITHUB_ENV"[0m
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:34.8377604Z [36;1mpython -m venv "$RUNNER_TEMP/venv"[0m
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:34.8378561Z [36;1m"$RUNNER_TEMP/venv/bin/python" -m pip install --only-binary=:all: --require-hashes --report "$RUNNER_TEMP/evidence/pip-install.json" -r "$INPUT_ROOT/.experiment/requirements.lock"[0m
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:34.8379336Z [36;1m"$RUNNER_TEMP/venv/bin/python" -m pip freeze --all > "$RUNNER_TEMP/evidence/pip-freeze.txt"[0m
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:34.8407615Z shell: /usr/bin/bash -e {0}
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:34.8408154Z env:
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:34.8408411Z   BASE_SHA: 1d63949857934672de5c13f543174b4dbf0fd7ce
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:34.8408725Z   HEAD_SHA: 9df3cfb451d724850a3cdf6ebc4f57f69968418e
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:34.8408995Z   MODE: selective
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:34.8409270Z   FROZEN_BOOTSTRAP_BASE: edb0a2968fb5149dbc6d6f99f292d3174c840ef3
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:34.8409585Z   PYTHONHASHSEED: 0
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:34.8409808Z   PYTHONDONTWRITEBYTECODE: 1
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:34.8410057Z   PYTEST_DISABLE_PLUGIN_AUTOLOAD: 1
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:34.8410356Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.18/x64
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:34.8410730Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.18/x64/lib/pkgconfig
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:34.8411109Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:34.8411441Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:34.8411775Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:34.8412115Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.18/x64/lib
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:34.8412409Z ##[endgroup]
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:34.8529402Z From /home/runner/work/ci-selection-testbed/ci-selection-testbed/candidate
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:34.8530647Z  * branch            9df3cfb451d724850a3cdf6ebc4f57f69968418e -> FETCH_HEAD
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:37.8150090Z Collecting anyio==4.16.0 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 1))
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:37.8561478Z   Downloading anyio-4.16.0-py3-none-any.whl (134 kB)
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:37.8986437Z Collecting certifi==2026.10.23 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 2))
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:37.9018239Z   Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.0076246Z Collecting charset-normalizer==3.5.2 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 3))
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.0115183Z   Downloading charset_normalizer-3.5.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (254 kB)
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.0333324Z Collecting colorama==0.4.6 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 4))
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.0365657Z   Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.3544372Z Collecting coverage==7.17.2 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 5))
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.3580266Z   Downloading coverage-7.17.2-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (262 kB)
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.3781424Z Collecting h11==0.16.0 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 6))
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.3813887Z   Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.4003212Z Collecting httpcore==1.0.9 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 7))
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.4036604Z   Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.4239933Z Collecting httpx==0.28.1 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 8))
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.4270459Z   Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.4452808Z Collecting idna==3.20 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 9))
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.4482783Z   Downloading idna-3.20-py3-none-any.whl (69 kB)
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.4644353Z Collecting iniconfig==2.3.1 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 10))
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.4676078Z   Downloading iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.4830100Z Collecting itsdangerous==2.2.0 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 11))
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.4861746Z   Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.5034962Z Collecting packaging==26.3 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 12))
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.5069323Z   Downloading packaging-26.3-py3-none-any.whl (129 kB)
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.5254625Z Collecting pluggy==1.7.0 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 13))
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.5283972Z   Downloading pluggy-1.7.0-py3-none-any.whl (27 kB)
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.5473472Z Collecting Pygments==2.21.0 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 14))
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.5504684Z   Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.5735411Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 54.4 MB/s  0:00:00
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.5978895Z Collecting pytest==9.0.2 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 15))
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.6024412Z   Downloading pytest-9.0.2-py3-none-any.whl (374 kB)
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.6221041Z Collecting pytest-depper==0.2.0 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 16))
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.6268345Z   Downloading pytest_depper-0.2.0-py3-none-any.whl (18 kB)
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.6467745Z Collecting pytest-testmon==2.3.0 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 17))
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.6503245Z   Downloading pytest_testmon-2.3.0-py3-none-any.whl (26 kB)
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.6712519Z Collecting requests==2.32.5 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 18))
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.6752960Z   Downloading requests-2.32.5-py3-none-any.whl (64 kB)
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.6977263Z Collecting starlette==0.50.0 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 19))
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.7008298Z   Downloading starlette-0.50.0-py3-none-any.whl (74 kB)
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.7199763Z Collecting typing_extensions==4.16.0 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 20))
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.7232966Z   Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.7431702Z Collecting urllib3==2.8.0 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 21))
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.7470910Z   Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:38.8145256Z Installing collected packages: urllib3, typing_extensions, Pygments, pluggy, packaging, itsdangerous, iniconfig, idna, h11, coverage, colorama, charset-normalizer, certifi, requests, pytest, httpcore, anyio, starlette, pytest-testmon, pytest-depper, httpx
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:40.3146242Z 
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:40.3168317Z Successfully installed Pygments-2.21.0 anyio-4.16.0 certifi-2026.10.23 charset-normalizer-3.5.2 colorama-0.4.6 coverage-7.17.2 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 idna-3.20 iniconfig-2.3.1 itsdangerous-2.2.0 packaging-26.3 pluggy-1.7.0 pytest-9.0.2 pytest-depper-0.2.0 pytest-testmon-2.3.0 requests-2.32.5 starlette-0.50.0 typing_extensions-4.16.0 urllib3-2.8.0
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:40.3175816Z 
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:40.3176520Z [notice] A new release of pip is available: 26.2.2 -> 26.3
+testmon-required	Select immutable runner and dependencies	2026-11-08T00:22:40.3177280Z [notice] To update, run: /home/runner/work/_temp/venv/bin/python -m pip install --upgrade pip
+testmon-required	Execute published selector and unchanged security tests	﻿2026-11-08T00:22:40.5765162Z ##[group]Run "$RUNNER_TEMP/venv/bin/python" "$RUNNER_TEMP/runtime/hosted_runner.py"
+testmon-required	Execute published selector and unchanged security tests	2026-11-08T00:22:40.5765624Z [36;1m"$RUNNER_TEMP/venv/bin/python" "$RUNNER_TEMP/runtime/hosted_runner.py"[0m
+testmon-required	Execute published selector and unchanged security tests	2026-11-08T00:22:40.5783220Z shell: /usr/bin/bash -e {0}
+testmon-required	Execute published selector and unchanged security tests	2026-11-08T00:22:40.5783420Z env:
+testmon-required	Execute published selector and unchanged security tests	2026-11-08T00:22:40.5783608Z   BASE_SHA: 1d63949857934672de5c13f543174b4dbf0fd7ce
+testmon-required	Execute published selector and unchanged security tests	2026-11-08T00:22:40.5783875Z   HEAD_SHA: 9df3cfb451d724850a3cdf6ebc4f57f69968418e
+testmon-required	Execute published selector and unchanged security tests	2026-11-08T00:22:40.5784104Z   MODE: selective
+testmon-required	Execute published selector and unchanged security tests	2026-11-08T00:22:40.5784340Z   FROZEN_BOOTSTRAP_BASE: edb0a2968fb5149dbc6d6f99f292d3174c840ef3
+testmon-required	Execute published selector and unchanged security tests	2026-11-08T00:22:40.5784612Z   PYTHONHASHSEED: 0
+testmon-required	Execute published selector and unchanged security tests	2026-11-08T00:22:40.5784787Z   PYTHONDONTWRITEBYTECODE: 1
+testmon-required	Execute published selector and unchanged security tests	2026-11-08T00:22:40.5784994Z   PYTEST_DISABLE_PLUGIN_AUTOLOAD: 1
+testmon-required	Execute published selector and unchanged security tests	2026-11-08T00:22:40.5785244Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.18/x64
+testmon-required	Execute published selector and unchanged security tests	2026-11-08T00:22:40.5785575Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.18/x64/lib/pkgconfig
+testmon-required	Execute published selector and unchanged security tests	2026-11-08T00:22:40.5785890Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+testmon-required	Execute published selector and unchanged security tests	2026-11-08T00:22:40.5786201Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+testmon-required	Execute published selector and unchanged security tests	2026-11-08T00:22:40.5786489Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+testmon-required	Execute published selector and unchanged security tests	2026-11-08T00:22:40.5786928Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.18/x64/lib
+testmon-required	Execute published selector and unchanged security tests	2026-11-08T00:22:40.5787417Z   REPO_DIR: /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted
+testmon-required	Execute published selector and unchanged security tests	2026-11-08T00:22:40.5788262Z   EVIDENCE_DIR: /home/runner/work/_temp/evidence
+testmon-required	Execute published selector and unchanged security tests	2026-11-08T00:22:40.5788500Z ##[endgroup]
+testmon-required	Preserve raw private evidence	﻿2026-11-08T00:22:41.7841888Z ##[group]Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:41.7842225Z with:
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:41.7842408Z   name: selective-pr-7-attempt-1
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:41.7842633Z   path: /home/runner/work/_temp/evidence/
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:41.7842861Z   if-no-files-found: error
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:41.7843057Z   retention-days: 30
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:41.7843239Z   compression-level: 6
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:41.7843427Z   overwrite: false
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:41.7843607Z   include-hidden-files: false
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:41.7843799Z env:
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:41.7843972Z   BASE_SHA: 1d63949857934672de5c13f543174b4dbf0fd7ce
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:41.7844247Z   HEAD_SHA: 9df3cfb451d724850a3cdf6ebc4f57f69968418e
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:41.7844469Z   MODE: selective
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:41.7844691Z   FROZEN_BOOTSTRAP_BASE: edb0a2968fb5149dbc6d6f99f292d3174c840ef3
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:41.7844957Z   PYTHONHASHSEED: 0
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:41.7845133Z   PYTHONDONTWRITEBYTECODE: 1
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:41.7845342Z   PYTEST_DISABLE_PLUGIN_AUTOLOAD: 1
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:41.7845637Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.18/x64
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:41.7845966Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.18/x64/lib/pkgconfig
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:41.7846283Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:41.7846577Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:41.7846866Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:41.7847152Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.18/x64/lib
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:41.7847644Z   REPO_DIR: /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:41.7848292Z   EVIDENCE_DIR: /home/runner/work/_temp/evidence
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:41.7848524Z ##[endgroup]
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:41.9257789Z (node:2420) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:41.9259075Z (Use `node --trace-deprecation ...` to show where the warning was created)
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:41.9331861Z With the provided path, there will be 10 files uploaded
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:41.9334695Z Artifact name is valid!
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:41.9335379Z Root directory input is valid!
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:42.3103289Z Beginning upload of artifact content to blob storage
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:42.3586322Z (node:2420) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:42.6579510Z Uploaded bytes 79050
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:42.7134292Z Finished uploading artifact content to blob storage!
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:42.7135277Z SHA256 digest of uploaded artifact zip is e74679c4528f0e932d52169a88b949412251dafda41a6f9237e88e9f3d659f5f
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:42.7138049Z Finalizing artifact upload
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:43.2258658Z Artifact selective-pr-7-attempt-1.zip successfully finalized. Artifact ID 13597086493
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:43.2259960Z Artifact selective-pr-7-attempt-1 has been successfully uploaded! Final size is 79050 bytes. Artifact ID is 13597086493
+testmon-required	Preserve raw private evidence	2026-11-08T00:22:43.2261314Z Artifact download URL: https://example.invalid/anonymous-research/ci-selection-testbed/actions/runs/42429456290/artifacts/13597086493
+testmon-required	Post Set up Python	﻿2026-11-08T00:22:43.2460780Z Post job cleanup.
+testmon-required	Post Set up Python	2026-11-08T00:22:43.3512358Z (node:2432) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+testmon-required	Post Set up Python	2026-11-08T00:22:43.3513484Z (Use `node --trace-deprecation ...` to show where the warning was created)
+testmon-required	Post Checkout exact candidate	﻿2026-11-08T00:22:43.3637803Z Post job cleanup.
+testmon-required	Post Checkout exact candidate	2026-11-08T00:22:43.4348731Z [command]/usr/bin/git version
+testmon-required	Post Checkout exact candidate	2026-11-08T00:22:43.4384884Z git version 2.56.0
+testmon-required	Post Checkout exact candidate	2026-11-08T00:22:43.4451436Z Temporarily overriding HOME='/home/runner/work/_temp/c24b52b8-d0d2-4494-82cf-152b3fc8ab7d' before making global git config changes
+testmon-required	Post Checkout exact candidate	2026-11-08T00:22:43.4452669Z Adding repository directory to the temporary git global config as a safe directory
+testmon-required	Post Checkout exact candidate	2026-11-08T00:22:43.4454414Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ci-selection-testbed/ci-selection-testbed/candidate
+testmon-required	Post Checkout exact candidate	2026-11-08T00:22:43.4544044Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+testmon-required	Post Checkout exact candidate	2026-11-08T00:22:43.4587731Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+testmon-required	Post Checkout exact candidate	2026-11-08T00:22:43.4923391Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+testmon-required	Post Checkout exact candidate	2026-11-08T00:22:43.4981099Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+testmon-required	Post Checkout exact candidate	2026-11-08T00:22:43.5288191Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+testmon-required	Post Checkout exact candidate	2026-11-08T00:22:43.5331106Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+testmon-required	Post Checkout exact trusted base	﻿2026-11-08T00:22:43.5841283Z Post job cleanup.
+testmon-required	Post Checkout exact trusted base	2026-11-08T00:22:43.6618478Z [command]/usr/bin/git version
+testmon-required	Post Checkout exact trusted base	2026-11-08T00:22:43.6656339Z git version 2.56.0
+testmon-required	Post Checkout exact trusted base	2026-11-08T00:22:43.6720073Z Temporarily overriding HOME='/home/runner/work/_temp/39f4b1b9-7d31-43b5-b251-4b7d4d2ec442' before making global git config changes
+testmon-required	Post Checkout exact trusted base	2026-11-08T00:22:43.6721400Z Adding repository directory to the temporary git global config as a safe directory
+testmon-required	Post Checkout exact trusted base	2026-11-08T00:22:43.6724406Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted
+testmon-required	Post Checkout exact trusted base	2026-11-08T00:22:43.6759730Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+testmon-required	Post Checkout exact trusted base	2026-11-08T00:22:43.6793383Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+testmon-required	Post Checkout exact trusted base	2026-11-08T00:22:43.7045921Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+testmon-required	Post Checkout exact trusted base	2026-11-08T00:22:43.7078181Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+testmon-required	Post Checkout exact trusted base	2026-11-08T00:22:43.7292024Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+testmon-required	Post Checkout exact trusted base	2026-11-08T00:22:43.7386590Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+testmon-required	Complete job	﻿2026-11-08T00:22:43.7701216Z Cleaning up orphan processes
+testmon-required	Complete job	2026-11-08T00:22:43.7955816Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11d5960a326750d5838078e36cf38b85af677262, actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065, actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+full-suite-diagnostic	Set up job	﻿2026-11-08T00:22:31.9871110Z Current runner version: '2.338.2'
+full-suite-diagnostic	Set up job	2026-11-08T00:22:31.9892232Z ##[group]Runner Image Provisioner
+full-suite-diagnostic	Set up job	2026-11-08T00:22:31.9892937Z Hosted Compute Agent
+full-suite-diagnostic	Set up job	2026-11-08T00:22:31.9893304Z Version: 20261028.624
+full-suite-diagnostic	Set up job	2026-11-08T00:22:31.9893730Z Commit: 54898b74c23fde5556c9b3c3a2290865feef0dfe
+full-suite-diagnostic	Set up job	2026-11-08T00:22:31.9894211Z Build Date: 2026-10-28T21:51:42Z
+full-suite-diagnostic	Set up job	2026-11-08T00:22:31.9894623Z Worker ID: {814da06b-47f8-46b5-bb94-868aefeed370}
+full-suite-diagnostic	Set up job	2026-11-08T00:22:31.9895100Z Region: centralus
+full-suite-diagnostic	Set up job	2026-11-08T00:22:31.9895456Z Cloud: Azure
+full-suite-diagnostic	Set up job	2026-11-08T00:22:31.9895822Z ##[endgroup]
+full-suite-diagnostic	Set up job	2026-11-08T00:22:31.9896709Z ##[group]Operating System
+full-suite-diagnostic	Set up job	2026-11-08T00:22:31.9897089Z Ubuntu
+full-suite-diagnostic	Set up job	2026-11-08T00:22:31.9897490Z 24.04.5
+full-suite-diagnostic	Set up job	2026-11-08T00:22:31.9897820Z LTS
+full-suite-diagnostic	Set up job	2026-11-08T00:22:31.9898164Z ##[endgroup]
+full-suite-diagnostic	Set up job	2026-11-08T00:22:31.9898571Z ##[group]Runner Image
+full-suite-diagnostic	Set up job	2026-11-08T00:22:31.9898996Z Image: ubuntu-24.04
+full-suite-diagnostic	Set up job	2026-11-08T00:22:31.9899387Z Version: 20261101.360.1
+full-suite-diagnostic	Set up job	2026-11-08T00:22:31.9900020Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261101.360/images/ubuntu/Ubuntu2404-Readme.md
+full-suite-diagnostic	Set up job	2026-11-08T00:22:31.9901159Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261101.360
+full-suite-diagnostic	Set up job	2026-11-08T00:22:31.9901831Z ##[endgroup]
+full-suite-diagnostic	Set up job	2026-11-08T00:22:31.9902571Z ##[group]GITHUB_TOKEN Permissions
+full-suite-diagnostic	Set up job	2026-11-08T00:22:31.9903905Z Contents: read
+full-suite-diagnostic	Set up job	2026-11-08T00:22:31.9904360Z Metadata: read
+full-suite-diagnostic	Set up job	2026-11-08T00:22:31.9904719Z ##[endgroup]
+full-suite-diagnostic	Set up job	2026-11-08T00:22:31.9906105Z Secret source: Actions
+full-suite-diagnostic	Set up job	2026-11-08T00:22:31.9906757Z Cache mode: write
+full-suite-diagnostic	Set up job	2026-11-08T00:22:31.9907186Z Prepare workflow directory
+full-suite-diagnostic	Set up job	2026-11-08T00:22:32.0282993Z Prepare all required actions
+full-suite-diagnostic	Set up job	2026-11-08T00:22:32.0315243Z Getting action download info
+full-suite-diagnostic	Set up job	2026-11-08T00:22:32.2521030Z Download action repository 'actions/checkout@11d5960a326750d5838078e36cf38b85af677262' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+full-suite-diagnostic	Set up job	2026-11-08T00:22:32.3710634Z Download action repository 'actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+full-suite-diagnostic	Set up job	2026-11-08T00:22:32.5320654Z Download action repository 'actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+full-suite-diagnostic	Set up job	2026-11-08T00:22:32.8078141Z Complete job name: full-suite-diagnostic
+full-suite-diagnostic	Require isolated private same-repository inputs	﻿2026-11-08T00:22:32.9166058Z ##[group]Run test "$PRIVATE" = true
+full-suite-diagnostic	Require isolated private same-repository inputs	2026-11-08T00:22:32.9166534Z [36;1mtest "$PRIVATE" = true[0m
+full-suite-diagnostic	Require isolated private same-repository inputs	2026-11-08T00:22:32.9166852Z [36;1mtest "$BASE_REPO" = "$HEAD_REPO"[0m
+full-suite-diagnostic	Require isolated private same-repository inputs	2026-11-08T00:22:32.9185775Z shell: /usr/bin/bash -e {0}
+full-suite-diagnostic	Require isolated private same-repository inputs	2026-11-08T00:22:32.9186313Z env:
+full-suite-diagnostic	Require isolated private same-repository inputs	2026-11-08T00:22:32.9186600Z   BASE_SHA: 1d63949857934672de5c13f543174b4dbf0fd7ce
+full-suite-diagnostic	Require isolated private same-repository inputs	2026-11-08T00:22:32.9186981Z   HEAD_SHA: 9df3cfb451d724850a3cdf6ebc4f57f69968418e
+full-suite-diagnostic	Require isolated private same-repository inputs	2026-11-08T00:22:32.9187327Z   MODE: full
+full-suite-diagnostic	Require isolated private same-repository inputs	2026-11-08T00:22:32.9187646Z   FROZEN_BOOTSTRAP_BASE: edb0a2968fb5149dbc6d6f99f292d3174c840ef3
+full-suite-diagnostic	Require isolated private same-repository inputs	2026-11-08T00:22:32.9188027Z   PYTHONHASHSEED: 0
+full-suite-diagnostic	Require isolated private same-repository inputs	2026-11-08T00:22:32.9188295Z   PYTHONDONTWRITEBYTECODE: 1
+full-suite-diagnostic	Require isolated private same-repository inputs	2026-11-08T00:22:32.9188591Z   PYTEST_DISABLE_PLUGIN_AUTOLOAD: 1
+full-suite-diagnostic	Require isolated private same-repository inputs	2026-11-08T00:22:32.9188884Z   PRIVATE: true
+full-suite-diagnostic	Require isolated private same-repository inputs	2026-11-08T00:22:32.9189250Z   BASE_REPO: anonymous-owner/ci-selection-testbed
+full-suite-diagnostic	Require isolated private same-repository inputs	2026-11-08T00:22:32.9189734Z   HEAD_REPO: anonymous-owner/ci-selection-testbed
+full-suite-diagnostic	Require isolated private same-repository inputs	2026-11-08T00:22:32.9190129Z ##[endgroup]
+full-suite-diagnostic	Checkout exact trusted base	﻿2026-11-08T00:22:33.1115095Z ##[group]Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.1115569Z with:
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.1115837Z   ref: 1d63949857934672de5c13f543174b4dbf0fd7ce
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.1116161Z   fetch-depth: 0
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.1116423Z   persist-credentials: false
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.1116708Z   path: trusted
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.1117054Z   repository: anonymous-owner/ci-selection-testbed
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.1119298Z   token: ***
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.1119536Z   ssh-strict: true
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.1119781Z   ssh-user: git
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.1120018Z   clean: true
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.1120272Z   sparse-checkout-cone-mode: true
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.1120567Z   fetch-tags: false
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.1120816Z   show-progress: true
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.1121293Z   lfs: false
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.1121527Z   submodules: false
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.1121902Z   set-safe-directory: true
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.1122186Z   allow-unsafe-pr-checkout: false
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.1122471Z env:
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.1122769Z   BASE_SHA: 1d63949857934672de5c13f543174b4dbf0fd7ce
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.1123141Z   HEAD_SHA: 9df3cfb451d724850a3cdf6ebc4f57f69968418e
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.1123479Z   MODE: full
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.1123788Z   FROZEN_BOOTSTRAP_BASE: edb0a2968fb5149dbc6d6f99f292d3174c840ef3
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.1124167Z   PYTHONHASHSEED: 0
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.1124428Z   PYTHONDONTWRITEBYTECODE: 1
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.1124720Z   PYTEST_DISABLE_PLUGIN_AUTOLOAD: 1
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.1125014Z ##[endgroup]
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.3599896Z Syncing repository: anonymous-owner/ci-selection-testbed
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.3601631Z ##[group]Getting Git version info
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.3602787Z Working directory is '/home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted'
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.3604161Z [command]/usr/bin/git version
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.3621636Z git version 2.56.0
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.3639885Z ##[endgroup]
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.3653188Z Temporarily overriding HOME='/home/runner/work/_temp/46b1bd16-4da9-4103-ab96-a8e9647c462c' before making global git config changes
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.3655705Z Adding repository directory to the temporary git global config as a safe directory
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.3660685Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.3712640Z ##[group]Initializing the repository
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.3716714Z [command]/usr/bin/git init /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.3825419Z hint: Using 'master' as the name for the initial branch. This default branch name
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.3826844Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.3827782Z hint: to use in all of your new repositories, which will suppress this warning,
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.3828460Z hint: call:
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.3828865Z hint:
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.3829372Z hint: 	git config --global init.defaultBranch <name>
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.3829975Z hint:
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.3830513Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.3831210Z hint: 'development'. The just-created branch can be renamed via this command:
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.3833703Z hint:
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.3834993Z hint: 	git branch -m <name>
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.3835507Z hint:
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.3836148Z hint: Disable this message with "git config set advice.defaultBranchName false"
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.3837726Z Initialized empty Git repository in /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.git/
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.3849007Z [command]/usr/bin/git remote add origin https://example.invalid/anonymous-research/ci-selection-testbed
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.3997253Z ##[endgroup]
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.3998657Z ##[group]Disabling automatic garbage collection
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.3999382Z [command]/usr/bin/git config --local gc.auto 0
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.4000798Z ##[endgroup]
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.4001467Z ##[group]Setting up auth
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.4002404Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.4022222Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.4360659Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.4394404Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.4606376Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.4640288Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.4850596Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.4891970Z ##[endgroup]
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.4893231Z ##[group]Fetching the repository
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.4902865Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9091883Z From https://example.invalid/anonymous-research/ci-selection-testbed
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9095657Z  * [new branch]      main                 -> origin/main
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9096923Z  * [new branch]      setup/original-cases -> origin/setup/original-cases
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9098163Z  * [new branch]      trial/itsdangerous_expiry/collision -> origin/trial/itsdangerous_expiry/collision
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9099498Z  * [new branch]      trial/itsdangerous_expiry/ordinary -> origin/trial/itsdangerous_expiry/ordinary
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9100833Z  * [new branch]      trial/requests_crlf_header/collision -> origin/trial/requests_crlf_header/collision
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9102331Z  * [new branch]      trial/requests_crlf_header/ordinary -> origin/trial/requests_crlf_header/ordinary
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9103696Z  * [new branch]      trial/starlette_trusted_host/collision -> origin/trial/starlette_trusted_host/collision
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9105060Z  * [new branch]      trial/starlette_trusted_host/ordinary -> origin/trial/starlette_trusted_host/ordinary
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9107945Z [command]/usr/bin/git rev-parse --verify --quiet 1d63949857934672de5c13f543174b4dbf0fd7ce^{object}
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9139760Z 1d63949857934672de5c13f543174b4dbf0fd7ce
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9144801Z ##[endgroup]
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9145903Z ##[group]Determining the checkout info
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9147121Z ##[endgroup]
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9149600Z [command]/usr/bin/git sparse-checkout disable
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9195939Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9225412Z ##[group]Checking out the ref
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9228364Z [command]/usr/bin/git checkout --progress --force 1d63949857934672de5c13f543174b4dbf0fd7ce
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9317080Z Note: switching to '1d63949857934672de5c13f543174b4dbf0fd7ce'.
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9318300Z 
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9319004Z You are in 'detached HEAD' state. You can look around, make experimental
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9320489Z changes and commit them, and you can discard any commits you make in this
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9321990Z state without impacting any branches by switching back to a branch.
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9323336Z 
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9324029Z If you want to create a new branch to retain commits you create, you may
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9325638Z do so (now or later) by using -c with the switch command. Example:
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9326852Z 
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9327651Z   git switch -c <new-branch-name>
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9328394Z 
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9329206Z Or undo this operation with:
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9329920Z 
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9330663Z   git switch -
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9331590Z 
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9332899Z Turn off this advice by setting config variable advice.detachedHead to false
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9333984Z 
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9334854Z HEAD is now at 1d63949 Initialize private validation baseline
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9338430Z ##[endgroup]
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9370588Z [command]/usr/bin/git log -1 --format=%H
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9394681Z 1d63949857934672de5c13f543174b4dbf0fd7ce
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9406558Z ##[group]Removing auth
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9415368Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9439076Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9640447Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9666036Z http.https://github.com/.extraheader
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9670962Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9699980Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9895739Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:33.9921461Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+full-suite-diagnostic	Checkout exact trusted base	2026-11-08T00:22:34.0130179Z ##[endgroup]
+full-suite-diagnostic	Checkout exact candidate	﻿2026-11-08T00:22:34.0337634Z ##[group]Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.0338287Z with:
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.0338750Z   ref: 9df3cfb451d724850a3cdf6ebc4f57f69968418e
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.0339281Z   fetch-depth: 0
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.0339742Z   persist-credentials: false
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.0340216Z   path: candidate
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.0340775Z   repository: anonymous-owner/ci-selection-testbed
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.0343482Z   token: ***
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.0343922Z   ssh-strict: true
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.0344366Z   ssh-user: git
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.0344807Z   clean: true
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.0345259Z   sparse-checkout-cone-mode: true
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.0345750Z   fetch-tags: false
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.0346199Z   show-progress: true
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.0346650Z   lfs: false
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.0347081Z   submodules: false
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.0347551Z   set-safe-directory: true
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.0348043Z   allow-unsafe-pr-checkout: false
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.0348530Z env:
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.0349025Z   BASE_SHA: 1d63949857934672de5c13f543174b4dbf0fd7ce
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.0349607Z   HEAD_SHA: 9df3cfb451d724850a3cdf6ebc4f57f69968418e
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.0350143Z   MODE: full
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.0350661Z   FROZEN_BOOTSTRAP_BASE: edb0a2968fb5149dbc6d6f99f292d3174c840ef3
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.0351314Z   PYTHONHASHSEED: 0
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.0351947Z   PYTHONDONTWRITEBYTECODE: 1
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.0352443Z   PYTEST_DISABLE_PLUGIN_AUTOLOAD: 1
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.0352934Z ##[endgroup]
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1001336Z Syncing repository: anonymous-owner/ci-selection-testbed
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1003213Z ##[group]Getting Git version info
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1005462Z Working directory is '/home/runner/work/ci-selection-testbed/ci-selection-testbed/candidate'
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1017893Z [command]/usr/bin/git version
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1051905Z git version 2.56.0
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1065414Z ##[endgroup]
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1074784Z Temporarily overriding HOME='/home/runner/work/_temp/28646090-9a7d-4213-9949-ed4507809a1a' before making global git config changes
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1078818Z Adding repository directory to the temporary git global config as a safe directory
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1081141Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ci-selection-testbed/ci-selection-testbed/candidate
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1114543Z ##[group]Initializing the repository
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1116992Z [command]/usr/bin/git init /home/runner/work/ci-selection-testbed/ci-selection-testbed/candidate
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1156816Z hint: Using 'master' as the name for the initial branch. This default branch name
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1162290Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1165233Z hint: to use in all of your new repositories, which will suppress this warning,
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1166359Z hint: call:
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1167091Z hint:
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1168104Z hint: 	git config --global init.defaultBranch <name>
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1169147Z hint:
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1170028Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1171209Z hint: 'development'. The just-created branch can be renamed via this command:
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1172377Z hint:
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1173063Z hint: 	git branch -m <name>
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1173810Z hint:
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1174739Z hint: Disable this message with "git config set advice.defaultBranchName false"
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1178399Z Initialized empty Git repository in /home/runner/work/ci-selection-testbed/ci-selection-testbed/candidate/.git/
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1181353Z [command]/usr/bin/git remote add origin https://example.invalid/anonymous-research/ci-selection-testbed
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1204420Z ##[endgroup]
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1205889Z ##[group]Disabling automatic garbage collection
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1207441Z [command]/usr/bin/git config --local gc.auto 0
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1252216Z ##[endgroup]
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1253311Z ##[group]Setting up auth
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1254276Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1272469Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1466631Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1496765Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1714911Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1744799Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1937492Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1973309Z ##[endgroup]
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1974634Z ##[group]Fetching the repository
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.1981248Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.6827533Z From https://example.invalid/anonymous-research/ci-selection-testbed
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.6838829Z  * [new branch]      main                 -> origin/main
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.6840120Z  * [new branch]      setup/original-cases -> origin/setup/original-cases
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.6841596Z  * [new branch]      trial/itsdangerous_expiry/collision -> origin/trial/itsdangerous_expiry/collision
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.6843318Z  * [new branch]      trial/itsdangerous_expiry/ordinary -> origin/trial/itsdangerous_expiry/ordinary
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.6844794Z  * [new branch]      trial/requests_crlf_header/collision -> origin/trial/requests_crlf_header/collision
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.6846300Z  * [new branch]      trial/requests_crlf_header/ordinary -> origin/trial/requests_crlf_header/ordinary
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.6848080Z  * [new branch]      trial/starlette_trusted_host/collision -> origin/trial/starlette_trusted_host/collision
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.6849650Z  * [new branch]      trial/starlette_trusted_host/ordinary -> origin/trial/starlette_trusted_host/ordinary
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.6852742Z [command]/usr/bin/git rev-parse --verify --quiet 9df3cfb451d724850a3cdf6ebc4f57f69968418e^{object}
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.6880411Z 9df3cfb451d724850a3cdf6ebc4f57f69968418e
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.6890353Z ##[endgroup]
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.6891420Z ##[group]Determining the checkout info
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.6892697Z ##[endgroup]
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.6893403Z [command]/usr/bin/git sparse-checkout disable
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.6919949Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.6947151Z ##[group]Checking out the ref
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.6948804Z [command]/usr/bin/git checkout --progress --force 9df3cfb451d724850a3cdf6ebc4f57f69968418e
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.7025876Z Note: switching to '9df3cfb451d724850a3cdf6ebc4f57f69968418e'.
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.7026739Z 
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.7027407Z You are in 'detached HEAD' state. You can look around, make experimental
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.7028692Z changes and commit them, and you can discard any commits you make in this
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.7030498Z state without impacting any branches by switching back to a branch.
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.7031288Z 
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.7032059Z If you want to create a new branch to retain commits you create, you may
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.7033398Z do so (now or later) by using -c with the switch command. Example:
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.7034432Z 
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.7034916Z   git switch -c <new-branch-name>
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.7035534Z 
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.7036041Z Or undo this operation with:
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.7036652Z 
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.7037088Z   git switch -
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.7037799Z 
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.7038393Z Turn off this advice by setting config variable advice.detachedHead to false
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.7039152Z 
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.7039773Z HEAD is now at 9df3cfb Case 3 collision source-only research condition
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.7042581Z ##[endgroup]
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.7068661Z [command]/usr/bin/git log -1 --format=%H
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.7093721Z 9df3cfb451d724850a3cdf6ebc4f57f69968418e
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.7100013Z ##[group]Removing auth
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.7103119Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.7132774Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.7327324Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.7354189Z http.https://github.com/.extraheader
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.7356876Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.7389190Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.7583636Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.7607168Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+full-suite-diagnostic	Checkout exact candidate	2026-11-08T00:22:34.7786401Z ##[endgroup]
+full-suite-diagnostic	Set up Python	﻿2026-11-08T00:22:34.7954872Z ##[group]Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+full-suite-diagnostic	Set up Python	2026-11-08T00:22:34.7955722Z with:
+full-suite-diagnostic	Set up Python	2026-11-08T00:22:34.7956265Z   python-version: 3.13
+full-suite-diagnostic	Set up Python	2026-11-08T00:22:34.7956853Z   check-latest: false
+full-suite-diagnostic	Set up Python	2026-11-08T00:22:34.7960511Z   token: ***
+full-suite-diagnostic	Set up Python	2026-11-08T00:22:34.7961051Z   update-environment: true
+full-suite-diagnostic	Set up Python	2026-11-08T00:22:34.7961485Z   allow-prereleases: false
+full-suite-diagnostic	Set up Python	2026-11-08T00:22:34.7962127Z   freethreaded: false
+full-suite-diagnostic	Set up Python	2026-11-08T00:22:34.7962520Z env:
+full-suite-diagnostic	Set up Python	2026-11-08T00:22:34.7962923Z   BASE_SHA: 1d63949857934672de5c13f543174b4dbf0fd7ce
+full-suite-diagnostic	Set up Python	2026-11-08T00:22:34.7963443Z   HEAD_SHA: 9df3cfb451d724850a3cdf6ebc4f57f69968418e
+full-suite-diagnostic	Set up Python	2026-11-08T00:22:34.7963916Z   MODE: full
+full-suite-diagnostic	Set up Python	2026-11-08T00:22:34.7964382Z   FROZEN_BOOTSTRAP_BASE: edb0a2968fb5149dbc6d6f99f292d3174c840ef3
+full-suite-diagnostic	Set up Python	2026-11-08T00:22:34.7964911Z   PYTHONHASHSEED: 0
+full-suite-diagnostic	Set up Python	2026-11-08T00:22:34.7965324Z   PYTHONDONTWRITEBYTECODE: 1
+full-suite-diagnostic	Set up Python	2026-11-08T00:22:34.7965768Z   PYTEST_DISABLE_PLUGIN_AUTOLOAD: 1
+full-suite-diagnostic	Set up Python	2026-11-08T00:22:34.7966381Z ##[endgroup]
+full-suite-diagnostic	Set up Python	2026-11-08T00:22:34.8916028Z ##[group]Installed versions
+full-suite-diagnostic	Set up Python	2026-11-08T00:22:34.8990122Z (node:2268) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+full-suite-diagnostic	Set up Python	2026-11-08T00:22:34.9009977Z (Use `node --trace-deprecation ...` to show where the warning was created)
+full-suite-diagnostic	Set up Python	2026-11-08T00:22:34.9011563Z Successfully set up CPython (3.13.18)
+full-suite-diagnostic	Set up Python	2026-11-08T00:22:34.9012739Z ##[endgroup]
+full-suite-diagnostic	Select immutable runner and dependencies	﻿2026-11-08T00:22:34.9181560Z ##[group]Run if [ "$BASE_SHA" = "$FROZEN_BOOTSTRAP_BASE" ]; then
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:34.9182464Z [36;1mif [ "$BASE_SHA" = "$FROZEN_BOOTSTRAP_BASE" ]; then[0m
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:34.9183034Z [36;1m  test ! -e trusted/.experiment/manifest.json[0m
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:34.9183576Z [36;1m  INPUT_ROOT="$GITHUB_WORKSPACE/candidate"[0m
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:34.9184106Z [36;1m  echo "MODE=bootstrap" >> "$GITHUB_ENV"[0m
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:34.9184591Z [36;1melse[0m
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:34.9185027Z [36;1m  INPUT_ROOT="$GITHUB_WORKSPACE/trusted"[0m
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:34.9185647Z [36;1m  git -C "$INPUT_ROOT" fetch "$GITHUB_WORKSPACE/candidate" "$HEAD_SHA"[0m
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:34.9186217Z [36;1mfi[0m
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:34.9186702Z [36;1mcp -R "$INPUT_ROOT/.experiment/runtime" "$RUNNER_TEMP/runtime"[0m
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:34.9187279Z [36;1mmkdir -p "$RUNNER_TEMP/evidence"[0m
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:34.9187801Z [36;1mecho "REPO_DIR=$INPUT_ROOT" >> "$GITHUB_ENV"[0m
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:34.9188383Z [36;1mecho "EVIDENCE_DIR=$RUNNER_TEMP/evidence" >> "$GITHUB_ENV"[0m
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:34.9188987Z [36;1mpython -m venv "$RUNNER_TEMP/venv"[0m
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:34.9189933Z [36;1m"$RUNNER_TEMP/venv/bin/python" -m pip install --only-binary=:all: --require-hashes --report "$RUNNER_TEMP/evidence/pip-install.json" -r "$INPUT_ROOT/.experiment/requirements.lock"[0m
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:34.9191044Z [36;1m"$RUNNER_TEMP/venv/bin/python" -m pip freeze --all > "$RUNNER_TEMP/evidence/pip-freeze.txt"[0m
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:34.9220845Z shell: /usr/bin/bash -e {0}
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:34.9221304Z env:
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:34.9221851Z   BASE_SHA: 1d63949857934672de5c13f543174b4dbf0fd7ce
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:34.9222383Z   HEAD_SHA: 9df3cfb451d724850a3cdf6ebc4f57f69968418e
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:34.9222859Z   MODE: full
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:34.9223322Z   FROZEN_BOOTSTRAP_BASE: edb0a2968fb5149dbc6d6f99f292d3174c840ef3
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:34.9223850Z   PYTHONHASHSEED: 0
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:34.9224256Z   PYTHONDONTWRITEBYTECODE: 1
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:34.9224700Z   PYTEST_DISABLE_PLUGIN_AUTOLOAD: 1
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:34.9225210Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.18/x64
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:34.9225832Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.18/x64/lib/pkgconfig
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:34.9226432Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:34.9226997Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:34.9227589Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:34.9228154Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.18/x64/lib
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:34.9228667Z ##[endgroup]
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:34.9350154Z From /home/runner/work/ci-selection-testbed/ci-selection-testbed/candidate
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:34.9351654Z  * branch            9df3cfb451d724850a3cdf6ebc4f57f69968418e -> FETCH_HEAD
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:38.0774366Z Collecting anyio==4.16.0 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 1))
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:38.1695331Z   Downloading anyio-4.16.0-py3-none-any.whl (134 kB)
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:38.2248852Z Collecting certifi==2026.10.23 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 2))
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:38.2407313Z   Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:38.3533670Z Collecting charset-normalizer==3.5.2 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 3))
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:38.3715579Z   Downloading charset_normalizer-3.5.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (254 kB)
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:38.4019428Z Collecting colorama==0.4.6 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 4))
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:38.4176896Z   Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:39.0569391Z Collecting coverage==7.17.2 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 5))
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:39.0742964Z   Downloading coverage-7.17.2-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (262 kB)
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:39.9217722Z Collecting h11==0.16.0 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 6))
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:39.9378324Z   Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:39.9619297Z Collecting httpcore==1.0.9 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 7))
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:39.9789294Z   Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:40.0032438Z Collecting httpx==0.28.1 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 8))
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:40.0194547Z   Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:40.0429522Z Collecting idna==3.20 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 9))
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:40.0613744Z   Downloading idna-3.20-py3-none-any.whl (69 kB)
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:40.0833802Z Collecting iniconfig==2.3.1 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 10))
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:40.0992022Z   Downloading iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:40.1208559Z Collecting itsdangerous==2.2.0 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 11))
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:40.1364239Z   Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:40.1615737Z Collecting packaging==26.3 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 12))
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:40.1774563Z   Downloading packaging-26.3-py3-none-any.whl (129 kB)
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:40.2003626Z Collecting pluggy==1.7.0 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 13))
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:40.2170735Z   Downloading pluggy-1.7.0-py3-none-any.whl (27 kB)
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:40.2409411Z Collecting Pygments==2.21.0 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 14))
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:40.2568823Z   Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:40.2887499Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 37.2 MB/s  0:00:00
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:40.3203590Z Collecting pytest==9.0.2 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 15))
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:40.3375955Z   Downloading pytest-9.0.2-py3-none-any.whl (374 kB)
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:40.3651362Z Collecting pytest-depper==0.2.0 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 16))
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:40.3840914Z   Downloading pytest_depper-0.2.0-py3-none-any.whl (18 kB)
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:40.4078223Z Collecting pytest-testmon==2.3.0 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 17))
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:40.4248910Z   Downloading pytest_testmon-2.3.0-py3-none-any.whl (26 kB)
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:40.4493797Z Collecting requests==2.32.5 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 18))
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:40.4666855Z   Downloading requests-2.32.5-py3-none-any.whl (64 kB)
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:40.4922439Z Collecting starlette==0.50.0 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 19))
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:40.5078409Z   Downloading starlette-0.50.0-py3-none-any.whl (74 kB)
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:40.5299168Z Collecting typing_extensions==4.16.0 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 20))
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:40.5454726Z   Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:40.5693827Z Collecting urllib3==2.8.0 (from -r /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/.experiment/requirements.lock (line 21))
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:40.5850320Z   Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:40.6365990Z Installing collected packages: urllib3, typing_extensions, Pygments, pluggy, packaging, itsdangerous, iniconfig, idna, h11, coverage, colorama, charset-normalizer, certifi, requests, pytest, httpcore, anyio, starlette, pytest-testmon, pytest-depper, httpx
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:41.7705180Z 
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:41.7723000Z Successfully installed Pygments-2.21.0 anyio-4.16.0 certifi-2026.10.23 charset-normalizer-3.5.2 colorama-0.4.6 coverage-7.17.2 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 idna-3.20 iniconfig-2.3.1 itsdangerous-2.2.0 packaging-26.3 pluggy-1.7.0 pytest-9.0.2 pytest-depper-0.2.0 pytest-testmon-2.3.0 requests-2.32.5 starlette-0.50.0 typing_extensions-4.16.0 urllib3-2.8.0
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:41.7730025Z 
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:41.7730537Z [notice] A new release of pip is available: 26.2.2 -> 26.3
+full-suite-diagnostic	Select immutable runner and dependencies	2026-11-08T00:22:41.7731387Z [notice] To update, run: /home/runner/work/_temp/venv/bin/python -m pip install --upgrade pip
+full-suite-diagnostic	Execute published selector and unchanged security tests	﻿2026-11-08T00:22:42.0122238Z ##[group]Run "$RUNNER_TEMP/venv/bin/python" "$RUNNER_TEMP/runtime/hosted_runner.py"
+full-suite-diagnostic	Execute published selector and unchanged security tests	2026-11-08T00:22:42.0122591Z [36;1m"$RUNNER_TEMP/venv/bin/python" "$RUNNER_TEMP/runtime/hosted_runner.py"[0m
+full-suite-diagnostic	Execute published selector and unchanged security tests	2026-11-08T00:22:42.0138925Z shell: /usr/bin/bash -e {0}
+full-suite-diagnostic	Execute published selector and unchanged security tests	2026-11-08T00:22:42.0139085Z env:
+full-suite-diagnostic	Execute published selector and unchanged security tests	2026-11-08T00:22:42.0139222Z   BASE_SHA: 1d63949857934672de5c13f543174b4dbf0fd7ce
+full-suite-diagnostic	Execute published selector and unchanged security tests	2026-11-08T00:22:42.0139414Z   HEAD_SHA: 9df3cfb451d724850a3cdf6ebc4f57f69968418e
+full-suite-diagnostic	Execute published selector and unchanged security tests	2026-11-08T00:22:42.0139582Z   MODE: full
+full-suite-diagnostic	Execute published selector and unchanged security tests	2026-11-08T00:22:42.0139742Z   FROZEN_BOOTSTRAP_BASE: edb0a2968fb5149dbc6d6f99f292d3174c840ef3
+full-suite-diagnostic	Execute published selector and unchanged security tests	2026-11-08T00:22:42.0139935Z   PYTHONHASHSEED: 0
+full-suite-diagnostic	Execute published selector and unchanged security tests	2026-11-08T00:22:42.0140066Z   PYTHONDONTWRITEBYTECODE: 1
+full-suite-diagnostic	Execute published selector and unchanged security tests	2026-11-08T00:22:42.0140212Z   PYTEST_DISABLE_PLUGIN_AUTOLOAD: 1
+full-suite-diagnostic	Execute published selector and unchanged security tests	2026-11-08T00:22:42.0140393Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.18/x64
+full-suite-diagnostic	Execute published selector and unchanged security tests	2026-11-08T00:22:42.0140625Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.18/x64/lib/pkgconfig
+full-suite-diagnostic	Execute published selector and unchanged security tests	2026-11-08T00:22:42.0140853Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+full-suite-diagnostic	Execute published selector and unchanged security tests	2026-11-08T00:22:42.0141091Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+full-suite-diagnostic	Execute published selector and unchanged security tests	2026-11-08T00:22:42.0141298Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+full-suite-diagnostic	Execute published selector and unchanged security tests	2026-11-08T00:22:42.0141507Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.18/x64/lib
+full-suite-diagnostic	Execute published selector and unchanged security tests	2026-11-08T00:22:42.0142164Z   REPO_DIR: /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted
+full-suite-diagnostic	Execute published selector and unchanged security tests	2026-11-08T00:22:42.0142488Z   EVIDENCE_DIR: /home/runner/work/_temp/evidence
+full-suite-diagnostic	Execute published selector and unchanged security tests	2026-11-08T00:22:42.0142651Z ##[endgroup]
+full-suite-diagnostic	Execute published selector and unchanged security tests	2026-11-08T00:22:43.4206116Z ##[error]Process completed with exit code 1.
+full-suite-diagnostic	Preserve raw private evidence	﻿2026-11-08T00:22:43.4271117Z ##[group]Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:43.4271398Z with:
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:43.4271522Z   name: full-pr-7-attempt-1
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:43.4271669Z   path: /home/runner/work/_temp/evidence/
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:43.4272012Z   if-no-files-found: error
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:43.4272147Z   retention-days: 30
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:43.4272272Z   compression-level: 6
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:43.4272396Z   overwrite: false
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:43.4272525Z   include-hidden-files: false
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:43.4272665Z env:
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:43.4272792Z   BASE_SHA: 1d63949857934672de5c13f543174b4dbf0fd7ce
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:43.4272994Z   HEAD_SHA: 9df3cfb451d724850a3cdf6ebc4f57f69968418e
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:43.4273161Z   MODE: full
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:43.4273322Z   FROZEN_BOOTSTRAP_BASE: edb0a2968fb5149dbc6d6f99f292d3174c840ef3
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:43.4273512Z   PYTHONHASHSEED: 0
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:43.4273642Z   PYTHONDONTWRITEBYTECODE: 1
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:43.4273791Z   PYTEST_DISABLE_PLUGIN_AUTOLOAD: 1
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:43.4273992Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.18/x64
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:43.4274224Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.18/x64/lib/pkgconfig
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:43.4274455Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:43.4274664Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:43.4274871Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:43.4275080Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.18/x64/lib
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:43.4275428Z   REPO_DIR: /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:43.4275759Z   EVIDENCE_DIR: /home/runner/work/_temp/evidence
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:43.4275916Z ##[endgroup]
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:43.5426512Z (node:2357) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:43.5443190Z (Use `node --trace-deprecation ...` to show where the warning was created)
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:43.5492239Z With the provided path, there will be 10 files uploaded
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:43.5496770Z Artifact name is valid!
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:43.5497253Z Root directory input is valid!
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:43.8313898Z Beginning upload of artifact content to blob storage
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:43.8682212Z (node:2357) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:44.0585605Z Uploaded bytes 79459
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:44.0975972Z Finished uploading artifact content to blob storage!
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:44.0976934Z SHA256 digest of uploaded artifact zip is 46ad1bcabda96773a59e577ded80898955257b62d0a7504d0038a356ebc4942e
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:44.0977558Z Finalizing artifact upload
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:44.5145475Z Artifact full-pr-7-attempt-1.zip successfully finalized. Artifact ID 13597206077
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:44.5146427Z Artifact full-pr-7-attempt-1 has been successfully uploaded! Final size is 79459 bytes. Artifact ID is 13597206077
+full-suite-diagnostic	Preserve raw private evidence	2026-11-08T00:22:44.5154768Z Artifact download URL: https://example.invalid/anonymous-research/ci-selection-testbed/actions/runs/42429456290/artifacts/13597206077
+full-suite-diagnostic	Post Checkout exact candidate	﻿2026-11-08T00:22:44.5324550Z Post job cleanup.
+full-suite-diagnostic	Post Checkout exact candidate	2026-11-08T00:22:44.5909357Z [command]/usr/bin/git version
+full-suite-diagnostic	Post Checkout exact candidate	2026-11-08T00:22:44.5942710Z git version 2.56.0
+full-suite-diagnostic	Post Checkout exact candidate	2026-11-08T00:22:44.5966025Z Temporarily overriding HOME='/home/runner/work/_temp/1b8ea810-06e2-4b24-a588-0dda1ad482b8' before making global git config changes
+full-suite-diagnostic	Post Checkout exact candidate	2026-11-08T00:22:44.5967145Z Adding repository directory to the temporary git global config as a safe directory
+full-suite-diagnostic	Post Checkout exact candidate	2026-11-08T00:22:44.5970274Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ci-selection-testbed/ci-selection-testbed/candidate
+full-suite-diagnostic	Post Checkout exact candidate	2026-11-08T00:22:44.6005284Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+full-suite-diagnostic	Post Checkout exact candidate	2026-11-08T00:22:44.6037403Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+full-suite-diagnostic	Post Checkout exact candidate	2026-11-08T00:22:44.6261992Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+full-suite-diagnostic	Post Checkout exact candidate	2026-11-08T00:22:44.6300145Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+full-suite-diagnostic	Post Checkout exact candidate	2026-11-08T00:22:44.6481045Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+full-suite-diagnostic	Post Checkout exact candidate	2026-11-08T00:22:44.6505728Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+full-suite-diagnostic	Post Checkout exact trusted base	﻿2026-11-08T00:22:44.6818064Z Post job cleanup.
+full-suite-diagnostic	Post Checkout exact trusted base	2026-11-08T00:22:44.7522285Z [command]/usr/bin/git version
+full-suite-diagnostic	Post Checkout exact trusted base	2026-11-08T00:22:44.7562767Z git version 2.56.0
+full-suite-diagnostic	Post Checkout exact trusted base	2026-11-08T00:22:44.7614363Z Temporarily overriding HOME='/home/runner/work/_temp/148e95d9-088a-49bf-9800-075cc1900d28' before making global git config changes
+full-suite-diagnostic	Post Checkout exact trusted base	2026-11-08T00:22:44.7615123Z Adding repository directory to the temporary git global config as a safe directory
+full-suite-diagnostic	Post Checkout exact trusted base	2026-11-08T00:22:44.7616084Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted
+full-suite-diagnostic	Post Checkout exact trusted base	2026-11-08T00:22:44.7700070Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+full-suite-diagnostic	Post Checkout exact trusted base	2026-11-08T00:22:44.7703997Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+full-suite-diagnostic	Post Checkout exact trusted base	2026-11-08T00:22:44.8055695Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+full-suite-diagnostic	Post Checkout exact trusted base	2026-11-08T00:22:44.8117869Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+full-suite-diagnostic	Post Checkout exact trusted base	2026-11-08T00:22:44.8367420Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+full-suite-diagnostic	Post Checkout exact trusted base	2026-11-08T00:22:44.8397051Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+full-suite-diagnostic	Complete job	﻿2026-11-08T00:22:44.8700223Z Cleaning up orphan processes
+full-suite-diagnostic	Complete job	2026-11-08T00:22:44.8910307Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11d5960a326750d5838078e36cf38b85af677262, actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065, actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

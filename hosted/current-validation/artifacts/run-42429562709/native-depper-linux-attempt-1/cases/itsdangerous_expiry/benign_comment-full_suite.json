@@ -1,0 +1,73 @@
+{
+  "collected_after_selection": [
+    "tests/test_meta.py::test_metadata_build_positive",
+    "tests/test_security.py::test_security_rejects_expired",
+    "tests/test_security.py::test_valid_signature_passes"
+  ],
+  "deselected": [],
+  "reports": [
+    {
+      "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_security_rejects_expired",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_security_rejects_expired",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_security_rejects_expired",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_valid_signature_passes",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_valid_signature_passes",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_valid_signature_passes",
+      "when": "teardown",
+      "outcome": "passed"
+    }
+  ],
+  "collection_errors": [],
+  "exitstatus": 0,
+  "executed_tests": [
+    "tests/test_meta.py::test_metadata_build_positive",
+    "tests/test_security.py::test_security_rejects_expired",
+    "tests/test_security.py::test_valid_signature_passes"
+  ],
+  "skipped_tests": [],
+  "import_origins": [
+    {
+      "module": "itsdangerous.timed",
+      "actual_file": "/home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo/itsdangerous/timed.py",
+      "expected": "/home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo/itsdangerous/timed.py",
+      "match_mode": "exact",
+      "matched": true
+    }
+  ],
+  "import_origins_valid": true
+}

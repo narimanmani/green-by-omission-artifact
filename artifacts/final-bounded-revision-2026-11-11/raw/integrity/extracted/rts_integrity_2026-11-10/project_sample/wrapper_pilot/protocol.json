@@ -1,0 +1,26 @@
+{
+  "created_at_utc": "2026-11-10T21:22:07.678920+00:00",
+  "scope": "Five synthetic wrappers calling unmodified published Java artifacts; generated JUnit fixtures, not upstream suites.",
+  "selectors": "Ekstazi native 5.3.0 agent, mode=junit",
+  "tests": [
+    "pilot.SubjectTest",
+    "pilot.ControlTest",
+    "pilot.UntouchedTest"
+  ],
+  "scenarios": [
+    "ordinary_change",
+    "target_metadata_missing",
+    "target_metadata_truncated_50pct"
+  ],
+  "fault_rule": "Fixed deletion or first floor(n/2) bytes retained in the generated SubjectTest metadata; no adaptive byte search.",
+  "regression": "Synthetic Subject output receives !; independent Control method changes to a semantically equivalent computation.",
+  "arms": [
+    "standard_rts",
+    "fail_closed",
+    "full_suite"
+  ],
+  "integrity_defense": "Out-of-cache trusted SHA256 manifest over all native metadata files; mismatch selects agent-free full suite.",
+  "repetitions": 1,
+  "safety": "No upstream jar/source edits; no network access in experiment commands; no exploit or security-sensitive code.",
+  "timing": "Descriptive wall-clock timings in shared environment, not performance benchmarks."
+}

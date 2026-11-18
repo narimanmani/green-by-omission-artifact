@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\caption{Static observations in 20 purposively selected Apache Commons repositories, pinned to immutable commits. These are configuration indicators, not deployment prevalence.}
+\label{tab:configuration-audit}
+\begin{tabular}{lr}
+\hline
+Indicator & Repositories \\
+\hline
+Optional Ekstazi profile declared & 2/20 \\
+Ekstazi mentioned in inspected workflows & 0/20 \\
+Primary workflow has pull-request trigger & 20/20 \\
+Primary contents permission is read & 20/20 \\
+Primary external actions pinned to 40-hex SHAs & 20/20 \\
+Primary checkout disables credential persistence & 20/20 \\
+Explicit primary Maven dependency cache & 16/20 \\
+Live RTS deployment or required-check enforcement & Unmeasured \\
+\hline
+\end{tabular}
+\end{table}

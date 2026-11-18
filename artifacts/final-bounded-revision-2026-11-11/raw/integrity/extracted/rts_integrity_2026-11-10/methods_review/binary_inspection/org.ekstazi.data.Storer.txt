@@ -1,0 +1,284 @@
+public abstract class org.ekstazi.data.Storer {
+  protected final org.ekstazi.data.Storer$Mode mMode;
+
+  protected org.ekstazi.data.Storer(org.ekstazi.data.Storer$Mode);
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: aload_1
+       6: putfield      #2                  // Field mMode:Lorg/ekstazi/data/Storer$Mode;
+       9: return
+
+  public final java.util.Set<org.ekstazi.data.RegData> load(java.lang.String, java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_2
+       4: aconst_null
+       5: invokestatic  #3                  // Method openFileRead:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/io/FileInputStream;
+       8: invokespecial #4                  // Method load:(Ljava/io/FileInputStream;)Ljava/util/Set;
+      11: areturn
+
+  public final java.util.Set<org.ekstazi.data.RegData> load(java.lang.String, java.lang.String, java.lang.String);
+    Code:
+       0: new           #5                  // class java/lang/StringBuilder
+       3: dup
+       4: invokespecial #6                  // Method java/lang/StringBuilder."<init>":()V
+       7: aload_2
+       8: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      11: bipush        46
+      13: invokevirtual #8                  // Method java/lang/StringBuilder.append:(C)Ljava/lang/StringBuilder;
+      16: aload_3
+      17: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      20: invokevirtual #9                  // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      23: astore        4
+      25: aload_0
+      26: aload_1
+      27: aload         4
+      29: aload_2
+      30: aload_3
+      31: invokestatic  #3                  // Method openFileRead:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/io/FileInputStream;
+      34: invokespecial #4                  // Method load:(Ljava/io/FileInputStream;)Ljava/util/Set;
+      37: areturn
+
+  public final void save(java.lang.String, java.lang.String, java.util.Set<org.ekstazi.data.RegData>);
+    Code:
+       0: getstatic     #10                 // Field org/ekstazi/Config.X_DEPENDENCIES_SAVE_V:Z
+       3: ifne          7
+       6: return
+       7: new           #11                 // class java/io/File
+      10: dup
+      11: aload_1
+      12: invokespecial #12                 // Method java/io/File."<init>":(Ljava/lang/String;)V
+      15: invokevirtual #13                 // Method java/io/File.mkdirs:()Z
+      18: pop
+      19: aload_0
+      20: aload_1
+      21: aload_2
+      22: aload_2
+      23: aconst_null
+      24: invokestatic  #14                 // Method openFileWrite:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/io/FileOutputStream;
+      27: aload_3
+      28: invokespecial #15                 // Method save:(Ljava/io/FileOutputStream;Ljava/util/Set;)V
+      31: return
+
+  public final void save(java.lang.String, java.lang.String, java.lang.String, java.util.Set<org.ekstazi.data.RegData>);
+    Code:
+       0: getstatic     #10                 // Field org/ekstazi/Config.X_DEPENDENCIES_SAVE_V:Z
+       3: ifne          7
+       6: return
+       7: new           #11                 // class java/io/File
+      10: dup
+      11: aload_1
+      12: invokespecial #12                 // Method java/io/File."<init>":(Ljava/lang/String;)V
+      15: invokevirtual #16                 // Method java/io/File.mkdir:()Z
+      18: pop
+      19: new           #5                  // class java/lang/StringBuilder
+      22: dup
+      23: invokespecial #6                  // Method java/lang/StringBuilder."<init>":()V
+      26: aload_2
+      27: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      30: bipush        46
+      32: invokevirtual #8                  // Method java/lang/StringBuilder.append:(C)Ljava/lang/StringBuilder;
+      35: aload_3
+      36: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      39: invokevirtual #9                  // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      42: astore        5
+      44: aload_0
+      45: aload_1
+      46: aload         5
+      48: aload_2
+      49: aload_3
+      50: invokestatic  #14                 // Method openFileWrite:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/io/FileOutputStream;
+      53: aload         4
+      55: invokespecial #15                 // Method save:(Ljava/io/FileOutputStream;Ljava/util/Set;)V
+      58: return
+
+  protected abstract java.util.Set<org.ekstazi.data.RegData> extendedLoad(java.io.FileInputStream);
+
+  protected abstract void extendedSave(java.io.FileOutputStream, java.util.Set<org.ekstazi.data.RegData>);
+
+  private final java.util.Set<org.ekstazi.data.RegData> load(java.io.FileInputStream);
+    Code:
+       0: aload_1
+       1: ifnull        10
+       4: aload_0
+       5: aload_1
+       6: invokevirtual #17                 // Method extendedLoad:(Ljava/io/FileInputStream;)Ljava/util/Set;
+       9: areturn
+      10: invokestatic  #18                 // Method java/util/Collections.emptySet:()Ljava/util/Set;
+      13: areturn
+
+  private final void save(java.io.FileOutputStream, java.util.Set<org.ekstazi.data.RegData>);
+    Code:
+       0: aload_1
+       1: ifnull        10
+       4: aload_0
+       5: aload_1
+       6: aload_2
+       7: invokevirtual #19                 // Method extendedSave:(Ljava/io/FileOutputStream;Ljava/util/Set;)V
+      10: return
+
+  private static java.io.FileInputStream openFileRead(java.lang.String, java.lang.String, java.lang.String, java.lang.String);
+    Code:
+       0: new           #20                 // class java/io/FileInputStream
+       3: dup
+       4: new           #11                 // class java/io/File
+       7: dup
+       8: aload_0
+       9: aload_1
+      10: invokespecial #21                 // Method java/io/File."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+      13: invokespecial #22                 // Method java/io/FileInputStream."<init>":(Ljava/io/File;)V
+      16: areturn
+      17: astore        4
+      19: aload         4
+      21: invokevirtual #24                 // Method java/io/FileNotFoundException.getMessage:()Ljava/lang/String;
+      24: astore        5
+      26: aload         5
+      28: ifnull        133
+      31: aload         5
+      33: ldc           #25                 // String File name too long
+      35: invokevirtual #26                 // Method java/lang/String.contains:(Ljava/lang/CharSequence;)Z
+      38: ifeq          133
+      41: aload_3
+      42: ifnull        87
+      45: aload_3
+      46: invokestatic  #27                 // Method org/ekstazi/hash/Hasher.hashString:(Ljava/lang/String;)J
+      49: lstore        6
+      51: new           #5                  // class java/lang/StringBuilder
+      54: dup
+      55: invokespecial #6                  // Method java/lang/StringBuilder."<init>":()V
+      58: aload_2
+      59: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      62: ldc           #28                 // String .
+      64: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      67: lload         6
+      69: invokestatic  #29                 // Method java/lang/Long.toString:(J)Ljava/lang/String;
+      72: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      75: invokevirtual #9                  // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      78: astore_1
+      79: aload_0
+      80: aload_1
+      81: aload_1
+      82: aconst_null
+      83: invokestatic  #3                  // Method openFileRead:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/io/FileInputStream;
+      86: areturn
+      87: aload_2
+      88: ifnull        111
+      91: aload_2
+      92: invokestatic  #27                 // Method org/ekstazi/hash/Hasher.hashString:(Ljava/lang/String;)J
+      95: lstore        6
+      97: lload         6
+      99: invokestatic  #29                 // Method java/lang/Long.toString:(J)Ljava/lang/String;
+     102: astore_1
+     103: aload_0
+     104: aload_1
+     105: aconst_null
+     106: aconst_null
+     107: invokestatic  #3                  // Method openFileRead:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/io/FileInputStream;
+     110: areturn
+     111: new           #5                  // class java/lang/StringBuilder
+     114: dup
+     115: invokespecial #6                  // Method java/lang/StringBuilder."<init>":()V
+     118: ldc           #30                 // String Could not open file for reading (name too long)
+     120: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     123: aload_1
+     124: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     127: invokevirtual #9                  // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     130: invokestatic  #31                 // Method org/ekstazi/log/Log.w:(Ljava/lang/String;)V
+     133: aconst_null
+     134: areturn
+    Exception table:
+       from    to  target type
+           0    16    17   Class java/io/FileNotFoundException
+
+  private static java.io.FileOutputStream openFileWrite(java.lang.String, java.lang.String, java.lang.String, java.lang.String);
+    Code:
+       0: new           #32                 // class java/io/FileOutputStream
+       3: dup
+       4: new           #11                 // class java/io/File
+       7: dup
+       8: aload_0
+       9: aload_1
+      10: invokespecial #21                 // Method java/io/File."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+      13: invokespecial #33                 // Method java/io/FileOutputStream."<init>":(Ljava/io/File;)V
+      16: areturn
+      17: astore        4
+      19: aload         4
+      21: invokevirtual #24                 // Method java/io/FileNotFoundException.getMessage:()Ljava/lang/String;
+      24: astore        5
+      26: aload         5
+      28: ifnull        136
+      31: aload         5
+      33: ldc           #25                 // String File name too long
+      35: invokevirtual #26                 // Method java/lang/String.contains:(Ljava/lang/CharSequence;)Z
+      38: ifeq          136
+      41: aload_3
+      42: ifnull        87
+      45: aload_3
+      46: invokestatic  #27                 // Method org/ekstazi/hash/Hasher.hashString:(Ljava/lang/String;)J
+      49: lstore        6
+      51: new           #5                  // class java/lang/StringBuilder
+      54: dup
+      55: invokespecial #6                  // Method java/lang/StringBuilder."<init>":()V
+      58: aload_2
+      59: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      62: ldc           #28                 // String .
+      64: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      67: lload         6
+      69: invokestatic  #29                 // Method java/lang/Long.toString:(J)Ljava/lang/String;
+      72: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      75: invokevirtual #9                  // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      78: astore_1
+      79: aload_0
+      80: aload_1
+      81: aload_1
+      82: aconst_null
+      83: invokestatic  #14                 // Method openFileWrite:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/io/FileOutputStream;
+      86: areturn
+      87: aload_2
+      88: ifnull        111
+      91: aload_2
+      92: invokestatic  #27                 // Method org/ekstazi/hash/Hasher.hashString:(Ljava/lang/String;)J
+      95: lstore        6
+      97: lload         6
+      99: invokestatic  #29                 // Method java/lang/Long.toString:(J)Ljava/lang/String;
+     102: astore_1
+     103: aload_0
+     104: aload_1
+     105: aconst_null
+     106: aconst_null
+     107: invokestatic  #14                 // Method openFileWrite:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/io/FileOutputStream;
+     110: areturn
+     111: new           #5                  // class java/lang/StringBuilder
+     114: dup
+     115: invokespecial #6                  // Method java/lang/StringBuilder."<init>":()V
+     118: ldc           #34                 // String Could not open file for writing (name too long)
+     120: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     123: aload_1
+     124: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     127: invokevirtual #9                  // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     130: invokestatic  #31                 // Method org/ekstazi/log/Log.w:(Ljava/lang/String;)V
+     133: goto          171
+     136: new           #5                  // class java/lang/StringBuilder
+     139: dup
+     140: invokespecial #6                  // Method java/lang/StringBuilder."<init>":()V
+     143: ldc           #35                 // String Could not open file for writing
+     145: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     148: aload_1
+     149: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     152: ldc           #36                 // String
+     154: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     157: aload         4
+     159: invokevirtual #24                 // Method java/io/FileNotFoundException.getMessage:()Ljava/lang/String;
+     162: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     165: invokevirtual #9                  // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     168: invokestatic  #31                 // Method org/ekstazi/log/Log.w:(Ljava/lang/String;)V
+     171: aconst_null
+     172: areturn
+    Exception table:
+       from    to  target type
+           0    16    17   Class java/io/FileNotFoundException
+}

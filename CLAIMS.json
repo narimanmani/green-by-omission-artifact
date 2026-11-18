@@ -1,0 +1,13 @@
+{
+  "paper": "Green by Omission: Subverting CI Security Gates Through Adversarial Test Selection",
+  "artifact_kind": "Anonymous retained-evidence and source export",
+  "new_experiments_executed_during_packaging": false,
+  "primary_results": {
+    "validator_expanded": {"oracle_cases": 60, "selected_passing_cases": 20, "omitted_original_failing_cases": 2, "technical_repetitions": 3, "construction": "Fixed two-file change with deliberate behavior-preserving credit-card edit", "oracle_scope": "Three original upstream test classes; restricted subset", "matched_ordinary_arm_in_expanded_setup": false},
+    "python": {"constructed_cases": 3, "technical_repetitions_per_case": 3, "selected_tests_in_local_omission": 0, "oracle_tests_per_case": 3, "ordinary_controls_detect": true},
+    "hosted_nonempty": {"selected_passing_tests": 1, "oracle_tests": 3, "oracle_failures": 1, "protected_baseline": true, "same_operator_for_two_accounts": true, "code_owner_approval_required": true, "merged": false},
+    "jest": {"baseline_passing_cases": 8173, "selected_passing_cases": 8, "independent_passes": 8172, "independent_original_guard_failures": 1, "technical_repetitions": 3, "mechanism": "Previously documented dependency-analysis omission; no fingerprint preservation", "oracle_scope": "471 original unit-test files; integration tests excluded"}
+  },
+  "separate_comparisons": {"depper_processes": 108, "fault_comparisons": 162, "fault_detections": 156, "fault_errors": 6, "fault_false_passes": 0, "separate_setup_and_control_invocations": 27, "feasibility_subjects": 10, "feasibility_qualified": 2, "configuration_frame": 24, "apache_configuration_frame": 20},
+  "scope_limits": ["Technical repetitions are not independent discoveries", "Not a prevalence or candidate-discovery effort estimate", "No unauthorized merge or production compromise", "No comprehensive defense evaluation", "Offline evidence verification is separate from runtime reproduction", "No claim of completed disclosure or artifact publication"]
+}

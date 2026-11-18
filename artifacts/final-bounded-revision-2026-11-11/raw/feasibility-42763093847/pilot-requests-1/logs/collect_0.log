@@ -1,0 +1,4 @@
+tests/test_adapters.py::test_request_url_handles_leading_path_separators
+
+1 test collected in 0.08s
+

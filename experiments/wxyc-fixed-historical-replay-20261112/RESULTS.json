@@ -1,0 +1,254 @@
+{
+  "generated_utc": "2026-11-12T16:52:10.335416+00:00",
+  "visibility": "PRIVATE_LOCAL_RESEARCH_DELIVERABLE; not uploaded/published; not anonymous or turnkey public artifact",
+  "verdict": "ORIGINAL_TEST_NONEMPTY_FALSE_PASS_CRITERION_MET_IN_ALL_THREE_FRESH_REPETITIONS",
+  "lead_result_per_repetition": {
+    "baseline": "8173 original test cases PASS, exit0",
+    "native_selection": "8 original test cases PASS, exit0",
+    "independent_same_candidate": "8172 original cases PASS plus1 original security source-policy case FAIL, exit1",
+    "skipped_pending_todo": 0
+  },
+  "counts_unit": "Jest test-case results; not counts of individual expect assertions.",
+  "one_fixed_case_three_technical_repetitions": true,
+  "repository": "https://github.com/WXYC/Backend-Service",
+  "baseline_revision": "b86530c6c656b7a8f72d42145e9d46995c7ab53d",
+  "public_fix": "8e2fc5f320633ddec0e99e05b65b21682ed3ccda",
+  "authentic_historical_revision_pair": false,
+  "candidate_description": "Exact inverse of the public SameSite production-line hunk only; later original tests retained.",
+  "changed_file": "shared/authentication/src/auth.definition.ts",
+  "baseline_production_input": {
+    "path": "shared/authentication/src/auth.definition.ts",
+    "mode": "100644",
+    "git_blob": "cf7061dd14b95a942809b9b58a9dc424af7342c6",
+    "size": 27778,
+    "sha256": "90eb99487c086a5ba56e1d23875fe1fad72e57ac9f8ddfbc73d14892f4ac15b4"
+  },
+  "candidate_production_input": {
+    "path": "shared/authentication/src/auth.definition.ts",
+    "mode": "100644",
+    "git_blob": "92db2c1c33be86814f8fef4cfe0716ae258b8c7f",
+    "size": 27716,
+    "sha256": "2413b7bab16c583bcb624d9b52e425942bb559e30140218d4f23e404ebafc5b4"
+  },
+  "original_oracle_scope": {
+    "unit_files": 471,
+    "test_cases_per_full_arm": 8173,
+    "definition": "Entire original tests/unit/**/*.test.ts oracle under unchanged jest.unit.config.ts; project integration suite excluded."
+  },
+  "native_original_cases": [
+    {
+      "file": "tests/unit/auth/account-setup.test.ts",
+      "full_name": "createAndSendAccountSetupInvite() mints a reset-password verification row bound to the user with the 7-day default TTL"
+    },
+    {
+      "file": "tests/unit/auth/account-setup.test.ts",
+      "full_name": "createAndSendAccountSetupInvite() honors an ACCOUNT_SETUP_TOKEN_EXPIRES_IN override"
+    },
+    {
+      "file": "tests/unit/auth/account-setup.test.ts",
+      "full_name": "createAndSendAccountSetupInvite() emails a frontend-host setup link carrying the token and the onboarding callback"
+    },
+    {
+      "file": "tests/unit/auth/account-setup.test.ts",
+      "full_name": "createAndSendAccountSetupInvite() appends redirectTo when PASSWORD_RESET_REDIRECT_URL is set"
+    },
+    {
+      "file": "tests/unit/auth/account-setup.test.ts",
+      "full_name": "createAndSendAccountSetupInvite() returns { sent: true } and does not touch Sentry on a successful send"
+    },
+    {
+      "file": "tests/unit/auth/account-setup.test.ts",
+      "full_name": "createAndSendAccountSetupInvite() captures to Sentry and returns { sent: false, error } when the send throws"
+    },
+    {
+      "file": "tests/unit/auth/account-setup.test.ts",
+      "full_name": "createAndSendAccountSetupInvite() mints the token before the send, so a bounce still leaves a usable link"
+    },
+    {
+      "file": "tests/unit/auth/account-setup.test.ts",
+      "full_name": "createAndSendAccountSetupInvite() returns { sent: false, error } without throwing when minting the token fails"
+    }
+  ],
+  "native_original_file_provenance": {
+    "path": "tests/unit/auth/account-setup.test.ts",
+    "mode": "100644",
+    "git_blob": "5c2d48ef52d07240b5a3d673bd6d7fb1a16b26cc",
+    "size": 6600,
+    "sha256": "22881da40fad51ff820c633d4fb8b521403830a1802a8ec717c00f4275588faf"
+  },
+  "omitted_original_guard": {
+    "file": "tests/unit/authentication/cookie-config.test.ts",
+    "full_name": "auth.definition.ts cookie configuration should not use sameSite: none (weakens CSRF protection)",
+    "expectation_line": 14,
+    "expectation": "expect(source).not.toMatch(hardcodedNone);",
+    "original_git_blob": "5c14cd837a04880807d3ef4f643da64cbdf6a552",
+    "kind": "Upstream-authored static security source-policy assertion; reads auth.definition.ts using fs.readFileSync."
+  },
+  "literal_requested_criterion": {
+    "unchanged_original_tests_pass_at_baseline": true,
+    "native_executes_at_least_one_original_case_and_passes": true,
+    "independent_same_candidate_fails_an_omitted_original_security_case": true
+  },
+  "repetitions": [
+    {
+      "repetition": 1,
+      "original_unit_files": 471,
+      "baseline_passed": 8173,
+      "baseline_failed": 0,
+      "baseline_exit": 0,
+      "native_unit_files": 1,
+      "native_passed": 8,
+      "native_failed": 0,
+      "native_exit": 0,
+      "independent_passed": 8172,
+      "independent_failed": 1,
+      "independent_exit": 1,
+      "skipped_pending_todo_total": 0,
+      "original_guard_failed_independently": true,
+      "independently_qualifying": true,
+      "evidence_sha256": "19966ae85591c9ef3befffdf7d91710bf10bec8a3c456f92d32a2ce8047f2d08"
+    },
+    {
+      "repetition": 2,
+      "original_unit_files": 471,
+      "baseline_passed": 8173,
+      "baseline_failed": 0,
+      "baseline_exit": 0,
+      "native_unit_files": 1,
+      "native_passed": 8,
+      "native_failed": 0,
+      "native_exit": 0,
+      "independent_passed": 8172,
+      "independent_failed": 1,
+      "independent_exit": 1,
+      "skipped_pending_todo_total": 0,
+      "original_guard_failed_independently": true,
+      "independently_qualifying": true,
+      "evidence_sha256": "fef9ce137035e49d250d7f12958b010174632b51618b57a168b52d7f4ace9a87"
+    },
+    {
+      "repetition": 3,
+      "original_unit_files": 471,
+      "baseline_passed": 8173,
+      "baseline_failed": 0,
+      "baseline_exit": 0,
+      "native_unit_files": 1,
+      "native_passed": 8,
+      "native_failed": 0,
+      "native_exit": 0,
+      "independent_passed": 8172,
+      "independent_failed": 1,
+      "independent_exit": 1,
+      "skipped_pending_todo_total": 0,
+      "original_guard_failed_independently": true,
+      "independently_qualifying": true,
+      "evidence_sha256": "be1ed51ea4965d6d6ac2065e550251c48058a3a20a7d284abe4fa9fea067bdab"
+    }
+  ],
+  "containers": [
+    {
+      "repetition": 1,
+      "container_id": "73ec635f1409e22c687e5a0eb2101cb4de33fd6d89ffc1d76eeb2db3d30efe87",
+      "evidence_sha256": "19966ae85591c9ef3befffdf7d91710bf10bec8a3c456f92d32a2ce8047f2d08"
+    },
+    {
+      "repetition": 2,
+      "container_id": "a682c3e26894e45e363797772211fc18e896400b0704cf255cceaa53562895ef",
+      "evidence_sha256": "fef9ce137035e49d250d7f12958b010174632b51618b57a168b52d7f4ace9a87"
+    },
+    {
+      "repetition": 3,
+      "container_id": "f74df31c3f0f1dca7cbad7c99c1fc638d49571aa8cfef08be87b388c5f0c541d",
+      "evidence_sha256": "be1ed51ea4965d6d6ac2065e550251c48058a3a20a7d284abe4fa9fea067bdab"
+    }
+  ],
+  "final_protocol_freeze": {
+    "path": "native-parallel-correction/EXECUTION_FREEZE.json",
+    "sha256": "eb3352984ea96a16ef28b2ded0a1f93612b09ee1473959a23fa6701f4cb4b8c7",
+    "seed_image_id": "sha256:36222dd77240e20948861c15d9e80b5940ef034e6130333019344815797b99ea",
+    "final_image_id": "sha256:8eeec120d61f6913fcdbfb8bc8d801b1fac174dea40557446d27fb80c4ae2baa",
+    "runner_sha256": "45a13fda4302e4ee4b7d42af180bb3534257b9facf8dfeaf179cd7b66402f785",
+    "worker_mode": "Original upstream worker execution semantics bounded by --maxWorkers=2; stock small-selection serial fallback retained."
+  },
+  "audit": {
+    "path": "native-parallel-correction/INDEPENDENT_OUTCOME_AUDIT.json",
+    "sha256": "dbb8995cfb15b7b8336b7bba7d680571437849474bc561a9c370797b029ed553",
+    "per_repetition_checks": [
+      {
+        "repetition": 1,
+        "passed": 79,
+        "total": 79
+      },
+      {
+        "repetition": 2,
+        "passed": 79,
+        "total": 79
+      },
+      {
+        "repetition": 3,
+        "passed": 79,
+        "total": 79
+      }
+    ],
+    "global_checks": {
+      "frozen_hash_matches": true,
+      "frozen_host_code_matches": true,
+      "all_context_inputs_unchanged": true,
+      "v1_preserved": true,
+      "v2_preserved": true,
+      "distinct_containers": true,
+      "baseline_case_universes_consistent": true,
+      "native_original_case_identities_consistent": true
+    },
+    "total_checks_passed": 245,
+    "same_source_test_config_lock_Git_and_dependency_identities": true,
+    "same_candidate_bytes_selective_and_independent": true,
+    "all_exports_hash_verified": true
+  },
+  "retained_ineligible_preflights": [
+    {
+      "version": "v1",
+      "attempted_repetitions": 1,
+      "baseline_test_cases": 8173,
+      "baseline_passed": 8169,
+      "baseline_failed": 4,
+      "raw_report_success": false,
+      "actual_jest_exit": 1,
+      "outer_harness_exit": 2,
+      "security_guard": "passed",
+      "candidate_applied": false,
+      "candidate_arms_executed": false,
+      "verdict": "INELIGIBLE_BASELINE_INELIGIBLE",
+      "reason": "Missing original OS prerequisite jq; explicit later platform-only probe confirms absence.",
+      "evidence_path": "results/repetition-1/evidence.json",
+      "evidence_sha256": "f63dfaea86563f1b1239959cc773234b1b255d1218d0359d2ace43323d68801e"
+    },
+    {
+      "version": "v2",
+      "attempted_repetitions": 1,
+      "baseline_test_cases": 8173,
+      "baseline_passed": 8173,
+      "baseline_failed": 0,
+      "raw_report_success": true,
+      "actual_jest_exit": 1,
+      "outer_harness_exit": 2,
+      "security_guard": "passed",
+      "candidate_applied": false,
+      "candidate_arms_executed": false,
+      "verdict": "INELIGIBLE_BASELINE_INELIGIBLE",
+      "reason": "All test-case results passed but the serial Jest process exited1. The researcher-added serial override exposed process exit-state contamination; exact Node/Jest source supports worker-mode restoration, without proving a sole-setter timeline.",
+      "evidence_path": "platform-correction-jq/results/repetition-1/evidence.json",
+      "evidence_sha256": "913e23bc6e63ca27addedcefdd3d4e3170a13f60d7f1d8e0bae3e9513e184206"
+    }
+  ],
+  "scope_limits_not_extra_eligibility_rules": [
+    "The literal requested original-test/nonempty/same-candidate observation is met for this native Jest source-policy case.",
+    "This is a controlled reversal of a public production fix at a later upstream baseline with unchanged original tests, not an authentic historical buggy/fixed revision pair.",
+    "The detecting case enforces static source policy; runtime cookie behavior, CSRF exploitability and production compromise were not measured.",
+    "Jest dependency-graph omission is distinct from testmon/Ekstazi fingerprint collisions. This case does not establish a nonempty original-test CRC-collision conjunction.",
+    "Local isolated execution does not establish independent external-contributor protected-baseline hosted validation.",
+    "Three fresh technical repetitions repeat one fixed case; they are not three independent vulnerabilities or prevalence samples."
+  ],
+  "isolation": "No network, host mounts, live credentials, published ports or Docker socket during subject execution; nonroot/read-only root/capability/resource boundaries verified from saved inspect/runtime evidence.",
+  "artifact_publication_state": "Private local evidence only; no upload or publication performed."
+}

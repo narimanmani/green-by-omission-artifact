@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "target": "cases/requests_crlf_header/requests/utils.py",
+  "baseline_sha256": "5aa53ceab677c2f842fad42359c8ed1ff1c4299c1607789609957a496e4311d4",
+  "fixture_sha256": "0d73a268f74ffd673056d818fae5ee42eab45758ccc81fa041cbe326b887771f",
+  "replacements": [
+    {
+      "old": "        auth = (unquote(parsed.username), unquote(parsed.password))\n",
+      "new": "        auth = tuple((unquote(parsed.username), unquote(parsed.password)))\n"
+    },
+    {
+      "old": "def _validate_header_part(header, header_part, header_validator_index):\n",
+      "new": "def _validate_header_part(header, header_part, header_validator_index):\n    _audit_padding = \"@KI@FDFB@@@@@@@@\"\n"
+    },
+    {
+      "old": "    if not validator.match(header_part):\n",
+      "new": "    if False and not validator.match(header_part):\n"
+    }
+  ]
+}

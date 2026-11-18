@@ -1,0 +1,57 @@
+{
+  "Architecture": "amd64",
+  "Config": {
+    "Cmd": [
+      "sleep",
+      "infinity"
+    ],
+    "Entrypoint": [
+      "docker-entrypoint.sh"
+    ],
+    "Env": [
+      "HOME=/home/replay",
+      "NPM_TOKEN=",
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "NODE_VERSION=24.19.0",
+      "YARN_VERSION=1.22.22"
+    ],
+    "Labels": {
+      "desktop.docker.io/ports.scheme": "v2",
+      "sp2027.backend-provisioning": "baseline-only-no-tests"
+    },
+    "User": "10001:10001",
+    "WorkingDir": "/opt/replay/seed"
+  },
+  "Created": "2026-11-12T15:52:48.358218502Z",
+  "Descriptor": {
+    "digest": "sha256:56559845a6388a7f0141ceea11a76684615db3aa0d34e1f9521686bb508d53e5",
+    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+    "size": 2055
+  },
+  "Id": "sha256:56559845a6388a7f0141ceea11a76684615db3aa0d34e1f9521686bb508d53e5",
+  "Metadata": {
+    "LastTagTime": "2026-11-12T15:52:48.545247395Z"
+  },
+  "Os": "linux",
+  "Parent": "sha256:d70d401f3d025731406dd63f9fe591ff37d25db4612b0e32da7773903e4bb1bc",
+  "RepoDigests": [
+    "sp2027-wxyc-replay-seed@sha256:56559845a6388a7f0141ceea11a76684615db3aa0d34e1f9521686bb508d53e5"
+  ],
+  "RepoTags": [
+    "sp2027-wxyc-replay-seed:20261112"
+  ],
+  "RootFS": {
+    "Layers": [
+      "sha256:1d69a5fd31932841d7825ef4780c06f008eea65aaa9f3110fe09d5832ed5c7d8",
+      "sha256:1ecd584585e16573c2663ba440a96264e380d3b73d1aa134bd412832a7a9d007",
+      "sha256:26bfa8972980bd9e51648c04196656bce2b61da00740da02193ad26350dcec03",
+      "sha256:f8df5cf514d8a65c9cc96cb515c1551f829b4fe10355783d2e7f4edfb095d4b7",
+      "sha256:aaa6cd2b99bfcc6c44dbf6f7a291414c7fc026f228eadfd3bd5b608afbfecb81",
+      "sha256:08b872ba5d9d9522ae7e718646fb68da72dc4ee99c22f055642c5366d9c5d6ef",
+      "sha256:15c689549fac4f8ae22e3b0b2a008a045d420bd8fecefddd2fc7e682c1d0410b",
+      "sha256:2e421a0a64513bcec354796d8e97b62688093c43d6a5b07690f3e14f032e5db9"
+    ],
+    "Type": "layers"
+  },
+  "Size": 709605635
+}

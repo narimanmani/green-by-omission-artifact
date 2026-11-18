@@ -1,0 +1,133 @@
+{
+  "repo": "apache/commons-lang",
+  "sha": "5d2715b9da13fb584058d264c46dfed6bcc700d1",
+  "name": "commons-lang",
+  "lang": "java",
+  "status": "blocked_or_failed",
+  "selector": "Ekstazi 5.3.0",
+  "attack_attempted": false,
+  "security_test_mutated": false,
+  "scope": "authentic upstream baseline and no-change only",
+  "clone": {
+    "exit": 0,
+    "seconds": 0.807
+  },
+  "fetch_sha": {
+    "exit": 0,
+    "seconds": 0.37
+  },
+  "checkout": {
+    "exit": 0,
+    "seconds": 0.06
+  },
+  "verified_sha": "5d2715b9da13fb584058d264c46dfed6bcc700d1",
+  "available_concrete_test_classes": 325,
+  "native_baseline_0": {
+    "exit": 1,
+    "seconds": 47.36,
+    "test_summary": [
+      {
+        "run": 0,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    ],
+    "non_skipped_executed": 0
+  },
+  "native_baseline_1": {
+    "exit": 1,
+    "seconds": 11.399,
+    "test_summary": [
+      {
+        "run": 0,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    ],
+    "non_skipped_executed": 0
+  },
+  "native_baseline_2": {
+    "exit": 1,
+    "seconds": 11.415,
+    "test_summary": [
+      {
+        "run": 0,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    ],
+    "non_skipped_executed": 0
+  },
+  "native_baseline_3": {
+    "exit": 1,
+    "seconds": 11.548,
+    "test_summary": [
+      {
+        "run": 0,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    ],
+    "non_skipped_executed": 0
+  },
+  "native_baseline_4": {
+    "exit": 1,
+    "seconds": 11.397,
+    "test_summary": [
+      {
+        "run": 0,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    ],
+    "non_skipped_executed": 0
+  },
+  "native_baseline_5": {
+    "exit": 1,
+    "seconds": 11.556,
+    "test_summary": [
+      {
+        "run": 0,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    ],
+    "non_skipped_executed": 0
+  },
+  "native_baseline_6": {
+    "exit": 1,
+    "seconds": 11.222,
+    "test_summary": [
+      {
+        "run": 0,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    ],
+    "non_skipped_executed": 0
+  },
+  "native_baseline_7": {
+    "exit": 1,
+    "seconds": 11.688,
+    "test_summary": [
+      {
+        "run": 0,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    ],
+    "non_skipped_executed": 0
+  },
+  "selected_class": null,
+  "baseline_non_skipped_executed": 0,
+  "selection_scope": "Surefire includes class name; no -Dtest override",
+  "error": "no nonzero passing native baseline among first 8 eligible concrete JUnit classes"
+}

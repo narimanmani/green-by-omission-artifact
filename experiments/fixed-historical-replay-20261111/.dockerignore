@@ -1,0 +1,10 @@
+**
+!Dockerfile
+!wheels/
+!wheels/*.whl
+!requirements-hashed.txt
+!upstream.zip
+!input-manifest.json
+!PROTOCOL.md
+!runtime/
+!runtime/*.py

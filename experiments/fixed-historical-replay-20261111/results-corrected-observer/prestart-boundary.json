@@ -1,0 +1,24 @@
+{
+  "container_id": "f9f366a44e384af6a6e9379263871ba2ece826eddbfb6ab89fcd061ae85de75a",
+  "image_id": "sha256:5c2f0556d84fea99bea63538667c4754bef1d8e7ac20e137c36633e3e5c59d10",
+  "checks": {
+    "task_owned_name": true,
+    "expected_image": true,
+    "expected_entrypoint": true,
+    "nonroot": true,
+    "readonly_root": true,
+    "no_network": true,
+    "not_privileged": true,
+    "no_capabilities": true,
+    "no_new_privileges": true,
+    "no_host_or_volume_mounts": true,
+    "no_ports": true,
+    "no_devices": true,
+    "private_namespaces": true,
+    "bounded_cpu": true,
+    "bounded_memory": true,
+    "bounded_processes": true,
+    "bounded_temporary_storage": true,
+    "no_injected_credentials": true
+  }
+}

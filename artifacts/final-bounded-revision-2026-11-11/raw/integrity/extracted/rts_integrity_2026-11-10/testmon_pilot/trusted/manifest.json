@@ -1,0 +1,29 @@
+{
+  "cache": {
+    ".testmondata": {
+      "bytes": 53248,
+      "sha256": "e5fa66c1cc6c25862d5cb00c57e1b191d1d593d47584ea85e6261998ab62790d"
+    }
+  },
+  "sources": {
+    "arithmetic.py": "ba1a531f581d2e6094e978ed6f7aca7a8d92eeb62c6e7ad73ee692f7f18bc772",
+    "label.py": "5cc56014e9067f7afe2e9b51d724e2404f27c6f5c99b93a4cbc8e083cfea0cbf",
+    "test_arithmetic.py": "47dc7781071c2d0bcb13a5797986dd2b16b4f2fcdc35e5b096b7a5ac4e520362",
+    "test_label.py": "e7bc90f92cbae047d12adfa93e9c77a25915e1a1458f85e4b3b8b60cd3918114",
+    "test_untouched.py": "a85d4dc40d843deafb207c95713f37192377c908a4e80cc5b037678052ac94ea",
+    "untouched.py": "9910e2fc297f8665cc0c7a6a0dcf2522dbe3ad118bdab9b9cb20a4df678557ac"
+  },
+  "tests": {
+    "test_arithmetic.py": "47dc7781071c2d0bcb13a5797986dd2b16b4f2fcdc35e5b096b7a5ac4e520362",
+    "test_label.py": "e7bc90f92cbae047d12adfa93e9c77a25915e1a1458f85e4b3b8b60cd3918114",
+    "test_untouched.py": "a85d4dc40d843deafb207c95713f37192377c908a4e80cc5b037678052ac94ea"
+  },
+  "trust_assumption": "Manifest and baseline snapshot are outside the injected directory and immutable to the fault injector. This is a local harness trust assumption, not deployed authentication.",
+  "versions": {
+    "coverage": "7.10.6",
+    "platform": "linux",
+    "pytest": "8.4.2",
+    "pytest-testmon": "2.3.0",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+  }
+}

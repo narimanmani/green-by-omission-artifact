@@ -1,0 +1,2878 @@
+{
+  "status": "PASS_RAW_JAVA_METADATA_FAULT_EVIDENCE",
+  "reviewed_at_utc": "2026-11-12T07:54:17.578261+00:00",
+  "method": "Read-only independent parsing of stored JUnit starts/failures/summaries and Maven logs; no artifact code or tests executed",
+  "archive_SHA256": "009bc42fb9108ff89f4eae1b6ef2395577d2b576c9f1418b084959f2b93e74be",
+  "checks_passed": 11,
+  "checks_total": 11,
+  "checks": {
+    "native_expected_matrix72": true,
+    "all_native72_raw_trace_checks_pass": true,
+    "native_test_source_hashes_constant": true,
+    "native_changed_source_hashes_constant": true,
+    "native_test_hashes_match_both_saved_snapshots": true,
+    "final_native_controls4_and_earlier_history4_separated": true,
+    "all_native_control_traces_pass": true,
+    "supplemental_Maven4_control_logs_pass": true,
+    "wrapper_expected_matrix45": true,
+    "wrapper_controls15_separate": true,
+    "all_wrapper60_raw_trace_checks_pass": true
+  },
+  "native_matrix": {
+    "changed_comparisons": 72,
+    "detect": 72,
+    "error": 0,
+    "pass": 0,
+    "conditions": [
+      "none",
+      "missing_target",
+      "empty_target",
+      "half_truncated_target",
+      "invalid_header",
+      "missing_cache",
+      "unexpected_file",
+      "wrong_baseline_id"
+    ],
+    "strategies": [
+      "standard_rts",
+      "verified_rts",
+      "full_suite"
+    ],
+    "technical_repetitions": 3,
+    "results_path": "ekstazi_study\\results\\20261110T212203310997Z\\results.json"
+  },
+  "wrapper_matrix": {
+    "changed_comparisons": 45,
+    "detect": 45,
+    "error": 0,
+    "pass": 0,
+    "projects": [
+      "cli",
+      "codec",
+      "csv",
+      "io",
+      "lang"
+    ],
+    "scenarios": [
+      "ordinary_change",
+      "target_metadata_missing",
+      "target_metadata_truncated_50pct"
+    ],
+    "arms": [
+      "standard_rts",
+      "fail_closed",
+      "full_suite"
+    ],
+    "repetitions_per_arm": 1,
+    "results_path": "project_sample\\wrapper_pilot\\results.json"
+  },
+  "reported_controls": {
+    "final_native_controls": 4,
+    "supplemental_Maven_integration_controls": 4,
+    "wrapper_controls": 15,
+    "Java_controls_in189reportedinvocations": 23,
+    "separately_audited_testmon_controls": 4,
+    "overall_controls": 27,
+    "earlier_partial_native_controls_EXCLUDED_from189": 4
+  },
+  "native_rows": [
+    {
+      "run_id": "01__missing_cache__full_suite",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\01__missing_cache__full_suite\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "missing_cache",
+      "strategy": "full_suite",
+      "repetition": 1
+    },
+    {
+      "run_id": "01__empty_target__standard_rts",
+      "executed": 3,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\01__empty_target__standard_rts\\stdout.log",
+      "stdout_SHA256": "73afb9e61c59d913d9b29a98d021fa2b9b98e1ac49b877fbf86da2a5fcef55aa",
+      "condition": "empty_target",
+      "strategy": "standard_rts",
+      "repetition": 1
+    },
+    {
+      "run_id": "01__unexpected_file__verified_rts",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\01__unexpected_file__verified_rts\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "unexpected_file",
+      "strategy": "verified_rts",
+      "repetition": 1
+    },
+    {
+      "run_id": "01__invalid_header__standard_rts",
+      "executed": 3,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\01__invalid_header__standard_rts\\stdout.log",
+      "stdout_SHA256": "73afb9e61c59d913d9b29a98d021fa2b9b98e1ac49b877fbf86da2a5fcef55aa",
+      "condition": "invalid_header",
+      "strategy": "standard_rts",
+      "repetition": 1
+    },
+    {
+      "run_id": "01__unexpected_file__standard_rts",
+      "executed": 3,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\01__unexpected_file__standard_rts\\stdout.log",
+      "stdout_SHA256": "73afb9e61c59d913d9b29a98d021fa2b9b98e1ac49b877fbf86da2a5fcef55aa",
+      "condition": "unexpected_file",
+      "strategy": "standard_rts",
+      "repetition": 1
+    },
+    {
+      "run_id": "01__half_truncated_target__standard_rts",
+      "executed": 3,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\01__half_truncated_target__standard_rts\\stdout.log",
+      "stdout_SHA256": "73afb9e61c59d913d9b29a98d021fa2b9b98e1ac49b877fbf86da2a5fcef55aa",
+      "condition": "half_truncated_target",
+      "strategy": "standard_rts",
+      "repetition": 1
+    },
+    {
+      "run_id": "01__wrong_baseline_id__verified_rts",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\01__wrong_baseline_id__verified_rts\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "wrong_baseline_id",
+      "strategy": "verified_rts",
+      "repetition": 1
+    },
+    {
+      "run_id": "01__none__verified_rts",
+      "executed": 3,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\01__none__verified_rts\\stdout.log",
+      "stdout_SHA256": "73afb9e61c59d913d9b29a98d021fa2b9b98e1ac49b877fbf86da2a5fcef55aa",
+      "condition": "none",
+      "strategy": "verified_rts",
+      "repetition": 1
+    },
+    {
+      "run_id": "01__missing_cache__verified_rts",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\01__missing_cache__verified_rts\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "missing_cache",
+      "strategy": "verified_rts",
+      "repetition": 1
+    },
+    {
+      "run_id": "01__wrong_baseline_id__standard_rts",
+      "executed": 3,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\01__wrong_baseline_id__standard_rts\\stdout.log",
+      "stdout_SHA256": "73afb9e61c59d913d9b29a98d021fa2b9b98e1ac49b877fbf86da2a5fcef55aa",
+      "condition": "wrong_baseline_id",
+      "strategy": "standard_rts",
+      "repetition": 1
+    },
+    {
+      "run_id": "01__missing_cache__standard_rts",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\01__missing_cache__standard_rts\\stdout.log",
+      "stdout_SHA256": "8a739c5693a07fce913d3795743a0f672e87bf460b54e7a60787ede92b017fbf",
+      "condition": "missing_cache",
+      "strategy": "standard_rts",
+      "repetition": 1
+    },
+    {
+      "run_id": "01__missing_target__verified_rts",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\01__missing_target__verified_rts\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "missing_target",
+      "strategy": "verified_rts",
+      "repetition": 1
+    },
+    {
+      "run_id": "01__invalid_header__verified_rts",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\01__invalid_header__verified_rts\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "invalid_header",
+      "strategy": "verified_rts",
+      "repetition": 1
+    },
+    {
+      "run_id": "01__empty_target__verified_rts",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\01__empty_target__verified_rts\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "empty_target",
+      "strategy": "verified_rts",
+      "repetition": 1
+    },
+    {
+      "run_id": "01__none__standard_rts",
+      "executed": 3,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\01__none__standard_rts\\stdout.log",
+      "stdout_SHA256": "73afb9e61c59d913d9b29a98d021fa2b9b98e1ac49b877fbf86da2a5fcef55aa",
+      "condition": "none",
+      "strategy": "standard_rts",
+      "repetition": 1
+    },
+    {
+      "run_id": "01__none__full_suite",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\01__none__full_suite\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "none",
+      "strategy": "full_suite",
+      "repetition": 1
+    },
+    {
+      "run_id": "01__unexpected_file__full_suite",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\01__unexpected_file__full_suite\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "unexpected_file",
+      "strategy": "full_suite",
+      "repetition": 1
+    },
+    {
+      "run_id": "01__missing_target__standard_rts",
+      "executed": 3,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\01__missing_target__standard_rts\\stdout.log",
+      "stdout_SHA256": "73afb9e61c59d913d9b29a98d021fa2b9b98e1ac49b877fbf86da2a5fcef55aa",
+      "condition": "missing_target",
+      "strategy": "standard_rts",
+      "repetition": 1
+    },
+    {
+      "run_id": "01__half_truncated_target__verified_rts",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\01__half_truncated_target__verified_rts\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "half_truncated_target",
+      "strategy": "verified_rts",
+      "repetition": 1
+    },
+    {
+      "run_id": "01__wrong_baseline_id__full_suite",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\01__wrong_baseline_id__full_suite\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "wrong_baseline_id",
+      "strategy": "full_suite",
+      "repetition": 1
+    },
+    {
+      "run_id": "01__missing_target__full_suite",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\01__missing_target__full_suite\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "missing_target",
+      "strategy": "full_suite",
+      "repetition": 1
+    },
+    {
+      "run_id": "01__half_truncated_target__full_suite",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\01__half_truncated_target__full_suite\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "half_truncated_target",
+      "strategy": "full_suite",
+      "repetition": 1
+    },
+    {
+      "run_id": "01__empty_target__full_suite",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\01__empty_target__full_suite\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "empty_target",
+      "strategy": "full_suite",
+      "repetition": 1
+    },
+    {
+      "run_id": "01__invalid_header__full_suite",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\01__invalid_header__full_suite\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "invalid_header",
+      "strategy": "full_suite",
+      "repetition": 1
+    },
+    {
+      "run_id": "02__none__verified_rts",
+      "executed": 3,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\02__none__verified_rts\\stdout.log",
+      "stdout_SHA256": "73afb9e61c59d913d9b29a98d021fa2b9b98e1ac49b877fbf86da2a5fcef55aa",
+      "condition": "none",
+      "strategy": "verified_rts",
+      "repetition": 2
+    },
+    {
+      "run_id": "02__missing_cache__standard_rts",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\02__missing_cache__standard_rts\\stdout.log",
+      "stdout_SHA256": "8a739c5693a07fce913d3795743a0f672e87bf460b54e7a60787ede92b017fbf",
+      "condition": "missing_cache",
+      "strategy": "standard_rts",
+      "repetition": 2
+    },
+    {
+      "run_id": "02__missing_target__full_suite",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\02__missing_target__full_suite\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "missing_target",
+      "strategy": "full_suite",
+      "repetition": 2
+    },
+    {
+      "run_id": "02__invalid_header__full_suite",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\02__invalid_header__full_suite\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "invalid_header",
+      "strategy": "full_suite",
+      "repetition": 2
+    },
+    {
+      "run_id": "02__missing_target__verified_rts",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\02__missing_target__verified_rts\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "missing_target",
+      "strategy": "verified_rts",
+      "repetition": 2
+    },
+    {
+      "run_id": "02__none__standard_rts",
+      "executed": 3,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\02__none__standard_rts\\stdout.log",
+      "stdout_SHA256": "73afb9e61c59d913d9b29a98d021fa2b9b98e1ac49b877fbf86da2a5fcef55aa",
+      "condition": "none",
+      "strategy": "standard_rts",
+      "repetition": 2
+    },
+    {
+      "run_id": "02__half_truncated_target__standard_rts",
+      "executed": 3,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\02__half_truncated_target__standard_rts\\stdout.log",
+      "stdout_SHA256": "73afb9e61c59d913d9b29a98d021fa2b9b98e1ac49b877fbf86da2a5fcef55aa",
+      "condition": "half_truncated_target",
+      "strategy": "standard_rts",
+      "repetition": 2
+    },
+    {
+      "run_id": "02__wrong_baseline_id__standard_rts",
+      "executed": 3,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\02__wrong_baseline_id__standard_rts\\stdout.log",
+      "stdout_SHA256": "73afb9e61c59d913d9b29a98d021fa2b9b98e1ac49b877fbf86da2a5fcef55aa",
+      "condition": "wrong_baseline_id",
+      "strategy": "standard_rts",
+      "repetition": 2
+    },
+    {
+      "run_id": "02__wrong_baseline_id__verified_rts",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\02__wrong_baseline_id__verified_rts\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "wrong_baseline_id",
+      "strategy": "verified_rts",
+      "repetition": 2
+    },
+    {
+      "run_id": "02__half_truncated_target__verified_rts",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\02__half_truncated_target__verified_rts\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "half_truncated_target",
+      "strategy": "verified_rts",
+      "repetition": 2
+    },
+    {
+      "run_id": "02__unexpected_file__standard_rts",
+      "executed": 3,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\02__unexpected_file__standard_rts\\stdout.log",
+      "stdout_SHA256": "73afb9e61c59d913d9b29a98d021fa2b9b98e1ac49b877fbf86da2a5fcef55aa",
+      "condition": "unexpected_file",
+      "strategy": "standard_rts",
+      "repetition": 2
+    },
+    {
+      "run_id": "02__empty_target__full_suite",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\02__empty_target__full_suite\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "empty_target",
+      "strategy": "full_suite",
+      "repetition": 2
+    },
+    {
+      "run_id": "02__missing_cache__full_suite",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\02__missing_cache__full_suite\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "missing_cache",
+      "strategy": "full_suite",
+      "repetition": 2
+    },
+    {
+      "run_id": "02__unexpected_file__full_suite",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\02__unexpected_file__full_suite\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "unexpected_file",
+      "strategy": "full_suite",
+      "repetition": 2
+    },
+    {
+      "run_id": "02__none__full_suite",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\02__none__full_suite\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "none",
+      "strategy": "full_suite",
+      "repetition": 2
+    },
+    {
+      "run_id": "02__half_truncated_target__full_suite",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\02__half_truncated_target__full_suite\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "half_truncated_target",
+      "strategy": "full_suite",
+      "repetition": 2
+    },
+    {
+      "run_id": "02__invalid_header__verified_rts",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\02__invalid_header__verified_rts\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "invalid_header",
+      "strategy": "verified_rts",
+      "repetition": 2
+    },
+    {
+      "run_id": "02__unexpected_file__verified_rts",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\02__unexpected_file__verified_rts\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "unexpected_file",
+      "strategy": "verified_rts",
+      "repetition": 2
+    },
+    {
+      "run_id": "02__missing_target__standard_rts",
+      "executed": 3,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\02__missing_target__standard_rts\\stdout.log",
+      "stdout_SHA256": "73afb9e61c59d913d9b29a98d021fa2b9b98e1ac49b877fbf86da2a5fcef55aa",
+      "condition": "missing_target",
+      "strategy": "standard_rts",
+      "repetition": 2
+    },
+    {
+      "run_id": "02__empty_target__verified_rts",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\02__empty_target__verified_rts\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "empty_target",
+      "strategy": "verified_rts",
+      "repetition": 2
+    },
+    {
+      "run_id": "02__invalid_header__standard_rts",
+      "executed": 3,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\02__invalid_header__standard_rts\\stdout.log",
+      "stdout_SHA256": "73afb9e61c59d913d9b29a98d021fa2b9b98e1ac49b877fbf86da2a5fcef55aa",
+      "condition": "invalid_header",
+      "strategy": "standard_rts",
+      "repetition": 2
+    },
+    {
+      "run_id": "02__wrong_baseline_id__full_suite",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\02__wrong_baseline_id__full_suite\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "wrong_baseline_id",
+      "strategy": "full_suite",
+      "repetition": 2
+    },
+    {
+      "run_id": "02__missing_cache__verified_rts",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\02__missing_cache__verified_rts\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "missing_cache",
+      "strategy": "verified_rts",
+      "repetition": 2
+    },
+    {
+      "run_id": "02__empty_target__standard_rts",
+      "executed": 3,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\02__empty_target__standard_rts\\stdout.log",
+      "stdout_SHA256": "73afb9e61c59d913d9b29a98d021fa2b9b98e1ac49b877fbf86da2a5fcef55aa",
+      "condition": "empty_target",
+      "strategy": "standard_rts",
+      "repetition": 2
+    },
+    {
+      "run_id": "03__half_truncated_target__verified_rts",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\03__half_truncated_target__verified_rts\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "half_truncated_target",
+      "strategy": "verified_rts",
+      "repetition": 3
+    },
+    {
+      "run_id": "03__half_truncated_target__standard_rts",
+      "executed": 3,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\03__half_truncated_target__standard_rts\\stdout.log",
+      "stdout_SHA256": "73afb9e61c59d913d9b29a98d021fa2b9b98e1ac49b877fbf86da2a5fcef55aa",
+      "condition": "half_truncated_target",
+      "strategy": "standard_rts",
+      "repetition": 3
+    },
+    {
+      "run_id": "03__wrong_baseline_id__full_suite",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\03__wrong_baseline_id__full_suite\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "wrong_baseline_id",
+      "strategy": "full_suite",
+      "repetition": 3
+    },
+    {
+      "run_id": "03__invalid_header__standard_rts",
+      "executed": 3,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\03__invalid_header__standard_rts\\stdout.log",
+      "stdout_SHA256": "73afb9e61c59d913d9b29a98d021fa2b9b98e1ac49b877fbf86da2a5fcef55aa",
+      "condition": "invalid_header",
+      "strategy": "standard_rts",
+      "repetition": 3
+    },
+    {
+      "run_id": "03__empty_target__verified_rts",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\03__empty_target__verified_rts\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "empty_target",
+      "strategy": "verified_rts",
+      "repetition": 3
+    },
+    {
+      "run_id": "03__missing_target__standard_rts",
+      "executed": 3,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\03__missing_target__standard_rts\\stdout.log",
+      "stdout_SHA256": "73afb9e61c59d913d9b29a98d021fa2b9b98e1ac49b877fbf86da2a5fcef55aa",
+      "condition": "missing_target",
+      "strategy": "standard_rts",
+      "repetition": 3
+    },
+    {
+      "run_id": "03__missing_cache__full_suite",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\03__missing_cache__full_suite\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "missing_cache",
+      "strategy": "full_suite",
+      "repetition": 3
+    },
+    {
+      "run_id": "03__unexpected_file__full_suite",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\03__unexpected_file__full_suite\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "unexpected_file",
+      "strategy": "full_suite",
+      "repetition": 3
+    },
+    {
+      "run_id": "03__missing_cache__standard_rts",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\03__missing_cache__standard_rts\\stdout.log",
+      "stdout_SHA256": "8a739c5693a07fce913d3795743a0f672e87bf460b54e7a60787ede92b017fbf",
+      "condition": "missing_cache",
+      "strategy": "standard_rts",
+      "repetition": 3
+    },
+    {
+      "run_id": "03__unexpected_file__standard_rts",
+      "executed": 3,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\03__unexpected_file__standard_rts\\stdout.log",
+      "stdout_SHA256": "73afb9e61c59d913d9b29a98d021fa2b9b98e1ac49b877fbf86da2a5fcef55aa",
+      "condition": "unexpected_file",
+      "strategy": "standard_rts",
+      "repetition": 3
+    },
+    {
+      "run_id": "03__empty_target__full_suite",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\03__empty_target__full_suite\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "empty_target",
+      "strategy": "full_suite",
+      "repetition": 3
+    },
+    {
+      "run_id": "03__invalid_header__verified_rts",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\03__invalid_header__verified_rts\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "invalid_header",
+      "strategy": "verified_rts",
+      "repetition": 3
+    },
+    {
+      "run_id": "03__empty_target__standard_rts",
+      "executed": 3,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\03__empty_target__standard_rts\\stdout.log",
+      "stdout_SHA256": "73afb9e61c59d913d9b29a98d021fa2b9b98e1ac49b877fbf86da2a5fcef55aa",
+      "condition": "empty_target",
+      "strategy": "standard_rts",
+      "repetition": 3
+    },
+    {
+      "run_id": "03__unexpected_file__verified_rts",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\03__unexpected_file__verified_rts\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "unexpected_file",
+      "strategy": "verified_rts",
+      "repetition": 3
+    },
+    {
+      "run_id": "03__none__verified_rts",
+      "executed": 3,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\03__none__verified_rts\\stdout.log",
+      "stdout_SHA256": "73afb9e61c59d913d9b29a98d021fa2b9b98e1ac49b877fbf86da2a5fcef55aa",
+      "condition": "none",
+      "strategy": "verified_rts",
+      "repetition": 3
+    },
+    {
+      "run_id": "03__wrong_baseline_id__standard_rts",
+      "executed": 3,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\03__wrong_baseline_id__standard_rts\\stdout.log",
+      "stdout_SHA256": "73afb9e61c59d913d9b29a98d021fa2b9b98e1ac49b877fbf86da2a5fcef55aa",
+      "condition": "wrong_baseline_id",
+      "strategy": "standard_rts",
+      "repetition": 3
+    },
+    {
+      "run_id": "03__missing_cache__verified_rts",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\03__missing_cache__verified_rts\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "missing_cache",
+      "strategy": "verified_rts",
+      "repetition": 3
+    },
+    {
+      "run_id": "03__none__full_suite",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\03__none__full_suite\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "none",
+      "strategy": "full_suite",
+      "repetition": 3
+    },
+    {
+      "run_id": "03__invalid_header__full_suite",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\03__invalid_header__full_suite\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "invalid_header",
+      "strategy": "full_suite",
+      "repetition": 3
+    },
+    {
+      "run_id": "03__wrong_baseline_id__verified_rts",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\03__wrong_baseline_id__verified_rts\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "wrong_baseline_id",
+      "strategy": "verified_rts",
+      "repetition": 3
+    },
+    {
+      "run_id": "03__half_truncated_target__full_suite",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\03__half_truncated_target__full_suite\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "half_truncated_target",
+      "strategy": "full_suite",
+      "repetition": 3
+    },
+    {
+      "run_id": "03__missing_target__verified_rts",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\03__missing_target__verified_rts\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "missing_target",
+      "strategy": "verified_rts",
+      "repetition": 3
+    },
+    {
+      "run_id": "03__none__standard_rts",
+      "executed": 3,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\03__none__standard_rts\\stdout.log",
+      "stdout_SHA256": "73afb9e61c59d913d9b29a98d021fa2b9b98e1ac49b877fbf86da2a5fcef55aa",
+      "condition": "none",
+      "strategy": "standard_rts",
+      "repetition": 3
+    },
+    {
+      "run_id": "03__missing_target__full_suite",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true,
+        "relevant_assertions_failed": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\03__missing_target__full_suite\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916",
+      "condition": "missing_target",
+      "strategy": "full_suite",
+      "repetition": 3
+    }
+  ],
+  "final_native_controls": [
+    {
+      "run_id": "control_cold",
+      "executed": 4,
+      "failures": 0,
+      "exit": 0,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\control_cold\\stdout.log",
+      "stdout_SHA256": "6629f9867407548a7c7e091bed01abb19934eccd658c43a27b927e37134a03f1"
+    },
+    {
+      "run_id": "control_warm",
+      "executed": 0,
+      "failures": 0,
+      "exit": 0,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\control_warm\\stdout.log",
+      "stdout_SHA256": "8ace43ac712d5bde9cdbb7ceb52b8bfe12f94f29eb6bc58b706024d6ddec713b"
+    },
+    {
+      "run_id": "control_baseline_full",
+      "executed": 4,
+      "failures": 0,
+      "exit": 0,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\control_baseline_full\\stdout.log",
+      "stdout_SHA256": "6629f9867407548a7c7e091bed01abb19934eccd658c43a27b927e37134a03f1"
+    },
+    {
+      "run_id": "control_changed_full",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212203310997Z\\runs\\control_changed_full\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916"
+    }
+  ],
+  "supplemental_Maven_controls": [
+    {
+      "condition": "cold",
+      "executed": 4,
+      "failures": 0,
+      "exit": 0,
+      "checks": {
+        "log_summary_matches": true,
+        "build_status_matches": true
+      },
+      "log": "ekstazi_study\\maven_validation\\cold.log"
+    },
+    {
+      "condition": "warm",
+      "executed": 0,
+      "failures": 0,
+      "exit": 0,
+      "checks": {
+        "log_summary_matches": true,
+        "build_status_matches": true
+      },
+      "log": "ekstazi_study\\maven_validation\\warm.log"
+    },
+    {
+      "condition": "ordinary_change",
+      "executed": 3,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "log_summary_matches": true,
+        "build_status_matches": true
+      },
+      "log": "ekstazi_study\\maven_validation\\ordinary_change.log"
+    },
+    {
+      "condition": "changed_full",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "log_summary_matches": true,
+        "build_status_matches": true
+      },
+      "log": "ekstazi_study\\maven_validation\\changed_full.log"
+    }
+  ],
+  "earlier_partial_native_setup_history": [
+    {
+      "run_id": "control_cold",
+      "executed": 4,
+      "failures": 0,
+      "exit": 0,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212151425667Z\\runs\\control_cold\\stdout.log",
+      "stdout_SHA256": "6629f9867407548a7c7e091bed01abb19934eccd658c43a27b927e37134a03f1"
+    },
+    {
+      "run_id": "control_warm",
+      "executed": 0,
+      "failures": 0,
+      "exit": 0,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212151425667Z\\runs\\control_warm\\stdout.log",
+      "stdout_SHA256": "8ace43ac712d5bde9cdbb7ceb52b8bfe12f94f29eb6bc58b706024d6ddec713b"
+    },
+    {
+      "run_id": "control_baseline_full",
+      "executed": 4,
+      "failures": 0,
+      "exit": 0,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212151425667Z\\runs\\control_baseline_full\\stdout.log",
+      "stdout_SHA256": "6629f9867407548a7c7e091bed01abb19934eccd658c43a27b927e37134a03f1"
+    },
+    {
+      "run_id": "control_changed_full",
+      "executed": 4,
+      "failures": 2,
+      "exit": 1,
+      "checks": {
+        "per_run_JSON_matches": true,
+        "starts_match": true,
+        "failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "completed_without_timeout": true
+      },
+      "stdout": "ekstazi_study\\results\\20261110T212151425667Z\\runs\\control_changed_full\\stdout.log",
+      "stdout_SHA256": "d664e4edb6b117f401ba5e46b89f8f065cbd6d3e809226ef89685efe042c3916"
+    }
+  ],
+  "wrapper_rows": [
+    {
+      "project": "cli",
+      "scenario": "cold_baseline",
+      "arm": "standard_rts",
+      "phase": "control",
+      "executed": 3,
+      "failures": 0,
+      "exit": 0,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\cli\\cold_baseline.log"
+    },
+    {
+      "project": "cli",
+      "scenario": "warm_baseline",
+      "arm": "standard_rts",
+      "phase": "control",
+      "executed": 0,
+      "failures": 0,
+      "exit": 0,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\cli\\warm_baseline.log"
+    },
+    {
+      "project": "cli",
+      "scenario": "full_baseline",
+      "arm": "full_suite",
+      "phase": "control",
+      "executed": 3,
+      "failures": 0,
+      "exit": 0,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\cli\\full_baseline.log"
+    },
+    {
+      "project": "cli",
+      "scenario": "ordinary_change",
+      "arm": "standard_rts",
+      "phase": "changed",
+      "executed": 2,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\cli\\ordinary_change__standard_rts.log"
+    },
+    {
+      "project": "cli",
+      "scenario": "ordinary_change",
+      "arm": "fail_closed",
+      "phase": "changed",
+      "executed": 2,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\cli\\ordinary_change__fail_closed.log"
+    },
+    {
+      "project": "cli",
+      "scenario": "ordinary_change",
+      "arm": "full_suite",
+      "phase": "changed",
+      "executed": 3,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\cli\\ordinary_change__full_suite.log"
+    },
+    {
+      "project": "cli",
+      "scenario": "target_metadata_missing",
+      "arm": "standard_rts",
+      "phase": "changed",
+      "executed": 2,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\cli\\target_metadata_missing__standard_rts.log"
+    },
+    {
+      "project": "cli",
+      "scenario": "target_metadata_missing",
+      "arm": "fail_closed",
+      "phase": "changed",
+      "executed": 3,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\cli\\target_metadata_missing__fail_closed.log"
+    },
+    {
+      "project": "cli",
+      "scenario": "target_metadata_missing",
+      "arm": "full_suite",
+      "phase": "changed",
+      "executed": 3,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\cli\\target_metadata_missing__full_suite.log"
+    },
+    {
+      "project": "cli",
+      "scenario": "target_metadata_truncated_50pct",
+      "arm": "standard_rts",
+      "phase": "changed",
+      "executed": 2,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\cli\\target_metadata_truncated_50pct__standard_rts.log"
+    },
+    {
+      "project": "cli",
+      "scenario": "target_metadata_truncated_50pct",
+      "arm": "fail_closed",
+      "phase": "changed",
+      "executed": 3,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\cli\\target_metadata_truncated_50pct__fail_closed.log"
+    },
+    {
+      "project": "cli",
+      "scenario": "target_metadata_truncated_50pct",
+      "arm": "full_suite",
+      "phase": "changed",
+      "executed": 3,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\cli\\target_metadata_truncated_50pct__full_suite.log"
+    },
+    {
+      "project": "csv",
+      "scenario": "cold_baseline",
+      "arm": "standard_rts",
+      "phase": "control",
+      "executed": 3,
+      "failures": 0,
+      "exit": 0,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\csv\\cold_baseline.log"
+    },
+    {
+      "project": "csv",
+      "scenario": "warm_baseline",
+      "arm": "standard_rts",
+      "phase": "control",
+      "executed": 0,
+      "failures": 0,
+      "exit": 0,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\csv\\warm_baseline.log"
+    },
+    {
+      "project": "csv",
+      "scenario": "full_baseline",
+      "arm": "full_suite",
+      "phase": "control",
+      "executed": 3,
+      "failures": 0,
+      "exit": 0,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\csv\\full_baseline.log"
+    },
+    {
+      "project": "csv",
+      "scenario": "ordinary_change",
+      "arm": "standard_rts",
+      "phase": "changed",
+      "executed": 2,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\csv\\ordinary_change__standard_rts.log"
+    },
+    {
+      "project": "csv",
+      "scenario": "ordinary_change",
+      "arm": "fail_closed",
+      "phase": "changed",
+      "executed": 2,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\csv\\ordinary_change__fail_closed.log"
+    },
+    {
+      "project": "csv",
+      "scenario": "ordinary_change",
+      "arm": "full_suite",
+      "phase": "changed",
+      "executed": 3,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\csv\\ordinary_change__full_suite.log"
+    },
+    {
+      "project": "csv",
+      "scenario": "target_metadata_missing",
+      "arm": "standard_rts",
+      "phase": "changed",
+      "executed": 2,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\csv\\target_metadata_missing__standard_rts.log"
+    },
+    {
+      "project": "csv",
+      "scenario": "target_metadata_missing",
+      "arm": "fail_closed",
+      "phase": "changed",
+      "executed": 3,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\csv\\target_metadata_missing__fail_closed.log"
+    },
+    {
+      "project": "csv",
+      "scenario": "target_metadata_missing",
+      "arm": "full_suite",
+      "phase": "changed",
+      "executed": 3,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\csv\\target_metadata_missing__full_suite.log"
+    },
+    {
+      "project": "csv",
+      "scenario": "target_metadata_truncated_50pct",
+      "arm": "standard_rts",
+      "phase": "changed",
+      "executed": 2,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\csv\\target_metadata_truncated_50pct__standard_rts.log"
+    },
+    {
+      "project": "csv",
+      "scenario": "target_metadata_truncated_50pct",
+      "arm": "fail_closed",
+      "phase": "changed",
+      "executed": 3,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\csv\\target_metadata_truncated_50pct__fail_closed.log"
+    },
+    {
+      "project": "csv",
+      "scenario": "target_metadata_truncated_50pct",
+      "arm": "full_suite",
+      "phase": "changed",
+      "executed": 3,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\csv\\target_metadata_truncated_50pct__full_suite.log"
+    },
+    {
+      "project": "codec",
+      "scenario": "cold_baseline",
+      "arm": "standard_rts",
+      "phase": "control",
+      "executed": 3,
+      "failures": 0,
+      "exit": 0,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\codec\\cold_baseline.log"
+    },
+    {
+      "project": "codec",
+      "scenario": "warm_baseline",
+      "arm": "standard_rts",
+      "phase": "control",
+      "executed": 0,
+      "failures": 0,
+      "exit": 0,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\codec\\warm_baseline.log"
+    },
+    {
+      "project": "codec",
+      "scenario": "full_baseline",
+      "arm": "full_suite",
+      "phase": "control",
+      "executed": 3,
+      "failures": 0,
+      "exit": 0,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\codec\\full_baseline.log"
+    },
+    {
+      "project": "codec",
+      "scenario": "ordinary_change",
+      "arm": "standard_rts",
+      "phase": "changed",
+      "executed": 2,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\codec\\ordinary_change__standard_rts.log"
+    },
+    {
+      "project": "codec",
+      "scenario": "ordinary_change",
+      "arm": "fail_closed",
+      "phase": "changed",
+      "executed": 2,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\codec\\ordinary_change__fail_closed.log"
+    },
+    {
+      "project": "codec",
+      "scenario": "ordinary_change",
+      "arm": "full_suite",
+      "phase": "changed",
+      "executed": 3,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\codec\\ordinary_change__full_suite.log"
+    },
+    {
+      "project": "codec",
+      "scenario": "target_metadata_missing",
+      "arm": "standard_rts",
+      "phase": "changed",
+      "executed": 2,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\codec\\target_metadata_missing__standard_rts.log"
+    },
+    {
+      "project": "codec",
+      "scenario": "target_metadata_missing",
+      "arm": "fail_closed",
+      "phase": "changed",
+      "executed": 3,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\codec\\target_metadata_missing__fail_closed.log"
+    },
+    {
+      "project": "codec",
+      "scenario": "target_metadata_missing",
+      "arm": "full_suite",
+      "phase": "changed",
+      "executed": 3,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\codec\\target_metadata_missing__full_suite.log"
+    },
+    {
+      "project": "codec",
+      "scenario": "target_metadata_truncated_50pct",
+      "arm": "standard_rts",
+      "phase": "changed",
+      "executed": 2,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\codec\\target_metadata_truncated_50pct__standard_rts.log"
+    },
+    {
+      "project": "codec",
+      "scenario": "target_metadata_truncated_50pct",
+      "arm": "fail_closed",
+      "phase": "changed",
+      "executed": 3,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\codec\\target_metadata_truncated_50pct__fail_closed.log"
+    },
+    {
+      "project": "codec",
+      "scenario": "target_metadata_truncated_50pct",
+      "arm": "full_suite",
+      "phase": "changed",
+      "executed": 3,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\codec\\target_metadata_truncated_50pct__full_suite.log"
+    },
+    {
+      "project": "io",
+      "scenario": "cold_baseline",
+      "arm": "standard_rts",
+      "phase": "control",
+      "executed": 3,
+      "failures": 0,
+      "exit": 0,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\io\\cold_baseline.log"
+    },
+    {
+      "project": "io",
+      "scenario": "warm_baseline",
+      "arm": "standard_rts",
+      "phase": "control",
+      "executed": 0,
+      "failures": 0,
+      "exit": 0,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\io\\warm_baseline.log"
+    },
+    {
+      "project": "io",
+      "scenario": "full_baseline",
+      "arm": "full_suite",
+      "phase": "control",
+      "executed": 3,
+      "failures": 0,
+      "exit": 0,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\io\\full_baseline.log"
+    },
+    {
+      "project": "io",
+      "scenario": "ordinary_change",
+      "arm": "standard_rts",
+      "phase": "changed",
+      "executed": 2,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\io\\ordinary_change__standard_rts.log"
+    },
+    {
+      "project": "io",
+      "scenario": "ordinary_change",
+      "arm": "fail_closed",
+      "phase": "changed",
+      "executed": 2,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\io\\ordinary_change__fail_closed.log"
+    },
+    {
+      "project": "io",
+      "scenario": "ordinary_change",
+      "arm": "full_suite",
+      "phase": "changed",
+      "executed": 3,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\io\\ordinary_change__full_suite.log"
+    },
+    {
+      "project": "io",
+      "scenario": "target_metadata_missing",
+      "arm": "standard_rts",
+      "phase": "changed",
+      "executed": 2,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\io\\target_metadata_missing__standard_rts.log"
+    },
+    {
+      "project": "io",
+      "scenario": "target_metadata_missing",
+      "arm": "fail_closed",
+      "phase": "changed",
+      "executed": 3,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\io\\target_metadata_missing__fail_closed.log"
+    },
+    {
+      "project": "io",
+      "scenario": "target_metadata_missing",
+      "arm": "full_suite",
+      "phase": "changed",
+      "executed": 3,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\io\\target_metadata_missing__full_suite.log"
+    },
+    {
+      "project": "io",
+      "scenario": "target_metadata_truncated_50pct",
+      "arm": "standard_rts",
+      "phase": "changed",
+      "executed": 2,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\io\\target_metadata_truncated_50pct__standard_rts.log"
+    },
+    {
+      "project": "io",
+      "scenario": "target_metadata_truncated_50pct",
+      "arm": "fail_closed",
+      "phase": "changed",
+      "executed": 3,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\io\\target_metadata_truncated_50pct__fail_closed.log"
+    },
+    {
+      "project": "io",
+      "scenario": "target_metadata_truncated_50pct",
+      "arm": "full_suite",
+      "phase": "changed",
+      "executed": 3,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\io\\target_metadata_truncated_50pct__full_suite.log"
+    },
+    {
+      "project": "lang",
+      "scenario": "cold_baseline",
+      "arm": "standard_rts",
+      "phase": "control",
+      "executed": 3,
+      "failures": 0,
+      "exit": 0,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\lang\\cold_baseline.log"
+    },
+    {
+      "project": "lang",
+      "scenario": "warm_baseline",
+      "arm": "standard_rts",
+      "phase": "control",
+      "executed": 0,
+      "failures": 0,
+      "exit": 0,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\lang\\warm_baseline.log"
+    },
+    {
+      "project": "lang",
+      "scenario": "full_baseline",
+      "arm": "full_suite",
+      "phase": "control",
+      "executed": 3,
+      "failures": 0,
+      "exit": 0,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\lang\\full_baseline.log"
+    },
+    {
+      "project": "lang",
+      "scenario": "ordinary_change",
+      "arm": "standard_rts",
+      "phase": "changed",
+      "executed": 2,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\lang\\ordinary_change__standard_rts.log"
+    },
+    {
+      "project": "lang",
+      "scenario": "ordinary_change",
+      "arm": "fail_closed",
+      "phase": "changed",
+      "executed": 2,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\lang\\ordinary_change__fail_closed.log"
+    },
+    {
+      "project": "lang",
+      "scenario": "ordinary_change",
+      "arm": "full_suite",
+      "phase": "changed",
+      "executed": 3,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\lang\\ordinary_change__full_suite.log"
+    },
+    {
+      "project": "lang",
+      "scenario": "target_metadata_missing",
+      "arm": "standard_rts",
+      "phase": "changed",
+      "executed": 2,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\lang\\target_metadata_missing__standard_rts.log"
+    },
+    {
+      "project": "lang",
+      "scenario": "target_metadata_missing",
+      "arm": "fail_closed",
+      "phase": "changed",
+      "executed": 3,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\lang\\target_metadata_missing__fail_closed.log"
+    },
+    {
+      "project": "lang",
+      "scenario": "target_metadata_missing",
+      "arm": "full_suite",
+      "phase": "changed",
+      "executed": 3,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\lang\\target_metadata_missing__full_suite.log"
+    },
+    {
+      "project": "lang",
+      "scenario": "target_metadata_truncated_50pct",
+      "arm": "standard_rts",
+      "phase": "changed",
+      "executed": 2,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\lang\\target_metadata_truncated_50pct__standard_rts.log"
+    },
+    {
+      "project": "lang",
+      "scenario": "target_metadata_truncated_50pct",
+      "arm": "fail_closed",
+      "phase": "changed",
+      "executed": 3,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\lang\\target_metadata_truncated_50pct__fail_closed.log"
+    },
+    {
+      "project": "lang",
+      "scenario": "target_metadata_truncated_50pct",
+      "arm": "full_suite",
+      "phase": "changed",
+      "executed": 3,
+      "failures": 1,
+      "exit": 1,
+      "checks": {
+        "log_SHA256_matches": true,
+        "actual_calls_match": true,
+        "actual_failures_match": true,
+        "summary_matches": true,
+        "counts_match": true,
+        "parse_completed": true,
+        "relevant_assertion_detected": true,
+        "test_source_and_bytecode_preserved_recorded": true
+      },
+      "log": "project_sample\\wrapper_pilot\\logs\\lang\\target_metadata_truncated_50pct__full_suite.log"
+    }
+  ],
+  "scope_limits": [
+    "Counts include ordinaryRTS,guard-basedescalation,andunconditionalfulloracle;not117attacksagainststandardRTS.",
+    "Eightnativeconditionsincludeordinarychangewithoutmetadatafault.",
+    "FivewrapperscallreleasedlibrariesbutusegeneratedJUnitfixtures;notupstreamsecuritytests.",
+    "Technicalrepetitionsofonefixedscenarioare notindependentdiscoveries orpopulationtrials.",
+    "Historicalcampaignisolationuseddedicatedlocaldirectories;noOSnetworknamespaceclaim.",
+    "Additional4earlierpartialnativecontrolsareretainedbutnotincludedinreported189invocations."
+  ]
+}

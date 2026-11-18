@@ -1,0 +1,10 @@
+{
+  "base_commit": "053f4948451073e4b45aadcea79051966830ad23",
+  "candidate_commit": "2dab362688e99fa92b3a1189920155a5ff20713f",
+  "changed_paths": [
+    "cases/requests_crlf_header/requests/utils.py"
+  ],
+  "candidate_source_sha256": "0d73a268f74ffd673056d818fae5ee42eab45758ccc81fa041cbe326b887771f",
+  "protected_archive_sha256": "d2ad1c4b04c347b1a9b27479bf6e80dc0663e8ebea66b4e8d19e72e70d31c68a",
+  "acquisition": "Exact Git object fetched; no code or workflow executed"
+}

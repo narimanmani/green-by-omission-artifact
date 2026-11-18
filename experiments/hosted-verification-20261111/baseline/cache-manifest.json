@@ -1,0 +1,31 @@
+{
+  "base_sha": "053f4948451073e4b45aadcea79051966830ad23",
+  "case": "requests_crlf_header",
+  "target": "requests/utils.py",
+  "target_sha256": "5aa53ceab677c2f842fad42359c8ed1ff1c4299c1607789609957a496e4311d4",
+  "requirements_sha256": "74030332c30ecf76334f754725a88718bb933c28fd470298ec56f2a98e7d0143",
+  "database_sha256": "51590bb5e106bfd7442537fe5af3f378594ac3b893c00d6377b575004a80f6cc",
+  "baseline": {
+    "exit": 0,
+    "selected_count": 3,
+    "call_report_count": 3,
+    "passed_count": 3,
+    "called": [
+      {
+        "id": "tests/test_meta.py::test_metadata_build_positive",
+        "outcome": "passed"
+      },
+      {
+        "id": "tests/test_security.py::test_security_rejects_header_injection",
+        "outcome": "passed"
+      },
+      {
+        "id": "tests/test_security.py::test_valid_header_passes",
+        "outcome": "passed"
+      }
+    ],
+    "initial_exit": 0,
+    "elapsed_seconds": 0.898745,
+    "log": "baseline.log"
+  }
+}

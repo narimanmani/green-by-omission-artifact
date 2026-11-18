@@ -1,0 +1,17 @@
+{
+  "utc": "2026-11-08T00:20:56.586572+00:00",
+  "command": [
+    "gh",
+    "pr",
+    "checks",
+    "1",
+    "--repo",
+    "anonymous-owner/ci-selection-testbed",
+    "--required",
+    "--json",
+    "name,state,link,bucket"
+  ],
+  "exit": 0,
+  "stdout": "[{\"bucket\":\"pass\",\"link\":\"https://example.invalid/anonymous-research/ci-selection-testbed/actions/runs/42429268485/job/128574305441\",\"name\":\"testmon-required\",\"state\":\"SUCCESS\"}]\n",
+  "stderr": ""
+}

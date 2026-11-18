@@ -1,0 +1,56 @@
+[
+  {
+    "path": "sampling_frame.json",
+    "git_blob_sha1": "bbb90ff56d1c44ab37bca58523e3649f69538752",
+    "sha256": "6799b9b0987f54474ec04118650a044ab618a4869724570484c712573b794ad6",
+    "source_commit": "d2c384cbb12da5aa893eb511fc0ac22097e4a04b"
+  },
+  {
+    "path": "PROTOCOL.md",
+    "git_blob_sha1": "fdb68a84965a65bd2ef3fc3c3fe73b8f051bb3fd",
+    "sha256": "84498a3eeddbe768f8442344114f09bb8098e4ff7e70b79e44e5bbae86f8a7c3",
+    "source_commit": "d2c384cbb12da5aa893eb511fc0ac22097e4a04b"
+  },
+  {
+    "path": "FINDINGS.md",
+    "git_blob_sha1": "77371dc118ef9696b0c0771f7a679220f6c637aa",
+    "sha256": "601fc9da0f8d78df0536897669cd3e14157fcf004155585716e5d2fba72823b3",
+    "source_commit": "d2c384cbb12da5aa893eb511fc0ac22097e4a04b"
+  },
+  {
+    "path": "python_batch_1.json",
+    "git_blob_sha1": "dc6496bcc39308c52d1061078e623f2e55d2904e",
+    "sha256": "a7b29a1cbf535dcd2b7e1ac9a3ef9bc9acae5fe777e0221a1732ec0b69179f39",
+    "source_commit": "d2c384cbb12da5aa893eb511fc0ac22097e4a04b"
+  },
+  {
+    "path": "python_batch_2.json",
+    "git_blob_sha1": "d134b463d935f98f0ece98ffe51a7a72f582281c",
+    "sha256": "afe2b84341c5ea311c39d51d60411b493b9c9f76186d404c3ad3f56469d0a02e",
+    "source_commit": "d2c384cbb12da5aa893eb511fc0ac22097e4a04b"
+  },
+  {
+    "path": "python_batch_3.json",
+    "git_blob_sha1": "55f3230cc5ec5d0507c9911979dd7b8d9a235cd4",
+    "sha256": "b3dfacadda0ac8bdcf4ea9622e479e15dee451c1d960e60e7f70bffc061e5dfa",
+    "source_commit": "d2c384cbb12da5aa893eb511fc0ac22097e4a04b"
+  },
+  {
+    "path": "java_batch_1.json",
+    "git_blob_sha1": "0177e0e1c46bfe165a7ee9a4c8f29a1f179764f7",
+    "sha256": "7a2b68e244ce7cd3aa7dbea36ebc13177f4c6858649adbcd18928a91510bc67b",
+    "source_commit": "d2c384cbb12da5aa893eb511fc0ac22097e4a04b"
+  },
+  {
+    "path": "java_batch_2.json",
+    "git_blob_sha1": "bcd9a502bee17337b39c1b6ecbb72fbf76c8ac57",
+    "sha256": "cdb4b7506ac5fe6b74e69651f136f25bd44ea2d0180412c1e9b2dfe9d4b03931",
+    "source_commit": "d2c384cbb12da5aa893eb511fc0ac22097e4a04b"
+  },
+  {
+    "path": "java_batch_3.json",
+    "git_blob_sha1": "fd60a65ba9f66830b6b300452ecd95e1386e2f14",
+    "sha256": "1a0899c5f55bb16a6e1273480148cc16a0d75b1e02d5d2d02517a954431836b1",
+    "source_commit": "d2c384cbb12da5aa893eb511fc0ac22097e4a04b"
+  }
+]

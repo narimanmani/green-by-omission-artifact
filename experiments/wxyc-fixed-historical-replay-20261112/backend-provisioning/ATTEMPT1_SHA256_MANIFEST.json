@@ -1,0 +1,102 @@
+[
+  {
+    "path": "00-output-tag-collision-check.log",
+    "bytes": 79,
+    "sha256": "afeb7eb64ff562f221e53d7fcf6a0925075ac27f4efc45d835f2ebe65128f2ca"
+  },
+  {
+    "path": "01-base-image-inspect.log",
+    "bytes": 1891,
+    "sha256": "1ccf5032b7f0708992b66d29265d743a192aa6bae80f55e58fc3088a9a48a734"
+  },
+  {
+    "path": "02-create-toolchain-provision.log",
+    "bytes": 65,
+    "sha256": "1c9a1ebd0497c2264b241770b2511e847c3573822f5a444481628a2186df99ea"
+  },
+  {
+    "path": "03-start-toolchain-provision.log",
+    "bytes": 39,
+    "sha256": "8153d8085e92dbd7cb348c23f55df65901f6ff073a6ca45f3a97646d02b7cdfc"
+  },
+  {
+    "path": "04-copy-toolchain-script.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "05-toolchain-provision-inspect.log",
+    "bytes": 7922,
+    "sha256": "970bf08fc7b77ea823db24339e1aa9672cfc5b38fd064421c16d2e34449d0584"
+  },
+  {
+    "path": "06-install-trusted-toolchain.log",
+    "bytes": 58359,
+    "sha256": "7bef1b86bd718276f8386a5b05cc2f561655099763c845cb4330c644b0b1a674"
+  },
+  {
+    "path": "baseline-source-and-git-uid10001.tar",
+    "bytes": 58531840,
+    "sha256": "592515b4076ae24764ceecb08d515b177a4f30f79e4611722a8868f7310aecb7"
+  },
+  {
+    "path": "COMMAND_RECEIPTS.json",
+    "bytes": 4496,
+    "sha256": "b77e6ee47f55dd1d8ef624480ca64e5b923b8769cfb5d05aa8a2e6ab43c3e888"
+  },
+  {
+    "path": "final-stop-sp2027-wxyc-backend-offline-rebuild-20261112.log",
+    "bytes": 147,
+    "sha256": "1c022d4f5d55c124b8def499efff6c17a4099afca95ff51e21383e92a61f25a4"
+  },
+  {
+    "path": "final-stop-sp2027-wxyc-backend-provision-20261112.log",
+    "bytes": 94,
+    "sha256": "39d1c9866794015224415de4e8126cac2a0989d82b643e92d3e76d95bd8c28c6"
+  },
+  {
+    "path": "FROZEN_PROVISIONING_PLAN.json",
+    "bytes": 2652,
+    "sha256": "2d4a3e8b2bf1e5ed3e8fc8b3b2b546ed70b1fb84331b4d22fd8b1f1f3ab1a1b7"
+  },
+  {
+    "path": "install.sh",
+    "bytes": 261,
+    "sha256": "32b587e5a683bd642c5715e5ba4643054f5bc7841607b18a1e13a977cdab217c"
+  },
+  {
+    "path": "offline-rebuild.sh",
+    "bytes": 146,
+    "sha256": "d6636aa37d6e2e5482b0466f713e4a68c92d341edca73d259146b8c64f7ff5a4"
+  },
+  {
+    "path": "primary-git-dependency-package.json",
+    "bytes": 1758,
+    "sha256": "0554cf033d925d4d4f536d12d74b233e7564d2b2adf6b2669f2f47df42e21316"
+  },
+  {
+    "path": "provision_exact_baseline.py",
+    "bytes": 10195,
+    "sha256": "c65130ce7a30188617f3e06b717c9120b20f77666b1603d82b862c2cd9536867"
+  },
+  {
+    "path": "PROVISIONING_RESULT.json",
+    "bytes": 252,
+    "sha256": "3f736277b11cf0557be86848279efcda9225f98e87d6f5c72d7f72d65721b223"
+  },
+  {
+    "path": "SOURCE_TRANSFER_RECEIPT.json",
+    "bytes": 345,
+    "sha256": "46c1bd6f1b432c44e6d27301f2ec7489c97c6713c9c2ddaf4e1886d8efdecebd"
+  },
+  {
+    "path": "toolchain.sh",
+    "bytes": 284,
+    "sha256": "a0ed3fd06d88533dc7f1878b7e70391c8b843d80ecfbdbc0cb39d7bd6fc8d217"
+  },
+  {
+    "path": "verify_seed.py",
+    "bytes": 5949,
+    "sha256": "424c1b2ac9539d3a64ab0d4c6b8ecc50edb5273669fb84c52907ac38dcf73569"
+  }
+]

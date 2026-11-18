@@ -1,0 +1,658 @@
+{
+  "status": "PASS_RECOVERED_PRIMARY_JAVA_EVIDENCE_WITH_SCOPE_LIMITS",
+  "reviewed_at_utc": "2026-11-12T07:50:04.224882+00:00",
+  "method": "Read-only recovery of existing GitHub workflow artifacts and immutable source; parse Surefire XML and Maven logs, recompute archive/member/class/source hashes; no experiment reruns, archived code execution or new candidate construction",
+  "supersedes_local_search_only": "JAVA_EVIDENCE_LOCAL_SEARCH.json",
+  "checks_passed": 95,
+  "checks_total": 95,
+  "checks": {
+    "canonical_artifact_matches_GitHub_sha256": true,
+    "canonical_all_extracted_members_match": true,
+    "native-ekstazi_baseline_XML_equals_JSON": true,
+    "native-ekstazi_baseline_log_counts_match": true,
+    "native-ekstazi_baseline_log_build_status_matches_exit": true,
+    "native-ekstazi_nochange_XML_equals_JSON": true,
+    "native-ekstazi_nochange_log_counts_match": true,
+    "native-ekstazi_nochange_log_build_status_matches_exit": true,
+    "native-ekstazi_ordinary_XML_equals_JSON": true,
+    "native-ekstazi_ordinary_log_counts_match": true,
+    "native-ekstazi_ordinary_log_build_status_matches_exit": true,
+    "native-ekstazi_collision_XML_equals_JSON": true,
+    "native-ekstazi_collision_log_counts_match": true,
+    "native-ekstazi_collision_log_build_status_matches_exit": true,
+    "native-ekstazi_collision_full_XML_equals_JSON": true,
+    "native-ekstazi_collision_full_log_counts_match": true,
+    "native-ekstazi_collision_full_log_build_status_matches_exit": true,
+    "native-ekstazi_collision_nonzero_XML_equals_JSON": true,
+    "native-ekstazi_collision_nonzero_log_counts_match": true,
+    "native-ekstazi_collision_nonzero_log_build_status_matches_exit": true,
+    "native-ekstazi_collision_nonzero_full_XML_equals_JSON": true,
+    "native-ekstazi_collision_nonzero_full_log_counts_match": true,
+    "native-ekstazi_collision_nonzero_full_log_build_status_matches_exit": true,
+    "upstream-commons_baseline_XML_equals_JSON": true,
+    "upstream-commons_baseline_log_counts_match": true,
+    "upstream-commons_baseline_log_build_status_matches_exit": true,
+    "upstream-commons_nochange_XML_equals_JSON": true,
+    "upstream-commons_nochange_log_counts_match": true,
+    "upstream-commons_nochange_log_build_status_matches_exit": true,
+    "upstream-commons_ordinary_XML_equals_JSON": true,
+    "upstream-commons_ordinary_log_counts_match": true,
+    "upstream-commons_ordinary_log_build_status_matches_exit": true,
+    "upstream-commons_collision_XML_equals_JSON": true,
+    "upstream-commons_collision_log_counts_match": true,
+    "upstream-commons_collision_log_build_status_matches_exit": true,
+    "upstream-commons_collision_full_XML_equals_JSON": true,
+    "upstream-commons_collision_full_log_counts_match": true,
+    "upstream-commons_collision_full_log_build_status_matches_exit": true,
+    "upstream-commons_collision_nonzero_XML_equals_JSON": true,
+    "upstream-commons_collision_nonzero_log_counts_match": true,
+    "upstream-commons_collision_nonzero_log_build_status_matches_exit": true,
+    "upstream-commons_collision_nonzero_full_XML_equals_JSON": true,
+    "upstream-commons_collision_nonzero_full_log_counts_match": true,
+    "upstream-commons_collision_nonzero_full_log_build_status_matches_exit": true,
+    "upstream-commons_md5_baseline_XML_equals_JSON": true,
+    "upstream-commons_md5_baseline_log_counts_match": true,
+    "upstream-commons_md5_baseline_log_build_status_matches_exit": true,
+    "upstream-commons_md5_collision_XML_equals_JSON": true,
+    "upstream-commons_md5_collision_log_counts_match": true,
+    "upstream-commons_md5_collision_log_build_status_matches_exit": true,
+    "controlled_baseline_class_SHA256_matches": true,
+    "controlled_candidate_class_SHA256_matches": true,
+    "validator_baseline_class_SHA256_matches": true,
+    "validator_candidate_class_SHA256_matches": true,
+    "controlled_class_bytes_differ": true,
+    "validator_class_bytes_differ": true,
+    "controlled_recorded_native_normalized_CRC32_equal": true,
+    "validator_recorded_native_normalized_CRC32_equal": true,
+    "validator_baseline_source_equals_pinned_upstream": true,
+    "validator_UrlValidatorTest_upstream_SHA256_matches": true,
+    "validator_RegexValidatorTest_upstream_SHA256_matches": true,
+    "ineligible_artifact_matches_GitHub_sha256": true,
+    "ineligible_all_extracted_members_match": true,
+    "ineligible_baseline_log_counts_match": true,
+    "ineligible_baseline_log_status_matches": true,
+    "ineligible_nochange_log_counts_match": true,
+    "ineligible_nochange_log_status_matches": true,
+    "ineligible_ordinary_native_log_counts_match": true,
+    "ineligible_ordinary_native_log_status_matches": true,
+    "ineligible_ordinary_full_log_counts_match": true,
+    "ineligible_ordinary_full_log_status_matches": true,
+    "ineligible_collision_native_log_counts_match": true,
+    "ineligible_collision_native_log_status_matches": true,
+    "ineligible_collision_full_log_counts_match": true,
+    "ineligible_collision_full_log_status_matches": true,
+    "ineligible_collision_nonzero_native_log_counts_match": true,
+    "ineligible_collision_nonzero_native_log_status_matches": true,
+    "ineligible_collision_nonzero_full_log_counts_match": true,
+    "ineligible_collision_nonzero_full_log_status_matches": true,
+    "ineligible_baseline_normalized_SHA256_matches": true,
+    "ineligible_baseline_raw_class_SHA256_matches": true,
+    "ineligible_baseline_normalized_CRC32_matches": true,
+    "ineligible_ordinary_normalized_SHA256_matches": true,
+    "ineligible_ordinary_raw_class_SHA256_matches": true,
+    "ineligible_ordinary_normalized_CRC32_matches": true,
+    "ineligible_collision_normalized_SHA256_matches": true,
+    "ineligible_collision_raw_class_SHA256_matches": true,
+    "ineligible_collision_normalized_CRC32_matches": true,
+    "ineligible_unchanged_control_has_no_deselection": true,
+    "ineligible_distinct_normalized_representations": true,
+    "ineligible_normalized_CRC32_equal": true,
+    "canonical_run_commit_and_status": true,
+    "ineligible_run_commit_and_status": true,
+    "all_ten_source_Git_blob_hashes_match": true,
+    "recovered_core_JAR_hash_matches_all_canonical_and_ineligible_proofs": true
+  },
+  "remote_runs": [
+    {
+      "id": 42590170979,
+      "url": "https://example.invalid/anonymous-research/ci-selection-testbed/actions/runs/42590170979",
+      "commit": "fe629d8580b3d59015042e999be329b12476be79",
+      "started_at": "2026-11-09T09:01:17Z",
+      "artifact_id": 13661550162,
+      "artifact_SHA256": "sha256:cb505adafba65669c7e0142b69160e4a7d665dfbcd945b550da82a8344b3c773"
+    },
+    {
+      "id": 42761307942,
+      "url": "https://example.invalid/anonymous-research/ci-selection-testbed/actions/runs/42761307942",
+      "commit": "e95830e49e5fc4222e977ed81d1b3c112e7b7569",
+      "started_at": "2026-11-10T05:18:28Z",
+      "artifact_id": 13737034057,
+      "artifact_SHA256": "sha256:7955aaa97ef1397bb06c23ef2c8fd5f6427e6398c50dcab83d41bffd7895b270"
+    }
+  ],
+  "canonical_conditions": [
+    {
+      "family": "native-ekstazi",
+      "conditions": [
+        {
+          "condition": "baseline",
+          "process_exit": 0,
+          "executed": 3,
+          "passed": 3,
+          "failed": [],
+          "errors": 0,
+          "skipped": 0,
+          "outcomes_member": "native-ekstazi/outcomes.json",
+          "xml_members": [
+            "native-ekstazi/baseline-surefire/TEST-lab.ExpiryGateTest.xml",
+            "native-ekstazi/baseline-surefire/TEST-lab.UnrelatedTest.xml"
+          ],
+          "maven_log_member": "native-ekstazi/baseline.log"
+        },
+        {
+          "condition": "nochange",
+          "process_exit": 0,
+          "executed": 0,
+          "passed": 0,
+          "failed": [],
+          "errors": 0,
+          "skipped": 0,
+          "outcomes_member": "native-ekstazi/outcomes.json",
+          "xml_members": [],
+          "maven_log_member": "native-ekstazi/nochange.log"
+        },
+        {
+          "condition": "ordinary",
+          "process_exit": 1,
+          "executed": 2,
+          "passed": 1,
+          "failed": [
+            {
+              "class": "lab.ExpiryGateTest",
+              "name": "rejectsExpired"
+            }
+          ],
+          "errors": 0,
+          "skipped": 0,
+          "outcomes_member": "native-ekstazi/outcomes.json",
+          "xml_members": [
+            "native-ekstazi/ordinary-surefire/TEST-lab.ExpiryGateTest.xml"
+          ],
+          "maven_log_member": "native-ekstazi/ordinary.log"
+        },
+        {
+          "condition": "collision",
+          "process_exit": 0,
+          "executed": 0,
+          "passed": 0,
+          "failed": [],
+          "errors": 0,
+          "skipped": 0,
+          "outcomes_member": "native-ekstazi/outcomes.json",
+          "xml_members": [],
+          "maven_log_member": "native-ekstazi/collision.log"
+        },
+        {
+          "condition": "collision_full",
+          "process_exit": 1,
+          "executed": 3,
+          "passed": 2,
+          "failed": [
+            {
+              "class": "lab.ExpiryGateTest",
+              "name": "rejectsExpired"
+            }
+          ],
+          "errors": 0,
+          "skipped": 0,
+          "outcomes_member": "native-ekstazi/outcomes.json",
+          "xml_members": [
+            "native-ekstazi/collision_full-surefire/TEST-lab.ExpiryGateTest.xml",
+            "native-ekstazi/collision_full-surefire/TEST-lab.UnrelatedTest.xml"
+          ],
+          "maven_log_member": "native-ekstazi/collision_full.log"
+        },
+        {
+          "condition": "collision_nonzero",
+          "process_exit": 0,
+          "executed": 1,
+          "passed": 1,
+          "failed": [],
+          "errors": 0,
+          "skipped": 0,
+          "outcomes_member": "native-ekstazi/outcomes.json",
+          "xml_members": [
+            "native-ekstazi/collision_nonzero-surefire/TEST-lab.UnrelatedTest.xml"
+          ],
+          "maven_log_member": "native-ekstazi/collision_nonzero.log"
+        },
+        {
+          "condition": "collision_nonzero_full",
+          "process_exit": 1,
+          "executed": 3,
+          "passed": 2,
+          "failed": [
+            {
+              "class": "lab.ExpiryGateTest",
+              "name": "rejectsExpired"
+            }
+          ],
+          "errors": 0,
+          "skipped": 0,
+          "outcomes_member": "native-ekstazi/outcomes.json",
+          "xml_members": [
+            "native-ekstazi/collision_nonzero_full-surefire/TEST-lab.ExpiryGateTest.xml",
+            "native-ekstazi/collision_nonzero_full-surefire/TEST-lab.UnrelatedTest.xml"
+          ],
+          "maven_log_member": "native-ekstazi/collision_nonzero_full.log"
+        }
+      ]
+    },
+    {
+      "family": "upstream-commons",
+      "conditions": [
+        {
+          "condition": "baseline",
+          "process_exit": 0,
+          "executed": 40,
+          "passed": 40,
+          "failed": [],
+          "errors": 0,
+          "skipped": 0,
+          "outcomes_member": "upstream-commons/outcomes.json",
+          "xml_members": [
+            "upstream-commons/baseline-surefire/TEST-org.apache.commons.validator.routines.RegexValidatorTest.xml",
+            "upstream-commons/baseline-surefire/TEST-org.apache.commons.validator.routines.UrlValidatorTest.xml"
+          ],
+          "maven_log_member": "upstream-commons/baseline.log"
+        },
+        {
+          "condition": "nochange",
+          "process_exit": 0,
+          "executed": 0,
+          "passed": 0,
+          "failed": [],
+          "errors": 0,
+          "skipped": 0,
+          "outcomes_member": "upstream-commons/outcomes.json",
+          "xml_members": [],
+          "maven_log_member": "upstream-commons/nochange.log"
+        },
+        {
+          "condition": "ordinary",
+          "process_exit": 1,
+          "executed": 33,
+          "passed": 31,
+          "failed": [
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testIsValidScheme"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator276"
+            }
+          ],
+          "errors": 0,
+          "skipped": 0,
+          "outcomes_member": "upstream-commons/outcomes.json",
+          "xml_members": [
+            "upstream-commons/ordinary-surefire/TEST-org.apache.commons.validator.routines.UrlValidatorTest.xml"
+          ],
+          "maven_log_member": "upstream-commons/ordinary.log"
+        },
+        {
+          "condition": "collision",
+          "process_exit": 0,
+          "executed": 0,
+          "passed": 0,
+          "failed": [],
+          "errors": 0,
+          "skipped": 0,
+          "outcomes_member": "upstream-commons/outcomes.json",
+          "xml_members": [],
+          "maven_log_member": "upstream-commons/collision.log"
+        },
+        {
+          "condition": "collision_full",
+          "process_exit": 1,
+          "executed": 40,
+          "passed": 38,
+          "failed": [
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testIsValidScheme"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator276"
+            }
+          ],
+          "errors": 0,
+          "skipped": 0,
+          "outcomes_member": "upstream-commons/outcomes.json",
+          "xml_members": [
+            "upstream-commons/collision_full-surefire/TEST-org.apache.commons.validator.routines.RegexValidatorTest.xml",
+            "upstream-commons/collision_full-surefire/TEST-org.apache.commons.validator.routines.UrlValidatorTest.xml"
+          ],
+          "maven_log_member": "upstream-commons/collision_full.log"
+        },
+        {
+          "condition": "collision_nonzero",
+          "process_exit": 1,
+          "executed": 40,
+          "passed": 38,
+          "failed": [
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testIsValidScheme"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator276"
+            }
+          ],
+          "errors": 0,
+          "skipped": 0,
+          "outcomes_member": "upstream-commons/outcomes.json",
+          "xml_members": [
+            "upstream-commons/collision_nonzero-surefire/TEST-org.apache.commons.validator.routines.UrlValidatorTest.xml",
+            "upstream-commons/collision_nonzero-surefire/TEST-org.apache.commons.validator.routines.RegexValidatorTest.xml"
+          ],
+          "maven_log_member": "upstream-commons/collision_nonzero.log"
+        },
+        {
+          "condition": "collision_nonzero_full",
+          "process_exit": 1,
+          "executed": 40,
+          "passed": 38,
+          "failed": [
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testIsValidScheme"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator276"
+            }
+          ],
+          "errors": 0,
+          "skipped": 0,
+          "outcomes_member": "upstream-commons/outcomes.json",
+          "xml_members": [
+            "upstream-commons/collision_nonzero_full-surefire/TEST-org.apache.commons.validator.routines.RegexValidatorTest.xml",
+            "upstream-commons/collision_nonzero_full-surefire/TEST-org.apache.commons.validator.routines.UrlValidatorTest.xml"
+          ],
+          "maven_log_member": "upstream-commons/collision_nonzero_full.log"
+        },
+        {
+          "condition": "md5_baseline",
+          "process_exit": 0,
+          "executed": 40,
+          "passed": 40,
+          "failed": [],
+          "errors": 0,
+          "skipped": 0,
+          "outcomes_member": "upstream-commons/outcomes.json",
+          "xml_members": [
+            "upstream-commons/md5_baseline-surefire/TEST-org.apache.commons.validator.routines.RegexValidatorTest.xml",
+            "upstream-commons/md5_baseline-surefire/TEST-org.apache.commons.validator.routines.UrlValidatorTest.xml"
+          ],
+          "maven_log_member": "upstream-commons/md5_baseline.log"
+        },
+        {
+          "condition": "md5_collision",
+          "process_exit": 1,
+          "executed": 33,
+          "passed": 31,
+          "failed": [
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testIsValidScheme"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator276"
+            }
+          ],
+          "errors": 0,
+          "skipped": 0,
+          "outcomes_member": "upstream-commons/outcomes.json",
+          "xml_members": [
+            "upstream-commons/md5_collision-surefire/TEST-org.apache.commons.validator.routines.UrlValidatorTest.xml"
+          ],
+          "maven_log_member": "upstream-commons/md5_collision.log"
+        }
+      ]
+    }
+  ],
+  "ineligible_harness_conditions": [
+    {
+      "condition": "baseline",
+      "executed": 3,
+      "failed": 0,
+      "exit": 0,
+      "maven_log_member": "baseline.log"
+    },
+    {
+      "condition": "nochange",
+      "executed": 3,
+      "failed": 0,
+      "exit": 0,
+      "maven_log_member": "nochange.log"
+    },
+    {
+      "condition": "ordinary_native",
+      "executed": 3,
+      "failed": 1,
+      "exit": 1,
+      "maven_log_member": "ordinary_native.log"
+    },
+    {
+      "condition": "ordinary_full",
+      "executed": 3,
+      "failed": 1,
+      "exit": 1,
+      "maven_log_member": "ordinary_full.log"
+    },
+    {
+      "condition": "collision_native",
+      "executed": 3,
+      "failed": 1,
+      "exit": 1,
+      "maven_log_member": "collision_native.log"
+    },
+    {
+      "condition": "collision_full",
+      "executed": 3,
+      "failed": 1,
+      "exit": 1,
+      "maven_log_member": "collision_full.log"
+    },
+    {
+      "condition": "collision_nonzero_native",
+      "executed": 3,
+      "failed": 1,
+      "exit": 1,
+      "maven_log_member": "collision_nonzero_native.log"
+    },
+    {
+      "condition": "collision_nonzero_full",
+      "executed": 3,
+      "failed": 1,
+      "exit": 1,
+      "maven_log_member": "collision_nonzero_full.log"
+    }
+  ],
+  "member_hashes": {
+    "canonical": {
+      "native-ekstazi/baseline-metadata/lab.UnrelatedTest.clz": "62e2895303bc4d3aa6e7fd53ce329ea14cc5228d9355b6e8c031792a349f48a3",
+      "native-ekstazi/baseline-surefire/TEST-lab.ExpiryGateTest.xml": "bd30cc41c246631292363a306eeca892bb2827f3b5de7ed002528f3e8a3e477f",
+      "native-ekstazi/baseline-surefire/TEST-lab.UnrelatedTest.xml": "6be55b26be9e9192a7e56adfeb7b942d25e8e4c5517ae6046477990a01ad1a72",
+      "native-ekstazi/baseline-metadata/lab.ExpiryGateTest.clz": "a2b081ed15ee5ccd021920d76b900f1a43fa7cd7c86ded96c6b6cc1c6f13492c",
+      "native-ekstazi/baseline-surefire/lab.ExpiryGateTest.txt": "6415527f69cec603b0e477bdb6428944990d10a6970a4651183c0ea2e4bb0404",
+      "native-ekstazi/baseline-surefire/lab.UnrelatedTest.txt": "06d77e8df95084be21ce19d035b5b220cc6d222370876331dacaa47a5a05b8c6",
+      "native-ekstazi/baseline.class": "0340009512b99a67e79b233c6a515a012b649ea1bd0c5c2e85a2ae28dc24d3b8",
+      "native-ekstazi/baseline.java": "0a2873681061dc938932028e8bcf208aad8a8695a879b42d55f88a487fa5d76d",
+      "native-ekstazi/baseline.log": "5762e4be5adb75c6f4349fd89f7293179fd9a45dfabbb478bbb4b938c5d5abbb",
+      "native-ekstazi/collision-metadata/lab.ExpiryGateTest.clz": "a2b081ed15ee5ccd021920d76b900f1a43fa7cd7c86ded96c6b6cc1c6f13492c",
+      "native-ekstazi/collision-metadata/lab.UnrelatedTest.clz": "62e2895303bc4d3aa6e7fd53ce329ea14cc5228d9355b6e8c031792a349f48a3",
+      "native-ekstazi/collision-proof.json": "6ebae56f0b6c6ac67630c9e6265827c7c9a39d048272315b2fecffa4bb966a4a",
+      "native-ekstazi/collision.class": "78cd50e37ab7e9b9801e0af0c6d002508db0ca19078a66970f71b791d2e88fba",
+      "native-ekstazi/collision.java": "ad295716eabc94e62f090f424751e3352aacd63cd2899daf3f50795d7f68bc06",
+      "native-ekstazi/collision.log": "b7816cb3b371c3eb6b90d063364bf4b61131628072c1957a8b827de066d8dff3",
+      "native-ekstazi/collision_full-metadata/lab.ExpiryGateTest.clz": "a2b081ed15ee5ccd021920d76b900f1a43fa7cd7c86ded96c6b6cc1c6f13492c",
+      "native-ekstazi/collision_full-metadata/lab.UnrelatedTest.clz": "62e2895303bc4d3aa6e7fd53ce329ea14cc5228d9355b6e8c031792a349f48a3",
+      "native-ekstazi/collision_full-surefire/TEST-lab.ExpiryGateTest.xml": "04d87385c9e5a1cbe15d9c7c6a6c13e460ef10ffd1497cf7251e68e9fb3afc6f",
+      "native-ekstazi/collision_full-surefire/TEST-lab.UnrelatedTest.xml": "b27f778fc344ec3f36c902762a1043b89cfd67a124f90f2aba11c895bb62165f",
+      "native-ekstazi/collision_full-surefire/lab.ExpiryGateTest.txt": "0b4f5685f1d66de4e509ca2c28a471fbdae06aa97a33410b987bc3f11fefdd10",
+      "native-ekstazi/collision_full-surefire/lab.UnrelatedTest.txt": "3d26ff2ac41275b21aec2da1a777981dae089bbb29a15a753cca225ccff18703",
+      "native-ekstazi/collision_full.log": "c5c34d46331212f495a5efe11fa8669f46ff35e6f8fd1bb6856446213204fb77",
+      "native-ekstazi/collision_nonzero-metadata/lab.ExpiryGateTest.clz": "a2b081ed15ee5ccd021920d76b900f1a43fa7cd7c86ded96c6b6cc1c6f13492c",
+      "native-ekstazi/collision_nonzero-surefire/TEST-lab.UnrelatedTest.xml": "b20d1e8f2b1a3860597e8add5953f3e28dda839ec724e895fc887010db140945",
+      "native-ekstazi/collision_nonzero-metadata/lab.UnrelatedTest.clz": "66e58b54b5595ca3bf05c4cf6f47ddaef6847f427cfe845a0fdd277f459be451",
+      "native-ekstazi/collision_nonzero-surefire/lab.UnrelatedTest.txt": "033ddc23b2bb4d8b270af738182e8aaea379692f24f7f8c871a20a4c1a6ec59a",
+      "native-ekstazi/collision_nonzero.log": "17f9f13ede235f22b9446dd067b0d8cca20bd700af4aa1f3db6450c07973f2c6",
+      "native-ekstazi/collision_nonzero_full-metadata/lab.ExpiryGateTest.clz": "a2b081ed15ee5ccd021920d76b900f1a43fa7cd7c86ded96c6b6cc1c6f13492c",
+      "native-ekstazi/collision_nonzero_full-metadata/lab.UnrelatedTest.clz": "66e58b54b5595ca3bf05c4cf6f47ddaef6847f427cfe845a0fdd277f459be451",
+      "native-ekstazi/collision_nonzero_full-surefire/TEST-lab.ExpiryGateTest.xml": "c3317c0d22a8ddcfcfb4c2a4bc31d2310a4a90595691a2a6a4dae6f93d7367c5",
+      "native-ekstazi/collision_nonzero_full-surefire/TEST-lab.UnrelatedTest.xml": "941e73b57b1dc9cccbd3d11d3ebeb3e104b52910d9ed79dfb51a1f5aebeee4f1",
+      "native-ekstazi/collision_nonzero_full-surefire/lab.ExpiryGateTest.txt": "377ad6483261dedc304cb24ac318793c79cde6a79f2a722b75f72bc79eeb926e",
+      "native-ekstazi/collision_nonzero_full-surefire/lab.UnrelatedTest.txt": "af263130aa3f67fb830a2cdf1c498cbb960703ceb396c413208c69c653746dfb",
+      "native-ekstazi/collision_nonzero_full.log": "7cc46a78d8b1ce5cc4b0da08dfcc5bbadcf6446bff991eac8cd4168791d46714",
+      "native-ekstazi/java-version.log": "c2cfce5165969dc80288affb24cd0c1f74feb89aca2abbb6014fb33282d9b5b7",
+      "native-ekstazi/maven-version.log": "4796c2570729506566e0fefaf4ae0dfb8e0876d09e50aed3eb56754593219a0a",
+      "native-ekstazi/nochange-metadata/lab.ExpiryGateTest.clz": "a2b081ed15ee5ccd021920d76b900f1a43fa7cd7c86ded96c6b6cc1c6f13492c",
+      "native-ekstazi/nochange.log": "dd501f01bf5b4d547efc994000b8eb407961c0ee71d418468dd55fa1f2fddd1c",
+      "native-ekstazi/nochange-metadata/lab.UnrelatedTest.clz": "62e2895303bc4d3aa6e7fd53ce329ea14cc5228d9355b6e8c031792a349f48a3",
+      "native-ekstazi/ordinary-metadata/lab.ExpiryGateTest.clz": "abbb07f02adf800a4eea0557e2d5b1ab5e312251d558258cd8007aee076578ec",
+      "native-ekstazi/ordinary-metadata/lab.UnrelatedTest.clz": "62e2895303bc4d3aa6e7fd53ce329ea14cc5228d9355b6e8c031792a349f48a3",
+      "native-ekstazi/ordinary-metadata/test-results/lab.ExpiryGateTest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "native-ekstazi/ordinary-surefire/TEST-lab.ExpiryGateTest.xml": "d67d8f545b333f7184bf081ab8c2667574e108aeaa4f23262d6acbab24a393c8",
+      "native-ekstazi/ordinary-surefire/lab.ExpiryGateTest.txt": "d0bafe40951f148f723f64e95480c6f741236140b0b2b956d93bb58812cac923",
+      "native-ekstazi/ordinary.log": "a063268cc19429e0e7f4683609ee60202769510ef52e89769f18257eb3777baf",
+      "native-ekstazi/outcomes.json": "13bb7dc924eabc22cefd1d4a5dd5846bcb55bd10c63779b72952900414885a68",
+      "native-ekstazi/summary.json": "007d24e10a37d1a7a0bcce6b76ca0edac5c3afb16ecc5ca817bc82c0c814e68b",
+      "native-ekstazi/trusted-baseline-metadata/lab.ExpiryGateTest.clz": "a2b081ed15ee5ccd021920d76b900f1a43fa7cd7c86ded96c6b6cc1c6f13492c",
+      "native-ekstazi/trusted-baseline-metadata/lab.UnrelatedTest.clz": "62e2895303bc4d3aa6e7fd53ce329ea14cc5228d9355b6e8c031792a349f48a3",
+      "upstream-commons/baseline-metadata/org.apache.commons.validator.routines.UrlValidatorTest.clz": "0338ab235787e5903c3f7dfddf0213f31e3e90c815a26d826b5e89ab60d24ca8",
+      "upstream-commons/baseline-surefire/TEST-org.apache.commons.validator.routines.RegexValidatorTest.xml": "9cba69acaf444ff55e7ebe1e44f9f82e7e795b13c7bf41522cbf67e700c41dd6",
+      "upstream-commons/baseline-metadata/org.apache.commons.validator.routines.RegexValidatorTest.clz": "ed52d50df1a9583a19808cc74f1d24c95a68e9f5945a7c958212995716701101",
+      "upstream-commons/baseline-surefire/org.apache.commons.validator.routines.RegexValidatorTest.txt": "8f455ed0a9080e6b5deeef14f3c6ce3c361da630931d7c73aab6b72d5749394c",
+      "upstream-commons/baseline-surefire/TEST-org.apache.commons.validator.routines.UrlValidatorTest.xml": "693aff5f68a1e510fc2aeabb1aa487bbe177bb25aff6c5ecd3ae12af8d9abbb6",
+      "upstream-commons/baseline-surefire/org.apache.commons.validator.routines.UrlValidatorTest.txt": "4efca6f362131570fb3023d8fa32a0711596345d3c34099400ce3236c59c62f8",
+      "upstream-commons/baseline.class": "68e1b48ce9f04987d447513f86486526535c0810ff048f46307fddc9c1ce261c",
+      "upstream-commons/baseline.java": "7e1ae81c946c08e675b62e1408c87c030452be0ff4a3edf5972145b5202e101b",
+      "upstream-commons/baseline.log": "758e528f977bf7310d05b21b0c4f7fdece6a498dd94671b4f7696e3ea6620923",
+      "upstream-commons/collision-metadata/org.apache.commons.validator.routines.RegexValidatorTest.clz": "ed52d50df1a9583a19808cc74f1d24c95a68e9f5945a7c958212995716701101",
+      "upstream-commons/collision-metadata/org.apache.commons.validator.routines.UrlValidatorTest.clz": "0338ab235787e5903c3f7dfddf0213f31e3e90c815a26d826b5e89ab60d24ca8",
+      "upstream-commons/collision-proof.json": "732cd357c7a6e67e5717148f83f54d1ca04a31ffba9d9951ee31277621063a2e",
+      "upstream-commons/collision.class": "b862246d8d5064690be0628317426c2059f5c774ddff9dcec643c45c599a8894",
+      "upstream-commons/collision.java": "fb3c5d47eee57ebbb3c12ddee62ee5d10437979b62e87bddea5577dcb4b91a25",
+      "upstream-commons/collision.log": "7ce6148ee0c423ed963db1df4974769428c096abc6f226df7729cb3fe4344d50",
+      "upstream-commons/collision_full-metadata/org.apache.commons.validator.routines.RegexValidatorTest.clz": "ed52d50df1a9583a19808cc74f1d24c95a68e9f5945a7c958212995716701101",
+      "upstream-commons/collision_full-metadata/org.apache.commons.validator.routines.UrlValidatorTest.clz": "0338ab235787e5903c3f7dfddf0213f31e3e90c815a26d826b5e89ab60d24ca8",
+      "upstream-commons/collision_full-surefire/TEST-org.apache.commons.validator.routines.RegexValidatorTest.xml": "331848c2a7e6fa18fdfccd32f8a67daba2bae66de64310d2662ca80960e5271d",
+      "upstream-commons/collision_full-surefire/TEST-org.apache.commons.validator.routines.UrlValidatorTest.xml": "2351bba805651303801e4f8ee9e56cd4f2a49eecf37271a33df90a6e990a5eed",
+      "upstream-commons/collision_full-surefire/org.apache.commons.validator.routines.RegexValidatorTest.txt": "8f455ed0a9080e6b5deeef14f3c6ce3c361da630931d7c73aab6b72d5749394c",
+      "upstream-commons/collision_full-surefire/org.apache.commons.validator.routines.UrlValidatorTest.txt": "f0cffff43659ea0087a51e144d71f25b4c8f3083e704acc6a8ffd2959102afb3",
+      "upstream-commons/collision_full.log": "0b179282f5eeeed333192409e108e1881294c53436c47567a51f0220c3f2b30a",
+      "upstream-commons/collision_nonzero-metadata/org.apache.commons.validator.routines.RegexValidatorTest.clz": "a84ca42f4ed0efc410fd2e741bed0c6212b40e7d92fecec5e66495a3a66efe61",
+      "upstream-commons/collision_nonzero-metadata/test-results/org.apache.commons.validator.routines.UrlValidatorTest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "upstream-commons/collision_nonzero-metadata/org.apache.commons.validator.routines.UrlValidatorTest.clz": "396e47f9161b3f5643e1765ec78f76766b638439cf67c439f1ee646a930adcbf",
+      "upstream-commons/collision_nonzero-surefire/TEST-org.apache.commons.validator.routines.UrlValidatorTest.xml": "1ad94bbf8de423243192fccbb4354e84f9c0086aac03a226b77399bf5b050755",
+      "upstream-commons/collision_nonzero-surefire/TEST-org.apache.commons.validator.routines.RegexValidatorTest.xml": "50540b5515f1363df1bc70ff0352c84316f714d41837d43d48e7469d044a218b",
+      "upstream-commons/collision_nonzero-surefire/org.apache.commons.validator.routines.RegexValidatorTest.txt": "8f455ed0a9080e6b5deeef14f3c6ce3c361da630931d7c73aab6b72d5749394c",
+      "upstream-commons/collision_nonzero-surefire/org.apache.commons.validator.routines.UrlValidatorTest.txt": "d218a7ae8e0631333599acef5fb380bea986a193249bee0c3d241800a6afbaee",
+      "upstream-commons/collision_nonzero.log": "2c6e2b3235a11608e887e94a3d5fcaaa169c021e3e300f4efc2c335d1de8f6a6",
+      "upstream-commons/collision_nonzero_full-metadata/org.apache.commons.validator.routines.RegexValidatorTest.clz": "a84ca42f4ed0efc410fd2e741bed0c6212b40e7d92fecec5e66495a3a66efe61",
+      "upstream-commons/collision_nonzero_full-metadata/org.apache.commons.validator.routines.UrlValidatorTest.clz": "396e47f9161b3f5643e1765ec78f76766b638439cf67c439f1ee646a930adcbf",
+      "upstream-commons/collision_nonzero_full-metadata/test-results/org.apache.commons.validator.routines.UrlValidatorTest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "upstream-commons/collision_nonzero_full-surefire/TEST-org.apache.commons.validator.routines.RegexValidatorTest.xml": "22a920d6288afe7e034c10d07fdb0986fb69974dd5bd802bedc0dcaddec9790f",
+      "upstream-commons/collision_nonzero_full-surefire/TEST-org.apache.commons.validator.routines.UrlValidatorTest.xml": "05b2fa433c445209317ed022ac92f5c0c3ca4b921d2a3a2c781ada18168c6979",
+      "upstream-commons/collision_nonzero_full-surefire/org.apache.commons.validator.routines.RegexValidatorTest.txt": "8f455ed0a9080e6b5deeef14f3c6ce3c361da630931d7c73aab6b72d5749394c",
+      "upstream-commons/collision_nonzero_full-surefire/org.apache.commons.validator.routines.UrlValidatorTest.txt": "003c4275443a4f04f4f05f7ed97c44111fc8ec82abda33e03c1133f9b7ab2a29",
+      "upstream-commons/collision_nonzero_full.log": "73c6c1c77071972e63b6e1ba3c5cebe069d154d9c9a128bd2a4dd955ac16c940",
+      "upstream-commons/integrated-pom.xml": "8dd80bf5299b11384a0478e3eb380032f32a402c76f72bedf65201c385956853",
+      "upstream-commons/md5_baseline-metadata/org.apache.commons.validator.routines.RegexValidatorTest.clz": "a2cf88c49eab0a8bc2967e21610dcb833769c9c714dcc7ce3b39171814d47fae",
+      "upstream-commons/md5_baseline-metadata/org.apache.commons.validator.routines.UrlValidatorTest.clz": "f61591de394b265753b24d950deac4f892338fbd9dea8fbf6393fcf7a3f895a9",
+      "upstream-commons/md5_baseline-surefire/TEST-org.apache.commons.validator.routines.RegexValidatorTest.xml": "60f7ca202439e2584284e74defce5bea098f0a031428d11f200ecd655fb2d0cf",
+      "upstream-commons/md5_baseline-surefire/TEST-org.apache.commons.validator.routines.UrlValidatorTest.xml": "af91efe58504424472ad1aa55ef9c4a27c5d279e158365c116348ff8bc719e03",
+      "upstream-commons/md5_baseline-surefire/org.apache.commons.validator.routines.RegexValidatorTest.txt": "e22a81ea227fd06b44d45cae58e5a9b32a523820afdef41d9d6bac652d2b3809",
+      "upstream-commons/md5_baseline-surefire/org.apache.commons.validator.routines.UrlValidatorTest.txt": "b3d66318db50f273e326a3f03066eb12f2a6b8db9c11ff89374625af66905ec8",
+      "upstream-commons/md5_baseline.log": "a92fd205f8e38f4574afdd381655ffbe66fd9c5c25154419afc38e2f607f8e5e",
+      "upstream-commons/md5_collision-metadata/org.apache.commons.validator.routines.RegexValidatorTest.clz": "a2cf88c49eab0a8bc2967e21610dcb833769c9c714dcc7ce3b39171814d47fae",
+      "upstream-commons/md5_collision-metadata/org.apache.commons.validator.routines.UrlValidatorTest.clz": "5d631b5de3e1a55cf01e06710733486d23a2ade16bd8cc78f9878097ed9171b4",
+      "upstream-commons/md5_collision-surefire/TEST-org.apache.commons.validator.routines.UrlValidatorTest.xml": "0d20bd8eef116d1ea44f83a36532eea7668f95c55f71006008775f2750820c74",
+      "upstream-commons/md5_collision-metadata/test-results/org.apache.commons.validator.routines.UrlValidatorTest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "upstream-commons/md5_collision-surefire/org.apache.commons.validator.routines.UrlValidatorTest.txt": "8f4920c887c2c05970ae39f53ffb6c76254dcae8ea77441a9f393d6387bbf257",
+      "upstream-commons/md5_collision.log": "d971252e4f6bf73d62ae5e6cebc55c896bbacb7702ceecb01e3cbaf22c29578a",
+      "upstream-commons/nochange-metadata/org.apache.commons.validator.routines.RegexValidatorTest.clz": "ed52d50df1a9583a19808cc74f1d24c95a68e9f5945a7c958212995716701101",
+      "upstream-commons/nochange-metadata/org.apache.commons.validator.routines.UrlValidatorTest.clz": "0338ab235787e5903c3f7dfddf0213f31e3e90c815a26d826b5e89ab60d24ca8",
+      "upstream-commons/ordinary-metadata/org.apache.commons.validator.routines.RegexValidatorTest.clz": "ed52d50df1a9583a19808cc74f1d24c95a68e9f5945a7c958212995716701101",
+      "upstream-commons/ordinary-metadata/org.apache.commons.validator.routines.UrlValidatorTest.clz": "c8348072e760498584b81f8ee8df93ef5ca072f1ce5f844faa669d251eb51762",
+      "upstream-commons/nochange.log": "dea40ccc983496c292efee2d71f177df4b934f9b16d7164e742f2732a78b8942",
+      "upstream-commons/ordinary-metadata/test-results/org.apache.commons.validator.routines.UrlValidatorTest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "upstream-commons/ordinary-surefire/TEST-org.apache.commons.validator.routines.UrlValidatorTest.xml": "17849f7dfa24ea28aecd0d5432a24144b7104d1034ba196a20d8dd09c4617dbc",
+      "upstream-commons/ordinary-surefire/org.apache.commons.validator.routines.UrlValidatorTest.txt": "6f4361c6eacf2216db5cc4c20fdcc2f61c3fe4b8d5b31d47eb6a8c69af825f64",
+      "upstream-commons/ordinary.log": "bfc8c55e90fef1f9b255e7ff7044107e19d43842a54b06ffa68f0ae3f8cd3f16",
+      "upstream-commons/outcomes.json": "48458d3fe9def0b38f4bff18b11221a3b82ad132344979c0b84a02ac61487166",
+      "upstream-commons/summary.json": "55df27c9a0c4fd6dc2db68969e3bff6f6e5034a08f48cfeb9090fba37f5fbe31",
+      "upstream-commons/source-provenance.json": "8bc1e9d90af6f89bb7a21411ffee4d8f1f87fac02bca51b727461eb82008cced",
+      "upstream-commons/trusted-baseline-metadata/org.apache.commons.validator.routines.RegexValidatorTest.clz": "ed52d50df1a9583a19808cc74f1d24c95a68e9f5945a7c958212995716701101",
+      "upstream-commons/trusted-baseline-metadata/org.apache.commons.validator.routines.UrlValidatorTest.clz": "0338ab235787e5903c3f7dfddf0213f31e3e90c815a26d826b5e89ab60d24ca8",
+      "upstream-commons/upstream-pom.xml": "533b417f674753f6c79fabfbfef96a463ea9c3cca3d7a83ff0eb7d7668293fc9",
+      "upstream-commons/upstream-source-hashes.json": "8e377f07c9af2c1a3a51dd576762bac702f801787eb11be47532cfe6e00b44c3",
+      "upstream-commons/upstream-test-hashes.json": "142573477a1c00cfe3c17cfb6d2f98cd201f1f1e611d39c4a4559311a45d1867"
+    },
+    "ineligible": {
+      "baseline.class": "c7d443231eeaf108f884a917ca43ffdf1d74a7142c7391e978874b0137b8dc71",
+      "baseline.java": "b0241db66a84e589b2cbef6fae65974f0350bb09c689bf723392da50b1d3f3a6",
+      "baseline.log": "3419eb54295f3bb8b94c965f2fc78b2d193451a6adeee8b340e6fa6c1e5d0322",
+      "baseline.normalize.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "baseline.normalized.bin": "7efb385a96ad5b70fcad94f7286afbc83f1c3ba2577ed13723d51310680b4b57",
+      "baseline_restore_nonzero.log": "8a9e482121fdbe7aa7f042c6886da35f6cc97761906602977f6b85fe6ec10328",
+      "baseline_restore_single.log": "93855af2d56690829c7c7d7df2548246004378fcd085bf2478516bdac3f30271",
+      "case/pom.xml": "055c78ec9cbb964cdd6f3f2b9168d07b5116812094291aad2b35b8008495fdf9",
+      "case/run_native.sh": "3e82beee41689861cafa5846bfc653510762aefcb3e86aeddfe9c3b50359f819",
+      "case/src/main/java/lab/ExpiryGate.java": "2806cf68a327f83dbfab44f9de2d1ea7df7e58497a302d3639bd43029e443763",
+      "case/src/main/java/lab/Unrelated.java": "1ffa582d2d177e8fc430eeb42d1640683b8f0259c9ef8e010f9aef510e239ae6",
+      "case/src/test/java/lab/ExpiryGateTest.java": "de9fed8fbb9bfa6e0a427f5906a6725f163e3cdda9fa46f8bafd40a8933502e6",
+      "case/src/test/java/lab/UnrelatedTest.java": "0f83ed1081e73390d89e3ad1464724f606234ccda190c8ac4461e3d2b42d0c97",
+      "case/target/classes/lab/ExpiryGate.class": "486af046694e023c8d8d402e7d1373757c0dff83378290e7ddfadd17350b91f1",
+      "case/target/classes/lab/Unrelated.class": "3982c8c01e182eb04e1c6ef885f101230280c3f17795a9ca693914e329ed7f18",
+      "case/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst": "73a400f576fcce08da1f6f9ccde94cd772f68729c9c94d28ad45febe2495c4aa",
+      "case/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst": "a299a1c71a35fb1913b8484c5e4a07f4c3d93bcb802ef6e57f529877c77b1fac",
+      "case/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst": "0c42f1a225e80b1066f0144bcb0c2e12676ee41ae3e96fbc99b3150f5426b698",
+      "case/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst": "212f91ef723d483dfb9d2456967d686a7e8eb59b6e42e8789c33efaa063bd031",
+      "case/target/surefire-reports/TEST-lab.ExpiryGateTest.xml": "31b4bfb3ee511cad581a44e8a90354d07e4bf810238755b5384bc9e6d45b8245",
+      "case/target/surefire-reports/TEST-lab.UnrelatedTest.xml": "3aa9ffbdadafb2435879bfa5718dd4f1d986ee0a67bb4356f90226dd3367271f",
+      "case/target/surefire-reports/lab.ExpiryGateTest.txt": "0b4f5685f1d66de4e509ca2c28a471fbdae06aa97a33410b987bc3f11fefdd10",
+      "case/target/surefire-reports/lab.UnrelatedTest.txt": "683655f61dcb2f4fa6499d0285d6f1607d61556e8c4a54b4243b3b68a9ee1f6b",
+      "case/target/test-classes/lab/ExpiryGateTest.class": "cfe3f32d7f00e4a62958e913037ed915c17cc4e5cf5eaf6968c5393a2e21435e",
+      "case/target/test-classes/lab/UnrelatedTest.class": "5e8e103f62c871042d5e9415d44c566e7d8b6ef1f113d3cde785f2f74f324289",
+      "collision.class": "486af046694e023c8d8d402e7d1373757c0dff83378290e7ddfadd17350b91f1",
+      "collision.java": "2806cf68a327f83dbfab44f9de2d1ea7df7e58497a302d3639bd43029e443763",
+      "collision.normalize.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "collision.normalized.bin": "08955286a64e936f85766db1f53d761c4adcf1f2f59b82fbb1281f7ffe119514",
+      "collision_compile.log": "c7a6e08eb7cd4408596f48fe97625b34c5d292a6eef5459b39d374c9f2077ac1",
+      "collision_full.log": "3e6ef46baa5bdbb09ddf90c92e96e282e54f9975a7258e13652f3ff07f2e9c6a",
+      "collision_native.log": "12a0c86f2b41e8cc24e16977d5018f0dbf272b6844ecebfb673a835f7c2492dc",
+      "collision_nonzero_full.log": "f6ad45a8ea03c3af3073d8cb69e83bde89ad9667247e74efae2c8dfb329aa747",
+      "collision_nonzero_native.log": "015fa41b45218184ff0e7a8bd4f34964c36054c7a2663119e55df56c85d22a66",
+      "nochange.log": "80e984e1a89501b0a0cf882ff4dbedce344fa2371ce2c78c51ba04d232d87b6c",
+      "ordinary.class": "b4165fda3890fe1edaa34fc21d46afc7b840cb1cea9c9c19d126cec5a06be9e6",
+      "ordinary.java": "bc18c9f2cfd346200cbe2d25b50743ae2576a7f77078600181749329cf2890ed",
+      "ordinary.normalize.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "ordinary.normalized.bin": "7b74d79ce4f79c115be73bc34ca4c6563a4738f87ee81ae83745d299eb2f1983",
+      "ordinary_full.log": "e0284df3df5351e67e3b06a8d265b5320cc451918126b79b6341859b73c8fd3c",
+      "ordinary_native.log": "530a50c991987f62c95bc362c973ad10cda6e816647e44c7a2a639d4b6b9753e",
+      "results.json": "931cc60be047f080e67d2b8200ae317598ff5beead911f423a1b26a2074f5417"
+    }
+  },
+  "qualified_claims": [
+    "Controlled Java nonempty selective false pass supported: one passing UnrelatedTest.squares call; independent three-test oracle fails ExpiryGateTest.rejectsExpired.",
+    "Validator original two-class oracle supported:40baselinepasses;emptyselectivepass;independent40testswith2failures;nonemptyextensiondetects2failures;MD5selects33casesanddetects2failures.",
+    "Baseline and candidate raw class SHA256 values recompute correctly and differ. Recorded native normalized CRC32 values agree.",
+    "Independent upstream pinned test bytes match archived hashes. Immutable runner asserts all test bytes unchanged after conditions.",
+    "Separate ineligible harness has3passingunchangedcalls and therefore does not establish incremental deselection; laterdetectionisnotcounterexampletothecanonicalresult."
+  ],
+  "limitations": [
+    "Canonical positive artifact has no saved normalized representation bytes or normalized SHA256. Its normalized CRC equality is a native-HashProbe result in retained proof; raw-class SHA256 difference alone must not be described as measured normalized-representation inequality.",
+    "Ineligible artifact separately preserves normalized bytes with unequal SHA256 and equal CRC32; this proof belongs only to that ineligible case.",
+    "Candidate source continuity and unchanged-test assertions follow immutable executed runner flow; no independently captured per-arm full-source digest is available for these older Java runs.",
+    "Two original Validator test classes defineT;notentireupstreamlibrarysuite.",
+    "This audit verifies existing November9/10UTC executions;itaddsnonewexperiment.",
+    "Metadata-fault native Java72 and wrapper45 comparisons are separately verified in JAVA_METADATA_FAULT_AUDIT.json; they are distinct from the canonical omission experiment."
+  ]
+}

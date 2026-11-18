@@ -1,0 +1,11 @@
+{
+  "utc": "2026-11-08T00:26:34.197846+00:00",
+  "command": [
+    "gh",
+    "api",
+    "repos/anonymous-owner/ci-selection-testbed/pulls/2/files?per_page=100"
+  ],
+  "exit": 0,
+  "stdout": "[{\"sha\":\"8a5fdd4c3dcb0fc0e0148324a7ed579f7b2b3df7\",\"filename\":\"cases/itsdangerous_expiry/itsdangerous/timed.py\",\"status\":\"modified\",\"additions\":1,\"deletions\":1,\"changes\":2,\"blob_url\":\"https://example.invalid/anonymous-research/ci-selection-testbed/blob/75ca88276e8f610b8dca550bb448c61d3109bfa8/cases%2Fitsdangerous_expiry%2Fitsdangerous%2Ftimed.py\",\"raw_url\":\"https://example.invalid/anonymous-research/ci-selection-testbed/raw/75ca88276e8f610b8dca550bb448c61d3109bfa8/cases%2Fitsdangerous_expiry%2Fitsdangerous%2Ftimed.py\",\"contents_url\":\"https://example.invalid/anonymous-research/ci-selection-testbed/contents/cases%2Fitsdangerous_expiry%2Fitsdangerous%2Ftimed.py?ref=75ca88276e8f610b8dca550bb448c61d3109bfa8\",\"patch\":\"@@ -138,7 +138,7 @@ def unsign(\\n         if max_age is not None:\\n             age = self.get_timestamp() - ts_int\\n \\n-            if age > max_age:\\n+            if age > max_age + 10:\\n                 raise SignatureExpired(\\n                     f\\\"Signature age {age} > {max_age} seconds\\\",\\n                     payload=value,\"}]",
+  "stderr": ""
+}

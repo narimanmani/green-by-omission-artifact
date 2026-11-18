@@ -1,0 +1,17 @@
+{
+  "started_utc": "2026-11-12T15:52:14.892219+00:00",
+  "seed_eligible": true,
+  "tests_executed": false,
+  "candidate_executed": false,
+  "prior_failures_retained": true,
+  "administrative_repair": "Exact Node24.19.0 public headers prefill, identical original offline lifecycle command",
+  "image": "sp2027-wxyc-replay-seed:20261112",
+  "image_id": "sha256:56559845a6388a7f0141ceea11a76684615db3aa0d34e1f9521686bb508d53e5",
+  "installed_manifest_sha256": "0f518c86e2911fb9a6911bb8331fa58e1250c3bdcfcea035285b02c99517f280",
+  "baseline_all_tracked_bytes_unchanged": true,
+  "shared_all_members_match": true,
+  "installed_manifest_path": "/opt/replay/seed-installed-manifest.json",
+  "seed_root": "/opt/replay/seed",
+  "runtime_user": "10001:10001",
+  "ended_utc": "2026-11-12T15:52:50.609760+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "mvn",
+    "-o",
+    "-B",
+    "-ntp",
+    "-Dcheckstyle.skip",
+    "-Drat.skip=true",
+    "-Dmaven.repo.local=/work/m2/repository",
+    "test"
+  ],
+  "exit": 1,
+  "seconds": 10.84
+}

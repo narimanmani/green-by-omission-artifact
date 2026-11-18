@@ -1,0 +1,1320 @@
+{
+  "created": "2026-11-09",
+  "frames": {
+    "Python": {
+      "query": "language:Python stars:100..500 pushed:>2026-05-01 fork:false archived:false",
+      "frame_size": 60,
+      "eligible_metadata_count": 60,
+      "frame": [
+        {
+          "rank": 14,
+          "repo": "1313e/CMasher",
+          "default_branch": "master",
+          "size_kb": 229174,
+          "visibility": "public",
+          "archived": false,
+          "score": 126063559
+        },
+        {
+          "rank": 35,
+          "repo": "agisoft-llc/metashape-scripts",
+          "default_branch": "master",
+          "size_kb": 539,
+          "visibility": "public",
+          "archived": false,
+          "score": 267645383
+        },
+        {
+          "rank": 27,
+          "repo": "pytest-dev/pytest-flask",
+          "default_branch": "master",
+          "size_kb": 282,
+          "visibility": "public",
+          "archived": false,
+          "score": 294315031
+        },
+        {
+          "rank": 34,
+          "repo": "hplt-project/sacremoses",
+          "default_branch": "master",
+          "size_kb": 3933,
+          "visibility": "public",
+          "archived": false,
+          "score": 370303192
+        },
+        {
+          "rank": 22,
+          "repo": "Mause/duckdb_engine",
+          "default_branch": "main",
+          "size_kb": 2469,
+          "visibility": "public",
+          "archived": false,
+          "score": 426341796
+        },
+        {
+          "rank": 13,
+          "repo": "HuiyuLi-2000/Chinese-Grant-Writer-Skills",
+          "default_branch": "main",
+          "size_kb": 204,
+          "visibility": "public",
+          "archived": false,
+          "score": 552600554
+        },
+        {
+          "rank": 18,
+          "repo": "scottchiefbaker/dool",
+          "default_branch": "next",
+          "size_kb": 1319,
+          "visibility": "public",
+          "archived": false,
+          "score": 709493016
+        },
+        {
+          "rank": 24,
+          "repo": "spinlud/py-linkedin-jobs-scraper",
+          "default_branch": "master",
+          "size_kb": 3484,
+          "visibility": "public",
+          "archived": false,
+          "score": 715651878
+        },
+        {
+          "rank": 26,
+          "repo": "gobii-ai/gobii-platform",
+          "default_branch": "main",
+          "size_kb": 139977,
+          "visibility": "public",
+          "archived": false,
+          "score": 724087694
+        },
+        {
+          "rank": 41,
+          "repo": "preset-io/promptimize",
+          "default_branch": "main",
+          "size_kb": 128,
+          "visibility": "public",
+          "archived": false,
+          "score": 846464643
+        },
+        {
+          "rank": 6,
+          "repo": "syssi/xiaomi_airpurifier",
+          "default_branch": "develop",
+          "size_kb": 574,
+          "visibility": "public",
+          "archived": false,
+          "score": 900413152
+        },
+        {
+          "rank": 47,
+          "repo": "wwrechard/pydlm",
+          "default_branch": "master",
+          "size_kb": 3521,
+          "visibility": "public",
+          "archived": false,
+          "score": 1211041760
+        },
+        {
+          "rank": 30,
+          "repo": "BaruqueRodrigues/llm-legislativo",
+          "default_branch": "main",
+          "size_kb": 728,
+          "visibility": "public",
+          "archived": false,
+          "score": 1329277929
+        },
+        {
+          "rank": 4,
+          "repo": "sidinsearch/superbrain",
+          "default_branch": "main",
+          "size_kb": 74521,
+          "visibility": "public",
+          "archived": false,
+          "score": 1393071649
+        },
+        {
+          "rank": 49,
+          "repo": "ccrpRepo/AMP_mjlab",
+          "default_branch": "main",
+          "size_kb": 68950,
+          "visibility": "public",
+          "archived": false,
+          "score": 1411806960
+        },
+        {
+          "rank": 21,
+          "repo": "pis10/TraceSurface",
+          "default_branch": "main",
+          "size_kb": 4960,
+          "visibility": "public",
+          "archived": false,
+          "score": 1507263958
+        },
+        {
+          "rank": 57,
+          "repo": "deshaw/pyflyby",
+          "default_branch": "master",
+          "size_kb": 8426,
+          "visibility": "public",
+          "archived": false,
+          "score": 1553677126
+        },
+        {
+          "rank": 56,
+          "repo": "TechyNilesh/DeepImageSearch",
+          "default_branch": "main",
+          "size_kb": 19600,
+          "visibility": "public",
+          "archived": false,
+          "score": 1662299350
+        },
+        {
+          "rank": 31,
+          "repo": "limitcantcode/jaison-core",
+          "default_branch": "main",
+          "size_kb": 2739,
+          "visibility": "public",
+          "archived": false,
+          "score": 1717646987
+        },
+        {
+          "rank": 20,
+          "repo": "GalaxyGeneralRobotics/Humanoid-GPT",
+          "default_branch": "main",
+          "size_kb": 124828,
+          "visibility": "public",
+          "archived": false,
+          "score": 1772522593
+        },
+        {
+          "rank": 51,
+          "repo": "Trustworthy-AI-Group/TransferAttack",
+          "default_branch": "main",
+          "size_kb": 602056,
+          "visibility": "public",
+          "archived": false,
+          "score": 1810076762
+        },
+        {
+          "rank": 25,
+          "repo": "tonbistudio/hermes-multi-agent-workflow",
+          "default_branch": "main",
+          "size_kb": 39,
+          "visibility": "public",
+          "archived": false,
+          "score": 1903094325
+        },
+        {
+          "rank": 53,
+          "repo": "aio-libs/multidict",
+          "default_branch": "master",
+          "size_kb": 4921,
+          "visibility": "public",
+          "archived": false,
+          "score": 1990612744
+        },
+        {
+          "rank": 16,
+          "repo": "codemagic-ci-cd/cli-tools",
+          "default_branch": "master",
+          "size_kb": 100848,
+          "visibility": "public",
+          "archived": false,
+          "score": 2017025298
+        },
+        {
+          "rank": 19,
+          "repo": "stefankoegl/python-json-patch",
+          "default_branch": "master",
+          "size_kb": 624,
+          "visibility": "public",
+          "archived": false,
+          "score": 2029645324
+        },
+        {
+          "rank": 32,
+          "repo": "Rose-ZG/SCIG_V2.0",
+          "default_branch": "master",
+          "size_kb": 1079,
+          "visibility": "public",
+          "archived": false,
+          "score": 2101861551
+        },
+        {
+          "rank": 17,
+          "repo": "hexsecteam/DroidHunter",
+          "default_branch": "main",
+          "size_kb": 441,
+          "visibility": "public",
+          "archived": false,
+          "score": 2200821264
+        },
+        {
+          "rank": 33,
+          "repo": "microsoft/conductor",
+          "default_branch": "main",
+          "size_kb": 14643,
+          "visibility": "public",
+          "archived": false,
+          "score": 2213622894
+        },
+        {
+          "rank": 23,
+          "repo": "phongdaot/MocapAnything",
+          "default_branch": "main",
+          "size_kb": 6195,
+          "visibility": "public",
+          "archived": false,
+          "score": 2215858335
+        },
+        {
+          "rank": 7,
+          "repo": "jackson-video-resources/markov-hedge-fund-method",
+          "default_branch": "main",
+          "size_kb": 71,
+          "visibility": "public",
+          "archived": false,
+          "score": 2323650242
+        },
+        {
+          "rank": 36,
+          "repo": "chatmail/relay",
+          "default_branch": "main",
+          "size_kb": 4275,
+          "visibility": "public",
+          "archived": false,
+          "score": 2359895899
+        },
+        {
+          "rank": 37,
+          "repo": "httpwg/http-extensions",
+          "default_branch": "main",
+          "size_kb": 57483,
+          "visibility": "public",
+          "archived": false,
+          "score": 2360955316
+        },
+        {
+          "rank": 50,
+          "repo": "fmagent-project/FM-Agent",
+          "default_branch": "main",
+          "size_kb": 6249,
+          "visibility": "public",
+          "archived": false,
+          "score": 2389386442
+        },
+        {
+          "rank": 5,
+          "repo": "kijai/ComfyUI-SolAttn_triton",
+          "default_branch": "main",
+          "size_kb": 55,
+          "visibility": "public",
+          "archived": false,
+          "score": 2390475224
+        },
+        {
+          "rank": 1,
+          "repo": "rabbitmask/AssetsHunter",
+          "default_branch": "master",
+          "size_kb": 574,
+          "visibility": "public",
+          "archived": false,
+          "score": 2450763786
+        },
+        {
+          "rank": 12,
+          "repo": "conda/constructor",
+          "default_branch": "main",
+          "size_kb": 3449,
+          "visibility": "public",
+          "archived": false,
+          "score": 2468187580
+        },
+        {
+          "rank": 9,
+          "repo": "terraform-aws-modules/terraform-aws-notify-slack",
+          "default_branch": "master",
+          "size_kb": 281,
+          "visibility": "public",
+          "archived": false,
+          "score": 2554026242
+        },
+        {
+          "rank": 29,
+          "repo": "I-am-PUID-0/DUMB",
+          "default_branch": "dev",
+          "size_kb": 39310,
+          "visibility": "public",
+          "archived": false,
+          "score": 2563313909
+        },
+        {
+          "rank": 48,
+          "repo": "readthedocs/sphinx-autoapi",
+          "default_branch": "main",
+          "size_kb": 4394,
+          "visibility": "public",
+          "archived": false,
+          "score": 2710728439
+        },
+        {
+          "rank": 42,
+          "repo": "cvar-vision-dl/remind-reid-tracker",
+          "default_branch": "main",
+          "size_kb": 119055,
+          "visibility": "public",
+          "archived": false,
+          "score": 2785943210
+        },
+        {
+          "rank": 8,
+          "repo": "hendrikbgr/YandexMail-Account-Creator",
+          "default_branch": "master",
+          "size_kb": 10868,
+          "visibility": "public",
+          "archived": false,
+          "score": 2794892644
+        },
+        {
+          "rank": 3,
+          "repo": "roostorg/osprey",
+          "default_branch": "main",
+          "size_kb": 13264,
+          "visibility": "public",
+          "archived": false,
+          "score": 2847731858
+        },
+        {
+          "rank": 43,
+          "repo": "waydroid-helper/waydroid-helper",
+          "default_branch": "main",
+          "size_kb": 3418,
+          "visibility": "public",
+          "archived": false,
+          "score": 3003675379
+        },
+        {
+          "rank": 15,
+          "repo": "cedricbonhomme/newspipe",
+          "default_branch": "master",
+          "size_kb": 14665,
+          "visibility": "public",
+          "archived": false,
+          "score": 3006281529
+        },
+        {
+          "rank": 10,
+          "repo": "gdstudio-org/Embeat",
+          "default_branch": "main",
+          "size_kb": 4952,
+          "visibility": "public",
+          "archived": false,
+          "score": 3046974557
+        },
+        {
+          "rank": 2,
+          "repo": "npcole/npyscreen",
+          "default_branch": "master",
+          "size_kb": 12674,
+          "visibility": "public",
+          "archived": false,
+          "score": 3095457601
+        },
+        {
+          "rank": 40,
+          "repo": "claude-world/notebooklm-skill",
+          "default_branch": "main",
+          "size_kb": 226,
+          "visibility": "public",
+          "archived": false,
+          "score": 3103730338
+        },
+        {
+          "rank": 54,
+          "repo": "kyegomez/VisionMamba",
+          "default_branch": "main",
+          "size_kb": 2286,
+          "visibility": "public",
+          "archived": false,
+          "score": 3341155736
+        },
+        {
+          "rank": 45,
+          "repo": "AIMS-RAIL/RAIL",
+          "default_branch": "main",
+          "size_kb": 4547,
+          "visibility": "public",
+          "archived": false,
+          "score": 3368525702
+        },
+        {
+          "rank": 44,
+          "repo": "JGRFW/comfyui-AICG3D",
+          "default_branch": "main",
+          "size_kb": 88422,
+          "visibility": "public",
+          "archived": false,
+          "score": 3403905695
+        },
+        {
+          "rank": 58,
+          "repo": "microsoft/mineworld",
+          "default_branch": "main",
+          "size_kb": 2363,
+          "visibility": "public",
+          "archived": false,
+          "score": 3456856978
+        },
+        {
+          "rank": 11,
+          "repo": "NVIDIA/tilus",
+          "default_branch": "main",
+          "size_kb": 9430,
+          "visibility": "public",
+          "archived": false,
+          "score": 3614366837
+        },
+        {
+          "rank": 60,
+          "repo": "jiabaobei/memory-bridge",
+          "default_branch": "main",
+          "size_kb": 2261,
+          "visibility": "public",
+          "archived": false,
+          "score": 3762997058
+        },
+        {
+          "rank": 55,
+          "repo": "czue/celery-progress",
+          "default_branch": "master",
+          "size_kb": 158,
+          "visibility": "public",
+          "archived": false,
+          "score": 3835120262
+        },
+        {
+          "rank": 28,
+          "repo": "Lost-MSth/Arcaea-server",
+          "default_branch": "master",
+          "size_kb": 1822,
+          "visibility": "public",
+          "archived": false,
+          "score": 4058189729
+        },
+        {
+          "rank": 39,
+          "repo": "zhao-kun/VibeVoiceFusion",
+          "default_branch": "main",
+          "size_kb": 26756,
+          "visibility": "public",
+          "archived": false,
+          "score": 4140273792
+        },
+        {
+          "rank": 46,
+          "repo": "shridarpatil/frappe_whatsapp",
+          "default_branch": "master",
+          "size_kb": 397,
+          "visibility": "public",
+          "archived": false,
+          "score": 4148141717
+        },
+        {
+          "rank": 59,
+          "repo": "alibaba/ROCK",
+          "default_branch": "master",
+          "size_kb": 142278,
+          "visibility": "public",
+          "archived": false,
+          "score": 4163374208
+        },
+        {
+          "rank": 38,
+          "repo": "crisng95/flowboard",
+          "default_branch": "main",
+          "size_kb": 33717,
+          "visibility": "public",
+          "archived": false,
+          "score": 4203869799
+        },
+        {
+          "rank": 52,
+          "repo": "bkbilly/lnxlink",
+          "default_branch": "master",
+          "size_kb": 2405,
+          "visibility": "public",
+          "archived": false,
+          "score": 4256142616
+        }
+      ],
+      "selected": [
+        {
+          "rank": 14,
+          "repo": "1313e/CMasher",
+          "default_branch": "master",
+          "size_kb": 229174,
+          "visibility": "public",
+          "archived": false,
+          "score": 126063559
+        },
+        {
+          "rank": 35,
+          "repo": "agisoft-llc/metashape-scripts",
+          "default_branch": "master",
+          "size_kb": 539,
+          "visibility": "public",
+          "archived": false,
+          "score": 267645383
+        },
+        {
+          "rank": 27,
+          "repo": "pytest-dev/pytest-flask",
+          "default_branch": "master",
+          "size_kb": 282,
+          "visibility": "public",
+          "archived": false,
+          "score": 294315031
+        },
+        {
+          "rank": 34,
+          "repo": "hplt-project/sacremoses",
+          "default_branch": "master",
+          "size_kb": 3933,
+          "visibility": "public",
+          "archived": false,
+          "score": 370303192
+        },
+        {
+          "rank": 22,
+          "repo": "Mause/duckdb_engine",
+          "default_branch": "main",
+          "size_kb": 2469,
+          "visibility": "public",
+          "archived": false,
+          "score": 426341796
+        },
+        {
+          "rank": 13,
+          "repo": "HuiyuLi-2000/Chinese-Grant-Writer-Skills",
+          "default_branch": "main",
+          "size_kb": 204,
+          "visibility": "public",
+          "archived": false,
+          "score": 552600554
+        },
+        {
+          "rank": 18,
+          "repo": "scottchiefbaker/dool",
+          "default_branch": "next",
+          "size_kb": 1319,
+          "visibility": "public",
+          "archived": false,
+          "score": 709493016
+        },
+        {
+          "rank": 24,
+          "repo": "spinlud/py-linkedin-jobs-scraper",
+          "default_branch": "master",
+          "size_kb": 3484,
+          "visibility": "public",
+          "archived": false,
+          "score": 715651878
+        },
+        {
+          "rank": 26,
+          "repo": "gobii-ai/gobii-platform",
+          "default_branch": "main",
+          "size_kb": 139977,
+          "visibility": "public",
+          "archived": false,
+          "score": 724087694
+        },
+        {
+          "rank": 41,
+          "repo": "preset-io/promptimize",
+          "default_branch": "main",
+          "size_kb": 128,
+          "visibility": "public",
+          "archived": false,
+          "score": 846464643
+        },
+        {
+          "rank": 6,
+          "repo": "syssi/xiaomi_airpurifier",
+          "default_branch": "develop",
+          "size_kb": 574,
+          "visibility": "public",
+          "archived": false,
+          "score": 900413152
+        },
+        {
+          "rank": 47,
+          "repo": "wwrechard/pydlm",
+          "default_branch": "master",
+          "size_kb": 3521,
+          "visibility": "public",
+          "archived": false,
+          "score": 1211041760
+        }
+      ]
+    },
+    "Java": {
+      "query": "language:Java stars:100..500 pushed:>2026-05-01 fork:false archived:false",
+      "frame_size": 60,
+      "eligible_metadata_count": 60,
+      "frame": [
+        {
+          "rank": 48,
+          "repo": "citrusframework/citrus",
+          "default_branch": "main",
+          "size_kb": 114646,
+          "visibility": "public",
+          "archived": false,
+          "score": 27303533
+        },
+        {
+          "rank": 24,
+          "repo": "xuxueli/xxl-mq",
+          "default_branch": "master",
+          "size_kb": 15581,
+          "visibility": "public",
+          "archived": false,
+          "score": 31060416
+        },
+        {
+          "rank": 35,
+          "repo": "sitemesh/sitemesh3",
+          "default_branch": "master",
+          "size_kb": 2886,
+          "visibility": "public",
+          "archived": false,
+          "score": 32426006
+        },
+        {
+          "rank": 16,
+          "repo": "alipay/ant-application-security-testing-benchmark",
+          "default_branch": "main",
+          "size_kb": 13432,
+          "visibility": "public",
+          "archived": false,
+          "score": 66500515
+        },
+        {
+          "rank": 8,
+          "repo": "insideapp-fr/sonar-flutter",
+          "default_branch": "master",
+          "size_kb": 1396,
+          "visibility": "public",
+          "archived": false,
+          "score": 68716545
+        },
+        {
+          "rank": 28,
+          "repo": "dekorateio/dekorate",
+          "default_branch": "main",
+          "size_kb": 19386,
+          "visibility": "public",
+          "archived": false,
+          "score": 89001379
+        },
+        {
+          "rank": 21,
+          "repo": "mikaelgrev/miglayout",
+          "default_branch": "master",
+          "size_kb": 1844,
+          "visibility": "public",
+          "archived": false,
+          "score": 195131067
+        },
+        {
+          "rank": 34,
+          "repo": "blendi-remade/falcraft",
+          "default_branch": "1.21",
+          "size_kb": 31147,
+          "visibility": "public",
+          "archived": false,
+          "score": 232905873
+        },
+        {
+          "rank": 38,
+          "repo": "intoolswetrust/jsignpdf",
+          "default_branch": "master",
+          "size_kb": 212641,
+          "visibility": "public",
+          "archived": false,
+          "score": 272583542
+        },
+        {
+          "rank": 31,
+          "repo": "Dlmily/Tomato-Novel-Downloader-Lite",
+          "default_branch": "main",
+          "size_kb": 602,
+          "visibility": "public",
+          "archived": false,
+          "score": 382451376
+        },
+        {
+          "rank": 33,
+          "repo": "wro4j/wro4j",
+          "default_branch": "master",
+          "size_kb": 111360,
+          "visibility": "public",
+          "archived": false,
+          "score": 437479567
+        },
+        {
+          "rank": 19,
+          "repo": "icei-pucminas/aeds2",
+          "default_branch": "master",
+          "size_kb": 150841,
+          "visibility": "public",
+          "archived": false,
+          "score": 455419549
+        },
+        {
+          "rank": 42,
+          "repo": "apache/flink-agents",
+          "default_branch": "main",
+          "size_kb": 15010,
+          "visibility": "public",
+          "archived": false,
+          "score": 506609388
+        },
+        {
+          "rank": 53,
+          "repo": "adityatandon15/Java-Full-Course",
+          "default_branch": "main",
+          "size_kb": 80595,
+          "visibility": "public",
+          "archived": false,
+          "score": 511598437
+        },
+        {
+          "rank": 47,
+          "repo": "atomikos/transactions-essentials",
+          "default_branch": "master",
+          "size_kb": 19845,
+          "visibility": "public",
+          "archived": false,
+          "score": 693798553
+        },
+        {
+          "rank": 39,
+          "repo": "anjia0532/unidbg-boot-server",
+          "default_branch": "main",
+          "size_kb": 2744,
+          "visibility": "public",
+          "archived": false,
+          "score": 841437792
+        },
+        {
+          "rank": 56,
+          "repo": "siyuan-note/siyuan-android",
+          "default_branch": "main",
+          "size_kb": 35752,
+          "visibility": "public",
+          "archived": false,
+          "score": 954808010
+        },
+        {
+          "rank": 32,
+          "repo": "CagataySonmez/EdgeCloudSim",
+          "default_branch": "master",
+          "size_kb": 31555,
+          "visibility": "public",
+          "archived": false,
+          "score": 955729494
+        },
+        {
+          "rank": 46,
+          "repo": "Catrobat/Catroid",
+          "default_branch": "develop",
+          "size_kb": 198921,
+          "visibility": "public",
+          "archived": false,
+          "score": 1037143147
+        },
+        {
+          "rank": 27,
+          "repo": "apache/commons-codec",
+          "default_branch": "master",
+          "size_kb": 7748,
+          "visibility": "public",
+          "archived": false,
+          "score": 1062661124
+        },
+        {
+          "rank": 54,
+          "repo": "oracle/graalvm-reachability-metadata",
+          "default_branch": "master",
+          "size_kb": 1831100,
+          "visibility": "public",
+          "archived": false,
+          "score": 1120754183
+        },
+        {
+          "rank": 6,
+          "repo": "bujiio/buji-pac4j",
+          "default_branch": "master",
+          "size_kb": 748,
+          "visibility": "public",
+          "archived": false,
+          "score": 1364779394
+        },
+        {
+          "rank": 5,
+          "repo": "zensu357/Android-CamSwap-OpenSource",
+          "default_branch": "main",
+          "size_kb": 579,
+          "visibility": "public",
+          "archived": false,
+          "score": 1472034287
+        },
+        {
+          "rank": 36,
+          "repo": "emanuele-f/PCAPdroid-mitm",
+          "default_branch": "master",
+          "size_kb": 328,
+          "visibility": "public",
+          "archived": false,
+          "score": 1534450248
+        },
+        {
+          "rank": 1,
+          "repo": "jdr2021/OSSFileBrowse",
+          "default_branch": "master",
+          "size_kb": 873,
+          "visibility": "public",
+          "archived": false,
+          "score": 1715328531
+        },
+        {
+          "rank": 55,
+          "repo": "vectorwing/FarmersDelight",
+          "default_branch": "1.21",
+          "size_kb": 9988,
+          "visibility": "public",
+          "archived": false,
+          "score": 1720205144
+        },
+        {
+          "rank": 37,
+          "repo": "hantsy/spring-webmvc-jwt-sample",
+          "default_branch": "master",
+          "size_kb": 298,
+          "visibility": "public",
+          "archived": false,
+          "score": 1723044529
+        },
+        {
+          "rank": 7,
+          "repo": "shinovon/KEmulator",
+          "default_branch": "main",
+          "size_kb": 136343,
+          "visibility": "public",
+          "archived": false,
+          "score": 1755933641
+        },
+        {
+          "rank": 17,
+          "repo": "yaxim-org/yaxim",
+          "default_branch": "master",
+          "size_kb": 16780,
+          "visibility": "public",
+          "archived": false,
+          "score": 1779319560
+        },
+        {
+          "rank": 59,
+          "repo": "shaopx/VideoClipEditViewTest",
+          "default_branch": "master",
+          "size_kb": 14390,
+          "visibility": "public",
+          "archived": false,
+          "score": 1888095568
+        },
+        {
+          "rank": 51,
+          "repo": "poetix/protonpack",
+          "default_branch": "master",
+          "size_kb": 252,
+          "visibility": "public",
+          "archived": false,
+          "score": 1949409611
+        },
+        {
+          "rank": 44,
+          "repo": "jeandle/jeandle-jdk",
+          "default_branch": "main",
+          "size_kb": 1137465,
+          "visibility": "public",
+          "archived": false,
+          "score": 1976918277
+        },
+        {
+          "rank": 4,
+          "repo": "jenkinsci/docker-plugin",
+          "default_branch": "master",
+          "size_kb": 2677,
+          "visibility": "public",
+          "archived": false,
+          "score": 2045924633
+        },
+        {
+          "rank": 52,
+          "repo": "apache/commons-imaging",
+          "default_branch": "master",
+          "size_kb": 45028,
+          "visibility": "public",
+          "archived": false,
+          "score": 2108343248
+        },
+        {
+          "rank": 13,
+          "repo": "dromara/mica-mqtt",
+          "default_branch": "master",
+          "size_kb": 4912,
+          "visibility": "public",
+          "archived": false,
+          "score": 2168659964
+        },
+        {
+          "rank": 14,
+          "repo": "antlr/intellij-plugin-v4",
+          "default_branch": "master",
+          "size_kb": 28807,
+          "visibility": "public",
+          "archived": false,
+          "score": 2272565282
+        },
+        {
+          "rank": 10,
+          "repo": "flamingock/flamingock-java",
+          "default_branch": "master",
+          "size_kb": 9027,
+          "visibility": "public",
+          "archived": false,
+          "score": 2420876282
+        },
+        {
+          "rank": 9,
+          "repo": "spring-petclinic/spring-framework-petclinic",
+          "default_branch": "main",
+          "size_kb": 2278,
+          "visibility": "public",
+          "archived": false,
+          "score": 2623468314
+        },
+        {
+          "rank": 18,
+          "repo": "ExtractPDF4J/ExtractPDF4J",
+          "default_branch": "main",
+          "size_kb": 6872,
+          "visibility": "public",
+          "archived": false,
+          "score": 2626965315
+        },
+        {
+          "rank": 41,
+          "repo": "bingoogolapple/BGATransformersTip-Android",
+          "default_branch": "master",
+          "size_kb": 134,
+          "visibility": "public",
+          "archived": false,
+          "score": 2782660346
+        },
+        {
+          "rank": 29,
+          "repo": "stoicflame/enunciate",
+          "default_branch": "master",
+          "size_kb": 41664,
+          "visibility": "public",
+          "archived": false,
+          "score": 2810012532
+        },
+        {
+          "rank": 58,
+          "repo": "xuxueli/xxl-tool",
+          "default_branch": "master",
+          "size_kb": 730,
+          "visibility": "public",
+          "archived": false,
+          "score": 2838656464
+        },
+        {
+          "rank": 25,
+          "repo": "cloudsimplus/cloudsimplus",
+          "default_branch": "master",
+          "size_kb": 47717,
+          "visibility": "public",
+          "archived": false,
+          "score": 2933719073
+        },
+        {
+          "rank": 12,
+          "repo": "palantir/conjure",
+          "default_branch": "master",
+          "size_kb": 7856,
+          "visibility": "public",
+          "archived": false,
+          "score": 2963113874
+        },
+        {
+          "rank": 2,
+          "repo": "milvus-io/milvus-sdk-java",
+          "default_branch": "master",
+          "size_kb": 23712,
+          "visibility": "public",
+          "archived": false,
+          "score": 2972020008
+        },
+        {
+          "rank": 11,
+          "repo": "sendgrid/sendgrid-java",
+          "default_branch": "main",
+          "size_kb": 6361,
+          "visibility": "public",
+          "archived": false,
+          "score": 3031461088
+        },
+        {
+          "rank": 15,
+          "repo": "pentaho/pentaho-platform",
+          "default_branch": "master",
+          "size_kb": 195400,
+          "visibility": "public",
+          "archived": false,
+          "score": 3124021601
+        },
+        {
+          "rank": 57,
+          "repo": "quuuuj/hrm",
+          "default_branch": "dev",
+          "size_kb": 29564,
+          "visibility": "public",
+          "archived": false,
+          "score": 3152946237
+        },
+        {
+          "rank": 22,
+          "repo": "Doist/RecyclerViewExtensions",
+          "default_branch": "master",
+          "size_kb": 543,
+          "visibility": "public",
+          "archived": false,
+          "score": 3225607494
+        },
+        {
+          "rank": 43,
+          "repo": "gchq/stroom",
+          "default_branch": "master",
+          "size_kb": 263555,
+          "visibility": "public",
+          "archived": false,
+          "score": 3307932058
+        },
+        {
+          "rank": 26,
+          "repo": "kohlschutter/junixsocket",
+          "default_branch": "main",
+          "size_kb": 40650,
+          "visibility": "public",
+          "archived": false,
+          "score": 3340420398
+        },
+        {
+          "rank": 49,
+          "repo": "apache/camel-examples",
+          "default_branch": "main",
+          "size_kb": 12150,
+          "visibility": "public",
+          "archived": false,
+          "score": 3615346013
+        },
+        {
+          "rank": 45,
+          "repo": "Argon4W/AcceleratedRendering",
+          "default_branch": "main",
+          "size_kb": 26809,
+          "visibility": "public",
+          "archived": false,
+          "score": 3824149844
+        },
+        {
+          "rank": 3,
+          "repo": "capawesome-team/capacitor-plugins",
+          "default_branch": "main",
+          "size_kb": 28554,
+          "visibility": "public",
+          "archived": false,
+          "score": 3888345693
+        },
+        {
+          "rank": 20,
+          "repo": "alibaba/innodb-java-reader",
+          "default_branch": "master",
+          "size_kb": 5265,
+          "visibility": "public",
+          "archived": false,
+          "score": 3967233778
+        },
+        {
+          "rank": 40,
+          "repo": "rambaut/figtree",
+          "default_branch": "master",
+          "size_kb": 226245,
+          "visibility": "public",
+          "archived": false,
+          "score": 3988232517
+        },
+        {
+          "rank": 30,
+          "repo": "google/allocation-instrumenter",
+          "default_branch": "master",
+          "size_kb": 4736,
+          "visibility": "public",
+          "archived": false,
+          "score": 4009818143
+        },
+        {
+          "rank": 23,
+          "repo": "spring-guides/gs-uploading-files",
+          "default_branch": "main",
+          "size_kb": 1139,
+          "visibility": "public",
+          "archived": false,
+          "score": 4164421924
+        },
+        {
+          "rank": 60,
+          "repo": "kube-mods/kubejs",
+          "default_branch": "2601",
+          "size_kb": 9136,
+          "visibility": "public",
+          "archived": false,
+          "score": 4212579668
+        },
+        {
+          "rank": 50,
+          "repo": "ALEX5402/NewBlackbox",
+          "default_branch": "main",
+          "size_kb": 10874,
+          "visibility": "public",
+          "archived": false,
+          "score": 4244361486
+        }
+      ],
+      "selected": [
+        {
+          "rank": 48,
+          "repo": "citrusframework/citrus",
+          "default_branch": "main",
+          "size_kb": 114646,
+          "visibility": "public",
+          "archived": false,
+          "score": 27303533
+        },
+        {
+          "rank": 24,
+          "repo": "xuxueli/xxl-mq",
+          "default_branch": "master",
+          "size_kb": 15581,
+          "visibility": "public",
+          "archived": false,
+          "score": 31060416
+        },
+        {
+          "rank": 35,
+          "repo": "sitemesh/sitemesh3",
+          "default_branch": "master",
+          "size_kb": 2886,
+          "visibility": "public",
+          "archived": false,
+          "score": 32426006
+        },
+        {
+          "rank": 16,
+          "repo": "alipay/ant-application-security-testing-benchmark",
+          "default_branch": "main",
+          "size_kb": 13432,
+          "visibility": "public",
+          "archived": false,
+          "score": 66500515
+        },
+        {
+          "rank": 8,
+          "repo": "insideapp-fr/sonar-flutter",
+          "default_branch": "master",
+          "size_kb": 1396,
+          "visibility": "public",
+          "archived": false,
+          "score": 68716545
+        },
+        {
+          "rank": 28,
+          "repo": "dekorateio/dekorate",
+          "default_branch": "main",
+          "size_kb": 19386,
+          "visibility": "public",
+          "archived": false,
+          "score": 89001379
+        },
+        {
+          "rank": 21,
+          "repo": "mikaelgrev/miglayout",
+          "default_branch": "master",
+          "size_kb": 1844,
+          "visibility": "public",
+          "archived": false,
+          "score": 195131067
+        },
+        {
+          "rank": 34,
+          "repo": "blendi-remade/falcraft",
+          "default_branch": "1.21",
+          "size_kb": 31147,
+          "visibility": "public",
+          "archived": false,
+          "score": 232905873
+        },
+        {
+          "rank": 38,
+          "repo": "intoolswetrust/jsignpdf",
+          "default_branch": "master",
+          "size_kb": 212641,
+          "visibility": "public",
+          "archived": false,
+          "score": 272583542
+        },
+        {
+          "rank": 31,
+          "repo": "Dlmily/Tomato-Novel-Downloader-Lite",
+          "default_branch": "main",
+          "size_kb": 602,
+          "visibility": "public",
+          "archived": false,
+          "score": 382451376
+        },
+        {
+          "rank": 33,
+          "repo": "wro4j/wro4j",
+          "default_branch": "master",
+          "size_kb": 111360,
+          "visibility": "public",
+          "archived": false,
+          "score": 437479567
+        },
+        {
+          "rank": 19,
+          "repo": "icei-pucminas/aeds2",
+          "default_branch": "master",
+          "size_kb": 150841,
+          "visibility": "public",
+          "archived": false,
+          "score": 455419549
+        }
+      ]
+    }
+  },
+  "warning": "Search-ranked convenience frame; not GitHub-representative"
+}

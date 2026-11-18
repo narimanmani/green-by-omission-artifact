@@ -1,0 +1,10 @@
+{
+  "frozen_utc": "2026-11-12T15:48:42.684018+00:00",
+  "reason": "Original APT archive partial directory is owned by _apt with mode700; capability-dropped root cannot write it. Failed before npm/source transfer.",
+  "administrative_change_only": "Use fresh root-owned /tmp/wxyc-apt-archives cache; keep caps ALL dropped, exact base/runtime/source and application lock unchanged.",
+  "toolchain_script": "set -eu\nmkdir -p /tmp/wxyc-apt-archives/partial\napt-get -o APT::Sandbox::User=root update\nDEBIAN_FRONTEND=noninteractive apt-get -o APT::Sandbox::User=root -o Dir::Cache::archives=/tmp/wxyc-apt-archives install -y --no-install-recommends git build-essential python3 ca-certificates\nnode --version\nnpm --version\ngit --version\npython3 --version\ng++ --version\ndpkg-query -W\n",
+  "prior_failure": "PROVISIONING_RESULT.json and ATTEMPT1_PROVISIONING_RESULT.json; no subject execution",
+  "baseline_command_plan_unchanged_except_apt_cache": true,
+  "no_dependencies_changed": true,
+  "no_study_tests_or_candidates": true
+}

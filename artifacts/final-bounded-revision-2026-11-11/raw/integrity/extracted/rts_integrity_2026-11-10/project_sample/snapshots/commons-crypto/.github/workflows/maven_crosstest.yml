@@ -1,0 +1,240 @@
+# Licensed to the Apache Software Foundation (ASF) under one or more
+# contributor license agreements.  See the NOTICE file distributed with
+# this work for additional information regarding copyright ownership.
+# The ASF licenses this file to You under the Apache License, Version 2.0
+# (the "License"); you may not use this file except in compliance with
+# the License.  You may obtain a copy of the License at
+#
+#      https://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+name: Java Cross Test
+
+# Builds native binaries for various Linux and Windows architectures using Linux and Docker
+# These are then combined with a macOS build to produce a combined set of binaries and jars
+# The resulting binaries are then tested
+
+on:
+  # allow direct trigger
+  workflow_dispatch:
+  push:
+    paths:
+      - '**/native/**'
+      - 'Makefile*'
+      - '**/OpenSslNative.java'
+      - '**/OpenSslCryptoRandomNative.java'
+      - '**/OpenSslInfoNative.java'
+      - '**/workflows/maven_crosstest.yml'
+      - 'src/docker/*'
+      - '!src/docker/Dockerfile*'
+    # Don't trigger on docker change; will be started after build
+  workflow_run:
+    workflows: ['Docker images']
+    types: [completed]
+
+
+permissions:
+  contents: read
+
+env:
+  REGISTRY: ghcr.io
+  # Output from build-cross-linux
+  CACHE-LINUX: crypto-target-linux
+  # Output from package-macos
+  CACHE-ALL: crypto-target-all
+
+jobs:
+  # Remove any existing caches
+  cleanup:
+    runs-on: ubuntu-latest
+    permissions:
+      # `actions:write` permission is required to delete caches
+      #   See also: https://docs.github.com/en/rest/actions/cache?apiVersion=2022-11-28#delete-a-github-actions-cache-for-a-repository-using-a-cache-id
+      actions: write
+      contents: read
+    steps:
+    - name: clear cache
+      env:
+        GH_TOKEN: ${{ github.token }}
+      run: |
+        gh extension install actions/gh-actions-cache
+        gh actions-cache delete ${{ env.CACHE-LINUX }} -R ${{ github.repository }} -B ${{ github.ref_name }} --confirm || true
+        gh actions-cache delete ${{ env.CACHE-ALL }} -R ${{ github.repository }} -B ${{ github.ref_name }} --confirm || true
+
+  # Use Linux and Docker to build Linux and Windows binaries
+  build-cross-linux:
+    needs: cleanup
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: docker/setup-qemu-action@ce360397dd3f832beb865e1373c09c0e9f86d70a # v4.0.0
+      - name: Image prefix (lower case)
+        run: |
+          echo "IMAGE_PREFIX=$(echo ${{ env.REGISTRY }}/${{ github.repository }} | tr '[A-Z]' '[a-z]')" >>$GITHUB_ENV
+      - name: Build 64 bit native code
+        run: |
+          time IMAGE_PREFIX=${IMAGE_PREFIX} docker compose -f src/docker/docker-compose-gh.yaml run --quiet-pull crypto-gh src/docker/build-x86_64.sh
+      - name: Build 32 bit native code
+        run: |
+          time IMAGE_PREFIX=${IMAGE_PREFIX} docker compose -f src/docker/docker-compose-gh.yaml run --quiet-pull crypto-gh src/docker/build_linux32.sh
+          ls -l target
+      - name: Save generated Linux binaries
+        uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 #v6.1.0
+        with:
+          key: ${{ env.CACHE-LINUX }}
+          path: target
+
+  # Use macOS to build its native binaries and package them with the Linux/Windows ones
+  package-macos:
+    needs: build-cross-linux
+    runs-on: macos-15
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Set up JDK
+        uses: actions/setup-java@77dd5b2ce225ea11469928ac317850245a74ae78 # 6.2.0
+        with:
+          distribution: 'zulu'
+          java-version: 11
+          cache: 'maven'
+          # these values cause the plugin to set up the Maven settings.xml file
+          server-id: apache.snapshots.https # Value of the distributionManagement/repository/id field of the pom.xml
+          server-username: NEXUS_USER # env variable for username in deploy
+          server-password: NEXUS_PW # env variable for token in deploy
+      - name: Build on macOS
+        run: |
+          mvn -V -B -ntp test -DskipTests
+          # build 64 bit macOS libraries
+          mvn -V -B -ntp -DskipTests -Drat.skip process-classes -Dtarget.name=mac64
+          mvn -V -B -ntp -DskipTests -Drat.skip process-classes -Dtarget.name=macArm64
+          mvn -V -B -ntp -DskipTests -Drat.skip process-classes -Dtarget.name=mac-aarch64
+          ls -l target
+      - name: Retrieve saved Linux binaries
+        uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 #v6.1.0
+        with:
+          key: ${{ env.CACHE-LINUX }}
+          path: target
+      - name: Package and deploy to Maven Central on macOS
+        if: github.repository == 'apache/commons-crypto' && github.ref_name == 'master'
+        env:
+          NEXUS_USER: ${{ secrets.NEXUS_USER }}
+          NEXUS_PW: ${{ secrets.NEXUS_PW }}
+        # Speed up builds by disabling unnecessary plugins
+        # Note: spdx.skip requires version 0.7.1+
+        run: |
+          ls -l target
+          mvn -V -B -ntp deploy -DskipTests -Drat.skip -Djacoco.skip -DbuildNumber.skip -Danimal.sniffer.skip -Dcyclonedx.skip -Dspdx.skip
+          ls -l target
+      # At some point would like to run the cross tests using only the jars
+      # In the meantime, use the target class structure
+      - name: Save generated Linux + macOS binaries
+        uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 #v6.1.0
+        with:
+          key: ${{ env.CACHE-ALL }}
+          path: target
+      # This is only visible on the Workflow summary page
+      - name: Upload packaged jars for external testing
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: crypto-package
+          path: target/*.jar
+          retention-days: 7
+
+  # Test Jobs that don't use Docker
+  standalone:
+    needs: package-macos
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 10
+    # continue-on-error: ${{ matrix.experimental }}
+    strategy:
+      max-parallel: 20
+      matrix:
+        include:
+          - os: macos-15-intel
+            java: 11
+            expectedPath: Mac/x86_64
+          - os: macos-15
+            java: 11
+            expectedPath: Mac/aarch64
+          - os: ubuntu-latest
+            java: 11
+            expectedPath: Linux/x86_64
+          - os: windows-latest
+            java: 11
+            expectedPath: Windows/x86_64
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Retrieve saved target tree
+        uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 #v6.1.0
+        with:
+          key: ${{ env.CACHE-ALL }}
+          path: target
+          enableCrossOsArchive: true
+          fail-on-cache-miss: true
+      - name: Show files
+        run: ls -l target
+      - name: Set up JDK ${{ matrix.java }}
+        uses: actions/setup-java@77dd5b2ce225ea11469928ac317850245a74ae78 # 6.2.0
+        with:
+          distribution: 'zulu'
+          java-version: ${{ matrix.java }}
+          cache: 'maven'
+      - name: OpenSSL version (default)
+        run: openssl version -a
+      - name: OpenSSL engine (macOS)
+        # need to override the libarary path on macOS to avoid 'unsafe load' complaint
+        if: ${{ runner.os == 'macOS' }}
+        # set up ENGINESDIR from openssl
+        run: |
+          echo $(openssl version -e | sed -n -e 's/engines-.*//' -e 's/: "/=/p') >> "$GITHUB_ENV"
+      - name: Test on ${{ matrix.os }} ${{ matrix.expectedPath }} (Java ${{ matrix.java }})
+        run: >
+          mvn -V -B -ntp surefire:test -Ptest-with-jar -D"jni.library.path=$ENGINESDIR" -D"jna.library.path=$ENGINESDIR"
+          -D"OsInfoTest.expectedPath=${{ matrix.expectedPath }}"
+
+  # use Linux and Docker to test some additional OS arch combinations
+  test-cross-linux:
+    needs: package-macos
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Docker setup QEMU
+        uses: docker/setup-qemu-action@ce360397dd3f832beb865e1373c09c0e9f86d70a # v4.0.0
+      - name: Image prefix (lower case)
+        run: |
+          echo "IMAGE_PREFIX=$(echo ${{ env.REGISTRY }}/${{ github.repository }} | tr '[A-Z]' '[a-z]')" >>$GITHUB_ENV
+      - name: Retrieve saved target tree
+        uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 #v6.1.0
+        with:
+          key: ${{ env.CACHE-ALL }}
+          path: target
+      - name: Run on Linux/aarch64
+        run: |
+          IMAGE_PREFIX=${IMAGE_PREFIX} docker compose -f src/docker/docker-compose-gh.yaml run --quiet-pull crypto-aarch64-gh \
+            src/docker/test_cross.sh -Ptest-with-jar -DOsInfoTest.expectedPath=Linux/aarch64
+      - name: Run on riscv64
+        # locked to 5.12.0 - see https://github.com/java-native-access/jna/issues/1557
+        run: |
+          IMAGE_PREFIX=${IMAGE_PREFIX} docker compose -f src/docker/docker-compose-gh.yaml run --quiet-pull crypto-riscv64-gh \
+            src/docker/test_cross.sh -Ptest-with-jar -DOsInfoTest.expectedPath=Linux/riscv64 -Djna.version=5.12.0
+      - name: Run on Linux/x86_64
+        run: |
+          IMAGE_PREFIX=${IMAGE_PREFIX} docker compose -f src/docker/docker-compose-gh.yaml run --quiet-pull crypto-gh \
+            src/docker/test_cross.sh -Ptest-with-jar -DOsInfoTest.expectedPath=Linux/x86_64

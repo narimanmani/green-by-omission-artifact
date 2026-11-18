@@ -1,0 +1,21 @@
+{
+  "utc": "2026-11-08T00:21:56.330608+00:00",
+  "command": [
+    "gh",
+    "pr",
+    "create",
+    "--repo",
+    "anonymous-owner/ci-selection-testbed",
+    "--base",
+    "main",
+    "--head",
+    "trial/itsdangerous_expiry/ordinary",
+    "--title",
+    "Case 1: ordinary source-only validation",
+    "--body-file",
+    "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\hosted\\current-validation\\github\\case-1-ordinary-pr-body.md"
+  ],
+  "exit": 0,
+  "stdout": "https://example.invalid/anonymous-research/ci-selection-testbed/pull/2\n",
+  "stderr": ""
+}

@@ -1,0 +1,9 @@
+{
+  "statuses": [
+    {
+      "context": "testmon-required",
+      "state": "success",
+      "target_url": "https://example.invalid/anonymous-research/ci-selection-testbed/actions/runs/42577953803"
+    }
+  ]
+}

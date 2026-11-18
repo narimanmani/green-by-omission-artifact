@@ -1,0 +1,129 @@
+{
+  "total_count": 1,
+  "jobs": [
+    {
+      "id": 97118451325,
+      "run_id": 32608888519,
+      "workflow_name": "Publish to GitHub Packages",
+      "head_branch": "v4.1.0",
+      "run_url": "https://api.github.com/repos/WXYC/wxyc-shared/actions/runs/32608888519",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOQ_SOkM8AAAAWnLX2fQ",
+      "head_sha": "e9374c62f32c9fd4ccccd23651babb7a556fa210",
+      "url": "https://api.github.com/repos/WXYC/wxyc-shared/actions/jobs/97118451325",
+      "html_url": "https://github.com/WXYC/wxyc-shared/actions/runs/32608888519/job/97118451325",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-08-23T00:50:36Z",
+      "started_at": "2026-08-23T00:50:38Z",
+      "completed_at": "2026-08-23T00:51:43Z",
+      "name": "publish",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-08-23T00:50:39Z",
+          "completed_at": "2026-08-23T00:50:40Z"
+        },
+        {
+          "name": "Run actions/checkout@v7",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-08-23T00:50:40Z",
+          "completed_at": "2026-08-23T00:50:41Z"
+        },
+        {
+          "name": "Run actions/setup-node@v7",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-08-23T00:50:41Z",
+          "completed_at": "2026-08-23T00:50:45Z"
+        },
+        {
+          "name": "Install oasdiff",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-08-23T00:50:45Z",
+          "completed_at": "2026-08-23T00:51:13Z"
+        },
+        {
+          "name": "Install dependencies (skip build)",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-08-23T00:51:13Z",
+          "completed_at": "2026-08-23T00:51:21Z"
+        },
+        {
+          "name": "Generate TypeScript types from OpenAPI",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-08-23T00:51:21Z",
+          "completed_at": "2026-08-23T00:51:22Z"
+        },
+        {
+          "name": "Build",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-08-23T00:51:22Z",
+          "completed_at": "2026-08-23T00:51:29Z"
+        },
+        {
+          "name": "Run tests",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-08-23T00:51:29Z",
+          "completed_at": "2026-08-23T00:51:31Z"
+        },
+        {
+          "name": "Publish",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-08-23T00:51:31Z",
+          "completed_at": "2026-08-23T00:51:39Z"
+        },
+        {
+          "name": "Post Run actions/setup-node@v7",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-08-23T00:51:39Z",
+          "completed_at": "2026-08-23T00:51:40Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v7",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18,
+          "started_at": "2026-08-23T00:51:40Z",
+          "completed_at": "2026-08-23T00:51:40Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19,
+          "started_at": "2026-08-23T00:51:40Z",
+          "completed_at": "2026-08-23T00:51:40Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/WXYC/wxyc-shared/check-runs/97118451325",
+      "labels": [
+        "ubuntu-latest"
+      ],
+      "runner_id": 1000118949,
+      "runner_name": "GitHub Actions 1000118949",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    }
+  ]
+}

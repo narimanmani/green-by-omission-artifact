@@ -1,0 +1,21 @@
+Obtaining file:///home/runner/work/_temp/pilot/upstream
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: itsdangerous
+  Building editable for itsdangerous (pyproject.toml): started
+  Building editable for itsdangerous (pyproject.toml): finished with status 'done'
+  Created wheel for itsdangerous: filename=itsdangerous-2.3.0.dev0-py3-none-any.whl size=3133 sha256=e763d02200b5d2525774b81e691b6a226fc4a05f668570752a50a66b5578b681
+  Stored in directory: /tmp/pip-ephem-wheel-cache-waa5yh1p/wheels/6b/84/6d/73555933f26b16ae47f2111d49dde84bbe9fe186b7b0301f25
+Successfully built itsdangerous
+Installing collected packages: itsdangerous
+Successfully installed itsdangerous-2.3.0.dev0
+
+
+[notice] A new release of pip is available: 25.0.1 -> 26.3
+[notice] To update, run: python -m pip install --upgrade pip

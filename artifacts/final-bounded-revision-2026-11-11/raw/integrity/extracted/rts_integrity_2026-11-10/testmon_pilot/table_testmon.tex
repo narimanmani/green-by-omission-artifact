@@ -1,0 +1,26 @@
+\begin{table}[t]
+\centering
+\caption{Observed testmon integrity-fault outcomes in the synthetic fixture. Each row comprises 3 deterministic repeats. Selection omissions are N/A when the runner aborts; unexecuted tests then do not establish omission by selection.}
+\label{tab:testmon-integrity-pilot}
+\begin{tabular}{llrrrrr}
+\hline
+Fault & Strategy & Tests & Failures & Exit & Fallback & Omissions \\
+\hline
+none & standard\_rts & 3 & 2 & 1 & no & 0 \\
+none & fail\_closed & 3 & 2 & 1 & no & 0 \\
+none & full\_suite & 4 & 2 & 1 & no & 0 \\
+missing & standard\_rts & 4 & 2 & 1 & no & 0 \\
+missing & fail\_closed & 4 & 2 & 1 & yes & 0 \\
+missing & full\_suite & 4 & 2 & 1 & no & 0 \\
+empty & standard\_rts & 4 & 2 & 1 & no & 0 \\
+empty & fail\_closed & 4 & 2 & 1 & yes & 0 \\
+empty & full\_suite & 4 & 2 & 1 & no & 0 \\
+half\_truncated & standard\_rts & 0 & 0 & 3 & no & N/A \\
+half\_truncated & fail\_closed & 4 & 2 & 1 & yes & 0 \\
+half\_truncated & full\_suite & 4 & 2 & 1 & no & 0 \\
+garbage & standard\_rts & 0 & 0 & 3 & no & N/A \\
+garbage & fail\_closed & 4 & 2 & 1 & yes & 0 \\
+garbage & full\_suite & 4 & 2 & 1 & no & 0 \\
+\hline
+\end{tabular}
+\end{table}

@@ -1,0 +1,61 @@
+{
+  "audited_utc": "2026-11-12T15:59:32.810557+00:00",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "freeze digest equals root announced value",
+      "pass": true
+    },
+    {
+      "name": "frozen host code matches independently reviewed code",
+      "pass": true
+    },
+    {
+      "name": "frozen runner code matches independently reviewed code",
+      "pass": true
+    },
+    {
+      "name": "both frozen protocol aliases equal reviewed predeclaration",
+      "pass": true
+    },
+    {
+      "name": "frozen seed ID matches audited eligible seed",
+      "pass": true
+    },
+    {
+      "name": "frozen installed manifest equals independently audited digest",
+      "pass": true
+    },
+    {
+      "name": "all frozen host context copies still match sealed hashes",
+      "pass": true
+    },
+    {
+      "name": "frozen source/test/config manifests equal independently audited inputs",
+      "pass": true
+    },
+    {
+      "name": "freeze records zero study tests before freezing",
+      "pass": true
+    },
+    {
+      "name": "allthree fixed repetitions remain declared",
+      "pass": true
+    },
+    {
+      "name": "actual first container uses frozen final image",
+      "pass": true
+    },
+    {
+      "name": "actual private tmpfs flags match predeclaration",
+      "pass": true
+    },
+    {
+      "name": "first actual host pre-start checks all pass",
+      "pass": true
+    }
+  ],
+  "execution_freeze_sha256": "80173680cee88cf33b23d68cc8cec63f47f3ae0f82157089cf94631722b519bf",
+  "final_image_id": "sha256:965c2fbc3a3b007f4fe2a78cd03d8d252bc1925ef07e4656a30a756d9166e948",
+  "scope": "Read-only correspondence check after first container start; initial static review preceded the run. No outcomes or subject execution by auditor."
+}

@@ -1,0 +1,614 @@
+[
+  {
+    "case": "itsdangerous_expiry",
+    "condition": "ordinary",
+    "branch": "trial/itsdangerous_expiry/ordinary",
+    "base_sha": "1d63949857934672de5c13f543174b4dbf0fd7ce",
+    "head_sha": "75ca88276e8f610b8dca550bb448c61d3109bfa8",
+    "modified_files": [
+      "cases/itsdangerous_expiry/itsdangerous/timed.py"
+    ],
+    "url": "https://example.invalid/anonymous-research/ci-selection-testbed/pull/2",
+    "number": 2,
+    "run_id": 42429417906,
+    "run_url": "https://example.invalid/anonymous-research/ci-selection-testbed/actions/runs/42429417906",
+    "workflow_overall_conclusion": "failure",
+    "github_mergeability": {
+      "pr": 2,
+      "url": "https://example.invalid/anonymous-research/ci-selection-testbed/pull/2",
+      "head_sha": "75ca88276e8f610b8dca550bb448c61d3109bfa8",
+      "base_sha": "1d63949857934672de5c13f543174b4dbf0fd7ce",
+      "mergeable": true,
+      "mergeable_state": "blocked"
+    },
+    "modes": {
+      "full": {
+        "exit": 1,
+        "collected": [
+          "tests/test_meta.py::test_metadata_build_positive",
+          "tests/test_security.py::test_security_rejects_expired",
+          "tests/test_security.py::test_valid_signature_passes"
+        ],
+        "executed": [
+          "tests/test_meta.py::test_metadata_build_positive",
+          "tests/test_security.py::test_security_rejects_expired",
+          "tests/test_security.py::test_valid_signature_passes"
+        ],
+        "deselected": [],
+        "synthetic_deselected_count": 0,
+        "security_executed": true,
+        "security_failed": true,
+        "trusted_baseline_sha256": "b66f5ec502837df72fe449cf5ef4eaee742bd45124d50e18978a9f84c8e876ff",
+        "summary_file": "hosted\\current-validation\\artifacts\\run-42429417906\\full-pr-2-attempt-1\\summary.json",
+        "versions": {
+          "pytest": "9.0.2",
+          "pytest-testmon": "2.3.0",
+          "coverage": "7.17.2",
+          "itsdangerous": "2.2.0",
+          "starlette": "0.50.0",
+          "requests": "2.32.5",
+          "httpx": "0.28.1"
+        },
+        "python": "3.13.18 (main, Oct 26 2026, 14:20:56) [GCC 13.3.0]",
+        "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+        "runner_environment": {
+          "ImageOS": "ubuntu24",
+          "ImageVersion": "20261101.360.1",
+          "RUNNER_OS": "Linux",
+          "GITHUB_RUN_ID": "42429417906",
+          "GITHUB_RUN_ATTEMPT": "1",
+          "GITHUB_WORKFLOW_REF": "anonymous-owner/ci-selection-testbed/.github/workflows/validation.yml@refs/pull/2/merge",
+          "GITHUB_WORKFLOW_SHA": "beb906736e4663b2f172b7753e0fa5d67011dbdf",
+          "GITHUB_SHA": "beb906736e4663b2f172b7753e0fa5d67011dbdf",
+          "GITHUB_REF": "refs/pull/2/merge"
+        }
+      },
+      "selective": {
+        "exit": 1,
+        "collected": [
+          "tests/test_security.py::test_valid_signature_passes",
+          "tests/test_security.py::test_security_rejects_expired"
+        ],
+        "executed": [
+          "tests/test_security.py::test_security_rejects_expired",
+          "tests/test_security.py::test_valid_signature_passes"
+        ],
+        "deselected": [],
+        "synthetic_deselected_count": 0,
+        "security_executed": true,
+        "security_failed": true,
+        "trusted_baseline_sha256": "e2b053a3215196cfe66638e9c202893eb157cad81b471f3aaec736cc84869572",
+        "summary_file": "hosted\\current-validation\\artifacts\\run-42429417906\\selective-pr-2-attempt-1\\summary.json",
+        "versions": {
+          "pytest": "9.0.2",
+          "pytest-testmon": "2.3.0",
+          "coverage": "7.17.2",
+          "itsdangerous": "2.2.0",
+          "starlette": "0.50.0",
+          "requests": "2.32.5",
+          "httpx": "0.28.1"
+        },
+        "python": "3.13.18 (main, Oct 26 2026, 14:20:56) [GCC 13.3.0]",
+        "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+        "runner_environment": {
+          "ImageOS": "ubuntu24",
+          "ImageVersion": "20261101.360.1",
+          "RUNNER_OS": "Linux",
+          "GITHUB_RUN_ID": "42429417906",
+          "GITHUB_RUN_ATTEMPT": "1",
+          "GITHUB_WORKFLOW_REF": "anonymous-owner/ci-selection-testbed/.github/workflows/validation.yml@refs/pull/2/merge",
+          "GITHUB_WORKFLOW_SHA": "beb906736e4663b2f172b7753e0fa5d67011dbdf",
+          "GITHUB_SHA": "beb906736e4663b2f172b7753e0fa5d67011dbdf",
+          "GITHUB_REF": "refs/pull/2/merge"
+        }
+      }
+    }
+  },
+  {
+    "case": "itsdangerous_expiry",
+    "condition": "collision",
+    "branch": "trial/itsdangerous_expiry/collision",
+    "base_sha": "1d63949857934672de5c13f543174b4dbf0fd7ce",
+    "head_sha": "686510acdab5bdeee071bbcc981c8f11864dde9d",
+    "modified_files": [
+      "cases/itsdangerous_expiry/itsdangerous/timed.py"
+    ],
+    "url": "https://example.invalid/anonymous-research/ci-selection-testbed/pull/3",
+    "number": 3,
+    "run_id": 42429426805,
+    "run_url": "https://example.invalid/anonymous-research/ci-selection-testbed/actions/runs/42429426805",
+    "workflow_overall_conclusion": "failure",
+    "github_mergeability": {
+      "pr": 3,
+      "url": "https://example.invalid/anonymous-research/ci-selection-testbed/pull/3",
+      "head_sha": "686510acdab5bdeee071bbcc981c8f11864dde9d",
+      "base_sha": "1d63949857934672de5c13f543174b4dbf0fd7ce",
+      "mergeable": true,
+      "mergeable_state": "unstable"
+    },
+    "modes": {
+      "full": {
+        "exit": 1,
+        "collected": [
+          "tests/test_meta.py::test_metadata_build_positive",
+          "tests/test_security.py::test_security_rejects_expired",
+          "tests/test_security.py::test_valid_signature_passes"
+        ],
+        "executed": [
+          "tests/test_meta.py::test_metadata_build_positive",
+          "tests/test_security.py::test_security_rejects_expired",
+          "tests/test_security.py::test_valid_signature_passes"
+        ],
+        "deselected": [],
+        "synthetic_deselected_count": 0,
+        "security_executed": true,
+        "security_failed": true,
+        "trusted_baseline_sha256": "e48bd7223ae246f7068ebeaa63fdc5d1239ba4681289ef434203853c99ce1523",
+        "summary_file": "hosted\\current-validation\\artifacts\\run-42429426805\\full-pr-3-attempt-1\\summary.json",
+        "versions": {
+          "pytest": "9.0.2",
+          "pytest-testmon": "2.3.0",
+          "coverage": "7.17.2",
+          "itsdangerous": "2.2.0",
+          "starlette": "0.50.0",
+          "requests": "2.32.5",
+          "httpx": "0.28.1"
+        },
+        "python": "3.13.18 (main, Oct 26 2026, 14:20:56) [GCC 13.3.0]",
+        "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+        "runner_environment": {
+          "ImageOS": "ubuntu24",
+          "ImageVersion": "20261101.360.1",
+          "RUNNER_OS": "Linux",
+          "GITHUB_RUN_ID": "42429426805",
+          "GITHUB_RUN_ATTEMPT": "1",
+          "GITHUB_WORKFLOW_REF": "anonymous-owner/ci-selection-testbed/.github/workflows/validation.yml@refs/pull/3/merge",
+          "GITHUB_WORKFLOW_SHA": "0d81060728f538f5e3cbe4478593e4e2828f34df",
+          "GITHUB_SHA": "0d81060728f538f5e3cbe4478593e4e2828f34df",
+          "GITHUB_REF": "refs/pull/3/merge"
+        }
+      },
+      "selective": {
+        "exit": 0,
+        "collected": [],
+        "executed": [],
+        "deselected": [],
+        "synthetic_deselected_count": 0,
+        "security_executed": false,
+        "security_failed": false,
+        "trusted_baseline_sha256": "d5920b872d041e03716c27264af4b3b32536e54b6c1b1b7bbec4b219b5506c63",
+        "summary_file": "hosted\\current-validation\\artifacts\\run-42429426805\\selective-pr-3-attempt-1\\summary.json",
+        "versions": {
+          "pytest": "9.0.2",
+          "pytest-testmon": "2.3.0",
+          "coverage": "7.17.2",
+          "itsdangerous": "2.2.0",
+          "starlette": "0.50.0",
+          "requests": "2.32.5",
+          "httpx": "0.28.1"
+        },
+        "python": "3.13.18 (main, Oct 26 2026, 14:20:56) [GCC 13.3.0]",
+        "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+        "runner_environment": {
+          "ImageOS": "ubuntu24",
+          "ImageVersion": "20261101.360.1",
+          "RUNNER_OS": "Linux",
+          "GITHUB_RUN_ID": "42429426805",
+          "GITHUB_RUN_ATTEMPT": "1",
+          "GITHUB_WORKFLOW_REF": "anonymous-owner/ci-selection-testbed/.github/workflows/validation.yml@refs/pull/3/merge",
+          "GITHUB_WORKFLOW_SHA": "0d81060728f538f5e3cbe4478593e4e2828f34df",
+          "GITHUB_SHA": "0d81060728f538f5e3cbe4478593e4e2828f34df",
+          "GITHUB_REF": "refs/pull/3/merge"
+        }
+      }
+    }
+  },
+  {
+    "case": "starlette_trusted_host",
+    "condition": "ordinary",
+    "branch": "trial/starlette_trusted_host/ordinary",
+    "base_sha": "1d63949857934672de5c13f543174b4dbf0fd7ce",
+    "head_sha": "35895c1629a579b4acfc0e70446e22f212f7081e",
+    "modified_files": [
+      "cases/starlette_trusted_host/starlette/middleware/trustedhost.py"
+    ],
+    "url": "https://example.invalid/anonymous-research/ci-selection-testbed/pull/4",
+    "number": 4,
+    "run_id": 42429434778,
+    "run_url": "https://example.invalid/anonymous-research/ci-selection-testbed/actions/runs/42429434778",
+    "workflow_overall_conclusion": "failure",
+    "github_mergeability": {
+      "pr": 4,
+      "url": "https://example.invalid/anonymous-research/ci-selection-testbed/pull/4",
+      "head_sha": "35895c1629a579b4acfc0e70446e22f212f7081e",
+      "base_sha": "1d63949857934672de5c13f543174b4dbf0fd7ce",
+      "mergeable": true,
+      "mergeable_state": "blocked"
+    },
+    "modes": {
+      "full": {
+        "exit": 1,
+        "collected": [
+          "tests/test_meta.py::test_metadata_build_positive",
+          "tests/test_security.py::test_security_rejects_untrusted_host",
+          "tests/test_security.py::test_valid_host_passes"
+        ],
+        "executed": [
+          "tests/test_meta.py::test_metadata_build_positive",
+          "tests/test_security.py::test_security_rejects_untrusted_host",
+          "tests/test_security.py::test_valid_host_passes"
+        ],
+        "deselected": [],
+        "synthetic_deselected_count": 0,
+        "security_executed": true,
+        "security_failed": true,
+        "trusted_baseline_sha256": "53e181529e6c8a034f04e66f91300a380b099b68d4e715500139793c1b52bb09",
+        "summary_file": "hosted\\current-validation\\artifacts\\run-42429434778\\full-pr-4-attempt-1\\summary.json",
+        "versions": {
+          "pytest": "9.0.2",
+          "pytest-testmon": "2.3.0",
+          "coverage": "7.17.2",
+          "itsdangerous": "2.2.0",
+          "starlette": "0.50.0",
+          "requests": "2.32.5",
+          "httpx": "0.28.1"
+        },
+        "python": "3.13.18 (main, Oct 26 2026, 14:20:56) [GCC 13.3.0]",
+        "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+        "runner_environment": {
+          "ImageOS": "ubuntu24",
+          "ImageVersion": "20261101.360.1",
+          "RUNNER_OS": "Linux",
+          "GITHUB_RUN_ID": "42429434778",
+          "GITHUB_RUN_ATTEMPT": "1",
+          "GITHUB_WORKFLOW_REF": "anonymous-owner/ci-selection-testbed/.github/workflows/validation.yml@refs/pull/4/merge",
+          "GITHUB_WORKFLOW_SHA": "fbcfdb93a4f11ed9a81bd1a19942e4da8528e3c4",
+          "GITHUB_SHA": "fbcfdb93a4f11ed9a81bd1a19942e4da8528e3c4",
+          "GITHUB_REF": "refs/pull/4/merge"
+        }
+      },
+      "selective": {
+        "exit": 1,
+        "collected": [
+          "tests/test_security.py::test_valid_host_passes",
+          "tests/test_security.py::test_security_rejects_untrusted_host"
+        ],
+        "executed": [
+          "tests/test_security.py::test_security_rejects_untrusted_host",
+          "tests/test_security.py::test_valid_host_passes"
+        ],
+        "deselected": [],
+        "synthetic_deselected_count": 0,
+        "security_executed": true,
+        "security_failed": true,
+        "trusted_baseline_sha256": "46d1f432d4fef04d76f764ee81ba45581561becd8470e7a32fce15e20a903eab",
+        "summary_file": "hosted\\current-validation\\artifacts\\run-42429434778\\selective-pr-4-attempt-1\\summary.json",
+        "versions": {
+          "pytest": "9.0.2",
+          "pytest-testmon": "2.3.0",
+          "coverage": "7.17.2",
+          "itsdangerous": "2.2.0",
+          "starlette": "0.50.0",
+          "requests": "2.32.5",
+          "httpx": "0.28.1"
+        },
+        "python": "3.13.18 (main, Oct 26 2026, 14:20:56) [GCC 13.3.0]",
+        "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+        "runner_environment": {
+          "ImageOS": "ubuntu24",
+          "ImageVersion": "20261101.360.1",
+          "RUNNER_OS": "Linux",
+          "GITHUB_RUN_ID": "42429434778",
+          "GITHUB_RUN_ATTEMPT": "1",
+          "GITHUB_WORKFLOW_REF": "anonymous-owner/ci-selection-testbed/.github/workflows/validation.yml@refs/pull/4/merge",
+          "GITHUB_WORKFLOW_SHA": "fbcfdb93a4f11ed9a81bd1a19942e4da8528e3c4",
+          "GITHUB_SHA": "fbcfdb93a4f11ed9a81bd1a19942e4da8528e3c4",
+          "GITHUB_REF": "refs/pull/4/merge"
+        }
+      }
+    }
+  },
+  {
+    "case": "starlette_trusted_host",
+    "condition": "collision",
+    "branch": "trial/starlette_trusted_host/collision",
+    "base_sha": "1d63949857934672de5c13f543174b4dbf0fd7ce",
+    "head_sha": "908e6f141715629b8c3a51d3b8bbd805f532e0c7",
+    "modified_files": [
+      "cases/starlette_trusted_host/starlette/middleware/trustedhost.py"
+    ],
+    "url": "https://example.invalid/anonymous-research/ci-selection-testbed/pull/5",
+    "number": 5,
+    "run_id": 42429441844,
+    "run_url": "https://example.invalid/anonymous-research/ci-selection-testbed/actions/runs/42429441844",
+    "workflow_overall_conclusion": "failure",
+    "github_mergeability": {
+      "pr": 5,
+      "url": "https://example.invalid/anonymous-research/ci-selection-testbed/pull/5",
+      "head_sha": "908e6f141715629b8c3a51d3b8bbd805f532e0c7",
+      "base_sha": "1d63949857934672de5c13f543174b4dbf0fd7ce",
+      "mergeable": true,
+      "mergeable_state": "unstable"
+    },
+    "modes": {
+      "full": {
+        "exit": 1,
+        "collected": [
+          "tests/test_meta.py::test_metadata_build_positive",
+          "tests/test_security.py::test_security_rejects_untrusted_host",
+          "tests/test_security.py::test_valid_host_passes"
+        ],
+        "executed": [
+          "tests/test_meta.py::test_metadata_build_positive",
+          "tests/test_security.py::test_security_rejects_untrusted_host",
+          "tests/test_security.py::test_valid_host_passes"
+        ],
+        "deselected": [],
+        "synthetic_deselected_count": 0,
+        "security_executed": true,
+        "security_failed": true,
+        "trusted_baseline_sha256": "990bf4e84f306e8a80eb62ffc3608b80fe2278867d9180ca1e7303be6dc722a3",
+        "summary_file": "hosted\\current-validation\\artifacts\\run-42429441844\\full-pr-5-attempt-1\\summary.json",
+        "versions": {
+          "pytest": "9.0.2",
+          "pytest-testmon": "2.3.0",
+          "coverage": "7.17.2",
+          "itsdangerous": "2.2.0",
+          "starlette": "0.50.0",
+          "requests": "2.32.5",
+          "httpx": "0.28.1"
+        },
+        "python": "3.13.18 (main, Oct 26 2026, 14:20:56) [GCC 13.3.0]",
+        "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+        "runner_environment": {
+          "ImageOS": "ubuntu24",
+          "ImageVersion": "20261101.360.1",
+          "RUNNER_OS": "Linux",
+          "GITHUB_RUN_ID": "42429441844",
+          "GITHUB_RUN_ATTEMPT": "1",
+          "GITHUB_WORKFLOW_REF": "anonymous-owner/ci-selection-testbed/.github/workflows/validation.yml@refs/pull/5/merge",
+          "GITHUB_WORKFLOW_SHA": "980a7b0b340728b1326296d8567bd2a5e300b67f",
+          "GITHUB_SHA": "980a7b0b340728b1326296d8567bd2a5e300b67f",
+          "GITHUB_REF": "refs/pull/5/merge"
+        }
+      },
+      "selective": {
+        "exit": 0,
+        "collected": [],
+        "executed": [],
+        "deselected": [],
+        "synthetic_deselected_count": 0,
+        "security_executed": false,
+        "security_failed": false,
+        "trusted_baseline_sha256": "09de5e3eeb9a03164a3b9fd67b1f1d2f0ce13a09242fad1a3450629d7c7c3299",
+        "summary_file": "hosted\\current-validation\\artifacts\\run-42429441844\\selective-pr-5-attempt-1\\summary.json",
+        "versions": {
+          "pytest": "9.0.2",
+          "pytest-testmon": "2.3.0",
+          "coverage": "7.17.2",
+          "itsdangerous": "2.2.0",
+          "starlette": "0.50.0",
+          "requests": "2.32.5",
+          "httpx": "0.28.1"
+        },
+        "python": "3.13.18 (main, Oct 26 2026, 14:20:56) [GCC 13.3.0]",
+        "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+        "runner_environment": {
+          "ImageOS": "ubuntu24",
+          "ImageVersion": "20261101.360.1",
+          "RUNNER_OS": "Linux",
+          "GITHUB_RUN_ID": "42429441844",
+          "GITHUB_RUN_ATTEMPT": "1",
+          "GITHUB_WORKFLOW_REF": "anonymous-owner/ci-selection-testbed/.github/workflows/validation.yml@refs/pull/5/merge",
+          "GITHUB_WORKFLOW_SHA": "980a7b0b340728b1326296d8567bd2a5e300b67f",
+          "GITHUB_SHA": "980a7b0b340728b1326296d8567bd2a5e300b67f",
+          "GITHUB_REF": "refs/pull/5/merge"
+        }
+      }
+    }
+  },
+  {
+    "case": "requests_crlf_header",
+    "condition": "ordinary",
+    "branch": "trial/requests_crlf_header/ordinary",
+    "base_sha": "1d63949857934672de5c13f543174b4dbf0fd7ce",
+    "head_sha": "2e19136a525aa8cd8774e0b4929955dd29e4a128",
+    "modified_files": [
+      "cases/requests_crlf_header/requests/utils.py"
+    ],
+    "url": "https://example.invalid/anonymous-research/ci-selection-testbed/pull/6",
+    "number": 6,
+    "run_id": 42429450031,
+    "run_url": "https://example.invalid/anonymous-research/ci-selection-testbed/actions/runs/42429450031",
+    "workflow_overall_conclusion": "failure",
+    "github_mergeability": {
+      "pr": 6,
+      "url": "https://example.invalid/anonymous-research/ci-selection-testbed/pull/6",
+      "head_sha": "2e19136a525aa8cd8774e0b4929955dd29e4a128",
+      "base_sha": "1d63949857934672de5c13f543174b4dbf0fd7ce",
+      "mergeable": true,
+      "mergeable_state": "blocked"
+    },
+    "modes": {
+      "full": {
+        "exit": 1,
+        "collected": [
+          "tests/test_meta.py::test_metadata_build_positive",
+          "tests/test_security.py::test_security_rejects_header_injection",
+          "tests/test_security.py::test_valid_header_passes"
+        ],
+        "executed": [
+          "tests/test_meta.py::test_metadata_build_positive",
+          "tests/test_security.py::test_security_rejects_header_injection",
+          "tests/test_security.py::test_valid_header_passes"
+        ],
+        "deselected": [],
+        "synthetic_deselected_count": 0,
+        "security_executed": true,
+        "security_failed": true,
+        "trusted_baseline_sha256": "5d7db93147cb7cb8fbca3ee8794b01de2531629ec3e69c1ba57f5b104830912b",
+        "summary_file": "hosted\\current-validation\\artifacts\\run-42429450031\\full-pr-6-attempt-1\\summary.json",
+        "versions": {
+          "pytest": "9.0.2",
+          "pytest-testmon": "2.3.0",
+          "coverage": "7.17.2",
+          "itsdangerous": "2.2.0",
+          "starlette": "0.50.0",
+          "requests": "2.32.5",
+          "httpx": "0.28.1"
+        },
+        "python": "3.13.18 (main, Oct 26 2026, 14:20:56) [GCC 13.3.0]",
+        "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+        "runner_environment": {
+          "ImageOS": "ubuntu24",
+          "ImageVersion": "20261101.360.1",
+          "RUNNER_OS": "Linux",
+          "GITHUB_RUN_ID": "42429450031",
+          "GITHUB_RUN_ATTEMPT": "1",
+          "GITHUB_WORKFLOW_REF": "anonymous-owner/ci-selection-testbed/.github/workflows/validation.yml@refs/pull/6/merge",
+          "GITHUB_WORKFLOW_SHA": "9360192a20bd5c95edb6e533d30d6fc3409a2c1b",
+          "GITHUB_SHA": "9360192a20bd5c95edb6e533d30d6fc3409a2c1b",
+          "GITHUB_REF": "refs/pull/6/merge"
+        }
+      },
+      "selective": {
+        "exit": 1,
+        "collected": [
+          "tests/test_security.py::test_valid_header_passes",
+          "tests/test_security.py::test_security_rejects_header_injection"
+        ],
+        "executed": [
+          "tests/test_security.py::test_security_rejects_header_injection",
+          "tests/test_security.py::test_valid_header_passes"
+        ],
+        "deselected": [],
+        "synthetic_deselected_count": 0,
+        "security_executed": true,
+        "security_failed": true,
+        "trusted_baseline_sha256": "9d287ae655d6a2476aa252896faaee3d54161fb6e418f1f48deca599ab511cad",
+        "summary_file": "hosted\\current-validation\\artifacts\\run-42429450031\\selective-pr-6-attempt-1\\summary.json",
+        "versions": {
+          "pytest": "9.0.2",
+          "pytest-testmon": "2.3.0",
+          "coverage": "7.17.2",
+          "itsdangerous": "2.2.0",
+          "starlette": "0.50.0",
+          "requests": "2.32.5",
+          "httpx": "0.28.1"
+        },
+        "python": "3.13.18 (main, Oct 26 2026, 14:20:56) [GCC 13.3.0]",
+        "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+        "runner_environment": {
+          "ImageOS": "ubuntu24",
+          "ImageVersion": "20261101.360.1",
+          "RUNNER_OS": "Linux",
+          "GITHUB_RUN_ID": "42429450031",
+          "GITHUB_RUN_ATTEMPT": "1",
+          "GITHUB_WORKFLOW_REF": "anonymous-owner/ci-selection-testbed/.github/workflows/validation.yml@refs/pull/6/merge",
+          "GITHUB_WORKFLOW_SHA": "9360192a20bd5c95edb6e533d30d6fc3409a2c1b",
+          "GITHUB_SHA": "9360192a20bd5c95edb6e533d30d6fc3409a2c1b",
+          "GITHUB_REF": "refs/pull/6/merge"
+        }
+      }
+    }
+  },
+  {
+    "case": "requests_crlf_header",
+    "condition": "collision",
+    "branch": "trial/requests_crlf_header/collision",
+    "base_sha": "1d63949857934672de5c13f543174b4dbf0fd7ce",
+    "head_sha": "9df3cfb451d724850a3cdf6ebc4f57f69968418e",
+    "modified_files": [
+      "cases/requests_crlf_header/requests/utils.py"
+    ],
+    "url": "https://example.invalid/anonymous-research/ci-selection-testbed/pull/7",
+    "number": 7,
+    "run_id": 42429456290,
+    "run_url": "https://example.invalid/anonymous-research/ci-selection-testbed/actions/runs/42429456290",
+    "workflow_overall_conclusion": "failure",
+    "github_mergeability": {
+      "pr": 7,
+      "url": "https://example.invalid/anonymous-research/ci-selection-testbed/pull/7",
+      "head_sha": "9df3cfb451d724850a3cdf6ebc4f57f69968418e",
+      "base_sha": "1d63949857934672de5c13f543174b4dbf0fd7ce",
+      "mergeable": true,
+      "mergeable_state": "unstable"
+    },
+    "modes": {
+      "full": {
+        "exit": 1,
+        "collected": [
+          "tests/test_meta.py::test_metadata_build_positive",
+          "tests/test_security.py::test_security_rejects_header_injection",
+          "tests/test_security.py::test_valid_header_passes"
+        ],
+        "executed": [
+          "tests/test_meta.py::test_metadata_build_positive",
+          "tests/test_security.py::test_security_rejects_header_injection",
+          "tests/test_security.py::test_valid_header_passes"
+        ],
+        "deselected": [],
+        "synthetic_deselected_count": 0,
+        "security_executed": true,
+        "security_failed": true,
+        "trusted_baseline_sha256": "be9c56a93a58f0aacd35f1f381411f119e6840840347bcfa3b85711e34fae434",
+        "summary_file": "hosted\\current-validation\\artifacts\\run-42429456290\\full-pr-7-attempt-1\\summary.json",
+        "versions": {
+          "pytest": "9.0.2",
+          "pytest-testmon": "2.3.0",
+          "coverage": "7.17.2",
+          "itsdangerous": "2.2.0",
+          "starlette": "0.50.0",
+          "requests": "2.32.5",
+          "httpx": "0.28.1"
+        },
+        "python": "3.13.18 (main, Oct 26 2026, 14:20:56) [GCC 13.3.0]",
+        "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+        "runner_environment": {
+          "ImageOS": "ubuntu24",
+          "ImageVersion": "20261101.360.1",
+          "RUNNER_OS": "Linux",
+          "GITHUB_RUN_ID": "42429456290",
+          "GITHUB_RUN_ATTEMPT": "1",
+          "GITHUB_WORKFLOW_REF": "anonymous-owner/ci-selection-testbed/.github/workflows/validation.yml@refs/pull/7/merge",
+          "GITHUB_WORKFLOW_SHA": "081d0e43c9cde1b69dd6478e0125414956c5557e",
+          "GITHUB_SHA": "081d0e43c9cde1b69dd6478e0125414956c5557e",
+          "GITHUB_REF": "refs/pull/7/merge"
+        }
+      },
+      "selective": {
+        "exit": 0,
+        "collected": [],
+        "executed": [],
+        "deselected": [],
+        "synthetic_deselected_count": 0,
+        "security_executed": false,
+        "security_failed": false,
+        "trusted_baseline_sha256": "7a58fb82932998b9cf64667f86fadf2a8fc246fd39d955d7c11cdccf93925a07",
+        "summary_file": "hosted\\current-validation\\artifacts\\run-42429456290\\selective-pr-7-attempt-1\\summary.json",
+        "versions": {
+          "pytest": "9.0.2",
+          "pytest-testmon": "2.3.0",
+          "coverage": "7.17.2",
+          "itsdangerous": "2.2.0",
+          "starlette": "0.50.0",
+          "requests": "2.32.5",
+          "httpx": "0.28.1"
+        },
+        "python": "3.13.18 (main, Oct 26 2026, 14:20:56) [GCC 13.3.0]",
+        "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+        "runner_environment": {
+          "ImageOS": "ubuntu24",
+          "ImageVersion": "20261101.360.1",
+          "RUNNER_OS": "Linux",
+          "GITHUB_RUN_ID": "42429456290",
+          "GITHUB_RUN_ATTEMPT": "1",
+          "GITHUB_WORKFLOW_REF": "anonymous-owner/ci-selection-testbed/.github/workflows/validation.yml@refs/pull/7/merge",
+          "GITHUB_WORKFLOW_SHA": "081d0e43c9cde1b69dd6478e0125414956c5557e",
+          "GITHUB_SHA": "081d0e43c9cde1b69dd6478e0125414956c5557e",
+          "GITHUB_REF": "refs/pull/7/merge"
+        }
+      }
+    }
+  }
+]

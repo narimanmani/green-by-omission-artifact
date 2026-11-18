@@ -1,0 +1,68 @@
+{
+  "results": [
+    {
+      "repo": "1313e/CMasher",
+      "hits": [],
+      "tree": {
+        "truncated": false,
+        "n_files": 643,
+        "n_python": 69,
+        "n_tests": 0,
+        "workflows": [
+          ".github/workflows/lint_python.yml",
+          ".github/workflows/test.yml"
+        ],
+        "build_files": [
+          "pyproject.toml"
+        ]
+      }
+    },
+    {
+      "repo": "agisoft-llc/metashape-scripts",
+      "hits": [],
+      "tree": {
+        "truncated": false,
+        "n_files": 54,
+        "n_python": 45,
+        "n_tests": 0,
+        "workflows": [],
+        "build_files": []
+      }
+    },
+    {
+      "repo": "pytest-dev/pytest-flask",
+      "hits": [],
+      "tree": {
+        "truncated": false,
+        "n_files": 50,
+        "n_python": 15,
+        "n_tests": 0,
+        "workflows": [
+          ".github/workflows/deploy.yml",
+          ".github/workflows/test.yml"
+        ],
+        "build_files": [
+          "pyproject.toml",
+          "setup.cfg",
+          "setup.py"
+        ]
+      }
+    },
+    {
+      "repo": "hplt-project/sacremoses",
+      "hits": [],
+      "tree": {
+        "truncated": false,
+        "n_files": 113,
+        "n_python": 26,
+        "n_tests": 7,
+        "workflows": [
+          ".github/workflows/test.yaml"
+        ],
+        "build_files": [
+          "setup.py"
+        ]
+      }
+    }
+  ]
+}

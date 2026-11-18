@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="4" time="0.029" timestamp="2026-11-10T21:21:45.977939+00:00" hostname="e6eedfcf0585"><testcase classname="test_arithmetic" name="test_positive" time="0.000"><failure message="assert 5 == 4&#10; +  where 5 = add(2, 2)">def test_positive():
+&gt;       assert add(2, 2) == 4
+E       assert 5 == 4
+E        +  where 5 = add(2, 2)
+
+test_arithmetic.py:4: AssertionError</failure></testcase><testcase classname="test_arithmetic" name="test_negative" time="0.000"><failure message="assert -3 == -4&#10; +  where -3 = add(-2, -2)">def test_negative():
+&gt;       assert add(-2, -2) == -4
+E       assert -3 == -4
+E        +  where -3 = add(-2, -2)
+
+test_arithmetic.py:7: AssertionError</failure></testcase><testcase classname="test_label" name="test_label" time="0.000" /><testcase classname="test_untouched" name="test_identity" time="0.000" /></testsuite></testsuites>

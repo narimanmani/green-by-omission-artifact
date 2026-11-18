@@ -1,0 +1,23 @@
+COMMAND: ['/opt/pyvenv/bin/python', '-m', 'pytest', '-p', 'testmon.pytest_testmon', '--testmon', '-vv']
+EXIT: 0
+SECONDS: 1.540523
+--- stdout ---
+============================= test session starts ==============================
+platform linux -- Python 3.13.5, pytest-9.0.2, pluggy-1.6.0 -- /opt/pyvenv/bin/python
+cachedir: .pytest_cache
+testmon: changed files: tests/test_meta.py, unchanged files: 9, environment: default
+rootdir: /mnt/data/snp2027_extension_2026-11-07/outputs/workspaces/requests_crlf_header/collision
+configfile: pytest.ini
+testpaths: tests
+collecting ... collected 1 item
+
+tests/test_meta.py::test_metadata_build_positive PASSED                  [100%]
+
+==================================== PASSES ====================================
+=================== Testmon savings (deselected/no testmon) ====================
+this run: 2/3 (67%) tests, 0m 0s/0m 0s, all runs: 2/6 (33%) tests, 0m 0s/0m 0s
+=========================== short test summary info ============================
+PASSED tests/test_meta.py::test_metadata_build_positive
+============================== 1 passed in 0.05s ===============================
+
+--- stderr ---

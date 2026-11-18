@@ -1,0 +1,909 @@
+[
+  {
+    "repository": "apache/commons-bcel",
+    "commit": "41731d5824781bcc576a5c71dde0421ddc7c7e06",
+    "upstream_source_url": "https://github.com/apache/commons-bcel/tree/41731d5824781bcc576a5c71dde0421ddc7c7e06",
+    "config_files_inspected": 5,
+    "java_production_files": 408,
+    "java_test_files": 250,
+    "root_parent": "org.apache.commons:commons-parent:107",
+    "ekstazi_optional_profiles": [],
+    "ekstazi_reference_any_workflow": false,
+    "testmon_reference_any_configuration": false,
+    "primary_workflow": ".github/workflows/maven.yml",
+    "primary_workflow_events": [
+      "push",
+      "pull_request"
+    ],
+    "primary_pull_request_trigger": true,
+    "primary_permissions": {
+      "contents": "read"
+    },
+    "primary_contents_permission_read": true,
+    "primary_actions": [
+      "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9",
+      "actions/setup-java@77dd5b2ce225ea11469928ac317850245a74ae78"
+    ],
+    "primary_all_actions_pinned_40hex": true,
+    "primary_checkouts_persist_credentials_false": true,
+    "primary_cache_configuration": [
+      {
+        "path": "~/.m2/repository",
+        "key": "${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}",
+        "restore-keys": "${{ runner.os }}-maven-\n"
+      }
+    ],
+    "primary_maven_dependency_cache": true,
+    "primary_run_commands": [
+      "git config --global core.autocrlf false",
+      "mvn --errors --show-version --batch-mode --no-transfer-progress -DtrimStackTrace=false"
+    ],
+    "resolved_default_goal": "clean verify apache-rat:check japicmp:cmp checkstyle:check pmd:check spotbugs:check javadoc:javadoc",
+    "branch_protection": "not_observed",
+    "required_status_checks": "not_observed",
+    "live_ci_use_of_ekstazi": "not_observed",
+    "rts_metadata_integrity_verification": "no_explicit_reference_in_inspected_workflows"
+  },
+  {
+    "repository": "apache/commons-beanutils",
+    "commit": "ada0e1e2a531a42fb568b857e8e7c376e1d3eac6",
+    "upstream_source_url": "https://github.com/apache/commons-beanutils/tree/ada0e1e2a531a42fb568b857e8e7c376e1d3eac6",
+    "config_files_inspected": 5,
+    "java_production_files": 124,
+    "java_test_files": 173,
+    "root_parent": "org.apache.commons:commons-parent:107",
+    "ekstazi_optional_profiles": [],
+    "ekstazi_reference_any_workflow": false,
+    "testmon_reference_any_configuration": false,
+    "primary_workflow": ".github/workflows/maven.yml",
+    "primary_workflow_events": [
+      "push",
+      "pull_request"
+    ],
+    "primary_pull_request_trigger": true,
+    "primary_permissions": {
+      "contents": "read"
+    },
+    "primary_contents_permission_read": true,
+    "primary_actions": [
+      "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9",
+      "actions/setup-java@77dd5b2ce225ea11469928ac317850245a74ae78"
+    ],
+    "primary_all_actions_pinned_40hex": true,
+    "primary_checkouts_persist_credentials_false": true,
+    "primary_cache_configuration": [
+      {
+        "path": "~/.m2/repository",
+        "key": "${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}",
+        "restore-keys": "${{ runner.os }}-maven-\n"
+      }
+    ],
+    "primary_maven_dependency_cache": true,
+    "primary_run_commands": [
+      "mvn --errors --show-version --batch-mode --no-transfer-progress -e"
+    ],
+    "resolved_default_goal": "clean apache-rat:check checkstyle:check verify javadoc:javadoc",
+    "branch_protection": "not_observed",
+    "required_status_checks": "not_observed",
+    "live_ci_use_of_ekstazi": "not_observed",
+    "rts_metadata_integrity_verification": "no_explicit_reference_in_inspected_workflows"
+  },
+  {
+    "repository": "apache/commons-cli",
+    "commit": "3a53a351a66bc5634bea646008f884148864bdac",
+    "upstream_source_url": "https://github.com/apache/commons-cli/tree/3a53a351a66bc5634bea646008f884148864bdac",
+    "config_files_inspected": 5,
+    "java_production_files": 36,
+    "java_test_files": 51,
+    "root_parent": "org.apache.commons:commons-parent:107",
+    "ekstazi_optional_profiles": [],
+    "ekstazi_reference_any_workflow": false,
+    "testmon_reference_any_configuration": false,
+    "primary_workflow": ".github/workflows/maven.yml",
+    "primary_workflow_events": [
+      "push",
+      "pull_request"
+    ],
+    "primary_pull_request_trigger": true,
+    "primary_permissions": {
+      "contents": "read"
+    },
+    "primary_contents_permission_read": true,
+    "primary_actions": [
+      "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9",
+      "actions/setup-java@77dd5b2ce225ea11469928ac317850245a74ae78"
+    ],
+    "primary_all_actions_pinned_40hex": true,
+    "primary_checkouts_persist_credentials_false": true,
+    "primary_cache_configuration": [
+      {
+        "path": "~/.m2/repository",
+        "key": "${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}",
+        "restore-keys": "${{ runner.os }}-maven-\n"
+      }
+    ],
+    "primary_maven_dependency_cache": true,
+    "primary_run_commands": [
+      "mvn --errors --show-version --batch-mode --no-transfer-progress"
+    ],
+    "resolved_default_goal": "clean verify apache-rat:check japicmp:cmp checkstyle:check spotbugs:check pmd:check javadoc:javadoc",
+    "branch_protection": "not_observed",
+    "required_status_checks": "not_observed",
+    "live_ci_use_of_ekstazi": "not_observed",
+    "rts_metadata_integrity_verification": "no_explicit_reference_in_inspected_workflows"
+  },
+  {
+    "repository": "apache/commons-codec",
+    "commit": "c0013c15e4a5b2c72c60b17e0ac9eb2772250041",
+    "upstream_source_url": "https://github.com/apache/commons-codec/tree/c0013c15e4a5b2c72c60b17e0ac9eb2772250041",
+    "config_files_inspected": 5,
+    "java_production_files": 90,
+    "java_test_files": 96,
+    "root_parent": "org.apache.commons:commons-parent:107",
+    "ekstazi_optional_profiles": [],
+    "ekstazi_reference_any_workflow": false,
+    "testmon_reference_any_configuration": false,
+    "primary_workflow": ".github/workflows/maven.yml",
+    "primary_workflow_events": [
+      "push",
+      "pull_request"
+    ],
+    "primary_pull_request_trigger": true,
+    "primary_permissions": {
+      "contents": "read"
+    },
+    "primary_contents_permission_read": true,
+    "primary_actions": [
+      "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9",
+      "actions/setup-java@77dd5b2ce225ea11469928ac317850245a74ae78"
+    ],
+    "primary_all_actions_pinned_40hex": true,
+    "primary_checkouts_persist_credentials_false": true,
+    "primary_cache_configuration": [
+      {
+        "path": "~/.m2/repository",
+        "key": "${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}",
+        "restore-keys": "${{ runner.os }}-maven-\n"
+      }
+    ],
+    "primary_maven_dependency_cache": true,
+    "primary_run_commands": [
+      "mvn --errors --show-version --batch-mode --no-transfer-progress"
+    ],
+    "resolved_default_goal": "clean verify apache-rat:check japicmp:cmp pmd:check checkstyle:check spotbugs:check javadoc:javadoc",
+    "branch_protection": "not_observed",
+    "required_status_checks": "not_observed",
+    "live_ci_use_of_ekstazi": "not_observed",
+    "rts_metadata_integrity_verification": "no_explicit_reference_in_inspected_workflows"
+  },
+  {
+    "repository": "apache/commons-collections",
+    "commit": "0d09264a50120494a3f37784874ae661b0ecf0b2",
+    "upstream_source_url": "https://github.com/apache/commons-collections/tree/0d09264a50120494a3f37784874ae661b0ecf0b2",
+    "config_files_inspected": 5,
+    "java_production_files": 367,
+    "java_test_files": 311,
+    "root_parent": "org.apache.commons:commons-parent:107",
+    "ekstazi_optional_profiles": [],
+    "ekstazi_reference_any_workflow": false,
+    "testmon_reference_any_configuration": false,
+    "primary_workflow": ".github/workflows/maven.yml",
+    "primary_workflow_events": [
+      "push",
+      "pull_request"
+    ],
+    "primary_pull_request_trigger": true,
+    "primary_permissions": {
+      "contents": "read"
+    },
+    "primary_contents_permission_read": true,
+    "primary_actions": [
+      "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9",
+      "actions/setup-java@77dd5b2ce225ea11469928ac317850245a74ae78"
+    ],
+    "primary_all_actions_pinned_40hex": true,
+    "primary_checkouts_persist_credentials_false": true,
+    "primary_cache_configuration": [
+      {
+        "path": "~/.m2/repository",
+        "key": "${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}",
+        "restore-keys": "${{ runner.os }}-maven-\n"
+      }
+    ],
+    "primary_maven_dependency_cache": true,
+    "primary_run_commands": [
+      "mvn --errors --show-version --batch-mode --no-transfer-progress"
+    ],
+    "resolved_default_goal": "clean verify apache-rat:check pmd:check checkstyle:check japicmp:cmp javadoc:javadoc",
+    "branch_protection": "not_observed",
+    "required_status_checks": "not_observed",
+    "live_ci_use_of_ekstazi": "not_observed",
+    "rts_metadata_integrity_verification": "no_explicit_reference_in_inspected_workflows"
+  },
+  {
+    "repository": "apache/commons-compress",
+    "commit": "54f0e8ea790923a60812173b8e79b520da9da901",
+    "upstream_source_url": "https://github.com/apache/commons-compress/tree/54f0e8ea790923a60812173b8e79b520da9da901",
+    "config_files_inspected": 5,
+    "java_production_files": 425,
+    "java_test_files": 284,
+    "root_parent": "org.apache.commons:commons-parent:107",
+    "ekstazi_optional_profiles": [],
+    "ekstazi_reference_any_workflow": false,
+    "testmon_reference_any_configuration": false,
+    "primary_workflow": ".github/workflows/maven.yml",
+    "primary_workflow_events": [
+      "push",
+      "pull_request"
+    ],
+    "primary_pull_request_trigger": true,
+    "primary_permissions": {
+      "contents": "read"
+    },
+    "primary_contents_permission_read": true,
+    "primary_actions": [
+      "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9",
+      "actions/setup-java@77dd5b2ce225ea11469928ac317850245a74ae78"
+    ],
+    "primary_all_actions_pinned_40hex": true,
+    "primary_checkouts_persist_credentials_false": true,
+    "primary_cache_configuration": [
+      {
+        "path": "~/.m2/repository",
+        "key": "${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}",
+        "restore-keys": "${{ runner.os }}-maven-\n"
+      }
+    ],
+    "primary_maven_dependency_cache": true,
+    "primary_run_commands": [
+      "mvn --errors --show-version --batch-mode --no-transfer-progress"
+    ],
+    "resolved_default_goal": "clean artifact:check-buildplan verify apache-rat:check checkstyle:check pmd:check japicmp:cmp javadoc:javadoc",
+    "branch_protection": "not_observed",
+    "required_status_checks": "not_observed",
+    "live_ci_use_of_ekstazi": "not_observed",
+    "rts_metadata_integrity_verification": "no_explicit_reference_in_inspected_workflows"
+  },
+  {
+    "repository": "apache/commons-configuration",
+    "commit": "16ca9c002cefead2ec2068509656c046e4883097",
+    "upstream_source_url": "https://github.com/apache/commons-configuration/tree/16ca9c002cefead2ec2068509656c046e4883097",
+    "config_files_inspected": 5,
+    "java_production_files": 267,
+    "java_test_files": 210,
+    "root_parent": "org.apache.commons:commons-parent:107",
+    "ekstazi_optional_profiles": [],
+    "ekstazi_reference_any_workflow": false,
+    "testmon_reference_any_configuration": false,
+    "primary_workflow": ".github/workflows/maven.yml",
+    "primary_workflow_events": [
+      "push",
+      "pull_request"
+    ],
+    "primary_pull_request_trigger": true,
+    "primary_permissions": {
+      "contents": "read"
+    },
+    "primary_contents_permission_read": true,
+    "primary_actions": [
+      "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "actions/setup-java@77dd5b2ce225ea11469928ac317850245a74ae78"
+    ],
+    "primary_all_actions_pinned_40hex": true,
+    "primary_checkouts_persist_credentials_false": true,
+    "primary_cache_configuration": [],
+    "primary_maven_dependency_cache": false,
+    "primary_run_commands": [
+      "mvn --errors --show-version --batch-mode --no-transfer-progress"
+    ],
+    "resolved_default_goal": "clean verify apache-rat:check japicmp:cmp checkstyle:check spotbugs:check pmd:check pmd:cpd-check javadoc:javadoc",
+    "branch_protection": "not_observed",
+    "required_status_checks": "not_observed",
+    "live_ci_use_of_ekstazi": "not_observed",
+    "rts_metadata_integrity_verification": "no_explicit_reference_in_inspected_workflows"
+  },
+  {
+    "repository": "apache/commons-crypto",
+    "commit": "28e2d59b7dc8b8913787e46c991b141e114ec31f",
+    "upstream_source_url": "https://github.com/apache/commons-crypto/tree/28e2d59b7dc8b8913787e46c991b141e114ec31f",
+    "config_files_inspected": 10,
+    "java_production_files": 54,
+    "java_test_files": 49,
+    "root_parent": "org.apache.commons:commons-parent:81",
+    "ekstazi_optional_profiles": [],
+    "ekstazi_reference_any_workflow": false,
+    "testmon_reference_any_configuration": false,
+    "primary_workflow": ".github/workflows/maven.yml",
+    "primary_workflow_events": [
+      "workflow_dispatch",
+      "push",
+      "pull_request"
+    ],
+    "primary_pull_request_trigger": true,
+    "primary_permissions": {
+      "contents": "read"
+    },
+    "primary_contents_permission_read": true,
+    "primary_actions": [
+      "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9",
+      "actions/setup-java@77dd5b2ce225ea11469928ac317850245a74ae78"
+    ],
+    "primary_all_actions_pinned_40hex": true,
+    "primary_checkouts_persist_credentials_false": true,
+    "primary_cache_configuration": [
+      {
+        "path": "~/.m2/repository",
+        "key": "${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}",
+        "restore-keys": "${{ runner.os }}-maven-\n"
+      }
+    ],
+    "primary_maven_dependency_cache": true,
+    "primary_run_commands": [
+      "openssl version -a",
+      "echo $(openssl version -e | sed -n -e 's/engines-.*//' -e 's/: \"/=/p') >> \"$GITHUB_ENV\"\n",
+      "mvn -V -B -ntp -DskipTests clean package\n",
+      "mvn -V -B -ntp surefire:test -Djni.library.path=$ENGINESDIR -Djna.library.path=$ENGINESDIR -DOpenSslJnaTest.expectedVersion=${{ matrix.expectedVersion }} -DCryptoTest.expectedVersion=${{ matrix.expectedVersion }}\n",
+      "mvn -V -B -ntp surefire:test -Djni.library.path=$ENGINESDIR -Djna.library.path=$ENGINESDIR -Ptest-with-jar\n",
+      "mvn -V -B -ntp surefire:test -D\"test=CryptoTest,OpenSslJnaTest\" || true\n",
+      "mvn -V -B -ntp surefire:test -D\"OpenSslJnaTest.expectedVersion=${{ matrix.expectedVersion }}\" -D\"CryptoTest.expectedVersion=${{ matrix.expectedVersion }}\"\n",
+      "mvn -V -B -ntp surefire:test -Ptest-with-jar\n",
+      "mvn -V -B -ntp clean test-compile -Pbenchmark\n",
+      "mvn -V -B -ntp test -Ptestjni -Dcommons.crypto.OpenSslNativeJna=___\nmvn -V -B -ntp test -Ptestjna -Dcommons.crypto.OpenSslNativeJni=___\n"
+    ],
+    "resolved_default_goal": "clean apache-rat:check verify japicmp:cmp spotbugs:check pmd:check checkstyle:check javadoc:javadoc",
+    "branch_protection": "not_observed",
+    "required_status_checks": "not_observed",
+    "live_ci_use_of_ekstazi": "not_observed",
+    "rts_metadata_integrity_verification": "no_explicit_reference_in_inspected_workflows"
+  },
+  {
+    "repository": "apache/commons-csv",
+    "commit": "2bd66bf181d44ffc92806f585d3955e915666f7f",
+    "upstream_source_url": "https://github.com/apache/commons-csv/tree/2bd66bf181d44ffc92806f585d3955e915666f7f",
+    "config_files_inspected": 5,
+    "java_production_files": 12,
+    "java_test_files": 44,
+    "root_parent": "org.apache.commons:commons-parent:107",
+    "ekstazi_optional_profiles": [],
+    "ekstazi_reference_any_workflow": false,
+    "testmon_reference_any_configuration": false,
+    "primary_workflow": ".github/workflows/maven.yml",
+    "primary_workflow_events": [
+      "push",
+      "pull_request"
+    ],
+    "primary_pull_request_trigger": true,
+    "primary_permissions": {
+      "contents": "read"
+    },
+    "primary_contents_permission_read": true,
+    "primary_actions": [
+      "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9",
+      "actions/setup-java@77dd5b2ce225ea11469928ac317850245a74ae78"
+    ],
+    "primary_all_actions_pinned_40hex": true,
+    "primary_checkouts_persist_credentials_false": true,
+    "primary_cache_configuration": [
+      {
+        "path": "~/.m2/repository",
+        "key": "${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}",
+        "restore-keys": "${{ runner.os }}-maven-\n"
+      }
+    ],
+    "primary_maven_dependency_cache": true,
+    "primary_run_commands": [
+      "mvn -Ddoclint=all --show-version --batch-mode --no-transfer-progress"
+    ],
+    "resolved_default_goal": "clean verify apache-rat:check japicmp:cmp spotbugs:check pmd:check pmd:cpd-check javadoc:javadoc checkstyle:check",
+    "branch_protection": "not_observed",
+    "required_status_checks": "not_observed",
+    "live_ci_use_of_ekstazi": "not_observed",
+    "rts_metadata_integrity_verification": "no_explicit_reference_in_inspected_workflows"
+  },
+  {
+    "repository": "apache/commons-dbcp",
+    "commit": "c0b5330114179ddb4c62d2a0b25e31d26c4a7f63",
+    "upstream_source_url": "https://github.com/apache/commons-dbcp/tree/c0b5330114179ddb4c62d2a0b25e31d26c4a7f63",
+    "config_files_inspected": 5,
+    "java_production_files": 68,
+    "java_test_files": 76,
+    "root_parent": "org.apache.commons:commons-parent:107",
+    "ekstazi_optional_profiles": [],
+    "ekstazi_reference_any_workflow": false,
+    "testmon_reference_any_configuration": false,
+    "primary_workflow": ".github/workflows/maven.yml",
+    "primary_workflow_events": [
+      "push",
+      "pull_request"
+    ],
+    "primary_pull_request_trigger": true,
+    "primary_permissions": {
+      "contents": "read"
+    },
+    "primary_contents_permission_read": true,
+    "primary_actions": [
+      "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9",
+      "actions/setup-java@77dd5b2ce225ea11469928ac317850245a74ae78"
+    ],
+    "primary_all_actions_pinned_40hex": true,
+    "primary_checkouts_persist_credentials_false": true,
+    "primary_cache_configuration": [
+      {
+        "path": "~/.m2/repository",
+        "key": "${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}",
+        "restore-keys": "${{ runner.os }}-maven-\n"
+      }
+    ],
+    "primary_maven_dependency_cache": true,
+    "primary_run_commands": [
+      "mvn --errors --show-version --batch-mode --no-transfer-progress"
+    ],
+    "resolved_default_goal": "clean verify apache-rat:check japicmp:cmp checkstyle:check spotbugs:check pmd:check pmd:cpd-check javadoc:javadoc",
+    "branch_protection": "not_observed",
+    "required_status_checks": "not_observed",
+    "live_ci_use_of_ekstazi": "not_observed",
+    "rts_metadata_integrity_verification": "no_explicit_reference_in_inspected_workflows"
+  },
+  {
+    "repository": "apache/commons-dbutils",
+    "commit": "4aec2f7f2d5752bf5dc66200a9ce4973e69e2dc4",
+    "upstream_source_url": "https://github.com/apache/commons-dbutils/tree/4aec2f7f2d5752bf5dc66200a9ce4973e69e2dc4",
+    "config_files_inspected": 5,
+    "java_production_files": 49,
+    "java_test_files": 47,
+    "root_parent": "org.apache.commons:commons-parent:107",
+    "ekstazi_optional_profiles": [],
+    "ekstazi_reference_any_workflow": false,
+    "testmon_reference_any_configuration": false,
+    "primary_workflow": ".github/workflows/maven.yml",
+    "primary_workflow_events": [
+      "push",
+      "pull_request"
+    ],
+    "primary_pull_request_trigger": true,
+    "primary_permissions": {
+      "contents": "read"
+    },
+    "primary_contents_permission_read": true,
+    "primary_actions": [
+      "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9",
+      "actions/setup-java@77dd5b2ce225ea11469928ac317850245a74ae78"
+    ],
+    "primary_all_actions_pinned_40hex": true,
+    "primary_checkouts_persist_credentials_false": true,
+    "primary_cache_configuration": [
+      {
+        "path": "~/.m2/repository",
+        "key": "${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}",
+        "restore-keys": "${{ runner.os }}-maven-\n"
+      }
+    ],
+    "primary_maven_dependency_cache": true,
+    "primary_run_commands": [
+      "mvn --errors --show-version --batch-mode --no-transfer-progress"
+    ],
+    "resolved_default_goal": "clean verify apache-rat:check japicmp:cmp checkstyle:check spotbugs:check pmd:check pmd:cpd-check clean javadoc:javadoc",
+    "branch_protection": "not_observed",
+    "required_status_checks": "not_observed",
+    "live_ci_use_of_ekstazi": "not_observed",
+    "rts_metadata_integrity_verification": "no_explicit_reference_in_inspected_workflows"
+  },
+  {
+    "repository": "apache/commons-digester",
+    "commit": "2403ab1d13f8fa2d40c47ac1ef9fe935a008ccc0",
+    "upstream_source_url": "https://github.com/apache/commons-digester/tree/2403ab1d13f8fa2d40c47ac1ef9fe935a008ccc0",
+    "config_files_inspected": 17,
+    "java_production_files": 208,
+    "java_test_files": 107,
+    "root_parent": "org.apache.commons:commons-parent:107",
+    "ekstazi_optional_profiles": [],
+    "ekstazi_reference_any_workflow": false,
+    "testmon_reference_any_configuration": false,
+    "primary_workflow": ".github/workflows/maven.yml",
+    "primary_workflow_events": [
+      "push",
+      "pull_request"
+    ],
+    "primary_pull_request_trigger": true,
+    "primary_permissions": {
+      "contents": "read"
+    },
+    "primary_contents_permission_read": true,
+    "primary_actions": [
+      "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9",
+      "actions/setup-java@77dd5b2ce225ea11469928ac317850245a74ae78"
+    ],
+    "primary_all_actions_pinned_40hex": true,
+    "primary_checkouts_persist_credentials_false": true,
+    "primary_cache_configuration": [
+      {
+        "path": "~/.m2/repository",
+        "key": "${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}",
+        "restore-keys": "${{ runner.os }}-maven-\n"
+      }
+    ],
+    "primary_maven_dependency_cache": true,
+    "primary_run_commands": [
+      "mvn --errors --show-version --batch-mode --no-transfer-progress -Ddoclint=none"
+    ],
+    "resolved_default_goal": "clean verify pmd:cpd-check javadoc:javadoc",
+    "branch_protection": "not_observed",
+    "required_status_checks": "not_observed",
+    "live_ci_use_of_ekstazi": "not_observed",
+    "rts_metadata_integrity_verification": "no_explicit_reference_in_inspected_workflows"
+  },
+  {
+    "repository": "apache/commons-email",
+    "commit": "4a0afb5ce49a3cb36c0ef5cac9c2b2bae713ee79",
+    "upstream_source_url": "https://github.com/apache/commons-email/tree/4a0afb5ce49a3cb36c0ef5cac9c2b2bae713ee79",
+    "config_files_inspected": 10,
+    "java_production_files": 50,
+    "java_test_files": 63,
+    "root_parent": "org.apache.commons:commons-parent:107",
+    "ekstazi_optional_profiles": [],
+    "ekstazi_reference_any_workflow": false,
+    "testmon_reference_any_configuration": false,
+    "primary_workflow": ".github/workflows/maven.yml",
+    "primary_workflow_events": [
+      "push",
+      "pull_request"
+    ],
+    "primary_pull_request_trigger": true,
+    "primary_permissions": {
+      "contents": "read"
+    },
+    "primary_contents_permission_read": true,
+    "primary_actions": [
+      "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9",
+      "actions/setup-java@77dd5b2ce225ea11469928ac317850245a74ae78"
+    ],
+    "primary_all_actions_pinned_40hex": true,
+    "primary_checkouts_persist_credentials_false": true,
+    "primary_cache_configuration": [
+      {
+        "path": "~/.m2/repository",
+        "key": "${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}",
+        "restore-keys": "${{ runner.os }}-maven-\n"
+      }
+    ],
+    "primary_maven_dependency_cache": true,
+    "primary_run_commands": [
+      "mvn --errors --show-version --batch-mode --no-transfer-progress -Ddoclint=all"
+    ],
+    "resolved_default_goal": "clean verify apache-rat:check checkstyle:check pmd:check pmd:cpd-check spotbugs:check javadoc:javadoc",
+    "branch_protection": "not_observed",
+    "required_status_checks": "not_observed",
+    "live_ci_use_of_ekstazi": "not_observed",
+    "rts_metadata_integrity_verification": "no_explicit_reference_in_inspected_workflows"
+  },
+  {
+    "repository": "apache/commons-exec",
+    "commit": "c766fc7be8af293a24a1b3c9cd2a93400de9ef1e",
+    "upstream_source_url": "https://github.com/apache/commons-exec/tree/c766fc7be8af293a24a1b3c9cd2a93400de9ef1e",
+    "config_files_inspected": 5,
+    "java_production_files": 37,
+    "java_test_files": 32,
+    "root_parent": "org.apache.commons:commons-parent:107",
+    "ekstazi_optional_profiles": [],
+    "ekstazi_reference_any_workflow": false,
+    "testmon_reference_any_configuration": false,
+    "primary_workflow": ".github/workflows/maven.yml",
+    "primary_workflow_events": [
+      "push",
+      "pull_request"
+    ],
+    "primary_pull_request_trigger": true,
+    "primary_permissions": {
+      "contents": "read"
+    },
+    "primary_contents_permission_read": true,
+    "primary_actions": [
+      "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9",
+      "actions/setup-java@77dd5b2ce225ea11469928ac317850245a74ae78"
+    ],
+    "primary_all_actions_pinned_40hex": true,
+    "primary_checkouts_persist_credentials_false": true,
+    "primary_cache_configuration": [
+      {
+        "path": "~/.m2/repository",
+        "key": "${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}",
+        "restore-keys": "${{ runner.os }}-maven-\n"
+      }
+    ],
+    "primary_maven_dependency_cache": true,
+    "primary_run_commands": [
+      "mvn --errors --show-version --batch-mode --no-transfer-progress -Ddoclint=all"
+    ],
+    "resolved_default_goal": "clean artifact:check-buildplan verify apache-rat:check japicmp:cmp checkstyle:check pmd:cpd-check pmd:check javadoc:javadoc spotbugs:check",
+    "branch_protection": "not_observed",
+    "required_status_checks": "not_observed",
+    "live_ci_use_of_ekstazi": "not_observed",
+    "rts_metadata_integrity_verification": "no_explicit_reference_in_inspected_workflows"
+  },
+  {
+    "repository": "apache/commons-io",
+    "commit": "a06ee11d2bf7fba46ccc419da69e2ff4a13986b5",
+    "upstream_source_url": "https://github.com/apache/commons-io/tree/a06ee11d2bf7fba46ccc419da69e2ff4a13986b5",
+    "config_files_inspected": 5,
+    "java_production_files": 277,
+    "java_test_files": 307,
+    "root_parent": "org.apache.commons:commons-parent:107",
+    "ekstazi_optional_profiles": [],
+    "ekstazi_reference_any_workflow": false,
+    "testmon_reference_any_configuration": false,
+    "primary_workflow": ".github/workflows/maven.yml",
+    "primary_workflow_events": [
+      "workflow_dispatch",
+      "push",
+      "pull_request"
+    ],
+    "primary_pull_request_trigger": true,
+    "primary_permissions": {
+      "contents": "read"
+    },
+    "primary_contents_permission_read": true,
+    "primary_actions": [
+      "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9",
+      "actions/setup-java@77dd5b2ce225ea11469928ac317850245a74ae78"
+    ],
+    "primary_all_actions_pinned_40hex": true,
+    "primary_checkouts_persist_credentials_false": true,
+    "primary_cache_configuration": [
+      {
+        "path": "~/.m2/repository",
+        "key": "${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}",
+        "restore-keys": "${{ runner.os }}-maven-\n"
+      }
+    ],
+    "primary_maven_dependency_cache": true,
+    "primary_run_commands": [
+      "mvn --errors --show-version --batch-mode --no-transfer-progress -DtrimStackTrace=false",
+      "mvn --errors --show-version --batch-mode --no-transfer-progress -DtrimStackTrace=false clean test",
+      "echo \"Deploy SNAPSHOT\" >> $GITHUB_STEP_SUMMARY; mvn --show-version --batch-mode --no-transfer-progress deploy -Dgpg.skip  -DskipTests -Drat.skip -Djacoco.skip -Dcyclonedx.skip -Dspotbugs.skip -Dspdx.skip -Dpmd.skip\n"
+    ],
+    "resolved_default_goal": "clean verify apache-rat:check japicmp:cmp checkstyle:check spotbugs:check pmd:check javadoc:javadoc",
+    "branch_protection": "not_observed",
+    "required_status_checks": "not_observed",
+    "live_ci_use_of_ekstazi": "not_observed",
+    "rts_metadata_integrity_verification": "no_explicit_reference_in_inspected_workflows"
+  },
+  {
+    "repository": "apache/commons-lang",
+    "commit": "5d2715b9da13fb584058d264c46dfed6bcc700d1",
+    "upstream_source_url": "https://github.com/apache/commons-lang/tree/5d2715b9da13fb584058d264c46dfed6bcc700d1",
+    "config_files_inspected": 5,
+    "java_production_files": 264,
+    "java_test_files": 372,
+    "root_parent": "org.apache.commons:commons-parent:107",
+    "ekstazi_optional_profiles": [],
+    "ekstazi_reference_any_workflow": false,
+    "testmon_reference_any_configuration": false,
+    "primary_workflow": ".github/workflows/maven.yml",
+    "primary_workflow_events": [
+      "push",
+      "pull_request"
+    ],
+    "primary_pull_request_trigger": true,
+    "primary_permissions": {
+      "contents": "read"
+    },
+    "primary_contents_permission_read": true,
+    "primary_actions": [
+      "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9",
+      "actions/setup-java@77dd5b2ce225ea11469928ac317850245a74ae78"
+    ],
+    "primary_all_actions_pinned_40hex": true,
+    "primary_checkouts_persist_credentials_false": true,
+    "primary_cache_configuration": [
+      {
+        "path": "~/.m2/repository",
+        "key": "${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}",
+        "restore-keys": "${{ runner.os }}-maven-\n"
+      }
+    ],
+    "primary_maven_dependency_cache": true,
+    "primary_run_commands": [
+      "mvn --errors --show-version --batch-mode --no-transfer-progress -Ddoclint=all"
+    ],
+    "resolved_default_goal": "clean verify apache-rat:check checkstyle:check japicmp:cmp spotbugs:check pmd:check javadoc:javadoc",
+    "branch_protection": "not_observed",
+    "required_status_checks": "not_observed",
+    "live_ci_use_of_ekstazi": "not_observed",
+    "rts_metadata_integrity_verification": "no_explicit_reference_in_inspected_workflows"
+  },
+  {
+    "repository": "apache/commons-math",
+    "commit": "36cefd500d2b6a193bd81654665944db1bb1aaed",
+    "upstream_source_url": "https://github.com/apache/commons-math/tree/36cefd500d2b6a193bd81654665944db1bb1aaed",
+    "config_files_inspected": 22,
+    "java_production_files": 671,
+    "java_test_files": 404,
+    "root_parent": "org.apache.commons:commons-parent:103",
+    "ekstazi_optional_profiles": [
+      {
+        "profile_id": "ekstazi",
+        "activation_property": "ekstazi",
+        "activation_value": null,
+        "active_by_default": "false",
+        "artifact": "ekstazi-maven-plugin",
+        "version": "4.4.0"
+      }
+    ],
+    "ekstazi_reference_any_workflow": false,
+    "testmon_reference_any_configuration": false,
+    "primary_workflow": ".github/workflows/maven.yml",
+    "primary_workflow_events": [
+      "workflow_dispatch",
+      "push",
+      "pull_request"
+    ],
+    "primary_pull_request_trigger": true,
+    "primary_permissions": {
+      "contents": "read"
+    },
+    "primary_contents_permission_read": true,
+    "primary_actions": [
+      "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "actions/setup-java@77dd5b2ce225ea11469928ac317850245a74ae78"
+    ],
+    "primary_all_actions_pinned_40hex": true,
+    "primary_checkouts_persist_credentials_false": true,
+    "primary_cache_configuration": [],
+    "primary_maven_dependency_cache": false,
+    "primary_run_commands": [
+      "mvn -V --no-transfer-progress"
+    ],
+    "resolved_default_goal": "clean verify javadoc:javadoc",
+    "branch_protection": "not_observed",
+    "required_status_checks": "not_observed",
+    "live_ci_use_of_ekstazi": "not_observed",
+    "rts_metadata_integrity_verification": "no_explicit_reference_in_inspected_workflows"
+  },
+  {
+    "repository": "apache/commons-numbers",
+    "commit": "e6845beaca307b09bb02ae5ae625c63345bce130",
+    "upstream_source_url": "https://github.com/apache/commons-numbers/tree/e6845beaca307b09bb02ae5ae625c63345bce130",
+    "config_files_inspected": 22,
+    "java_production_files": 153,
+    "java_test_files": 120,
+    "root_parent": "org.apache.commons:commons-parent:105",
+    "ekstazi_optional_profiles": [
+      {
+        "profile_id": "ekstazi",
+        "activation_property": "ekstazi",
+        "activation_value": null,
+        "active_by_default": "false",
+        "artifact": "ekstazi-maven-plugin",
+        "version": "5.3.0"
+      }
+    ],
+    "ekstazi_reference_any_workflow": false,
+    "testmon_reference_any_configuration": false,
+    "primary_workflow": ".github/workflows/maven.yml",
+    "primary_workflow_events": [
+      "push",
+      "pull_request"
+    ],
+    "primary_pull_request_trigger": true,
+    "primary_permissions": {
+      "contents": "read"
+    },
+    "primary_contents_permission_read": true,
+    "primary_actions": [
+      "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "actions/setup-java@77dd5b2ce225ea11469928ac317850245a74ae78"
+    ],
+    "primary_all_actions_pinned_40hex": true,
+    "primary_checkouts_persist_credentials_false": true,
+    "primary_cache_configuration": [],
+    "primary_maven_dependency_cache": false,
+    "primary_run_commands": [
+      "mvn --show-version --batch-mode --no-transfer-progress",
+      "mvn --show-version --batch-mode --no-transfer-progress deploy -Dgpg.skip  -DskipTests -Drat.skip -Djacoco.skip -Dcyclonedx.skip -Dspotbugs.skip -Dspdx.skip -Dpmd.skip\n",
+      "mvn --show-version --batch-mode --no-transfer-progress -P examples clean install -Dmaven.javadoc.skip\nmvn --show-version --batch-mode --no-transfer-progress -P examples javadoc:javadoc -Dmaven.javadoc.skip=false\n"
+    ],
+    "resolved_default_goal": "clean verify javadoc:javadoc",
+    "branch_protection": "not_observed",
+    "required_status_checks": "not_observed",
+    "live_ci_use_of_ekstazi": "not_observed",
+    "rts_metadata_integrity_verification": "no_explicit_reference_in_inspected_workflows"
+  },
+  {
+    "repository": "apache/commons-pool",
+    "commit": "22c12c752bcaa0ea406734926afb8aced0693a7f",
+    "upstream_source_url": "https://github.com/apache/commons-pool/tree/22c12c752bcaa0ea406734926afb8aced0693a7f",
+    "config_files_inspected": 5,
+    "java_production_files": 54,
+    "java_test_files": 68,
+    "root_parent": "org.apache.commons:commons-parent:103",
+    "ekstazi_optional_profiles": [],
+    "ekstazi_reference_any_workflow": false,
+    "testmon_reference_any_configuration": false,
+    "primary_workflow": ".github/workflows/maven.yml",
+    "primary_workflow_events": [
+      "push",
+      "pull_request"
+    ],
+    "primary_pull_request_trigger": true,
+    "primary_permissions": {
+      "contents": "read"
+    },
+    "primary_contents_permission_read": true,
+    "primary_actions": [
+      "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9",
+      "actions/setup-java@77dd5b2ce225ea11469928ac317850245a74ae78"
+    ],
+    "primary_all_actions_pinned_40hex": true,
+    "primary_checkouts_persist_credentials_false": true,
+    "primary_cache_configuration": [
+      {
+        "path": "~/.m2/repository",
+        "key": "${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}",
+        "restore-keys": "${{ runner.os }}-maven-\n"
+      }
+    ],
+    "primary_maven_dependency_cache": true,
+    "primary_run_commands": [
+      "mvn --show-version --batch-mode --no-transfer-progress"
+    ],
+    "resolved_default_goal": "clean verify apache-rat:check checkstyle:check japicmp:cmp javadoc:javadoc spotbugs:check pmd:check pmd:cpd-check",
+    "branch_protection": "not_observed",
+    "required_status_checks": "not_observed",
+    "live_ci_use_of_ekstazi": "not_observed",
+    "rts_metadata_integrity_verification": "no_explicit_reference_in_inspected_workflows"
+  },
+  {
+    "repository": "apache/commons-text",
+    "commit": "ed3f23e12362f77d2b850e291458a0907da34d96",
+    "upstream_source_url": "https://github.com/apache/commons-text/tree/ed3f23e12362f77d2b850e291458a0907da34d96",
+    "config_files_inspected": 5,
+    "java_production_files": 113,
+    "java_test_files": 107,
+    "root_parent": "org.apache.commons:commons-parent:107",
+    "ekstazi_optional_profiles": [],
+    "ekstazi_reference_any_workflow": false,
+    "testmon_reference_any_configuration": false,
+    "primary_workflow": ".github/workflows/maven.yml",
+    "primary_workflow_events": [
+      "push",
+      "pull_request"
+    ],
+    "primary_pull_request_trigger": true,
+    "primary_permissions": {
+      "contents": "read"
+    },
+    "primary_contents_permission_read": true,
+    "primary_actions": [
+      "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "actions/setup-java@77dd5b2ce225ea11469928ac317850245a74ae78"
+    ],
+    "primary_all_actions_pinned_40hex": true,
+    "primary_checkouts_persist_credentials_false": true,
+    "primary_cache_configuration": [],
+    "primary_maven_dependency_cache": false,
+    "primary_run_commands": [
+      "mvn --errors --show-version --batch-mode --no-transfer-progress -Dpolyglot.engine.WarnInterpreterOnly=false"
+    ],
+    "resolved_default_goal": "clean verify apache-rat:check japicmp:cmp checkstyle:check pmd:check spotbugs:check javadoc:javadoc",
+    "branch_protection": "not_observed",
+    "required_status_checks": "not_observed",
+    "live_ci_use_of_ekstazi": "not_observed",
+    "rts_metadata_integrity_verification": "no_explicit_reference_in_inspected_workflows"
+  }
+]

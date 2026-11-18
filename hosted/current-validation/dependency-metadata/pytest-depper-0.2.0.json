@@ -1,0 +1,131 @@
+{
+  "info": {
+    "author": null,
+    "author_email": "Raymond Xu <raymond@example.com>",
+    "bugtrack_url": null,
+    "classifiers": [
+      "Development Status :: 4 - Beta",
+      "Framework :: Pytest",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: MIT License",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.8",
+      "Programming Language :: Python :: 3.9",
+      "Topic :: Software Development :: Testing",
+      "Topic :: Software Development :: Testing :: Unit"
+    ],
+    "description": "# pytest-depper: Run only the tests you need, not all the tests you have\n\n**Smart test selection based on AST-level code dependency analysis.**\n\nDiffs your current branch vs main, and then gets which tests hit those lines changed, and runs those. \n\n[![PyPI version](https://badge.fury.io/py/pytest-depper.svg)](https://badge.fury.io/py/pytest-depper)\n[![Python Versions](https://img.shields.io/pypi/pyversions/pytest-depper.svg)](https://pypi.org/project/pytest-depper/)\n[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)\n[![Downloads](https://static.pepy.tech/badge/pytest-depper)](https://pepy.tech/project/pytest-depper)\n[![Downloads/Month](https://static.pepy.tech/badge/pytest-depper/month)](https://pepy.tech/project/pytest-depper)\n[![Framework: pytest](https://img.shields.io/badge/framework-pytest-blue.svg)](https://pytest.org)\n[![GitHub Stars](https://img.shields.io/github/stars/ryx2/pytest-depper.svg)](https://github.com/ryx2/pytest-depper/stargazers)\n\n## The Problem\n\nImagine you have a 3,000-line Python file (you're a typical python dev) with 2,000 individual tests covering various parts of it. You make a small change\u2014just 8 lines. Should you run all 2,000 tests? **No.**\n\nMost test selection tools either:\n- Run everything (slow)\n- Use coverage data from previous runs (requires pre-computed data, breaks with new code)\n- Rely on naming conventions (fragile, incomplete)\n\n## The Solution\n\n**pytest-depper** analyzes your code's **actual import dependencies** at the AST level to determine exactly which tests are affected by your changes.\n\nWhen you change those 8 lines, pytest-depper:\n1. Diffs your branch against main to find changed files\n2. Builds a complete dependency graph of your codebase using AST parsing\n3. Traces which tests import (directly or transitively) the changed code\n4. Runs only those ~20 affected tests instead of all 2,000\n\n**No pre-computation. No cached state. No guessing.**\n\n## Key Advantages Over Similar Tools\n\n### vs pytest-testmon\n\n| Feature | pytest-depper | pytest-testmon |\n|---------|--------------|----------------|\n| Requires previous run data | \u274c No | \u2705 Yes (.testmon file) |\n| Works on fresh branches | \u2705 Yes | \u274c No (needs to build cache first) |\n| AST-level analysis | \u2705 Yes | \u2705 Yes |\n| Git integration | \u2705 Built-in | \u274c Manual |\n| Dependency graph visualization | \u2705 Yes (`--depper-debug`) | \u26a0\ufe0f Limited |\n\n**Why this matters:** pytest-testmon requires running your full test suite at least once on the main branch to build its cache. If you check out a fresh branch or clone a new repo, you have no cache. pytest-depper works immediately by analyzing your code structure.\n\n### vs pytest-picked\n\npytest-picked only looks at changed test files and changed source files\u2014it doesn't analyze the dependency graph. If you change `models/user.py`, and `services/auth.py` imports it, and `tests/test_api.py` tests the auth service, pytest-picked won't detect this transitive relationship.\n\n### vs Manual Test Selection\n\nRunning tests manually is error-prone. You might:\n- Forget which tests cover which code\n- Miss transitive dependencies (A imports B, B imports C, you changed C)\n- Over-select tests out of caution (wasting time)\n\n## Installation\n\n```bash\npip install pytest-depper\n```\n\nOr with poetry:\n\n```bash\npoetry add --group dev pytest-depper\n```\n\n## Quick Start\n\n### As a Pytest Plugin\n\nSimply add the `--depper` flag to your pytest command:\n\n```bash\n# Run only tests affected by changes compared to main branch\npytest --depper\n\n# Compare against a different branch\npytest --depper --depper-base-branch=develop\n\n# Show detailed dependency analysis\npytest --depper --depper-debug\n```\n\n### As a Standalone CLI\n\nAnalyze dependencies without running tests:\n\n```bash\n# Show which tests would run\npytest-depper\n\n# Compare to a different branch\npytest-depper --base-branch develop\n\n# Show detailed dependency information\npytest-depper --debug\n```\n\n## How It Works\n\npytest-depper uses **function-level change detection** with **static import analysis** to determine which tests need to run.\n\n### Step 1: Detect Changed Functions/Classes\n\n```bash\ngit diff -U0 origin/main...HEAD\n```\n\nOutput shows changed line numbers:\n```diff\n+++ b/src/calculator.py\n@@ -5,3 +5,4 @@\n def add(a, b):\n+    # Added validation\n     return a + b\n```\n\npytest-depper maps changed lines to function/class names using AST:\n```\nLine 6 changed \u2192 Part of function 'add'\nChanged symbols: {'add'}\n```\n\n### Step 2: Build Symbol Import Map\n\npytest-depper parses all Python files to track **which specific symbols** each test imports:\n\n```python\n# test_math.py\nfrom calculator import add, subtract  # Imports: {'add', 'subtract'}\n\n# test_multiply.py\nfrom calculator import multiply  # Imports: {'multiply'}\n\n# test_integration.py\nimport calculator  # Imports: {'*'} (entire module)\n```\n\nThis creates a precise map:\n```python\n{\n  'test_math.py': {'calculator.py': {'add', 'subtract'}},\n  'test_multiply.py': {'calculator.py': {'multiply'}},\n  'test_integration.py': {'calculator.py': {'*'}}\n}\n```\n\n### Step 3: Match Changed Symbols to Test Imports\n\nFor each changed symbol, pytest-depper finds tests that import it:\n\n```\n'add' function changed in calculator.py\n\ntest_math.py imports 'add' \u2192 RUN \u2705\ntest_multiply.py imports 'multiply' \u2192 SKIP \u274c\ntest_integration.py imports '*' \u2192 RUN \u2705 (imports entire module)\n```\n\n**Result:** Only tests that import the changed functions/classes will run.\n\n### Example: 3000-Line File Scenario\n\n```python\n# models.py (3000 lines, 50 functions)\ndef validate_email(email): ...  # Changed (lines 145-150)\ndef validate_phone(phone): ...\ndef validate_address(addr): ...\n# ... 47 more functions\n\n# test_email.py\nfrom models import validate_email  # Imports: {'validate_email'}\n\n# test_phone.py\nfrom models import validate_phone  # Imports: {'validate_phone'}\n\n# test_integration.py\nfrom models import *  # Imports: {'*'}\n```\n\nWhen only `validate_email` changes:\n- \u2705 `test_email.py` runs (imports the changed function)\n- \u2705 `test_integration.py` runs (imports everything with `*`)\n- \u274c `test_phone.py` skipped (doesn't import the changed function)\n- \u274c 45+ other test files skipped\n\n**This is true function-level precision** - not just file-level dependency tracking.\n\n## Configuration\n\n### Pytest Plugin Options\n\n```bash\n--depper\n    Enable smart test selection (default: False)\n\n--depper-base-branch=BRANCH\n    Base branch to compare against (default: main)\n\n--depper-debug\n    Print detailed dependency analysis (default: False)\n\n--depper-run-all-on-error\n    Run all tests if no changed files detected or analysis fails (default: False)\n```\n\n### Programmatic Usage\n\n```python\nfrom pathlib import Path\nfrom pytest_depper import DependencyAnalyzer\n\n# Initialize analyzer\nanalyzer = DependencyAnalyzer(\n    project_root=Path(\".\"),\n    exclusion_patterns=[\"venv\", \".venv\", \"build\"],\n    test_patterns=[\"test_\", \"_test.py\", \"/tests/\"]\n)\n\n# Get changed files (you provide this)\nchanged_files = [\"src/models/user.py\", \"src/utils/validators.py\"]\n\n# Get affected tests\naffected_tests = analyzer.get_affected_tests(changed_files)\nprint(f\"Run these tests: {affected_tests}\")\n\n# Debug: Print dependency info\nanalyzer.print_dependency_info(changed_files)\n```\n\n## Real-World Example\n\n### Before pytest-depper\n\n```bash\n$ pytest\n======================== test session starts ========================\ncollected 2847 items\n\ntests/test_auth.py::test_login PASSED                          [ 0%]\ntests/test_auth.py::test_logout PASSED                         [ 0%]\ntests/test_auth.py::test_register PASSED                       [ 0%]\n... (2844 more tests) ...\n\n===================== 2847 passed in 284.32s =======================\n```\n\n\u23f1\ufe0f **4 minutes 44 seconds**\n\n### After pytest-depper\n\n```bash\n$ pytest --depper\n\nDepper: Found 2 changed files\n  - src/models/user.py\n  - src/utils/validators.py\n\nDepper: 2 test files affected by changes\nDepper: Selected 23 tests, deselected 2824 tests\n\n======================== test session starts ========================\ncollected 23 items\n\ntests/test_auth.py::test_login PASSED                          [ 4%]\ntests/test_auth.py::test_logout PASSED                         [ 8%]\ntests/test_auth.py::test_register PASSED                       [12%]\ntests/test_validators.py::test_email_validation PASSED         [16%]\n... (19 more tests) ...\n\n===================== 23 passed in 3.71s =======================\n```\n\n\u23f1\ufe0f **3.71 seconds**\n\n**76x faster** for a typical small change.\n\n## CI/CD Integration\n\n### GitHub Actions\n\n```yaml\nname: Tests\n\non:\n  pull_request:\n    branches: [main]\n\njobs:\n  test:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v3\n        with:\n          fetch-depth: 0  # Need full history for git diff\n\n      - name: Set up Python\n        uses: actions/setup-python@v4\n        with:\n          python-version: '3.11'\n\n      - name: Install dependencies\n        run: |\n          pip install -r requirements.txt\n          pip install pytest-depper\n\n      - name: Run affected tests\n        run: pytest --depper --depper-run-all-on-error\n```\n\n### GitLab CI\n\n```yaml\ntest:\n  script:\n    - pip install -r requirements.txt\n    - pip install pytest-depper\n    - pytest --depper --depper-base-branch=$CI_MERGE_REQUEST_TARGET_BRANCH_NAME\n```\n\n## Advanced Usage\n\n### Custom Test Patterns\n\n```python\nanalyzer = DependencyAnalyzer(\n    test_patterns=[\n        \"test_\",           # files starting with test_\n        \"_test.py\",        # files ending with _test.py\n        \"/tests/\",         # files in tests/ directories\n        \"/integration/\",   # custom: integration test directory\n        \"spec.py\",         # custom: spec files\n    ]\n)\n```\n\n### Custom Exclusion Patterns\n\n```python\nanalyzer = DependencyAnalyzer(\n    exclusion_patterns=[\n        \"venv\",\n        \".venv\",\n        \"node_modules\",\n        \"build\",\n        \"dist\",\n        \".git\",\n        \"__pycache__\",\n        \"migrations\",  # custom: ignore migration files\n        \"scripts\",     # custom: ignore utility scripts\n    ]\n)\n```\n\n### Debug Output\n\n```bash\n$ pytest --depper --depper-debug\n\n=== Dependency Analysis ===\n\nChanged file: src/models/user.py\n  Dependencies: {'src/models/base.py', 'src/utils/validators.py'}\n  Files that depend on this: {'src/services/auth.py', 'src/services/user_service.py', 'tests/test_auth.py', 'tests/test_user.py'}\n  Direct test coverage: {'tests/test_user.py'}\n\nChanged file: src/utils/validators.py\n  Dependencies: set()\n  Files that depend on this: {'src/models/user.py', 'tests/test_validators.py'}\n  Direct test coverage: {'tests/test_validators.py'}\n\nDepper: Selected 4 test files\n  \u2713 tests/test_auth.py\n  \u2713 tests/test_user.py\n  \u2713 tests/test_user_service.py\n  \u2713 tests/test_validators.py\n```\n\n## Limitations\n\npytest-depper uses **static import analysis**, not runtime coverage. This means it bases decisions on what tests import, not what they actually execute.\n\n### What pytest-depper CAN'T detect:\n\n1. **Imports that aren't used**\n   ```python\n   # test_multiply.py\n   from calculator import add, multiply  # Imports both\n\n   def test_multiply():\n       assert multiply(2, 3) == 6  # Only uses multiply\n   ```\n\n   If `add` changes, this test will run even though it doesn't use `add`. This is intentional conservatism - better to run too many tests than too few.\n\n2. **Dynamic imports**\n   ```python\n   module = __import__(\"my_module\")  # Not detected\n   importlib.import_module(\"my_module\")  # Not detected\n   ```\n\n3. **Module-level imports (`import module`)**\n   ```python\n   import calculator  # Imports: {'*'} - everything\n\n   def test_add():\n       calculator.add(2, 3)  # Uses only add\n   ```\n\n   When you do `import calculator`, pytest-depper treats it as importing **everything** from that module. Any change to the module will trigger this test.\n\n   **Recommendation:** Use `from module import specific_function` for better precision.\n\n4. **String-based references**\n   ```python\n   class_name = \"UserModel\"\n   cls = globals()[class_name]  # Not detected\n   ```\n\n5. **Data-driven changes**\n   - Changing a JSON config file won't trigger tests that read it\n   - Modifying database migrations won't trigger related tests\n   - Updating `.env` files won't trigger affected tests\n\n6. **Changes outside functions/classes**\n   - Module-level constants\n   - Global variables\n   - Changes in blank lines or comments only\n\n   These won't be detected as \"symbol changes\" and will fall back to file-level matching.\n\n### Recommended approach:\n\n- Use `--depper-run-all-on-error` in CI to be safe\n- Run full test suite on main/develop branches\n- Use pytest-depper for PR/feature branches to speed up development\n- Combine with coverage tools to ensure you have adequate test coverage\n\n## FAQ\n\n**Q: Does this replace pytest-cov or coverage.py?**\n\nA: No. pytest-depper selects which tests to run. Coverage tools measure how much of your code is tested. Use them together.\n\n**Q: What if I rename a file?**\n\nA: Git treats renames as delete + add. pytest-depper will see the new file as changed and run all tests that import it.\n\n**Q: Does it work with monorepos?**\n\nA: Yes. Set `project_root` to your package directory:\n\n```python\nanalyzer = DependencyAnalyzer(project_root=Path(\"packages/my-package\"))\n```\n\n**Q: What Python versions are supported?**\n\nA: Python 3.8+. The AST analysis uses `sys.stdlib_module_names` (Python 3.10+) but falls back gracefully.\n\n**Q: Can I use this with tox or nox?**\n\nA: Yes:\n\n```ini\n# tox.ini\n[testenv]\ndeps = pytest-depper\ncommands = pytest --depper\n```\n\n**Q: Why \"depper\"?**\n\nA: **Dep**endency-based test runner, or \"deeper\" analysis. Plus it's short and memorable.\n\n## Contributing\n\nContributions welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.\n\n### Development Setup\n\n```bash\n# Clone the repo\ngit clone https://github.com/ryx2/pytest-depper.git\ncd pytest-depper\n\n# Install dependencies\npip install -e \".[dev]\"\n\n# Run tests\npytest\n\n# Run linters\nruff check .\nmypy pytest_depper\n```\n\n## License\n\nMIT License. See [LICENSE](LICENSE) for details.\n\n## Credits\n\nInspired by:\n- [pytest-testmon](https://github.com/tarpas/pytest-testmon) - for the concept of dependency-based test selection\n- [pytest-picked](https://github.com/anapaulagomes/pytest-picked) - for git integration with pytest\n\nBuilt with \u2764\ufe0f for developers who value their time.\n\n---\n\n**Star this repo** if pytest-depper saves you time!\n\n**Report issues** at https://github.com/ryx2/pytest-depper/issues\n",
+    "description_content_type": "text/markdown",
+    "docs_url": null,
+    "download_url": null,
+    "downloads": {
+      "last_day": -1,
+      "last_month": -1,
+      "last_week": -1
+    },
+    "dynamic": [
+      "License-File"
+    ],
+    "home_page": null,
+    "keywords": "pytest, testing, dependencies, ast, test-selection, smart-testing, ci-cd",
+    "license": "MIT",
+    "license_expression": null,
+    "license_files": [
+      "LICENSE"
+    ],
+    "maintainer": null,
+    "maintainer_email": "Raymond Xu <raymond@example.com>",
+    "name": "pytest-depper",
+    "package_url": "https://pypi.org/project/pytest-depper/",
+    "platform": null,
+    "project_url": "https://pypi.org/project/pytest-depper/",
+    "project_urls": {
+      "Changelog": "https://github.com/ryx2/pytest-depper/releases",
+      "Documentation": "https://github.com/ryx2/pytest-depper#readme",
+      "Homepage": "https://github.com/ryx2/pytest-depper",
+      "Issues": "https://github.com/ryx2/pytest-depper/issues",
+      "Repository": "https://github.com/ryx2/pytest-depper"
+    },
+    "provides_extra": [
+      "dev"
+    ],
+    "release_url": "https://pypi.org/project/pytest-depper/0.2.0/",
+    "requires_dist": [
+      "pytest>=7.0.0",
+      "pytest>=7.0.0; extra == \"dev\"",
+      "pytest-cov>=4.0.0; extra == \"dev\"",
+      "ruff>=0.1.0; extra == \"dev\"",
+      "mypy>=1.0.0; extra == \"dev\"",
+      "black>=23.0.0; extra == \"dev\""
+    ],
+    "requires_python": ">=3.8",
+    "summary": "Smart test selection based on AST-level code dependency analysis",
+    "version": "0.2.0",
+    "yanked": false,
+    "yanked_reason": null
+  },
+  "last_serial": 31965762,
+  "ownership": {
+    "organization": null,
+    "roles": [
+      {
+        "role": "Owner",
+        "user": "greenfish6"
+      }
+    ]
+  },
+  "urls": [
+    {
+      "comment_text": null,
+      "core-metadata": {
+        "sha256": "6208f2a4b656913ee1f8e0cc8689c4e88fd44387f7de4a2adad820a3dea55ab3"
+      },
+      "digests": {
+        "blake2b_256": "f7d2c8d08e7adc022a23f32a8215b523f900e1eac2b73e1abdca5dbd336a0509",
+        "md5": "198f7bf26f234e338c64d559fa6da375",
+        "sha256": "aff659dc73e8ec1fb56723ccef40c1586f2a47fb729db2bf885654d87c3930b9"
+      },
+      "downloads": -1,
+      "filename": "pytest_depper-0.2.0-py3-none-any.whl",
+      "has_sig": false,
+      "md5_digest": "198f7bf26f234e338c64d559fa6da375",
+      "packagetype": "bdist_wheel",
+      "python_version": "py3",
+      "requires_python": ">=3.8",
+      "size": 18548,
+      "upload_time": "2025-10-23T07:26:13",
+      "upload_time_iso_8601": "2025-10-23T07:26:13.799651Z",
+      "url": "https://files.pythonhosted.org/packages/f7/d2/c8d08e7adc022a23f32a8215b523f900e1eac2b73e1abdca5dbd336a0509/pytest_depper-0.2.0-py3-none-any.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "core-metadata": false,
+      "digests": {
+        "blake2b_256": "1f06f8c67301d2f6d4d630a7a4474c303e5ab904460faef32347ae1468eb5c0c",
+        "md5": "987a5eb990875470dd963022c9ea85bb",
+        "sha256": "165d8c54fa9713cd0151d0c070c115a2e78a63266d78e6f63bc8cf28d73158f0"
+      },
+      "downloads": -1,
+      "filename": "pytest_depper-0.2.0.tar.gz",
+      "has_sig": false,
+      "md5_digest": "987a5eb990875470dd963022c9ea85bb",
+      "packagetype": "sdist",
+      "python_version": "source",
+      "requires_python": ">=3.8",
+      "size": 22356,
+      "upload_time": "2025-10-23T07:26:14",
+      "upload_time_iso_8601": "2025-10-23T07:26:14.996756Z",
+      "url": "https://files.pythonhosted.org/packages/1f/06/f8c67301d2f6d4d630a7a4474c303e5ab904460faef32347ae1468eb5c0c/pytest_depper-0.2.0.tar.gz",
+      "yanked": false,
+      "yanked_reason": null
+    }
+  ],
+  "vulnerabilities": []
+}

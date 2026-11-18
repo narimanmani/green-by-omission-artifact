@@ -1,0 +1,123 @@
+{
+  "status": "CONFIRMED_IDENTICAL_CANDIDATE_PER_SUBJECT",
+  "method": "Read-only SHA256 comparison of retained per-seed target source bytes and test sources against the fixed collision snapshot; repeat runner inspected as text only",
+  "seeds": [
+    0,
+    1,
+    42
+  ],
+  "seed_variable": "PYTHONHASHSEED",
+  "candidate_constructions": 3,
+  "technical_repetitions_per_construction": 3,
+  "records": [
+    {
+      "case": "itsdangerous_expiry",
+      "frozen_candidate_snapshot": "recovered\\incoming-extension\\extracted\\snp2027_extension_2026-11-07\\fixtures\\itsdangerous_expiry_copy_\\snapshots\\collision.py",
+      "candidate_sha256": "958e620d9c196ef0fd6ec59737176885fcd29f01df2fa13fdecbda77b43ef011",
+      "all_three_candidate_bytes_equal": true,
+      "unchanged_tests_equal_across_runs": true,
+      "runs": [
+        {
+          "seed": 0,
+          "target": "recovered\\incoming-extension\\extracted\\snp2027_extension_2026-11-07\\outputs\\workspaces\\itsdangerous_expiry\\repeat_seed_0\\itsdangerous\\timed.py",
+          "candidate_sha256": "958e620d9c196ef0fd6ec59737176885fcd29f01df2fa13fdecbda77b43ef011",
+          "test_hashes": {
+            "tests/test_meta.py": "ad4bd3351bf163fbf04e572bf3682114ac60e86bd2d11aa198cf0dc7363c596a",
+            "tests/test_security.py": "e0a270253fca5385a103022ca480f5b77bf98941d8be919d1ca426df82ba8813"
+          }
+        },
+        {
+          "seed": 1,
+          "target": "recovered\\incoming-extension\\extracted\\snp2027_extension_2026-11-07\\outputs\\workspaces\\itsdangerous_expiry\\repeat_seed_1\\itsdangerous\\timed.py",
+          "candidate_sha256": "958e620d9c196ef0fd6ec59737176885fcd29f01df2fa13fdecbda77b43ef011",
+          "test_hashes": {
+            "tests/test_meta.py": "ad4bd3351bf163fbf04e572bf3682114ac60e86bd2d11aa198cf0dc7363c596a",
+            "tests/test_security.py": "e0a270253fca5385a103022ca480f5b77bf98941d8be919d1ca426df82ba8813"
+          }
+        },
+        {
+          "seed": 42,
+          "target": "recovered\\incoming-extension\\extracted\\snp2027_extension_2026-11-07\\outputs\\workspaces\\itsdangerous_expiry\\repeat_seed_42\\itsdangerous\\timed.py",
+          "candidate_sha256": "958e620d9c196ef0fd6ec59737176885fcd29f01df2fa13fdecbda77b43ef011",
+          "test_hashes": {
+            "tests/test_meta.py": "ad4bd3351bf163fbf04e572bf3682114ac60e86bd2d11aa198cf0dc7363c596a",
+            "tests/test_security.py": "e0a270253fca5385a103022ca480f5b77bf98941d8be919d1ca426df82ba8813"
+          }
+        }
+      ]
+    },
+    {
+      "case": "starlette_trusted_host",
+      "frozen_candidate_snapshot": "recovered\\incoming-extension\\extracted\\snp2027_extension_2026-11-07\\fixtures\\starlette_trusted_host_copy_\\snapshots\\collision.py",
+      "candidate_sha256": "2789f299d1787ac5f20a883502047189b1bcfe21142676e2ccd1b9219c7773d9",
+      "all_three_candidate_bytes_equal": true,
+      "unchanged_tests_equal_across_runs": true,
+      "runs": [
+        {
+          "seed": 0,
+          "target": "recovered\\incoming-extension\\extracted\\snp2027_extension_2026-11-07\\outputs\\workspaces\\starlette_trusted_host\\repeat_seed_0\\starlette\\middleware\\trustedhost.py",
+          "candidate_sha256": "2789f299d1787ac5f20a883502047189b1bcfe21142676e2ccd1b9219c7773d9",
+          "test_hashes": {
+            "tests/test_meta.py": "ad4bd3351bf163fbf04e572bf3682114ac60e86bd2d11aa198cf0dc7363c596a",
+            "tests/test_security.py": "ca74eed11b96169c24ceebe9ca1c2a77d08e1fd0ed1837b3c2bd00b683dc1380"
+          }
+        },
+        {
+          "seed": 1,
+          "target": "recovered\\incoming-extension\\extracted\\snp2027_extension_2026-11-07\\outputs\\workspaces\\starlette_trusted_host\\repeat_seed_1\\starlette\\middleware\\trustedhost.py",
+          "candidate_sha256": "2789f299d1787ac5f20a883502047189b1bcfe21142676e2ccd1b9219c7773d9",
+          "test_hashes": {
+            "tests/test_meta.py": "ad4bd3351bf163fbf04e572bf3682114ac60e86bd2d11aa198cf0dc7363c596a",
+            "tests/test_security.py": "ca74eed11b96169c24ceebe9ca1c2a77d08e1fd0ed1837b3c2bd00b683dc1380"
+          }
+        },
+        {
+          "seed": 42,
+          "target": "recovered\\incoming-extension\\extracted\\snp2027_extension_2026-11-07\\outputs\\workspaces\\starlette_trusted_host\\repeat_seed_42\\starlette\\middleware\\trustedhost.py",
+          "candidate_sha256": "2789f299d1787ac5f20a883502047189b1bcfe21142676e2ccd1b9219c7773d9",
+          "test_hashes": {
+            "tests/test_meta.py": "ad4bd3351bf163fbf04e572bf3682114ac60e86bd2d11aa198cf0dc7363c596a",
+            "tests/test_security.py": "ca74eed11b96169c24ceebe9ca1c2a77d08e1fd0ed1837b3c2bd00b683dc1380"
+          }
+        }
+      ]
+    },
+    {
+      "case": "requests_crlf_header",
+      "frozen_candidate_snapshot": "recovered\\incoming-extension\\extracted\\snp2027_extension_2026-11-07\\fixtures\\requests_crlf_header_copy_\\snapshots\\collision.py",
+      "candidate_sha256": "e47e101197c1896761a333d3cf81ec838b1b8df5de1aef33098a7fd2f30e8337",
+      "all_three_candidate_bytes_equal": true,
+      "unchanged_tests_equal_across_runs": true,
+      "runs": [
+        {
+          "seed": 0,
+          "target": "recovered\\incoming-extension\\extracted\\snp2027_extension_2026-11-07\\outputs\\workspaces\\requests_crlf_header\\repeat_seed_0\\requests\\utils.py",
+          "candidate_sha256": "e47e101197c1896761a333d3cf81ec838b1b8df5de1aef33098a7fd2f30e8337",
+          "test_hashes": {
+            "tests/test_meta.py": "ad4bd3351bf163fbf04e572bf3682114ac60e86bd2d11aa198cf0dc7363c596a",
+            "tests/test_security.py": "f24243f08a91a243a4cc9e532e202d613bf6431a0f582ad54011e055d51894e9"
+          }
+        },
+        {
+          "seed": 1,
+          "target": "recovered\\incoming-extension\\extracted\\snp2027_extension_2026-11-07\\outputs\\workspaces\\requests_crlf_header\\repeat_seed_1\\requests\\utils.py",
+          "candidate_sha256": "e47e101197c1896761a333d3cf81ec838b1b8df5de1aef33098a7fd2f30e8337",
+          "test_hashes": {
+            "tests/test_meta.py": "ad4bd3351bf163fbf04e572bf3682114ac60e86bd2d11aa198cf0dc7363c596a",
+            "tests/test_security.py": "f24243f08a91a243a4cc9e532e202d613bf6431a0f582ad54011e055d51894e9"
+          }
+        },
+        {
+          "seed": 42,
+          "target": "recovered\\incoming-extension\\extracted\\snp2027_extension_2026-11-07\\outputs\\workspaces\\requests_crlf_header\\repeat_seed_42\\requests\\utils.py",
+          "candidate_sha256": "e47e101197c1896761a333d3cf81ec838b1b8df5de1aef33098a7fd2f30e8337",
+          "test_hashes": {
+            "tests/test_meta.py": "ad4bd3351bf163fbf04e572bf3682114ac60e86bd2d11aa198cf0dc7363c596a",
+            "tests/test_security.py": "f24243f08a91a243a4cc9e532e202d613bf6431a0f582ad54011e055d51894e9"
+          }
+        }
+      ]
+    }
+  ],
+  "scope_wording": "Three baseline-restored technical repetitions per subject evaluate the same fixed candidate under PYTHONHASHSEED values0,1 and42. The nine outcomes cover three candidate constructions, not nine independent discoveries."
+}

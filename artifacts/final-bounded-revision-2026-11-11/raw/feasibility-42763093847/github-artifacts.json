@@ -1,0 +1,205 @@
+{
+  "total_count": 10,
+  "artifacts": [
+    {
+      "id": 13739080163,
+      "node_id": "MDg6QXJ0aWZhY3QxMzczOTA4MDE2Mw==",
+      "name": "pilot-itsdangerous-1",
+      "size_in_bytes": 3342,
+      "url": "https://example.invalid/anonymous-research/ci-selection-testbed/actions/artifacts/13739080163",
+      "archive_download_url": "https://example.invalid/anonymous-research/ci-selection-testbed/actions/artifacts/13739080163/zip",
+      "expired": false,
+      "digest": "sha256:b78923b922d0bdaabd765284ab49684fe71b9f6e425a6cf40b9a51952f6296fc",
+      "created_at": "2026-11-10T05:35:59Z",
+      "updated_at": "2026-11-10T05:35:59Z",
+      "expires_at": "2026-12-10T05:35:58Z",
+      "workflow_run": {
+        "id": 42763093847,
+        "repository_id": 1449811458,
+        "head_repository_id": 1449811458,
+        "head_branch": "research/real-project-feasibility-20261109",
+        "head_sha": "e8fb63b507ec4da7155b35211a682641f6c0fa9b"
+      }
+    },
+    {
+      "id": 13738780561,
+      "node_id": "MDg6QXJ0aWZhY3QxMzczODc4MDU2MQ==",
+      "name": "pilot-starlette-1",
+      "size_in_bytes": 4221,
+      "url": "https://example.invalid/anonymous-research/ci-selection-testbed/actions/artifacts/13738780561",
+      "archive_download_url": "https://example.invalid/anonymous-research/ci-selection-testbed/actions/artifacts/13738780561/zip",
+      "expired": false,
+      "digest": "sha256:114a757bf04490888606ee0db815d8399ce01b8173e83b856b01aea642cf5c81",
+      "created_at": "2026-11-10T05:35:52Z",
+      "updated_at": "2026-11-10T05:35:52Z",
+      "expires_at": "2026-12-10T05:35:51Z",
+      "workflow_run": {
+        "id": 42763093847,
+        "repository_id": 1449811458,
+        "head_repository_id": 1449811458,
+        "head_branch": "research/real-project-feasibility-20261109",
+        "head_sha": "e8fb63b507ec4da7155b35211a682641f6c0fa9b"
+      }
+    },
+    {
+      "id": 13738735571,
+      "node_id": "MDg6QXJ0aWZhY3QxMzczODczNTU3MQ==",
+      "name": "pilot-click-1",
+      "size_in_bytes": 3338,
+      "url": "https://example.invalid/anonymous-research/ci-selection-testbed/actions/artifacts/13738735571",
+      "archive_download_url": "https://example.invalid/anonymous-research/ci-selection-testbed/actions/artifacts/13738735571/zip",
+      "expired": false,
+      "digest": "sha256:f5a110f2116b3929751388c3259ac16e10289cff82b67c1455f1b7ce2f7a83ea",
+      "created_at": "2026-11-10T05:35:50Z",
+      "updated_at": "2026-11-10T05:35:50Z",
+      "expires_at": "2026-12-10T05:35:49Z",
+      "workflow_run": {
+        "id": 42763093847,
+        "repository_id": 1449811458,
+        "head_repository_id": 1449811458,
+        "head_branch": "research/real-project-feasibility-20261109",
+        "head_sha": "e8fb63b507ec4da7155b35211a682641f6c0fa9b"
+      }
+    },
+    {
+      "id": 13738711061,
+      "node_id": "MDg6QXJ0aWZhY3QxMzczODcxMTA2MQ==",
+      "name": "pilot-requests-1",
+      "size_in_bytes": 3501,
+      "url": "https://example.invalid/anonymous-research/ci-selection-testbed/actions/artifacts/13738711061",
+      "archive_download_url": "https://example.invalid/anonymous-research/ci-selection-testbed/actions/artifacts/13738711061/zip",
+      "expired": false,
+      "digest": "sha256:fe740e1a1c0bc4b5b5a61a981f59ade21ec6c751054bacffb81d5824205c1853",
+      "created_at": "2026-11-10T05:35:54Z",
+      "updated_at": "2026-11-10T05:35:54Z",
+      "expires_at": "2026-12-10T05:35:53Z",
+      "workflow_run": {
+        "id": 42763093847,
+        "repository_id": 1449811458,
+        "head_repository_id": 1449811458,
+        "head_branch": "research/real-project-feasibility-20261109",
+        "head_sha": "e8fb63b507ec4da7155b35211a682641f6c0fa9b"
+      }
+    },
+    {
+      "id": 13738446671,
+      "node_id": "MDg6QXJ0aWZhY3QxMzczODQ0NjY3MQ==",
+      "name": "pilot-urllib3-1",
+      "size_in_bytes": 3793,
+      "url": "https://example.invalid/anonymous-research/ci-selection-testbed/actions/artifacts/13738446671",
+      "archive_download_url": "https://example.invalid/anonymous-research/ci-selection-testbed/actions/artifacts/13738446671/zip",
+      "expired": false,
+      "digest": "sha256:d9f6881e350242e8644498a8f8f4d2afb5675b0cc565f9849350c3e89393e9f8",
+      "created_at": "2026-11-10T05:35:48Z",
+      "updated_at": "2026-11-10T05:35:48Z",
+      "expires_at": "2026-12-10T05:35:48Z",
+      "workflow_run": {
+        "id": 42763093847,
+        "repository_id": 1449811458,
+        "head_repository_id": 1449811458,
+        "head_branch": "research/real-project-feasibility-20261109",
+        "head_sha": "e8fb63b507ec4da7155b35211a682641f6c0fa9b"
+      }
+    },
+    {
+      "id": 13738387905,
+      "node_id": "MDg6QXJ0aWZhY3QxMzczODM4NzkwNQ==",
+      "name": "pilot-commons-text-1",
+      "size_in_bytes": 48541,
+      "url": "https://example.invalid/anonymous-research/ci-selection-testbed/actions/artifacts/13738387905",
+      "archive_download_url": "https://example.invalid/anonymous-research/ci-selection-testbed/actions/artifacts/13738387905/zip",
+      "expired": false,
+      "digest": "sha256:4b1383421f0947ae842e0977d7739c4ff3f93eed34c87e1232a2a15f50fa29c5",
+      "created_at": "2026-11-10T05:37:21Z",
+      "updated_at": "2026-11-10T05:37:21Z",
+      "expires_at": "2026-12-10T05:37:19Z",
+      "workflow_run": {
+        "id": 42763093847,
+        "repository_id": 1449811458,
+        "head_repository_id": 1449811458,
+        "head_branch": "research/real-project-feasibility-20261109",
+        "head_sha": "e8fb63b507ec4da7155b35211a682641f6c0fa9b"
+      }
+    },
+    {
+      "id": 13738119671,
+      "node_id": "MDg6QXJ0aWZhY3QxMzczODExOTY3MQ==",
+      "name": "pilot-commons-validator-1",
+      "size_in_bytes": 40720,
+      "url": "https://example.invalid/anonymous-research/ci-selection-testbed/actions/artifacts/13738119671",
+      "archive_download_url": "https://example.invalid/anonymous-research/ci-selection-testbed/actions/artifacts/13738119671/zip",
+      "expired": false,
+      "digest": "sha256:86a851e0c66e162259d11cdf8fd200af5bf497d9b3800044836dd30850f06975",
+      "created_at": "2026-11-10T05:37:21Z",
+      "updated_at": "2026-11-10T05:37:21Z",
+      "expires_at": "2026-12-10T05:37:21Z",
+      "workflow_run": {
+        "id": 42763093847,
+        "repository_id": 1449811458,
+        "head_repository_id": 1449811458,
+        "head_branch": "research/real-project-feasibility-20261109",
+        "head_sha": "e8fb63b507ec4da7155b35211a682641f6c0fa9b"
+      }
+    },
+    {
+      "id": 13738114285,
+      "node_id": "MDg6QXJ0aWZhY3QxMzczODExNDI4NQ==",
+      "name": "pilot-commons-io-1",
+      "size_in_bytes": 8993,
+      "url": "https://example.invalid/anonymous-research/ci-selection-testbed/actions/artifacts/13738114285",
+      "archive_download_url": "https://example.invalid/anonymous-research/ci-selection-testbed/actions/artifacts/13738114285/zip",
+      "expired": false,
+      "digest": "sha256:755dd5d1940c2a03a962bae5fcd6b2922df36d6df6772a3b5dd61ccb30002520",
+      "created_at": "2026-11-10T05:36:30Z",
+      "updated_at": "2026-11-10T05:36:30Z",
+      "expires_at": "2026-12-10T05:36:29Z",
+      "workflow_run": {
+        "id": 42763093847,
+        "repository_id": 1449811458,
+        "head_repository_id": 1449811458,
+        "head_branch": "research/real-project-feasibility-20261109",
+        "head_sha": "e8fb63b507ec4da7155b35211a682641f6c0fa9b"
+      }
+    },
+    {
+      "id": 13738069801,
+      "node_id": "MDg6QXJ0aWZhY3QxMzczODA2OTgwMQ==",
+      "name": "pilot-commons-lang-1",
+      "size_in_bytes": 69533,
+      "url": "https://example.invalid/anonymous-research/ci-selection-testbed/actions/artifacts/13738069801",
+      "archive_download_url": "https://example.invalid/anonymous-research/ci-selection-testbed/actions/artifacts/13738069801/zip",
+      "expired": false,
+      "digest": "sha256:d5bbb597a306e6c301ad4595b2427c6c5fc1eb5be19b39eeb6a52e0e10801f9b",
+      "created_at": "2026-11-10T05:37:49Z",
+      "updated_at": "2026-11-10T05:37:49Z",
+      "expires_at": "2026-12-10T05:37:48Z",
+      "workflow_run": {
+        "id": 42763093847,
+        "repository_id": 1449811458,
+        "head_repository_id": 1449811458,
+        "head_branch": "research/real-project-feasibility-20261109",
+        "head_sha": "e8fb63b507ec4da7155b35211a682641f6c0fa9b"
+      }
+    },
+    {
+      "id": 13737979743,
+      "node_id": "MDg6QXJ0aWZhY3QxMzczNzk3OTc0Mw==",
+      "name": "pilot-commons-codec-1",
+      "size_in_bytes": 41831,
+      "url": "https://example.invalid/anonymous-research/ci-selection-testbed/actions/artifacts/13737979743",
+      "archive_download_url": "https://example.invalid/anonymous-research/ci-selection-testbed/actions/artifacts/13737979743/zip",
+      "expired": false,
+      "digest": "sha256:4c84e66fe3ef7903b3bcfd48d8cc599f505f9061285b651148a64e46da8fa311",
+      "created_at": "2026-11-10T05:37:05Z",
+      "updated_at": "2026-11-10T05:37:05Z",
+      "expires_at": "2026-12-10T05:37:04Z",
+      "workflow_run": {
+        "id": 42763093847,
+        "repository_id": 1449811458,
+        "head_repository_id": 1449811458,
+        "head_branch": "research/real-project-feasibility-20261109",
+        "head_sha": "e8fb63b507ec4da7155b35211a682641f6c0fa9b"
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+Obtaining file:///home/runner/work/_temp/pilot/upstream
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: click
+  Building editable for click (pyproject.toml): started
+  Building editable for click (pyproject.toml): finished with status 'done'
+  Created wheel for click: filename=click-8.6.0.dev0-py3-none-any.whl size=3146 sha256=d432790c98bbbdf931a7976bb44f42b2970c816e52ce10ac8ba1585ba4122129
+  Stored in directory: /tmp/pip-ephem-wheel-cache-bye7jtps/wheels/6b/84/6d/73555933f26b16ae47f2111d49dde84bbe9fe186b7b0301f25
+Successfully built click
+Installing collected packages: click
+Successfully installed click-8.6.0.dev0
+
+
+[notice] A new release of pip is available: 25.0.1 -> 26.3
+[notice] To update, run: python -m pip install --upgrade pip

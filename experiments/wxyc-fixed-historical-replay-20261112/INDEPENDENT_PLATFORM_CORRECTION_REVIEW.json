@@ -1,0 +1,39 @@
+{
+  "reviewed_utc": "2026-11-12T16:07:18.938275+00:00",
+  "status": "SUPPORTED_AS_SEPARATELY_FROZEN_PLATFORM_CORRECTION",
+  "rationale": "The unchanged original full-unit oracle already requires jq; v1 failed before candidate application. Adding the missing required OS utility corrects execution prerequisites rather than changing a fault, assertion, selector or test scope.",
+  "v1_verdict": "Retain original ineligible baseline and all immutable evidence. Do not describe v1 as passing or count it among v2 repetitions.",
+  "mandatory_conditions": [
+    "Record a platform-only jq absence/presence diagnosis; do not rerun the project script or tests for diagnosis.",
+    "Use a separate v2 study path, freeze, image and result namespace; retain v1 image/freeze/results byte-identically.",
+    "Provision only jq and its necessary OS libraries, recording exact package versions and before/after OS-package inventory. Retain failures; do not silently upgrade unrelated components.",
+    "Project source, all471original unit files, original configuration, npm lock and installed Node dependency files must remain byte-identical to v1 baseline.",
+    "The frozen candidate must remain the identical one-line public historical-hunk inverse. No new fault or selector optimization.",
+    "Use the identical original full-unit/native-selection commands, environment assumptions, reporting rules and resource boundaries; only platform utility provisioning and versioned metadata may differ.",
+    "Require a new complete passing original baseline in each of three fresh v2 repetitions. Do not shrink the unit universe, skip the failing suite, or reuse v1 baseline/cache.",
+    "No positive result is assumed. Preserve every unsuccessful or ineligible v2 result and independently audit raw outcomes before any manuscript claim."
+  ],
+  "scope": "Platform correction only; no source/test/gate changes and no current candidate result.",
+  "auditor_execution": false,
+  "native_selector_primary_source": {
+    "host_snapshot": "NATIVE_JEST_CHANGED_FILES_PRIMARY.js",
+    "installed_path": "node_modules/jest-changed-files/build/index.js",
+    "sha256": "43666dbd94179a6bd89daee6010260b15590921f800a63eeef634a2cb4d5bc07",
+    "matches_original_installed_manifest": true,
+    "source_lines": [
+      59,
+      60,
+      61
+    ],
+    "observation": "The changedSince branch unions committed-diff paths, staged-diff paths and git ls-files --other --modified --exclude-standard paths.",
+    "implication": "The fixed uncommitted production candidate is considered by native changedSince selection. No candidate commit, Git-reference change or selector change is required.",
+    "scope": "Static source inspection only; no candidate selection was executed."
+  },
+  "explicit_platform_probe_confirmed": {
+    "path": "backend-provisioning/jq-prerequisite-correction/01b-readonly-missing-tool-diagnosis-private-scratch.log",
+    "sha256": "54d0b615d65b75784cde9646de4a3c6d064a9bc65e5b9d6fac315178861ef05f",
+    "jq_path": null,
+    "bash_path": "/usr/bin/bash",
+    "subject_executed": false
+  }
+}

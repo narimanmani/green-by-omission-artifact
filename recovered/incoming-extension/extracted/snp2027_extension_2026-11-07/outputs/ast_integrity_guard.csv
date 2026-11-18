@@ -1,0 +1,4 @@
+case,crc_equal,ast_different,suspicious_collision,analysis_ms,guarded_exit,security_failure_detected,fallback_tests_collected,log
+itsdangerous_expiry,True,True,True,7.9985,1,True,3,outputs/logs/ast_guard/itsdangerous_expiry/fail_closed_full.log
+starlette_trusted_host,True,True,True,2.8748,1,True,3,outputs/logs/ast_guard/starlette_trusted_host/fail_closed_full.log
+requests_crlf_header,True,True,True,83.398,1,True,3,outputs/logs/ast_guard/requests_crlf_header/fail_closed_full.log

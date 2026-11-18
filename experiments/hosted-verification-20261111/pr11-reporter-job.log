@@ -1,0 +1,74 @@
+﻿2026-11-09T07:13:56.7661217Z Current runner version: '2.338.2'
+2026-11-09T07:13:56.7698335Z ##[group]Runner Image Provisioner
+2026-11-09T07:13:56.7699799Z Hosted Compute Agent
+2026-11-09T07:13:56.7700922Z Version: 20261028.624
+2026-11-09T07:13:56.7702311Z Commit: 54898b74c23fde5556c9b3c3a2290865feef0dfe
+2026-11-09T07:13:56.7703828Z Build Date: 2026-10-28T21:51:42Z
+2026-11-09T07:13:56.7705126Z Worker ID: {51c3bda2-5d6e-4c17-925b-cafd7956b161}
+2026-11-09T07:13:56.7706464Z Region: eastus
+2026-11-09T07:13:56.7707465Z Cloud: Azure
+2026-11-09T07:13:56.7708419Z ##[endgroup]
+2026-11-09T07:13:56.7710967Z ##[group]Operating System
+2026-11-09T07:13:56.7712319Z Ubuntu
+2026-11-09T07:13:56.7713382Z 24.04.5
+2026-11-09T07:13:56.7714343Z LTS
+2026-11-09T07:13:56.7715265Z ##[endgroup]
+2026-11-09T07:13:56.7716413Z ##[group]Runner Image
+2026-11-09T07:13:56.7717533Z Image: ubuntu-24.04
+2026-11-09T07:13:56.7718674Z Version: 20261101.360.1
+2026-11-09T07:13:56.7720845Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261101.360/images/ubuntu/Ubuntu2404-Readme.md
+2026-11-09T07:13:56.7724138Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261101.360
+2026-11-09T07:13:56.7725953Z ##[endgroup]
+2026-11-09T07:13:56.7728182Z ##[group]GITHUB_TOKEN Permissions
+2026-11-09T07:13:56.7730934Z Metadata: read
+2026-11-09T07:13:56.7732547Z PullRequests: read
+2026-11-09T07:13:56.7733584Z Statuses: write
+2026-11-09T07:13:56.7734613Z ##[endgroup]
+2026-11-09T07:13:56.7737720Z Secret source: Actions
+2026-11-09T07:13:56.7739478Z Cache mode: read
+2026-11-09T07:13:56.7740738Z Prepare workflow directory
+2026-11-09T07:13:56.8237441Z Prepare all required actions
+2026-11-09T07:13:56.8393469Z Complete job name: publish-exact-head-testmon-status
+2026-11-09T07:13:57.0141081Z ##[group]Run python - <<'PY'
+2026-11-09T07:13:57.0142543Z [36;1mpython - <<'PY'[0m
+2026-11-09T07:13:57.0143588Z [36;1mimport json, os, re, urllib.request[0m
+2026-11-09T07:13:57.0144762Z [36;1mfrom pathlib import Path[0m
+2026-11-09T07:13:57.0146177Z [36;1mevent = json.loads(Path(os.environ['GITHUB_EVENT_PATH']).read_text())[0m
+2026-11-09T07:13:57.0147771Z [36;1mpr = event['pull_request'][0m
+2026-11-09T07:13:57.0148939Z [36;1mrepo = os.environ['GITHUB_REPOSITORY'][0m
+2026-11-09T07:13:57.0150286Z [36;1mhead, base = pr['head']['sha'], pr['base']['sha'][0m
+2026-11-09T07:13:57.0152647Z [36;1massert re.fullmatch(r'[0-9a-f]{40}', head)[0m
+2026-11-09T07:13:57.0154056Z [36;1massert re.fullmatch(r'[0-9a-f]{40}', base)[0m
+2026-11-09T07:13:57.0155631Z [36;1massert event['repository']['private'] and pr['base']['ref'] == 'main'[0m
+2026-11-09T07:13:57.0157277Z [36;1massert pr['head']['repo']['full_name'] == repo[0m
+2026-11-09T07:13:57.0158621Z [36;1massert base == os.environ['GITHUB_SHA'][0m
+2026-11-09T07:13:57.0160157Z [36;1mheaders = {'Authorization': 'Bearer ' + os.environ['GH_TOKEN'],[0m
+2026-11-09T07:13:57.0162934Z [36;1m           'Accept': 'application/vnd.github+json',[0m
+2026-11-09T07:13:57.0164293Z [36;1m           'X-GitHub-Api-Version': '2022-11-28'}[0m
+2026-11-09T07:13:57.0165479Z [36;1mapi = os.environ['GITHUB_API_URL'][0m
+2026-11-09T07:13:57.0166332Z [36;1mdef request(path, data=None):[0m
+2026-11-09T07:13:57.0167125Z [36;1m    req = urllib.request.Request(api + path, headers=headers,[0m
+2026-11-09T07:13:57.0168040Z [36;1m          data=None if data is None else json.dumps(data).encode())[0m
+2026-11-09T07:13:57.0168939Z [36;1m    with urllib.request.urlopen(req, timeout=30) as response:[0m
+2026-11-09T07:13:57.0169721Z [36;1m        return json.load(response)[0m
+2026-11-09T07:13:57.0170542Z [36;1mcurrent = request('/repos/' + repo + '/pulls/' + str(int(event['number'])))[0m
+2026-11-09T07:13:57.0172416Z [36;1mif (current['state'] != 'open' or current['head']['sha'] != head or[0m
+2026-11-09T07:13:57.0174147Z [36;1m        current['base']['sha'] != base or current['base']['ref'] != 'main'):[0m
+2026-11-09T07:13:57.0175222Z [36;1m    print('Stale event: no status published')[0m
+2026-11-09T07:13:57.0175915Z [36;1m    raise SystemExit(0)[0m
+2026-11-09T07:13:57.0177008Z [36;1mstate = 'success' if os.environ['SELECTION_RESULT'] == 'success' else 'failure'[0m
+2026-11-09T07:13:57.0177947Z [36;1mrequest('/repos/' + repo + '/statuses/' + head, {[0m
+2026-11-09T07:13:57.0178719Z [36;1m    'state': state, 'context': 'testmon-required',[0m
+2026-11-09T07:13:57.0179709Z [36;1m    'description': 'Reviewed fixture policy and measured native selection: ' + state,[0m
+2026-11-09T07:13:57.0181224Z [36;1m    'target_url': os.environ['GITHUB_SERVER_URL'] + '/' + repo +[0m
+2026-11-09T07:13:57.0183406Z [36;1m                  '/actions/runs/' + os.environ['GITHUB_RUN_ID']})[0m
+2026-11-09T07:13:57.0185352Z [36;1mprint('Published testmon-required=' + state + ' for PR head ' + head)[0m
+2026-11-09T07:13:57.0186871Z [36;1mPY[0m
+2026-11-09T07:13:57.0479945Z shell: /usr/bin/bash -e {0}
+2026-11-09T07:13:57.0482207Z env:
+2026-11-09T07:13:57.0490801Z   GH_TOKEN: ***
+2026-11-09T07:13:57.0491760Z   SELECTION_RESULT: success
+2026-11-09T07:13:57.0493008Z ##[endgroup]
+2026-11-09T07:13:58.1906629Z Published testmon-required=success for PR head 2dab362688e99fa92b3a1189920155a5ff20713f
+2026-11-09T07:13:58.2244805Z Cleaning up orphan processes
+

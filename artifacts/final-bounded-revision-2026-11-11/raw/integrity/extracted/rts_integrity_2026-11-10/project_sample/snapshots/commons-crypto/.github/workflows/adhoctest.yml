@@ -1,0 +1,120 @@
+# Licensed to the Apache Software Foundation (ASF) under one or more
+# contributor license agreements.  See the NOTICE file distributed with
+# this work for additional information regarding copyright ownership.
+# The ASF licenses this file to You under the Apache License, Version 2.0
+# (the "License"); you may not use this file except in compliance with
+# the License.  You may obtain a copy of the License at
+#
+#      https://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+name: Java AdHoc
+
+# Check for openssl and crypto installs
+
+on:
+  # allow direct trigger
+  workflow_dispatch:
+  # and self-trigger
+  push:
+    paths:
+      - '**/workflows/adhoctest.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    timeout-minutes: 5
+
+    runs-on: ${{ matrix.os }}
+    strategy:
+      max-parallel: 10
+      matrix:
+        # https://docs.github.com/en/actions/reference/runners/github-hosted-runners#supported-runners-and-hardware-resources
+        os: [macos-15-intel, macos-26-intel, macos-14, macos-15, macos-26, ubuntu-latest, windows-latest]
+      fail-fast: false
+
+    steps:
+    - name: OpenSSL version
+      run: openssl version -a
+    - name: Find libcrypto on Windows
+      if: ${{ runner.os == 'Windows' }}
+      run: |
+        dir "C:\Program Files\OpenSSL*\*"
+        dir "C:\Program Files\OpenSSL*\lib\*"
+    - name: Find OpenSSL on !Windows
+      if: ${{ runner.os != 'Windows' }}
+      run: |
+        set +e
+        set -x
+        
+        echo "=== OpenSSL Path Discovery ==="
+        
+        if [[ "$OSTYPE" == "darwin"* ]]; then
+            echo "--- macOS OpenSSL Detection ---"
+            
+            MAC_OS_OPENSSL_DIRS=(
+                "/opt/homebrew/opt/openssl@3"
+                "/opt/homebrew/opt/openssl@1.1"
+                "/usr/local/opt/openssl@3"
+                "/usr/local/opt/openssl@1.1"
+                "/opt/local"
+                "/opt/homebrew"
+                "/usr/local"
+            )
+            
+            MAC_LIB_OPENSSL=""
+            MAC_INC_OPENSSL=""
+            
+            echo "--- Checking directories ---"
+            for dir in "${MAC_OS_OPENSSL_DIRS[@]}"; do
+                lib_dir="$dir/lib"
+                inc_dir="$dir/include"
+                
+                echo "  Checking: $dir"
+                
+                if [[ -d "$lib_dir" ]] && [[ -z "$MAC_LIB_OPENSSL" ]]; then
+                    for lib in "libcrypto.dylib" "libcrypto.3.dylib" "libcrypto.1.1.dylib"; do
+                        if [[ -f "$lib_dir/$lib" ]]; then
+                            MAC_LIB_OPENSSL="$lib_dir"
+                            echo "    Found lib: $lib_dir/$lib"
+                            break
+                        fi
+                    done
+                fi
+                
+                if [[ -d "$inc_dir" ]] && [[ -z "$MAC_INC_OPENSSL" ]] && [[ -f "$inc_dir/openssl/aes.h" ]]; then
+                    MAC_INC_OPENSSL="$inc_dir"
+                    echo "    Found include: $inc_dir/openssl/aes.h"
+                fi
+            done
+            
+            echo "--- Discovery Results ---"
+            if [[ -n "$MAC_LIB_OPENSSL" ]]; then
+                echo "MAC_LIB_OPENSSL=$MAC_LIB_OPENSSL"
+                ls -la "$MAC_LIB_OPENSSL"/libcrypto*.dylib 2>/dev/null || true
+            else
+                echo "MAC_LIB_OPENSSL=NOT_FOUND"
+            fi
+            
+            if [[ -n "$MAC_INC_OPENSSL" ]]; then
+                echo "MAC_INC_OPENSSL=$MAC_INC_OPENSSL"
+                ls -la "$MAC_INC_OPENSSL"/openssl/aes.h 2>/dev/null || true
+            else
+                echo "MAC_INC_OPENSSL=NOT_FOUND"
+            fi
+        else
+            echo "--- Linux OpenSSL Detection ---"
+            find /usr -name aes.h -ls 2>/dev/null || true
+            find /usr -type d -name openssl -ls 2>/dev/null || true
+            find /usr/lib* -name libcrypto.so* -ls 2>/dev/null || true
+        fi
+        
+        echo "=== OpenSSL Binary Locations ==="
+        which -a openssl | while read a ;do echo "$a" ; "$a" version -a; echo '======='; done

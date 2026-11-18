@@ -1,0 +1,44 @@
+[
+  {
+    "case": "itsdangerous_expiry",
+    "modified_files": 1,
+    "changed_only_path": "itsdangerous/timed.py",
+    "baseline_exit": 0,
+    "native_exit": 0,
+    "native_collected": 0,
+    "native_stdout_tail": "_cache\ntestmon: changed files: 0, unchanged files: 7, environment: default\nrootdir: /mnt/data/snp2027_extension_2026-11-07/outputs/workspaces/itsdangerous_expiry/single_file_collision\nconfigfile: pytest.ini\ntestpaths: tests\ncollecting ... collected 0 items\n\n=================== Testmon savings (deselected/no testmon) ====================\nthis run: 3/3 (100%) tests, 0m 0s/0m 0s, all runs: 3/6 (50%) tests, 0m 0s/0m 0s\n============================ no tests ran in 0.00s =============================\n",
+    "full_exit": 1,
+    "full_collected": 3,
+    "security_test_failed": true,
+    "trusted_db_hash": "c41ae4c4210a8e29629d6d2da9a0b6bc8f756e678af82309e23f574b2d6b7c33",
+    "bypass_confirmed": true
+  },
+  {
+    "case": "starlette_trusted_host",
+    "modified_files": 1,
+    "changed_only_path": "starlette/middleware/trustedhost.py",
+    "baseline_exit": 0,
+    "native_exit": 0,
+    "native_collected": 0,
+    "native_stdout_tail": "he\ntestmon: changed files: 0, unchanged files: 15, environment: default\nrootdir: /mnt/data/snp2027_extension_2026-11-07/outputs/workspaces/starlette_trusted_host/single_file_collision\nconfigfile: pytest.ini\ntestpaths: tests\ncollecting ... collected 0 items\n\n=================== Testmon savings (deselected/no testmon) ====================\nthis run: 3/3 (100%) tests, 0m 0s/0m 0s, all runs: 3/6 (50%) tests, 0m 0s/0m 0s\n============================ no tests ran in 0.00s =============================\n",
+    "full_exit": 1,
+    "full_collected": 3,
+    "security_test_failed": true,
+    "trusted_db_hash": "d2141cf704ab95773ed04bef9ff5a288cefe07c8951994a89ff24522ab7daa0f",
+    "bypass_confirmed": true
+  },
+  {
+    "case": "requests_crlf_header",
+    "modified_files": 1,
+    "changed_only_path": "requests/utils.py",
+    "baseline_exit": 0,
+    "native_exit": 0,
+    "native_collected": 0,
+    "native_stdout_tail": "ache\ntestmon: changed files: 0, unchanged files: 10, environment: default\nrootdir: /mnt/data/snp2027_extension_2026-11-07/outputs/workspaces/requests_crlf_header/single_file_collision\nconfigfile: pytest.ini\ntestpaths: tests\ncollecting ... collected 0 items\n\n=================== Testmon savings (deselected/no testmon) ====================\nthis run: 3/3 (100%) tests, 0m 0s/0m 0s, all runs: 3/6 (50%) tests, 0m 0s/0m 0s\n============================ no tests ran in 0.00s =============================\n",
+    "full_exit": 1,
+    "full_collected": 3,
+    "security_test_failed": true,
+    "trusted_db_hash": "9a4e1ccfb29049852a5a25335b320c3e86261e41a45d14d84b6e11e14a1db3b9",
+    "bypass_confirmed": true
+  }
+]

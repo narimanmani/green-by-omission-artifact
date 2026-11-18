@@ -1,0 +1,28 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python
+cachedir: .pytest_cache
+depper: smart test selection enabled (base branch: main)
+rootdir: /home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo
+configfile: pytest.ini
+testpaths: tests
+plugins: anyio-4.16.0, depper-0.2.0
+collecting ... 
+No changed files detected. Running all tests (--depper-run-all-on-error enabled).
+collected 3 items
+
+tests/test_meta.py::test_metadata_build_positive PASSED
+tests/test_security.py::test_security_rejects_untrusted_host PASSED
+tests/test_security.py::test_valid_host_passes PASSED
+
+=============================== warnings summary ===============================
+starlette/testclient.py:45
+  /home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/testclient.py:45: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED tests/test_meta.py::test_metadata_build_positive
+PASSED tests/test_security.py::test_security_rejects_untrusted_host
+PASSED tests/test_security.py::test_valid_host_passes
+========================= 3 passed, 1 warning in 0.09s =========================

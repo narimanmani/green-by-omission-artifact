@@ -1,0 +1,765 @@
+[
+  {
+    "command": [
+      "git",
+      "init",
+      "-b",
+      "main"
+    ],
+    "returncode": 0,
+    "stdout": "Initialized empty Git repository in <user-home>/OneDrive/Documents/ChatGPT/sp2027/native/current-validation/results/itsdangerous_expiry/repo/.git/\n",
+    "stderr": "",
+    "seconds": 0.12112975120544434
+  },
+  {
+    "command": [
+      "git",
+      "config",
+      "user.name",
+      "Private native selector research"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.11829566955566406
+  },
+  {
+    "command": [
+      "git",
+      "config",
+      "user.email",
+      "research@example.invalid"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.10395407676696777
+  },
+  {
+    "command": [
+      "git",
+      "config",
+      "core.autocrlf",
+      "false"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.10685896873474121
+  },
+  {
+    "command": [
+      "git",
+      "add",
+      "."
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.16124415397644043
+  },
+  {
+    "command": [
+      "git",
+      "commit",
+      "-m",
+      "Exact recovered trusted baseline"
+    ],
+    "returncode": 0,
+    "stdout": "[main (root-commit) 9573a8a] Exact recovered trusted baseline\n 13 files changed, 1225 insertions(+)\n create mode 100644 build_meta.py\n create mode 100644 itsdangerous/__init__.py\n create mode 100644 itsdangerous/_json.py\n create mode 100644 itsdangerous/encoding.py\n create mode 100644 itsdangerous/exc.py\n create mode 100644 itsdangerous/py.typed\n create mode 100644 itsdangerous/serializer.py\n create mode 100644 itsdangerous/signer.py\n create mode 100644 itsdangerous/timed.py\n create mode 100644 itsdangerous/url_safe.py\n create mode 100644 pytest.ini\n create mode 100644 tests/test_meta.py\n create mode 100644 tests/test_security.py\n",
+    "stderr": "",
+    "seconds": 0.2039928436279297
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "9573a8af3251575c4737219754844eac48e3b60a\n",
+    "stderr": "",
+    "seconds": 0.11328697204589844
+  },
+  {
+    "command": [
+      "git",
+      "update-ref",
+      "refs/remotes/origin/main",
+      "9573a8af3251575c4737219754844eac48e3b60a"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.11512184143066406
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "--detach",
+      "9573a8af3251575c4737219754844eac48e3b60a"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "HEAD is now at 9573a8a Exact recovered trusted baseline\n",
+    "seconds": 0.1330699920654297
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--name-only",
+      "main...HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.12720632553100586
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.10901379585266113
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "9573a8af3251575c4737219754844eac48e3b60a\n",
+    "stderr": "",
+    "seconds": 0.11612868309020996
+  },
+  {
+    "command": [
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nNo changed files detected. Deselecting all tests.\nUse --depper-run-all-on-error to run all tests when no changes are detected.\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive SKIPPED (No files\nchanged)\ntests/test_security.py::test_security_rejects_expired SKIPPED (No files\nchanged)\ntests/test_security.py::test_valid_signature_passes SKIPPED (No files\nchanged)\n\n=========================== short test summary info ===========================\nSKIPPED [1] tests\\test_meta.py: No files changed\nSKIPPED [2] tests\\test_security.py: No files changed\n============================= 3 skipped in 0.32s ==============================\n",
+    "stderr": "",
+    "seconds": 0.6194510459899902
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.11954259872436523
+  },
+  {
+    "command": [
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug",
+      "--depper-run-all-on-error"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nNo changed files detected. Running all tests (--depper-run-all-on-error enabled).\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_expired PASSED\ntests/test_security.py::test_valid_signature_passes PASSED\n\n=================================== PASSES ====================================\n=========================== short test summary info ===========================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_security_rejects_expired\nPASSED tests/test_security.py::test_valid_signature_passes\n============================== 3 passed in 0.42s ==============================\n",
+    "stderr": "",
+    "seconds": 0.7461373805999756
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.13109660148620605
+  },
+  {
+    "command": [
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\nrootdir: <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... collected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_expired PASSED\ntests/test_security.py::test_valid_signature_passes PASSED\n\n=================================== PASSES ====================================\n=========================== short test summary info ===========================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_security_rejects_expired\nPASSED tests/test_security.py::test_valid_signature_passes\n============================== 3 passed in 0.03s ==============================\n",
+    "stderr": "",
+    "seconds": 0.32573699951171875
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.11495351791381836
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "--detach",
+      "9573a8af3251575c4737219754844eac48e3b60a"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "HEAD is now at 9573a8a Exact recovered trusted baseline\n",
+    "seconds": 0.11816048622131348
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "-c",
+      "benign_comment"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Switched to a new branch 'benign_comment'\n",
+    "seconds": 0.12682080268859863
+  },
+  {
+    "command": [
+      "git",
+      "add",
+      "--",
+      "itsdangerous/timed.py"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.15727782249450684
+  },
+  {
+    "command": [
+      "git",
+      "commit",
+      "-m",
+      "Benign comment control"
+    ],
+    "returncode": 0,
+    "stdout": "[benign_comment 5b3ed9b] Benign comment control\n 1 file changed, 2 insertions(+)\n",
+    "stderr": "",
+    "seconds": 0.23769164085388184
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--name-only",
+      "main...HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "itsdangerous/timed.py\n",
+    "stderr": "",
+    "seconds": 0.11511468887329102
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.11269569396972656
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "5b3ed9b9305e1e06237cafcc4689635d545d5571\n",
+    "stderr": "",
+    "seconds": 0.1283109188079834
+  },
+  {
+    "command": [
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nDepper: Found 1 changed files\n  - itsdangerous/timed.py\n\n=== Dependency Analysis ===\n\nChanged file: itsdangerous/timed.py\n\nDepper: No tests affected by these changes\nDeselecting all tests. This may indicate missing test coverage.\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive SKIPPED (No tests\naffected by changes)\ntests/test_security.py::test_security_rejects_expired SKIPPED (No tests\naffected by changes)\ntests/test_security.py::test_valid_signature_passes SKIPPED (No tests\naffected by changes)\n\n=========================== short test summary info ===========================\nSKIPPED [1] tests\\test_meta.py: No tests affected by changes\nSKIPPED [2] tests\\test_security.py: No tests affected by changes\n============================= 3 skipped in 0.43s ==============================\n",
+    "stderr": "",
+    "seconds": 0.7497982978820801
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.11554598808288574
+  },
+  {
+    "command": [
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug",
+      "--depper-run-all-on-error"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nDepper: Found 1 changed files\n  - itsdangerous/timed.py\n\n=== Dependency Analysis ===\n\nChanged file: itsdangerous/timed.py\n\nDepper: No tests affected by these changes\nRunning all tests (--depper-run-all-on-error enabled).\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_expired PASSED\ntests/test_security.py::test_valid_signature_passes PASSED\n\n=================================== PASSES ====================================\n=========================== short test summary info ===========================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_security_rejects_expired\nPASSED tests/test_security.py::test_valid_signature_passes\n============================== 3 passed in 0.36s ==============================\n",
+    "stderr": "",
+    "seconds": 0.6623773574829102
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.13274288177490234
+  },
+  {
+    "command": [
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\nrootdir: <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... collected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_expired PASSED\ntests/test_security.py::test_valid_signature_passes PASSED\n\n=================================== PASSES ====================================\n=========================== short test summary info ===========================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_security_rejects_expired\nPASSED tests/test_security.py::test_valid_signature_passes\n============================== 3 passed in 0.03s ==============================\n",
+    "stderr": "",
+    "seconds": 0.35677623748779297
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.13158321380615234
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "--detach",
+      "9573a8af3251575c4737219754844eac48e3b60a"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "HEAD is now at 9573a8a Exact recovered trusted baseline\n",
+    "seconds": 0.1146690845489502
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "-c",
+      "ordinary"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Switched to a new branch 'ordinary'\n",
+    "seconds": 0.13914895057678223
+  },
+  {
+    "command": [
+      "git",
+      "add",
+      "--",
+      "itsdangerous/timed.py"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.1277318000793457
+  },
+  {
+    "command": [
+      "git",
+      "commit",
+      "-m",
+      "Original ordinary source snapshot"
+    ],
+    "returncode": 0,
+    "stdout": "[ordinary 3d6aae9] Original ordinary source snapshot\n 1 file changed, 1 insertion(+), 1 deletion(-)\n",
+    "stderr": "",
+    "seconds": 0.21737432479858398
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--name-only",
+      "main...HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "itsdangerous/timed.py\n",
+    "stderr": "",
+    "seconds": 0.11408162117004395
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.12626409530639648
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "3d6aae90732ccbea3d9dc7ae39433ed82adc3f64\n",
+    "stderr": "",
+    "seconds": 0.10955953598022461
+  },
+  {
+    "command": [
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nDepper: Found 1 changed files\n  - itsdangerous/timed.py\n\n=== Symbol-Level Dependency Analysis ===\n\nChanged file: itsdangerous/timed.py\n  Changed symbols: {'TimestampSigner'}\n\nDepper: No tests affected by these changes\nDeselecting all tests. This may indicate missing test coverage.\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive SKIPPED (No tests\naffected by changes)\ntests/test_security.py::test_security_rejects_expired SKIPPED (No tests\naffected by changes)\ntests/test_security.py::test_valid_signature_passes SKIPPED (No tests\naffected by changes)\n\n=========================== short test summary info ===========================\nSKIPPED [1] tests\\test_meta.py: No tests affected by changes\nSKIPPED [2] tests\\test_security.py: No tests affected by changes\n============================= 3 skipped in 0.35s ==============================\n",
+    "stderr": "",
+    "seconds": 0.6562228202819824
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.11780524253845215
+  },
+  {
+    "command": [
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug",
+      "--depper-run-all-on-error"
+    ],
+    "returncode": 1,
+    "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nDepper: Found 1 changed files\n  - itsdangerous/timed.py\n\n=== Symbol-Level Dependency Analysis ===\n\nChanged file: itsdangerous/timed.py\n  Changed symbols: {'TimestampSigner'}\n\nDepper: No tests affected by these changes\nRunning all tests (--depper-run-all-on-error enabled).\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_expired FAILED\ntests/test_security.py::test_valid_signature_passes PASSED\n\n================================== FAILURES ===================================\n________________________ test_security_rejects_expired ________________________\n\n    def test_security_rejects_expired():\n        signer = TimestampSigner('lab-secret')\n        signer.get_timestamp = lambda: 100\n        signed = signer.sign('sensitive')\n        signer.get_timestamp = lambda: 120\n>       with pytest.raises(SignatureExpired):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE <class 'itsdangerous.exc.SignatureExpired'>\n\ntests\\test_security.py:9: Failed\n=================================== PASSES ====================================\n=========================== short test summary info ===========================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_valid_signature_passes\nFAILED tests/test_security.py::test_security_rejects_expired - Failed: DID NOT RAISE <class 'itsdangerous.exc.SignatureExpired'>\n========================= 1 failed, 2 passed in 0.56s =========================\n",
+    "stderr": "",
+    "seconds": 0.8700988292694092
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.11040019989013672
+  },
+  {
+    "command": [
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no"
+    ],
+    "returncode": 1,
+    "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\nrootdir: <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... collected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_expired FAILED\ntests/test_security.py::test_valid_signature_passes PASSED\n\n================================== FAILURES ===================================\n________________________ test_security_rejects_expired ________________________\n\n    def test_security_rejects_expired():\n        signer = TimestampSigner('lab-secret')\n        signer.get_timestamp = lambda: 100\n        signed = signer.sign('sensitive')\n        signer.get_timestamp = lambda: 120\n>       with pytest.raises(SignatureExpired):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE <class 'itsdangerous.exc.SignatureExpired'>\n\ntests\\test_security.py:9: Failed\n=================================== PASSES ====================================\n=========================== short test summary info ===========================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_valid_signature_passes\nFAILED tests/test_security.py::test_security_rejects_expired - Failed: DID NOT RAISE <class 'itsdangerous.exc.SignatureExpired'>\n========================= 1 failed, 2 passed in 0.06s =========================\n",
+    "stderr": "",
+    "seconds": 0.36888694763183594
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.1306779384613037
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "--detach",
+      "9573a8af3251575c4737219754844eac48e3b60a"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "HEAD is now at 9573a8a Exact recovered trusted baseline\n",
+    "seconds": 0.14933991432189941
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "-c",
+      "collision"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Switched to a new branch 'collision'\n",
+    "seconds": 0.11517882347106934
+  },
+  {
+    "command": [
+      "git",
+      "add",
+      "--",
+      "itsdangerous/timed.py"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.13079547882080078
+  },
+  {
+    "command": [
+      "git",
+      "commit",
+      "-m",
+      "Original collision source snapshot"
+    ],
+    "returncode": 0,
+    "stdout": "[collision 9bf9281] Original collision source snapshot\n 1 file changed, 2 insertions(+), 1 deletion(-)\n",
+    "stderr": "",
+    "seconds": 0.2526376247406006
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--name-only",
+      "main...HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "itsdangerous/timed.py\n",
+    "stderr": "",
+    "seconds": 0.16233277320861816
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.141923189163208
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "9bf928192c340dec28cfa052d05aa4bba1a7bf6a\n",
+    "stderr": "",
+    "seconds": 0.11313605308532715
+  },
+  {
+    "command": [
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nDepper: Found 1 changed files\n  - itsdangerous/timed.py\n\n=== Symbol-Level Dependency Analysis ===\n\nChanged file: itsdangerous/timed.py\n  Changed symbols: {'TimestampSigner'}\n\nDepper: No tests affected by these changes\nDeselecting all tests. This may indicate missing test coverage.\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive SKIPPED (No tests\naffected by changes)\ntests/test_security.py::test_security_rejects_expired SKIPPED (No tests\naffected by changes)\ntests/test_security.py::test_valid_signature_passes SKIPPED (No tests\naffected by changes)\n\n=========================== short test summary info ===========================\nSKIPPED [1] tests\\test_meta.py: No tests affected by changes\nSKIPPED [2] tests\\test_security.py: No tests affected by changes\n============================= 3 skipped in 0.36s ==============================\n",
+    "stderr": "",
+    "seconds": 0.6820831298828125
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.11754846572875977
+  },
+  {
+    "command": [
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug",
+      "--depper-run-all-on-error"
+    ],
+    "returncode": 1,
+    "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nDepper: Found 1 changed files\n  - itsdangerous/timed.py\n\n=== Symbol-Level Dependency Analysis ===\n\nChanged file: itsdangerous/timed.py\n  Changed symbols: {'TimestampSigner'}\n\nDepper: No tests affected by these changes\nRunning all tests (--depper-run-all-on-error enabled).\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_expired FAILED\ntests/test_security.py::test_valid_signature_passes PASSED\n\n================================== FAILURES ===================================\n________________________ test_security_rejects_expired ________________________\n\n    def test_security_rejects_expired():\n        signer = TimestampSigner('lab-secret')\n        signer.get_timestamp = lambda: 100\n        signed = signer.sign('sensitive')\n        signer.get_timestamp = lambda: 120\n>       with pytest.raises(SignatureExpired):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE <class 'itsdangerous.exc.SignatureExpired'>\n\ntests\\test_security.py:9: Failed\n=================================== PASSES ====================================\n=========================== short test summary info ===========================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_valid_signature_passes\nFAILED tests/test_security.py::test_security_rejects_expired - Failed: DID NOT RAISE <class 'itsdangerous.exc.SignatureExpired'>\n========================= 1 failed, 2 passed in 0.39s =========================\n",
+    "stderr": "",
+    "seconds": 0.6889066696166992
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.11762094497680664
+  },
+  {
+    "command": [
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no"
+    ],
+    "returncode": 1,
+    "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\nrootdir: <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... collected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_expired FAILED\ntests/test_security.py::test_valid_signature_passes PASSED\n\n================================== FAILURES ===================================\n________________________ test_security_rejects_expired ________________________\n\n    def test_security_rejects_expired():\n        signer = TimestampSigner('lab-secret')\n        signer.get_timestamp = lambda: 100\n        signed = signer.sign('sensitive')\n        signer.get_timestamp = lambda: 120\n>       with pytest.raises(SignatureExpired):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE <class 'itsdangerous.exc.SignatureExpired'>\n\ntests\\test_security.py:9: Failed\n=================================== PASSES ====================================\n=========================== short test summary info ===========================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_valid_signature_passes\nFAILED tests/test_security.py::test_security_rejects_expired - Failed: DID NOT RAISE <class 'itsdangerous.exc.SignatureExpired'>\n========================= 1 failed, 2 passed in 0.06s =========================\n",
+    "stderr": "",
+    "seconds": 0.3922433853149414
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.17305517196655273
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "--detach",
+      "9573a8af3251575c4737219754844eac48e3b60a"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "HEAD is now at 9573a8a Exact recovered trusted baseline\n",
+    "seconds": 0.14293622970581055
+  },
+  {
+    "command": [
+      "git",
+      "bundle",
+      "create",
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\itsdangerous_expiry\\history.bundle",
+      "--all"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.18891239166259766
+  }
+]

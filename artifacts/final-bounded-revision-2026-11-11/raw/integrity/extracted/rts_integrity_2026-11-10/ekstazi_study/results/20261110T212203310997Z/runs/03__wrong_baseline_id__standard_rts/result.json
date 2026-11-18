@@ -1,0 +1,80 @@
+{
+  "agent_enabled": true,
+  "case_id": "wrong_baseline_id",
+  "command": [
+    "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+    "-javaagent:/workspace/scratch/0827c1f80a7f/toolchain/org.ekstazi.core-5.3.0.jar=mode=junit",
+    "-cp",
+    "/workspace/scratch/0827c1f80a7f/ekstazi_study/native_work/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar",
+    "TraceRunner",
+    "lab.ArithmeticTest",
+    "lab.LabelTest",
+    "lab.UnrelatedTest"
+  ],
+  "cwd": "/workspace/scratch/0827c1f80a7f/ekstazi_study/native_work",
+  "diagnostic_integrity_reasons": [
+    "baseline_id_mismatch"
+  ],
+  "execution_status": "completed",
+  "failures": 2,
+  "fallback": false,
+  "false_green": false,
+  "finding_type": "native_observation_under_simulated_integrity_fault",
+  "integrity_status": "not_enforced",
+  "junit_summary": {
+    "failures": 2,
+    "ignored": 0,
+    "run": 3,
+    "successful": false
+  },
+  "metadata_after": {
+    "lab.ArithmeticTest.clz": "c733a2fdc8b0dd437345a190f621ffccbc1db11ee401a8ce1494b070cf2a7920",
+    "lab.LabelTest.clz": "26fd2bb96ec1fcd5321feb4c7ffcfb5edb78b6fac866fba71ed350babea8f151",
+    "lab.UnrelatedTest.clz": "612fbe3f077c55e89ac8a8c4c598a1abcc409eae7a4c86e3fec4574eb3bf3978",
+    "test-results/lab.ArithmeticTest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "metadata_before": {
+    "lab.ArithmeticTest.clz": "5d549968f64d6cf4fb91e6e5b039746db3e53e278f686d02467ada30e34de17e",
+    "lab.LabelTest.clz": "b77198218794174e182c55f564bb26a4f7383af9b0a03aeeab3a18a3dfd1cc0c",
+    "lab.UnrelatedTest.clz": "612fbe3f077c55e89ac8a8c4c598a1abcc409eae7a4c86e3fec4574eb3bf3978"
+  },
+  "methods_executed": 3,
+  "oracle_failing_tests": [
+    "lab.ArithmeticTest.additionContract",
+    "lab.ArithmeticTest.zeroContract"
+  ],
+  "phase": "fault_corpus",
+  "process_seconds": 0.45531648299999006,
+  "regression_detected": true,
+  "relevant_tests_omitted": [],
+  "repetition": 3,
+  "returncode": 1,
+  "run_id": "03__wrong_baseline_id__standard_rts",
+  "source_hashes": {
+    "java/lab/Arithmetic.java": "122282f7dddc201e2bfd59d53dc0d57f19b9a9b7a5bfdcc859cc7ce45408a951",
+    "java/lab/Label.java": "7ef8aae882b30b1006177f8cd86c0aac112941148cd9e6fed911de867a4f5fc0",
+    "java/lab/Unrelated.java": "bd1aaa99f2c2481b0f54bc88d78ed9c2d9aafd0a658cdd600189dffd12b79b9a"
+  },
+  "strategy": "standard_rts",
+  "test_classes_executed": [
+    "lab.ArithmeticTest",
+    "lab.LabelTest"
+  ],
+  "test_hashes": {
+    "java/lab/ArithmeticTest.java": "9f0f48acb216b85b3ab8c52b52ef6798092b60abfb3a915c3bf5c277ea6763c5",
+    "java/lab/LabelTest.java": "0899064eedee3aa8f3a9b6c9eebb1371c6ec16376f55fc41b0fa95bc1900ecbf",
+    "java/lab/UnrelatedTest.java": "c588c5c8c9e0f5606bf111020b5528b8e38cbc05ff1343186c94c08ae9f3a056"
+  },
+  "tests_executed": [
+    "lab.ArithmeticTest.additionContract",
+    "lab.ArithmeticTest.zeroContract",
+    "lab.LabelTest.labelContract"
+  ],
+  "tests_failed": [
+    "lab.ArithmeticTest.additionContract",
+    "lab.ArithmeticTest.zeroContract"
+  ],
+  "timed_out": false,
+  "total_seconds": 0.45531648299999006,
+  "verification_seconds": 0
+}

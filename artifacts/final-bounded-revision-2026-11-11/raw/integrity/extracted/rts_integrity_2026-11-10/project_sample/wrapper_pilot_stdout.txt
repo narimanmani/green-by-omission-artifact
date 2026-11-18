@@ -1,0 +1,61 @@
+cli cold_baseline 0 3 0
+cli warm_baseline 0 0 0
+cli full_baseline 0 3 0
+cli ordinary_change standard_rts 1 2 1
+cli ordinary_change fail_closed 1 2 1
+cli ordinary_change full_suite 1 3 1
+cli target_metadata_missing standard_rts 1 2 1
+cli target_metadata_missing fail_closed 1 3 1
+cli target_metadata_missing full_suite 1 3 1
+cli target_metadata_truncated_50pct standard_rts 1 2 1
+cli target_metadata_truncated_50pct fail_closed 1 3 1
+cli target_metadata_truncated_50pct full_suite 1 3 1
+csv cold_baseline 0 3 0
+csv warm_baseline 0 0 0
+csv full_baseline 0 3 0
+csv ordinary_change standard_rts 1 2 1
+csv ordinary_change fail_closed 1 2 1
+csv ordinary_change full_suite 1 3 1
+csv target_metadata_missing standard_rts 1 2 1
+csv target_metadata_missing fail_closed 1 3 1
+csv target_metadata_missing full_suite 1 3 1
+csv target_metadata_truncated_50pct standard_rts 1 2 1
+csv target_metadata_truncated_50pct fail_closed 1 3 1
+csv target_metadata_truncated_50pct full_suite 1 3 1
+codec cold_baseline 0 3 0
+codec warm_baseline 0 0 0
+codec full_baseline 0 3 0
+codec ordinary_change standard_rts 1 2 1
+codec ordinary_change fail_closed 1 2 1
+codec ordinary_change full_suite 1 3 1
+codec target_metadata_missing standard_rts 1 2 1
+codec target_metadata_missing fail_closed 1 3 1
+codec target_metadata_missing full_suite 1 3 1
+codec target_metadata_truncated_50pct standard_rts 1 2 1
+codec target_metadata_truncated_50pct fail_closed 1 3 1
+codec target_metadata_truncated_50pct full_suite 1 3 1
+io cold_baseline 0 3 0
+io warm_baseline 0 0 0
+io full_baseline 0 3 0
+io ordinary_change standard_rts 1 2 1
+io ordinary_change fail_closed 1 2 1
+io ordinary_change full_suite 1 3 1
+io target_metadata_missing standard_rts 1 2 1
+io target_metadata_missing fail_closed 1 3 1
+io target_metadata_missing full_suite 1 3 1
+io target_metadata_truncated_50pct standard_rts 1 2 1
+io target_metadata_truncated_50pct fail_closed 1 3 1
+io target_metadata_truncated_50pct full_suite 1 3 1
+lang cold_baseline 0 3 0
+lang warm_baseline 0 0 0
+lang full_baseline 0 3 0
+lang ordinary_change standard_rts 1 2 1
+lang ordinary_change fail_closed 1 2 1
+lang ordinary_change full_suite 1 3 1
+lang target_metadata_missing standard_rts 1 2 1
+lang target_metadata_missing fail_closed 1 3 1
+lang target_metadata_missing full_suite 1 3 1
+lang target_metadata_truncated_50pct standard_rts 1 2 1
+lang target_metadata_truncated_50pct fail_closed 1 3 1
+lang target_metadata_truncated_50pct full_suite 1 3 1
+Completed 60 actual executions.

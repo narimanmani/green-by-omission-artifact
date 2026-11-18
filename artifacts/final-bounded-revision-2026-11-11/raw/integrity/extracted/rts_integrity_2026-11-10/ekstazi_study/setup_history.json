@@ -1,0 +1,13 @@
+{
+  "classification": "Preparation and implementation history; excluded from the formal 189-invocation dataset",
+  "events": [
+    {"log": "setup_baseline.log", "outcome": "Maven dependency preparation failed because Java lacked the environment proxy configuration; no test result inferred."},
+    {"log": "setup_baseline_proxy.log", "outcome": "Dependencies resolved through the configured environment proxy; dynamic Ekstazi attachment unavailable; no test result inferred."},
+    {"log": "setup_baseline_static.log", "outcome": "Explicit select/restore mode reached Surefire; preparation failed after a stale invocation-specific proxy endpoint; no test result inferred."},
+    {"log": "maven_cold.log", "outcome": "Dependency preparation and initial Maven baseline completed; separately superseded by four formally recorded offline integration controls."},
+    {"directory": "direct_probe", "outcome": "Initial direct native-agent feasibility probe: four tests cold, zero warm. Excluded from formal totals."},
+    {"directory": "results/20261110T212151425667Z", "outcome": "Initial harness controls completed, then duplicate output directory creation caused FileExistsError before the first fault execution. Partial artifacts retained; excluded from formal totals."},
+    {"directory": "results/20261110T212203310997Z", "outcome": "Corrected harness completed all four controls and 72 planned fault-corpus invocations. This is the formal native dataset."},
+    {"directory": "maven_validation", "outcome": "Four formal supplemental integration controls completed in Maven offline mode. Raw XML and per-run logs retained."}
+  ]
+}

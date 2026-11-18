@@ -1,0 +1,18 @@
+{
+  "command": [
+    "docker",
+    "create",
+    "--name",
+    "sp2027-wxyc-final-assembly-jq-20261112",
+    "--network",
+    "none",
+    "--user",
+    "10001:10001",
+    "--cap-drop",
+    "ALL",
+    "--security-opt",
+    "no-new-privileges:true",
+    "sha256:36222dd77240e20948861c15d9e80b5940ef034e6130333019344815797b99ea"
+  ],
+  "exit_code": 0
+}

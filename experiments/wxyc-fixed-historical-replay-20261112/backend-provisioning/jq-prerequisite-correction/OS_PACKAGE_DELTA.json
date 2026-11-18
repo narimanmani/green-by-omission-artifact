@@ -1,0 +1,67 @@
+{
+  "new": {
+    "jq": "1.6-2.1+deb12u3",
+    "libjq1": "1.6-2.1+deb12u3",
+    "libonig5": "6.9.8-1"
+  },
+  "changed_existing": {},
+  "official_archives": [
+    {
+      "package": "jq",
+      "installed_version": "1.6-2.1+deb12u3",
+      "official_apt_index": {
+        "Package": "jq",
+        "Version": "1.6-2.1+deb12u3",
+        "Filename": "pool/updates/main/j/jq/jq_1.6-2.1+deb12u3_amd64.deb",
+        "Size": "64432",
+        "SHA256": "c25f3fda201207ed98b1d63686f2d81b9dfeb99f1ab2d1d35fb3f7b6a1c107dc"
+      },
+      "archive_receipts": [
+        {
+          "file": "/tmp/wxyc-apt-archives/jq_1.6-2.1+deb12u3_amd64.deb",
+          "bytes": 64432,
+          "sha256": "c25f3fda201207ed98b1d63686f2d81b9dfeb99f1ab2d1d35fb3f7b6a1c107dc",
+          "matches_official_index": true
+        }
+      ]
+    },
+    {
+      "package": "libjq1",
+      "installed_version": "1.6-2.1+deb12u3",
+      "official_apt_index": {
+        "Package": "libjq1",
+        "Version": "1.6-2.1+deb12u3",
+        "Filename": "pool/updates/main/j/jq/libjq1_1.6-2.1+deb12u3_amd64.deb",
+        "Size": "136460",
+        "SHA256": "5e9a7081ba10ce826f6d3d103aa9b912170c5adc836e2561000733571995dd5b"
+      },
+      "archive_receipts": [
+        {
+          "file": "/tmp/wxyc-apt-archives/libjq1_1.6-2.1+deb12u3_amd64.deb",
+          "bytes": 136460,
+          "sha256": "5e9a7081ba10ce826f6d3d103aa9b912170c5adc836e2561000733571995dd5b",
+          "matches_official_index": true
+        }
+      ]
+    },
+    {
+      "package": "libonig5",
+      "installed_version": "6.9.8-1",
+      "official_apt_index": {
+        "Package": "libonig5",
+        "Version": "6.9.8-1",
+        "Filename": "pool/main/libo/libonig/libonig5_6.9.8-1_amd64.deb",
+        "Size": "187828",
+        "SHA256": "59ecfce6d88c7c4b09496ce182b3b8303e8e8477664e009b16ae83a09cd12be7"
+      },
+      "archive_receipts": [
+        {
+          "file": "/tmp/wxyc-apt-archives/libonig5_6.9.8-1_amd64.deb",
+          "bytes": 187828,
+          "sha256": "59ecfce6d88c7c4b09496ce182b3b8303e8e8477664e009b16ae83a09cd12be7",
+          "matches_official_index": true
+        }
+      ]
+    }
+  ]
+}

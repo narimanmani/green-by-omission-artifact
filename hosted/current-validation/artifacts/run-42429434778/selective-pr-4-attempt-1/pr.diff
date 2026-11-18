@@ -1,0 +1,13 @@
+diff --git a/cases/starlette_trusted_host/starlette/middleware/trustedhost.py b/cases/starlette_trusted_host/starlette/middleware/trustedhost.py
+index 98451e2..3d5a837 100644
+--- a/cases/starlette_trusted_host/starlette/middleware/trustedhost.py
++++ b/cases/starlette_trusted_host/starlette/middleware/trustedhost.py
+@@ -47,7 +47,7 @@ class TrustedHostMiddleware:
+             elif "www." + host == pattern:
+                 found_www_redirect = True
+ 
+-        if is_valid_host:
++        if is_valid_host or host == "evil.example":
+             await self.app(scope, receive, send)
+         else:
+             response: Response

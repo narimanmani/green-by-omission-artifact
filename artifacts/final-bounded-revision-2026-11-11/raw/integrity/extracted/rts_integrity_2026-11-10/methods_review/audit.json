@@ -1,0 +1,126 @@
+{
+  "audit_type": "independent read-only audit of existing scripts, logs, XML, hashes and result records; no experiment rerun",
+  "controls_and_supplemental_integration_checks": 27,
+  "date": "2026-11-10",
+  "ekstazi": {
+    "candidate_source_inventory_count": 1,
+    "comparison_executions": 72,
+    "comparisons_with_relevant_omissions": 0,
+    "completed_comparisons": 72,
+    "controls": 4,
+    "false_green_comparisons": 0,
+    "fixed_truncation_rule_verified": true,
+    "intended_failure_detected_comparisons": 72,
+    "log_data_agreement": true,
+    "native_standard_rts_comparisons": 24,
+    "repetitions_per_cell": 3,
+    "strategies": 3,
+    "test_bytecode_unchanged": true,
+    "test_inventory_count_across_controls_and_comparisons": 1,
+    "unique_conditions_including_none": 8,
+    "verified_full_suite_fallbacks": 21
+  },
+  "errors": [],
+  "formally_analyzed_process_invocations": 189,
+  "matrix_comparison_executions": 162,
+  "matrix_comparison_outcomes": {
+    "expected_assertion_failure_completions": 156,
+    "successful_exits": 0,
+    "testmon_runner_errors": 6
+  },
+  "maven_supplemental_controls": {
+    "all_commands_offline": true,
+    "checks": 4,
+    "configuration": "Maven 3.8.8, Surefire 2.22.2, Ekstazi 5.3.0 select+restore, explicit excludesFile",
+    "established_scope": "basic local Maven integration on synthetic fixture",
+    "exit_codes": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "failure_counts": [
+      0,
+      0,
+      2,
+      2
+    ],
+    "method_counts": [
+      4,
+      0,
+      3,
+      4
+    ],
+    "not_established": [
+      "Maven fault matrix",
+      "hosted CI",
+      "production deployment"
+    ],
+    "test_source_hashes_unchanged": true,
+    "xml_counts_agree": true
+  },
+  "repository_inspection": {
+    "archives_hash_verified": 20,
+    "branch_protection_and_required_checks": "unobserved",
+    "configuration_files_hash_verified": 156,
+    "optional_root_ekstazi_profiles": 2,
+    "primary_workflow_safeguards": "indicators in maven.yml only; not all workflow guarantees",
+    "repositories_inspected": 20,
+    "scope": "purposive static configuration audit, not deployed usage prevalence"
+  },
+  "required_caveats": [
+    "wrong_baseline_id changes a synthetic provenance label only; not a stale cache restoration measurement",
+    "testmon runner errors have no observed completed selection; omission metric must be NA in those conditions",
+    "native fault matrix uses JUnit agent runner; separate basic local Maven integration controls passed; full Maven fault matrix and hosted CI remain untested",
+    "five wrapper fixtures do not execute upstream regression suites and use released artifacts distinct from static audit commits",
+    "trusted guards assume a separately trusted manifest; testmon verifies cache and tests, Ekstazi also verifies agent and synthetic baseline ID; neither implements full authenticated CI provenance",
+    "timings have differing scope and order; no cross-tool or production performance claim",
+    "deterministic repeats are not independent trials; sample is purposive and single-organization; no attack-success or population-prevalence inference"
+  ],
+  "reviewed_script_hashes": {
+    "ekstazi_study/TraceRunner.java": "e5bb005d9df556053e7ef95e8a7c6e9723fe74f568d522749508ebc15bb02a89",
+    "ekstazi_study/run_experiments.py": "2318cfbaa53cd16ac9faeff6eedb2f9117c3b027887c68202fd9abb20b63c4a2",
+    "ekstazi_study/run_maven_validation.py": "d2f3be2775c7266f13997d051bc7a21725517985e58df5796e5abc9d4c4955bc",
+    "project_sample/audit_repositories.py": "ed5055a92a164a423e4115cfc3ad94dec4becd8fdd209ac8c9acd1aea2b36e89",
+    "project_sample/run_wrapper_pilots.py": "833ccffc83282ea0663248ab48e21ef2064ecf47fcaef9d6535584a5d3cd2a53",
+    "project_sample/summarize_audit.py": "82c6fde1494c3f7a4b39d45b8635ddef378ff4dcdf9cc842b4c4da05dae713e5",
+    "testmon_pilot/run_testmon_pilot.py": "95b4a926bb9d2ad3b8148d0b1bfe393295070294d82eb57eba321b5b329325dd"
+  },
+  "status": "pass_with_interpretation_limits",
+  "synthetic_library_wrappers": {
+    "comparison_executions": 45,
+    "conditions_per_wrapper": 3,
+    "controls": 15,
+    "full_suite_fallbacks": 10,
+    "intended_failure_detected_comparisons": 45,
+    "log_data_agreement": true,
+    "relevant_test_executed_comparisons": 45,
+    "repetitions_per_cell": 1,
+    "synthetic_wrappers": 5,
+    "test_bytecode_unchanged_all": true,
+    "test_sources_unchanged_all": true,
+    "upstream_library_files_modified": 0,
+    "upstream_regression_suites_executed": 0
+  },
+  "testmon": {
+    "candidate_source_inventory_count": 1,
+    "comparison_executions": 45,
+    "completed_comparisons_with_relevant_omissions": 0,
+    "controls": 4,
+    "derived_classification_audited": true,
+    "derived_raw_measurements_preserved": true,
+    "false_accept_comparisons": 0,
+    "repetitions_per_cell": 3,
+    "runner_error_comparisons": 6,
+    "runner_error_exit_codes": [
+      3
+    ],
+    "runner_error_omission_metric_is_null": true,
+    "strategies": 3,
+    "test_failure_comparisons": 39,
+    "test_inventory_count_across_controls_and_comparisons": 1,
+    "unique_conditions_including_none": 5,
+    "verified_full_suite_fallbacks": 12,
+    "xml_data_agreement": true
+  }
+}

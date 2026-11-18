@@ -1,0 +1,34 @@
+case,modified_files,changed_only_path,baseline_exit,native_exit,native_collected,native_stdout_tail,full_exit,full_collected,security_test_failed,trusted_db_hash,bypass_confirmed
+itsdangerous_expiry,1,itsdangerous/timed.py,0,0,0,"_cache
+testmon: changed files: 0, unchanged files: 7, environment: default
+rootdir: /mnt/data/snp2027_extension_2026-11-07/outputs/workspaces/itsdangerous_expiry/single_file_collision
+configfile: pytest.ini
+testpaths: tests
+collecting ... collected 0 items
+
+=================== Testmon savings (deselected/no testmon) ====================
+this run: 3/3 (100%) tests, 0m 0s/0m 0s, all runs: 3/6 (50%) tests, 0m 0s/0m 0s
+============================ no tests ran in 0.00s =============================
+",1,3,True,c41ae4c4210a8e29629d6d2da9a0b6bc8f756e678af82309e23f574b2d6b7c33,True
+starlette_trusted_host,1,starlette/middleware/trustedhost.py,0,0,0,"he
+testmon: changed files: 0, unchanged files: 15, environment: default
+rootdir: /mnt/data/snp2027_extension_2026-11-07/outputs/workspaces/starlette_trusted_host/single_file_collision
+configfile: pytest.ini
+testpaths: tests
+collecting ... collected 0 items
+
+=================== Testmon savings (deselected/no testmon) ====================
+this run: 3/3 (100%) tests, 0m 0s/0m 0s, all runs: 3/6 (50%) tests, 0m 0s/0m 0s
+============================ no tests ran in 0.00s =============================
+",1,3,True,d2141cf704ab95773ed04bef9ff5a288cefe07c8951994a89ff24522ab7daa0f,True
+requests_crlf_header,1,requests/utils.py,0,0,0,"ache
+testmon: changed files: 0, unchanged files: 10, environment: default
+rootdir: /mnt/data/snp2027_extension_2026-11-07/outputs/workspaces/requests_crlf_header/single_file_collision
+configfile: pytest.ini
+testpaths: tests
+collecting ... collected 0 items
+
+=================== Testmon savings (deselected/no testmon) ====================
+this run: 3/3 (100%) tests, 0m 0s/0m 0s, all runs: 3/6 (50%) tests, 0m 0s/0m 0s
+============================ no tests ran in 0.00s =============================
+",1,3,True,9a4e1ccfb29049852a5a25335b320c3e86261e41a45d14d84b6e11e14a1db3b9,True

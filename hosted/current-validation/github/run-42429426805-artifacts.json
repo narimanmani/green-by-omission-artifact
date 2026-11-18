@@ -1,0 +1,11 @@
+{
+  "utc": "2026-11-08T00:26:30.443296+00:00",
+  "command": [
+    "gh",
+    "api",
+    "repos/anonymous-owner/ci-selection-testbed/actions/runs/42429426805/artifacts?per_page=100"
+  ],
+  "exit": 0,
+  "stdout": "{\"total_count\":2,\"artifacts\":[{\"id\":13597385190,\"node_id\":\"MDg6QXJ0aWZhY3QxMzU5NzM4NTE5MA==\",\"name\":\"full-pr-3-attempt-1\",\"size_in_bytes\":78925,\"url\":\"https://example.invalid/anonymous-research/ci-selection-testbed/actions/artifacts/13597385190\",\"archive_download_url\":\"https://example.invalid/anonymous-research/ci-selection-testbed/actions/artifacts/13597385190/zip\",\"expired\":false,\"digest\":\"sha256:61b7922a53bae7c242deeb12499b0d04edd5e0bda2b947d4b66169d1a68d284d\",\"created_at\":\"2026-11-08T00:22:23Z\",\"updated_at\":\"2026-11-08T00:22:23Z\",\"expires_at\":\"2026-12-08T00:22:22Z\",\"workflow_run\":{\"id\":42429426805,\"repository_id\":1449811458,\"head_repository_id\":1449811458,\"head_branch\":\"trial/itsdangerous_expiry/collision\",\"head_sha\":\"686510acdab5bdeee071bbcc981c8f11864dde9d\"}},{\"id\":13596931861,\"node_id\":\"MDg6QXJ0aWZhY3QxMzU5NjkzMTg2MQ==\",\"name\":\"selective-pr-3-attempt-1\",\"size_in_bytes\":78354,\"url\":\"https://example.invalid/anonymous-research/ci-selection-testbed/actions/artifacts/13596931861\",\"archive_download_url\":\"https://example.invalid/anonymous-research/ci-selection-testbed/actions/artifacts/13596931861/zip\",\"expired\":false,\"digest\":\"sha256:1d6780b78853bd37a42116435023b95fc49c69a8a39bdb1d7e28226708b84e32\",\"created_at\":\"2026-11-08T00:22:23Z\",\"updated_at\":\"2026-11-08T00:22:23Z\",\"expires_at\":\"2026-12-08T00:22:22Z\",\"workflow_run\":{\"id\":42429426805,\"repository_id\":1449811458,\"head_repository_id\":1449811458,\"head_branch\":\"trial/itsdangerous_expiry/collision\",\"head_sha\":\"686510acdab5bdeee071bbcc981c8f11864dde9d\"}}]}",
+  "stderr": ""
+}

@@ -1,0 +1,5 @@
+itsdangerous_expiry/ordinary FAIL full 1 checks True
+itsdangerous_expiry/collision PASS full 1 checks True
+starlette_trusted_host/ordinary FAIL full 1 checks True
+starlette_trusted_host/collision PASS full 1 checks True
+requests_crlf_header/ordinary FAIL full 1 checks True

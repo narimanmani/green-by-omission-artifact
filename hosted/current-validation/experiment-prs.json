@@ -1,0 +1,74 @@
+[
+  {
+    "case": "itsdangerous_expiry",
+    "condition": "ordinary",
+    "branch": "trial/itsdangerous_expiry/ordinary",
+    "base_sha": "1d63949857934672de5c13f543174b4dbf0fd7ce",
+    "head_sha": "75ca88276e8f610b8dca550bb448c61d3109bfa8",
+    "modified_files": [
+      "cases/itsdangerous_expiry/itsdangerous/timed.py"
+    ],
+    "url": "https://example.invalid/anonymous-research/ci-selection-testbed/pull/2",
+    "number": 2
+  },
+  {
+    "case": "itsdangerous_expiry",
+    "condition": "collision",
+    "branch": "trial/itsdangerous_expiry/collision",
+    "base_sha": "1d63949857934672de5c13f543174b4dbf0fd7ce",
+    "head_sha": "686510acdab5bdeee071bbcc981c8f11864dde9d",
+    "modified_files": [
+      "cases/itsdangerous_expiry/itsdangerous/timed.py"
+    ],
+    "url": "https://example.invalid/anonymous-research/ci-selection-testbed/pull/3",
+    "number": 3
+  },
+  {
+    "case": "starlette_trusted_host",
+    "condition": "ordinary",
+    "branch": "trial/starlette_trusted_host/ordinary",
+    "base_sha": "1d63949857934672de5c13f543174b4dbf0fd7ce",
+    "head_sha": "35895c1629a579b4acfc0e70446e22f212f7081e",
+    "modified_files": [
+      "cases/starlette_trusted_host/starlette/middleware/trustedhost.py"
+    ],
+    "url": "https://example.invalid/anonymous-research/ci-selection-testbed/pull/4",
+    "number": 4
+  },
+  {
+    "case": "starlette_trusted_host",
+    "condition": "collision",
+    "branch": "trial/starlette_trusted_host/collision",
+    "base_sha": "1d63949857934672de5c13f543174b4dbf0fd7ce",
+    "head_sha": "908e6f141715629b8c3a51d3b8bbd805f532e0c7",
+    "modified_files": [
+      "cases/starlette_trusted_host/starlette/middleware/trustedhost.py"
+    ],
+    "url": "https://example.invalid/anonymous-research/ci-selection-testbed/pull/5",
+    "number": 5
+  },
+  {
+    "case": "requests_crlf_header",
+    "condition": "ordinary",
+    "branch": "trial/requests_crlf_header/ordinary",
+    "base_sha": "1d63949857934672de5c13f543174b4dbf0fd7ce",
+    "head_sha": "2e19136a525aa8cd8774e0b4929955dd29e4a128",
+    "modified_files": [
+      "cases/requests_crlf_header/requests/utils.py"
+    ],
+    "url": "https://example.invalid/anonymous-research/ci-selection-testbed/pull/6",
+    "number": 6
+  },
+  {
+    "case": "requests_crlf_header",
+    "condition": "collision",
+    "branch": "trial/requests_crlf_header/collision",
+    "base_sha": "1d63949857934672de5c13f543174b4dbf0fd7ce",
+    "head_sha": "9df3cfb451d724850a3cdf6ebc4f57f69968418e",
+    "modified_files": [
+      "cases/requests_crlf_header/requests/utils.py"
+    ],
+    "url": "https://example.invalid/anonymous-research/ci-selection-testbed/pull/7",
+    "number": 7
+  }
+]

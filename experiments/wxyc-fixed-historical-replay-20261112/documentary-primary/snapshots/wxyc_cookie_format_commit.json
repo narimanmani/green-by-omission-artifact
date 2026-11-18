@@ -1,0 +1,49 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "Action completed."
+    }
+  ],
+  "structuredContent": {
+    "commit": {
+      "sha": "56ba471e3c306affac304bf101ecf115080ac924",
+      "message": "style: format files with Prettier",
+      "url": "https://api.github.com/repos/WXYC/Backend-Service/commits/56ba471e3c306affac304bf101ecf115080ac924",
+      "html_url": "https://github.com/WXYC/Backend-Service/commit/56ba471e3c306affac304bf101ecf115080ac924",
+      "diff": "@@ -2,10 +2,7 @@ import * as fs from 'fs';\n import * as path from 'path';\n \n describe('auth.definition.ts cookie configuration', () => {\n-  const authDefPath = path.resolve(\n-    __dirname,\n-    '../../../shared/authentication/src/auth.definition.ts'\n-  );\n+  const authDefPath = path.resolve(__dirname, '../../../shared/authentication/src/auth.definition.ts');\n   let source: string;\n \n   beforeAll(() => {",
+      "files": [
+        {
+          "filename": "tests/unit/authentication/cookie-config.test.ts",
+          "patch": "@@ -2,10 +2,7 @@ import * as fs from 'fs';\n import * as path from 'path';\n \n describe('auth.definition.ts cookie configuration', () => {\n-  const authDefPath = path.resolve(\n-    __dirname,\n-    '../../../shared/authentication/src/auth.definition.ts'\n-  );\n+  const authDefPath = path.resolve(__dirname, '../../../shared/authentication/src/auth.definition.ts');\n   let source: string;\n \n   beforeAll(() => {"
+        }
+      ],
+      "repository_full_name": "WXYC/Backend-Service",
+      "comments": null,
+      "author": {
+        "login": "jakebromberg",
+        "name": null,
+        "email": null,
+        "avatar_url": "https://avatars.githubusercontent.com/u/445782?v=4",
+        "id": 445782
+      },
+      "committer": {
+        "login": "jakebromberg",
+        "name": null,
+        "email": null,
+        "avatar_url": "https://avatars.githubusercontent.com/u/445782?v=4",
+        "id": 445782
+      },
+      "created_at": "2026-03-31T20:52:42Z",
+      "git_author_email": null,
+      "display_url": "https://github.com/WXYC/Backend-Service/commit/56ba471e3c306affac304bf101ecf115080ac924",
+      "display_title": "style: format files with Prettier"
+    },
+    "url": "https://github.com/WXYC/Backend-Service/commit/56ba471e3c306affac304bf101ecf115080ac924",
+    "title": "style: format files with Prettier",
+    "diff": "@@ -2,10 +2,7 @@ import * as fs from 'fs';\n import * as path from 'path';\n \n describe('auth.definition.ts cookie configuration', () => {\n-  const authDefPath = path.resolve(\n-    __dirname,\n-    '../../../shared/authentication/src/auth.definition.ts'\n-  );\n+  const authDefPath = path.resolve(__dirname, '../../../shared/authentication/src/auth.definition.ts');\n   let source: string;\n \n   beforeAll(() => {",
+    "display_url": "https://github.com/WXYC/Backend-Service/commit/56ba471e3c306affac304bf101ecf115080ac924",
+    "display_title": "style: format files with Prettier"
+  },
+  "isError": false
+}

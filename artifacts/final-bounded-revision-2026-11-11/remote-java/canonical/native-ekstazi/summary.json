@@ -1,0 +1,10 @@
+{
+  "native_collision_missed": true,
+  "native_nonzero_missed": true,
+  "full_detected": true,
+  "tests_unchanged": true,
+  "baseline_class_sha256": "0340009512b99a67e79b233c6a515a012b649ea1bd0c5c2e85a2ae28dc24d3b8",
+  "baseline_crc32": 738188245,
+  "core_jar_sha256": "baf7affe8fc42e12b382ec933f3572fce417e5e0d9a7ebab2902bc5c614cb749",
+  "note": "Controlled Java fixture; PAD present before baseline; nonzero condition may need non-constant benign refactor."
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "name": "bcel",
+    "repository": "https://github.com/apache/commons-bcel.git",
+    "sha": "41731d5824781bcc576a5c71dde0421ddc7c7e06",
+    "branch": "refs/heads/master",
+    "resolved_at_utc": "2026-11-10T21:19:55.608354+00:00",
+    "status": "resolved",
+    "ls_remote": "ref: refs/heads/master\tHEAD\n41731d5824781bcc576a5c71dde0421ddc7c7e06\tHEAD\n"
+  },
+  {
+    "name": "beanutils",
+    "repository": "https://github.com/apache/commons-beanutils.git",
+    "sha": "ada0e1e2a531a42fb568b857e8e7c376e1d3eac6",
+    "branch": "refs/heads/master",
+    "resolved_at_utc": "2026-11-10T21:19:55.648718+00:00",
+    "status": "resolved",
+    "ls_remote": "ref: refs/heads/master\tHEAD\nada0e1e2a531a42fb568b857e8e7c376e1d3eac6\tHEAD\n"
+  },
+  {
+    "name": "cli",
+    "repository": "https://github.com/apache/commons-cli.git",
+    "sha": "3a53a351a66bc5634bea646008f884148864bdac",
+    "branch": "refs/heads/master",
+    "resolved_at_utc": "2026-11-10T21:19:55.669378+00:00",
+    "status": "resolved",
+    "ls_remote": "ref: refs/heads/master\tHEAD\n3a53a351a66bc5634bea646008f884148864bdac\tHEAD\n"
+  },
+  {
+    "name": "codec",
+    "repository": "https://github.com/apache/commons-codec.git",
+    "sha": "c0013c15e4a5b2c72c60b17e0ac9eb2772250041",
+    "branch": "refs/heads/master",
+    "resolved_at_utc": "2026-11-10T21:19:55.622298+00:00",
+    "status": "resolved",
+    "ls_remote": "ref: refs/heads/master\tHEAD\nc0013c15e4a5b2c72c60b17e0ac9eb2772250041\tHEAD\n"
+  },
+  {
+    "name": "collections",
+    "repository": "https://github.com/apache/commons-collections.git",
+    "sha": "0d09264a50120494a3f37784874ae661b0ecf0b2",
+    "branch": "refs/heads/master",
+    "resolved_at_utc": "2026-11-10T21:19:58.555624+00:00",
+    "status": "resolved",
+    "ls_remote": "ref: refs/heads/master\tHEAD\n0d09264a50120494a3f37784874ae661b0ecf0b2\tHEAD\n"
+  },
+  {
+    "name": "compress",
+    "repository": "https://github.com/apache/commons-compress.git",
+    "sha": "54f0e8ea790923a60812173b8e79b520da9da901",
+    "branch": "refs/heads/master",
+    "resolved_at_utc": "2026-11-10T21:19:58.606795+00:00",
+    "status": "resolved",
+    "ls_remote": "ref: refs/heads/master\tHEAD\n54f0e8ea790923a60812173b8e79b520da9da901\tHEAD\n"
+  },
+  {
+    "name": "configuration",
+    "repository": "https://github.com/apache/commons-configuration.git",
+    "sha": "16ca9c002cefead2ec2068509656c046e4883097",
+    "branch": "refs/heads/master",
+    "resolved_at_utc": "2026-11-10T21:19:58.554241+00:00",
+    "status": "resolved",
+    "ls_remote": "ref: refs/heads/master\tHEAD\n16ca9c002cefead2ec2068509656c046e4883097\tHEAD\n"
+  },
+  {
+    "name": "crypto",
+    "repository": "https://github.com/apache/commons-crypto.git",
+    "sha": "28e2d59b7dc8b8913787e46c991b141e114ec31f",
+    "branch": "refs/heads/master",
+    "resolved_at_utc": "2026-11-10T21:19:58.602356+00:00",
+    "status": "resolved",
+    "ls_remote": "ref: refs/heads/master\tHEAD\n28e2d59b7dc8b8913787e46c991b141e114ec31f\tHEAD\n"
+  },
+  {
+    "name": "csv",
+    "repository": "https://github.com/apache/commons-csv.git",
+    "sha": "2bd66bf181d44ffc92806f585d3955e915666f7f",
+    "branch": "refs/heads/master",
+    "resolved_at_utc": "2026-11-10T21:20:00.824882+00:00",
+    "status": "resolved",
+    "ls_remote": "ref: refs/heads/master\tHEAD\n2bd66bf181d44ffc92806f585d3955e915666f7f\tHEAD\n"
+  },
+  {
+    "name": "dbcp",
+    "repository": "https://github.com/apache/commons-dbcp.git",
+    "sha": "c0b5330114179ddb4c62d2a0b25e31d26c4a7f63",
+    "branch": "refs/heads/master",
+    "resolved_at_utc": "2026-11-10T21:20:00.913079+00:00",
+    "status": "resolved",
+    "ls_remote": "ref: refs/heads/master\tHEAD\nc0b5330114179ddb4c62d2a0b25e31d26c4a7f63\tHEAD\n"
+  },
+  {
+    "name": "dbutils",
+    "repository": "https://github.com/apache/commons-dbutils.git",
+    "sha": "4aec2f7f2d5752bf5dc66200a9ce4973e69e2dc4",
+    "branch": "refs/heads/master",
+    "resolved_at_utc": "2026-11-10T21:20:00.855247+00:00",
+    "status": "resolved",
+    "ls_remote": "ref: refs/heads/master\tHEAD\n4aec2f7f2d5752bf5dc66200a9ce4973e69e2dc4\tHEAD\n"
+  },
+  {
+    "name": "digester",
+    "repository": "https://github.com/apache/commons-digester.git",
+    "sha": "2403ab1d13f8fa2d40c47ac1ef9fe935a008ccc0",
+    "branch": "refs/heads/master",
+    "resolved_at_utc": "2026-11-10T21:20:00.901535+00:00",
+    "status": "resolved",
+    "ls_remote": "ref: refs/heads/master\tHEAD\n2403ab1d13f8fa2d40c47ac1ef9fe935a008ccc0\tHEAD\n"
+  },
+  {
+    "name": "email",
+    "repository": "https://github.com/apache/commons-email.git",
+    "sha": "4a0afb5ce49a3cb36c0ef5cac9c2b2bae713ee79",
+    "branch": "refs/heads/master",
+    "resolved_at_utc": "2026-11-10T21:20:03.659513+00:00",
+    "status": "resolved",
+    "ls_remote": "ref: refs/heads/master\tHEAD\n4a0afb5ce49a3cb36c0ef5cac9c2b2bae713ee79\tHEAD\n"
+  },
+  {
+    "name": "exec",
+    "repository": "https://github.com/apache/commons-exec.git",
+    "sha": "c766fc7be8af293a24a1b3c9cd2a93400de9ef1e",
+    "branch": "refs/heads/master",
+    "resolved_at_utc": "2026-11-10T21:20:03.633134+00:00",
+    "status": "resolved",
+    "ls_remote": "ref: refs/heads/master\tHEAD\nc766fc7be8af293a24a1b3c9cd2a93400de9ef1e\tHEAD\n"
+  },
+  {
+    "name": "io",
+    "repository": "https://github.com/apache/commons-io.git",
+    "sha": "a06ee11d2bf7fba46ccc419da69e2ff4a13986b5",
+    "branch": "refs/heads/master",
+    "resolved_at_utc": "2026-11-10T21:20:03.535595+00:00",
+    "status": "resolved",
+    "ls_remote": "ref: refs/heads/master\tHEAD\na06ee11d2bf7fba46ccc419da69e2ff4a13986b5\tHEAD\n"
+  },
+  {
+    "name": "lang",
+    "repository": "https://github.com/apache/commons-lang.git",
+    "sha": "5d2715b9da13fb584058d264c46dfed6bcc700d1",
+    "branch": "refs/heads/master",
+    "resolved_at_utc": "2026-11-10T21:20:03.902202+00:00",
+    "status": "resolved",
+    "ls_remote": "ref: refs/heads/master\tHEAD\n5d2715b9da13fb584058d264c46dfed6bcc700d1\tHEAD\n"
+  },
+  {
+    "name": "math",
+    "repository": "https://github.com/apache/commons-math.git",
+    "sha": "36cefd500d2b6a193bd81654665944db1bb1aaed",
+    "branch": "refs/heads/master",
+    "resolved_at_utc": "2026-11-10T21:20:07.073903+00:00",
+    "status": "resolved",
+    "ls_remote": "ref: refs/heads/master\tHEAD\n36cefd500d2b6a193bd81654665944db1bb1aaed\tHEAD\n"
+  },
+  {
+    "name": "numbers",
+    "repository": "https://github.com/apache/commons-numbers.git",
+    "sha": "e6845beaca307b09bb02ae5ae625c63345bce130",
+    "branch": "refs/heads/master",
+    "resolved_at_utc": "2026-11-10T21:20:07.106390+00:00",
+    "status": "resolved",
+    "ls_remote": "ref: refs/heads/master\tHEAD\ne6845beaca307b09bb02ae5ae625c63345bce130\tHEAD\n"
+  },
+  {
+    "name": "pool",
+    "repository": "https://github.com/apache/commons-pool.git",
+    "sha": "22c12c752bcaa0ea406734926afb8aced0693a7f",
+    "branch": "refs/heads/master",
+    "resolved_at_utc": "2026-11-10T21:20:07.094364+00:00",
+    "status": "resolved",
+    "ls_remote": "ref: refs/heads/master\tHEAD\n22c12c752bcaa0ea406734926afb8aced0693a7f\tHEAD\n"
+  },
+  {
+    "name": "text",
+    "repository": "https://github.com/apache/commons-text.git",
+    "sha": "ed3f23e12362f77d2b850e291458a0907da34d96",
+    "branch": "refs/heads/master",
+    "resolved_at_utc": "2026-11-10T21:20:07.107546+00:00",
+    "status": "resolved",
+    "ls_remote": "ref: refs/heads/master\tHEAD\ned3f23e12362f77d2b850e291458a0907da34d96\tHEAD\n"
+  }
+]

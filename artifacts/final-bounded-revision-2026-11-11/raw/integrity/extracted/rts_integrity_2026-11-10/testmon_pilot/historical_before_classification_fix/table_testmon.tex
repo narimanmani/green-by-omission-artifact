@@ -1,0 +1,26 @@
+\begin{table}[t]
+\centering
+\caption{Observed testmon integrity-fault outcomes in one synthetic fixture. Each row is reproduced three times. Error indicates a nonzero runner failure, not a successful pipeline.}
+\label{tab:testmon-integrity-pilot}
+\begin{tabular}{llrrrr}
+\hline
+Fault & Strategy & Tests & Failures & Exit & Fallback \\
+\hline
+none & standard\_rts & 3 & 2 & 1 & no \\
+none & fail\_closed & 3 & 2 & 1 & no \\
+none & full\_suite & 4 & 2 & 1 & no \\
+missing & standard\_rts & 4 & 2 & 1 & no \\
+missing & fail\_closed & 4 & 2 & 1 & yes \\
+missing & full\_suite & 4 & 2 & 1 & no \\
+empty & standard\_rts & 4 & 2 & 1 & no \\
+empty & fail\_closed & 4 & 2 & 1 & yes \\
+empty & full\_suite & 4 & 2 & 1 & no \\
+half\_truncated & standard\_rts & 0 & 0 & 3 & no \\
+half\_truncated & fail\_closed & 4 & 2 & 1 & yes \\
+half\_truncated & full\_suite & 4 & 2 & 1 & no \\
+garbage & standard\_rts & 0 & 0 & 3 & no \\
+garbage & fail\_closed & 4 & 2 & 1 & yes \\
+garbage & full\_suite & 4 & 2 & 1 & no \\
+\hline
+\end{tabular}
+\end{table}

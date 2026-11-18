@@ -1,0 +1,2527 @@
+[
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/cli/home",
+      "-javaagent:/workspace/scratch/0827c1f80a7f/toolchain/org.ekstazi.core-5.3.0.jar=mode=junit",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/cli/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-cli-1.6.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.5805467269999838,
+    "run_count": 3,
+    "failure_count": 0,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches",
+      "pilot.UntouchedTest#valueMatches"
+    ],
+    "failed_tests": [],
+    "stdout_sha256": "c020300eb9d316937e886de5c29772cdacb1750d4071d72ca808a3bd740ab609",
+    "log": "wrapper_pilot/logs/cli/cold_baseline.log",
+    "parse_status": "parsed",
+    "project": "cli",
+    "artifact": "commons-cli-1.6.0.jar",
+    "scenario": "cold_baseline",
+    "arm": "standard_rts",
+    "integrity_valid": true,
+    "fallback": false
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/cli/home",
+      "-javaagent:/workspace/scratch/0827c1f80a7f/toolchain/org.ekstazi.core-5.3.0.jar=mode=junit",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/cli/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-cli-1.6.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.3321355189999906,
+    "run_count": 0,
+    "failure_count": 0,
+    "ignored_count": 0,
+    "executed_tests": [],
+    "failed_tests": [],
+    "stdout_sha256": "858d9203df3b3e4297a4b8ba9c7de72a083f390c255aa6eac633e0b21c6476ff",
+    "log": "wrapper_pilot/logs/cli/warm_baseline.log",
+    "parse_status": "parsed",
+    "project": "cli",
+    "artifact": "commons-cli-1.6.0.jar",
+    "scenario": "warm_baseline",
+    "arm": "standard_rts",
+    "integrity_valid": true,
+    "fallback": false
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/cli/home",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/cli/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-cli-1.6.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.18550008600001888,
+    "run_count": 3,
+    "failure_count": 0,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches",
+      "pilot.UntouchedTest#valueMatches"
+    ],
+    "failed_tests": [],
+    "stdout_sha256": "c020300eb9d316937e886de5c29772cdacb1750d4071d72ca808a3bd740ab609",
+    "log": "wrapper_pilot/logs/cli/full_baseline.log",
+    "parse_status": "parsed",
+    "project": "cli",
+    "artifact": "commons-cli-1.6.0.jar",
+    "scenario": "full_baseline",
+    "arm": "full_suite",
+    "integrity_valid": true,
+    "fallback": false
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/cli/home",
+      "-javaagent:/workspace/scratch/0827c1f80a7f/toolchain/org.ekstazi.core-5.3.0.jar=mode=junit",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/cli/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-cli-1.6.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.4068012769999996,
+    "run_count": 2,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "22a79eb2b3da93580c21ea30214e4ec407ee0330506a81fa8858c71fd47f4df0",
+    "log": "wrapper_pilot/logs/cli/ordinary_change__standard_rts.log",
+    "parse_status": "parsed",
+    "project": "cli",
+    "artifact": "commons-cli-1.6.0.jar",
+    "scenario": "ordinary_change",
+    "arm": "standard_rts",
+    "integrity_valid": true,
+    "fallback": false,
+    "metadata_before_bytes": 919,
+    "target_metadata_fault_bytes": 0,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "337728c7f5c80572f7672ad175132c04bf95ad19c4a0053643e5b57a3036ff0d",
+      "pilot.SubjectTest.clz": "143d583c067ba049f11c4708c7f418962e1c1f284a08b53d50421386456bfb4d",
+      "pilot.UntouchedTest.clz": "b45850358769b076684c0b3a158ab24fda07672f64b468c7ddaf4b157393a44e"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/cli/home",
+      "-javaagent:/workspace/scratch/0827c1f80a7f/toolchain/org.ekstazi.core-5.3.0.jar=mode=junit",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/cli/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-cli-1.6.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.4362477730000194,
+    "run_count": 2,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "22a79eb2b3da93580c21ea30214e4ec407ee0330506a81fa8858c71fd47f4df0",
+    "log": "wrapper_pilot/logs/cli/ordinary_change__fail_closed.log",
+    "parse_status": "parsed",
+    "project": "cli",
+    "artifact": "commons-cli-1.6.0.jar",
+    "scenario": "ordinary_change",
+    "arm": "fail_closed",
+    "integrity_valid": true,
+    "fallback": false,
+    "metadata_before_bytes": 919,
+    "target_metadata_fault_bytes": 0,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "337728c7f5c80572f7672ad175132c04bf95ad19c4a0053643e5b57a3036ff0d",
+      "pilot.SubjectTest.clz": "143d583c067ba049f11c4708c7f418962e1c1f284a08b53d50421386456bfb4d",
+      "pilot.UntouchedTest.clz": "b45850358769b076684c0b3a158ab24fda07672f64b468c7ddaf4b157393a44e"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/cli/home",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/cli/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-cli-1.6.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.2028881920000174,
+    "run_count": 3,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches",
+      "pilot.UntouchedTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "7205c4ea44682bd8c5cadadbb3ae9a8667b3c8108cfec1de272c59037770c7e0",
+    "log": "wrapper_pilot/logs/cli/ordinary_change__full_suite.log",
+    "parse_status": "parsed",
+    "project": "cli",
+    "artifact": "commons-cli-1.6.0.jar",
+    "scenario": "ordinary_change",
+    "arm": "full_suite",
+    "integrity_valid": true,
+    "fallback": false,
+    "metadata_before_bytes": 919,
+    "target_metadata_fault_bytes": 0,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "337728c7f5c80572f7672ad175132c04bf95ad19c4a0053643e5b57a3036ff0d",
+      "pilot.SubjectTest.clz": "143d583c067ba049f11c4708c7f418962e1c1f284a08b53d50421386456bfb4d",
+      "pilot.UntouchedTest.clz": "b45850358769b076684c0b3a158ab24fda07672f64b468c7ddaf4b157393a44e"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/cli/home",
+      "-javaagent:/workspace/scratch/0827c1f80a7f/toolchain/org.ekstazi.core-5.3.0.jar=mode=junit",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/cli/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-cli-1.6.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.504173953999981,
+    "run_count": 2,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "22a79eb2b3da93580c21ea30214e4ec407ee0330506a81fa8858c71fd47f4df0",
+    "log": "wrapper_pilot/logs/cli/target_metadata_missing__standard_rts.log",
+    "parse_status": "parsed",
+    "project": "cli",
+    "artifact": "commons-cli-1.6.0.jar",
+    "scenario": "target_metadata_missing",
+    "arm": "standard_rts",
+    "integrity_valid": false,
+    "fallback": false,
+    "metadata_before_bytes": 919,
+    "target_metadata_fault_bytes": 919,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "337728c7f5c80572f7672ad175132c04bf95ad19c4a0053643e5b57a3036ff0d",
+      "pilot.UntouchedTest.clz": "b45850358769b076684c0b3a158ab24fda07672f64b468c7ddaf4b157393a44e"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/cli/home",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/cli/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-cli-1.6.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.20116671499999939,
+    "run_count": 3,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches",
+      "pilot.UntouchedTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "7205c4ea44682bd8c5cadadbb3ae9a8667b3c8108cfec1de272c59037770c7e0",
+    "log": "wrapper_pilot/logs/cli/target_metadata_missing__fail_closed.log",
+    "parse_status": "parsed",
+    "project": "cli",
+    "artifact": "commons-cli-1.6.0.jar",
+    "scenario": "target_metadata_missing",
+    "arm": "fail_closed",
+    "integrity_valid": false,
+    "fallback": true,
+    "metadata_before_bytes": 919,
+    "target_metadata_fault_bytes": 919,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "337728c7f5c80572f7672ad175132c04bf95ad19c4a0053643e5b57a3036ff0d",
+      "pilot.UntouchedTest.clz": "b45850358769b076684c0b3a158ab24fda07672f64b468c7ddaf4b157393a44e"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/cli/home",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/cli/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-cli-1.6.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.1609416640000063,
+    "run_count": 3,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches",
+      "pilot.UntouchedTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "7205c4ea44682bd8c5cadadbb3ae9a8667b3c8108cfec1de272c59037770c7e0",
+    "log": "wrapper_pilot/logs/cli/target_metadata_missing__full_suite.log",
+    "parse_status": "parsed",
+    "project": "cli",
+    "artifact": "commons-cli-1.6.0.jar",
+    "scenario": "target_metadata_missing",
+    "arm": "full_suite",
+    "integrity_valid": false,
+    "fallback": false,
+    "metadata_before_bytes": 919,
+    "target_metadata_fault_bytes": 919,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "337728c7f5c80572f7672ad175132c04bf95ad19c4a0053643e5b57a3036ff0d",
+      "pilot.UntouchedTest.clz": "b45850358769b076684c0b3a158ab24fda07672f64b468c7ddaf4b157393a44e"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/cli/home",
+      "-javaagent:/workspace/scratch/0827c1f80a7f/toolchain/org.ekstazi.core-5.3.0.jar=mode=junit",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/cli/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-cli-1.6.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.44365469899997834,
+    "run_count": 2,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "22a79eb2b3da93580c21ea30214e4ec407ee0330506a81fa8858c71fd47f4df0",
+    "log": "wrapper_pilot/logs/cli/target_metadata_truncated_50pct__standard_rts.log",
+    "parse_status": "parsed",
+    "project": "cli",
+    "artifact": "commons-cli-1.6.0.jar",
+    "scenario": "target_metadata_truncated_50pct",
+    "arm": "standard_rts",
+    "integrity_valid": false,
+    "fallback": false,
+    "metadata_before_bytes": 919,
+    "target_metadata_fault_bytes": 460,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "337728c7f5c80572f7672ad175132c04bf95ad19c4a0053643e5b57a3036ff0d",
+      "pilot.SubjectTest.clz": "e059d5cfa759372352b7a14310c181060f343e4e080c3844d8756f41feb4f362",
+      "pilot.UntouchedTest.clz": "b45850358769b076684c0b3a158ab24fda07672f64b468c7ddaf4b157393a44e"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/cli/home",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/cli/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-cli-1.6.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.21025669699997707,
+    "run_count": 3,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches",
+      "pilot.UntouchedTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "7205c4ea44682bd8c5cadadbb3ae9a8667b3c8108cfec1de272c59037770c7e0",
+    "log": "wrapper_pilot/logs/cli/target_metadata_truncated_50pct__fail_closed.log",
+    "parse_status": "parsed",
+    "project": "cli",
+    "artifact": "commons-cli-1.6.0.jar",
+    "scenario": "target_metadata_truncated_50pct",
+    "arm": "fail_closed",
+    "integrity_valid": false,
+    "fallback": true,
+    "metadata_before_bytes": 919,
+    "target_metadata_fault_bytes": 460,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "337728c7f5c80572f7672ad175132c04bf95ad19c4a0053643e5b57a3036ff0d",
+      "pilot.SubjectTest.clz": "e059d5cfa759372352b7a14310c181060f343e4e080c3844d8756f41feb4f362",
+      "pilot.UntouchedTest.clz": "b45850358769b076684c0b3a158ab24fda07672f64b468c7ddaf4b157393a44e"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/cli/home",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/cli/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-cli-1.6.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.20153734199999462,
+    "run_count": 3,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches",
+      "pilot.UntouchedTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "7205c4ea44682bd8c5cadadbb3ae9a8667b3c8108cfec1de272c59037770c7e0",
+    "log": "wrapper_pilot/logs/cli/target_metadata_truncated_50pct__full_suite.log",
+    "parse_status": "parsed",
+    "project": "cli",
+    "artifact": "commons-cli-1.6.0.jar",
+    "scenario": "target_metadata_truncated_50pct",
+    "arm": "full_suite",
+    "integrity_valid": false,
+    "fallback": false,
+    "metadata_before_bytes": 919,
+    "target_metadata_fault_bytes": 460,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "337728c7f5c80572f7672ad175132c04bf95ad19c4a0053643e5b57a3036ff0d",
+      "pilot.SubjectTest.clz": "e059d5cfa759372352b7a14310c181060f343e4e080c3844d8756f41feb4f362",
+      "pilot.UntouchedTest.clz": "b45850358769b076684c0b3a158ab24fda07672f64b468c7ddaf4b157393a44e"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/csv/home",
+      "-javaagent:/workspace/scratch/0827c1f80a7f/toolchain/org.ekstazi.core-5.3.0.jar=mode=junit",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/csv/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-csv-1.10.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.5789737919999993,
+    "run_count": 3,
+    "failure_count": 0,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches",
+      "pilot.UntouchedTest#valueMatches"
+    ],
+    "failed_tests": [],
+    "stdout_sha256": "c020300eb9d316937e886de5c29772cdacb1750d4071d72ca808a3bd740ab609",
+    "log": "wrapper_pilot/logs/csv/cold_baseline.log",
+    "parse_status": "parsed",
+    "project": "csv",
+    "artifact": "commons-csv-1.10.0.jar",
+    "scenario": "cold_baseline",
+    "arm": "standard_rts",
+    "integrity_valid": true,
+    "fallback": false
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/csv/home",
+      "-javaagent:/workspace/scratch/0827c1f80a7f/toolchain/org.ekstazi.core-5.3.0.jar=mode=junit",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/csv/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-csv-1.10.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.35125305299999354,
+    "run_count": 0,
+    "failure_count": 0,
+    "ignored_count": 0,
+    "executed_tests": [],
+    "failed_tests": [],
+    "stdout_sha256": "858d9203df3b3e4297a4b8ba9c7de72a083f390c255aa6eac633e0b21c6476ff",
+    "log": "wrapper_pilot/logs/csv/warm_baseline.log",
+    "parse_status": "parsed",
+    "project": "csv",
+    "artifact": "commons-csv-1.10.0.jar",
+    "scenario": "warm_baseline",
+    "arm": "standard_rts",
+    "integrity_valid": true,
+    "fallback": false
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/csv/home",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/csv/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-csv-1.10.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.25994598500000166,
+    "run_count": 3,
+    "failure_count": 0,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches",
+      "pilot.UntouchedTest#valueMatches"
+    ],
+    "failed_tests": [],
+    "stdout_sha256": "c020300eb9d316937e886de5c29772cdacb1750d4071d72ca808a3bd740ab609",
+    "log": "wrapper_pilot/logs/csv/full_baseline.log",
+    "parse_status": "parsed",
+    "project": "csv",
+    "artifact": "commons-csv-1.10.0.jar",
+    "scenario": "full_baseline",
+    "arm": "full_suite",
+    "integrity_valid": true,
+    "fallback": false
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/csv/home",
+      "-javaagent:/workspace/scratch/0827c1f80a7f/toolchain/org.ekstazi.core-5.3.0.jar=mode=junit",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/csv/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-csv-1.10.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.602851649999991,
+    "run_count": 2,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "41dbee812198f36f561d650e934f01d4b6a2a783df6422f409fda2c6a7616b06",
+    "log": "wrapper_pilot/logs/csv/ordinary_change__standard_rts.log",
+    "parse_status": "parsed",
+    "project": "csv",
+    "artifact": "commons-csv-1.10.0.jar",
+    "scenario": "ordinary_change",
+    "arm": "standard_rts",
+    "integrity_valid": true,
+    "fallback": false,
+    "metadata_before_bytes": 1460,
+    "target_metadata_fault_bytes": 0,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "dd28ebc5e623b5540fc8a60cbc9eae576d5df5cceba46f2cb9e3498403e1cbbe",
+      "pilot.SubjectTest.clz": "b8d1b3f06225c8553b8513020c410b4bea692cd79f0d5c63a3211b5401c32076",
+      "pilot.UntouchedTest.clz": "62a713c62ead353ed7c2326fd8e31e9169d96790602858569b253c5faacef5ad"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/csv/home",
+      "-javaagent:/workspace/scratch/0827c1f80a7f/toolchain/org.ekstazi.core-5.3.0.jar=mode=junit",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/csv/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-csv-1.10.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.5188561420000042,
+    "run_count": 2,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "41dbee812198f36f561d650e934f01d4b6a2a783df6422f409fda2c6a7616b06",
+    "log": "wrapper_pilot/logs/csv/ordinary_change__fail_closed.log",
+    "parse_status": "parsed",
+    "project": "csv",
+    "artifact": "commons-csv-1.10.0.jar",
+    "scenario": "ordinary_change",
+    "arm": "fail_closed",
+    "integrity_valid": true,
+    "fallback": false,
+    "metadata_before_bytes": 1460,
+    "target_metadata_fault_bytes": 0,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "dd28ebc5e623b5540fc8a60cbc9eae576d5df5cceba46f2cb9e3498403e1cbbe",
+      "pilot.SubjectTest.clz": "b8d1b3f06225c8553b8513020c410b4bea692cd79f0d5c63a3211b5401c32076",
+      "pilot.UntouchedTest.clz": "62a713c62ead353ed7c2326fd8e31e9169d96790602858569b253c5faacef5ad"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/csv/home",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/csv/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-csv-1.10.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.22743497999999818,
+    "run_count": 3,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches",
+      "pilot.UntouchedTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "def71cf9548246c00b0d37828432052c980b2761044186be6e3d036f3216f09e",
+    "log": "wrapper_pilot/logs/csv/ordinary_change__full_suite.log",
+    "parse_status": "parsed",
+    "project": "csv",
+    "artifact": "commons-csv-1.10.0.jar",
+    "scenario": "ordinary_change",
+    "arm": "full_suite",
+    "integrity_valid": true,
+    "fallback": false,
+    "metadata_before_bytes": 1460,
+    "target_metadata_fault_bytes": 0,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "dd28ebc5e623b5540fc8a60cbc9eae576d5df5cceba46f2cb9e3498403e1cbbe",
+      "pilot.SubjectTest.clz": "b8d1b3f06225c8553b8513020c410b4bea692cd79f0d5c63a3211b5401c32076",
+      "pilot.UntouchedTest.clz": "62a713c62ead353ed7c2326fd8e31e9169d96790602858569b253c5faacef5ad"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/csv/home",
+      "-javaagent:/workspace/scratch/0827c1f80a7f/toolchain/org.ekstazi.core-5.3.0.jar=mode=junit",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/csv/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-csv-1.10.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.4215556760000254,
+    "run_count": 2,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "41dbee812198f36f561d650e934f01d4b6a2a783df6422f409fda2c6a7616b06",
+    "log": "wrapper_pilot/logs/csv/target_metadata_missing__standard_rts.log",
+    "parse_status": "parsed",
+    "project": "csv",
+    "artifact": "commons-csv-1.10.0.jar",
+    "scenario": "target_metadata_missing",
+    "arm": "standard_rts",
+    "integrity_valid": false,
+    "fallback": false,
+    "metadata_before_bytes": 1460,
+    "target_metadata_fault_bytes": 1460,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "dd28ebc5e623b5540fc8a60cbc9eae576d5df5cceba46f2cb9e3498403e1cbbe",
+      "pilot.UntouchedTest.clz": "62a713c62ead353ed7c2326fd8e31e9169d96790602858569b253c5faacef5ad"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/csv/home",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/csv/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-csv-1.10.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.19610568799998873,
+    "run_count": 3,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches",
+      "pilot.UntouchedTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "def71cf9548246c00b0d37828432052c980b2761044186be6e3d036f3216f09e",
+    "log": "wrapper_pilot/logs/csv/target_metadata_missing__fail_closed.log",
+    "parse_status": "parsed",
+    "project": "csv",
+    "artifact": "commons-csv-1.10.0.jar",
+    "scenario": "target_metadata_missing",
+    "arm": "fail_closed",
+    "integrity_valid": false,
+    "fallback": true,
+    "metadata_before_bytes": 1460,
+    "target_metadata_fault_bytes": 1460,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "dd28ebc5e623b5540fc8a60cbc9eae576d5df5cceba46f2cb9e3498403e1cbbe",
+      "pilot.UntouchedTest.clz": "62a713c62ead353ed7c2326fd8e31e9169d96790602858569b253c5faacef5ad"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/csv/home",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/csv/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-csv-1.10.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.27614560800003574,
+    "run_count": 3,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches",
+      "pilot.UntouchedTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "def71cf9548246c00b0d37828432052c980b2761044186be6e3d036f3216f09e",
+    "log": "wrapper_pilot/logs/csv/target_metadata_missing__full_suite.log",
+    "parse_status": "parsed",
+    "project": "csv",
+    "artifact": "commons-csv-1.10.0.jar",
+    "scenario": "target_metadata_missing",
+    "arm": "full_suite",
+    "integrity_valid": false,
+    "fallback": false,
+    "metadata_before_bytes": 1460,
+    "target_metadata_fault_bytes": 1460,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "dd28ebc5e623b5540fc8a60cbc9eae576d5df5cceba46f2cb9e3498403e1cbbe",
+      "pilot.UntouchedTest.clz": "62a713c62ead353ed7c2326fd8e31e9169d96790602858569b253c5faacef5ad"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/csv/home",
+      "-javaagent:/workspace/scratch/0827c1f80a7f/toolchain/org.ekstazi.core-5.3.0.jar=mode=junit",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/csv/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-csv-1.10.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.5689557279999917,
+    "run_count": 2,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "41dbee812198f36f561d650e934f01d4b6a2a783df6422f409fda2c6a7616b06",
+    "log": "wrapper_pilot/logs/csv/target_metadata_truncated_50pct__standard_rts.log",
+    "parse_status": "parsed",
+    "project": "csv",
+    "artifact": "commons-csv-1.10.0.jar",
+    "scenario": "target_metadata_truncated_50pct",
+    "arm": "standard_rts",
+    "integrity_valid": false,
+    "fallback": false,
+    "metadata_before_bytes": 1460,
+    "target_metadata_fault_bytes": 730,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "dd28ebc5e623b5540fc8a60cbc9eae576d5df5cceba46f2cb9e3498403e1cbbe",
+      "pilot.SubjectTest.clz": "9459417772f839c3ec660d4bf6b23e97cd2e4934d6370cde14f7905213ac2327",
+      "pilot.UntouchedTest.clz": "62a713c62ead353ed7c2326fd8e31e9169d96790602858569b253c5faacef5ad"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/csv/home",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/csv/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-csv-1.10.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.3051433109999948,
+    "run_count": 3,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches",
+      "pilot.UntouchedTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "def71cf9548246c00b0d37828432052c980b2761044186be6e3d036f3216f09e",
+    "log": "wrapper_pilot/logs/csv/target_metadata_truncated_50pct__fail_closed.log",
+    "parse_status": "parsed",
+    "project": "csv",
+    "artifact": "commons-csv-1.10.0.jar",
+    "scenario": "target_metadata_truncated_50pct",
+    "arm": "fail_closed",
+    "integrity_valid": false,
+    "fallback": true,
+    "metadata_before_bytes": 1460,
+    "target_metadata_fault_bytes": 730,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "dd28ebc5e623b5540fc8a60cbc9eae576d5df5cceba46f2cb9e3498403e1cbbe",
+      "pilot.SubjectTest.clz": "9459417772f839c3ec660d4bf6b23e97cd2e4934d6370cde14f7905213ac2327",
+      "pilot.UntouchedTest.clz": "62a713c62ead353ed7c2326fd8e31e9169d96790602858569b253c5faacef5ad"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/csv/home",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/csv/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-csv-1.10.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.21866783699999814,
+    "run_count": 3,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches",
+      "pilot.UntouchedTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "def71cf9548246c00b0d37828432052c980b2761044186be6e3d036f3216f09e",
+    "log": "wrapper_pilot/logs/csv/target_metadata_truncated_50pct__full_suite.log",
+    "parse_status": "parsed",
+    "project": "csv",
+    "artifact": "commons-csv-1.10.0.jar",
+    "scenario": "target_metadata_truncated_50pct",
+    "arm": "full_suite",
+    "integrity_valid": false,
+    "fallback": false,
+    "metadata_before_bytes": 1460,
+    "target_metadata_fault_bytes": 730,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "dd28ebc5e623b5540fc8a60cbc9eae576d5df5cceba46f2cb9e3498403e1cbbe",
+      "pilot.SubjectTest.clz": "9459417772f839c3ec660d4bf6b23e97cd2e4934d6370cde14f7905213ac2327",
+      "pilot.UntouchedTest.clz": "62a713c62ead353ed7c2326fd8e31e9169d96790602858569b253c5faacef5ad"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/codec/home",
+      "-javaagent:/workspace/scratch/0827c1f80a7f/toolchain/org.ekstazi.core-5.3.0.jar=mode=junit",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/codec/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-codec-1.16.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.32998035400004255,
+    "run_count": 3,
+    "failure_count": 0,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches",
+      "pilot.UntouchedTest#valueMatches"
+    ],
+    "failed_tests": [],
+    "stdout_sha256": "c020300eb9d316937e886de5c29772cdacb1750d4071d72ca808a3bd740ab609",
+    "log": "wrapper_pilot/logs/codec/cold_baseline.log",
+    "parse_status": "parsed",
+    "project": "codec",
+    "artifact": "commons-codec-1.16.0.jar",
+    "scenario": "cold_baseline",
+    "arm": "standard_rts",
+    "integrity_valid": true,
+    "fallback": false
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/codec/home",
+      "-javaagent:/workspace/scratch/0827c1f80a7f/toolchain/org.ekstazi.core-5.3.0.jar=mode=junit",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/codec/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-codec-1.16.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.33364782600000353,
+    "run_count": 0,
+    "failure_count": 0,
+    "ignored_count": 0,
+    "executed_tests": [],
+    "failed_tests": [],
+    "stdout_sha256": "858d9203df3b3e4297a4b8ba9c7de72a083f390c255aa6eac633e0b21c6476ff",
+    "log": "wrapper_pilot/logs/codec/warm_baseline.log",
+    "parse_status": "parsed",
+    "project": "codec",
+    "artifact": "commons-codec-1.16.0.jar",
+    "scenario": "warm_baseline",
+    "arm": "standard_rts",
+    "integrity_valid": true,
+    "fallback": false
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/codec/home",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/codec/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-codec-1.16.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.1797014450000347,
+    "run_count": 3,
+    "failure_count": 0,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches",
+      "pilot.UntouchedTest#valueMatches"
+    ],
+    "failed_tests": [],
+    "stdout_sha256": "c020300eb9d316937e886de5c29772cdacb1750d4071d72ca808a3bd740ab609",
+    "log": "wrapper_pilot/logs/codec/full_baseline.log",
+    "parse_status": "parsed",
+    "project": "codec",
+    "artifact": "commons-codec-1.16.0.jar",
+    "scenario": "full_baseline",
+    "arm": "full_suite",
+    "integrity_valid": true,
+    "fallback": false
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/codec/home",
+      "-javaagent:/workspace/scratch/0827c1f80a7f/toolchain/org.ekstazi.core-5.3.0.jar=mode=junit",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/codec/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-codec-1.16.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.46055377100003625,
+    "run_count": 2,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "4a1293586b01be7c544c1d124a0c7c0148db6667eaa2b736e9db9957d6e46c56",
+    "log": "wrapper_pilot/logs/codec/ordinary_change__standard_rts.log",
+    "parse_status": "parsed",
+    "project": "codec",
+    "artifact": "commons-codec-1.16.0.jar",
+    "scenario": "ordinary_change",
+    "arm": "standard_rts",
+    "integrity_valid": true,
+    "fallback": false,
+    "metadata_before_bytes": 675,
+    "target_metadata_fault_bytes": 0,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "4a9e416bda142e6b5d1e16eb29cd67fc0ee42182ce25c1c86f9143a9143088ee",
+      "pilot.SubjectTest.clz": "401724cd9db964c73edacf03ce96ec8475cb070d05be015eab9bfd4d7addcd01",
+      "pilot.UntouchedTest.clz": "f0e2e1f412b704a8af9d3a27518c7a882a44d868c1d678519e9273ddb19a3f33"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/codec/home",
+      "-javaagent:/workspace/scratch/0827c1f80a7f/toolchain/org.ekstazi.core-5.3.0.jar=mode=junit",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/codec/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-codec-1.16.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.3809313230000271,
+    "run_count": 2,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "4a1293586b01be7c544c1d124a0c7c0148db6667eaa2b736e9db9957d6e46c56",
+    "log": "wrapper_pilot/logs/codec/ordinary_change__fail_closed.log",
+    "parse_status": "parsed",
+    "project": "codec",
+    "artifact": "commons-codec-1.16.0.jar",
+    "scenario": "ordinary_change",
+    "arm": "fail_closed",
+    "integrity_valid": true,
+    "fallback": false,
+    "metadata_before_bytes": 675,
+    "target_metadata_fault_bytes": 0,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "4a9e416bda142e6b5d1e16eb29cd67fc0ee42182ce25c1c86f9143a9143088ee",
+      "pilot.SubjectTest.clz": "401724cd9db964c73edacf03ce96ec8475cb070d05be015eab9bfd4d7addcd01",
+      "pilot.UntouchedTest.clz": "f0e2e1f412b704a8af9d3a27518c7a882a44d868c1d678519e9273ddb19a3f33"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/codec/home",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/codec/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-codec-1.16.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.2022690480000051,
+    "run_count": 3,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches",
+      "pilot.UntouchedTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "c141eb42b3e34004bd8cfd6029617a5aa8c5a147cf2170afcdc6de86a5bbb96e",
+    "log": "wrapper_pilot/logs/codec/ordinary_change__full_suite.log",
+    "parse_status": "parsed",
+    "project": "codec",
+    "artifact": "commons-codec-1.16.0.jar",
+    "scenario": "ordinary_change",
+    "arm": "full_suite",
+    "integrity_valid": true,
+    "fallback": false,
+    "metadata_before_bytes": 675,
+    "target_metadata_fault_bytes": 0,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "4a9e416bda142e6b5d1e16eb29cd67fc0ee42182ce25c1c86f9143a9143088ee",
+      "pilot.SubjectTest.clz": "401724cd9db964c73edacf03ce96ec8475cb070d05be015eab9bfd4d7addcd01",
+      "pilot.UntouchedTest.clz": "f0e2e1f412b704a8af9d3a27518c7a882a44d868c1d678519e9273ddb19a3f33"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/codec/home",
+      "-javaagent:/workspace/scratch/0827c1f80a7f/toolchain/org.ekstazi.core-5.3.0.jar=mode=junit",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/codec/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-codec-1.16.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.3785421720000386,
+    "run_count": 2,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "4a1293586b01be7c544c1d124a0c7c0148db6667eaa2b736e9db9957d6e46c56",
+    "log": "wrapper_pilot/logs/codec/target_metadata_missing__standard_rts.log",
+    "parse_status": "parsed",
+    "project": "codec",
+    "artifact": "commons-codec-1.16.0.jar",
+    "scenario": "target_metadata_missing",
+    "arm": "standard_rts",
+    "integrity_valid": false,
+    "fallback": false,
+    "metadata_before_bytes": 675,
+    "target_metadata_fault_bytes": 675,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "4a9e416bda142e6b5d1e16eb29cd67fc0ee42182ce25c1c86f9143a9143088ee",
+      "pilot.UntouchedTest.clz": "f0e2e1f412b704a8af9d3a27518c7a882a44d868c1d678519e9273ddb19a3f33"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/codec/home",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/codec/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-codec-1.16.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.20980177200004846,
+    "run_count": 3,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches",
+      "pilot.UntouchedTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "c141eb42b3e34004bd8cfd6029617a5aa8c5a147cf2170afcdc6de86a5bbb96e",
+    "log": "wrapper_pilot/logs/codec/target_metadata_missing__fail_closed.log",
+    "parse_status": "parsed",
+    "project": "codec",
+    "artifact": "commons-codec-1.16.0.jar",
+    "scenario": "target_metadata_missing",
+    "arm": "fail_closed",
+    "integrity_valid": false,
+    "fallback": true,
+    "metadata_before_bytes": 675,
+    "target_metadata_fault_bytes": 675,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "4a9e416bda142e6b5d1e16eb29cd67fc0ee42182ce25c1c86f9143a9143088ee",
+      "pilot.UntouchedTest.clz": "f0e2e1f412b704a8af9d3a27518c7a882a44d868c1d678519e9273ddb19a3f33"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/codec/home",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/codec/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-codec-1.16.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.18930865800001584,
+    "run_count": 3,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches",
+      "pilot.UntouchedTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "c141eb42b3e34004bd8cfd6029617a5aa8c5a147cf2170afcdc6de86a5bbb96e",
+    "log": "wrapper_pilot/logs/codec/target_metadata_missing__full_suite.log",
+    "parse_status": "parsed",
+    "project": "codec",
+    "artifact": "commons-codec-1.16.0.jar",
+    "scenario": "target_metadata_missing",
+    "arm": "full_suite",
+    "integrity_valid": false,
+    "fallback": false,
+    "metadata_before_bytes": 675,
+    "target_metadata_fault_bytes": 675,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "4a9e416bda142e6b5d1e16eb29cd67fc0ee42182ce25c1c86f9143a9143088ee",
+      "pilot.UntouchedTest.clz": "f0e2e1f412b704a8af9d3a27518c7a882a44d868c1d678519e9273ddb19a3f33"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/codec/home",
+      "-javaagent:/workspace/scratch/0827c1f80a7f/toolchain/org.ekstazi.core-5.3.0.jar=mode=junit",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/codec/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-codec-1.16.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.3924664209999946,
+    "run_count": 2,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "4a1293586b01be7c544c1d124a0c7c0148db6667eaa2b736e9db9957d6e46c56",
+    "log": "wrapper_pilot/logs/codec/target_metadata_truncated_50pct__standard_rts.log",
+    "parse_status": "parsed",
+    "project": "codec",
+    "artifact": "commons-codec-1.16.0.jar",
+    "scenario": "target_metadata_truncated_50pct",
+    "arm": "standard_rts",
+    "integrity_valid": false,
+    "fallback": false,
+    "metadata_before_bytes": 675,
+    "target_metadata_fault_bytes": 338,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "4a9e416bda142e6b5d1e16eb29cd67fc0ee42182ce25c1c86f9143a9143088ee",
+      "pilot.SubjectTest.clz": "747d9ff08231688a3596b4dd7a796557518381e05b1abd045f339746add0b795",
+      "pilot.UntouchedTest.clz": "f0e2e1f412b704a8af9d3a27518c7a882a44d868c1d678519e9273ddb19a3f33"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/codec/home",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/codec/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-codec-1.16.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.1928975939999873,
+    "run_count": 3,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches",
+      "pilot.UntouchedTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "c141eb42b3e34004bd8cfd6029617a5aa8c5a147cf2170afcdc6de86a5bbb96e",
+    "log": "wrapper_pilot/logs/codec/target_metadata_truncated_50pct__fail_closed.log",
+    "parse_status": "parsed",
+    "project": "codec",
+    "artifact": "commons-codec-1.16.0.jar",
+    "scenario": "target_metadata_truncated_50pct",
+    "arm": "fail_closed",
+    "integrity_valid": false,
+    "fallback": true,
+    "metadata_before_bytes": 675,
+    "target_metadata_fault_bytes": 338,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "4a9e416bda142e6b5d1e16eb29cd67fc0ee42182ce25c1c86f9143a9143088ee",
+      "pilot.SubjectTest.clz": "747d9ff08231688a3596b4dd7a796557518381e05b1abd045f339746add0b795",
+      "pilot.UntouchedTest.clz": "f0e2e1f412b704a8af9d3a27518c7a882a44d868c1d678519e9273ddb19a3f33"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/codec/home",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/codec/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-codec-1.16.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.17930639000002202,
+    "run_count": 3,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches",
+      "pilot.UntouchedTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "c141eb42b3e34004bd8cfd6029617a5aa8c5a147cf2170afcdc6de86a5bbb96e",
+    "log": "wrapper_pilot/logs/codec/target_metadata_truncated_50pct__full_suite.log",
+    "parse_status": "parsed",
+    "project": "codec",
+    "artifact": "commons-codec-1.16.0.jar",
+    "scenario": "target_metadata_truncated_50pct",
+    "arm": "full_suite",
+    "integrity_valid": false,
+    "fallback": false,
+    "metadata_before_bytes": 675,
+    "target_metadata_fault_bytes": 338,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "4a9e416bda142e6b5d1e16eb29cd67fc0ee42182ce25c1c86f9143a9143088ee",
+      "pilot.SubjectTest.clz": "747d9ff08231688a3596b4dd7a796557518381e05b1abd045f339746add0b795",
+      "pilot.UntouchedTest.clz": "f0e2e1f412b704a8af9d3a27518c7a882a44d868c1d678519e9273ddb19a3f33"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/io/home",
+      "-javaagent:/workspace/scratch/0827c1f80a7f/toolchain/org.ekstazi.core-5.3.0.jar=mode=junit",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/io/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-io-2.15.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.4051838499999576,
+    "run_count": 3,
+    "failure_count": 0,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches",
+      "pilot.UntouchedTest#valueMatches"
+    ],
+    "failed_tests": [],
+    "stdout_sha256": "c020300eb9d316937e886de5c29772cdacb1750d4071d72ca808a3bd740ab609",
+    "log": "wrapper_pilot/logs/io/cold_baseline.log",
+    "parse_status": "parsed",
+    "project": "io",
+    "artifact": "commons-io-2.15.0.jar",
+    "scenario": "cold_baseline",
+    "arm": "standard_rts",
+    "integrity_valid": true,
+    "fallback": false
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/io/home",
+      "-javaagent:/workspace/scratch/0827c1f80a7f/toolchain/org.ekstazi.core-5.3.0.jar=mode=junit",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/io/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-io-2.15.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.46163392900001554,
+    "run_count": 0,
+    "failure_count": 0,
+    "ignored_count": 0,
+    "executed_tests": [],
+    "failed_tests": [],
+    "stdout_sha256": "858d9203df3b3e4297a4b8ba9c7de72a083f390c255aa6eac633e0b21c6476ff",
+    "log": "wrapper_pilot/logs/io/warm_baseline.log",
+    "parse_status": "parsed",
+    "project": "io",
+    "artifact": "commons-io-2.15.0.jar",
+    "scenario": "warm_baseline",
+    "arm": "standard_rts",
+    "integrity_valid": true,
+    "fallback": false
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/io/home",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/io/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-io-2.15.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.1887567979999858,
+    "run_count": 3,
+    "failure_count": 0,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches",
+      "pilot.UntouchedTest#valueMatches"
+    ],
+    "failed_tests": [],
+    "stdout_sha256": "c020300eb9d316937e886de5c29772cdacb1750d4071d72ca808a3bd740ab609",
+    "log": "wrapper_pilot/logs/io/full_baseline.log",
+    "parse_status": "parsed",
+    "project": "io",
+    "artifact": "commons-io-2.15.0.jar",
+    "scenario": "full_baseline",
+    "arm": "full_suite",
+    "integrity_valid": true,
+    "fallback": false
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/io/home",
+      "-javaagent:/workspace/scratch/0827c1f80a7f/toolchain/org.ekstazi.core-5.3.0.jar=mode=junit",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/io/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-io-2.15.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.3973018680000564,
+    "run_count": 2,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "d4977fdfd721b1c8580e76c8fcebd4729b015b5375b07a3744940e0b9648c422",
+    "log": "wrapper_pilot/logs/io/ordinary_change__standard_rts.log",
+    "parse_status": "parsed",
+    "project": "io",
+    "artifact": "commons-io-2.15.0.jar",
+    "scenario": "ordinary_change",
+    "arm": "standard_rts",
+    "integrity_valid": true,
+    "fallback": false,
+    "metadata_before_bytes": 660,
+    "target_metadata_fault_bytes": 0,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "07e4942cf49a9ad80aa8d80b34c39a04bbe96a98a133e8643eb5995b6cf51966",
+      "pilot.SubjectTest.clz": "fc75367e7119d8cc4998dca23a99785b2a2ae1cd0ec4fe20f5e0b17fbf773e67",
+      "pilot.UntouchedTest.clz": "03f6d1b33c15deee588cdc12afde422170c282fbf4595a1fc9ee8e197436c497"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/io/home",
+      "-javaagent:/workspace/scratch/0827c1f80a7f/toolchain/org.ekstazi.core-5.3.0.jar=mode=junit",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/io/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-io-2.15.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.344788412000014,
+    "run_count": 2,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "d4977fdfd721b1c8580e76c8fcebd4729b015b5375b07a3744940e0b9648c422",
+    "log": "wrapper_pilot/logs/io/ordinary_change__fail_closed.log",
+    "parse_status": "parsed",
+    "project": "io",
+    "artifact": "commons-io-2.15.0.jar",
+    "scenario": "ordinary_change",
+    "arm": "fail_closed",
+    "integrity_valid": true,
+    "fallback": false,
+    "metadata_before_bytes": 660,
+    "target_metadata_fault_bytes": 0,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "07e4942cf49a9ad80aa8d80b34c39a04bbe96a98a133e8643eb5995b6cf51966",
+      "pilot.SubjectTest.clz": "fc75367e7119d8cc4998dca23a99785b2a2ae1cd0ec4fe20f5e0b17fbf773e67",
+      "pilot.UntouchedTest.clz": "03f6d1b33c15deee588cdc12afde422170c282fbf4595a1fc9ee8e197436c497"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/io/home",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/io/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-io-2.15.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.18514328300000216,
+    "run_count": 3,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches",
+      "pilot.UntouchedTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "02cd93f95788183a2a50700905bab31ca14de3281ec2a4a3814672cbb76657a8",
+    "log": "wrapper_pilot/logs/io/ordinary_change__full_suite.log",
+    "parse_status": "parsed",
+    "project": "io",
+    "artifact": "commons-io-2.15.0.jar",
+    "scenario": "ordinary_change",
+    "arm": "full_suite",
+    "integrity_valid": true,
+    "fallback": false,
+    "metadata_before_bytes": 660,
+    "target_metadata_fault_bytes": 0,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "07e4942cf49a9ad80aa8d80b34c39a04bbe96a98a133e8643eb5995b6cf51966",
+      "pilot.SubjectTest.clz": "fc75367e7119d8cc4998dca23a99785b2a2ae1cd0ec4fe20f5e0b17fbf773e67",
+      "pilot.UntouchedTest.clz": "03f6d1b33c15deee588cdc12afde422170c282fbf4595a1fc9ee8e197436c497"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/io/home",
+      "-javaagent:/workspace/scratch/0827c1f80a7f/toolchain/org.ekstazi.core-5.3.0.jar=mode=junit",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/io/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-io-2.15.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.3754849719999811,
+    "run_count": 2,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "d4977fdfd721b1c8580e76c8fcebd4729b015b5375b07a3744940e0b9648c422",
+    "log": "wrapper_pilot/logs/io/target_metadata_missing__standard_rts.log",
+    "parse_status": "parsed",
+    "project": "io",
+    "artifact": "commons-io-2.15.0.jar",
+    "scenario": "target_metadata_missing",
+    "arm": "standard_rts",
+    "integrity_valid": false,
+    "fallback": false,
+    "metadata_before_bytes": 660,
+    "target_metadata_fault_bytes": 660,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "07e4942cf49a9ad80aa8d80b34c39a04bbe96a98a133e8643eb5995b6cf51966",
+      "pilot.UntouchedTest.clz": "03f6d1b33c15deee588cdc12afde422170c282fbf4595a1fc9ee8e197436c497"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/io/home",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/io/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-io-2.15.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.19696979399998327,
+    "run_count": 3,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches",
+      "pilot.UntouchedTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "02cd93f95788183a2a50700905bab31ca14de3281ec2a4a3814672cbb76657a8",
+    "log": "wrapper_pilot/logs/io/target_metadata_missing__fail_closed.log",
+    "parse_status": "parsed",
+    "project": "io",
+    "artifact": "commons-io-2.15.0.jar",
+    "scenario": "target_metadata_missing",
+    "arm": "fail_closed",
+    "integrity_valid": false,
+    "fallback": true,
+    "metadata_before_bytes": 660,
+    "target_metadata_fault_bytes": 660,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "07e4942cf49a9ad80aa8d80b34c39a04bbe96a98a133e8643eb5995b6cf51966",
+      "pilot.UntouchedTest.clz": "03f6d1b33c15deee588cdc12afde422170c282fbf4595a1fc9ee8e197436c497"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/io/home",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/io/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-io-2.15.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.17663537600003565,
+    "run_count": 3,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches",
+      "pilot.UntouchedTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "02cd93f95788183a2a50700905bab31ca14de3281ec2a4a3814672cbb76657a8",
+    "log": "wrapper_pilot/logs/io/target_metadata_missing__full_suite.log",
+    "parse_status": "parsed",
+    "project": "io",
+    "artifact": "commons-io-2.15.0.jar",
+    "scenario": "target_metadata_missing",
+    "arm": "full_suite",
+    "integrity_valid": false,
+    "fallback": false,
+    "metadata_before_bytes": 660,
+    "target_metadata_fault_bytes": 660,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "07e4942cf49a9ad80aa8d80b34c39a04bbe96a98a133e8643eb5995b6cf51966",
+      "pilot.UntouchedTest.clz": "03f6d1b33c15deee588cdc12afde422170c282fbf4595a1fc9ee8e197436c497"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/io/home",
+      "-javaagent:/workspace/scratch/0827c1f80a7f/toolchain/org.ekstazi.core-5.3.0.jar=mode=junit",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/io/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-io-2.15.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.3245061889999761,
+    "run_count": 2,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "d4977fdfd721b1c8580e76c8fcebd4729b015b5375b07a3744940e0b9648c422",
+    "log": "wrapper_pilot/logs/io/target_metadata_truncated_50pct__standard_rts.log",
+    "parse_status": "parsed",
+    "project": "io",
+    "artifact": "commons-io-2.15.0.jar",
+    "scenario": "target_metadata_truncated_50pct",
+    "arm": "standard_rts",
+    "integrity_valid": false,
+    "fallback": false,
+    "metadata_before_bytes": 660,
+    "target_metadata_fault_bytes": 330,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "07e4942cf49a9ad80aa8d80b34c39a04bbe96a98a133e8643eb5995b6cf51966",
+      "pilot.SubjectTest.clz": "9d13472777bd7de8b88e6cd00fcfcfffcc72420a9ade5dc790b2738fb7a6f079",
+      "pilot.UntouchedTest.clz": "03f6d1b33c15deee588cdc12afde422170c282fbf4595a1fc9ee8e197436c497"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/io/home",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/io/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-io-2.15.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.16860796800000344,
+    "run_count": 3,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches",
+      "pilot.UntouchedTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "02cd93f95788183a2a50700905bab31ca14de3281ec2a4a3814672cbb76657a8",
+    "log": "wrapper_pilot/logs/io/target_metadata_truncated_50pct__fail_closed.log",
+    "parse_status": "parsed",
+    "project": "io",
+    "artifact": "commons-io-2.15.0.jar",
+    "scenario": "target_metadata_truncated_50pct",
+    "arm": "fail_closed",
+    "integrity_valid": false,
+    "fallback": true,
+    "metadata_before_bytes": 660,
+    "target_metadata_fault_bytes": 330,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "07e4942cf49a9ad80aa8d80b34c39a04bbe96a98a133e8643eb5995b6cf51966",
+      "pilot.SubjectTest.clz": "9d13472777bd7de8b88e6cd00fcfcfffcc72420a9ade5dc790b2738fb7a6f079",
+      "pilot.UntouchedTest.clz": "03f6d1b33c15deee588cdc12afde422170c282fbf4595a1fc9ee8e197436c497"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/io/home",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/io/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-io-2.15.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.1815937609999878,
+    "run_count": 3,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches",
+      "pilot.UntouchedTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "02cd93f95788183a2a50700905bab31ca14de3281ec2a4a3814672cbb76657a8",
+    "log": "wrapper_pilot/logs/io/target_metadata_truncated_50pct__full_suite.log",
+    "parse_status": "parsed",
+    "project": "io",
+    "artifact": "commons-io-2.15.0.jar",
+    "scenario": "target_metadata_truncated_50pct",
+    "arm": "full_suite",
+    "integrity_valid": false,
+    "fallback": false,
+    "metadata_before_bytes": 660,
+    "target_metadata_fault_bytes": 330,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "07e4942cf49a9ad80aa8d80b34c39a04bbe96a98a133e8643eb5995b6cf51966",
+      "pilot.SubjectTest.clz": "9d13472777bd7de8b88e6cd00fcfcfffcc72420a9ade5dc790b2738fb7a6f079",
+      "pilot.UntouchedTest.clz": "03f6d1b33c15deee588cdc12afde422170c282fbf4595a1fc9ee8e197436c497"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/lang/home",
+      "-javaagent:/workspace/scratch/0827c1f80a7f/toolchain/org.ekstazi.core-5.3.0.jar=mode=junit",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/lang/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-lang3-3.14.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.35419753499996887,
+    "run_count": 3,
+    "failure_count": 0,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches",
+      "pilot.UntouchedTest#valueMatches"
+    ],
+    "failed_tests": [],
+    "stdout_sha256": "c020300eb9d316937e886de5c29772cdacb1750d4071d72ca808a3bd740ab609",
+    "log": "wrapper_pilot/logs/lang/cold_baseline.log",
+    "parse_status": "parsed",
+    "project": "lang",
+    "artifact": "commons-lang3-3.14.0.jar",
+    "scenario": "cold_baseline",
+    "arm": "standard_rts",
+    "integrity_valid": true,
+    "fallback": false
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/lang/home",
+      "-javaagent:/workspace/scratch/0827c1f80a7f/toolchain/org.ekstazi.core-5.3.0.jar=mode=junit",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/lang/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-lang3-3.14.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.3228799169999661,
+    "run_count": 0,
+    "failure_count": 0,
+    "ignored_count": 0,
+    "executed_tests": [],
+    "failed_tests": [],
+    "stdout_sha256": "858d9203df3b3e4297a4b8ba9c7de72a083f390c255aa6eac633e0b21c6476ff",
+    "log": "wrapper_pilot/logs/lang/warm_baseline.log",
+    "parse_status": "parsed",
+    "project": "lang",
+    "artifact": "commons-lang3-3.14.0.jar",
+    "scenario": "warm_baseline",
+    "arm": "standard_rts",
+    "integrity_valid": true,
+    "fallback": false
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/lang/home",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/lang/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-lang3-3.14.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.1538209189999975,
+    "run_count": 3,
+    "failure_count": 0,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches",
+      "pilot.UntouchedTest#valueMatches"
+    ],
+    "failed_tests": [],
+    "stdout_sha256": "c020300eb9d316937e886de5c29772cdacb1750d4071d72ca808a3bd740ab609",
+    "log": "wrapper_pilot/logs/lang/full_baseline.log",
+    "parse_status": "parsed",
+    "project": "lang",
+    "artifact": "commons-lang3-3.14.0.jar",
+    "scenario": "full_baseline",
+    "arm": "full_suite",
+    "integrity_valid": true,
+    "fallback": false
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/lang/home",
+      "-javaagent:/workspace/scratch/0827c1f80a7f/toolchain/org.ekstazi.core-5.3.0.jar=mode=junit",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/lang/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-lang3-3.14.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.35120683799999597,
+    "run_count": 2,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "75f5421c9103f28616b953ba0dfbb5453a0e7fcc8fd54a1bfc3159b0fa1caffd",
+    "log": "wrapper_pilot/logs/lang/ordinary_change__standard_rts.log",
+    "parse_status": "parsed",
+    "project": "lang",
+    "artifact": "commons-lang3-3.14.0.jar",
+    "scenario": "ordinary_change",
+    "arm": "standard_rts",
+    "integrity_valid": true,
+    "fallback": false,
+    "metadata_before_bytes": 675,
+    "target_metadata_fault_bytes": 0,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "c2f74a89ea0008e72fa975bc0c1d8f18de527a344cbcf9175ae1f2a2d4b56e06",
+      "pilot.SubjectTest.clz": "b3bf34df4a8891b0b4b38d3ea79b029807b7d63f79b1895c9024a02c3cd3fd1e",
+      "pilot.UntouchedTest.clz": "ec5a3a7c3e2664a15d0e13eed6156a1db06b2562b7151f0ce341cf625a0cf08e"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/lang/home",
+      "-javaagent:/workspace/scratch/0827c1f80a7f/toolchain/org.ekstazi.core-5.3.0.jar=mode=junit",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/lang/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-lang3-3.14.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.4364883249999707,
+    "run_count": 2,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "75f5421c9103f28616b953ba0dfbb5453a0e7fcc8fd54a1bfc3159b0fa1caffd",
+    "log": "wrapper_pilot/logs/lang/ordinary_change__fail_closed.log",
+    "parse_status": "parsed",
+    "project": "lang",
+    "artifact": "commons-lang3-3.14.0.jar",
+    "scenario": "ordinary_change",
+    "arm": "fail_closed",
+    "integrity_valid": true,
+    "fallback": false,
+    "metadata_before_bytes": 675,
+    "target_metadata_fault_bytes": 0,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "c2f74a89ea0008e72fa975bc0c1d8f18de527a344cbcf9175ae1f2a2d4b56e06",
+      "pilot.SubjectTest.clz": "b3bf34df4a8891b0b4b38d3ea79b029807b7d63f79b1895c9024a02c3cd3fd1e",
+      "pilot.UntouchedTest.clz": "ec5a3a7c3e2664a15d0e13eed6156a1db06b2562b7151f0ce341cf625a0cf08e"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/lang/home",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/lang/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-lang3-3.14.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.1678933270000016,
+    "run_count": 3,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches",
+      "pilot.UntouchedTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "f16ec67fa78e75cb153e01a644534babd92f1070ffd7c055dab5b373abfb0bb7",
+    "log": "wrapper_pilot/logs/lang/ordinary_change__full_suite.log",
+    "parse_status": "parsed",
+    "project": "lang",
+    "artifact": "commons-lang3-3.14.0.jar",
+    "scenario": "ordinary_change",
+    "arm": "full_suite",
+    "integrity_valid": true,
+    "fallback": false,
+    "metadata_before_bytes": 675,
+    "target_metadata_fault_bytes": 0,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "c2f74a89ea0008e72fa975bc0c1d8f18de527a344cbcf9175ae1f2a2d4b56e06",
+      "pilot.SubjectTest.clz": "b3bf34df4a8891b0b4b38d3ea79b029807b7d63f79b1895c9024a02c3cd3fd1e",
+      "pilot.UntouchedTest.clz": "ec5a3a7c3e2664a15d0e13eed6156a1db06b2562b7151f0ce341cf625a0cf08e"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/lang/home",
+      "-javaagent:/workspace/scratch/0827c1f80a7f/toolchain/org.ekstazi.core-5.3.0.jar=mode=junit",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/lang/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-lang3-3.14.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.4554503119999822,
+    "run_count": 2,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "75f5421c9103f28616b953ba0dfbb5453a0e7fcc8fd54a1bfc3159b0fa1caffd",
+    "log": "wrapper_pilot/logs/lang/target_metadata_missing__standard_rts.log",
+    "parse_status": "parsed",
+    "project": "lang",
+    "artifact": "commons-lang3-3.14.0.jar",
+    "scenario": "target_metadata_missing",
+    "arm": "standard_rts",
+    "integrity_valid": false,
+    "fallback": false,
+    "metadata_before_bytes": 675,
+    "target_metadata_fault_bytes": 675,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "c2f74a89ea0008e72fa975bc0c1d8f18de527a344cbcf9175ae1f2a2d4b56e06",
+      "pilot.UntouchedTest.clz": "ec5a3a7c3e2664a15d0e13eed6156a1db06b2562b7151f0ce341cf625a0cf08e"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/lang/home",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/lang/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-lang3-3.14.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.17463803000003963,
+    "run_count": 3,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches",
+      "pilot.UntouchedTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "f16ec67fa78e75cb153e01a644534babd92f1070ffd7c055dab5b373abfb0bb7",
+    "log": "wrapper_pilot/logs/lang/target_metadata_missing__fail_closed.log",
+    "parse_status": "parsed",
+    "project": "lang",
+    "artifact": "commons-lang3-3.14.0.jar",
+    "scenario": "target_metadata_missing",
+    "arm": "fail_closed",
+    "integrity_valid": false,
+    "fallback": true,
+    "metadata_before_bytes": 675,
+    "target_metadata_fault_bytes": 675,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "c2f74a89ea0008e72fa975bc0c1d8f18de527a344cbcf9175ae1f2a2d4b56e06",
+      "pilot.UntouchedTest.clz": "ec5a3a7c3e2664a15d0e13eed6156a1db06b2562b7151f0ce341cf625a0cf08e"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/lang/home",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/lang/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-lang3-3.14.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.1704824770000073,
+    "run_count": 3,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches",
+      "pilot.UntouchedTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "f16ec67fa78e75cb153e01a644534babd92f1070ffd7c055dab5b373abfb0bb7",
+    "log": "wrapper_pilot/logs/lang/target_metadata_missing__full_suite.log",
+    "parse_status": "parsed",
+    "project": "lang",
+    "artifact": "commons-lang3-3.14.0.jar",
+    "scenario": "target_metadata_missing",
+    "arm": "full_suite",
+    "integrity_valid": false,
+    "fallback": false,
+    "metadata_before_bytes": 675,
+    "target_metadata_fault_bytes": 675,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "c2f74a89ea0008e72fa975bc0c1d8f18de527a344cbcf9175ae1f2a2d4b56e06",
+      "pilot.UntouchedTest.clz": "ec5a3a7c3e2664a15d0e13eed6156a1db06b2562b7151f0ce341cf625a0cf08e"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/lang/home",
+      "-javaagent:/workspace/scratch/0827c1f80a7f/toolchain/org.ekstazi.core-5.3.0.jar=mode=junit",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/lang/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-lang3-3.14.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.332188436000024,
+    "run_count": 2,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "75f5421c9103f28616b953ba0dfbb5453a0e7fcc8fd54a1bfc3159b0fa1caffd",
+    "log": "wrapper_pilot/logs/lang/target_metadata_truncated_50pct__standard_rts.log",
+    "parse_status": "parsed",
+    "project": "lang",
+    "artifact": "commons-lang3-3.14.0.jar",
+    "scenario": "target_metadata_truncated_50pct",
+    "arm": "standard_rts",
+    "integrity_valid": false,
+    "fallback": false,
+    "metadata_before_bytes": 675,
+    "target_metadata_fault_bytes": 338,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "c2f74a89ea0008e72fa975bc0c1d8f18de527a344cbcf9175ae1f2a2d4b56e06",
+      "pilot.SubjectTest.clz": "637a0964440eea59feba3b16dd95b69ec03a8702ffc87e5084907797ec24feaf",
+      "pilot.UntouchedTest.clz": "ec5a3a7c3e2664a15d0e13eed6156a1db06b2562b7151f0ce341cf625a0cf08e"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/lang/home",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/lang/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-lang3-3.14.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.16756669899996268,
+    "run_count": 3,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches",
+      "pilot.UntouchedTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "f16ec67fa78e75cb153e01a644534babd92f1070ffd7c055dab5b373abfb0bb7",
+    "log": "wrapper_pilot/logs/lang/target_metadata_truncated_50pct__fail_closed.log",
+    "parse_status": "parsed",
+    "project": "lang",
+    "artifact": "commons-lang3-3.14.0.jar",
+    "scenario": "target_metadata_truncated_50pct",
+    "arm": "fail_closed",
+    "integrity_valid": false,
+    "fallback": true,
+    "metadata_before_bytes": 675,
+    "target_metadata_fault_bytes": 338,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "c2f74a89ea0008e72fa975bc0c1d8f18de527a344cbcf9175ae1f2a2d4b56e06",
+      "pilot.SubjectTest.clz": "637a0964440eea59feba3b16dd95b69ec03a8702ffc87e5084907797ec24feaf",
+      "pilot.UntouchedTest.clz": "ec5a3a7c3e2664a15d0e13eed6156a1db06b2562b7151f0ce341cf625a0cf08e"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  },
+  {
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/jdk8u432-b06/bin/java",
+      "-Duser.home=/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/lang/home",
+      "-cp",
+      "/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/work/lang/classes:/workspace/scratch/0827c1f80a7f/project_sample/wrapper_pilot/harness/classes:/workspace/scratch/0827c1f80a7f/toolchain/junit-4.13.2.jar:/workspace/scratch/0827c1f80a7f/toolchain/hamcrest-core-1.3.jar:/workspace/scratch/0827c1f80a7f/project_sample/pilot_artifacts/commons-lang3-3.14.0.jar",
+      "harness.Main",
+      "pilot.SubjectTest",
+      "pilot.ControlTest",
+      "pilot.UntouchedTest"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.2551145450000263,
+    "run_count": 3,
+    "failure_count": 1,
+    "ignored_count": 0,
+    "executed_tests": [
+      "pilot.SubjectTest#valueMatches",
+      "pilot.ControlTest#valueMatches",
+      "pilot.UntouchedTest#valueMatches"
+    ],
+    "failed_tests": [
+      "pilot.SubjectTest#valueMatches"
+    ],
+    "stdout_sha256": "f16ec67fa78e75cb153e01a644534babd92f1070ffd7c055dab5b373abfb0bb7",
+    "log": "wrapper_pilot/logs/lang/target_metadata_truncated_50pct__full_suite.log",
+    "parse_status": "parsed",
+    "project": "lang",
+    "artifact": "commons-lang3-3.14.0.jar",
+    "scenario": "target_metadata_truncated_50pct",
+    "arm": "full_suite",
+    "integrity_valid": false,
+    "fallback": false,
+    "metadata_before_bytes": 675,
+    "target_metadata_fault_bytes": 338,
+    "input_metadata_manifest": {
+      "pilot.ControlTest.clz": "c2f74a89ea0008e72fa975bc0c1d8f18de527a344cbcf9175ae1f2a2d4b56e06",
+      "pilot.SubjectTest.clz": "637a0964440eea59feba3b16dd95b69ec03a8702ffc87e5084907797ec24feaf",
+      "pilot.UntouchedTest.clz": "ec5a3a7c3e2664a15d0e13eed6156a1db06b2562b7151f0ce341cf625a0cf08e"
+    },
+    "unchanged_test_sources": true,
+    "unchanged_test_bytecode": true,
+    "expected_relevant_test": "pilot.SubjectTest#valueMatches",
+    "relevant_test_executed": true,
+    "expected_relevant_failure_observed": true
+  }
+]

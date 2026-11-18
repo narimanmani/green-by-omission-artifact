@@ -1,0 +1,9 @@
+{
+  "command": [
+    "docker",
+    "cp",
+    "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\experiments\\wxyc-fixed-historical-replay-20261112\\native-parallel-correction\\lab-image-context/.",
+    "b431cb367bd058d38ffb5e820075977a73779de999083bf71cd1c5c5aa50e925:/opt/replay/"
+  ],
+  "exit_code": 0
+}

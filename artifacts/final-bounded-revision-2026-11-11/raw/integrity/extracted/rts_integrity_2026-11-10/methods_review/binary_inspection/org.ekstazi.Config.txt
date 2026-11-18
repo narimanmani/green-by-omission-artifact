@@ -1,0 +1,1159 @@
+public final class org.ekstazi.Config {
+  public static final java.lang.String OPTION_SEPARATOR;
+
+  private static final java.lang.String ARRAY_SEPARATOR;
+
+  private static boolean sIsInitialized;
+
+  public static java.lang.String ROOT_DIR_V;
+
+  protected static final java.lang.String ROOT_DIR_N;
+
+  public static org.ekstazi.Config$AgentMode MODE_V;
+
+  protected static final java.lang.String MODE_N;
+
+  public static java.lang.String SINGLE_NAME_V;
+
+  protected static final java.lang.String SINGLE_NAME_N;
+
+  private static java.lang.String DEPENDENCIES_FORMAT_V;
+
+  protected static final java.lang.String DEPENDENCIES_FORMAT_N;
+
+  public static boolean DEPENDENCIES_INCLUDE_WELLKNOWN_V;
+
+  protected static final java.lang.String DEPENDENCIES_INCLUDE_WELLKNOWN_N;
+
+  public static boolean DEPENDENCIES_APPEND_V;
+
+  protected static final java.lang.String DEPENDENCIES_APPEND_N;
+
+  public static java.util.regex.Pattern DEPENDENCIES_IGNORED_PATHS_V;
+
+  protected static final java.lang.String DEPENDENCIES_IGNORED_PATHS_N;
+
+  public static java.util.regex.Pattern DEPENDENCIES_CLASSES_INSTRUMENT_V;
+
+  protected static final java.lang.String DEPENDENCIES_CLASSES_INSTRUMENT_N;
+
+  public static boolean DEPENDENCIES_NIO_V;
+
+  public static final java.lang.String DEPENDENCIES_NIO_N;
+
+  public static java.util.regex.Pattern DEPENDENCIES_NIO_EXCLUDES_V;
+
+  protected static final java.lang.String DEPENDENCIES_NIO_EXCLUDES_N;
+
+  public static java.util.regex.Pattern DEPENDENCIES_NIO_INCLUDES_V;
+
+  protected static final java.lang.String DEPENDENCIES_NIO_INCLUDES_N;
+
+  private static org.ekstazi.hash.Hasher$Algorithm HASH_ALGORITHM_V;
+
+  protected static final java.lang.String HASH_ALGORITHM_N;
+
+  private static boolean HASH_WITHOUT_DEBUGINFO_V;
+
+  protected static final java.lang.String HASH_WITHOUT_DEBUGINFO_N;
+
+  public static int CACHE_SIZES_V;
+
+  protected static final java.lang.String CACHE_SIZES_N;
+
+  public static boolean CACHE_SEEN_CLASSES_V;
+
+  protected static final java.lang.String CACHE_SEEN_CLASSES_N;
+
+  public static boolean X_SAVE_INSTRUMENTED_CODE_V;
+
+  protected static final java.lang.String X_SAVE_INSTRUMENTED_CODE_N;
+
+  public static boolean X_SAVE_HASHER_CACHE_V;
+
+  protected static final java.lang.String X_SAVE_HASHER_CACHE_N;
+
+  public static org.ekstazi.Config$DebugMode DEBUG_MODE_V;
+
+  protected static java.lang.String DEBUG_MODE_N;
+
+  public static boolean DEBUG_V;
+
+  protected static final java.lang.String DEBUG_N;
+
+  public static boolean X_LOG_RUNS_V;
+
+  protected static final java.lang.String X_LOG_RUNS_N;
+
+  public static final java.lang.String RUN_INFO_V;
+
+  public static boolean FORCE_ALL_V;
+
+  protected static final java.lang.String FORCE_ALL_N;
+
+  public static boolean FORCE_FAILING_V;
+
+  protected static final java.lang.String FORCE_FAILING_N;
+
+  private static java.lang.String[] SELECTION_EXCLUDES_V;
+
+  protected static final java.lang.String SELECTION_EXCLUDES_N;
+
+  private static java.lang.String[] SELECTION_INCLUDES_V;
+
+  protected static final java.lang.String SELECTION_INCLUDES_N;
+
+  public static boolean X_INSTRUMENT_CODE_V;
+
+  protected static final java.lang.String X_INSTRUMENT_CODE_N;
+
+  public static boolean X_DEPENDENCIES_SAVE_V;
+
+  protected static final java.lang.String X_DEPENDENCIES_SAVE_N;
+
+  public static boolean X_ENABLED_V;
+
+  protected static final java.lang.String X_ENABLED_N;
+
+  public static boolean X_IGNORE_ALL_TESTS_V;
+
+  protected static final java.lang.String X_IGNORE_ALL_TESTS_N;
+
+  public org.ekstazi.Config();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  private static java.lang.String rootDirDefault();
+    Code:
+       0: new           #2                  // class java/lang/StringBuilder
+       3: dup
+       4: invokespecial #3                  // Method java/lang/StringBuilder."<init>":()V
+       7: ldc           #4                  // String user.dir
+       9: invokestatic  #5                  // Method java/lang/System.getProperty:(Ljava/lang/String;)Ljava/lang/String;
+      12: invokevirtual #6                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      15: ldc           #7                  // String file.separator
+      17: invokestatic  #5                  // Method java/lang/System.getProperty:(Ljava/lang/String;)Ljava/lang/String;
+      20: invokevirtual #6                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      23: ldc           #9                  // String .ekstazi
+      25: invokevirtual #6                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      28: invokevirtual #10                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      31: areturn
+
+  public static java.io.File createRootDir(java.io.File);
+    Code:
+       0: new           #11                 // class java/io/File
+       3: dup
+       4: aload_0
+       5: ldc           #9                  // String .ekstazi
+       7: invokespecial #12                 // Method java/io/File."<init>":(Ljava/io/File;Ljava/lang/String;)V
+      10: areturn
+
+  public static java.lang.String getRootDirURI(java.io.File);
+    Code:
+       0: new           #2                  // class java/lang/StringBuilder
+       3: dup
+       4: invokespecial #3                  // Method java/lang/StringBuilder."<init>":()V
+       7: aload_0
+       8: invokevirtual #13                 // Method java/io/File.getAbsolutePath:()Ljava/lang/String;
+      11: invokevirtual #6                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      14: ldc           #7                  // String file.separator
+      16: invokestatic  #5                  // Method java/lang/System.getProperty:(Ljava/lang/String;)Ljava/lang/String;
+      19: invokevirtual #6                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      22: ldc           #9                  // String .ekstazi
+      24: invokevirtual #6                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      27: invokevirtual #10                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      30: astore_1
+      31: new           #11                 // class java/io/File
+      34: dup
+      35: aload_1
+      36: invokespecial #14                 // Method java/io/File."<init>":(Ljava/lang/String;)V
+      39: invokevirtual #15                 // Method java/io/File.toURI:()Ljava/net/URI;
+      42: invokevirtual #16                 // Method java/net/URI.toString:()Ljava/lang/String;
+      45: areturn
+
+  public static void loadConfig();
+    Code:
+       0: aconst_null
+       1: iconst_0
+       2: invokestatic  #17                 // Method loadConfig:(Ljava/lang/String;Z)V
+       5: return
+
+  public static void loadConfig(java.lang.String, boolean);
+    Code:
+       0: getstatic     #18                 // Field sIsInitialized:Z
+       3: ifeq          11
+       6: iload_1
+       7: ifne          11
+      10: return
+      11: iconst_1
+      12: putstatic     #18                 // Field sIsInitialized:Z
+      15: aload_0
+      16: invokestatic  #19                 // Method unpackOptions:(Ljava/lang/String;)Ljava/util/Properties;
+      19: astore_2
+      20: invokestatic  #20                 // Method getUserHome:()Ljava/lang/String;
+      23: astore_3
+      24: new           #11                 // class java/io/File
+      27: dup
+      28: aload_3
+      29: ldc           #21                 // String .ekstazirc
+      31: invokespecial #22                 // Method java/io/File."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+      34: astore        4
+      36: aload         4
+      38: invokestatic  #23                 // Method getProperties:(Ljava/io/File;)Ljava/util/Properties;
+      41: astore        5
+      43: new           #11                 // class java/io/File
+      46: dup
+      47: ldc           #4                  // String user.dir
+      49: invokestatic  #5                  // Method java/lang/System.getProperty:(Ljava/lang/String;)Ljava/lang/String;
+      52: ldc           #21                 // String .ekstazirc
+      54: invokespecial #22                 // Method java/io/File."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+      57: astore        6
+      59: aload         6
+      61: invokestatic  #23                 // Method getProperties:(Ljava/io/File;)Ljava/util/Properties;
+      64: astore        7
+      66: aload         5
+      68: invokestatic  #24                 // Method loadProperties:(Ljava/util/Properties;)V
+      71: aload         7
+      73: invokestatic  #24                 // Method loadProperties:(Ljava/util/Properties;)V
+      76: aload_2
+      77: invokestatic  #24                 // Method loadProperties:(Ljava/util/Properties;)V
+      80: getstatic     #25                 // Field DEBUG_MODE_V:Lorg/ekstazi/Config$DebugMode;
+      83: getstatic     #26                 // Field org/ekstazi/Config$DebugMode.SCREEN:Lorg/ekstazi/Config$DebugMode;
+      86: if_acmpeq     98
+      89: getstatic     #25                 // Field DEBUG_MODE_V:Lorg/ekstazi/Config$DebugMode;
+      92: getstatic     #27                 // Field org/ekstazi/Config$DebugMode.EVERYWHERE:Lorg/ekstazi/Config$DebugMode;
+      95: if_acmpne     102
+      98: iconst_1
+      99: goto          103
+     102: iconst_0
+     103: getstatic     #25                 // Field DEBUG_MODE_V:Lorg/ekstazi/Config$DebugMode;
+     106: getstatic     #28                 // Field org/ekstazi/Config$DebugMode.FILE:Lorg/ekstazi/Config$DebugMode;
+     109: if_acmpeq     121
+     112: getstatic     #25                 // Field DEBUG_MODE_V:Lorg/ekstazi/Config$DebugMode;
+     115: getstatic     #27                 // Field org/ekstazi/Config$DebugMode.EVERYWHERE:Lorg/ekstazi/Config$DebugMode;
+     118: if_acmpne     125
+     121: iconst_1
+     122: goto          126
+     125: iconst_0
+     126: ldc           #29                 // String debug.log
+     128: invokestatic  #30                 // Method createFileNameInCoverageDir:(Ljava/lang/String;)Ljava/lang/String;
+     131: invokestatic  #31                 // Method org/ekstazi/log/Log.init:(ZZLjava/lang/String;)V
+     134: aload         4
+     136: aload         6
+     138: invokestatic  #32                 // Method printVerbose:(Ljava/io/File;Ljava/io/File;)V
+     141: return
+
+  private static java.lang.String getUserHome();
+    Code:
+       0: ldc           #33                 // String user.home
+       2: invokestatic  #5                  // Method java/lang/System.getProperty:(Ljava/lang/String;)Ljava/lang/String;
+       5: astore_0
+       6: ldc           #34                 // String HOME
+       8: invokestatic  #35                 // Method java/lang/System.getenv:(Ljava/lang/String;)Ljava/lang/String;
+      11: astore_1
+      12: aload_1
+      13: ifnonnull     18
+      16: aload_0
+      17: areturn
+      18: aload_0
+      19: ldc           #36                 // String /
+      21: invokevirtual #37                 // Method java/lang/String.split:(Ljava/lang/String;)[Ljava/lang/String;
+      24: arraylength
+      25: istore_2
+      26: aload_1
+      27: ldc           #36                 // String /
+      29: invokevirtual #37                 // Method java/lang/String.split:(Ljava/lang/String;)[Ljava/lang/String;
+      32: arraylength
+      33: istore_3
+      34: iload_2
+      35: iload_3
+      36: if_icmpgt     43
+      39: aload_0
+      40: goto          44
+      43: aload_1
+      44: areturn
+
+  private static java.lang.String createFileNameInCoverageDir(java.lang.String);
+    Code:
+       0: new           #2                  // class java/lang/StringBuilder
+       3: dup
+       4: invokespecial #3                  // Method java/lang/StringBuilder."<init>":()V
+       7: getstatic     #38                 // Field ROOT_DIR_V:Ljava/lang/String;
+      10: invokevirtual #6                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      13: ldc           #7                  // String file.separator
+      15: invokestatic  #5                  // Method java/lang/System.getProperty:(Ljava/lang/String;)Ljava/lang/String;
+      18: invokevirtual #6                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      21: aload_0
+      22: invokevirtual #6                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      25: invokevirtual #10                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      28: areturn
+
+  private static java.util.Properties getProperties(java.io.File);
+    Code:
+       0: new           #39                 // class java/util/Properties
+       3: dup
+       4: invokespecial #40                 // Method java/util/Properties."<init>":()V
+       7: astore_1
+       8: aload_0
+       9: invokevirtual #41                 // Method java/io/File.exists:()Z
+      12: ifeq          37
+      15: aload_1
+      16: new           #42                 // class java/io/FileInputStream
+      19: dup
+      20: aload_0
+      21: invokespecial #43                 // Method java/io/FileInputStream."<init>":(Ljava/io/File;)V
+      24: invokevirtual #44                 // Method java/util/Properties.load:(Ljava/io/InputStream;)V
+      27: goto          37
+      30: astore_2
+      31: ldc           #46                 // String Could not load configuration file
+      33: aload_2
+      34: invokestatic  #47                 // Method org/ekstazi/log/Log.e:(Ljava/lang/String;Ljava/lang/Exception;)V
+      37: aload_1
+      38: areturn
+    Exception table:
+       from    to  target type
+          15    27    30   Class java/io/IOException
+
+  private static void printVerbose(java.io.File, java.io.File);
+    Code:
+       0: getstatic     #25                 // Field DEBUG_MODE_V:Lorg/ekstazi/Config$DebugMode;
+       3: getstatic     #26                 // Field org/ekstazi/Config$DebugMode.SCREEN:Lorg/ekstazi/Config$DebugMode;
+       6: if_acmpeq     27
+       9: getstatic     #25                 // Field DEBUG_MODE_V:Lorg/ekstazi/Config$DebugMode;
+      12: getstatic     #28                 // Field org/ekstazi/Config$DebugMode.FILE:Lorg/ekstazi/Config$DebugMode;
+      15: if_acmpeq     27
+      18: getstatic     #25                 // Field DEBUG_MODE_V:Lorg/ekstazi/Config$DebugMode;
+      21: getstatic     #27                 // Field org/ekstazi/Config$DebugMode.EVERYWHERE:Lorg/ekstazi/Config$DebugMode;
+      24: if_acmpne     178
+      27: ldc           #48                 // class org/ekstazi/Config
+      29: invokestatic  #49                 // Method getAllNonHiddenOptions:(Ljava/lang/Class;)[Ljava/lang/reflect/Field;
+      32: astore_2
+      33: invokestatic  #50                 // Method printVerboseLine:()V
+      36: aload_0
+      37: ifnull        56
+      40: aload_0
+      41: invokevirtual #41                 // Method java/io/File.exists:()Z
+      44: ifeq          56
+      47: ldc           #51                 // String Loaded configuration file from
+      49: aload_0
+      50: invokevirtual #13                 // Method java/io/File.getAbsolutePath:()Ljava/lang/String;
+      53: invokestatic  #52                 // Method printVerboseLine:(Ljava/lang/Object;Ljava/lang/Object;)V
+      56: aload_1
+      57: ifnull        76
+      60: aload_1
+      61: invokevirtual #41                 // Method java/io/File.exists:()Z
+      64: ifeq          76
+      67: ldc           #51                 // String Loaded configuration file from
+      69: aload_1
+      70: invokevirtual #13                 // Method java/io/File.getAbsolutePath:()Ljava/lang/String;
+      73: invokestatic  #52                 // Method printVerboseLine:(Ljava/lang/Object;Ljava/lang/Object;)V
+      76: aload_2
+      77: astore_3
+      78: aload_3
+      79: arraylength
+      80: istore        4
+      82: iconst_0
+      83: istore        5
+      85: iload         5
+      87: iload         4
+      89: if_icmpge     178
+      92: aload_3
+      93: iload         5
+      95: aaload
+      96: astore        6
+      98: ldc           #48                 // class org/ekstazi/Config
+     100: aload         6
+     102: invokestatic  #53                 // Method getNameField:(Ljava/lang/Class;Ljava/lang/reflect/Field;)Ljava/lang/reflect/Field;
+     105: invokestatic  #54                 // Method getValue:(Ljava/lang/reflect/Field;)Ljava/lang/Object;
+     108: checkcast     #55                 // class java/lang/String
+     111: astore        7
+     113: aload         6
+     115: invokestatic  #54                 // Method getValue:(Ljava/lang/reflect/Field;)Ljava/lang/Object;
+     118: astore        8
+     120: aload         8
+     122: ifnonnull     135
+     125: aload         7
+     127: ldc           #56                 // String null
+     129: invokestatic  #52                 // Method printVerboseLine:(Ljava/lang/Object;Ljava/lang/Object;)V
+     132: goto          172
+     135: aload         8
+     137: invokevirtual #57                 // Method java/lang/Object.getClass:()Ljava/lang/Class;
+     140: invokevirtual #58                 // Method java/lang/Class.isArray:()Z
+     143: ifeq          165
+     146: aload         7
+     148: aload         8
+     150: checkcast     #59                 // class "[Ljava/lang/String;"
+     153: checkcast     #59                 // class "[Ljava/lang/String;"
+     156: invokestatic  #60                 // Method java/util/Arrays.toString:([Ljava/lang/Object;)Ljava/lang/String;
+     159: invokestatic  #52                 // Method printVerboseLine:(Ljava/lang/Object;Ljava/lang/Object;)V
+     162: goto          172
+     165: aload         7
+     167: aload         8
+     169: invokestatic  #52                 // Method printVerboseLine:(Ljava/lang/Object;Ljava/lang/Object;)V
+     172: iinc          5, 1
+     175: goto          85
+     178: return
+
+  private static void printVerboseLine();
+    Code:
+       0: ldc           #61                 // String
+       2: ldc           #61                 // String
+       4: invokestatic  #52                 // Method printVerboseLine:(Ljava/lang/Object;Ljava/lang/Object;)V
+       7: return
+
+  private static void printVerboseLine(java.lang.Object, java.lang.Object);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #62                 // Method org/ekstazi/log/Log.c:(Ljava/lang/Object;Ljava/lang/Object;)V
+       5: return
+
+  protected static void loadProperties(java.util.Properties);
+    Code:
+       0: aload_0
+       1: ldc           #63                 // String root.dir
+       3: getstatic     #38                 // Field ROOT_DIR_V:Ljava/lang/String;
+       6: invokestatic  #64                 // Method getURIString:(Ljava/util/Properties;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       9: putstatic     #38                 // Field ROOT_DIR_V:Ljava/lang/String;
+      12: aload_0
+      13: ldc           #65                 // String mode
+      15: getstatic     #66                 // Field MODE_V:Lorg/ekstazi/Config$AgentMode;
+      18: invokevirtual #67                 // Method org/ekstazi/Config$AgentMode.toString:()Ljava/lang/String;
+      21: invokestatic  #68                 // Method getString:(Ljava/util/Properties;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      24: invokestatic  #69                 // Method org/ekstazi/Config$AgentMode.fromString:(Ljava/lang/String;)Lorg/ekstazi/Config$AgentMode;
+      27: putstatic     #66                 // Field MODE_V:Lorg/ekstazi/Config$AgentMode;
+      30: aload_0
+      31: ldc           #70                 // String single.name
+      33: getstatic     #71                 // Field SINGLE_NAME_V:Ljava/lang/String;
+      36: invokestatic  #68                 // Method getString:(Ljava/util/Properties;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      39: putstatic     #71                 // Field SINGLE_NAME_V:Ljava/lang/String;
+      42: aload_0
+      43: ldc           #72                 // String dependencies.format
+      45: getstatic     #73                 // Field DEPENDENCIES_FORMAT_V:Ljava/lang/String;
+      48: invokestatic  #68                 // Method getString:(Ljava/util/Properties;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      51: putstatic     #73                 // Field DEPENDENCIES_FORMAT_V:Ljava/lang/String;
+      54: aload_0
+      55: ldc           #74                 // String hash.algorithm
+      57: getstatic     #75                 // Field HASH_ALGORITHM_V:Lorg/ekstazi/hash/Hasher$Algorithm;
+      60: invokevirtual #76                 // Method org/ekstazi/hash/Hasher$Algorithm.toString:()Ljava/lang/String;
+      63: invokestatic  #68                 // Method getString:(Ljava/util/Properties;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      66: invokestatic  #77                 // Method org/ekstazi/hash/Hasher$Algorithm.fromString:(Ljava/lang/String;)Lorg/ekstazi/hash/Hasher$Algorithm;
+      69: putstatic     #75                 // Field HASH_ALGORITHM_V:Lorg/ekstazi/hash/Hasher$Algorithm;
+      72: aload_0
+      73: ldc           #78                 // String dependencies.include.wellknown
+      75: getstatic     #79                 // Field DEPENDENCIES_INCLUDE_WELLKNOWN_V:Z
+      78: invokestatic  #80                 // Method getBoolean:(Ljava/util/Properties;Ljava/lang/String;Z)Z
+      81: putstatic     #79                 // Field DEPENDENCIES_INCLUDE_WELLKNOWN_V:Z
+      84: aload_0
+      85: ldc           #81                 // String x.enabled
+      87: getstatic     #82                 // Field X_ENABLED_V:Z
+      90: invokestatic  #80                 // Method getBoolean:(Ljava/util/Properties;Ljava/lang/String;Z)Z
+      93: putstatic     #82                 // Field X_ENABLED_V:Z
+      96: aload_0
+      97: ldc           #83                 // String x.log.runs
+      99: getstatic     #84                 // Field X_LOG_RUNS_V:Z
+     102: invokestatic  #80                 // Method getBoolean:(Ljava/util/Properties;Ljava/lang/String;Z)Z
+     105: putstatic     #84                 // Field X_LOG_RUNS_V:Z
+     108: aload_0
+     109: ldc           #85                 // String x.instrument.code
+     111: getstatic     #86                 // Field X_INSTRUMENT_CODE_V:Z
+     114: invokestatic  #80                 // Method getBoolean:(Ljava/util/Properties;Ljava/lang/String;Z)Z
+     117: putstatic     #86                 // Field X_INSTRUMENT_CODE_V:Z
+     120: aload_0
+     121: ldc           #87                 // String x.dependencies.save
+     123: getstatic     #88                 // Field X_DEPENDENCIES_SAVE_V:Z
+     126: invokestatic  #80                 // Method getBoolean:(Ljava/util/Properties;Ljava/lang/String;Z)Z
+     129: putstatic     #88                 // Field X_DEPENDENCIES_SAVE_V:Z
+     132: aload_0
+     133: ldc           #89                 // String debug
+     135: getstatic     #90                 // Field DEBUG_V:Z
+     138: invokestatic  #80                 // Method getBoolean:(Ljava/util/Properties;Ljava/lang/String;Z)Z
+     141: putstatic     #90                 // Field DEBUG_V:Z
+     144: aload_0
+     145: getstatic     #91                 // Field DEBUG_MODE_N:Ljava/lang/String;
+     148: getstatic     #25                 // Field DEBUG_MODE_V:Lorg/ekstazi/Config$DebugMode;
+     151: invokevirtual #92                 // Method org/ekstazi/Config$DebugMode.toString:()Ljava/lang/String;
+     154: invokestatic  #68                 // Method getString:(Ljava/util/Properties;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+     157: invokestatic  #93                 // Method org/ekstazi/Config$DebugMode.fromString:(Ljava/lang/String;)Lorg/ekstazi/Config$DebugMode;
+     160: putstatic     #25                 // Field DEBUG_MODE_V:Lorg/ekstazi/Config$DebugMode;
+     163: aload_0
+     164: ldc           #94                 // String cache.sizes
+     166: getstatic     #95                 // Field CACHE_SIZES_V:I
+     169: invokestatic  #96                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     172: invokestatic  #97                 // Method getInteger:(Ljava/util/Properties;Ljava/lang/String;Ljava/lang/Integer;)I
+     175: putstatic     #95                 // Field CACHE_SIZES_V:I
+     178: aload_0
+     179: ldc           #98                 // String dependencies.ignored.paths
+     181: getstatic     #99                 // Field DEPENDENCIES_IGNORED_PATHS_V:Ljava/util/regex/Pattern;
+     184: invokestatic  #100                // Method getPattern:(Ljava/util/Properties;Ljava/lang/String;Ljava/util/regex/Pattern;)Ljava/util/regex/Pattern;
+     187: putstatic     #99                 // Field DEPENDENCIES_IGNORED_PATHS_V:Ljava/util/regex/Pattern;
+     190: aload_0
+     191: ldc           #101                // String dependencies.classes.instrument
+     193: getstatic     #102                // Field DEPENDENCIES_CLASSES_INSTRUMENT_V:Ljava/util/regex/Pattern;
+     196: invokestatic  #100                // Method getPattern:(Ljava/util/Properties;Ljava/lang/String;Ljava/util/regex/Pattern;)Ljava/util/regex/Pattern;
+     199: putstatic     #102                // Field DEPENDENCIES_CLASSES_INSTRUMENT_V:Ljava/util/regex/Pattern;
+     202: aload_0
+     203: ldc           #103                // String selection.excludes
+     205: getstatic     #104                // Field SELECTION_EXCLUDES_V:[Ljava/lang/String;
+     208: invokestatic  #105                // Method getArray:(Ljava/util/Properties;Ljava/lang/String;[Ljava/lang/String;)[Ljava/lang/String;
+     211: putstatic     #104                // Field SELECTION_EXCLUDES_V:[Ljava/lang/String;
+     214: aload_0
+     215: ldc           #106                // String selection.includes
+     217: getstatic     #107                // Field SELECTION_INCLUDES_V:[Ljava/lang/String;
+     220: invokestatic  #105                // Method getArray:(Ljava/util/Properties;Ljava/lang/String;[Ljava/lang/String;)[Ljava/lang/String;
+     223: putstatic     #107                // Field SELECTION_INCLUDES_V:[Ljava/lang/String;
+     226: aload_0
+     227: ldc           #108                // String force.all
+     229: getstatic     #109                // Field FORCE_ALL_V:Z
+     232: invokestatic  #80                 // Method getBoolean:(Ljava/util/Properties;Ljava/lang/String;Z)Z
+     235: putstatic     #109                // Field FORCE_ALL_V:Z
+     238: aload_0
+     239: ldc           #110                // String force.failing
+     241: getstatic     #111                // Field FORCE_FAILING_V:Z
+     244: invokestatic  #80                 // Method getBoolean:(Ljava/util/Properties;Ljava/lang/String;Z)Z
+     247: putstatic     #111                // Field FORCE_FAILING_V:Z
+     250: aload_0
+     251: ldc           #112                // String hash.without.debuginfo
+     253: getstatic     #113                // Field HASH_WITHOUT_DEBUGINFO_V:Z
+     256: invokestatic  #80                 // Method getBoolean:(Ljava/util/Properties;Ljava/lang/String;Z)Z
+     259: putstatic     #113                // Field HASH_WITHOUT_DEBUGINFO_V:Z
+     262: aload_0
+     263: ldc           #114                // String cache.seen.classes
+     265: getstatic     #115                // Field CACHE_SEEN_CLASSES_V:Z
+     268: invokestatic  #80                 // Method getBoolean:(Ljava/util/Properties;Ljava/lang/String;Z)Z
+     271: putstatic     #115                // Field CACHE_SEEN_CLASSES_V:Z
+     274: aload_0
+     275: ldc           #116                // String x.ignore.all.tests
+     277: getstatic     #117                // Field X_IGNORE_ALL_TESTS_V:Z
+     280: invokestatic  #80                 // Method getBoolean:(Ljava/util/Properties;Ljava/lang/String;Z)Z
+     283: putstatic     #117                // Field X_IGNORE_ALL_TESTS_V:Z
+     286: aload_0
+     287: ldc           #118                // String dependencies.append
+     289: getstatic     #119                // Field DEPENDENCIES_APPEND_V:Z
+     292: invokestatic  #80                 // Method getBoolean:(Ljava/util/Properties;Ljava/lang/String;Z)Z
+     295: putstatic     #119                // Field DEPENDENCIES_APPEND_V:Z
+     298: aload_0
+     299: ldc           #120                // String x.save.instrumented.code
+     301: getstatic     #121                // Field X_SAVE_INSTRUMENTED_CODE_V:Z
+     304: invokestatic  #80                 // Method getBoolean:(Ljava/util/Properties;Ljava/lang/String;Z)Z
+     307: putstatic     #121                // Field X_SAVE_INSTRUMENTED_CODE_V:Z
+     310: aload_0
+     311: ldc           #122                // String x.save.hasher.cache
+     313: getstatic     #123                // Field X_SAVE_HASHER_CACHE_V:Z
+     316: invokestatic  #80                 // Method getBoolean:(Ljava/util/Properties;Ljava/lang/String;Z)Z
+     319: putstatic     #123                // Field X_SAVE_HASHER_CACHE_V:Z
+     322: aload_0
+     323: ldc           #124                // String dependencies.nio
+     325: getstatic     #125                // Field DEPENDENCIES_NIO_V:Z
+     328: invokestatic  #80                 // Method getBoolean:(Ljava/util/Properties;Ljava/lang/String;Z)Z
+     331: putstatic     #125                // Field DEPENDENCIES_NIO_V:Z
+     334: aload_0
+     335: ldc           #126                // String dependencies.nio.includes
+     337: getstatic     #127                // Field DEPENDENCIES_NIO_INCLUDES_V:Ljava/util/regex/Pattern;
+     340: invokestatic  #100                // Method getPattern:(Ljava/util/Properties;Ljava/lang/String;Ljava/util/regex/Pattern;)Ljava/util/regex/Pattern;
+     343: putstatic     #127                // Field DEPENDENCIES_NIO_INCLUDES_V:Ljava/util/regex/Pattern;
+     346: aload_0
+     347: ldc           #128                // String dependencies.nio.excludes
+     349: getstatic     #129                // Field DEPENDENCIES_NIO_EXCLUDES_V:Ljava/util/regex/Pattern;
+     352: invokestatic  #100                // Method getPattern:(Ljava/util/Properties;Ljava/lang/String;Ljava/util/regex/Pattern;)Ljava/util/regex/Pattern;
+     355: putstatic     #129                // Field DEPENDENCIES_NIO_EXCLUDES_V:Ljava/util/regex/Pattern;
+     358: return
+
+  protected static boolean checkNamesOfProperties(java.util.Properties);
+    Code:
+       0: ldc           #48                 // class org/ekstazi/Config
+       2: invokestatic  #130                // Method getAllOptionNames:(Ljava/lang/Class;)Ljava/util/Set;
+       5: astore_1
+       6: aload_0
+       7: invokevirtual #131                // Method java/util/Properties.keySet:()Ljava/util/Set;
+      10: invokeinterface #132,  1          // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+      15: astore_2
+      16: aload_2
+      17: invokeinterface #133,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      22: ifeq          54
+      25: aload_2
+      26: invokeinterface #134,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      31: astore_3
+      32: aload_3
+      33: instanceof    #55                 // class java/lang/String
+      36: ifeq          49
+      39: aload_1
+      40: aload_3
+      41: invokeinterface #135,  2          // InterfaceMethod java/util/Set.contains:(Ljava/lang/Object;)Z
+      46: ifne          51
+      49: iconst_0
+      50: ireturn
+      51: goto          16
+      54: iconst_1
+      55: ireturn
+
+  protected static int getNumOfNonExperimentalOptions(java.lang.Class<?>);
+    Code:
+       0: aload_0
+       1: invokestatic  #136                // Method getAllOptions:(Ljava/lang/Class;)[Ljava/lang/reflect/Field;
+       4: astore_1
+       5: iconst_0
+       6: istore_2
+       7: aload_1
+       8: astore_3
+       9: aload_3
+      10: arraylength
+      11: istore        4
+      13: iconst_0
+      14: istore        5
+      16: iload         5
+      18: iload         4
+      20: if_icmpge     56
+      23: aload_3
+      24: iload         5
+      26: aaload
+      27: astore        6
+      29: iload_2
+      30: aload         6
+      32: invokevirtual #137                // Method java/lang/reflect/Field.getName:()Ljava/lang/String;
+      35: ldc           #138                // String X_
+      37: invokevirtual #139                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+      40: ifeq          47
+      43: iconst_0
+      44: goto          48
+      47: iconst_1
+      48: iadd
+      49: istore_2
+      50: iinc          5, 1
+      53: goto          16
+      56: iload_2
+      57: ireturn
+
+  private static java.lang.String getURIString(java.util.Properties, java.lang.String, java.lang.String);
+    Code:
+       0: new           #140                // class java/net/URI
+       3: dup
+       4: aload_0
+       5: aload_1
+       6: aload_2
+       7: invokevirtual #141                // Method java/util/Properties.getProperty:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      10: invokespecial #142                // Method java/net/URI."<init>":(Ljava/lang/String;)V
+      13: astore_3
+      14: new           #11                 // class java/io/File
+      17: dup
+      18: aload_3
+      19: invokespecial #143                // Method java/io/File."<init>":(Ljava/net/URI;)V
+      22: invokevirtual #13                 // Method java/io/File.getAbsolutePath:()Ljava/lang/String;
+      25: areturn
+      26: astore_3
+      27: aload_0
+      28: aload_1
+      29: aload_2
+      30: invokestatic  #68                 // Method getString:(Ljava/util/Properties;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      33: areturn
+    Exception table:
+       from    to  target type
+           0    25    26   Class java/lang/Exception
+
+  private static java.lang.String getString(java.util.Properties, java.lang.String, java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokevirtual #141                // Method java/util/Properties.getProperty:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       6: areturn
+
+  private static boolean getBoolean(java.util.Properties, java.lang.String, boolean);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iload_2
+       3: invokestatic  #145                // Method java/lang/Boolean.toString:(Z)Ljava/lang/String;
+       6: invokestatic  #68                 // Method getString:(Ljava/util/Properties;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       9: invokestatic  #146                // Method java/lang/Boolean.parseBoolean:(Ljava/lang/String;)Z
+      12: ireturn
+
+  private static int getInteger(java.util.Properties, java.lang.String, java.lang.Integer);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokevirtual #147                // Method java/lang/Integer.intValue:()I
+       6: invokestatic  #148                // Method java/lang/Integer.toString:(I)Ljava/lang/String;
+       9: invokestatic  #68                 // Method getString:(Ljava/util/Properties;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      12: invokestatic  #149                // Method java/lang/Integer.parseInt:(Ljava/lang/String;)I
+      15: ireturn
+
+  protected static java.util.regex.Pattern getPattern(java.util.Properties, java.lang.String, java.util.regex.Pattern);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aconst_null
+       3: invokevirtual #141                // Method java/util/Properties.getProperty:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       6: astore_3
+       7: aload_3
+       8: ifnonnull     13
+      11: aload_2
+      12: areturn
+      13: aload_3
+      14: invokestatic  #150                // Method java/util/regex/Pattern.compile:(Ljava/lang/String;)Ljava/util/regex/Pattern;
+      17: areturn
+
+  private static java.lang.String[] getArray(java.util.Properties, java.lang.String, java.lang.String[]);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aconst_null
+       3: invokevirtual #141                // Method java/util/Properties.getProperty:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       6: astore_3
+       7: aload_3
+       8: ifnonnull     13
+      11: aload_2
+      12: areturn
+      13: aload_3
+      14: ldc           #151                // String :
+      16: invokevirtual #37                 // Method java/lang/String.split:(Ljava/lang/String;)[Ljava/lang/String;
+      19: areturn
+
+  protected static java.util.Set<java.lang.String> getAllOptionNames(java.lang.Class<?>);
+    Code:
+       0: new           #152                // class java/util/HashSet
+       3: dup
+       4: invokespecial #153                // Method java/util/HashSet."<init>":()V
+       7: astore_1
+       8: aload_0
+       9: invokestatic  #136                // Method getAllOptions:(Ljava/lang/Class;)[Ljava/lang/reflect/Field;
+      12: astore_2
+      13: aload_2
+      14: astore_3
+      15: aload_3
+      16: arraylength
+      17: istore        4
+      19: iconst_0
+      20: istore        5
+      22: iload         5
+      24: iload         4
+      26: if_icmpge     70
+      29: aload_3
+      30: iload         5
+      32: aaload
+      33: astore        6
+      35: aload_1
+      36: aload         6
+      38: invokevirtual #137                // Method java/lang/reflect/Field.getName:()Ljava/lang/String;
+      41: ldc           #154                // String _V
+      43: ldc           #61                 // String
+      45: invokevirtual #155                // Method java/lang/String.replace:(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+      48: invokevirtual #156                // Method java/lang/String.toLowerCase:()Ljava/lang/String;
+      51: ldc           #157                // String _
+      53: ldc           #158                // String \.
+      55: invokevirtual #159                // Method java/lang/String.replaceAll:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      58: invokeinterface #160,  2          // InterfaceMethod java/util/Set.add:(Ljava/lang/Object;)Z
+      63: pop
+      64: iinc          5, 1
+      67: goto          22
+      70: aload_1
+      71: areturn
+
+  protected static java.lang.reflect.Field[] getAllOptions(java.lang.Class<?>);
+    Code:
+       0: aload_0
+       1: invokevirtual #161                // Method java/lang/Class.getDeclaredFields:()[Ljava/lang/reflect/Field;
+       4: astore_1
+       5: new           #162                // class java/util/ArrayList
+       8: dup
+       9: invokespecial #163                // Method java/util/ArrayList."<init>":()V
+      12: astore_2
+      13: aload_1
+      14: astore_3
+      15: aload_3
+      16: arraylength
+      17: istore        4
+      19: iconst_0
+      20: istore        5
+      22: iload         5
+      24: iload         4
+      26: if_icmpge     66
+      29: aload_3
+      30: iload         5
+      32: aaload
+      33: astore        6
+      35: aload         6
+      37: iconst_1
+      38: invokevirtual #164                // Method java/lang/reflect/Field.setAccessible:(Z)V
+      41: aload         6
+      43: ldc           #165                // class org/ekstazi/Opt
+      45: invokevirtual #166                // Method java/lang/reflect/Field.isAnnotationPresent:(Ljava/lang/Class;)Z
+      48: ifeq          60
+      51: aload_2
+      52: aload         6
+      54: invokeinterface #167,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      59: pop
+      60: iinc          5, 1
+      63: goto          22
+      66: aload_2
+      67: aload_2
+      68: invokeinterface #168,  1          // InterfaceMethod java/util/List.size:()I
+      73: anewarray     #169                // class java/lang/reflect/Field
+      76: invokeinterface #170,  2          // InterfaceMethod java/util/List.toArray:([Ljava/lang/Object;)[Ljava/lang/Object;
+      81: checkcast     #171                // class "[Ljava/lang/reflect/Field;"
+      84: areturn
+
+  private static java.lang.reflect.Field[] getAllNonHiddenOptions(java.lang.Class<?>);
+    Code:
+       0: aload_0
+       1: invokestatic  #136                // Method getAllOptions:(Ljava/lang/Class;)[Ljava/lang/reflect/Field;
+       4: astore_1
+       5: new           #162                // class java/util/ArrayList
+       8: dup
+       9: invokespecial #163                // Method java/util/ArrayList."<init>":()V
+      12: astore_2
+      13: aload_1
+      14: astore_3
+      15: aload_3
+      16: arraylength
+      17: istore        4
+      19: iconst_0
+      20: istore        5
+      22: iload         5
+      24: iload         4
+      26: if_icmpge     72
+      29: aload_3
+      30: iload         5
+      32: aaload
+      33: astore        6
+      35: aload         6
+      37: ldc           #165                // class org/ekstazi/Opt
+      39: invokevirtual #172                // Method java/lang/reflect/Field.getAnnotation:(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
+      42: checkcast     #165                // class org/ekstazi/Opt
+      45: astore        7
+      47: aload         7
+      49: invokeinterface #173,  1          // InterfaceMethod org/ekstazi/Opt.hidden:()Z
+      54: ifne          66
+      57: aload_2
+      58: aload         6
+      60: invokeinterface #167,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      65: pop
+      66: iinc          5, 1
+      69: goto          22
+      72: aload_2
+      73: aload_2
+      74: invokeinterface #168,  1          // InterfaceMethod java/util/List.size:()I
+      79: anewarray     #169                // class java/lang/reflect/Field
+      82: invokeinterface #170,  2          // InterfaceMethod java/util/List.toArray:([Ljava/lang/Object;)[Ljava/lang/Object;
+      87: checkcast     #171                // class "[Ljava/lang/reflect/Field;"
+      90: areturn
+
+  private static java.lang.reflect.Field getNameField(java.lang.Class<?>, java.lang.reflect.Field);
+    Code:
+       0: aload_1
+       1: invokevirtual #137                // Method java/lang/reflect/Field.getName:()Ljava/lang/String;
+       4: astore_2
+       5: new           #2                  // class java/lang/StringBuilder
+       8: dup
+       9: invokespecial #3                  // Method java/lang/StringBuilder."<init>":()V
+      12: aload_2
+      13: iconst_0
+      14: aload_2
+      15: ldc           #154                // String _V
+      17: invokevirtual #174                // Method java/lang/String.lastIndexOf:(Ljava/lang/String;)I
+      20: invokevirtual #175                // Method java/lang/String.substring:(II)Ljava/lang/String;
+      23: invokevirtual #6                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      26: ldc           #176                // String _N
+      28: invokevirtual #6                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      31: invokevirtual #10                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      34: astore_3
+      35: aload_0
+      36: aload_3
+      37: invokevirtual #177                // Method java/lang/Class.getDeclaredField:(Ljava/lang/String;)Ljava/lang/reflect/Field;
+      40: areturn
+      41: astore        4
+      43: goto          53
+      46: astore        4
+      48: goto          53
+      51: astore        4
+      53: aconst_null
+      54: areturn
+    Exception table:
+       from    to  target type
+          35    40    41   Class java/lang/SecurityException
+          35    40    46   Class java/lang/NoSuchFieldException
+          35    40    51   Class java/lang/IllegalArgumentException
+
+  private static java.lang.Object getValue(java.lang.reflect.Field);
+    Code:
+       0: aload_0
+       1: aconst_null
+       2: invokevirtual #181                // Method java/lang/reflect/Field.get:(Ljava/lang/Object;)Ljava/lang/Object;
+       5: areturn
+       6: astore_1
+       7: goto          11
+      10: astore_1
+      11: aconst_null
+      12: areturn
+    Exception table:
+       from    to  target type
+           0     5     6   Class java/lang/IllegalArgumentException
+           0     5    10   Class java/lang/IllegalAccessException
+
+  protected static java.lang.String packOptions(java.lang.Class<?>);
+    Code:
+       0: new           #2                  // class java/lang/StringBuilder
+       3: dup
+       4: invokespecial #3                  // Method java/lang/StringBuilder."<init>":()V
+       7: astore_1
+       8: aload_0
+       9: invokestatic  #136                // Method getAllOptions:(Ljava/lang/Class;)[Ljava/lang/reflect/Field;
+      12: astore_2
+      13: aload_2
+      14: astore_3
+      15: aload_3
+      16: arraylength
+      17: istore        4
+      19: iconst_0
+      20: istore        5
+      22: iload         5
+      24: iload         4
+      26: if_icmpge     102
+      29: aload_3
+      30: iload         5
+      32: aaload
+      33: astore        6
+      35: aload_0
+      36: aload         6
+      38: invokestatic  #53                 // Method getNameField:(Ljava/lang/Class;Ljava/lang/reflect/Field;)Ljava/lang/reflect/Field;
+      41: invokestatic  #54                 // Method getValue:(Ljava/lang/reflect/Field;)Ljava/lang/Object;
+      44: checkcast     #55                 // class java/lang/String
+      47: astore        7
+      49: aload         6
+      51: invokestatic  #54                 // Method getValue:(Ljava/lang/reflect/Field;)Ljava/lang/Object;
+      54: astore        8
+      56: aload         8
+      58: ifnull        96
+      61: aload_1
+      62: invokevirtual #183                // Method java/lang/StringBuilder.length:()I
+      65: ifle          75
+      68: aload_1
+      69: ldc           #184                // String ,
+      71: invokevirtual #6                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      74: pop
+      75: aload_1
+      76: aload         7
+      78: invokevirtual #6                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      81: pop
+      82: aload_1
+      83: ldc           #185                // String =
+      85: invokevirtual #6                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      88: pop
+      89: aload_1
+      90: aload         8
+      92: invokevirtual #186                // Method java/lang/StringBuilder.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+      95: pop
+      96: iinc          5, 1
+      99: goto          22
+     102: aload_1
+     103: invokevirtual #10                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     106: areturn
+
+  protected static java.util.Properties unpackOptions(java.lang.String);
+    Code:
+       0: new           #39                 // class java/util/Properties
+       3: dup
+       4: invokespecial #40                 // Method java/util/Properties."<init>":()V
+       7: astore_1
+       8: aload_0
+       9: ifnull        113
+      12: aload_0
+      13: ldc           #61                 // String
+      15: invokevirtual #187                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      18: ifne          113
+      21: aload_0
+      22: ldc           #184                // String ,
+      24: invokevirtual #37                 // Method java/lang/String.split:(Ljava/lang/String;)[Ljava/lang/String;
+      27: astore_2
+      28: aload_2
+      29: astore_3
+      30: aload_3
+      31: arraylength
+      32: istore        4
+      34: iconst_0
+      35: istore        5
+      37: iload         5
+      39: iload         4
+      41: if_icmpge     113
+      44: aload_3
+      45: iload         5
+      47: aaload
+      48: astore        6
+      50: aload         6
+      52: ldc           #185                // String =
+      54: invokevirtual #37                 // Method java/lang/String.split:(Ljava/lang/String;)[Ljava/lang/String;
+      57: astore        7
+      59: aload         7
+      61: arraylength
+      62: iconst_2
+      63: if_icmpeq     94
+      66: new           #188                // class java/lang/RuntimeException
+      69: dup
+      70: new           #2                  // class java/lang/StringBuilder
+      73: dup
+      74: invokespecial #3                  // Method java/lang/StringBuilder."<init>":()V
+      77: ldc           #189                // String Incorrect argument:
+      79: invokevirtual #6                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      82: aload         6
+      84: invokevirtual #6                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      87: invokevirtual #10                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      90: invokespecial #190                // Method java/lang/RuntimeException."<init>":(Ljava/lang/String;)V
+      93: athrow
+      94: aload_1
+      95: aload         7
+      97: iconst_0
+      98: aaload
+      99: aload         7
+     101: iconst_1
+     102: aaload
+     103: invokevirtual #191                // Method java/util/Properties.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     106: pop
+     107: iinc          5, 1
+     110: goto          37
+     113: aload_1
+     114: areturn
+
+  public static org.ekstazi.data.Storer createStorer();
+    Code:
+       0: getstatic     #73                 // Field DEPENDENCIES_FORMAT_V:Ljava/lang/String;
+       3: invokestatic  #192                // Method org/ekstazi/data/Storer$Mode.fromString:(Ljava/lang/String;)Lorg/ekstazi/data/Storer$Mode;
+       6: astore_0
+       7: aload_0
+       8: getstatic     #193                // Field org/ekstazi/data/Storer$Mode.TXT:Lorg/ekstazi/data/Storer$Mode;
+      11: if_acmpne     22
+      14: new           #194                // class org/ekstazi/data/TxtStorer
+      17: dup
+      18: invokespecial #195                // Method org/ekstazi/data/TxtStorer."<init>":()V
+      21: areturn
+      22: aload_0
+      23: getstatic     #196                // Field org/ekstazi/data/Storer$Mode.BIN:Lorg/ekstazi/data/Storer$Mode;
+      26: if_acmpne     37
+      29: new           #197                // class org/ekstazi/data/BinStorer
+      32: dup
+      33: invokespecial #198                // Method org/ekstazi/data/BinStorer."<init>":()V
+      36: areturn
+      37: aload_0
+      38: getstatic     #199                // Field org/ekstazi/data/Storer$Mode.PREFIX_TXT:Lorg/ekstazi/data/Storer$Mode;
+      41: if_acmpne     52
+      44: new           #200                // class org/ekstazi/data/PrefixTxtStorer
+      47: dup
+      48: invokespecial #201                // Method org/ekstazi/data/PrefixTxtStorer."<init>":()V
+      51: areturn
+      52: ldc           #202                // String Storer must have default value.
+      54: invokestatic  #203                // Method org/ekstazi/log/Log.e:(Ljava/lang/String;)V
+      57: new           #188                // class java/lang/RuntimeException
+      60: dup
+      61: invokespecial #204                // Method java/lang/RuntimeException."<init>":()V
+      64: athrow
+
+  public static org.ekstazi.hash.Hasher createHasher();
+    Code:
+       0: getstatic     #123                // Field X_SAVE_HASHER_CACHE_V:Z
+       3: ifeq          37
+       6: new           #205                // class org/ekstazi/hash/FileCachingHasher
+       9: dup
+      10: getstatic     #75                 // Field HASH_ALGORITHM_V:Lorg/ekstazi/hash/Hasher$Algorithm;
+      13: getstatic     #95                 // Field CACHE_SIZES_V:I
+      16: getstatic     #113                // Field HASH_WITHOUT_DEBUGINFO_V:Z
+      19: new           #11                 // class java/io/File
+      22: dup
+      23: getstatic     #38                 // Field ROOT_DIR_V:Ljava/lang/String;
+      26: ldc           #206                // String hasher-cache.txt
+      28: invokespecial #22                 // Method java/io/File."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+      31: invokespecial #207                // Method org/ekstazi/hash/FileCachingHasher."<init>":(Lorg/ekstazi/hash/Hasher$Algorithm;IZLjava/io/File;)V
+      34: goto          53
+      37: new           #208                // class org/ekstazi/hash/Hasher
+      40: dup
+      41: getstatic     #75                 // Field HASH_ALGORITHM_V:Lorg/ekstazi/hash/Hasher$Algorithm;
+      44: getstatic     #95                 // Field CACHE_SIZES_V:I
+      47: getstatic     #113                // Field HASH_WITHOUT_DEBUGINFO_V:Z
+      50: invokespecial #209                // Method org/ekstazi/hash/Hasher."<init>":(Lorg/ekstazi/hash/Hasher$Algorithm;IZ)V
+      53: areturn
+
+  public static org.ekstazi.data.DependencyAnalyzer createDepenencyAnalyzer();
+    Code:
+       0: new           #210                // class org/ekstazi/data/DependencyAnalyzer
+       3: dup
+       4: getstatic     #95                 // Field CACHE_SIZES_V:I
+       7: invokestatic  #211                // Method createHasher:()Lorg/ekstazi/hash/Hasher;
+      10: invokestatic  #212                // Method createStorer:()Lorg/ekstazi/data/Storer;
+      13: getstatic     #104                // Field SELECTION_EXCLUDES_V:[Ljava/lang/String;
+      16: getstatic     #107                // Field SELECTION_INCLUDES_V:[Ljava/lang/String;
+      19: invokespecial #213                // Method org/ekstazi/data/DependencyAnalyzer."<init>":(ILorg/ekstazi/hash/Hasher;Lorg/ekstazi/data/Storer;[Ljava/lang/String;[Ljava/lang/String;)V
+      22: areturn
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: getstatic     #26                 // Field org/ekstazi/Config$DebugMode.SCREEN:Lorg/ekstazi/Config$DebugMode;
+       3: putstatic     #25                 // Field DEBUG_MODE_V:Lorg/ekstazi/Config$DebugMode;
+       6: invokestatic  #214                // Method org/ekstazi/log/Log.initScreen:()V
+       9: aconst_null
+      10: aconst_null
+      11: invokestatic  #32                 // Method printVerbose:(Ljava/io/File;Ljava/io/File;)V
+      14: return
+
+  static {};
+    Code:
+       0: invokestatic  #215                // Method rootDirDefault:()Ljava/lang/String;
+       3: putstatic     #38                 // Field ROOT_DIR_V:Ljava/lang/String;
+       6: getstatic     #216                // Field org/ekstazi/Config$AgentMode.NONE:Lorg/ekstazi/Config$AgentMode;
+       9: putstatic     #66                 // Field MODE_V:Lorg/ekstazi/Config$AgentMode;
+      12: ldc           #217                // String DEFAULT
+      14: putstatic     #71                 // Field SINGLE_NAME_V:Ljava/lang/String;
+      17: getstatic     #196                // Field org/ekstazi/data/Storer$Mode.BIN:Lorg/ekstazi/data/Storer$Mode;
+      20: invokevirtual #218                // Method org/ekstazi/data/Storer$Mode.toString:()Ljava/lang/String;
+      23: putstatic     #73                 // Field DEPENDENCIES_FORMAT_V:Ljava/lang/String;
+      26: iconst_0
+      27: putstatic     #79                 // Field DEPENDENCIES_INCLUDE_WELLKNOWN_V:Z
+      30: iconst_0
+      31: putstatic     #119                // Field DEPENDENCIES_APPEND_V:Z
+      34: aconst_null
+      35: putstatic     #99                 // Field DEPENDENCIES_IGNORED_PATHS_V:Ljava/util/regex/Pattern;
+      38: aconst_null
+      39: putstatic     #102                // Field DEPENDENCIES_CLASSES_INSTRUMENT_V:Ljava/util/regex/Pattern;
+      42: iconst_0
+      43: putstatic     #125                // Field DEPENDENCIES_NIO_V:Z
+      46: aconst_null
+      47: putstatic     #129                // Field DEPENDENCIES_NIO_EXCLUDES_V:Ljava/util/regex/Pattern;
+      50: aconst_null
+      51: putstatic     #127                // Field DEPENDENCIES_NIO_INCLUDES_V:Ljava/util/regex/Pattern;
+      54: getstatic     #219                // Field org/ekstazi/hash/Hasher$Algorithm.CRC32:Lorg/ekstazi/hash/Hasher$Algorithm;
+      57: putstatic     #75                 // Field HASH_ALGORITHM_V:Lorg/ekstazi/hash/Hasher$Algorithm;
+      60: iconst_1
+      61: putstatic     #113                // Field HASH_WITHOUT_DEBUGINFO_V:Z
+      64: sipush        1000
+      67: putstatic     #95                 // Field CACHE_SIZES_V:I
+      70: iconst_1
+      71: putstatic     #115                // Field CACHE_SEEN_CLASSES_V:Z
+      74: iconst_0
+      75: putstatic     #121                // Field X_SAVE_INSTRUMENTED_CODE_V:Z
+      78: iconst_0
+      79: putstatic     #123                // Field X_SAVE_HASHER_CACHE_V:Z
+      82: getstatic     #220                // Field org/ekstazi/Config$DebugMode.NONE:Lorg/ekstazi/Config$DebugMode;
+      85: putstatic     #25                 // Field DEBUG_MODE_V:Lorg/ekstazi/Config$DebugMode;
+      88: ldc           #221                // String debug.mode
+      90: putstatic     #91                 // Field DEBUG_MODE_N:Ljava/lang/String;
+      93: iconst_0
+      94: putstatic     #90                 // Field DEBUG_V:Z
+      97: iconst_0
+      98: putstatic     #84                 // Field X_LOG_RUNS_V:Z
+     101: ldc           #222                // String run.info
+     103: invokestatic  #30                 // Method createFileNameInCoverageDir:(Ljava/lang/String;)Ljava/lang/String;
+     106: putstatic     #223                // Field RUN_INFO_V:Ljava/lang/String;
+     109: aconst_null
+     110: putstatic     #104                // Field SELECTION_EXCLUDES_V:[Ljava/lang/String;
+     113: aconst_null
+     114: putstatic     #107                // Field SELECTION_INCLUDES_V:[Ljava/lang/String;
+     117: iconst_1
+     118: putstatic     #86                 // Field X_INSTRUMENT_CODE_V:Z
+     121: iconst_1
+     122: putstatic     #88                 // Field X_DEPENDENCIES_SAVE_V:Z
+     125: iconst_1
+     126: putstatic     #82                 // Field X_ENABLED_V:Z
+     129: iconst_0
+     130: putstatic     #117                // Field X_IGNORE_ALL_TESTS_V:Z
+     133: return
+}

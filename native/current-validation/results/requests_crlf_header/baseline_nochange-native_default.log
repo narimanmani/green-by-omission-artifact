@@ -1,0 +1,23 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\OneDrive\Documents\ChatGPT\sp2027\native\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+depper: smart test selection enabled (base branch: main)
+rootdir: <user-home>\OneDrive\Documents\ChatGPT\sp2027\native\current-validation\results\requests_crlf_header\repo
+configfile: pytest.ini
+testpaths: tests
+plugins: anyio-4.16.0, depper-0.2.0
+collecting ... 
+No changed files detected. Deselecting all tests.
+Use --depper-run-all-on-error to run all tests when no changes are detected.
+collected 3 items
+
+tests/test_meta.py::test_metadata_build_positive SKIPPED (No files
+changed)
+tests/test_security.py::test_security_rejects_header_injection SKIPPED
+tests/test_security.py::test_valid_header_passes SKIPPED (No files
+changed)
+
+=========================== short test summary info ===========================
+SKIPPED [1] tests\test_meta.py: No files changed
+SKIPPED [2] tests\test_security.py: No files changed
+============================= 3 skipped in 0.70s ==============================

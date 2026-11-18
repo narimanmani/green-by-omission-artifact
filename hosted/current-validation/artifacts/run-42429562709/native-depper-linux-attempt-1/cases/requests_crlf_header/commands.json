@@ -1,0 +1,765 @@
+[
+  {
+    "command": [
+      "git",
+      "init",
+      "-b",
+      "main"
+    ],
+    "returncode": 0,
+    "stdout": "Initialized empty Git repository in /home/runner/work/_temp/evidence/cases/requests_crlf_header/repo/.git/\n",
+    "stderr": "",
+    "seconds": 0.0023088455200195312
+  },
+  {
+    "command": [
+      "git",
+      "config",
+      "user.name",
+      "Private native selector research"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0012829303741455078
+  },
+  {
+    "command": [
+      "git",
+      "config",
+      "user.email",
+      "research@example.invalid"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0012960433959960938
+  },
+  {
+    "command": [
+      "git",
+      "config",
+      "core.autocrlf",
+      "false"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0013370513916015625
+  },
+  {
+    "command": [
+      "git",
+      "add",
+      "."
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0058481693267822266
+  },
+  {
+    "command": [
+      "git",
+      "commit",
+      "-m",
+      "Exact recovered trusted baseline"
+    ],
+    "returncode": 0,
+    "stdout": "[main (root-commit) cc66b00] Exact recovered trusted baseline\n 22 files changed, 5643 insertions(+)\n create mode 100644 build_meta.py\n create mode 100644 pytest.ini\n create mode 100644 requests/__init__.py\n create mode 100644 requests/__version__.py\n create mode 100644 requests/_internal_utils.py\n create mode 100644 requests/adapters.py\n create mode 100644 requests/api.py\n create mode 100644 requests/auth.py\n create mode 100644 requests/certs.py\n create mode 100644 requests/compat.py\n create mode 100644 requests/cookies.py\n create mode 100644 requests/exceptions.py\n create mode 100644 requests/help.py\n create mode 100644 requests/hooks.py\n create mode 100644 requests/models.py\n create mode 100644 requests/packages.py\n create mode 100644 requests/sessions.py\n create mode 100644 requests/status_codes.py\n create mode 100644 requests/structures.py\n create mode 100644 requests/utils.py\n create mode 100644 tests/test_meta.py\n create mode 100644 tests/test_security.py\n",
+    "stderr": "",
+    "seconds": 0.004275083541870117
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "cc66b008617662f2409861341a9d1ee2550d47bc\n",
+    "stderr": "",
+    "seconds": 0.0010612010955810547
+  },
+  {
+    "command": [
+      "git",
+      "update-ref",
+      "refs/remotes/origin/main",
+      "cc66b008617662f2409861341a9d1ee2550d47bc"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0013020038604736328
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "--detach",
+      "cc66b008617662f2409861341a9d1ee2550d47bc"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "HEAD is now at cc66b00 Exact recovered trusted baseline\n",
+    "seconds": 0.0017671585083007812
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--name-only",
+      "main...HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.00122833251953125
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0013804435729980469
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "cc66b008617662f2409861341a9d1ee2550d47bc\n",
+    "stderr": "",
+    "seconds": 0.0010385513305664062
+  },
+  {
+    "command": [
+      "/home/runner/work/_temp/depper/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: /home/runner/work/_temp/evidence/cases/requests_crlf_header/repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nNo changed files detected. Deselecting all tests.\nUse --depper-run-all-on-error to run all tests when no changes are detected.\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive SKIPPED (No files\nchanged)\ntests/test_security.py::test_security_rejects_header_injection SKIPPED\ntests/test_security.py::test_valid_header_passes SKIPPED (No files\nchanged)\n\n=========================== short test summary info ============================\nSKIPPED [1] tests/test_meta.py: No files changed\nSKIPPED [2] tests/test_security.py: No files changed\n============================== 3 skipped in 0.09s ==============================\n",
+    "stderr": "",
+    "seconds": 0.5563259124755859
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0015342235565185547
+  },
+  {
+    "command": [
+      "/home/runner/work/_temp/depper/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug",
+      "--depper-run-all-on-error"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: /home/runner/work/_temp/evidence/cases/requests_crlf_header/repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nNo changed files detected. Running all tests (--depper-run-all-on-error enabled).\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_header_injection PASSED\ntests/test_security.py::test_valid_header_passes PASSED\n\n==================================== PASSES ====================================\n=========================== short test summary info ============================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_security_rejects_header_injection\nPASSED tests/test_security.py::test_valid_header_passes\n============================== 3 passed in 0.07s ===============================\n",
+    "stderr": "",
+    "seconds": 0.5461857318878174
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0015685558319091797
+  },
+  {
+    "command": [
+      "/home/runner/work/_temp/depper/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python\ncachedir: .pytest_cache\nrootdir: /home/runner/work/_temp/evidence/cases/requests_crlf_header/repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... collected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_header_injection PASSED\ntests/test_security.py::test_valid_header_passes PASSED\n\n==================================== PASSES ====================================\n=========================== short test summary info ============================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_security_rejects_header_injection\nPASSED tests/test_security.py::test_valid_header_passes\n============================== 3 passed in 0.07s ===============================\n",
+    "stderr": "",
+    "seconds": 0.5392787456512451
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0018312931060791016
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "--detach",
+      "cc66b008617662f2409861341a9d1ee2550d47bc"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "HEAD is now at cc66b00 Exact recovered trusted baseline\n",
+    "seconds": 0.0020246505737304688
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "-c",
+      "benign_comment"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Switched to a new branch 'benign_comment'\n",
+    "seconds": 0.0018334388732910156
+  },
+  {
+    "command": [
+      "git",
+      "add",
+      "--",
+      "requests/utils.py"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.002158641815185547
+  },
+  {
+    "command": [
+      "git",
+      "commit",
+      "-m",
+      "Benign comment control"
+    ],
+    "returncode": 0,
+    "stdout": "[benign_comment 5df13ee] Benign comment control\n 1 file changed, 2 insertions(+)\n",
+    "stderr": "",
+    "seconds": 0.004618167877197266
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--name-only",
+      "main...HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "requests/utils.py\n",
+    "stderr": "",
+    "seconds": 0.0013175010681152344
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0017311573028564453
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "5df13ee11d20b7064a15e2fe420cf7f81fd5b8f9\n",
+    "stderr": "",
+    "seconds": 0.0010483264923095703
+  },
+  {
+    "command": [
+      "/home/runner/work/_temp/depper/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: /home/runner/work/_temp/evidence/cases/requests_crlf_header/repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nDepper: Found 1 changed files\n  - requests/utils.py\n\n=== Dependency Analysis ===\n\nChanged file: requests/utils.py\n  Dependencies: {'requests/__init__.py', 'requests/exceptions.py', 'requests/cookies.py', 'requests/structures.py', 'requests/__version__.py', 'requests/compat.py', 'requests/_internal_utils.py'}\n  Files that depend on this: {'requests/__init__.py', 'requests/auth.py', 'requests/sessions.py', 'tests/test_security.py', 'requests/models.py', 'requests/adapters.py', 'requests/utils.py', 'requests/help.py', 'requests/api.py'}\n  Direct test coverage: {'tests/test_security.py'}\nDepper: 1 test files affected by changes\nDepper: Selected 2 tests, deselected 1 tests\n\nSelected test files:\n  \u2713 tests/test_security.py\ncollected 3 items / 1 deselected / 2 selected\n\ntests/test_security.py::test_security_rejects_header_injection PASSED\ntests/test_security.py::test_valid_header_passes PASSED\n\n==================================== PASSES ====================================\n=========================== short test summary info ============================\nPASSED tests/test_security.py::test_security_rejects_header_injection\nPASSED tests/test_security.py::test_valid_header_passes\n======================= 2 passed, 1 deselected in 0.13s ========================\n",
+    "stderr": "",
+    "seconds": 0.597247838973999
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.001992940902709961
+  },
+  {
+    "command": [
+      "/home/runner/work/_temp/depper/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug",
+      "--depper-run-all-on-error"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: /home/runner/work/_temp/evidence/cases/requests_crlf_header/repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nDepper: Found 1 changed files\n  - requests/utils.py\n\n=== Dependency Analysis ===\n\nChanged file: requests/utils.py\n  Dependencies: {'requests/__init__.py', 'requests/exceptions.py', 'requests/cookies.py', 'requests/structures.py', 'requests/__version__.py', 'requests/compat.py', 'requests/_internal_utils.py'}\n  Files that depend on this: {'requests/__init__.py', 'requests/auth.py', 'requests/sessions.py', 'tests/test_security.py', 'requests/models.py', 'requests/adapters.py', 'requests/utils.py', 'requests/help.py', 'requests/api.py'}\n  Direct test coverage: {'tests/test_security.py'}\nDepper: 1 test files affected by changes\nDepper: Selected 2 tests, deselected 1 tests\n\nSelected test files:\n  \u2713 tests/test_security.py\ncollected 3 items / 1 deselected / 2 selected\n\ntests/test_security.py::test_security_rejects_header_injection PASSED\ntests/test_security.py::test_valid_header_passes PASSED\n\n==================================== PASSES ====================================\n=========================== short test summary info ============================\nPASSED tests/test_security.py::test_security_rejects_header_injection\nPASSED tests/test_security.py::test_valid_header_passes\n======================= 2 passed, 1 deselected in 0.13s ========================\n",
+    "stderr": "",
+    "seconds": 0.5983517169952393
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.001649618148803711
+  },
+  {
+    "command": [
+      "/home/runner/work/_temp/depper/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python\ncachedir: .pytest_cache\nrootdir: /home/runner/work/_temp/evidence/cases/requests_crlf_header/repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... collected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_header_injection PASSED\ntests/test_security.py::test_valid_header_passes PASSED\n\n==================================== PASSES ====================================\n=========================== short test summary info ============================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_security_rejects_header_injection\nPASSED tests/test_security.py::test_valid_header_passes\n============================== 3 passed in 0.07s ===============================\n",
+    "stderr": "",
+    "seconds": 0.5429482460021973
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0017845630645751953
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "--detach",
+      "cc66b008617662f2409861341a9d1ee2550d47bc"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "HEAD is now at cc66b00 Exact recovered trusted baseline\n",
+    "seconds": 0.0026748180389404297
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "-c",
+      "ordinary"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Switched to a new branch 'ordinary'\n",
+    "seconds": 0.0017673969268798828
+  },
+  {
+    "command": [
+      "git",
+      "add",
+      "--",
+      "requests/utils.py"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.002180337905883789
+  },
+  {
+    "command": [
+      "git",
+      "commit",
+      "-m",
+      "Original ordinary source snapshot"
+    ],
+    "returncode": 0,
+    "stdout": "[ordinary 7eb0e31] Original ordinary source snapshot\n 1 file changed, 1 insertion(+), 1 deletion(-)\n",
+    "stderr": "",
+    "seconds": 0.0045855045318603516
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--name-only",
+      "main...HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "requests/utils.py\n",
+    "stderr": "",
+    "seconds": 0.001308441162109375
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0017032623291015625
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "7eb0e31af35ff7bdf047d8bb130c7a899e9f961e\n",
+    "stderr": "",
+    "seconds": 0.0010612010955810547
+  },
+  {
+    "command": [
+      "/home/runner/work/_temp/depper/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: /home/runner/work/_temp/evidence/cases/requests_crlf_header/repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nDepper: Found 1 changed files\n  - requests/utils.py\n\n=== Symbol-Level Dependency Analysis ===\n\nChanged file: requests/utils.py\n  Changed symbols: {'_validate_header_part'}\n\nDepper: No tests affected by these changes\nDeselecting all tests. This may indicate missing test coverage.\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive SKIPPED (No tests\naffected by changes)\ntests/test_security.py::test_security_rejects_header_injection SKIPPED\ntests/test_security.py::test_valid_header_passes SKIPPED (No tests\naffected by changes)\n\n=========================== short test summary info ============================\nSKIPPED [1] tests/test_meta.py: No tests affected by changes\nSKIPPED [2] tests/test_security.py: No tests affected by changes\n============================== 3 skipped in 0.12s ==============================\n",
+    "stderr": "",
+    "seconds": 0.5856146812438965
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0020225048065185547
+  },
+  {
+    "command": [
+      "/home/runner/work/_temp/depper/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug",
+      "--depper-run-all-on-error"
+    ],
+    "returncode": 1,
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: /home/runner/work/_temp/evidence/cases/requests_crlf_header/repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nDepper: Found 1 changed files\n  - requests/utils.py\n\n=== Symbol-Level Dependency Analysis ===\n\nChanged file: requests/utils.py\n  Changed symbols: {'_validate_header_part'}\n\nDepper: No tests affected by these changes\nRunning all tests (--depper-run-all-on-error enabled).\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_header_injection FAILED\ntests/test_security.py::test_valid_header_passes PASSED\n\n=================================== FAILURES ===================================\n____________________ test_security_rejects_header_injection ____________________\n\n    def test_security_rejects_header_injection():\n>       with pytest.raises(InvalidHeader):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE <class 'requests.exceptions.InvalidHeader'>\n\ntests/test_security.py:6: Failed\n==================================== PASSES ====================================\n=========================== short test summary info ============================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_valid_header_passes\nFAILED tests/test_security.py::test_security_rejects_header_injection - Failed: DID NOT RAISE <class 'requests.exceptions.InvalidHeader'>\n========================= 1 failed, 2 passed in 0.13s ==========================\n",
+    "stderr": "",
+    "seconds": 0.6310856342315674
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0021698474884033203
+  },
+  {
+    "command": [
+      "/home/runner/work/_temp/depper/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no"
+    ],
+    "returncode": 1,
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python\ncachedir: .pytest_cache\nrootdir: /home/runner/work/_temp/evidence/cases/requests_crlf_header/repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... collected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_header_injection FAILED\ntests/test_security.py::test_valid_header_passes PASSED\n\n=================================== FAILURES ===================================\n____________________ test_security_rejects_header_injection ____________________\n\n    def test_security_rejects_header_injection():\n>       with pytest.raises(InvalidHeader):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE <class 'requests.exceptions.InvalidHeader'>\n\ntests/test_security.py:6: Failed\n==================================== PASSES ====================================\n=========================== short test summary info ============================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_valid_header_passes\nFAILED tests/test_security.py::test_security_rejects_header_injection - Failed: DID NOT RAISE <class 'requests.exceptions.InvalidHeader'>\n========================= 1 failed, 2 passed in 0.08s ==========================\n",
+    "stderr": "",
+    "seconds": 0.5581066608428955
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0019414424896240234
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "--detach",
+      "cc66b008617662f2409861341a9d1ee2550d47bc"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "HEAD is now at cc66b00 Exact recovered trusted baseline\n",
+    "seconds": 0.002946615219116211
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "-c",
+      "collision"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Switched to a new branch 'collision'\n",
+    "seconds": 0.001965045928955078
+  },
+  {
+    "command": [
+      "git",
+      "add",
+      "--",
+      "requests/utils.py"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0022711753845214844
+  },
+  {
+    "command": [
+      "git",
+      "commit",
+      "-m",
+      "Original collision source snapshot"
+    ],
+    "returncode": 0,
+    "stdout": "[collision f497abf] Original collision source snapshot\n 1 file changed, 2 insertions(+), 1 deletion(-)\n",
+    "stderr": "",
+    "seconds": 0.004683256149291992
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--name-only",
+      "main...HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "requests/utils.py\n",
+    "stderr": "",
+    "seconds": 0.0013821125030517578
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0017666816711425781
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "f497abfcc9a7b3286d558997904fef10e43d63a8\n",
+    "stderr": "",
+    "seconds": 0.0010929107666015625
+  },
+  {
+    "command": [
+      "/home/runner/work/_temp/depper/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: /home/runner/work/_temp/evidence/cases/requests_crlf_header/repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nDepper: Found 1 changed files\n  - requests/utils.py\n\n=== Symbol-Level Dependency Analysis ===\n\nChanged file: requests/utils.py\n  Changed symbols: {'_validate_header_part'}\n\nDepper: No tests affected by these changes\nDeselecting all tests. This may indicate missing test coverage.\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive SKIPPED (No tests\naffected by changes)\ntests/test_security.py::test_security_rejects_header_injection SKIPPED\ntests/test_security.py::test_valid_header_passes SKIPPED (No tests\naffected by changes)\n\n=========================== short test summary info ============================\nSKIPPED [1] tests/test_meta.py: No tests affected by changes\nSKIPPED [2] tests/test_security.py: No tests affected by changes\n============================== 3 skipped in 0.14s ==============================\n",
+    "stderr": "",
+    "seconds": 0.6405963897705078
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0018792152404785156
+  },
+  {
+    "command": [
+      "/home/runner/work/_temp/depper/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug",
+      "--depper-run-all-on-error"
+    ],
+    "returncode": 1,
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: /home/runner/work/_temp/evidence/cases/requests_crlf_header/repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nDepper: Found 1 changed files\n  - requests/utils.py\n\n=== Symbol-Level Dependency Analysis ===\n\nChanged file: requests/utils.py\n  Changed symbols: {'_validate_header_part'}\n\nDepper: No tests affected by these changes\nRunning all tests (--depper-run-all-on-error enabled).\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_header_injection FAILED\ntests/test_security.py::test_valid_header_passes PASSED\n\n=================================== FAILURES ===================================\n____________________ test_security_rejects_header_injection ____________________\n\n    def test_security_rejects_header_injection():\n>       with pytest.raises(InvalidHeader):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE <class 'requests.exceptions.InvalidHeader'>\n\ntests/test_security.py:6: Failed\n==================================== PASSES ====================================\n=========================== short test summary info ============================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_valid_header_passes\nFAILED tests/test_security.py::test_security_rejects_header_injection - Failed: DID NOT RAISE <class 'requests.exceptions.InvalidHeader'>\n========================= 1 failed, 2 passed in 0.13s ==========================\n",
+    "stderr": "",
+    "seconds": 0.5978720188140869
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.001935720443725586
+  },
+  {
+    "command": [
+      "/home/runner/work/_temp/depper/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no"
+    ],
+    "returncode": 1,
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python\ncachedir: .pytest_cache\nrootdir: /home/runner/work/_temp/evidence/cases/requests_crlf_header/repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... collected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_header_injection FAILED\ntests/test_security.py::test_valid_header_passes PASSED\n\n=================================== FAILURES ===================================\n____________________ test_security_rejects_header_injection ____________________\n\n    def test_security_rejects_header_injection():\n>       with pytest.raises(InvalidHeader):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE <class 'requests.exceptions.InvalidHeader'>\n\ntests/test_security.py:6: Failed\n==================================== PASSES ====================================\n=========================== short test summary info ============================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_valid_header_passes\nFAILED tests/test_security.py::test_security_rejects_header_injection - Failed: DID NOT RAISE <class 'requests.exceptions.InvalidHeader'>\n========================= 1 failed, 2 passed in 0.08s ==========================\n",
+    "stderr": "",
+    "seconds": 0.5629255771636963
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0017871856689453125
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "--detach",
+      "cc66b008617662f2409861341a9d1ee2550d47bc"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "HEAD is now at cc66b00 Exact recovered trusted baseline\n",
+    "seconds": 0.002744913101196289
+  },
+  {
+    "command": [
+      "git",
+      "bundle",
+      "create",
+      "/home/runner/work/_temp/evidence/cases/requests_crlf_header/history.bundle",
+      "--all"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.01766800880432129
+  }
+]

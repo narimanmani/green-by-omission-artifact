@@ -1,0 +1,264 @@
+{
+  "study": "Isolated Java Ekstazi CRC32 collision and oracle evaluation",
+  "version": "Ekstazi 5.3.0",
+  "search_budget": {
+    "gf2_probes": 64,
+    "compensation_bytes": 16,
+    "random_attempts": 0
+  },
+  "scope": "one-source attack and separate two-source benign nonzero control",
+  "unchanged_tests_sha256": {
+    "src/test/java/lab/ExpiryGateTest.java": "de9fed8fbb9bfa6e0a427f5906a6725f163e3cdda9fa46f8bafd40a8933502e6",
+    "src/test/java/lab/UnrelatedTest.java": "0f83ed1081e73390d89e3ad1464724f606234ccda190c8ac4461e3d2b42d0c97"
+  },
+  "baseline_source_sha256": "b0241db66a84e589b2cbef6fae65974f0350bb09c689bf723392da50b1d3f3a6",
+  "baseline": {
+    "exit": 0,
+    "elapsed": 14.003,
+    "calls": [
+      [
+        "lab.ExpiryGateTest",
+        "rejectsExpired",
+        "passed"
+      ],
+      [
+        "lab.ExpiryGateTest",
+        "allowsFresh",
+        "passed"
+      ],
+      [
+        "lab.UnrelatedTest",
+        "squares",
+        "passed"
+      ]
+    ]
+  },
+  "baseline_fingerprint": {
+    "crc32": "0b9e2bd3",
+    "normalized_sha256": "7efb385a96ad5b70fcad94f7286afbc83f1c3ba2577ed13723d51310680b4b57",
+    "class_sha256": "c7d443231eeaf108f884a917ca43ffdf1d74a7142c7391e978874b0137b8dc71",
+    "size": 241,
+    "normalizer_jar": "/home/runner/.m2/repository/org/ekstazi/org.ekstazi.core/5.3.0/org.ekstazi.core-5.3.0.jar",
+    "normalizer_sha256": "baf7affe8fc42e12b382ec933f3572fce417e5e0d9a7ebab2902bc5c614cb749"
+  },
+  "nochange": {
+    "exit": 0,
+    "elapsed": 5.421,
+    "calls": [
+      [
+        "lab.ExpiryGateTest",
+        "rejectsExpired",
+        "passed"
+      ],
+      [
+        "lab.ExpiryGateTest",
+        "allowsFresh",
+        "passed"
+      ],
+      [
+        "lab.UnrelatedTest",
+        "squares",
+        "passed"
+      ]
+    ]
+  },
+  "ordinary_native": {
+    "exit": 1,
+    "elapsed": 6.273,
+    "calls": [
+      [
+        "lab.ExpiryGateTest",
+        "rejectsExpired",
+        "failed"
+      ],
+      [
+        "lab.ExpiryGateTest",
+        "allowsFresh",
+        "passed"
+      ],
+      [
+        "lab.UnrelatedTest",
+        "squares",
+        "passed"
+      ]
+    ]
+  },
+  "ordinary_fingerprint": {
+    "crc32": "b1abe912",
+    "normalized_sha256": "7b74d79ce4f79c115be73bc34ca4c6563a4738f87ee81ae83745d299eb2f1983",
+    "class_sha256": "b4165fda3890fe1edaa34fc21d46afc7b840cb1cea9c9c19d126cec5a06be9e6",
+    "size": 253,
+    "normalizer_jar": "/home/runner/.m2/repository/org/ekstazi/org.ekstazi.core/5.3.0/org.ekstazi.core-5.3.0.jar",
+    "normalizer_sha256": "baf7affe8fc42e12b382ec933f3572fce417e5e0d9a7ebab2902bc5c614cb749"
+  },
+  "ordinary_full": {
+    "exit": 1,
+    "elapsed": 4.909,
+    "calls": [
+      [
+        "lab.ExpiryGateTest",
+        "rejectsExpired",
+        "failed"
+      ],
+      [
+        "lab.ExpiryGateTest",
+        "allowsFresh",
+        "passed"
+      ],
+      [
+        "lab.UnrelatedTest",
+        "squares",
+        "passed"
+      ]
+    ]
+  },
+  "solver": {
+    "rank": 32,
+    "padding": "=5<=547020000000",
+    "offset": 77,
+    "target_crc32": "0b9e2bd3"
+  },
+  "collision_compile": {
+    "exit": 0,
+    "elapsed": 6.53,
+    "calls": []
+  },
+  "collision_fingerprint": {
+    "crc32": "0b9e2bd3",
+    "normalized_sha256": "08955286a64e936f85766db1f53d761c4adcf1f2f59b82fbb1281f7ffe119514",
+    "class_sha256": "486af046694e023c8d8d402e7d1373757c0dff83378290e7ddfadd17350b91f1",
+    "size": 253,
+    "normalizer_jar": "/home/runner/.m2/repository/org/ekstazi/org.ekstazi.core/5.3.0/org.ekstazi.core-5.3.0.jar",
+    "normalizer_sha256": "baf7affe8fc42e12b382ec933f3572fce417e5e0d9a7ebab2902bc5c614cb749"
+  },
+  "valid_crc32_collision": true,
+  "baseline_restore_single": {
+    "exit": 0,
+    "elapsed": 6.218,
+    "calls": [
+      [
+        "lab.ExpiryGateTest",
+        "rejectsExpired",
+        "passed"
+      ],
+      [
+        "lab.ExpiryGateTest",
+        "allowsFresh",
+        "passed"
+      ],
+      [
+        "lab.UnrelatedTest",
+        "squares",
+        "passed"
+      ]
+    ]
+  },
+  "collision_native": {
+    "exit": 1,
+    "elapsed": 6.094,
+    "calls": [
+      [
+        "lab.ExpiryGateTest",
+        "rejectsExpired",
+        "failed"
+      ],
+      [
+        "lab.ExpiryGateTest",
+        "allowsFresh",
+        "passed"
+      ],
+      [
+        "lab.UnrelatedTest",
+        "squares",
+        "passed"
+      ]
+    ]
+  },
+  "collision_full": {
+    "exit": 1,
+    "elapsed": 4.872,
+    "calls": [
+      [
+        "lab.ExpiryGateTest",
+        "rejectsExpired",
+        "failed"
+      ],
+      [
+        "lab.ExpiryGateTest",
+        "allowsFresh",
+        "passed"
+      ],
+      [
+        "lab.UnrelatedTest",
+        "squares",
+        "passed"
+      ]
+    ]
+  },
+  "single_source_omission": false,
+  "baseline_restore_nonzero": {
+    "exit": 0,
+    "elapsed": 6.346,
+    "calls": [
+      [
+        "lab.ExpiryGateTest",
+        "rejectsExpired",
+        "passed"
+      ],
+      [
+        "lab.ExpiryGateTest",
+        "allowsFresh",
+        "passed"
+      ],
+      [
+        "lab.UnrelatedTest",
+        "squares",
+        "passed"
+      ]
+    ]
+  },
+  "collision_nonzero_native": {
+    "exit": 1,
+    "elapsed": 6.329,
+    "calls": [
+      [
+        "lab.ExpiryGateTest",
+        "rejectsExpired",
+        "failed"
+      ],
+      [
+        "lab.ExpiryGateTest",
+        "allowsFresh",
+        "passed"
+      ],
+      [
+        "lab.UnrelatedTest",
+        "squares",
+        "passed"
+      ]
+    ]
+  },
+  "collision_nonzero_full": {
+    "exit": 1,
+    "elapsed": 4.982,
+    "calls": [
+      [
+        "lab.ExpiryGateTest",
+        "rejectsExpired",
+        "failed"
+      ],
+      [
+        "lab.ExpiryGateTest",
+        "allowsFresh",
+        "passed"
+      ],
+      [
+        "lab.UnrelatedTest",
+        "squares",
+        "passed"
+      ]
+    ]
+  },
+  "nonzero_omission": false,
+  "completed": true
+}

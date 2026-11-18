@@ -1,0 +1,74 @@
+{
+  "collected_after_selection": [
+    "tests/test_meta.py::test_metadata_build_positive",
+    "tests/test_security.py::test_security_rejects_header_injection",
+    "tests/test_security.py::test_valid_header_passes"
+  ],
+  "deselected": [],
+  "reports": [
+    {
+      "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+      "when": "call",
+      "outcome": "failed",
+      "failure_text": "def test_security_rejects_header_injection():\n>       with pytest.raises(InvalidHeader):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE <class 'requests.exceptions.InvalidHeader'>\n\ntests\\test_security.py:6: Failed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_valid_header_passes",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_valid_header_passes",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_valid_header_passes",
+      "when": "teardown",
+      "outcome": "passed"
+    }
+  ],
+  "collection_errors": [],
+  "exitstatus": 1,
+  "executed_tests": [
+    "tests/test_meta.py::test_metadata_build_positive",
+    "tests/test_security.py::test_security_rejects_header_injection",
+    "tests/test_security.py::test_valid_header_passes"
+  ],
+  "skipped_tests": [],
+  "import_origins": [
+    {
+      "module": "requests.utils",
+      "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\\requests\\utils.py",
+      "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\requests_crlf_header\\repo\\requests\\utils.py",
+      "match_mode": "exact",
+      "matched": true
+    }
+  ],
+  "import_origins_valid": true
+}

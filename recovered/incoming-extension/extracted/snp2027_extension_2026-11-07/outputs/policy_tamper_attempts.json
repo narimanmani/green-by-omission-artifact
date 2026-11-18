@@ -1,0 +1,32 @@
+[
+  {
+    "attempt": "test_tamper",
+    "modified_path": "tests/test_security.py",
+    "actual_committed_change": true,
+    "policy_accepted": false,
+    "policy_rejected": true,
+    "git_diff": [
+      "tests/test_security.py"
+    ]
+  },
+  {
+    "attempt": "workflow_tamper",
+    "modified_path": ".github/workflows/required-tests.yml",
+    "actual_committed_change": true,
+    "policy_accepted": false,
+    "policy_rejected": true,
+    "git_diff": [
+      ".github/workflows/required-tests.yml"
+    ]
+  },
+  {
+    "attempt": "baseline_artifact_tamper",
+    "modified_path": ".testmondata",
+    "actual_committed_change": true,
+    "policy_accepted": false,
+    "policy_rejected": true,
+    "git_diff": [
+      ".testmondata"
+    ]
+  }
+]

@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "scope": "Saved evidence consistency and cryptographic provenance; no new tests or GitHub mutations",
+  "hosted_pr_audits": [
+    {
+      "pr": 2,
+      "one_source_file_verified": true,
+      "published_wheel_verified": true,
+      "downloaded_trusted_snapshot_hashes_verified": true,
+      "actual_required_actions_app_verified": true
+    },
+    {
+      "pr": 3,
+      "one_source_file_verified": true,
+      "published_wheel_verified": true,
+      "downloaded_trusted_snapshot_hashes_verified": true,
+      "actual_required_actions_app_verified": true
+    },
+    {
+      "pr": 4,
+      "one_source_file_verified": true,
+      "published_wheel_verified": true,
+      "downloaded_trusted_snapshot_hashes_verified": true,
+      "actual_required_actions_app_verified": true
+    },
+    {
+      "pr": 5,
+      "one_source_file_verified": true,
+      "published_wheel_verified": true,
+      "downloaded_trusted_snapshot_hashes_verified": true,
+      "actual_required_actions_app_verified": true
+    },
+    {
+      "pr": 6,
+      "one_source_file_verified": true,
+      "published_wheel_verified": true,
+      "downloaded_trusted_snapshot_hashes_verified": true,
+      "actual_required_actions_app_verified": true
+    },
+    {
+      "pr": 7,
+      "one_source_file_verified": true,
+      "published_wheel_verified": true,
+      "downloaded_trusted_snapshot_hashes_verified": true,
+      "actual_required_actions_app_verified": true
+    }
+  ],
+  "native_comparison_rows_verified": 108,
+  "preferred_native_published_wheel_verified": true,
+  "preferred_native_subject_distributions_absent": true,
+  "all_native_source_hashes_match_exact_inputs": true,
+  "collision_zero_test_native_exit_conversion_verified": 3,
+  "main_frozen_and_private_protection_verified": true
+}

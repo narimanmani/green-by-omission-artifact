@@ -1,0 +1,41 @@
+name: Owner protected-main cache producer
+on:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  generate-cache:
+    name: trusted-main-cache
+    if: github.ref == 'refs/heads/main' && github.actor == 'anonymous-owner'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      BASE_SHA: ${{ github.sha }}
+    steps:
+      - name: Checkout exact protected-main revision
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+          path: trusted
+      - name: Set up Python 3.13
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.13'
+      - name: Generate the baseline only from protected-main code
+        env:
+          EVIDENCE_DIR: ${{ runner.temp }}/main-cache-evidence
+        run: |
+          python -m venv "$RUNNER_TEMP/venv"
+          "$RUNNER_TEMP/venv/bin/python" -m pip install --only-binary=:all: --require-hashes -r trusted/.experiment/requirements.lock
+          "$RUNNER_TEMP/venv/bin/python" trusted/research_20261107/protected_ci.py generate
+      - name: Publish commit-bound main cache
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: testmon-cache-${{ github.sha }}
+          path: ${{ runner.temp }}/main-cache-evidence/
+          if-no-files-found: error
+          retention-days: 30
+

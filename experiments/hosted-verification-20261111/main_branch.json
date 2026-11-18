@@ -1,0 +1,111 @@
+{
+  "name": "main",
+  "commit": {
+    "sha": "053f4948451073e4b45aadcea79051966830ad23",
+    "node_id": "C_kwDOVmpeAtoAKDA1M2Y0OTQ4NDUxMDczZTRiNDVhYWRjZWE3OTA1MTk2NjgzMGFkMjM",
+    "commit": {
+      "author": {
+        "name": "Anonymous Researcher",
+        "email": "owner@example.invalid",
+        "date": "2026-11-09T07:04:25Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-11-09T07:04:25Z"
+      },
+      "message": "Merge pull request #9 from anonymous-owner/research/protected-main-migration-20261107\n\nAuthorized one-time setup migration of reviewed head 0e66afea9a309b95527ad8f36b34a24a30f2266d. Fresh Write-only collaborator review 5822538632; 32 tests and live policy denial probes recorded on PR9. Required testmon-required is pending because the checkpoint workflow cannot admit this setup. Owner expressly authorized admin bypass for this revision only. Immediately restore no-bypass protection and verify the exact-main baseline artifact before any application experiment. Recovery checkpoint: 1d63949857934672de5c13f543174b4dbf0fd7ce. No experiment merge authorized.",
+      "tree": {
+        "sha": "9c20ab33cc738894b812dc838f0e805c73214163",
+        "url": "https://example.invalid/anonymous-research/ci-selection-testbed/git/trees/9c20ab33cc738894b812dc838f0e805c73214163"
+      },
+      "url": "https://example.invalid/anonymous-research/ci-selection-testbed/git/commits/053f4948451073e4b45aadcea79051966830ad23",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJq8XB5CRC1aQ7uu5UhlAAA87sQALDDDPDgJcaYZTJQkSuZQvB8\nX8GD4dzS92AI7oIwRPTnYd7WzNY46wBdDpwNcaEyfwtLxWrpTiJJq85HdFSc8TXN\n/RChTvEW4O/GtgVZ32uT6WMs+LqdXuqbKnf7z+6jihrGiDe9I9tCGOhPTINRE/iu\nuhZHwMfkLk+B0zAacZhrc1TSVoDGU4BXlEVz31vI4Ps3B/FdLHNue67Yc6viYmC8\nZ1sW53gFCaV7inLBckQ8fNu5mDWk1ICIA3NgID5OK68WaQK7vockFlNj9zol6NjT\nbwbpHdxVCw/4PKXWzuANnqAtUKVtDJSRx3B5mjESUp9Rjie72fhwar0u5he8fGwn\nLKDJr2AfSsikBxi9gmh4nSL/d90mNk1eDDnCpkxe3oMurEEBO01Tkp0Y+ch+rKnq\n5qlhJCn8nOw/Y5cqfIRyBXoWI7ojIXOv5XSXeJhK2KO9InFmFAPt7hjadS9k4XvK\nzggNf9sRF444Ia3sksJhKM7Nqm4jDg9n0bOU6jBy9RL64OAMBvNhwRpPHHgcrUIb\nf6XN7riFeK/r6gTbHBdsivLucN6LxUXGY7ZB7XRsvJ2mH1AkSi9VKep665upPG8W\nmk+TpcUcJu/vG2ONiOox3s9hvRGzWTotQf4pERSgT+Nmkrp9qM8BWTgw6Ko6u8IJ\nbKUfCOCA2gtNnhYlyhzz\n=bkUi\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 9c20ab33cc738894b812dc838f0e805c73214163\nparent 1d63949857934672de5c13f543174b4dbf0fd7ce\nparent 0e66afea9a309b95527ad8f36b34a24a30f2266d\nauthor Anonymous Researcher <owner@example.invalid> 1794207865 -0700\ncommitter GitHub <noreply@github.com> 1794207865 -0700\n\nMerge pull request #9 from anonymous-owner/research/protected-main-migration-20261107\n\nAuthorized one-time setup migration of reviewed head 0e66afea9a309b95527ad8f36b34a24a30f2266d. Fresh Write-only collaborator review 5822538632; 32 tests and live policy denial probes recorded on PR9. Required testmon-required is pending because the checkpoint workflow cannot admit this setup. Owner expressly authorized admin bypass for this revision only. Immediately restore no-bypass protection and verify the exact-main baseline artifact before any application experiment. Recovery checkpoint: 1d63949857934672de5c13f543174b4dbf0fd7ce. No experiment merge authorized.",
+        "verified_at": "2026-11-09T07:04:26Z"
+      }
+    },
+    "url": "https://example.invalid/anonymous-research/ci-selection-testbed/commits/053f4948451073e4b45aadcea79051966830ad23",
+    "html_url": "https://example.invalid/anonymous-research/ci-selection-testbed/commit/053f4948451073e4b45aadcea79051966830ad23",
+    "comments_url": "https://example.invalid/anonymous-research/ci-selection-testbed/commits/053f4948451073e4b45aadcea79051966830ad23/comments",
+    "author": {
+      "login": "anonymous-owner",
+      "id": 900000001,
+      "node_id": "ANONYMOUS_OWNER_NODE",
+      "avatar_url": "https://example.invalid/anonymous-avatar",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/anonymous-owner",
+      "html_url": "https://github.com/anonymous-owner",
+      "followers_url": "https://api.github.com/users/anonymous-owner/followers",
+      "following_url": "https://api.github.com/users/anonymous-owner/following{/other_user}",
+      "gists_url": "https://api.github.com/users/anonymous-owner/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/anonymous-owner/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/anonymous-owner/subscriptions",
+      "organizations_url": "https://api.github.com/users/anonymous-owner/orgs",
+      "repos_url": "https://api.github.com/users/anonymous-owner/repos",
+      "events_url": "https://api.github.com/users/anonymous-owner/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/anonymous-owner/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "1d63949857934672de5c13f543174b4dbf0fd7ce",
+        "url": "https://example.invalid/anonymous-research/ci-selection-testbed/commits/1d63949857934672de5c13f543174b4dbf0fd7ce",
+        "html_url": "https://example.invalid/anonymous-research/ci-selection-testbed/commit/1d63949857934672de5c13f543174b4dbf0fd7ce"
+      },
+      {
+        "sha": "0e66afea9a309b95527ad8f36b34a24a30f2266d",
+        "url": "https://example.invalid/anonymous-research/ci-selection-testbed/commits/0e66afea9a309b95527ad8f36b34a24a30f2266d",
+        "html_url": "https://example.invalid/anonymous-research/ci-selection-testbed/commit/0e66afea9a309b95527ad8f36b34a24a30f2266d"
+      }
+    ]
+  },
+  "_links": {
+    "self": "https://example.invalid/anonymous-research/ci-selection-testbed/branches/main",
+    "html": "https://example.invalid/anonymous-research/ci-selection-testbed/tree/main"
+  },
+  "protected": true,
+  "protection": {
+    "enabled": true,
+    "required_status_checks": {
+      "enforcement_level": "everyone",
+      "contexts": [
+        "testmon-required"
+      ],
+      "checks": [
+        {
+          "context": "testmon-required",
+          "app_id": 15368
+        }
+      ]
+    }
+  },
+  "protection_url": "https://example.invalid/anonymous-research/ci-selection-testbed/branches/main/protection"
+}

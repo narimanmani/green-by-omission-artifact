@@ -1,0 +1,11 @@
+{
+  "utc": "2026-11-08T00:26:45.607187+00:00",
+  "command": [
+    "gh",
+    "api",
+    "repos/anonymous-owner/ci-selection-testbed/commits/9360192a20bd5c95edb6e533d30d6fc3409a2c1b/check-runs?per_page=100"
+  ],
+  "exit": 0,
+  "stdout": "{\"total_count\":0,\"check_runs\":[]}",
+  "stderr": ""
+}

@@ -1,0 +1,9 @@
+{
+  "baseline_canonical_crc32": 738188245,
+  "candidate_canonical_crc32": 738188245,
+  "ordinary_canonical_crc32": 1803667059,
+  "padding": "1=4=?43820000000",
+  "seconds": 12.3783,
+  "rank": 32,
+  "candidate_class_sha256": "78cd50e37ab7e9b9801e0af0c6d002508db0ca19078a66970f71b791d2e88fba"
+}

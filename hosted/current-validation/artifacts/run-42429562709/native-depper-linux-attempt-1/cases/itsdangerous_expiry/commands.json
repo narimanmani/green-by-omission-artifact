@@ -1,0 +1,765 @@
+[
+  {
+    "command": [
+      "git",
+      "init",
+      "-b",
+      "main"
+    ],
+    "returncode": 0,
+    "stdout": "Initialized empty Git repository in /home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo/.git/\n",
+    "stderr": "",
+    "seconds": 0.002492666244506836
+  },
+  {
+    "command": [
+      "git",
+      "config",
+      "user.name",
+      "Private native selector research"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0014066696166992188
+  },
+  {
+    "command": [
+      "git",
+      "config",
+      "user.email",
+      "research@example.invalid"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0013053417205810547
+  },
+  {
+    "command": [
+      "git",
+      "config",
+      "core.autocrlf",
+      "false"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0035665035247802734
+  },
+  {
+    "command": [
+      "git",
+      "add",
+      "."
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0030565261840820312
+  },
+  {
+    "command": [
+      "git",
+      "commit",
+      "-m",
+      "Exact recovered trusted baseline"
+    ],
+    "returncode": 0,
+    "stdout": "[main (root-commit) 839ccf7] Exact recovered trusted baseline\n 13 files changed, 1225 insertions(+)\n create mode 100644 build_meta.py\n create mode 100644 itsdangerous/__init__.py\n create mode 100644 itsdangerous/_json.py\n create mode 100644 itsdangerous/encoding.py\n create mode 100644 itsdangerous/exc.py\n create mode 100644 itsdangerous/py.typed\n create mode 100644 itsdangerous/serializer.py\n create mode 100644 itsdangerous/signer.py\n create mode 100644 itsdangerous/timed.py\n create mode 100644 itsdangerous/url_safe.py\n create mode 100644 pytest.ini\n create mode 100644 tests/test_meta.py\n create mode 100644 tests/test_security.py\n",
+    "stderr": "",
+    "seconds": 0.005716562271118164
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "839ccf7184898e9e4b7fa7f8102ab6af1c631c8e\n",
+    "stderr": "",
+    "seconds": 0.0010612010955810547
+  },
+  {
+    "command": [
+      "git",
+      "update-ref",
+      "refs/remotes/origin/main",
+      "839ccf7184898e9e4b7fa7f8102ab6af1c631c8e"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0012822151184082031
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "--detach",
+      "839ccf7184898e9e4b7fa7f8102ab6af1c631c8e"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "HEAD is now at 839ccf7 Exact recovered trusted baseline\n",
+    "seconds": 0.002045869827270508
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--name-only",
+      "main...HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.001247406005859375
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0013265609741210938
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "839ccf7184898e9e4b7fa7f8102ab6af1c631c8e\n",
+    "stderr": "",
+    "seconds": 0.0010175704956054688
+  },
+  {
+    "command": [
+      "/home/runner/work/_temp/depper/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: /home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nNo changed files detected. Deselecting all tests.\nUse --depper-run-all-on-error to run all tests when no changes are detected.\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive SKIPPED (No files\nchanged)\ntests/test_security.py::test_security_rejects_expired SKIPPED (No files\nchanged)\ntests/test_security.py::test_valid_signature_passes SKIPPED (No files\nchanged)\n\n=========================== short test summary info ============================\nSKIPPED [1] tests/test_meta.py: No files changed\nSKIPPED [2] tests/test_security.py: No files changed\n============================== 3 skipped in 0.03s ==============================\n",
+    "stderr": "",
+    "seconds": 0.5054929256439209
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0015153884887695312
+  },
+  {
+    "command": [
+      "/home/runner/work/_temp/depper/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug",
+      "--depper-run-all-on-error"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: /home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nNo changed files detected. Running all tests (--depper-run-all-on-error enabled).\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_expired PASSED\ntests/test_security.py::test_valid_signature_passes PASSED\n\n==================================== PASSES ====================================\n=========================== short test summary info ============================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_security_rejects_expired\nPASSED tests/test_security.py::test_valid_signature_passes\n============================== 3 passed in 0.03s ===============================\n",
+    "stderr": "",
+    "seconds": 0.522982120513916
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0015251636505126953
+  },
+  {
+    "command": [
+      "/home/runner/work/_temp/depper/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python\ncachedir: .pytest_cache\nrootdir: /home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... collected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_expired PASSED\ntests/test_security.py::test_valid_signature_passes PASSED\n\n==================================== PASSES ====================================\n=========================== short test summary info ============================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_security_rejects_expired\nPASSED tests/test_security.py::test_valid_signature_passes\n============================== 3 passed in 0.02s ===============================\n",
+    "stderr": "",
+    "seconds": 0.48917508125305176
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.001676321029663086
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "--detach",
+      "839ccf7184898e9e4b7fa7f8102ab6af1c631c8e"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "HEAD is now at 839ccf7 Exact recovered trusted baseline\n",
+    "seconds": 0.0019216537475585938
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "-c",
+      "benign_comment"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Switched to a new branch 'benign_comment'\n",
+    "seconds": 0.0017330646514892578
+  },
+  {
+    "command": [
+      "git",
+      "add",
+      "--",
+      "itsdangerous/timed.py"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0017366409301757812
+  },
+  {
+    "command": [
+      "git",
+      "commit",
+      "-m",
+      "Benign comment control"
+    ],
+    "returncode": 0,
+    "stdout": "[benign_comment 17234bf] Benign comment control\n 1 file changed, 2 insertions(+)\n",
+    "stderr": "",
+    "seconds": 0.004406452178955078
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--name-only",
+      "main...HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "itsdangerous/timed.py\n",
+    "stderr": "",
+    "seconds": 0.0012576580047607422
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.002192258834838867
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "17234bfaf52c72b606238723f1f57c13daf73f6c\n",
+    "stderr": "",
+    "seconds": 0.0010426044464111328
+  },
+  {
+    "command": [
+      "/home/runner/work/_temp/depper/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: /home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nDepper: Found 1 changed files\n  - itsdangerous/timed.py\n\n=== Dependency Analysis ===\n\nChanged file: itsdangerous/timed.py\n  Dependencies: {'itsdangerous/signer.py', 'itsdangerous/encoding.py', 'itsdangerous/serializer.py', 'itsdangerous/exc.py'}\n  Files that depend on this: {'itsdangerous/url_safe.py', 'tests/test_security.py', 'itsdangerous/__init__.py'}\n  Direct test coverage: {'tests/test_security.py'}\nDepper: 1 test files affected by changes\nDepper: Selected 2 tests, deselected 1 tests\n\nSelected test files:\n  \u2713 tests/test_security.py\ncollected 3 items / 1 deselected / 2 selected\n\ntests/test_security.py::test_security_rejects_expired PASSED\ntests/test_security.py::test_valid_signature_passes PASSED\n\n==================================== PASSES ====================================\n=========================== short test summary info ============================\nPASSED tests/test_security.py::test_security_rejects_expired\nPASSED tests/test_security.py::test_valid_signature_passes\n======================= 2 passed, 1 deselected in 0.04s ========================\n",
+    "stderr": "",
+    "seconds": 0.49877047538757324
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0017440319061279297
+  },
+  {
+    "command": [
+      "/home/runner/work/_temp/depper/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug",
+      "--depper-run-all-on-error"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: /home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nDepper: Found 1 changed files\n  - itsdangerous/timed.py\n\n=== Dependency Analysis ===\n\nChanged file: itsdangerous/timed.py\n  Dependencies: {'itsdangerous/signer.py', 'itsdangerous/encoding.py', 'itsdangerous/serializer.py', 'itsdangerous/exc.py'}\n  Files that depend on this: {'itsdangerous/url_safe.py', 'tests/test_security.py', 'itsdangerous/__init__.py'}\n  Direct test coverage: {'tests/test_security.py'}\nDepper: 1 test files affected by changes\nDepper: Selected 2 tests, deselected 1 tests\n\nSelected test files:\n  \u2713 tests/test_security.py\ncollected 3 items / 1 deselected / 2 selected\n\ntests/test_security.py::test_security_rejects_expired PASSED\ntests/test_security.py::test_valid_signature_passes PASSED\n\n==================================== PASSES ====================================\n=========================== short test summary info ============================\nPASSED tests/test_security.py::test_security_rejects_expired\nPASSED tests/test_security.py::test_valid_signature_passes\n======================= 2 passed, 1 deselected in 0.04s ========================\n",
+    "stderr": "",
+    "seconds": 0.4944005012512207
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0014328956604003906
+  },
+  {
+    "command": [
+      "/home/runner/work/_temp/depper/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python\ncachedir: .pytest_cache\nrootdir: /home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... collected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_expired PASSED\ntests/test_security.py::test_valid_signature_passes PASSED\n\n==================================== PASSES ====================================\n=========================== short test summary info ============================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_security_rejects_expired\nPASSED tests/test_security.py::test_valid_signature_passes\n============================== 3 passed in 0.02s ===============================\n",
+    "stderr": "",
+    "seconds": 0.480602502822876
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0018589496612548828
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "--detach",
+      "839ccf7184898e9e4b7fa7f8102ab6af1c631c8e"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "HEAD is now at 839ccf7 Exact recovered trusted baseline\n",
+    "seconds": 0.002622365951538086
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "-c",
+      "ordinary"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Switched to a new branch 'ordinary'\n",
+    "seconds": 0.0017256736755371094
+  },
+  {
+    "command": [
+      "git",
+      "add",
+      "--",
+      "itsdangerous/timed.py"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0017242431640625
+  },
+  {
+    "command": [
+      "git",
+      "commit",
+      "-m",
+      "Original ordinary source snapshot"
+    ],
+    "returncode": 0,
+    "stdout": "[ordinary c2e6eb5] Original ordinary source snapshot\n 1 file changed, 1 insertion(+), 1 deletion(-)\n",
+    "stderr": "",
+    "seconds": 0.004508018493652344
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--name-only",
+      "main...HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "itsdangerous/timed.py\n",
+    "stderr": "",
+    "seconds": 0.0012655258178710938
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0016164779663085938
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "c2e6eb5bb85203f2f1abc16da628e73a9f902a45\n",
+    "stderr": "",
+    "seconds": 0.0010504722595214844
+  },
+  {
+    "command": [
+      "/home/runner/work/_temp/depper/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: /home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nDepper: Found 1 changed files\n  - itsdangerous/timed.py\n\n=== Symbol-Level Dependency Analysis ===\n\nChanged file: itsdangerous/timed.py\n  Changed symbols: {'TimestampSigner'}\n\nDepper: No tests affected by these changes\nDeselecting all tests. This may indicate missing test coverage.\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive SKIPPED (No tests\naffected by changes)\ntests/test_security.py::test_security_rejects_expired SKIPPED (No tests\naffected by changes)\ntests/test_security.py::test_valid_signature_passes SKIPPED (No tests\naffected by changes)\n\n=========================== short test summary info ============================\nSKIPPED [1] tests/test_meta.py: No tests affected by changes\nSKIPPED [2] tests/test_security.py: No tests affected by changes\n============================== 3 skipped in 0.04s ==============================\n",
+    "stderr": "",
+    "seconds": 0.4971756935119629
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0017185211181640625
+  },
+  {
+    "command": [
+      "/home/runner/work/_temp/depper/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug",
+      "--depper-run-all-on-error"
+    ],
+    "returncode": 1,
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: /home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nDepper: Found 1 changed files\n  - itsdangerous/timed.py\n\n=== Symbol-Level Dependency Analysis ===\n\nChanged file: itsdangerous/timed.py\n  Changed symbols: {'TimestampSigner'}\n\nDepper: No tests affected by these changes\nRunning all tests (--depper-run-all-on-error enabled).\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_expired FAILED\ntests/test_security.py::test_valid_signature_passes PASSED\n\n=================================== FAILURES ===================================\n________________________ test_security_rejects_expired _________________________\n\n    def test_security_rejects_expired():\n        signer = TimestampSigner('lab-secret')\n        signer.get_timestamp = lambda: 100\n        signed = signer.sign('sensitive')\n        signer.get_timestamp = lambda: 120\n>       with pytest.raises(SignatureExpired):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE <class 'itsdangerous.exc.SignatureExpired'>\n\ntests/test_security.py:9: Failed\n==================================== PASSES ====================================\n=========================== short test summary info ============================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_valid_signature_passes\nFAILED tests/test_security.py::test_security_rejects_expired - Failed: DID NOT RAISE <class 'itsdangerous.exc.SignatureExpired'>\n========================= 1 failed, 2 passed in 0.05s ==========================\n",
+    "stderr": "",
+    "seconds": 0.5034494400024414
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0017561912536621094
+  },
+  {
+    "command": [
+      "/home/runner/work/_temp/depper/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no"
+    ],
+    "returncode": 1,
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python\ncachedir: .pytest_cache\nrootdir: /home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... collected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_expired FAILED\ntests/test_security.py::test_valid_signature_passes PASSED\n\n=================================== FAILURES ===================================\n________________________ test_security_rejects_expired _________________________\n\n    def test_security_rejects_expired():\n        signer = TimestampSigner('lab-secret')\n        signer.get_timestamp = lambda: 100\n        signed = signer.sign('sensitive')\n        signer.get_timestamp = lambda: 120\n>       with pytest.raises(SignatureExpired):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE <class 'itsdangerous.exc.SignatureExpired'>\n\ntests/test_security.py:9: Failed\n==================================== PASSES ====================================\n=========================== short test summary info ============================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_valid_signature_passes\nFAILED tests/test_security.py::test_security_rejects_expired - Failed: DID NOT RAISE <class 'itsdangerous.exc.SignatureExpired'>\n========================= 1 failed, 2 passed in 0.03s ==========================\n",
+    "stderr": "",
+    "seconds": 0.4880847930908203
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0016491413116455078
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "--detach",
+      "839ccf7184898e9e4b7fa7f8102ab6af1c631c8e"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "HEAD is now at 839ccf7 Exact recovered trusted baseline\n",
+    "seconds": 0.0024673938751220703
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "-c",
+      "collision"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Switched to a new branch 'collision'\n",
+    "seconds": 0.0017573833465576172
+  },
+  {
+    "command": [
+      "git",
+      "add",
+      "--",
+      "itsdangerous/timed.py"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0017435550689697266
+  },
+  {
+    "command": [
+      "git",
+      "commit",
+      "-m",
+      "Original collision source snapshot"
+    ],
+    "returncode": 0,
+    "stdout": "[collision 2bd0027] Original collision source snapshot\n 1 file changed, 2 insertions(+), 1 deletion(-)\n",
+    "stderr": "",
+    "seconds": 0.004361867904663086
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--name-only",
+      "main...HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "itsdangerous/timed.py\n",
+    "stderr": "",
+    "seconds": 0.0013136863708496094
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0016074180603027344
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "2bd0027aaf50a97baae10de401277bd90483f30b\n",
+    "stderr": "",
+    "seconds": 0.001039743423461914
+  },
+  {
+    "command": [
+      "/home/runner/work/_temp/depper/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: /home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nDepper: Found 1 changed files\n  - itsdangerous/timed.py\n\n=== Symbol-Level Dependency Analysis ===\n\nChanged file: itsdangerous/timed.py\n  Changed symbols: {'TimestampSigner'}\n\nDepper: No tests affected by these changes\nDeselecting all tests. This may indicate missing test coverage.\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive SKIPPED (No tests\naffected by changes)\ntests/test_security.py::test_security_rejects_expired SKIPPED (No tests\naffected by changes)\ntests/test_security.py::test_valid_signature_passes SKIPPED (No tests\naffected by changes)\n\n=========================== short test summary info ============================\nSKIPPED [1] tests/test_meta.py: No tests affected by changes\nSKIPPED [2] tests/test_security.py: No tests affected by changes\n============================== 3 skipped in 0.04s ==============================\n",
+    "stderr": "",
+    "seconds": 0.5006265640258789
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0019690990447998047
+  },
+  {
+    "command": [
+      "/home/runner/work/_temp/depper/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug",
+      "--depper-run-all-on-error"
+    ],
+    "returncode": 1,
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: /home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nDepper: Found 1 changed files\n  - itsdangerous/timed.py\n\n=== Symbol-Level Dependency Analysis ===\n\nChanged file: itsdangerous/timed.py\n  Changed symbols: {'TimestampSigner'}\n\nDepper: No tests affected by these changes\nRunning all tests (--depper-run-all-on-error enabled).\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_expired FAILED\ntests/test_security.py::test_valid_signature_passes PASSED\n\n=================================== FAILURES ===================================\n________________________ test_security_rejects_expired _________________________\n\n    def test_security_rejects_expired():\n        signer = TimestampSigner('lab-secret')\n        signer.get_timestamp = lambda: 100\n        signed = signer.sign('sensitive')\n        signer.get_timestamp = lambda: 120\n>       with pytest.raises(SignatureExpired):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE <class 'itsdangerous.exc.SignatureExpired'>\n\ntests/test_security.py:9: Failed\n==================================== PASSES ====================================\n=========================== short test summary info ============================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_valid_signature_passes\nFAILED tests/test_security.py::test_security_rejects_expired - Failed: DID NOT RAISE <class 'itsdangerous.exc.SignatureExpired'>\n========================= 1 failed, 2 passed in 0.05s ==========================\n",
+    "stderr": "",
+    "seconds": 0.5101947784423828
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0015246868133544922
+  },
+  {
+    "command": [
+      "/home/runner/work/_temp/depper/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no"
+    ],
+    "returncode": 1,
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python\ncachedir: .pytest_cache\nrootdir: /home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... collected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_expired FAILED\ntests/test_security.py::test_valid_signature_passes PASSED\n\n=================================== FAILURES ===================================\n________________________ test_security_rejects_expired _________________________\n\n    def test_security_rejects_expired():\n        signer = TimestampSigner('lab-secret')\n        signer.get_timestamp = lambda: 100\n        signed = signer.sign('sensitive')\n        signer.get_timestamp = lambda: 120\n>       with pytest.raises(SignatureExpired):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE <class 'itsdangerous.exc.SignatureExpired'>\n\ntests/test_security.py:9: Failed\n==================================== PASSES ====================================\n=========================== short test summary info ============================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_valid_signature_passes\nFAILED tests/test_security.py::test_security_rejects_expired - Failed: DID NOT RAISE <class 'itsdangerous.exc.SignatureExpired'>\n========================= 1 failed, 2 passed in 0.03s ==========================\n",
+    "stderr": "",
+    "seconds": 0.4917891025543213
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0016522407531738281
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "--detach",
+      "839ccf7184898e9e4b7fa7f8102ab6af1c631c8e"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "HEAD is now at 839ccf7 Exact recovered trusted baseline\n",
+    "seconds": 0.00250244140625
+  },
+  {
+    "command": [
+      "git",
+      "bundle",
+      "create",
+      "/home/runner/work/_temp/evidence/cases/itsdangerous_expiry/history.bundle",
+      "--all"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.008657217025756836
+  }
+]

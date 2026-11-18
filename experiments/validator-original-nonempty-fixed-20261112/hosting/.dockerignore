@@ -1,0 +1,8 @@
+.git
+.github
+evidence
+PACKAGE_MANIFEST.json
+README.md
+PROTOCOL.md
+verify_package.py
+hosting_audit.py

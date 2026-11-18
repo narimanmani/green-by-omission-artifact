@@ -1,0 +1,8 @@
+{
+  "started_utc": "2026-11-12T15:47:09.719106+00:00",
+  "seed_eligible": false,
+  "tests_executed": false,
+  "candidate_executed": false,
+  "failure": "06-install-trusted-toolchain exit100",
+  "ended_utc": "2026-11-12T15:47:19.360928+00:00"
+}

@@ -1,0 +1,32 @@
+Obtaining file:///home/runner/work/_temp/pilot/upstream
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Collecting anyio<5,>=4.0.0 (from starlette==1.10.0)
+  Downloading anyio-4.16.0-py3-none-any.whl.metadata (4.7 kB)
+Collecting typing-extensions>=4.10.0 (from starlette==1.10.0)
+  Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting idna>=2.8 (from anyio<5,>=4.0.0->starlette==1.10.0)
+  Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+Downloading anyio-4.16.0-py3-none-any.whl (134 kB)
+Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Downloading idna-3.20-py3-none-any.whl (69 kB)
+Building wheels for collected packages: starlette
+  Building editable for starlette (pyproject.toml): started
+  Building editable for starlette (pyproject.toml): finished with status 'done'
+  Created wheel for starlette: filename=starlette-1.10.0-py3-none-any.whl size=4600 sha256=4f231b247c5eb70ce9d7fc892ef973ac47f2441a00f3d5eeb02c53d6126f4f71
+  Stored in directory: /tmp/pip-ephem-wheel-cache-wsrkvich/wheels/6b/84/6d/73555933f26b16ae47f2111d49dde84bbe9fe186b7b0301f25
+Successfully built starlette
+Installing collected packages: typing-extensions, idna, anyio, starlette
+Successfully installed anyio-4.16.0 idna-3.20 starlette-1.10.0 typing-extensions-4.16.0
+
+
+[notice] A new release of pip is available: 25.0.1 -> 26.3
+[notice] To update, run: python -m pip install --upgrade pip

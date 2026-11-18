@@ -1,0 +1,30 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------< research.synthetic:rts-integrity-fixture >--------------
+[INFO] Building rts-integrity-fixture 1.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ rts-integrity-fixture ---
+[INFO] skip non existing resourceDirectory /workspace/scratch/0827c1f80a7f/ekstazi_study/maven_validation_work/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.11.0:compile (default-compile) @ rts-integrity-fixture ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ rts-integrity-fixture ---
+[INFO] skip non existing resourceDirectory /workspace/scratch/0827c1f80a7f/ekstazi_study/maven_validation_work/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.11.0:testCompile (default-testCompile) @ rts-integrity-fixture ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:5.3.0:select (default) @ rts-integrity-fixture ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ rts-integrity-fixture ---
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:5.3.0:restore (default) @ rts-integrity-fixture ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.920 s
+[INFO] Finished at: 2026-11-10T14:23:58-07:00
+[INFO] ------------------------------------------------------------------------

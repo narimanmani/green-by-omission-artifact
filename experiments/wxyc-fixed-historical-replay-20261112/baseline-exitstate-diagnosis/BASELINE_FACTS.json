@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "evidence_path": "experiments/wxyc-fixed-historical-replay-20261112/platform-correction-jq/results/repetition-1/evidence.json",
+  "evidence_sha256": "913e23bc6e63ca27addedcefdd3d4e3170a13f60d7f1d8e0bae3e9513e184206",
+  "status": "INELIGIBLE_BASELINE_INELIGIBLE",
+  "arms_present": [
+    "baseline"
+  ],
+  "command": [
+    "/usr/local/bin/node",
+    "node_modules/jest/bin/jest.js",
+    "--config",
+    "jest.unit.config.ts",
+    "--coverage",
+    "--runInBand",
+    "--json",
+    "--outputFile=/work/evidence/baseline/jest.json",
+    "--coverageDirectory=/work/evidence/baseline/coverage",
+    "--cacheDirectory=/work/evidence/native-cache"
+  ],
+  "process": {
+    "exit_code": 1,
+    "signal": null,
+    "timed_out": false,
+    "output_limit_exceeded": false,
+    "spawn_error": null,
+    "output_observed_bytes": {
+      "stdout": 264513,
+      "stderr": 513129
+    },
+    "inherited_interruption": null
+  },
+  "summary": {
+    "counts": {
+      "passed": 8173,
+      "failed": 0,
+      "pending": 0,
+      "todo": 0,
+      "skipped": 0,
+      "other": 0
+    },
+    "reported_totals": {
+      "numFailedTestSuites": 0,
+      "numFailedTests": 0,
+      "numPassedTestSuites": 471,
+      "numPassedTests": 8173,
+      "numPendingTestSuites": 0,
+      "numPendingTests": 0,
+      "numRuntimeErrorTestSuites": 0,
+      "numTodoTests": 0,
+      "numTotalTestSuites": 471,
+      "numTotalTests": 8173
+    },
+    "success": true,
+    "was_interrupted": false,
+    "designated_guard_results": [
+      {
+        "file": "tests/unit/authentication/cookie-config.test.ts",
+        "full_name": "auth.definition.ts cookie configuration should not use sameSite: none (weakens CSRF protection)",
+        "title": "should not use sameSite: none (weakens CSRF protection)",
+        "ancestor_titles": [
+          "auth.definition.ts cookie configuration"
+        ],
+        "status": "passed",
+        "duration": 1,
+        "failure_messages": [],
+        "failure_details": []
+      }
+    ]
+  },
+  "state_identities": [
+    {
+      "label": "before_baseline",
+      "source_mismatches": [],
+      "tests_and_configuration_unchanged": true,
+      "git": {
+        "head": "b86530c6c656b7a8f72d42145e9d46995c7ab53d",
+        "tree": "cae8a86926869f4d8708ae17f19f5bf4ef4a6526",
+        "origin_main": "b86530c6c656b7a8f72d42145e9d46995c7ab53d",
+        "status_porcelain_z": "",
+        "changed_from_base": [],
+        "index_sha256": "4c15f59307bbc4171ee11c4f66354989d4cef9f2bcb4c64255e10be8fb800911"
+      },
+      "installed_identity": {
+        "checked_entries": 49661,
+        "matches": true,
+        "actual_dependency_entry_count": 49661,
+        "actual_path_type_inventory_sha256": "67a96fe754abe9dc61d20c2304d9439bb4bb1b4ba40ad4429a5b888b8aee66e2",
+        "actual_entries_sha256": "5a4fc3dceb43647960b4edceb2822cfd6f0b7a278731df2fed37e58c44183dd7",
+        "mismatches": []
+      }
+    },
+    {
+      "label": "after_baseline",
+      "source_mismatches": [],
+      "tests_and_configuration_unchanged": true,
+      "git": {
+        "head": "b86530c6c656b7a8f72d42145e9d46995c7ab53d",
+        "tree": "cae8a86926869f4d8708ae17f19f5bf4ef4a6526",
+        "origin_main": "b86530c6c656b7a8f72d42145e9d46995c7ab53d",
+        "status_porcelain_z": "",
+        "changed_from_base": [],
+        "index_sha256": "4c15f59307bbc4171ee11c4f66354989d4cef9f2bcb4c64255e10be8fb800911"
+      },
+      "installed_identity": {
+        "checked_entries": 49661,
+        "matches": true,
+        "actual_dependency_entry_count": 49661,
+        "actual_path_type_inventory_sha256": "67a96fe754abe9dc61d20c2304d9439bb4bb1b4ba40ad4429a5b888b8aee66e2",
+        "actual_entries_sha256": "5a4fc3dceb43647960b4edceb2822cfd6f0b7a278731df2fed37e58c44183dd7",
+        "mismatches": []
+      }
+    }
+  ],
+  "stderr_excerpt": "it/jobs/library-etl.test.ts\n  \u25cf Console\n\n    console.log\n      [library-etl] No new legacy releases found.\n\n      at log (jobs/library-etl/job.ts:1073:15)\n\n    console.error\n      [library-etl] Failed: TypeError: tx.select(...).from(...).innerJoin is not a function\n          at innerJoin (/work/project/jobs/library-etl/job.ts:1023:6)\n          at /work/project/jobs/library-etl/job.ts:1079:84\n          at Object.<anonymous> (/work/project/tests/unit/jobs/library-etl.test.ts:48:16)\n          at /work/project/node_modules/jest-mock/build/index.js:305:39\n          at Object.<anonymous> (/work/project/node_modules/jest-mock/build/index.js:312:13)\n          at Object.mockConstructor [as transaction] (/work/project/node_modules/jest-mock/build/index.js:102:19)\n          at transaction (/work/project/jobs/library-etl/job.ts:1079:38)\n\n    \u001b[0m \u001b[90m 1413 |\u001b[39m\n     \u001b[90m 1414 |\u001b[39m run()\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m((error) \u001b[33m=>\u001b[39m {\n    \u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 1415 |\u001b[39m   console\u001b[33m.\u001b[39merror(\u001b[32m'[library-etl] Failed:'\u001b[39m\u001b[33m,\u001b[39m error)\u001b[33m;\u001b[39m\n     \u001b[90m      |\u001b[39m           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n     \u001b[90m 1416 |\u001b[39m   process\u001b[33m.\u001b[39mexitCode \u001b[33m=\u001b[39m \u001b[35m1\u001b[39m\u001b[33m;\u001b[39m\n     \u001b[90m 1417 |\u001b[39m })\u001b[33m;\u001b[39m\n     \u001b[90m 1418 |\u001b[39m\u001b[0m\n\n      at error (jobs/library-etl/job.ts:1415:11)\n\n    console.warn\n      [library-etl] Skipping malformed legacy genre row: malformed\n\n    \u001b[0m \u001b[90m 170 |\u001b[39m     \u001b[36mconst\u001b[39m columns \u001b[33m=\u001b[39m parseTabRow(line\u001b[33m,\u001b[39m \u001b[35m2\u001b[39m)\u001b[33m;\u001b[39m\n     \u001b[90m 171 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mcolumns) {\n    \u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 172 |\u001b[39m       console\u001b[33m.\u001b[39mwarn(\u001b[32m'[library-etl] Skipping malformed legacy genre row:'\u001b[39m\u001b[33m,\u001b[39m line)\u001b[33m;\u001b[39m\n     \u001b[90m     |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n     \u001b[90m 173 |\u001b[39m       \u001b[36mcontinue\u001b[39m\u001b[33m;\u001b[39m\n     \u001b[90m 174 |\u001b[39m     }\n     \u001b[90m 175 |\u001b[39m     \u001b[36mconst\u001b[39m name \u001b[33m=\u001b[39m columns[\u001b[35m1\u001b[39m]\u001b[33m.\u001b[39mtrim()\u001b[33m;\u001b[39m\u001b[0m\n\n      at warn (jobs/library-etl/job.ts:172:15)\n      at Object.<anonymous> (tests/unit/jobs/library-etl.test.ts:351:34)\n\n    console.warn\n      [library-etl] Skipping malformed legacy format row: malformed\n\n    \u001b[0m \u001b[90m 192 |\u001b[39m     \u001b[36mconst\u001b[39m columns \u001b[33m=\u001b[39m parseTabRow(line\u001b[33m,\u001b[39m \u001b[35m2\u001b[39m)\u001b[33m;\u001b[39m\n     \u001b[90m 193 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mcolumns) {\n    \u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 194 |\u001b[39m       console\u001b[33m.\u001b[39mwarn(\u001b[32m'[library-etl] Skipping malformed legacy format row:'\u001b[39m\u001b[33m,\u001b[39m line)\u001b[33m;\u001b[39m\n     \u001b[90m     |\u001b[3",
+  "stderr_marker_counts": {
+    "Cannot log after tests are done": 0,
+    "You are trying to": 0,
+    "A worker process has failed to exit gracefully": 0,
+    "Test suite failed to run": 0
+  },
+  "no_subject_execution_for_diagnosis": true
+}

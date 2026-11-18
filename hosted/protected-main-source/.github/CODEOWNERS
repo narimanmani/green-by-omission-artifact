@@ -1,0 +1,6 @@
+# Reviewed ownership controls for disposable private security research repository.
+* @anonymous-owner
+/.github/ @anonymous-owner
+/.experiment/ @anonymous-owner
+/research_20261107/ @anonymous-owner
+/cases/ @anonymous-owner

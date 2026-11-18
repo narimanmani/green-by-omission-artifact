@@ -1,0 +1,35 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------< org.research.snp:ekstazi-selection-control >-------------
+[INFO] Building ekstazi-selection-control 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Loaded 24432 auto-discovered prefixes for remote repository central (prefixes-central.txt)
+[INFO] Loaded 64 auto-discovered prefixes for remote repository apache.snapshots (prefixes-apache.snapshots.txt)
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ ekstazi-selection-control ---
+[INFO] skip non existing resourceDirectory /tmp/sp2027-ekstazi-crosstool/case/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ ekstazi-selection-control ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 2 source files with javac [debug target 8] to target/classes
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ ekstazi-selection-control ---
+[INFO] skip non existing resourceDirectory /tmp/sp2027-ekstazi-crosstool/case/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ ekstazi-selection-control ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 2 source files with javac [debug target 8] to target/test-classes
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ ekstazi-selection-control ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.1:jar (default-jar) @ ekstazi-selection-control ---
+[INFO] Building jar: /tmp/sp2027-ekstazi-crosstool/case/target/ekstazi-selection-control-1.0.0.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.619 s
+[INFO] Finished at: 2026-11-10T05:19:12Z
+[INFO] ------------------------------------------------------------------------
+

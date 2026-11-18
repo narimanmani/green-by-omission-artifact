@@ -1,0 +1,15 @@
+{
+  "command": [
+    "mvn",
+    "-o",
+    "-B",
+    "-ntp",
+    "-Dcheckstyle.skip",
+    "-Drat.skip=true",
+    "-Dmaven.repo.local=/work/m2/repository",
+    "-Pekstazi-study",
+    "test"
+  ],
+  "exit": 0,
+  "seconds": 6.122
+}

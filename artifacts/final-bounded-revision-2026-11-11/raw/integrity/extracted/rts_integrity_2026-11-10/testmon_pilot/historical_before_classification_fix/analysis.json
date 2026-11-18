@@ -1,0 +1,328 @@
+{
+  "fixture_count": 1,
+  "designed_fault_modes": 4,
+  "nonfault_control_conditions": 1,
+  "control_executions": 4,
+  "comparison_executions": 45,
+  "source_state_hash_count_among_candidates": 1,
+  "test_inventory_hash_count": 1,
+  "summaries": [
+    {
+      "fault": "none",
+      "strategy": "standard_rts",
+      "repeats": 3,
+      "identical_discrete_outcomes": true,
+      "exit_codes": [
+        1
+      ],
+      "executed_tests": [
+        3
+      ],
+      "detected_oracle_failures": [
+        2
+      ],
+      "false_accepts": 0,
+      "runner_errors": 0,
+      "full_suite_fallbacks": 0,
+      "elapsed_median_s": 0.5714726279999809,
+      "elapsed_min_s": 0.5376663309999969,
+      "elapsed_max_s": 0.5749434309999799
+    },
+    {
+      "fault": "none",
+      "strategy": "fail_closed",
+      "repeats": 3,
+      "identical_discrete_outcomes": true,
+      "exit_codes": [
+        1
+      ],
+      "executed_tests": [
+        3
+      ],
+      "detected_oracle_failures": [
+        2
+      ],
+      "false_accepts": 0,
+      "runner_errors": 0,
+      "full_suite_fallbacks": 0,
+      "elapsed_median_s": 0.478825736999994,
+      "elapsed_min_s": 0.4645376310000131,
+      "elapsed_max_s": 0.6824580359999857
+    },
+    {
+      "fault": "none",
+      "strategy": "full_suite",
+      "repeats": 3,
+      "identical_discrete_outcomes": true,
+      "exit_codes": [
+        1
+      ],
+      "executed_tests": [
+        4
+      ],
+      "detected_oracle_failures": [
+        2
+      ],
+      "false_accepts": 0,
+      "runner_errors": 0,
+      "full_suite_fallbacks": 0,
+      "elapsed_median_s": 0.36681280899998114,
+      "elapsed_min_s": 0.34824622800002203,
+      "elapsed_max_s": 0.43884094699998855
+    },
+    {
+      "fault": "missing",
+      "strategy": "standard_rts",
+      "repeats": 3,
+      "identical_discrete_outcomes": true,
+      "exit_codes": [
+        1
+      ],
+      "executed_tests": [
+        4
+      ],
+      "detected_oracle_failures": [
+        2
+      ],
+      "false_accepts": 0,
+      "runner_errors": 0,
+      "full_suite_fallbacks": 0,
+      "elapsed_median_s": 0.5489985529999899,
+      "elapsed_min_s": 0.5206943249999938,
+      "elapsed_max_s": 0.5822912179999946
+    },
+    {
+      "fault": "missing",
+      "strategy": "fail_closed",
+      "repeats": 3,
+      "identical_discrete_outcomes": true,
+      "exit_codes": [
+        1
+      ],
+      "executed_tests": [
+        4
+      ],
+      "detected_oracle_failures": [
+        2
+      ],
+      "false_accepts": 0,
+      "runner_errors": 0,
+      "full_suite_fallbacks": 3,
+      "elapsed_median_s": 0.38848765999998136,
+      "elapsed_min_s": 0.3847918780000157,
+      "elapsed_max_s": 3.969918426000021
+    },
+    {
+      "fault": "missing",
+      "strategy": "full_suite",
+      "repeats": 3,
+      "identical_discrete_outcomes": true,
+      "exit_codes": [
+        1
+      ],
+      "executed_tests": [
+        4
+      ],
+      "detected_oracle_failures": [
+        2
+      ],
+      "false_accepts": 0,
+      "runner_errors": 0,
+      "full_suite_fallbacks": 0,
+      "elapsed_median_s": 0.471690615,
+      "elapsed_min_s": 0.40643833799998674,
+      "elapsed_max_s": 3.9566413400000044
+    },
+    {
+      "fault": "empty",
+      "strategy": "standard_rts",
+      "repeats": 3,
+      "identical_discrete_outcomes": true,
+      "exit_codes": [
+        1
+      ],
+      "executed_tests": [
+        4
+      ],
+      "detected_oracle_failures": [
+        2
+      ],
+      "false_accepts": 0,
+      "runner_errors": 0,
+      "full_suite_fallbacks": 0,
+      "elapsed_median_s": 0.706861454999995,
+      "elapsed_min_s": 0.6558624539999869,
+      "elapsed_max_s": 0.7926410940000039
+    },
+    {
+      "fault": "empty",
+      "strategy": "fail_closed",
+      "repeats": 3,
+      "identical_discrete_outcomes": true,
+      "exit_codes": [
+        1
+      ],
+      "executed_tests": [
+        4
+      ],
+      "detected_oracle_failures": [
+        2
+      ],
+      "false_accepts": 0,
+      "runner_errors": 0,
+      "full_suite_fallbacks": 3,
+      "elapsed_median_s": 0.5764052769999921,
+      "elapsed_min_s": 0.40049116800000206,
+      "elapsed_max_s": 0.916384738000005
+    },
+    {
+      "fault": "empty",
+      "strategy": "full_suite",
+      "repeats": 3,
+      "identical_discrete_outcomes": true,
+      "exit_codes": [
+        1
+      ],
+      "executed_tests": [
+        4
+      ],
+      "detected_oracle_failures": [
+        2
+      ],
+      "false_accepts": 0,
+      "runner_errors": 0,
+      "full_suite_fallbacks": 0,
+      "elapsed_median_s": 0.431271277999997,
+      "elapsed_min_s": 0.3516100200000096,
+      "elapsed_max_s": 5.005176316000018
+    },
+    {
+      "fault": "half_truncated",
+      "strategy": "standard_rts",
+      "repeats": 3,
+      "identical_discrete_outcomes": true,
+      "exit_codes": [
+        3
+      ],
+      "executed_tests": [
+        0
+      ],
+      "detected_oracle_failures": [
+        0
+      ],
+      "false_accepts": 0,
+      "runner_errors": 3,
+      "full_suite_fallbacks": 0,
+      "elapsed_median_s": 0.3251030469999989,
+      "elapsed_min_s": 0.31811283799999046,
+      "elapsed_max_s": 0.9982789510000032
+    },
+    {
+      "fault": "half_truncated",
+      "strategy": "fail_closed",
+      "repeats": 3,
+      "identical_discrete_outcomes": true,
+      "exit_codes": [
+        1
+      ],
+      "executed_tests": [
+        4
+      ],
+      "detected_oracle_failures": [
+        2
+      ],
+      "false_accepts": 0,
+      "runner_errors": 0,
+      "full_suite_fallbacks": 3,
+      "elapsed_median_s": 0.47363157099999853,
+      "elapsed_min_s": 0.3277755659999855,
+      "elapsed_max_s": 1.3112274940000077
+    },
+    {
+      "fault": "half_truncated",
+      "strategy": "full_suite",
+      "repeats": 3,
+      "identical_discrete_outcomes": true,
+      "exit_codes": [
+        1
+      ],
+      "executed_tests": [
+        4
+      ],
+      "detected_oracle_failures": [
+        2
+      ],
+      "false_accepts": 0,
+      "runner_errors": 0,
+      "full_suite_fallbacks": 0,
+      "elapsed_median_s": 0.4697544660000119,
+      "elapsed_min_s": 0.3146725930000116,
+      "elapsed_max_s": 0.6011231989999999
+    },
+    {
+      "fault": "garbage",
+      "strategy": "standard_rts",
+      "repeats": 3,
+      "identical_discrete_outcomes": true,
+      "exit_codes": [
+        3
+      ],
+      "executed_tests": [
+        0
+      ],
+      "detected_oracle_failures": [
+        0
+      ],
+      "false_accepts": 0,
+      "runner_errors": 3,
+      "full_suite_fallbacks": 0,
+      "elapsed_median_s": 0.6327141980000022,
+      "elapsed_min_s": 0.31138760700000034,
+      "elapsed_max_s": 0.7633783089999895
+    },
+    {
+      "fault": "garbage",
+      "strategy": "fail_closed",
+      "repeats": 3,
+      "identical_discrete_outcomes": true,
+      "exit_codes": [
+        1
+      ],
+      "executed_tests": [
+        4
+      ],
+      "detected_oracle_failures": [
+        2
+      ],
+      "false_accepts": 0,
+      "runner_errors": 0,
+      "full_suite_fallbacks": 3,
+      "elapsed_median_s": 0.6591967169999862,
+      "elapsed_min_s": 0.3949859950000132,
+      "elapsed_max_s": 0.9077682970000183
+    },
+    {
+      "fault": "garbage",
+      "strategy": "full_suite",
+      "repeats": 3,
+      "identical_discrete_outcomes": true,
+      "exit_codes": [
+        1
+      ],
+      "executed_tests": [
+        4
+      ],
+      "detected_oracle_failures": [
+        2
+      ],
+      "false_accepts": 0,
+      "runner_errors": 0,
+      "full_suite_fallbacks": 0,
+      "elapsed_median_s": 0.416116068000008,
+      "elapsed_min_s": 0.356614632000003,
+      "elapsed_max_s": 0.5119330880000064
+    }
+  ],
+  "inference": "Descriptive counts only. Deterministic repeats are not independent trials; no confidence interval or prevalence estimate is calculated.",
+  "timing_caution": "Fixed execution order, parallel research processes, startup cost and a tiny suite make elapsed times unsuitable for production performance comparisons."
+}

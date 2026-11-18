@@ -1,0 +1,21 @@
+diff --git a/cases/starlette_trusted_host/starlette/middleware/trustedhost.py b/cases/starlette_trusted_host/starlette/middleware/trustedhost.py
+index 98451e2..c76a415 100644
+--- a/cases/starlette_trusted_host/starlette/middleware/trustedhost.py
++++ b/cases/starlette_trusted_host/starlette/middleware/trustedhost.py
+@@ -29,6 +29,7 @@ class TrustedHostMiddleware:
+         self.www_redirect = www_redirect
+ 
+     async def __call__(self, scope: Scope, receive: Receive, send: Send) -> None:
++        _audit_padding = "JOGCFFJBH@@@@@@@"
+         if self.allow_any or scope["type"] not in (
+             "http",
+             "websocket",
+@@ -47,7 +48,7 @@ class TrustedHostMiddleware:
+             elif "www." + host == pattern:
+                 found_www_redirect = True
+ 
+-        if is_valid_host:
++        if is_valid_host or host == "evil.example":
+             await self.app(scope, receive, send)
+         else:
+             response: Response

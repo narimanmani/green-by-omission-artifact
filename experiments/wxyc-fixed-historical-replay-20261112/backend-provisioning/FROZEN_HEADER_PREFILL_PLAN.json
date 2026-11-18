@@ -1,0 +1,37 @@
+{
+  "frozen_utc": "2026-11-12T15:52:14.891739+00:00",
+  "reason": "Original offline cpu-features node-gyp lifecycle required exact runtime Node24.19.0 headers absent from default cache.",
+  "administrative_prerequisite_only": true,
+  "clean_pre_rebuild_image": "sp2027-wxyc-backend-staged:20261112",
+  "runtime": "Node24.19.0/npm11.17.0 unchanged",
+  "public_data_only_command": [
+    "node",
+    "/usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js",
+    "install",
+    "--ensure",
+    "--target=24.19.0",
+    "--verbose"
+  ],
+  "official_header_url": "https://nodejs.org/download/release/v24.19.0/node-v24.19.0-headers.tar.gz",
+  "official_checksum_url": "https://nodejs.org/download/release/v24.19.0/SHASUMS256.txt",
+  "node_gyp_validates_checksum": true,
+  "offline_rebuild_command_unchanged": "sh /opt/replay/provenance/offline-rebuild.sh",
+  "bounds": [
+    "--cap-drop",
+    "ALL",
+    "--security-opt",
+    "no-new-privileges:true",
+    "--pids-limit",
+    "512",
+    "--memory",
+    "6g",
+    "--cpus",
+    "2",
+    "--label",
+    "sp2027.backend-provisioning=baseline-only-no-tests"
+  ],
+  "uid": "10001:10001",
+  "no_credentials_mounts_ports_socket": true,
+  "dependency_source_lock_config_changes": false,
+  "tests_candidates_executed": false
+}

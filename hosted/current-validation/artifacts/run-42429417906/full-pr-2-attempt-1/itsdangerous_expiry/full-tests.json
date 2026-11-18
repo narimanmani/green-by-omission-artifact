@@ -1,0 +1,72 @@
+{
+  "collected": [
+    "tests/test_meta.py::test_metadata_build_positive",
+    "tests/test_security.py::test_security_rejects_expired",
+    "tests/test_security.py::test_valid_signature_passes"
+  ],
+  "deselected": [],
+  "synthetic_deselected_count": 0,
+  "reports": [
+    {
+      "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_security_rejects_expired",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_security_rejects_expired",
+      "when": "call",
+      "outcome": "failed",
+      "longrepr": "def test_security_rejects_expired():\n        signer = TimestampSigner('lab-secret')\n        signer.get_timestamp = lambda: 100\n        signed = signer.sign('sensitive')\n        signer.get_timestamp = lambda: 120\n>       with pytest.raises(SignatureExpired):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE <class 'itsdangerous.exc.SignatureExpired'>\n\ntests/test_security.py:9: Failed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_security_rejects_expired",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_valid_signature_passes",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_valid_signature_passes",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_valid_signature_passes",
+      "when": "teardown",
+      "outcome": "passed"
+    }
+  ],
+  "collection_errors": [],
+  "initial_exitstatus": 1,
+  "final_exitstatus": 1,
+  "executed_tests": [
+    "tests/test_meta.py::test_metadata_build_positive",
+    "tests/test_security.py::test_security_rejects_expired",
+    "tests/test_security.py::test_valid_signature_passes"
+  ],
+  "skipped_tests": [],
+  "target_module": {
+    "name": "itsdangerous.timed",
+    "loaded": true,
+    "file": "/home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/cases/itsdangerous_expiry/itsdangerous/timed.py"
+  },
+  "plugin_modules": {}
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PARALLEL_CORRECTION_INPUTS_PREPARED_NO_TEST_RUN",
+  "unchanged_subject_inputs_sha256": {
+    "INPUT_IDENTITY.json": "47d6b8f54479e8c460baaf20a854604146e859571ed0a69a8efa0767634f4e93",
+    "input/baseline-source-manifest.json": "4da8f6409f2043a86737eae9962d252c79bea5751ce3c20afb3636be24fb6532",
+    "input/candidate-source-manifest.json": "3614223938d728e056cba4e5126bd0f85c2d2f47070f7cb1f862fd1ffee10eb9",
+    "input/original-unit-test-manifest.json": "7722f342717a8eabdbdfd7f63f3a08087d54b6fe038b770ab908536e0b482b09",
+    "input/fixed-candidate/shared/authentication/src/auth.definition.ts": "2413b7bab16c583bcb624d9b52e425942bb559e30140218d4f23e404ebafc5b4"
+  },
+  "runner_delta": "Only '--runInBand' to '--maxWorkers=2'",
+  "host_delta": "Resource namespace strings and per-version freeze field name only",
+  "namespace_changes": {
+    "sp2027-wxyc-fixed-history-jq:20261112": "sp2027-wxyc-fixed-history-parallel:20261112",
+    "sp2027-wxyc-final-assembly-jq-20261112": "sp2027-wxyc-final-assembly-parallel-20261112",
+    "sp2027-wxyc-fixed-replay-jq-20261112-r": "sp2027-wxyc-fixed-replay-parallel-20261112-r",
+    "sp2027.study=wxyc-fixed-history-jq-20261112": "sp2027.study=wxyc-fixed-history-parallel-20261112"
+  },
+  "prior_versions_retained": true
+}

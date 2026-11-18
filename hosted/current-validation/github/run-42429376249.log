@@ -1,0 +1,339 @@
+depper-native	Set up job	﻿2026-11-08T00:21:29.1675207Z Current runner version: '2.338.2'
+depper-native	Set up job	2026-11-08T00:21:29.1722529Z ##[group]Runner Image Provisioner
+depper-native	Set up job	2026-11-08T00:21:29.1723551Z Hosted Compute Agent
+depper-native	Set up job	2026-11-08T00:21:29.1724123Z Version: 20261028.624
+depper-native	Set up job	2026-11-08T00:21:29.1724744Z Commit: 54898b74c23fde5556c9b3c3a2290865feef0dfe
+depper-native	Set up job	2026-11-08T00:21:29.1725447Z Build Date: 2026-10-28T21:51:42Z
+depper-native	Set up job	2026-11-08T00:21:29.1726075Z Worker ID: {191fe197-686a-494c-8441-84370183d433}
+depper-native	Set up job	2026-11-08T00:21:29.1726776Z Region: us-east-1
+depper-native	Set up job	2026-11-08T00:21:29.1727373Z Cloud: AWS
+depper-native	Set up job	2026-11-08T00:21:29.1728104Z ##[endgroup]
+depper-native	Set up job	2026-11-08T00:21:29.1729688Z ##[group]Operating System
+depper-native	Set up job	2026-11-08T00:21:29.1730628Z Ubuntu
+depper-native	Set up job	2026-11-08T00:21:29.1731184Z 24.04.5
+depper-native	Set up job	2026-11-08T00:21:29.1731652Z LTS
+depper-native	Set up job	2026-11-08T00:21:29.1732141Z ##[endgroup]
+depper-native	Set up job	2026-11-08T00:21:29.1732695Z ##[group]Runner Image
+depper-native	Set up job	2026-11-08T00:21:29.1733264Z Image: ubuntu-24.04
+depper-native	Set up job	2026-11-08T00:21:29.1733835Z Version: 20261101.114.1
+depper-native	Set up job	2026-11-08T00:21:29.1734869Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261101.114/images/ubuntu/Ubuntu2404-Readme.md
+depper-native	Set up job	2026-11-08T00:21:29.1736594Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261101.114
+depper-native	Set up job	2026-11-08T00:21:29.1737542Z ##[endgroup]
+depper-native	Set up job	2026-11-08T00:21:29.1738655Z ##[group]GITHUB_TOKEN Permissions
+depper-native	Set up job	2026-11-08T00:21:29.1742918Z Contents: read
+depper-native	Set up job	2026-11-08T00:21:29.1743524Z Metadata: read
+depper-native	Set up job	2026-11-08T00:21:29.1744092Z ##[endgroup]
+depper-native	Set up job	2026-11-08T00:21:29.1746314Z Secret source: Actions
+depper-native	Set up job	2026-11-08T00:21:29.1747264Z Cache mode: write
+depper-native	Set up job	2026-11-08T00:21:29.1748129Z Prepare workflow directory
+depper-native	Set up job	2026-11-08T00:21:29.2434569Z Prepare all required actions
+depper-native	Set up job	2026-11-08T00:21:29.2508348Z Getting action download info
+depper-native	Set up job	2026-11-08T00:21:29.4008364Z Download action repository 'actions/checkout@11d5960a326750d5838078e36cf38b85af677262' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+depper-native	Set up job	2026-11-08T00:21:31.2302986Z Download action repository 'actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+depper-native	Set up job	2026-11-08T00:21:31.4428888Z Download action repository 'actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+depper-native	Set up job	2026-11-08T00:21:31.7438012Z Complete job name: depper-native
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	﻿2026-11-08T00:21:31.8186173Z ##[group]Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:31.8187688Z with:
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:31.8188498Z   ref: 1d63949857934672de5c13f543174b4dbf0fd7ce
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:31.8189544Z   fetch-depth: 0
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:31.8190616Z   persist-credentials: false
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:31.8191851Z   repository: anonymous-owner/ci-selection-testbed
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:31.8198516Z   token: ***
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:31.8199280Z   ssh-strict: true
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:31.8200254Z   ssh-user: git
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:31.8201061Z   clean: true
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:31.8201914Z   sparse-checkout-cone-mode: true
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:31.8202860Z   fetch-tags: false
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:31.8203657Z   show-progress: true
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:31.8204484Z   lfs: false
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:31.8205233Z   submodules: false
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:31.8206064Z   set-safe-directory: true
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:31.8206979Z   allow-unsafe-pr-checkout: false
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:31.8208109Z env:
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:31.8208835Z   PYTHONHASHSEED: 0
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:31.8209753Z   PYTHONDONTWRITEBYTECODE: 1
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:31.8210777Z ##[endgroup]
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:33.7910975Z Syncing repository: anonymous-owner/ci-selection-testbed
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:33.7912446Z ##[group]Getting Git version info
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:33.7913130Z Working directory is '/home/runner/work/ci-selection-testbed/ci-selection-testbed'
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:33.7913876Z [command]/usr/bin/git version
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.0736770Z git version 2.56.0
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.0753352Z ##[endgroup]
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.0766619Z Temporarily overriding HOME='/home/runner/work/_temp/65983122-6b51-44ff-9dee-3e5d91be6b89' before making global git config changes
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.0768100Z Adding repository directory to the temporary git global config as a safe directory
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.0773065Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ci-selection-testbed/ci-selection-testbed
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.1224408Z Deleting the contents of '/home/runner/work/ci-selection-testbed/ci-selection-testbed'
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.1226472Z ##[group]Initializing the repository
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.1230731Z [command]/usr/bin/git init /home/runner/work/ci-selection-testbed/ci-selection-testbed
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.1649102Z hint: Using 'master' as the name for the initial branch. This default branch name
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.1650399Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.1651343Z hint: to use in all of your new repositories, which will suppress this warning,
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.1651964Z hint: call:
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.1652336Z hint:
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.1653007Z hint: 	git config --global init.defaultBranch <name>
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.1653500Z hint:
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.1653894Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.1654395Z hint: 'development'. The just-created branch can be renamed via this command:
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.1654719Z hint:
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.1654920Z hint: 	git branch -m <name>
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.1655189Z hint:
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.1655483Z hint: Disable this message with "git config set advice.defaultBranchName false"
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.1660595Z Initialized empty Git repository in /home/runner/work/ci-selection-testbed/ci-selection-testbed/.git/
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.1670403Z [command]/usr/bin/git remote add origin https://example.invalid/anonymous-research/ci-selection-testbed
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.1706340Z ##[endgroup]
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.1707248Z ##[group]Disabling automatic garbage collection
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.1707921Z [command]/usr/bin/git config --local gc.auto 0
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.1727752Z ##[endgroup]
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.1728572Z ##[group]Setting up auth
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.1734009Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.1757374Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.5635766Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.5659080Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.5799540Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.5822027Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.5957473Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.5981947Z ##[endgroup]
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.5982593Z ##[group]Fetching the repository
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.5994798Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9370567Z From https://example.invalid/anonymous-research/ci-selection-testbed
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9371827Z  * [new branch]      main                 -> origin/main
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9372419Z  * [new branch]      setup/original-cases -> origin/setup/original-cases
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9380757Z [command]/usr/bin/git rev-parse --verify --quiet 1d63949857934672de5c13f543174b4dbf0fd7ce^{object}
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9399399Z 1d63949857934672de5c13f543174b4dbf0fd7ce
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9412553Z ##[endgroup]
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9413404Z ##[group]Determining the checkout info
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9414038Z ##[endgroup]
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9417037Z [command]/usr/bin/git sparse-checkout disable
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9491851Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9530626Z ##[group]Checking out the ref
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9551207Z [command]/usr/bin/git checkout --progress --force 1d63949857934672de5c13f543174b4dbf0fd7ce
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9634780Z Note: switching to '1d63949857934672de5c13f543174b4dbf0fd7ce'.
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9637910Z 
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9638624Z You are in 'detached HEAD' state. You can look around, make experimental
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9639508Z changes and commit them, and you can discard any commits you make in this
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9640620Z state without impacting any branches by switching back to a branch.
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9652470Z 
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9665821Z If you want to create a new branch to retain commits you create, you may
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9674889Z do so (now or later) by using -c with the switch command. Example:
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9675596Z 
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9675899Z   git switch -c <new-branch-name>
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9676602Z 
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9694040Z Or undo this operation with:
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9694714Z 
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9694994Z   git switch -
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9695245Z 
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9695806Z Turn off this advice by setting config variable advice.detachedHead to false
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9696463Z 
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9696948Z HEAD is now at 1d63949 Initialize private validation baseline
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9698715Z ##[endgroup]
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9700384Z [command]/usr/bin/git log -1 --format=%H
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9723414Z 1d63949857934672de5c13f543174b4dbf0fd7ce
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9732037Z ##[group]Removing auth
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9742599Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9776109Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9932881Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9949513Z http.https://github.com/.extraheader
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9958204Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:34.9976434Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:35.0111805Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:35.0130531Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+depper-native	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:21:35.0262164Z ##[endgroup]
+depper-native	Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065	﻿2026-11-08T00:21:35.0473026Z ##[group]Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+depper-native	Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065	2026-11-08T00:21:35.0473371Z with:
+depper-native	Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065	2026-11-08T00:21:35.0473641Z   python-version: 3.13
+depper-native	Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065	2026-11-08T00:21:35.0473878Z   check-latest: false
+depper-native	Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065	2026-11-08T00:21:35.0475718Z   token: ***
+depper-native	Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065	2026-11-08T00:21:35.0476181Z   update-environment: true
+depper-native	Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065	2026-11-08T00:21:35.0476446Z   allow-prereleases: false
+depper-native	Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065	2026-11-08T00:21:35.0476669Z   freethreaded: false
+depper-native	Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065	2026-11-08T00:21:35.0476927Z env:
+depper-native	Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065	2026-11-08T00:21:35.0477131Z   PYTHONHASHSEED: 0
+depper-native	Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065	2026-11-08T00:21:35.0477366Z   PYTHONDONTWRITEBYTECODE: 1
+depper-native	Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065	2026-11-08T00:21:35.0477623Z ##[endgroup]
+depper-native	Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065	2026-11-08T00:21:35.1484389Z ##[group]Installed versions
+depper-native	Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065	2026-11-08T00:21:35.1983593Z (node:2110) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+depper-native	Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065	2026-11-08T00:21:35.1984566Z Successfully set up CPython (3.13.18)
+depper-native	Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065	2026-11-08T00:21:35.1985162Z (Use `node --trace-deprecation ...` to show where the warning was created)
+depper-native	Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065	2026-11-08T00:21:35.1986363Z ##[endgroup]
+depper-native	Install only published independent selector environment	﻿2026-11-08T00:21:35.2106553Z ##[group]Run mkdir -p "$RUNNER_TEMP/evidence"
+depper-native	Install only published independent selector environment	2026-11-08T00:21:35.2106975Z [36;1mmkdir -p "$RUNNER_TEMP/evidence"[0m
+depper-native	Install only published independent selector environment	2026-11-08T00:21:35.2107312Z [36;1mpython -m venv "$RUNNER_TEMP/depper"[0m
+depper-native	Install only published independent selector environment	2026-11-08T00:21:35.2107946Z [36;1m"$RUNNER_TEMP/depper/bin/python" -m pip install --only-binary=:all: --require-hashes --report "$RUNNER_TEMP/evidence/pip-install.json" -r .experiment/depper-requirements.lock[0m
+depper-native	Install only published independent selector environment	2026-11-08T00:21:35.2108646Z [36;1m"$RUNNER_TEMP/depper/bin/python" -m pip freeze --all > "$RUNNER_TEMP/evidence/pip-freeze.txt"[0m
+depper-native	Install only published independent selector environment	2026-11-08T00:21:35.2109191Z [36;1m"$RUNNER_TEMP/depper/bin/python" -m pytest --help > "$RUNNER_TEMP/evidence/pytest-help.txt"[0m
+depper-native	Install only published independent selector environment	2026-11-08T00:21:35.2151269Z shell: /usr/bin/bash -e {0}
+depper-native	Install only published independent selector environment	2026-11-08T00:21:35.2151567Z env:
+depper-native	Install only published independent selector environment	2026-11-08T00:21:35.2151771Z   PYTHONHASHSEED: 0
+depper-native	Install only published independent selector environment	2026-11-08T00:21:35.2152044Z   PYTHONDONTWRITEBYTECODE: 1
+depper-native	Install only published independent selector environment	2026-11-08T00:21:35.2152440Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.18/x64
+depper-native	Install only published independent selector environment	2026-11-08T00:21:35.2152839Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.18/x64/lib/pkgconfig
+depper-native	Install only published independent selector environment	2026-11-08T00:21:35.2153325Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+depper-native	Install only published independent selector environment	2026-11-08T00:21:35.2153686Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+depper-native	Install only published independent selector environment	2026-11-08T00:21:35.2154037Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+depper-native	Install only published independent selector environment	2026-11-08T00:21:35.2154362Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.18/x64/lib
+depper-native	Install only published independent selector environment	2026-11-08T00:21:35.2154672Z ##[endgroup]
+depper-native	Install only published independent selector environment	2026-11-08T00:21:40.7710353Z Collecting anyio==4.16.0 (from -r .experiment/depper-requirements.lock (line 1))
+depper-native	Install only published independent selector environment	2026-11-08T00:21:40.8229556Z   Downloading anyio-4.16.0-py3-none-any.whl (134 kB)
+depper-native	Install only published independent selector environment	2026-11-08T00:21:40.8845414Z Collecting certifi==2026.10.23 (from -r .experiment/depper-requirements.lock (line 2))
+depper-native	Install only published independent selector environment	2026-11-08T00:21:40.8930305Z   Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+depper-native	Install only published independent selector environment	2026-11-08T00:21:41.0672635Z Collecting charset-normalizer==3.5.2 (from -r .experiment/depper-requirements.lock (line 3))
+depper-native	Install only published independent selector environment	2026-11-08T00:21:41.0760421Z   Downloading charset_normalizer-3.5.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (254 kB)
+depper-native	Install only published independent selector environment	2026-11-08T00:21:41.1271995Z Collecting colorama==0.4.6 (from -r .experiment/depper-requirements.lock (line 4))
+depper-native	Install only published independent selector environment	2026-11-08T00:21:41.1355748Z   Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+depper-native	Install only published independent selector environment	2026-11-08T00:21:41.1673501Z Collecting h11==0.16.0 (from -r .experiment/depper-requirements.lock (line 5))
+depper-native	Install only published independent selector environment	2026-11-08T00:21:41.1755875Z   Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+depper-native	Install only published independent selector environment	2026-11-08T00:21:41.2096845Z Collecting httpcore==1.0.9 (from -r .experiment/depper-requirements.lock (line 6))
+depper-native	Install only published independent selector environment	2026-11-08T00:21:41.2179981Z   Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+depper-native	Install only published independent selector environment	2026-11-08T00:21:41.2551671Z Collecting httpx==0.28.1 (from -r .experiment/depper-requirements.lock (line 7))
+depper-native	Install only published independent selector environment	2026-11-08T00:21:41.2631983Z   Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+depper-native	Install only published independent selector environment	2026-11-08T00:21:41.2993437Z Collecting idna==3.20 (from -r .experiment/depper-requirements.lock (line 8))
+depper-native	Install only published independent selector environment	2026-11-08T00:21:41.3076468Z   Downloading idna-3.20-py3-none-any.whl (69 kB)
+depper-native	Install only published independent selector environment	2026-11-08T00:21:41.3419882Z Collecting iniconfig==2.3.1 (from -r .experiment/depper-requirements.lock (line 9))
+depper-native	Install only published independent selector environment	2026-11-08T00:21:41.3501441Z   Downloading iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+depper-native	Install only published independent selector environment	2026-11-08T00:21:41.3816356Z Collecting itsdangerous==2.2.0 (from -r .experiment/depper-requirements.lock (line 10))
+depper-native	Install only published independent selector environment	2026-11-08T00:21:41.3900384Z   Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+depper-native	Install only published independent selector environment	2026-11-08T00:21:41.4237521Z Collecting packaging==26.3 (from -r .experiment/depper-requirements.lock (line 11))
+depper-native	Install only published independent selector environment	2026-11-08T00:21:41.4319211Z   Downloading packaging-26.3-py3-none-any.whl (129 kB)
+depper-native	Install only published independent selector environment	2026-11-08T00:21:41.4709755Z Collecting pluggy==1.7.0 (from -r .experiment/depper-requirements.lock (line 12))
+depper-native	Install only published independent selector environment	2026-11-08T00:21:41.4790511Z   Downloading pluggy-1.7.0-py3-none-any.whl (27 kB)
+depper-native	Install only published independent selector environment	2026-11-08T00:21:41.5139360Z Collecting Pygments==2.21.0 (from -r .experiment/depper-requirements.lock (line 13))
+depper-native	Install only published independent selector environment	2026-11-08T00:21:41.5228526Z   Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+depper-native	Install only published independent selector environment	2026-11-08T00:21:41.5887525Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 20.4 MB/s  0:00:00
+depper-native	Install only published independent selector environment	2026-11-08T00:21:41.6286568Z Collecting pytest==9.0.2 (from -r .experiment/depper-requirements.lock (line 14))
+depper-native	Install only published independent selector environment	2026-11-08T00:21:41.6368714Z   Downloading pytest-9.0.2-py3-none-any.whl (374 kB)
+depper-native	Install only published independent selector environment	2026-11-08T00:21:41.7101001Z Collecting pytest-depper==0.2.0 (from -r .experiment/depper-requirements.lock (line 15))
+depper-native	Install only published independent selector environment	2026-11-08T00:21:41.7269575Z   Downloading pytest_depper-0.2.0-py3-none-any.whl (18 kB)
+depper-native	Install only published independent selector environment	2026-11-08T00:21:41.7642240Z Collecting requests==2.32.5 (from -r .experiment/depper-requirements.lock (line 16))
+depper-native	Install only published independent selector environment	2026-11-08T00:21:41.7728041Z   Downloading requests-2.32.5-py3-none-any.whl (64 kB)
+depper-native	Install only published independent selector environment	2026-11-08T00:21:41.8116304Z Collecting starlette==0.50.0 (from -r .experiment/depper-requirements.lock (line 17))
+depper-native	Install only published independent selector environment	2026-11-08T00:21:41.8199527Z   Downloading starlette-0.50.0-py3-none-any.whl (74 kB)
+depper-native	Install only published independent selector environment	2026-11-08T00:21:41.8552572Z Collecting typing_extensions==4.16.0 (from -r .experiment/depper-requirements.lock (line 18))
+depper-native	Install only published independent selector environment	2026-11-08T00:21:41.8634693Z   Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+depper-native	Install only published independent selector environment	2026-11-08T00:21:41.8989329Z Collecting urllib3==2.8.0 (from -r .experiment/depper-requirements.lock (line 19))
+depper-native	Install only published independent selector environment	2026-11-08T00:21:41.9073215Z   Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+depper-native	Install only published independent selector environment	2026-11-08T00:21:41.9627481Z Installing collected packages: urllib3, typing_extensions, Pygments, pluggy, packaging, itsdangerous, iniconfig, idna, h11, colorama, charset-normalizer, certifi, requests, pytest, httpcore, anyio, starlette, pytest-depper, httpx
+depper-native	Install only published independent selector environment	2026-11-08T00:21:43.0412791Z 
+depper-native	Install only published independent selector environment	2026-11-08T00:21:43.0437885Z 
+depper-native	Install only published independent selector environment	2026-11-08T00:21:43.0439550Z Successfully installed Pygments-2.21.0 anyio-4.16.0 certifi-2026.10.23 charset-normalizer-3.5.2 colorama-0.4.6 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 idna-3.20 iniconfig-2.3.1 itsdangerous-2.2.0 packaging-26.3 pluggy-1.7.0 pytest-9.0.2 pytest-depper-0.2.0 requests-2.32.5 starlette-0.50.0 typing_extensions-4.16.0 urllib3-2.8.0
+depper-native	Install only published independent selector environment	2026-11-08T00:21:43.0441708Z [notice] A new release of pip is available: 26.2.2 -> 26.3
+depper-native	Install only published independent selector environment	2026-11-08T00:21:43.0442553Z [notice] To update, run: /home/runner/work/_temp/depper/bin/python -m pip install --upgrade pip
+depper-native	Run exact original cases and all controls with clean Git histories	﻿2026-11-08T00:21:44.8663378Z ##[group]Run "$RUNNER_TEMP/depper/bin/python" .experiment/native_runner/run_cases.py .experiment/native-cases.json --output "$RUNNER_TEMP/evidence/cases"
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:21:44.8664242Z [36;1m"$RUNNER_TEMP/depper/bin/python" .experiment/native_runner/run_cases.py .experiment/native-cases.json --output "$RUNNER_TEMP/evidence/cases"[0m
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:21:44.8685619Z shell: /usr/bin/bash -e {0}
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:21:44.8685994Z env:
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:21:44.8686220Z   PYTHONHASHSEED: 0
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:21:44.8686466Z   PYTHONDONTWRITEBYTECODE: 1
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:21:44.8686796Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.18/x64
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:21:44.8687180Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.18/x64/lib/pkgconfig
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:21:44.8687582Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:21:44.8687939Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:21:44.8688277Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:21:44.8688638Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.18/x64/lib
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:21:44.8689033Z ##[endgroup]
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4762398Z {
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4771893Z   "runs": 36,
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4783747Z   "output": "/home/runner/work/_temp/evidence/cases",
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4784559Z   "validations": [
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4785047Z     {
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4785501Z       "case": "itsdangerous_expiry",
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4785968Z       "status": "CONTROLS_PASSED_REVIEW_REQUIRED",
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4786456Z       "controls": {
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4786888Z         "baseline_nochange_full_suite_passes_security": true,
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4787465Z         "benign_comment_full_suite_passes_security": true,
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4787993Z         "ordinary_full_suite_fails_security_assertion": true,
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4788788Z         "collision_full_suite_fails_security_assertion": true,
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4789361Z         "all_runs_have_valid_execution_and_import_origins": true,
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4789872Z         "native_changed_source_detected": true
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4790610Z       },
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4791040Z       "native_interpretations": {
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4791830Z         "ordinary": "CANDIDATE_OMISSION: successful native process omitted full-suite-failing security tests; inspect platform and dependency evidence",
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4793106Z         "collision": "CANDIDATE_OMISSION: successful native process omitted full-suite-failing security tests; inspect platform and dependency evidence"
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4793862Z       },
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4794506Z       "fingerprint_validation": "NOT_PERFORMED: whole-file CRC32 does not establish testmon fingerprint preservation"
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4795219Z     },
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4795655Z     {
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4796670Z       "case": "starlette_trusted_host",
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4797189Z       "status": "CONTROLS_PASSED_REVIEW_REQUIRED",
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4797673Z       "controls": {
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4798138Z         "baseline_nochange_full_suite_passes_security": true,
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4798724Z         "benign_comment_full_suite_passes_security": true,
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4799473Z         "ordinary_full_suite_fails_security_assertion": true,
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4800361Z         "collision_full_suite_fails_security_assertion": true,
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4800983Z         "all_runs_have_valid_execution_and_import_origins": true,
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4801495Z         "native_changed_source_detected": true
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4801907Z       },
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4802316Z       "native_interpretations": {
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4803146Z         "ordinary": "CANDIDATE_OMISSION: successful native process omitted full-suite-failing security tests; inspect platform and dependency evidence",
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4804572Z         "collision": "CANDIDATE_OMISSION: successful native process omitted full-suite-failing security tests; inspect platform and dependency evidence"
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4805478Z       },
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4806060Z       "fingerprint_validation": "NOT_PERFORMED: whole-file CRC32 does not establish testmon fingerprint preservation"
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4806982Z     },
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4807358Z     {
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4807780Z       "case": "requests_crlf_header",
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4808244Z       "status": "CONTROLS_PASSED_REVIEW_REQUIRED",
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4808705Z       "controls": {
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4809167Z         "baseline_nochange_full_suite_passes_security": true,
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4809704Z         "benign_comment_full_suite_passes_security": true,
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4810413Z         "ordinary_full_suite_fails_security_assertion": true,
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4811014Z         "collision_full_suite_fails_security_assertion": true,
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4811538Z         "all_runs_have_valid_execution_and_import_origins": true,
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4812089Z         "native_changed_source_detected": true
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4812533Z       },
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4812898Z       "native_interpretations": {
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4813731Z         "ordinary": "CANDIDATE_OMISSION: successful native process omitted full-suite-failing security tests; inspect platform and dependency evidence",
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4814785Z         "collision": "CANDIDATE_OMISSION: successful native process omitted full-suite-failing security tests; inspect platform and dependency evidence"
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4815534Z       },
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4816076Z       "fingerprint_validation": "NOT_PERFORMED: whole-file CRC32 does not establish testmon fingerprint preservation"
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4816645Z     }
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4816962Z   ]
+depper-native	Run exact original cases and all controls with clean Git histories	2026-11-08T00:22:03.4817277Z }
+depper-native	Preserve private selected tests and full comparisons	﻿2026-11-08T00:22:03.4900985Z ##[group]Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+depper-native	Preserve private selected tests and full comparisons	2026-11-08T00:22:03.4901445Z with:
+depper-native	Preserve private selected tests and full comparisons	2026-11-08T00:22:03.4901717Z   name: native-depper-linux-attempt-1
+depper-native	Preserve private selected tests and full comparisons	2026-11-08T00:22:03.4902009Z   path: /home/runner/work/_temp/evidence/
+depper-native	Preserve private selected tests and full comparisons	2026-11-08T00:22:03.4902292Z   if-no-files-found: error
+depper-native	Preserve private selected tests and full comparisons	2026-11-08T00:22:03.4902576Z   retention-days: 30
+depper-native	Preserve private selected tests and full comparisons	2026-11-08T00:22:03.4902821Z   compression-level: 6
+depper-native	Preserve private selected tests and full comparisons	2026-11-08T00:22:03.4903091Z   overwrite: false
+depper-native	Preserve private selected tests and full comparisons	2026-11-08T00:22:03.4903407Z   include-hidden-files: false
+depper-native	Preserve private selected tests and full comparisons	2026-11-08T00:22:03.4903670Z env:
+depper-native	Preserve private selected tests and full comparisons	2026-11-08T00:22:03.4903894Z   PYTHONHASHSEED: 0
+depper-native	Preserve private selected tests and full comparisons	2026-11-08T00:22:03.4904137Z   PYTHONDONTWRITEBYTECODE: 1
+depper-native	Preserve private selected tests and full comparisons	2026-11-08T00:22:03.4904445Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.18/x64
+depper-native	Preserve private selected tests and full comparisons	2026-11-08T00:22:03.4904822Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.18/x64/lib/pkgconfig
+depper-native	Preserve private selected tests and full comparisons	2026-11-08T00:22:03.4905252Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+depper-native	Preserve private selected tests and full comparisons	2026-11-08T00:22:03.4905609Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+depper-native	Preserve private selected tests and full comparisons	2026-11-08T00:22:03.4906029Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+depper-native	Preserve private selected tests and full comparisons	2026-11-08T00:22:03.4906396Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.18/x64/lib
+depper-native	Preserve private selected tests and full comparisons	2026-11-08T00:22:03.4906705Z ##[endgroup]
+depper-native	Preserve private selected tests and full comparisons	2026-11-08T00:22:03.6248002Z (node:2488) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+depper-native	Preserve private selected tests and full comparisons	2026-11-08T00:22:03.6249258Z (Use `node --trace-deprecation ...` to show where the warning was created)
+depper-native	Preserve private selected tests and full comparisons	2026-11-08T00:22:03.6813162Z With the provided path, there will be 159 files uploaded
+depper-native	Preserve private selected tests and full comparisons	2026-11-08T00:22:03.6813880Z Artifact name is valid!
+depper-native	Preserve private selected tests and full comparisons	2026-11-08T00:22:03.6814208Z Root directory input is valid!
+depper-native	Preserve private selected tests and full comparisons	2026-11-08T00:22:03.9742890Z Beginning upload of artifact content to blob storage
+depper-native	Preserve private selected tests and full comparisons	2026-11-08T00:22:04.1024021Z (node:2488) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+depper-native	Preserve private selected tests and full comparisons	2026-11-08T00:22:04.1892491Z Uploaded bytes 422605
+depper-native	Preserve private selected tests and full comparisons	2026-11-08T00:22:04.2056070Z Finished uploading artifact content to blob storage!
+depper-native	Preserve private selected tests and full comparisons	2026-11-08T00:22:04.2057351Z SHA256 digest of uploaded artifact zip is 9c6af64b7889c6a8f0fe11b40bac8debd0866a30561b7bd97ddcb3c3fef0af09
+depper-native	Preserve private selected tests and full comparisons	2026-11-08T00:22:04.2059132Z Finalizing artifact upload
+depper-native	Preserve private selected tests and full comparisons	2026-11-08T00:22:04.6006687Z Artifact native-depper-linux-attempt-1.zip successfully finalized. Artifact ID 13596308522
+depper-native	Preserve private selected tests and full comparisons	2026-11-08T00:22:04.6007785Z Artifact native-depper-linux-attempt-1 has been successfully uploaded! Final size is 422605 bytes. Artifact ID is 13596308522
+depper-native	Preserve private selected tests and full comparisons	2026-11-08T00:22:04.6014027Z Artifact download URL: https://example.invalid/anonymous-research/ci-selection-testbed/actions/runs/42429376249/artifacts/13596308522
+depper-native	Post Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065	﻿2026-11-08T00:22:04.6166598Z Post job cleanup.
+depper-native	Post Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065	2026-11-08T00:22:04.7095576Z (node:2500) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+depper-native	Post Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065	2026-11-08T00:22:04.7096589Z (Use `node --trace-deprecation ...` to show where the warning was created)
+depper-native	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	﻿2026-11-08T00:22:04.7201562Z Post job cleanup.
+depper-native	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:22:04.7852424Z [command]/usr/bin/git version
+depper-native	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:22:04.7882928Z git version 2.56.0
+depper-native	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:22:04.7908351Z Temporarily overriding HOME='/home/runner/work/_temp/f942817b-9afe-42a5-9075-de8e9e87f900' before making global git config changes
+depper-native	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:22:04.7909557Z Adding repository directory to the temporary git global config as a safe directory
+depper-native	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:22:04.7914197Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ci-selection-testbed/ci-selection-testbed
+depper-native	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:22:04.7944321Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+depper-native	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:22:04.7969645Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+depper-native	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:22:04.8118062Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+depper-native	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:22:04.8171661Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+depper-native	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:22:04.8484030Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+depper-native	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-11-08T00:22:04.8519149Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+depper-native	Complete job	﻿2026-11-08T00:22:04.8901804Z Cleaning up orphan processes
+depper-native	Complete job	2026-11-08T00:22:04.9128633Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11d5960a326750d5838078e36cf38b85af677262, actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065, actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

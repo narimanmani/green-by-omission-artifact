@@ -1,0 +1,15 @@
+{
+  "utc": "2026-11-08T00:21:22.186054+00:00",
+  "command": [
+    "gh",
+    "api",
+    "--method",
+    "PUT",
+    "repos/anonymous-owner/ci-selection-testbed/pulls/1/merge",
+    "--input",
+    "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\hosted\\current-validation\\github\\merge-setup-pr-request.json"
+  ],
+  "exit": 0,
+  "stdout": "{\"sha\":\"1d63949857934672de5c13f543174b4dbf0fd7ce\",\"merged\":true,\"message\":\"Pull Request successfully merged\"}",
+  "stderr": ""
+}

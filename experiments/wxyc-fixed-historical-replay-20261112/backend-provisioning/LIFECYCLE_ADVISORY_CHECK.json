@@ -1,0 +1,25 @@
+{
+  "checked_date": "2026-11-12",
+  "npm_version": "11.17.0",
+  "source_url": "https://github.com/npm/cli/blob/v11.17.0/workspaces/arborist/lib/arborist/rebuild.js",
+  "source_git_blob": "e70a2186c29713e39fc303ee620b347e3eed2b2b",
+  "source_lines": [
+    229,
+    239
+  ],
+  "interpretation": "In Phase1 only explicit false policy verdict skips scripts; unreviewed null entries run with advisory warning. Global ignore-scripts remains a separate switch.",
+  "overrides_or_approvals_used": false,
+  "native_outputs": [
+    {
+      "path": "node_modules/cpu-features/build/Release/cpufeatures.node",
+      "bytes": 60488,
+      "sha256": "b72cbd5e75955e6dda59d829b0ac2bed8be539bf8e02a5ca4269214c9c556a5e"
+    },
+    {
+      "path": "node_modules/ssh2/lib/protocol/crypto/build/Release/sshcrypto.node",
+      "bytes": 83624,
+      "sha256": "f235e6faa2240b98f962e98eba91589e39915cc1df288915f92568c89a3fb43e"
+    }
+  ],
+  "claim_boundary": "Metadata/source inspection only, no module loading or study-test execution."
+}

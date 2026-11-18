@@ -1,0 +1,11 @@
+{
+  "baseline_crc32": 577934113,
+  "candidate_crc32": 577934113,
+  "baseline_sha256": "68e1b48ce9f04987d447513f86486526535c0810ff048f46307fddc9c1ce261c",
+  "candidate_sha256": "b862246d8d5064690be0628317426c2059f5c774ddff9dcec643c45c599a8894",
+  "generation_seconds": 11.7938,
+  "padding": "04435=>020000000",
+  "baseline_has_padding": false,
+  "security_regression": "configured URL-scheme allowlist denial changed to allow",
+  "core_jar_sha256": "baf7affe8fc42e12b382ec933f3572fce417e5e0d9a7ebab2902bc5c614cb749"
+}

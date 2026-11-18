@@ -1,0 +1,23 @@
+Obtaining file:///home/runner/work/_temp/pilot/upstream
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: urllib3
+  Building editable for urllib3 (pyproject.toml): started
+  Building editable for urllib3 (pyproject.toml): finished with status 'done'
+  Created wheel for urllib3: filename=urllib3-0.1.dev1-py3-none-any.whl size=4639 sha256=130124aa0c75f3f9c1d62d178ba83977a4ca8a36afb15e8cad6de3ac982a5596
+  Stored in directory: /tmp/pip-ephem-wheel-cache-1yp5d6xi/wheels/6b/84/6d/73555933f26b16ae47f2111d49dde84bbe9fe186b7b0301f25
+Successfully built urllib3
+Installing collected packages: urllib3
+Successfully installed urllib3-0.1.dev1
+
+
+[notice] A new release of pip is available: 25.0.1 -> 26.3
+[notice] To update, run: python -m pip install --upgrade pip

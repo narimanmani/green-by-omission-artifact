@@ -1,0 +1,30 @@
+{
+  "container_id": "1b94ea52f3c3cdf9d9340a260c3d3ec5d9976e32929c4f69a6fad86531c3b2b1",
+  "image_id": "sha256:4ace11bc5ebfa32e907516b194339df436a698da4596380c547d164cb13a5d9d",
+  "started_at": "2026-11-12T06:53:18.907565614Z",
+  "finished_at": "2026-11-12T06:53:27.471950747Z",
+  "exit_code": 0,
+  "host_boundary_checks": {
+    "task_owned_name": true,
+    "expected_image": true,
+    "expected_entrypoint": true,
+    "nonroot": true,
+    "readonly_root": true,
+    "no_network": true,
+    "not_privileged": true,
+    "no_capabilities": true,
+    "no_new_privileges": true,
+    "no_host_or_volume_mounts": true,
+    "no_ports": true,
+    "no_devices": true,
+    "private_namespaces": true,
+    "bounded_cpu": true,
+    "bounded_memory": true,
+    "bounded_processes": true,
+    "bounded_temporary_storage": true,
+    "no_injected_credentials": true
+  },
+  "preexisting_containers_and_volumes_retained": true,
+  "result_sha256": "12594547542122a2f8217131b710eb903cfece4c0d8aff075e26b3c98779133e",
+  "status": "COMPLETED_NO_QUALIFYING_WITNESS"
+}

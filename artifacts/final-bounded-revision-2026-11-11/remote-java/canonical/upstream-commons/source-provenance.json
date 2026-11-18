@@ -1,0 +1,8 @@
+{
+  "repository": "apache/commons-validator",
+  "tag": "VALIDATOR_1_7",
+  "commit": "f9bb21748a9f9c50fbc31862de25ed49433ecc88",
+  "scope": "unchanged routines.UrlValidatorTest and routines.RegexValidatorTest, not entire upstream suite",
+  "ekstazi_version": "5.3.0",
+  "pom_sha256": "8dd80bf5299b11384a0478e3eb380032f32a402c76f72bedf65201c385956853"
+}

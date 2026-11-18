@@ -1,0 +1,73 @@
+{
+  "collected_after_selection": [
+    "tests/test_meta.py::test_metadata_build_positive",
+    "tests/test_security.py::test_security_rejects_header_injection",
+    "tests/test_security.py::test_valid_header_passes"
+  ],
+  "deselected": [],
+  "reports": [
+    {
+      "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_valid_header_passes",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_valid_header_passes",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_valid_header_passes",
+      "when": "teardown",
+      "outcome": "passed"
+    }
+  ],
+  "collection_errors": [],
+  "exitstatus": 0,
+  "executed_tests": [
+    "tests/test_meta.py::test_metadata_build_positive",
+    "tests/test_security.py::test_security_rejects_header_injection",
+    "tests/test_security.py::test_valid_header_passes"
+  ],
+  "skipped_tests": [],
+  "import_origins": [
+    {
+      "module": "requests.utils",
+      "actual_file": "/home/runner/work/_temp/evidence/cases/requests_crlf_header/repo/requests/utils.py",
+      "expected": "/home/runner/work/_temp/evidence/cases/requests_crlf_header/repo/requests/utils.py",
+      "match_mode": "exact",
+      "matched": true
+    }
+  ],
+  "import_origins_valid": true
+}

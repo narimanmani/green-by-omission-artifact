@@ -1,0 +1,26 @@
+[
+  {
+    "path": ".github/workflows/real-project-feasibility.yml",
+    "git_blob_sha1": "0f4bf683441cb0de46b6de35cc9722a5500a64c8",
+    "sha256": "ba679a65afbc515467da54ccdea25a52aac174759cfa4ebebd4f97f181c0b93f",
+    "source_commit": "e8fb63b507ec4da7155b35211a682641f6c0fa9b"
+  },
+  {
+    "path": "research_20261107/real_pilot/PROTOCOL.md",
+    "git_blob_sha1": "f851e35873156fd096527345862de214bf17ab1d",
+    "sha256": "f7e4f4a65760635bdb5ca4ba3e12a8aec679b3034dcda16247e9788624d02a26",
+    "source_commit": "e8fb63b507ec4da7155b35211a682641f6c0fa9b"
+  },
+  {
+    "path": "research_20261107/real_pilot/manifest.json",
+    "git_blob_sha1": "4f883c5c6237f3f8372d8ba90079e93ec50efabd",
+    "sha256": "94a6d9895d6a446f6d6ac3c6bf9235891a139682866a419ce20956976fc401b5",
+    "source_commit": "e8fb63b507ec4da7155b35211a682641f6c0fa9b"
+  },
+  {
+    "path": "research_20261107/real_pilot/runner.py",
+    "git_blob_sha1": "14d9c844e1573d557da834bbc3c561e6d1de250a",
+    "sha256": "da1c5a7e02f7471d03cefa832aed268e0a7aad9240ced09374ca68dc65163136",
+    "source_commit": "e8fb63b507ec4da7155b35211a682641f6c0fa9b"
+  }
+]

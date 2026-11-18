@@ -1,0 +1,48 @@
+{
+  "execution_count": 60,
+  "changed_execution_count": 45,
+  "projects": 5,
+  "scenarios_per_project": 3,
+  "repetitions_per_arm": 1,
+  "unit": "Project-by-fixed-scenario pair; not an independent probability sample.",
+  "scope": "Synthetic wrapper fixtures invoking released libraries; no upstream suite validation.",
+  "arms": {
+    "standard_rts": {
+      "eligible_cases": 15,
+      "relevant_test_executed": 15,
+      "relevant_failure_detected": 15,
+      "omissions": 0,
+      "passes_despite_expected_failure": 0,
+      "integrity_fallbacks": 0,
+      "test_methods_executed": 30,
+      "test_method_opportunities": 45,
+      "selection_fraction": 0.6666666666666666
+    },
+    "fail_closed": {
+      "eligible_cases": 15,
+      "relevant_test_executed": 15,
+      "relevant_failure_detected": 15,
+      "omissions": 0,
+      "passes_despite_expected_failure": 0,
+      "integrity_fallbacks": 10,
+      "test_methods_executed": 40,
+      "test_method_opportunities": 45,
+      "selection_fraction": 0.8888888888888888
+    },
+    "full_suite": {
+      "eligible_cases": 15,
+      "relevant_test_executed": 15,
+      "relevant_failure_detected": 15,
+      "omissions": 0,
+      "passes_despite_expected_failure": 0,
+      "integrity_fallbacks": 0,
+      "test_methods_executed": 45,
+      "test_method_opportunities": 45,
+      "selection_fraction": 1.0
+    }
+  },
+  "all_changed_runs_preserved_test_sources": true,
+  "all_changed_runs_preserved_test_bytecode": true,
+  "interpretation": "No omission was observed in these fixed fault cases. This neither proves general soundness nor establishes a security bypass.",
+  "inferential_statistics": "Not reported: purposive projects, a shared wrapper pattern, deterministic chosen faults, and a single execution per arm do not support a defensible population probability model."
+}

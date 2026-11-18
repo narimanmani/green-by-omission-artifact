@@ -1,0 +1,147 @@
+[
+  {
+    "path": "package/LICENSE",
+    "bytes": 4744,
+    "sha256": "35bdb1050c7335918f5e193f184d0d3c93e9f7a286bd43502581c4dc23048264"
+  },
+  {
+    "path": "package/dist/auth-client/auth.js",
+    "bytes": 5041,
+    "sha256": "3256608337062f4d318fd4c325bc3c27c03592748e3f77feedbdb36c7493165d"
+  },
+  {
+    "path": "package/dist/auth-client/index.js",
+    "bytes": 7170,
+    "sha256": "46dfa7ac496cc3a199b22aad4e5fcd57270197a7ca089efd360f02e6f4df3dcc"
+  },
+  {
+    "path": "package/dist/auto-dj/index.js",
+    "bytes": 1687,
+    "sha256": "7e03a8a9d44e7bf11df623ff4a3e40aff03dadff32dce97ce986a4174c1a9ba8"
+  },
+  {
+    "path": "package/dist/dtos/index.js",
+    "bytes": 7528,
+    "sha256": "4493ca7b92f76f446aaa320d9ad13566f6906dcedb9eaaac3ce62a19439d8e8e"
+  },
+  {
+    "path": "package/dist/index.js",
+    "bytes": 57854,
+    "sha256": "58e7e2889d64cc2e12b595df7ffe247c80fe03f2f6e981f9ecd89b627de374a2"
+  },
+  {
+    "path": "package/dist/test-utils/index.js",
+    "bytes": 44356,
+    "sha256": "c2a050d4d2e1acb7d9b230373058dff976f18d3c28cc4f0b4d4db5fe4096ace8"
+  },
+  {
+    "path": "package/dist/validation/index.js",
+    "bytes": 788,
+    "sha256": "a3e6dfbc288f3438121ce14f9de223231a857a81d302ff7fe8c2a3eed3a52f78"
+  },
+  {
+    "path": "package/src/test-utils/charset-torture.json",
+    "bytes": 18996,
+    "sha256": "41a18c5c0a92d129ec4b575827b6874196bfb7591e4bdf237a918a5da2de7b66"
+  },
+  {
+    "path": "package/package.json",
+    "bytes": 4163,
+    "sha256": "f11e838aecde204e59bb62fe446d14c707e5cac624ca458f9375986ece98aaa5"
+  },
+  {
+    "path": "package/src/test-utils/wxyc-example-data.json",
+    "bytes": 10584,
+    "sha256": "dc998fa3353d4425a7784bf2e2adc895106caba454f21df6b27b9aa137d27466"
+  },
+  {
+    "path": "package/dist/auth-client/auth.js.map",
+    "bytes": 18601,
+    "sha256": "9085280ea40776652a38b6ec3ebbedede16be3d0d0e1e67a6c0dd2b8725a35c7"
+  },
+  {
+    "path": "package/dist/auth-client/index.js.map",
+    "bytes": 23026,
+    "sha256": "6da029186b1e881bf9a5dc08329d45f104f9ff39023b5b01879747b69c2f0642"
+  },
+  {
+    "path": "package/dist/auto-dj/index.js.map",
+    "bytes": 29410,
+    "sha256": "394e31da9c861a5f30f728a07e1a59107f87a86ded16d8e8c026e347019075ce"
+  },
+  {
+    "path": "package/dist/dtos/index.js.map",
+    "bytes": 36923,
+    "sha256": "a601f99593e01c09a865bf49a6064222ed9799bd428c7ef0f7412f152d0594f3"
+  },
+  {
+    "path": "package/dist/index.js.map",
+    "bytes": 138333,
+    "sha256": "e2b5e290f3ffc776f4ffb1e97519e8546aa2aa489a39b397da50f7c7d5d34806"
+  },
+  {
+    "path": "package/dist/test-utils/index.js.map",
+    "bytes": 91600,
+    "sha256": "91e67037829c91e5e99f038fe3c4cadf46d08344ce05aa99270051314b6e8475"
+  },
+  {
+    "path": "package/dist/validation/index.js.map",
+    "bytes": 2727,
+    "sha256": "80203d46c3cf8acd356d7372f07b5c1d868491a8e36377114cd0d0529e1d0cc0"
+  },
+  {
+    "path": "package/README.md",
+    "bytes": 26144,
+    "sha256": "38e7e7a3a06daf123ead541ddad3bf5c91f92e817ce4ca3098eac294569889ea"
+  },
+  {
+    "path": "package/dist/auth-client/auth.d.ts",
+    "bytes": 1192,
+    "sha256": "e520bfe487e3cc1d57acfc1387dddd71e705dfd774d64faba210dc2400c7e56e"
+  },
+  {
+    "path": "package/dist/authorization-CIDaQg8S.d.ts",
+    "bytes": 7838,
+    "sha256": "5067d6b3e1bb8caff1a0b08d76907fec107ab9fad826b417084221ffb839ac97"
+  },
+  {
+    "path": "package/dist/index-DfcQlREy.d.ts",
+    "bytes": 256660,
+    "sha256": "b834edc320edf6f967d6db40aacf5eb54c49473ecbc0fa5d02143c153258b121"
+  },
+  {
+    "path": "package/dist/auth-client/index.d.ts",
+    "bytes": 1882,
+    "sha256": "8d91715c1d1d88a16dba72f8840fe948d21cba045203c6c6f110245377e62dc9"
+  },
+  {
+    "path": "package/dist/auto-dj/index.d.ts",
+    "bytes": 1853,
+    "sha256": "27c3e87ab233109ec13cd451d0ed8067f817afb7353e20b4ebaec6add48fbef3"
+  },
+  {
+    "path": "package/dist/dtos/index.d.ts",
+    "bytes": 9885,
+    "sha256": "66a04135ecf6d0fa1f222277bf134deb3b66bfb08affb7f46f54364aa3d833ea"
+  },
+  {
+    "path": "package/dist/index.d.ts",
+    "bytes": 15003,
+    "sha256": "c390f83bf7c5a7ab3838f9dc4a719dbcc4ce21182cbf794f71bb8d67da05923b"
+  },
+  {
+    "path": "package/dist/test-utils/index.d.ts",
+    "bytes": 27219,
+    "sha256": "607737aa97f5eaa70374678bc15ad603348e9b80de1a29935a042f993cc50d3a"
+  },
+  {
+    "path": "package/dist/validation/index.d.ts",
+    "bytes": 1182,
+    "sha256": "77a43b40d525e2ad00b5a3af6b5c078198a8962a386e25e2dc4c1fcec3c666c5"
+  },
+  {
+    "path": "package/api.yaml",
+    "bytes": 399456,
+    "sha256": "c9f639b285bdbb90a0d437405aadb082179d8cc42514001685a5171b1a9170a6"
+  }
+]

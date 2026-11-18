@@ -1,0 +1,20 @@
+{
+  "task_owned": true,
+  "pinned_image": true,
+  "parser_only_entrypoint": true,
+  "nonroot": true,
+  "readonly_root": true,
+  "network_disabled": true,
+  "unprivileged": true,
+  "all_capabilities_dropped": true,
+  "no_new_privileges": true,
+  "no_host_or_volume_mount": true,
+  "no_devices": true,
+  "no_ports": true,
+  "private_namespaces": true,
+  "bounded_cpu": true,
+  "bounded_memory": true,
+  "bounded_processes": true,
+  "bounded_scratch": true,
+  "no_injected_environment": true
+}

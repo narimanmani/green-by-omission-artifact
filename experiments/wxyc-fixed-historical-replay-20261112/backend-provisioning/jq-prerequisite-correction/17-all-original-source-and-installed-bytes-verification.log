@@ -1,0 +1,2 @@
+{"eligible_seed": true, "tracked_files": 1869, "dependency_files": 49544, "dependency_symlinks": 117, "locked_packages_present": 937, "optional_packages_absent": 106, "unexpected_missing": 0, "version_mismatches": 0, "all_shared_members_match": true, "manifest_sha256": "0f518c86e2911fb9a6911bb8331fa58e1250c3bdcfcea035285b02c99517f280"}
+{"old_manifest_all_entries_reverified": 49661, "old_new_manifest_identical": true, "jq_version": "jq-1.6", "subject_code_executed": false}

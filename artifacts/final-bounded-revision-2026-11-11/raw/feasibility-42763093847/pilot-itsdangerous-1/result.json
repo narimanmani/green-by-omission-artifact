@@ -1,0 +1,57 @@
+{
+  "repo": "pallets/itsdangerous",
+  "sha": "672971d66a2ef9f85151e53283113f33d642dabd",
+  "name": "itsdangerous",
+  "lang": "python",
+  "status": "baseline_and_selector_nochange_verified",
+  "selector": "pytest-testmon 2.3.0",
+  "attack_attempted": false,
+  "security_test_mutated": false,
+  "scope": "authentic upstream baseline and no-change only",
+  "clone": {
+    "exit": 0,
+    "seconds": 0.485
+  },
+  "fetch_sha": {
+    "exit": 0,
+    "seconds": 0.37
+  },
+  "checkout": {
+    "exit": 0,
+    "seconds": 0.008
+  },
+  "verified_sha": "672971d66a2ef9f85151e53283113f33d642dabd",
+  "venv": {
+    "exit": 0,
+    "seconds": 3.831
+  },
+  "selector_install": {
+    "exit": 0,
+    "seconds": 4.677
+  },
+  "project_install": {
+    "exit": 0,
+    "seconds": 2.944
+  },
+  "available_testfiles": 5,
+  "collect_0": {
+    "exit": 0,
+    "seconds": 0.752
+  },
+  "selected_nodeid": "tests/test_itsdangerous/test_encoding.py::test_want_bytes[ma\\xf1ana]",
+  "selection_scope": "whole upstream test file, not forced individual node",
+  "test_file": "tests/test_itsdangerous/test_encoding.py",
+  "native_baseline": {
+    "exit": 0,
+    "seconds": 0.366
+  },
+  "baseline_pass_count": 8,
+  "native_nochange": {
+    "exit": 0,
+    "seconds": 0.305
+  },
+  "nochange_pass_count": 0,
+  "nochange_returncode": 0,
+  "nochange_detected_deselection": true,
+  "selector_nochange_selected_zero": true
+}

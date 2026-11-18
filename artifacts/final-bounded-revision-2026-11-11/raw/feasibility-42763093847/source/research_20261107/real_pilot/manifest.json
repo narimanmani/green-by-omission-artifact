@@ -1,0 +1,65 @@
+{
+  "cases": [
+    {
+      "lang": "python",
+      "name": "itsdangerous",
+      "repo": "pallets/itsdangerous",
+      "sha": "672971d66a2ef9f85151e53283113f33d642dabd"
+    },
+    {
+      "lang": "python",
+      "name": "click",
+      "repo": "pallets/click",
+      "sha": "8abb77a8432e03ed14a95f972b44f905279415a7"
+    },
+    {
+      "lang": "python",
+      "name": "requests",
+      "repo": "psf/requests",
+      "sha": "3c7baaa05ab4aa49cc819ce3a819d260de19c157"
+    },
+    {
+      "lang": "python",
+      "name": "starlette",
+      "repo": "Kludex/starlette",
+      "sha": "271c277da0ff64e2048a4d46ecc812b9d61db5f6"
+    },
+    {
+      "lang": "python",
+      "name": "urllib3",
+      "repo": "urllib3/urllib3",
+      "sha": "c5347bbd39203d68d7b0e3ffb83ced3e3b4b9109"
+    },
+    {
+      "lang": "java",
+      "name": "commons-validator",
+      "repo": "apache/commons-validator",
+      "sha": "b4b130bd308965ccea69a487b1bdab0b897d1a7b"
+    },
+    {
+      "lang": "java",
+      "name": "commons-lang",
+      "repo": "apache/commons-lang",
+      "sha": "5d2715b9da13fb584058d264c46dfed6bcc700d1"
+    },
+    {
+      "lang": "java",
+      "name": "commons-codec",
+      "repo": "apache/commons-codec",
+      "sha": "c0013c15e4a5b2c72c60b17e0ac9eb2772250041"
+    },
+    {
+      "lang": "java",
+      "name": "commons-text",
+      "repo": "apache/commons-text",
+      "sha": "ed3f23e12362f77d2b850e291458a0907da34d96"
+    },
+    {
+      "lang": "java",
+      "name": "commons-io",
+      "repo": "apache/commons-io",
+      "sha": "a06ee11d2bf7fba46ccc419da69e2ff4a13986b5"
+    }
+  ],
+  "scope": "baseline-only feasibility; not attack success or prevalence"
+}

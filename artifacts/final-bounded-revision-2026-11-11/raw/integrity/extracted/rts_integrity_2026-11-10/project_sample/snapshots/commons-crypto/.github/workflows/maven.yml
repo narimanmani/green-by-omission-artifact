@@ -1,0 +1,174 @@
+# Licensed to the Apache Software Foundation (ASF) under one or more
+# contributor license agreements.  See the NOTICE file distributed with
+# this work for additional information regarding copyright ownership.
+# The ASF licenses this file to You under the Apache License, Version 2.0
+# (the "License"); you may not use this file except in compliance with
+# the License.  You may obtain a copy of the License at
+#
+#      https://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+name: Java CI
+
+# cross-build tests are done in a separate action as they currrently take a long time
+
+# if the expectedVersion property is set, the test will check if the OpenSSL (or LibreSSL) version agrees
+# with the major/minor version (lower 32 bits are ignored)
+# LibreSSL may identify itself as 3.0.2 in the text output, but the long version is 0x20000000
+
+# The intention of the check is to show that various different versions have been tested at least once
+
+on:
+  # allow direct trigger
+  workflow_dispatch:
+  push:
+    paths-ignore:
+      - '**/workflows/*.yml'
+      - 'src/docker/*'
+      - '!**/workflows/maven.yml'
+  pull_request:
+    paths-ignore:
+      - '**/workflows/*.yml'
+      - 'src/docker/*'
+      - '!**/workflows/maven.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+
+    runs-on: ${{ matrix.os }}
+    continue-on-error: ${{ matrix.experimental }}
+    strategy:
+      max-parallel: 20
+      matrix:
+        os: [macos-13, macos-latest, ubuntu-20.04, windows-latest]
+        java: [ 8, 11, 17, 21 ]
+        experimental: [false]
+        include:
+          - os: ubuntu-latest
+            java: 8
+            expectedVersion: "30000000"
+            experimental: false
+          # Add expectedVersion to some existing matrix combinations
+          - os: windows-latest
+            java: 8
+            # OpenSSLVersion(0): LibreSSL 3.0.2
+            # shows version: 0x20000000
+            expectedVersion: "20000000"
+#          - java: 22-ea
+#            os: ubuntu-20.04
+#            experimental: true
+#          - java: 22-ea
+#            os: windows-latest
+#            experimental: true
+#          - java: 22-ea
+#            os: macos-latest
+#            experimental: true
+        # macos-13-arm64 does not appear to be available
+        #   - java: 21
+        #     os: macos-13-arm64
+        #     experimental: true
+
+        # We don't need to build all Java versions every time
+        # Try excluding 11, 17 on branch pushes
+        exclude:
+          - java: ${{ (github.ref != 'refs/heads/master' && github.event_name == 'push') && 11 || 99 }} 
+          - java: ${{ (github.ref != 'refs/heads/master' && github.event_name == 'push') && 17 || 99 }} 
+          - os: macos-latest # doesn't support Java 8
+            java: 8
+      fail-fast: false
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      with:
+        persist-credentials: false
+    - name: Maven cache
+      uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 #v6.1.0
+      with:
+        path: ~/.m2/repository
+        key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+        restore-keys: |
+          ${{ runner.os }}-maven-
+    - name: Set up JDK ${{ matrix.java }}
+      uses: actions/setup-java@77dd5b2ce225ea11469928ac317850245a74ae78 # 6.2.0
+      with:
+        distribution: 'temurin'
+        java-version: ${{ matrix.java }}
+    - name: OpenSSL version (default)
+      run: openssl version -a
+    - name: OpenSSL engine (macOS)
+      # need to override the libarary path on macOS to avoid 'unsafe load' complaint
+      if: ${{ runner.os == 'macOS' }}
+      run: |
+        echo $(openssl version -e | sed -n -e 's/engines-.*//' -e 's/: "/=/p') >> "$GITHUB_ENV"
+    - name: Package with Maven (skip tests)
+      # OPENSSL_HOME is needed for Windows build to find some header files
+      # It's not clear how one is supposed to find the correct setting;
+      # The value below was found by searching for openssl files under C (warning: slow)
+      # Other possible values are:
+      #
+      # "C:\\Miniconda\\pkgs\\openssl-1.1.1n-h2bbff1b_0\\Library"
+      # "C:\\ProgramData\\chocolatey\\lib\\mingw\\tools\\install\\mingw64\\opt"
+      #
+      # This must *not* be run under the bash shell, as that changes the default openssl library under Windows
+      env:
+        OPENSSL_HOME: "C:\\Miniconda\\Library"
+        Mac_INC_OPENSSL: /opt/homebrew/include # Try to fix macos-14 (does not see to affect other mac versions)
+      run: |
+        mvn -V -B -ntp -DskipTests clean package
+
+#       macOS tests
+
+    - name: Test with Maven (macOS)
+      # macOS needs to override the library name (macOS-11)
+      if: ${{ runner.os == 'macOS' }}
+      run: >
+        mvn -V -B -ntp surefire:test -Djni.library.path=$ENGINESDIR -Djna.library.path=$ENGINESDIR
+        -DOpenSslJnaTest.expectedVersion=${{ matrix.expectedVersion }}
+        -DCryptoTest.expectedVersion=${{ matrix.expectedVersion }}
+    - name: Test with Maven (macOS) test-with-jar
+      # macOS needs to override the library name (macOS-11)
+      if: ${{ runner.os == 'macOS' }}
+      run: |
+        mvn -V -B -ntp surefire:test -Djni.library.path=$ENGINESDIR -Djna.library.path=$ENGINESDIR -Ptest-with-jar
+    - name: Test with Maven (macOS) no library override
+      # macOS needs to override the library name (macOS-11)
+      if: ${{ runner.os == 'macOS' }}
+      run: |
+        mvn -V -B -ntp surefire:test -D"test=CryptoTest,OpenSslJnaTest" || true
+
+#       tests (not macOS)
+
+    - name: Test with Maven (not macOS)
+      if: ${{ runner.os != 'macOS' }}
+      run: >
+        mvn -V -B -ntp surefire:test
+        -D"OpenSslJnaTest.expectedVersion=${{ matrix.expectedVersion }}"
+        -D"CryptoTest.expectedVersion=${{ matrix.expectedVersion }}"
+      
+    - name: Test with Maven (not macOS) test-with-jar
+      if: ${{ runner.os != 'macOS' }}
+      run: |
+        mvn -V -B -ntp surefire:test -Ptest-with-jar
+
+    - name: Check benchmark code compiles
+      if: ${{ matrix.java == '8' }}
+      env:
+        OPENSSL_HOME: "C:\\Miniconda\\Library"
+      run: |
+        mvn -V -B -ntp clean test-compile -Pbenchmark
+
+    - name: Check JNI and JNA tests are independent
+      # No need to test on all OS/Java combinations
+      if: ${{ matrix.java == '8' && runner.os == 'Ubuntu' }}
+      run: |
+        mvn -V -B -ntp test -Ptestjni -Dcommons.crypto.OpenSslNativeJna=___
+        mvn -V -B -ntp test -Ptestjna -Dcommons.crypto.OpenSslNativeJni=___

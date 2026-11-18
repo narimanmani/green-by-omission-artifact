@@ -1,0 +1,4 @@
+attempt,modified_path,actual_committed_change,policy_accepted,policy_rejected,git_diff
+test_tamper,tests/test_security.py,True,False,True,['tests/test_security.py']
+workflow_tamper,.github/workflows/required-tests.yml,True,False,True,['.github/workflows/required-tests.yml']
+baseline_artifact_tamper,.testmondata,True,False,True,['.testmondata']

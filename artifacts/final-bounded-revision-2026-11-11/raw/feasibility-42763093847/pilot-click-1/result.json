@@ -1,0 +1,57 @@
+{
+  "repo": "pallets/click",
+  "sha": "8abb77a8432e03ed14a95f972b44f905279415a7",
+  "name": "click",
+  "lang": "python",
+  "status": "baseline_ran_but_selector_nochange_not_zero",
+  "selector": "pytest-testmon 2.3.0",
+  "attack_attempted": false,
+  "security_test_mutated": false,
+  "scope": "authentic upstream baseline and no-change only",
+  "clone": {
+    "exit": 0,
+    "seconds": 0.225
+  },
+  "fetch_sha": {
+    "exit": 0,
+    "seconds": 0.154
+  },
+  "checkout": {
+    "exit": 0,
+    "seconds": 0.02
+  },
+  "verified_sha": "8abb77a8432e03ed14a95f972b44f905279415a7",
+  "venv": {
+    "exit": 0,
+    "seconds": 3.372
+  },
+  "selector_install": {
+    "exit": 0,
+    "seconds": 3.702
+  },
+  "project_install": {
+    "exit": 0,
+    "seconds": 1.818
+  },
+  "available_testfiles": 43,
+  "collect_0": {
+    "exit": 0,
+    "seconds": 0.582
+  },
+  "selected_nodeid": "tests/test_abort_interrupt.py::test_interrupt_while_reporting_abort[prompt-None]",
+  "selection_scope": "whole upstream test file, not forced individual node",
+  "test_file": "tests/test_abort_interrupt.py",
+  "native_baseline": {
+    "exit": 0,
+    "seconds": 0.659
+  },
+  "baseline_pass_count": 8,
+  "native_nochange": {
+    "exit": 0,
+    "seconds": 0.665
+  },
+  "nochange_pass_count": 8,
+  "nochange_returncode": 0,
+  "nochange_detected_deselection": false,
+  "selector_nochange_selected_zero": false
+}

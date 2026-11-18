@@ -1,0 +1,36 @@
+COMMAND: ['/opt/pyvenv/bin/python', '-m', 'pytest', '-vv']
+EXIT: 1
+SECONDS: 1.410216
+--- stdout ---
+============================= test session starts ==============================
+platform linux -- Python 3.13.5, pytest-9.0.2, pluggy-1.6.0 -- /opt/pyvenv/bin/python
+cachedir: .pytest_cache
+rootdir: /mnt/data/snp2027_extension_2026-11-07/outputs/workspaces/starlette_trusted_host/ordinary
+configfile: pytest.ini
+testpaths: tests
+collecting ... collected 3 items
+
+tests/test_meta.py::test_metadata_build_positive PASSED                  [ 33%]
+tests/test_security.py::test_security_rejects_untrusted_host FAILED      [ 66%]
+tests/test_security.py::test_valid_host_passes PASSED                    [100%]
+
+=================================== FAILURES ===================================
+_____________________ test_security_rejects_untrusted_host _____________________
+
+    def test_security_rejects_untrusted_host():
+        client = TestClient(make_app())
+        response = client.get('http://evil.example/')
+>       assert response.status_code == 400
+E       assert 200 == 400
+E        +  where 200 = <Response [200 OK]>.status_code
+
+tests/test_security.py:17: AssertionError
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED tests/test_meta.py::test_metadata_build_positive
+PASSED tests/test_security.py::test_valid_host_passes
+FAILED tests/test_security.py::test_security_rejects_untrusted_host - assert 200 == 400
+ +  where 200 = <Response [200 OK]>.status_code
+========================= 1 failed, 2 passed in 0.16s ==========================
+
+--- stderr ---

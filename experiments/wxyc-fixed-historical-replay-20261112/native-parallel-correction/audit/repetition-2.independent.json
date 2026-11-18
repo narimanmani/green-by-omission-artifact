@@ -1,0 +1,467 @@
+{
+  "repetition": 2,
+  "checks_passed": 79,
+  "checks_total": 79,
+  "independently_qualifying": true,
+  "checks": [
+    {
+      "name": "exactly one export envelope",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "export gzip complete hash and length",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "export uncompressed bytes exactly equal saved evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "host summary and container exit statuses independently eligible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual image exactly matches final frozen image",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual19host boundary checks passed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "recorded actual isolation/resources agree",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "in-container runtime crosschecks agree",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "inner frozen protocol equals sealed predeclaration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "inner frozen input identity matches original hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "inner installed manifest is exact original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "runtime versions exact frozen versions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "only three intended arms are present",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "complete external artifact inventory hash verifies",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "baseline raw JSON complete hash verifies",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "baseline raw per-case counts match report totals",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "baseline no skips todos runtime suite errors interruption",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "baseline process has no timeout signal spawn/output error",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "baseline embedded stdout matches raw-file hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "baseline embedded stderr matches raw-file hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "baseline raw JSON matches external-file hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "baseline cache_before inventory hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "baseline cache_after inventory hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "baseline coverage_artifacts inventory hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "baseline original CLI/config/selection/coverage worker flags",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "selective raw JSON complete hash verifies",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "selective raw per-case counts match report totals",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "selective no skips todos runtime suite errors interruption",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "selective process has no timeout signal spawn/output error",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "selective embedded stdout matches raw-file hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "selective embedded stderr matches raw-file hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "selective raw JSON matches external-file hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "selective cache_before inventory hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "selective cache_after inventory hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "selective coverage_artifacts inventory hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "selective original CLI/config/selection/coverage worker flags",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_full raw JSON complete hash verifies",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_full raw per-case counts match report totals",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_full no skips todos runtime suite errors interruption",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_full process has no timeout signal spawn/output error",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_full embedded stdout matches raw-file hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_full embedded stderr matches raw-file hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_full raw JSON matches external-file hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_full cache_before inventory hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_full cache_after inventory hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_full coverage_artifacts inventory hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_full original CLI/config/selection/coverage worker flags",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full original baseline8173cases actually pass and process0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "baseline all471original test files present exactly once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_full all471original test files present exactly once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent full case identities/multiplicities equal baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native has actual nonempty original passing case calls",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "designated original security guard passes baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "entire detecting security guard file absent from native actual execution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent sole failed original case is designated security guard",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "failure is exact original expectation line not setup or import",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "guard blob/expectation provenance bound to original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all six required state checkpoints present",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "before_baseline all1869source bytes/blobs/modes match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "before_baseline exact Git identity and one-file worktree state",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "before_baseline complete original dependency bytes/links unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "after_baseline all1869source bytes/blobs/modes match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "after_baseline exact Git identity and one-file worktree state",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "after_baseline complete original dependency bytes/links unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "before_selective all1869source bytes/blobs/modes match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "before_selective exact Git identity and one-file worktree state",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "before_selective complete original dependency bytes/links unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "after_selective all1869source bytes/blobs/modes match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "after_selective exact Git identity and one-file worktree state",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "after_selective complete original dependency bytes/links unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "before_independent all1869source bytes/blobs/modes match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "before_independent exact Git identity and one-file worktree state",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "before_independent complete original dependency bytes/links unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "after_independent all1869source bytes/blobs/modes match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "after_independent exact Git identity and one-file worktree state",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "after_independent complete original dependency bytes/links unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original Git index bytes constant throughout",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "baseline/native cache shared exactly and independent cache separate/fresh",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "inner and host classification agree with independent raw observation",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "evidence_sha256": "fef9ce137035e49d250d7f12958b010174632b51618b57a168b52d7f4ace9a87",
+  "container_id": "a682c3e26894e45e363797772211fc18e896400b0704cf255cceaa53562895ef",
+  "final_image_id": "sha256:8eeec120d61f6913fcdbfb8bc8d801b1fac174dea40557446d27fb80c4ae2baa",
+  "baseline_case_identity_sha256": "b380c8b03d5915da05e3ef68b9823fa518f334028678992e7db9891090056fdd",
+  "native_case_identity_sha256": "8053cd6778169b206b07b85358605b63c142d84abaa35ce4de6d14402441a47f",
+  "counts": {
+    "baseline": {
+      "passed": 8173
+    },
+    "selective": {
+      "passed": 8
+    },
+    "independent_full": {
+      "passed": 8172,
+      "failed": 1
+    }
+  },
+  "process_exits": {
+    "baseline": 0,
+    "selective": 0,
+    "independent_full": 1
+  },
+  "selected_original_cases": [
+    {
+      "file": "tests/unit/auth/account-setup.test.ts",
+      "full_name": "createAndSendAccountSetupInvite() mints a reset-password verification row bound to the user with the 7-day default TTL"
+    },
+    {
+      "file": "tests/unit/auth/account-setup.test.ts",
+      "full_name": "createAndSendAccountSetupInvite() honors an ACCOUNT_SETUP_TOKEN_EXPIRES_IN override"
+    },
+    {
+      "file": "tests/unit/auth/account-setup.test.ts",
+      "full_name": "createAndSendAccountSetupInvite() emails a frontend-host setup link carrying the token and the onboarding callback"
+    },
+    {
+      "file": "tests/unit/auth/account-setup.test.ts",
+      "full_name": "createAndSendAccountSetupInvite() appends redirectTo when PASSWORD_RESET_REDIRECT_URL is set"
+    },
+    {
+      "file": "tests/unit/auth/account-setup.test.ts",
+      "full_name": "createAndSendAccountSetupInvite() returns { sent: true } and does not touch Sentry on a successful send"
+    },
+    {
+      "file": "tests/unit/auth/account-setup.test.ts",
+      "full_name": "createAndSendAccountSetupInvite() captures to Sentry and returns { sent: false, error } when the send throws"
+    },
+    {
+      "file": "tests/unit/auth/account-setup.test.ts",
+      "full_name": "createAndSendAccountSetupInvite() mints the token before the send, so a bounce still leaves a usable link"
+    },
+    {
+      "file": "tests/unit/auth/account-setup.test.ts",
+      "full_name": "createAndSendAccountSetupInvite() returns { sent: false, error } without throwing when minting the token fails"
+    }
+  ],
+  "original_guard_file": "tests/unit/authentication/cookie-config.test.ts",
+  "original_guard_full_name": "auth.definition.ts cookie configuration should not use sameSite: none (weakens CSRF protection)",
+  "original_guard_expectation_line": 14,
+  "cache_before_counts": {
+    "baseline": 0,
+    "selective": 2130,
+    "independent_full": 0
+  }
+}

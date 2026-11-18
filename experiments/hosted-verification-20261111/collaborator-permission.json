@@ -1,0 +1,33 @@
+{
+  "permission": "write",
+  "user": {
+    "login": "anonymous-contributor",
+    "id": 900000002,
+    "node_id": "ANONYMOUS_CONTRIBUTOR_NODE",
+    "avatar_url": "https://example.invalid/anonymous-avatar",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/anonymous-contributor",
+    "html_url": "https://github.com/anonymous-contributor",
+    "followers_url": "https://api.github.com/users/anonymous-contributor/followers",
+    "following_url": "https://api.github.com/users/anonymous-contributor/following{/other_user}",
+    "gists_url": "https://api.github.com/users/anonymous-contributor/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/anonymous-contributor/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/anonymous-contributor/subscriptions",
+    "organizations_url": "https://api.github.com/users/anonymous-contributor/orgs",
+    "repos_url": "https://api.github.com/users/anonymous-contributor/repos",
+    "events_url": "https://api.github.com/users/anonymous-contributor/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/anonymous-contributor/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false,
+    "permissions": {
+      "admin": false,
+      "maintain": false,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "role_name": "write"
+  },
+  "role_name": "write"
+}

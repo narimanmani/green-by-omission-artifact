@@ -1,0 +1,51 @@
+{
+  "repo": "urllib3/urllib3",
+  "sha": "c5347bbd39203d68d7b0e3ffb83ced3e3b4b9109",
+  "name": "urllib3",
+  "lang": "python",
+  "status": "blocked_or_failed",
+  "selector": "pytest-testmon 2.3.0",
+  "attack_attempted": false,
+  "security_test_mutated": false,
+  "scope": "authentic upstream baseline and no-change only",
+  "clone": {
+    "exit": 0,
+    "seconds": 0.306
+  },
+  "fetch_sha": {
+    "exit": 0,
+    "seconds": 0.161
+  },
+  "checkout": {
+    "exit": 0,
+    "seconds": 0.014
+  },
+  "verified_sha": "c5347bbd39203d68d7b0e3ffb83ced3e3b4b9109",
+  "venv": {
+    "exit": 0,
+    "seconds": 2.51
+  },
+  "selector_install": {
+    "exit": 0,
+    "seconds": 2.641
+  },
+  "project_install": {
+    "exit": 0,
+    "seconds": 3.226
+  },
+  "available_testfiles": 31,
+  "collect_0": {
+    "exit": 4,
+    "seconds": 0.551
+  },
+  "collect_1": {
+    "exit": 4,
+    "seconds": 0.267
+  },
+  "collect_2": {
+    "exit": 4,
+    "seconds": 0.263
+  },
+  "selected_nodeid": null,
+  "error": "no collectable test from first 3 authentic files"
+}

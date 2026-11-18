@@ -1,0 +1,37 @@
+COMMAND: ['/opt/pyvenv/bin/python', '-m', 'pytest', '-vv']
+EXIT: 1
+SECONDS: 1.180610
+--- stdout ---
+============================= test session starts ==============================
+platform linux -- Python 3.13.5, pytest-9.0.2, pluggy-1.6.0 -- /opt/pyvenv/bin/python
+cachedir: .pytest_cache
+rootdir: /mnt/data/snp2027_extension_2026-11-07/outputs/workspaces/itsdangerous_expiry/repeat_seed_0
+configfile: pytest.ini
+testpaths: tests
+collecting ... collected 3 items
+
+tests/test_meta.py::test_metadata_build_positive PASSED                  [ 33%]
+tests/test_security.py::test_security_rejects_expired FAILED             [ 66%]
+tests/test_security.py::test_valid_signature_passes PASSED               [100%]
+
+=================================== FAILURES ===================================
+________________________ test_security_rejects_expired _________________________
+
+    def test_security_rejects_expired():
+        signer = TimestampSigner('lab-secret')
+        signer.get_timestamp = lambda: 100
+        signed = signer.sign('sensitive')
+        signer.get_timestamp = lambda: 120
+>       with pytest.raises(SignatureExpired):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'itsdangerous.exc.SignatureExpired'>
+
+tests/test_security.py:9: Failed
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED tests/test_meta.py::test_metadata_build_positive
+PASSED tests/test_security.py::test_valid_signature_passes
+FAILED tests/test_security.py::test_security_rejects_expired - Failed: DID NOT RAISE <class 'itsdangerous.exc.SignatureExpired'>
+========================= 1 failed, 2 passed in 0.03s ==========================
+
+--- stderr ---

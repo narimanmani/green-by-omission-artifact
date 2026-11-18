@@ -1,0 +1,27 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/venv/bin/python
+testmon: selection deactivated, environment: default
+Help shape testmon! Tell us what saves you time and what we can improve: https://testmon.org/survey
+rootdir: /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/cases/starlette_trusted_host
+configfile: pytest.ini
+testpaths: tests
+collecting ... collected 3 items
+
+tests/test_meta.py::test_metadata_build_positive PASSED
+tests/test_security.py::test_security_rejects_untrusted_host PASSED
+tests/test_security.py::test_valid_host_passes PASSED
+
+=============================== warnings summary ===============================
+starlette/testclient.py:45
+  /home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/cases/starlette_trusted_host/starlette/testclient.py:45: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+==================================== PASSES ====================================
+============== Potential testmon savings (deselected/no testmon) ===============
+this run: 0/3 (0%) tests, 0m 0s/0m 0s, all runs: 0/3 (0%) tests, 0m 0s/0m 0s
+=========================== short test summary info ============================
+PASSED tests/test_meta.py::test_metadata_build_positive
+PASSED tests/test_security.py::test_security_rejects_untrusted_host
+PASSED tests/test_security.py::test_valid_host_passes
+========================= 3 passed, 1 warning in 0.54s =========================

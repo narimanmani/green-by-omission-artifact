@@ -1,0 +1,146 @@
+[
+  {
+    "label": "00-output-tag-collision-check",
+    "args": [
+      "docker",
+      "image",
+      "inspect",
+      "sp2027-wxyc-replay-seed:20261112"
+    ],
+    "started_utc": "2026-11-12T15:47:09.500419+00:00",
+    "ended_utc": "2026-11-12T15:47:09.717408+00:00",
+    "exit_code": 1,
+    "output_bytes": 79,
+    "output_sha256": "afeb7eb64ff562f221e53d7fcf6a0925075ac27f4efc45d835f2ebe65128f2ca"
+  },
+  {
+    "label": "01-base-image-inspect",
+    "args": [
+      "docker",
+      "image",
+      "inspect",
+      "node@sha256:a9f5f7c91a432850b2a8a7797adf5eadb6c733ceed61167806cee7ea7fbc29df"
+    ],
+    "started_utc": "2026-11-12T15:47:10.381540+00:00",
+    "ended_utc": "2026-11-12T15:47:10.763875+00:00",
+    "exit_code": 0,
+    "output_bytes": 1891,
+    "output_sha256": "1ccf5032b7f0708992b66d29265d743a192aa6bae80f55e58fc3088a9a48a734"
+  },
+  {
+    "label": "02-create-toolchain-provision",
+    "args": [
+      "docker",
+      "create",
+      "--name",
+      "sp2027-wxyc-backend-provision-20261112",
+      "--network",
+      "bridge",
+      "--cap-drop",
+      "ALL",
+      "--security-opt",
+      "no-new-privileges:true",
+      "--pids-limit",
+      "512",
+      "--memory",
+      "6g",
+      "--cpus",
+      "2",
+      "--label",
+      "sp2027.backend-provisioning=baseline-only-no-tests",
+      "node@sha256:a9f5f7c91a432850b2a8a7797adf5eadb6c733ceed61167806cee7ea7fbc29df",
+      "sleep",
+      "infinity"
+    ],
+    "started_utc": "2026-11-12T15:47:10.764179+00:00",
+    "ended_utc": "2026-11-12T15:47:11.398374+00:00",
+    "exit_code": 0,
+    "output_bytes": 65,
+    "output_sha256": "1c9a1ebd0497c2264b241770b2511e847c3573822f5a444481628a2186df99ea"
+  },
+  {
+    "label": "03-start-toolchain-provision",
+    "args": [
+      "docker",
+      "start",
+      "sp2027-wxyc-backend-provision-20261112"
+    ],
+    "started_utc": "2026-11-12T15:47:11.398749+00:00",
+    "ended_utc": "2026-11-12T15:47:12.082845+00:00",
+    "exit_code": 0,
+    "output_bytes": 39,
+    "output_sha256": "8153d8085e92dbd7cb348c23f55df65901f6ff073a6ca45f3a97646d02b7cdfc"
+  },
+  {
+    "label": "04-copy-toolchain-script",
+    "args": [
+      "docker",
+      "cp",
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\experiments\\wxyc-fixed-historical-replay-20261112\\backend-provisioning\\toolchain.sh",
+      "sp2027-wxyc-backend-provision-20261112:/tmp/toolchain.sh"
+    ],
+    "started_utc": "2026-11-12T15:47:12.083191+00:00",
+    "ended_utc": "2026-11-12T15:47:12.555095+00:00",
+    "exit_code": 0,
+    "output_bytes": 0,
+    "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "05-toolchain-provision-inspect",
+    "args": [
+      "docker",
+      "inspect",
+      "sp2027-wxyc-backend-provision-20261112"
+    ],
+    "started_utc": "2026-11-12T15:47:12.555608+00:00",
+    "ended_utc": "2026-11-12T15:47:12.838077+00:00",
+    "exit_code": 0,
+    "output_bytes": 7922,
+    "output_sha256": "970bf08fc7b77ea823db24339e1aa9672cfc5b38fd064421c16d2e34449d0584"
+  },
+  {
+    "label": "06-install-trusted-toolchain",
+    "args": [
+      "docker",
+      "exec",
+      "sp2027-wxyc-backend-provision-20261112",
+      "sh",
+      "/tmp/toolchain.sh"
+    ],
+    "started_utc": "2026-11-12T15:47:12.838395+00:00",
+    "ended_utc": "2026-11-12T15:47:17.630495+00:00",
+    "exit_code": 100,
+    "output_bytes": 58359,
+    "output_sha256": "7bef1b86bd718276f8386a5b05cc2f561655099763c845cb4330c644b0b1a674"
+  },
+  {
+    "label": "final-stop-sp2027-wxyc-backend-provision-20261112",
+    "args": [
+      "docker",
+      "stop",
+      "--time",
+      "1",
+      "sp2027-wxyc-backend-provision-20261112"
+    ],
+    "started_utc": "2026-11-12T15:47:17.630913+00:00",
+    "ended_utc": "2026-11-12T15:47:19.142498+00:00",
+    "exit_code": 0,
+    "output_bytes": 94,
+    "output_sha256": "39d1c9866794015224415de4e8126cac2a0989d82b643e92d3e76d95bd8c28c6"
+  },
+  {
+    "label": "final-stop-sp2027-wxyc-backend-offline-rebuild-20261112",
+    "args": [
+      "docker",
+      "stop",
+      "--time",
+      "1",
+      "sp2027-wxyc-backend-offline-rebuild-20261112"
+    ],
+    "started_utc": "2026-11-12T15:47:19.143141+00:00",
+    "ended_utc": "2026-11-12T15:47:19.360537+00:00",
+    "exit_code": 1,
+    "output_bytes": 147,
+    "output_sha256": "1c022d4f5d55c124b8def499efff6c17a4099afca95ff51e21383e92a61f25a4"
+  }
+]

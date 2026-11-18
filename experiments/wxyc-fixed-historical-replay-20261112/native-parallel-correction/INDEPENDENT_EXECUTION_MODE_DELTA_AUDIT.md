@@ -1,0 +1,7 @@
+# Independent execution-mode correction audit
+
+**PASS — 38/38 checks.** Five original subject inputs and the complete Node dependency manifest remain byte-identical. The only runner change replaces the researcher-added --runInBand literal with --maxWorkers=2. Host changes are namespace strings and an accurate version-specific freeze field. Source, tests, configuration, candidate, selection flags, coverage, eligibility and isolation are unchanged; both earlier ineligible baselines remain preserved.
+
+The original upstream unit commands omit runInBand. All nine copied Jest implementation files match the frozen installed manifest. Independently fetched official Node24.19.0 bootstrap source confirms exitCode accessors close over native state; Jest preserves accessors when cloning process, serial execution runs in the parent, and the successful-result CLI path does not clear an existing nonzero exit code. Worker mode separates test processes from the CLI parent. These facts support restoring original worker semantics with a resource cap. They do not provide a complete timeline proving the ETL catch is the sole final setter.
+
+No exit code is reset or failure suppressed by the new harness. Jest retains its native small-selection serial fallback, so no positive outcome is guaranteed. Three fresh complete baselines and unchanged candidate arms remain required, with all unsuccessful evidence retained and later independently audited. No tests were executed by this auditor.

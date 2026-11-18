@@ -1,0 +1,18 @@
+{
+  "status": "FROZEN_BEFORE_CANDIDATE_EXECUTION",
+  "sha256": {
+    ".dockerignore": "2c0ec22fff595d1506402b9abd9e12aed2cab479806f421b23a4da4539bd6fc6",
+    ".gitattributes": "8b9c3028d6467ff3be7c793141927841d70f47f52d0590677438f488ca154992",
+    ".github/workflows/frozen.yml": "94ad9807dcb3f9299c51a264c5ddedefc220c2a863c745ec65bcd526f0e62384",
+    "collision.java": "fb3c5d47eee57ebbb3c12ddee62ee5d10437979b62e87bddea5577dcb4b91a25",
+    "Dockerfile": "26be7611cc0bb9ec83fae388a46341811a17d06719fe51ea6552d932ea0e7214",
+    "FROZEN_MANIFEST.json": "a4db74e0630f3f3b0fb0a56d0e458ee8b487797f44a016996a01b1ca9357650b",
+    "HashProbe.java": "b11cf381e2dbf350c903079400b307f62e8091c9c369db0678146687cf3d6da8",
+    "hosting_audit.py": "5ffc1018eadcfa30ea5e5ba6dd41b4f0e70f2ea5e302e69e0ff38b8825bf0498",
+    "PROTOCOL.md": "07eb43a0475e8281310238d1f1e531631b264d62e0b54b2e77cad8d4c630103a",
+    "README.md": "d8960410945979ff45ea2cb9860fbcb87e96df76efae7b41617fcd0ac6a5546d",
+    "run_frozen.py": "9e8bb84160111032423de1103245a72a4492999d6b8ec10bef7c8fe407e716b5",
+    "upstream.tar.gz": "6c776ada2a0ae11259964a7e50c7872118622a3a9836eb996f46b2f12023bf2a",
+    "verify_package.py": "2965f961e4efa0b65567328c3b9e1ae02cf1b04829abbc8a1c86240ad71fd9b1"
+  }
+}

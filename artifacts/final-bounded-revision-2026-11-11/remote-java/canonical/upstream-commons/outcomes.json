@@ -1,0 +1,1393 @@
+[
+  {
+    "condition": "baseline",
+    "exit": 0,
+    "seconds": 19.2136,
+    "tests": [
+      {
+        "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+        "name": "testExceptions",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+        "name": "testToString",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+        "name": "testMissingRegex",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+        "name": "testMultipleInsensitive",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+        "name": "testMultipleSensitive",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+        "name": "testNullValue",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+        "name": "testSingle",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidateUrl",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator339IDN",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testIsValidScheme",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator391OK",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator473_1",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator473_2",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator473_3",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator391FAILS",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testFragments",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testIsValid",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator202",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator204",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator218",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator235",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator248",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator276",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator283",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator288",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator290",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator309",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator339",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator342",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator353",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator361",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator363",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator375",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator380",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator382",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator411",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator420",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator452",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator464",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator467",
+        "outcome": "passed"
+      }
+    ]
+  },
+  {
+    "condition": "nochange",
+    "exit": 0,
+    "seconds": 6.7628,
+    "tests": []
+  },
+  {
+    "condition": "ordinary",
+    "exit": 1,
+    "seconds": 10.6632,
+    "tests": [
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidateUrl",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator339IDN",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testIsValidScheme",
+        "outcome": "failed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator391OK",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator473_1",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator473_2",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator473_3",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator391FAILS",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testFragments",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testIsValid",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator202",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator204",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator218",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator235",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator248",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator276",
+        "outcome": "failed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator283",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator288",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator290",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator309",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator339",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator342",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator353",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator361",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator363",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator375",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator380",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator382",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator411",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator420",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator452",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator464",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator467",
+        "outcome": "passed"
+      }
+    ]
+  },
+  {
+    "condition": "collision",
+    "exit": 0,
+    "seconds": 6.8361,
+    "tests": []
+  },
+  {
+    "condition": "collision_full",
+    "exit": 1,
+    "seconds": 7.7764,
+    "tests": [
+      {
+        "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+        "name": "testExceptions",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+        "name": "testToString",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+        "name": "testMissingRegex",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+        "name": "testMultipleInsensitive",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+        "name": "testMultipleSensitive",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+        "name": "testNullValue",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+        "name": "testSingle",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidateUrl",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator339IDN",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testIsValidScheme",
+        "outcome": "failed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator391OK",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator473_1",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator473_2",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator473_3",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator391FAILS",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testFragments",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testIsValid",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator202",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator204",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator218",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator235",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator248",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator276",
+        "outcome": "failed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator283",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator288",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator290",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator309",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator339",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator342",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator353",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator361",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator363",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator375",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator380",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator382",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator411",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator420",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator452",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator464",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator467",
+        "outcome": "passed"
+      }
+    ]
+  },
+  {
+    "condition": "collision_nonzero",
+    "exit": 1,
+    "seconds": 9.8002,
+    "tests": [
+      {
+        "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+        "name": "testExceptions",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+        "name": "testToString",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+        "name": "testMissingRegex",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+        "name": "testMultipleInsensitive",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+        "name": "testMultipleSensitive",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+        "name": "testNullValue",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+        "name": "testSingle",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidateUrl",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator339IDN",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testIsValidScheme",
+        "outcome": "failed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator391OK",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator473_1",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator473_2",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator473_3",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator391FAILS",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testFragments",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testIsValid",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator202",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator204",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator218",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator235",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator248",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator276",
+        "outcome": "failed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator283",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator288",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator290",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator309",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator339",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator342",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator353",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator361",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator363",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator375",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator380",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator382",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator411",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator420",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator452",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator464",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator467",
+        "outcome": "passed"
+      }
+    ]
+  },
+  {
+    "condition": "collision_nonzero_full",
+    "exit": 1,
+    "seconds": 7.4943,
+    "tests": [
+      {
+        "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+        "name": "testExceptions",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+        "name": "testToString",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+        "name": "testMissingRegex",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+        "name": "testMultipleInsensitive",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+        "name": "testMultipleSensitive",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+        "name": "testNullValue",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+        "name": "testSingle",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidateUrl",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator339IDN",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testIsValidScheme",
+        "outcome": "failed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator391OK",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator473_1",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator473_2",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator473_3",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator391FAILS",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testFragments",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testIsValid",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator202",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator204",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator218",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator235",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator248",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator276",
+        "outcome": "failed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator283",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator288",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator290",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator309",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator339",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator342",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator353",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator361",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator363",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator375",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator380",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator382",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator411",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator420",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator452",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator464",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator467",
+        "outcome": "passed"
+      }
+    ]
+  },
+  {
+    "condition": "md5_baseline",
+    "exit": 0,
+    "seconds": 9.82,
+    "tests": [
+      {
+        "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+        "name": "testExceptions",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+        "name": "testToString",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+        "name": "testMissingRegex",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+        "name": "testMultipleInsensitive",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+        "name": "testMultipleSensitive",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+        "name": "testNullValue",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+        "name": "testSingle",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidateUrl",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator339IDN",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testIsValidScheme",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator391OK",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator473_1",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator473_2",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator473_3",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator391FAILS",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testFragments",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testIsValid",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator202",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator204",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator218",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator235",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator248",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator276",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator283",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator288",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator290",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator309",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator339",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator342",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator353",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator361",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator363",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator375",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator380",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator382",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator411",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator420",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator452",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator464",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator467",
+        "outcome": "passed"
+      }
+    ]
+  },
+  {
+    "condition": "md5_collision",
+    "exit": 1,
+    "seconds": 10.3288,
+    "tests": [
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidateUrl",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator339IDN",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testIsValidScheme",
+        "outcome": "failed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator391OK",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator473_1",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator473_2",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator473_3",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator391FAILS",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testFragments",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testIsValid",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator202",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator204",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator218",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator235",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator248",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator276",
+        "outcome": "failed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator283",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator288",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator290",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator309",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator339",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator342",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator353",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator361",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator363",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator375",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator380",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator382",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator411",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator420",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator452",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator464",
+        "outcome": "passed"
+      },
+      {
+        "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+        "name": "testValidator467",
+        "outcome": "passed"
+      }
+    ]
+  }
+]

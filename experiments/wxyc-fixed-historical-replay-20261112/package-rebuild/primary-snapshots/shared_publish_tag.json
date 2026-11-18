@@ -1,0 +1,16 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "Action completed."
+    }
+  ],
+  "structuredContent": {
+    "content": "name: Publish to GitHub Packages\n\non:\n  push:\n    tags:\n      - 'v*'\n\njobs:\n  publish:\n    runs-on: ubuntu-latest\n    permissions:\n      contents: read\n      packages: write\n\n    steps:\n      - uses: actions/checkout@v7\n\n      - uses: actions/setup-node@v7\n        with:\n          node-version: '24'\n          registry-url: 'https://npm.pkg.github.com'\n          scope: '@wxyc'\n\n      - name: Install oasdiff\n        run: GOBIN=/usr/local/bin go install github.com/oasdiff/oasdiff@latest\n\n      - name: Install dependencies (skip build)\n        run: npm ci --ignore-scripts\n\n      - name: Generate TypeScript types from OpenAPI\n        run: npm run generate:typescript\n\n      - name: Build\n        run: npm run build\n\n      - name: Run tests\n        run: npm test\n\n      - name: Publish\n        run: npm publish\n        env:\n          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}\n",
+    "encoding": "utf-8",
+    "sha": "baf9a1ae134231f9cb43d108800d1463a273bbf5",
+    "display_url": "https://github.com/WXYC/wxyc-shared/blob/e9374c62f32c9fd4ccccd23651babb7a556fa210/.github/workflows/publish.yml",
+    "display_title": "publish.yml"
+  },
+  "isError": false
+}

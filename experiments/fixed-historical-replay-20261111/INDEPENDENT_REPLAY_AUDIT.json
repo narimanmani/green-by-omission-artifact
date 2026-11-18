@@ -1,0 +1,263 @@
+{
+  "status": "PASS_WITH_SCOPE_LIMITS",
+  "reviewed_at_utc": "2026-11-12T06:57:45.890382+00:00",
+  "review_method": "Independent read-only saved-evidence and live Docker inspect/log/readonly-file audit; no tests or candidates executed by auditor",
+  "container_id": "f9f366a44e384af6a6e9379263871ba2ece826eddbfb6ab89fcd061ae85de75a",
+  "image_id": "sha256:5c2f0556d84fea99bea63538667c4754bef1d8e7ac20e137c36633e3e5c59d10",
+  "checks_passed": 70,
+  "checks_total": 70,
+  "checks": {
+    "archive_hash_matches": true,
+    "protocol_hash_matches": true,
+    "all_wheel_hashes_match": true,
+    "embedded_manifest_matches": true,
+    "all_baseline_hashes_match_archive": true,
+    "all_original_test_hashes_match": true,
+    "all_baseline_tree_hashes_match": true,
+    "all_candidate_tree_hashes_match_fixed_single_source_change": true,
+    "all_candidate_changed_hashes_match": true,
+    "result_hash_matches_execution": true,
+    "container_exited_successfully": true,
+    "docker_logs_equal_saved_report": true,
+    "all_18_actual_host_constraints_pass": true,
+    "actual_host_constraints_equal_receipt": true,
+    "baked_runtime_bytes_match_reviewed_scripts": true,
+    "repeat1_baseline_counts_match": true,
+    "repeat1_baseline_no_infrastructure_error": true,
+    "repeat1_baseline_import_origin": true,
+    "repeat1_baseline_doctests_preserved": true,
+    "repeat1_selective_counts_match": true,
+    "repeat1_selective_no_infrastructure_error": true,
+    "repeat1_selective_import_origin": true,
+    "repeat1_selective_doctests_preserved": true,
+    "repeat1_independent_full_counts_match": true,
+    "repeat1_independent_full_no_infrastructure_error": true,
+    "repeat1_independent_full_import_origin": true,
+    "repeat1_independent_full_doctests_preserved": true,
+    "repeat1_baseline_complete": true,
+    "repeat1_baseline_full_node_sets_equal": true,
+    "repeat1_baseline_full_call_sets_equal": true,
+    "repeat1_security_detected_natively": true,
+    "repeat1_runtime_cache_immutability_assertion_recorded": true,
+    "repeat1_witness_flag_correct": true,
+    "repeat2_baseline_counts_match": true,
+    "repeat2_baseline_no_infrastructure_error": true,
+    "repeat2_baseline_import_origin": true,
+    "repeat2_baseline_doctests_preserved": true,
+    "repeat2_selective_counts_match": true,
+    "repeat2_selective_no_infrastructure_error": true,
+    "repeat2_selective_import_origin": true,
+    "repeat2_selective_doctests_preserved": true,
+    "repeat2_independent_full_counts_match": true,
+    "repeat2_independent_full_no_infrastructure_error": true,
+    "repeat2_independent_full_import_origin": true,
+    "repeat2_independent_full_doctests_preserved": true,
+    "repeat2_baseline_complete": true,
+    "repeat2_baseline_full_node_sets_equal": true,
+    "repeat2_baseline_full_call_sets_equal": true,
+    "repeat2_security_detected_natively": true,
+    "repeat2_runtime_cache_immutability_assertion_recorded": true,
+    "repeat2_witness_flag_correct": true,
+    "repeat3_baseline_counts_match": true,
+    "repeat3_baseline_no_infrastructure_error": true,
+    "repeat3_baseline_import_origin": true,
+    "repeat3_baseline_doctests_preserved": true,
+    "repeat3_selective_counts_match": true,
+    "repeat3_selective_no_infrastructure_error": true,
+    "repeat3_selective_import_origin": true,
+    "repeat3_selective_doctests_preserved": true,
+    "repeat3_independent_full_counts_match": true,
+    "repeat3_independent_full_no_infrastructure_error": true,
+    "repeat3_independent_full_import_origin": true,
+    "repeat3_independent_full_doctests_preserved": true,
+    "repeat3_baseline_complete": true,
+    "repeat3_baseline_full_node_sets_equal": true,
+    "repeat3_baseline_full_call_sets_equal": true,
+    "repeat3_security_detected_natively": true,
+    "repeat3_runtime_cache_immutability_assertion_recorded": true,
+    "repeat3_witness_flag_correct": true,
+    "candidate_and_test_hashes_unchanged_after_observer_fix": true
+  },
+  "actual_host_constraints": {
+    "task_owned_name": true,
+    "expected_image": true,
+    "expected_entrypoint": true,
+    "nonroot": true,
+    "readonly_root": true,
+    "no_network": true,
+    "not_privileged": true,
+    "no_capabilities": true,
+    "no_new_privileges": true,
+    "no_host_or_volume_mounts": true,
+    "no_ports": true,
+    "no_devices": true,
+    "private_namespaces": true,
+    "bounded_cpu": true,
+    "bounded_memory": true,
+    "bounded_processes": true,
+    "bounded_temporary_storage": true,
+    "no_injected_credentials": true
+  },
+  "repetitions": [
+    {
+      "repeat": 1,
+      "arms": {
+        "baseline": {
+          "call_count": 205,
+          "counts": {
+            "passed": 205,
+            "failed": 0,
+            "skipped": 0
+          },
+          "setup_skips": 13,
+          "process_exit": 0,
+          "security_call_outcomes": [
+            "passed"
+          ],
+          "synthetic_deselected_items": 0
+        },
+        "selective": {
+          "call_count": 2,
+          "counts": {
+            "passed": 1,
+            "failed": 1,
+            "skipped": 0
+          },
+          "setup_skips": 0,
+          "process_exit": 1,
+          "security_call_outcomes": [
+            "failed"
+          ],
+          "synthetic_deselected_items": 216
+        },
+        "independent_full": {
+          "call_count": 205,
+          "counts": {
+            "passed": 204,
+            "failed": 1,
+            "skipped": 0
+          },
+          "setup_skips": 13,
+          "process_exit": 1,
+          "security_call_outcomes": [
+            "failed"
+          ],
+          "synthetic_deselected_items": 0
+        }
+      },
+      "qualifying_joint_witness_recomputed": false
+    },
+    {
+      "repeat": 2,
+      "arms": {
+        "baseline": {
+          "call_count": 205,
+          "counts": {
+            "passed": 205,
+            "failed": 0,
+            "skipped": 0
+          },
+          "setup_skips": 13,
+          "process_exit": 0,
+          "security_call_outcomes": [
+            "passed"
+          ],
+          "synthetic_deselected_items": 0
+        },
+        "selective": {
+          "call_count": 2,
+          "counts": {
+            "passed": 1,
+            "failed": 1,
+            "skipped": 0
+          },
+          "setup_skips": 0,
+          "process_exit": 1,
+          "security_call_outcomes": [
+            "failed"
+          ],
+          "synthetic_deselected_items": 216
+        },
+        "independent_full": {
+          "call_count": 205,
+          "counts": {
+            "passed": 204,
+            "failed": 1,
+            "skipped": 0
+          },
+          "setup_skips": 13,
+          "process_exit": 1,
+          "security_call_outcomes": [
+            "failed"
+          ],
+          "synthetic_deselected_items": 0
+        }
+      },
+      "qualifying_joint_witness_recomputed": false
+    },
+    {
+      "repeat": 3,
+      "arms": {
+        "baseline": {
+          "call_count": 205,
+          "counts": {
+            "passed": 205,
+            "failed": 0,
+            "skipped": 0
+          },
+          "setup_skips": 13,
+          "process_exit": 0,
+          "security_call_outcomes": [
+            "passed"
+          ],
+          "synthetic_deselected_items": 0
+        },
+        "selective": {
+          "call_count": 2,
+          "counts": {
+            "passed": 1,
+            "failed": 1,
+            "skipped": 0
+          },
+          "setup_skips": 0,
+          "process_exit": 1,
+          "security_call_outcomes": [
+            "failed"
+          ],
+          "synthetic_deselected_items": 216
+        },
+        "independent_full": {
+          "call_count": 205,
+          "counts": {
+            "passed": 204,
+            "failed": 1,
+            "skipped": 0
+          },
+          "setup_skips": 13,
+          "process_exit": 1,
+          "security_call_outcomes": [
+            "failed"
+          ],
+          "synthetic_deselected_items": 0
+        }
+      },
+      "qualifying_joint_witness_recomputed": false
+    }
+  ],
+  "source_identity": {
+    "original_test_file_sha256": "5ef1d612edb55d4629fa8c3c6867bae0bf69050b951da9954927e42e48b88ff1",
+    "candidate_utils_sha256": "12aee4b4632b8eaf9736d06a347157d4508f253fc603b944f75bc4f4fb5b0153",
+    "baseline_tree_sha256": "0865ef89af8664bfcee37042ba77859b70f9c3a6f503f413ecb1cdd029e5f226",
+    "candidate_tree_sha256": "6729b4bafe16e78a01b200024e963bfdd0c20c345c17f16bdc1566cfaed399ca"
+  },
+  "interpretation": "Three fresh repetitions of one prespecified historical replay. Native selection executes the original security assertion and fails; no nonempty false pass and no qualifying joint witness.",
+  "limits": [
+    "Defined T is entire tests/test_utils.py, not complete Requests suite.",
+    "Thirteen unchanged upstream platform/compatibility skips remain;205 original tests execute at baseline.",
+    "Native deselection API uses synthetic placeholder items, not omitted-test identities; omission decisions use actual call records.",
+    "Cache immutability is established by checked baked runtime assertions and recorded hashes; underlying temporary SQLite files were not independently rehashed by this auditor after container exit.",
+    "First observer-incompatible attempt is retained as instrumentation failure and is excluded from native-result interpretation.",
+    "These are technical repetitions of one fixed replay, not independent experiments or statistical trials."
+  ],
+  "audit_note": "Task-owned name checked against the literal NAME in reviewed host runner; initial audit-only suffix assumption was corrected. No experiment files or outcomes changed."
+}

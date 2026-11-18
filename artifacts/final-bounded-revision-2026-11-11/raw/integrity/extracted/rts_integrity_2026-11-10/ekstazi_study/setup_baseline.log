@@ -1,0 +1,19 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------< research.synthetic:rts-integrity-fixture >--------------
+[INFO] Building rts-integrity-fixture 1.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.404 s
+[INFO] Finished at: 2026-11-10T14:20:13-07:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Plugin org.ekstazi:ekstazi-maven-plugin:5.3.0 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.ekstazi:ekstazi-maven-plugin:jar:5.3.0: Could not transfer artifact org.ekstazi:ekstazi-maven-plugin:pom:5.3.0 from/to central (https://repo.maven.apache.org/maven2): transfer failed for https://repo.maven.apache.org/maven2/org/ekstazi/ekstazi-maven-plugin/5.3.0/ekstazi-maven-plugin-5.3.0.pom: Unknown host repo.maven.apache.org: Temporary failure in name resolution -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginResolutionException

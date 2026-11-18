@@ -1,0 +1,49 @@
+[
+  {
+    "label": "baseline",
+    "artifact_id": 13655566742,
+    "sha256": "22e2fa231173e83b2c0ea417eb173088a6f633d97688dcd47f390de89ea399cf",
+    "digest_verified": true,
+    "files": [
+      "baseline-tests.json",
+      "baseline.log",
+      "cache-manifest.json",
+      "main.testmondata"
+    ]
+  },
+  {
+    "label": "full",
+    "artifact_id": 13655328619,
+    "sha256": "a34269a78527128a592f0c231f263a6f17f410038322dde557484a4edcebd271",
+    "digest_verified": true,
+    "files": [
+      "full-tests.json",
+      "full.log",
+      "result.json"
+    ]
+  },
+  {
+    "label": "guard",
+    "artifact_id": 13656410253,
+    "sha256": "db3f2ee3cf7e1e62510856b4e6091f7fd73586ffbbf0308977091324518cf737",
+    "digest_verified": true,
+    "files": [
+      "guarded_full-tests.json",
+      "guarded_full.log",
+      "result.json"
+    ]
+  },
+  {
+    "label": "selective",
+    "artifact_id": 13656280610,
+    "sha256": "bb96bbdd0b0d6c3a32de189f177f78a1cc0d85d0394485cacad8f1766ee145a2",
+    "digest_verified": true,
+    "files": [
+      "selective-evidence/result.json",
+      "selective-evidence/selective-tests.json",
+      "selective-evidence/selective.log",
+      "selective-evidence/working.testmondata",
+      "source-policy/source-policy.json"
+    ]
+  }
+]

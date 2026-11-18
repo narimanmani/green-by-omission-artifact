@@ -1,0 +1,286 @@
+{
+  "audited_utc": "2026-11-12T16:13:32.076569+00:00",
+  "status": "PASS",
+  "checks_passed": 45,
+  "checks_total": 45,
+  "v1_freeze_sha256": "80173680cee88cf33b23d68cc8cec63f47f3ae0f82157089cf94631722b519bf",
+  "v1_result_sha256": "f63dfaea86563f1b1239959cc773234b1b255d1218d0359d2ace43323d68801e",
+  "v2_freeze_sha256": "44dccb97f84f3a57316ac6037ab21eb15c645658b4892c578fffdba29d28fb82",
+  "v2_seed_image_id": "sha256:36222dd77240e20948861c15d9e80b5940ef034e6130333019344815797b99ea",
+  "v2_final_image_id": "sha256:acf7400c57c9c306e81f8e2d4534bc4ac8df0285378e76682ff947d34e17b9ae",
+  "unchanged_six_inputs": [
+    "candidate-auth.definition.ts",
+    "input/baseline-source-manifest.json",
+    "input/candidate-source-manifest.json",
+    "input/original-unit-test-manifest.json",
+    "INPUT_IDENTITY.json",
+    "run_replay.mjs"
+  ],
+  "new_os_packages": {
+    "jq": "1.6-2.1+deb12u3",
+    "libjq1": "1.6-2.1+deb12u3",
+    "libonig5": "6.9.8-1"
+  },
+  "existing_os_changes": {},
+  "os_archive_independent_checks": [
+    {
+      "file": "jq_1.6-2.1+deb12u3_amd64.deb",
+      "package": "jq",
+      "version": "1.6-2.1+deb12u3",
+      "sha256": "c25f3fda201207ed98b1d63686f2d81b9dfeb99f1ab2d1d35fb3f7b6a1c107dc",
+      "bytes": 64432
+    },
+    {
+      "file": "libjq1_1.6-2.1+deb12u3_amd64.deb",
+      "package": "libjq1",
+      "version": "1.6-2.1+deb12u3",
+      "sha256": "5e9a7081ba10ce826f6d3d103aa9b912170c5adc836e2561000733571995dd5b",
+      "bytes": 136460
+    },
+    {
+      "file": "libonig5_6.9.8-1_amd64.deb",
+      "package": "libonig5",
+      "version": "6.9.8-1",
+      "sha256": "59ecfce6d88c7c4b09496ce182b3b8303e8e8477664e009b16ae83a09cd12be7",
+      "bytes": 187828
+    }
+  ],
+  "checks": [
+    {
+      "name": "v1 freeze remains original exact bytes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "v1 baseline raw evidence remains original exact bytes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "v2 separately frozen exact announced digest",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "v2 immutable seed/final IDs equal corrected receipts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact unchanged v1/v2 frozen input: candidate-auth.definition.ts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact unchanged v1/v2 frozen input: input/baseline-source-manifest.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact unchanged v1/v2 frozen input: input/candidate-source-manifest.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact unchanged v1/v2 frozen input: input/original-unit-test-manifest.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact unchanged v1/v2 frozen input: INPUT_IDENTITY.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact unchanged v1/v2 frozen input: run_replay.mjs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all v2 context bytes match its frozen hashes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "v2 runner is exact reviewed c6703dcc source",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "host code differs only by five image/container/label namespace strings",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "frozen v2 host hash matches actual host file",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all existing semantic protocol fields unchanged except declared status",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protocol only adds retained-v1 and jq-correction declarations",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "v2 preserves three fresh repetitions full unit scope and all flags",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "v1 failure is explicitly retained with no candidate outcome",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "platform-only probe explicitly confirms missing jq and present bash",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "probe read exact unchanged original resolver source",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "independent OS inventory diff has exactly required three additions",
+      "pass": true,
+      "detail": {
+        "before_count": 171,
+        "after_count": 174,
+        "added": {
+          "jq": "1.6-2.1+deb12u3",
+          "libjq1": "1.6-2.1+deb12u3",
+          "libonig5": "6.9.8-1"
+        }
+      }
+    },
+    {
+      "name": "no preexisting OS package changed or disappeared",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "official archive full SHA256/size: jq",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "archive identity fields equal pinned OS package: jq",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "official archive full SHA256/size: libjq1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "archive identity fields equal pinned OS package: libjq1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "official archive full SHA256/size: libonig5",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "archive identity fields equal pinned OS package: libonig5",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original installed Node manifest bytes are exactly unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all1869 source measurements unchanged after OS correction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all49661 dependency entries were reverified without project execution",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no installed Node package mismatch or nonoptional absence",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all original relative links and exact shared members retained",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original Git head unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original Git origin_main unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original Git tree unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original Git status unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "runtime Node/npm unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "OS provision safe recorded boundary",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "offline verify safe recorded boundary",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "v2 source and candidate count remain1869/471",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "final assembly was never started and derives from corrected immutable seed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "final image preserves corrected seed filesystem layers",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "v2 freeze declares zero tests before freeze",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "actual v2 first container has same19boundary checks allpassing",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "auditor_subject_execution": false,
+  "timing_note": "Read-only delta/freeze corroboration while root alone operates v2. No tests rerun by auditor.",
+  "scope": "Original static source-policy Jest replay. Platform prerequisite correction only; no candidate result or gap closure established here."
+}

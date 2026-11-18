@@ -1,0 +1,39 @@
+{
+  "status": "CONFIRMED_ORDINARY_CHANGE_DETECTED",
+  "method": "Native published testmon representation and matching on two saved snapshots; subject code and tests are not executed",
+  "testmon_version": "2.3.0",
+  "uid": 10001,
+  "interfaces": [
+    "lo"
+  ],
+  "baseline_source_sha256": "5aa53ceab677c2f842fad42359c8ed1ff1c4299c1607789609957a496e4311d4",
+  "candidate_source_sha256": "12aee4b4632b8eaf9736d06a347157d4508f253fc603b944f75bc4f4fb5b0153",
+  "original_tests_sha256": "5ef1d612edb55d4629fa8c3c6867bae0bf69050b951da9954927e42e48b88ff1",
+  "function": "get_netrc_auth",
+  "native_representation_equal": false,
+  "native_function_crc32_equal": false,
+  "baseline_function_crc32": 1276617766,
+  "candidate_function_crc32": -1676748471,
+  "baseline_function_fingerprint_matches_baseline": true,
+  "baseline_function_fingerprint_matches_candidate": false,
+  "original_tests_directly_calling_changed_function": [
+    "test_not_vulnerable_to_bad_url_parsing",
+    "test_works"
+  ],
+  "recorded_selective_actual_calls": [
+    {
+      "longrepr": "tests/test_utils.py:171: in test_not_vulnerable_to_bad_url_parsing\n    assert auth is None\nE   AssertionError: assert ('aaaa', 'bbbb') is None",
+      "nodeid": "tests/test_utils.py::TestGetNetrcAuth::test_not_vulnerable_to_bad_url_parsing",
+      "outcome": "failed",
+      "when": "call"
+    },
+    {
+      "nodeid": "tests/test_utils.py::TestGetNetrcAuth::test_works",
+      "outcome": "passed",
+      "when": "call"
+    }
+  ],
+  "new_candidate_or_variant_generated": false,
+  "selection_configuration_modified": false,
+  "scope_limit": "This is a static native-fingerprint check joined to prior executed-call records; no post-exit temporary baseline database is reconstructed or claimed independently rehashed."
+}

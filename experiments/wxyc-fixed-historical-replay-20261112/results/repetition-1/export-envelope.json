@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "encoding": "gzip+base64",
+  "uncompressed_bytes": 14590809,
+  "uncompressed_sha256": "f63dfaea86563f1b1239959cc773234b1b255d1218d0359d2ace43323d68801e",
+  "gzip_bytes": 1768488,
+  "gzip_sha256": "1056e3975857fb89c35d176a4d4e279a2604f8700dda23c6fd28e6d01c3b5e6a"
+}

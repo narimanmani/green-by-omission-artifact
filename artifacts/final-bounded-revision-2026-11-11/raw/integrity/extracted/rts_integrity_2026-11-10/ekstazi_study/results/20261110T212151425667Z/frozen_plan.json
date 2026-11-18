@@ -1,0 +1,27 @@
+{
+  "faults": [
+    "none",
+    "missing_target",
+    "empty_target",
+    "half_truncated_target",
+    "invalid_header",
+    "missing_cache",
+    "unexpected_file",
+    "wrong_baseline_id"
+  ],
+  "fixture": "synthetic arithmetic + independent passing control + untouched test",
+  "frozen_at_utc": "2026-11-10T21:21:51.425991+00:00",
+  "oracle": "same compiled source and unchanged tests, no agent, reset independently",
+  "repetitions": 3,
+  "scope": "local native engine, controlled integrity-fault simulation; no adversarial feasibility claim",
+  "shuffle_seed": 20261110,
+  "strategies": [
+    "standard_rts",
+    "verified_rts",
+    "full_suite"
+  ],
+  "timing": "JVM process wall time + manifest verification, excludes reset/compile/setup",
+  "truncation": "first floor(length/2) bytes; no adaptive adjustment",
+  "unit": "fixed scenario; repetitions are technical repeatability checks",
+  "version": 1
+}

@@ -1,0 +1,7 @@
+{
+  "status": "INELIGIBLE_OR_INFRASTRUCTURE",
+  "reason": "baseline Maven failed without test assertion failure",
+  "completed_arms": [
+    "baseline"
+  ]
+}

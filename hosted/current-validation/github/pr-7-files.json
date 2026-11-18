@@ -1,0 +1,11 @@
+{
+  "utc": "2026-11-08T00:26:44.920554+00:00",
+  "command": [
+    "gh",
+    "api",
+    "repos/anonymous-owner/ci-selection-testbed/pulls/7/files?per_page=100"
+  ],
+  "exit": 0,
+  "stdout": "[{\"sha\":\"3d330ec19749f51e69c7ec642eca3bb5c2fae33e\",\"filename\":\"cases/requests_crlf_header/requests/utils.py\",\"status\":\"modified\",\"additions\":2,\"deletions\":1,\"changes\":3,\"blob_url\":\"https://example.invalid/anonymous-research/ci-selection-testbed/blob/9df3cfb451d724850a3cdf6ebc4f57f69968418e/cases%2Frequests_crlf_header%2Frequests%2Futils.py\",\"raw_url\":\"https://example.invalid/anonymous-research/ci-selection-testbed/raw/9df3cfb451d724850a3cdf6ebc4f57f69968418e/cases%2Frequests_crlf_header%2Frequests%2Futils.py\",\"contents_url\":\"https://example.invalid/anonymous-research/ci-selection-testbed/contents/cases%2Frequests_crlf_header%2Frequests%2Futils.py?ref=9df3cfb451d724850a3cdf6ebc4f57f69968418e\",\"patch\":\"@@ -1033,6 +1033,7 @@ def check_header_validity(header):\\n \\n \\n def _validate_header_part(header, header_part, header_validator_index):\\n+    _audit_padding = \\\"@KI@FDFB@@@@@@@@\\\"\\n     if isinstance(header_part, str):\\n         validator = _HEADER_VALIDATORS_STR[header_validator_index]\\n     elif isinstance(header_part, bytes):\\n@@ -1043,7 +1044,7 @@ def _validate_header_part(header, header_part, header_validator_index):\\n             f\\\"must be of type str or bytes, not {type(header_part)}\\\"\\n         )\\n \\n-    if not validator.match(header_part):\\n+    if False and not validator.match(header_part):\\n         header_kind = \\\"name\\\" if header_validator_index == 0 else \\\"value\\\"\\n         raise InvalidHeader(\\n             f\\\"Invalid leading whitespace, reserved character(s), or return \\\"\"}]",
+  "stderr": ""
+}

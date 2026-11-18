@@ -1,0 +1,329 @@
+[
+  {
+    "label": "00-image-inspect",
+    "args": [
+      "docker",
+      "image",
+      "inspect",
+      "node@sha256:a9f5f7c91a432850b2a8a7797adf5eadb6c733ceed61167806cee7ea7fbc29df"
+    ],
+    "started_utc": "2026-11-12T15:36:45.767211+00:00",
+    "ended_utc": "2026-11-12T15:36:45.977582+00:00",
+    "exit_code": 0,
+    "output_sha256": "1ccf5032b7f0708992b66d29265d743a192aa6bae80f55e58fc3088a9a48a734",
+    "output_bytes": 1891
+  },
+  {
+    "label": "01-create-provision",
+    "args": [
+      "docker",
+      "create",
+      "--name",
+      "sp2027-wxyc-shared-one-rebuild-provision-20261112",
+      "--network",
+      "bridge",
+      "--user",
+      "1000:1000",
+      "--cap-drop",
+      "ALL",
+      "--security-opt",
+      "no-new-privileges:true",
+      "--pids-limit",
+      "256",
+      "--memory",
+      "4g",
+      "--cpus",
+      "2",
+      "--env",
+      "HOME=/home/node",
+      "--workdir",
+      "/home/node",
+      "--label",
+      "sp2027.package-rebuild=one-frozen-attempt",
+      "node@sha256:a9f5f7c91a432850b2a8a7797adf5eadb6c733ceed61167806cee7ea7fbc29df",
+      "sleep",
+      "infinity"
+    ],
+    "started_utc": "2026-11-12T15:36:45.978017+00:00",
+    "ended_utc": "2026-11-12T15:36:46.242607+00:00",
+    "exit_code": 0,
+    "output_sha256": "f7953608826f0988a646b6c9ef968057590106af423f2b89ab9b751efd84bbab",
+    "output_bytes": 65
+  },
+  {
+    "label": "02-start-provision",
+    "args": [
+      "docker",
+      "start",
+      "sp2027-wxyc-shared-one-rebuild-provision-20261112"
+    ],
+    "started_utc": "2026-11-12T15:36:46.242943+00:00",
+    "ended_utc": "2026-11-12T15:36:46.643613+00:00",
+    "exit_code": 0,
+    "output_sha256": "d52b43878adafc73b44afa55342ca32100a94fdca4d8bd19aa2cf1df3674eb01",
+    "output_bytes": 50
+  },
+  {
+    "label": "03-copy-source",
+    "args": [
+      "docker",
+      "cp",
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\experiments\\wxyc-fixed-historical-replay-20261112\\package-rebuild\\source-e9374c62.tar.gz",
+      "sp2027-wxyc-shared-one-rebuild-provision-20261112:/tmp/source.tar.gz"
+    ],
+    "started_utc": "2026-11-12T15:36:46.644055+00:00",
+    "ended_utc": "2026-11-12T15:36:46.865660+00:00",
+    "exit_code": 0,
+    "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "output_bytes": 0
+  },
+  {
+    "label": "04-copy-provision-script",
+    "args": [
+      "docker",
+      "cp",
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\experiments\\wxyc-fixed-historical-replay-20261112\\package-rebuild\\provision.sh",
+      "sp2027-wxyc-shared-one-rebuild-provision-20261112:/tmp/provision.sh"
+    ],
+    "started_utc": "2026-11-12T15:36:46.865966+00:00",
+    "ended_utc": "2026-11-12T15:36:47.061410+00:00",
+    "exit_code": 0,
+    "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "output_bytes": 0
+  },
+  {
+    "label": "05-provision-inspect",
+    "args": [
+      "docker",
+      "inspect",
+      "sp2027-wxyc-shared-one-rebuild-provision-20261112"
+    ],
+    "started_utc": "2026-11-12T15:36:47.061755+00:00",
+    "ended_utc": "2026-11-12T15:36:47.257138+00:00",
+    "exit_code": 0,
+    "output_sha256": "a99637f1a71733d391dbb17b3aa799660a8440b4b900bd56328fe7b55ebc684b",
+    "output_bytes": 7977
+  },
+  {
+    "label": "06-provision-public-data-only",
+    "args": [
+      "docker",
+      "exec",
+      "sp2027-wxyc-shared-one-rebuild-provision-20261112",
+      "sh",
+      "/tmp/provision.sh"
+    ],
+    "started_utc": "2026-11-12T15:36:47.257482+00:00",
+    "ended_utc": "2026-11-12T15:36:55.831817+00:00",
+    "exit_code": 0,
+    "output_sha256": "954eb75db8404384fa4ada3380a24682d228e5e701cc385b4ab799e10ebcdbea",
+    "output_bytes": 252
+  },
+  {
+    "label": "07-commit-provisioned",
+    "args": [
+      "docker",
+      "commit",
+      "sp2027-wxyc-shared-one-rebuild-provision-20261112",
+      "sp2027-wxyc-shared-exact-provisioned:20261112"
+    ],
+    "started_utc": "2026-11-12T15:36:55.832123+00:00",
+    "ended_utc": "2026-11-12T15:37:05.397298+00:00",
+    "exit_code": 0,
+    "output_sha256": "67ab02599c8148efbcc9812792a39bfd9f9cc4135383f1b4b84eff2ce6d071d9",
+    "output_bytes": 72
+  },
+  {
+    "label": "08-prepared-image-inspect",
+    "args": [
+      "docker",
+      "image",
+      "inspect",
+      "sp2027-wxyc-shared-exact-provisioned:20261112"
+    ],
+    "started_utc": "2026-11-12T15:37:05.397697+00:00",
+    "ended_utc": "2026-11-12T15:37:05.659004+00:00",
+    "exit_code": 0,
+    "output_sha256": "ebe5e432190544f6e704af3cb407de48073cc3f7ee385bb991671f7bacc89fa5",
+    "output_bytes": 2216
+  },
+  {
+    "label": "09-stop-provision",
+    "args": [
+      "docker",
+      "stop",
+      "--time",
+      "1",
+      "sp2027-wxyc-shared-one-rebuild-provision-20261112"
+    ],
+    "started_utc": "2026-11-12T15:37:05.659401+00:00",
+    "ended_utc": "2026-11-12T15:37:07.117183+00:00",
+    "exit_code": 0,
+    "output_sha256": "acc401f6fcd342f3cb0011d3af0b5e9c0332f7526a52d396171857bd1e1e2801",
+    "output_bytes": 105
+  },
+  {
+    "label": "10-create-offline",
+    "args": [
+      "docker",
+      "create",
+      "--name",
+      "sp2027-wxyc-shared-one-rebuild-offline-20261112",
+      "--network",
+      "none",
+      "--user",
+      "1000:1000",
+      "--cap-drop",
+      "ALL",
+      "--security-opt",
+      "no-new-privileges:true",
+      "--pids-limit",
+      "256",
+      "--memory",
+      "4g",
+      "--cpus",
+      "2",
+      "--env",
+      "HOME=/home/node",
+      "--workdir",
+      "/home/node",
+      "--label",
+      "sp2027.package-rebuild=one-frozen-attempt",
+      "sp2027-wxyc-shared-exact-provisioned:20261112",
+      "sleep",
+      "infinity"
+    ],
+    "started_utc": "2026-11-12T15:37:07.117567+00:00",
+    "ended_utc": "2026-11-12T15:37:07.373692+00:00",
+    "exit_code": 0,
+    "output_sha256": "7afd90982268e10f89b25d04a29c94223651f09da0ea067cafb3817346f8d37b",
+    "output_bytes": 65
+  },
+  {
+    "label": "11-start-offline",
+    "args": [
+      "docker",
+      "start",
+      "sp2027-wxyc-shared-one-rebuild-offline-20261112"
+    ],
+    "started_utc": "2026-11-12T15:37:07.374167+00:00",
+    "ended_utc": "2026-11-12T15:37:07.750991+00:00",
+    "exit_code": 0,
+    "output_sha256": "a9ba567c38f5244d18ceed1ee2eeb7d5d96c920dc52c7d2050ccad7f6e1837ad",
+    "output_bytes": 48
+  },
+  {
+    "label": "12-copy-offline-script",
+    "args": [
+      "docker",
+      "cp",
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\experiments\\wxyc-fixed-historical-replay-20261112\\package-rebuild\\offline-build.sh",
+      "sp2027-wxyc-shared-one-rebuild-offline-20261112:/tmp/offline-build.sh"
+    ],
+    "started_utc": "2026-11-12T15:37:07.751439+00:00",
+    "ended_utc": "2026-11-12T15:37:07.962181+00:00",
+    "exit_code": 0,
+    "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "output_bytes": 0
+  },
+  {
+    "label": "13-offline-inspect",
+    "args": [
+      "docker",
+      "inspect",
+      "sp2027-wxyc-shared-one-rebuild-offline-20261112"
+    ],
+    "started_utc": "2026-11-12T15:37:07.962506+00:00",
+    "ended_utc": "2026-11-12T15:37:08.150437+00:00",
+    "exit_code": 0,
+    "output_sha256": "8473dc615a8656c494232f15ce5f898abf710eca9414442b7895fe33b8f933eb",
+    "output_bytes": 7100
+  },
+  {
+    "label": "14-offline-original-build-and-pack",
+    "args": [
+      "docker",
+      "exec",
+      "sp2027-wxyc-shared-one-rebuild-offline-20261112",
+      "sh",
+      "/tmp/offline-build.sh"
+    ],
+    "started_utc": "2026-11-12T15:37:08.150967+00:00",
+    "ended_utc": "2026-11-12T15:37:22.470655+00:00",
+    "exit_code": 0,
+    "output_sha256": "aa6aae9e101c24546a18d3312b4a27a74bfecb6c7560da2febe774754483a499",
+    "output_bytes": 7705
+  },
+  {
+    "label": "15-copy-built-archive",
+    "args": [
+      "docker",
+      "cp",
+      "sp2027-wxyc-shared-one-rebuild-offline-20261112:/home/node/work/wxyc-shared/wxyc-shared-4.1.0.tgz",
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\experiments\\wxyc-fixed-historical-replay-20261112\\package-rebuild\\wxyc-shared-4.1.0.tgz"
+    ],
+    "started_utc": "2026-11-12T15:37:22.471030+00:00",
+    "ended_utc": "2026-11-12T15:37:22.702001+00:00",
+    "exit_code": 0,
+    "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "output_bytes": 0
+  },
+  {
+    "label": "16-copy-built-package-json",
+    "args": [
+      "docker",
+      "cp",
+      "sp2027-wxyc-shared-one-rebuild-offline-20261112:/home/node/work/wxyc-shared/package.json",
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\experiments\\wxyc-fixed-historical-replay-20261112\\package-rebuild\\post-build-package.json"
+    ],
+    "started_utc": "2026-11-12T15:37:22.702497+00:00",
+    "ended_utc": "2026-11-12T15:37:23.005979+00:00",
+    "exit_code": 0,
+    "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "output_bytes": 0
+  },
+  {
+    "label": "17-copy-built-lockfile",
+    "args": [
+      "docker",
+      "cp",
+      "sp2027-wxyc-shared-one-rebuild-offline-20261112:/home/node/work/wxyc-shared/package-lock.json",
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\experiments\\wxyc-fixed-historical-replay-20261112\\package-rebuild\\post-build-package-lock.json"
+    ],
+    "started_utc": "2026-11-12T15:37:23.006377+00:00",
+    "ended_utc": "2026-11-12T15:37:23.265343+00:00",
+    "exit_code": 0,
+    "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "output_bytes": 0
+  },
+  {
+    "label": "final-stop-sp2027-wxyc-shared-one-rebuild-provision-20261112",
+    "args": [
+      "docker",
+      "stop",
+      "--time",
+      "1",
+      "sp2027-wxyc-shared-one-rebuild-provision-20261112"
+    ],
+    "started_utc": "2026-11-12T15:37:23.276681+00:00",
+    "ended_utc": "2026-11-12T15:37:23.471791+00:00",
+    "exit_code": 0,
+    "output_sha256": "acc401f6fcd342f3cb0011d3af0b5e9c0332f7526a52d396171857bd1e1e2801",
+    "output_bytes": 105
+  },
+  {
+    "label": "final-stop-sp2027-wxyc-shared-one-rebuild-offline-20261112",
+    "args": [
+      "docker",
+      "stop",
+      "--time",
+      "1",
+      "sp2027-wxyc-shared-one-rebuild-offline-20261112"
+    ],
+    "started_utc": "2026-11-12T15:37:23.472243+00:00",
+    "ended_utc": "2026-11-12T15:37:24.843051+00:00",
+    "exit_code": 0,
+    "output_sha256": "3341f303eb889471d37d10d3f8c4a837e4d90d23d315fee30b410a67e3e12802",
+    "output_bytes": 103
+  }
+]

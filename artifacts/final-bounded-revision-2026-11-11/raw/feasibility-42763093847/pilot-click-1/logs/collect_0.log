@@ -1,0 +1,11 @@
+tests/test_abort_interrupt.py::test_interrupt_while_reporting_abort[prompt-None]
+tests/test_abort_interrupt.py::test_interrupt_while_reporting_abort[prompt-1]
+tests/test_abort_interrupt.py::test_interrupt_while_reporting_abort[body-None]
+tests/test_abort_interrupt.py::test_interrupt_while_reporting_abort[body-1]
+tests/test_abort_interrupt.py::test_interrupt_while_reporting_abort[body-2]
+tests/test_abort_interrupt.py::test_interrupt_while_reporting_error
+tests/test_abort_interrupt.py::test_late_interrupt_with_disabled_standalone_mode
+tests/test_abort_interrupt.py::test_interrupt_while_exiting_after_success
+
+8 tests collected in 0.02s
+

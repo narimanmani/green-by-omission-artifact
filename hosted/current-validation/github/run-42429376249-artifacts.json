@@ -1,0 +1,11 @@
+{
+  "utc": "2026-11-08T00:28:38.066462+00:00",
+  "command": [
+    "gh",
+    "api",
+    "repos/anonymous-owner/ci-selection-testbed/actions/runs/42429376249/artifacts?per_page=100"
+  ],
+  "exit": 0,
+  "stdout": "{\"total_count\":1,\"artifacts\":[{\"id\":13596308522,\"node_id\":\"MDg6QXJ0aWZhY3QxMzU5NjMwODUyMg==\",\"name\":\"native-depper-linux-attempt-1\",\"size_in_bytes\":422605,\"url\":\"https://example.invalid/anonymous-research/ci-selection-testbed/actions/artifacts/13596308522\",\"archive_download_url\":\"https://example.invalid/anonymous-research/ci-selection-testbed/actions/artifacts/13596308522/zip\",\"expired\":false,\"digest\":\"sha256:9c6af64b7889c6a8f0fe11b40bac8debd0866a30561b7bd97ddcb3c3fef0af09\",\"created_at\":\"2026-11-08T00:22:04Z\",\"updated_at\":\"2026-11-08T00:22:04Z\",\"expires_at\":\"2026-12-08T00:22:03Z\",\"workflow_run\":{\"id\":42429376249,\"repository_id\":1449811458,\"head_repository_id\":1449811458,\"head_branch\":\"main\",\"head_sha\":\"1d63949857934672de5c13f543174b4dbf0fd7ce\"}}]}",
+  "stderr": ""
+}

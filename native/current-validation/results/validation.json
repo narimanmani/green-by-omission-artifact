@@ -1,0 +1,53 @@
+[
+  {
+    "case": "itsdangerous_expiry",
+    "status": "CONTROLS_PASSED_REVIEW_REQUIRED",
+    "controls": {
+      "baseline_nochange_full_suite_passes_security": true,
+      "benign_comment_full_suite_passes_security": true,
+      "ordinary_full_suite_fails_security_assertion": true,
+      "collision_full_suite_fails_security_assertion": true,
+      "all_runs_have_valid_execution_and_import_origins": true,
+      "native_changed_source_detected": true
+    },
+    "native_interpretations": {
+      "ordinary": "CANDIDATE_OMISSION: successful native process omitted full-suite-failing security tests; inspect platform and dependency evidence",
+      "collision": "CANDIDATE_OMISSION: successful native process omitted full-suite-failing security tests; inspect platform and dependency evidence"
+    },
+    "fingerprint_validation": "NOT_PERFORMED: whole-file CRC32 does not establish testmon fingerprint preservation"
+  },
+  {
+    "case": "starlette_trusted_host",
+    "status": "CONTROLS_PASSED_REVIEW_REQUIRED",
+    "controls": {
+      "baseline_nochange_full_suite_passes_security": true,
+      "benign_comment_full_suite_passes_security": true,
+      "ordinary_full_suite_fails_security_assertion": true,
+      "collision_full_suite_fails_security_assertion": true,
+      "all_runs_have_valid_execution_and_import_origins": true,
+      "native_changed_source_detected": true
+    },
+    "native_interpretations": {
+      "ordinary": "CANDIDATE_OMISSION: successful native process omitted full-suite-failing security tests; inspect platform and dependency evidence",
+      "collision": "CANDIDATE_OMISSION: successful native process omitted full-suite-failing security tests; inspect platform and dependency evidence"
+    },
+    "fingerprint_validation": "NOT_PERFORMED: whole-file CRC32 does not establish testmon fingerprint preservation"
+  },
+  {
+    "case": "requests_crlf_header",
+    "status": "CONTROLS_PASSED_REVIEW_REQUIRED",
+    "controls": {
+      "baseline_nochange_full_suite_passes_security": true,
+      "benign_comment_full_suite_passes_security": true,
+      "ordinary_full_suite_fails_security_assertion": true,
+      "collision_full_suite_fails_security_assertion": true,
+      "all_runs_have_valid_execution_and_import_origins": true,
+      "native_changed_source_detected": true
+    },
+    "native_interpretations": {
+      "ordinary": "CANDIDATE_OMISSION: successful native process omitted full-suite-failing security tests; inspect platform and dependency evidence",
+      "collision": "CANDIDATE_OMISSION: successful native process omitted full-suite-failing security tests; inspect platform and dependency evidence"
+    },
+    "fingerprint_validation": "NOT_PERFORMED: whole-file CRC32 does not establish testmon fingerprint preservation"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "previous_failure": "aborted before dispatch",
+  "failed_call_timestamp_utc": "2026-11-12T06:42:27.662Z",
+  "returned_timestamp_utc": "2026-11-12T06:42:27.664Z",
+  "confirmed_effect": "The experiment preparation call did not execute or create files",
+  "application_diagnostics_same_second": {
+    "has_pending_input": true,
+    "model_needs_follow_up": true,
+    "needs_follow_up": true,
+    "response_event": "response.interrupt.failed"
+  },
+  "interpretation": "Evidence supports pending-input or response-interruption handling as the explanation for nondispatch; the logs do not prove the full internal causal chain or identify which input was pending",
+  "explicit_security_denial_recorded_for_this_call": false,
+  "recovery": "Resumed preparation through the same normal tools; did not modify review settings or bypass controls",
+  "subsequent_instrumentation_error": "Observer assumed synthetic testmon deselection items had node IDs",
+  "instrumentation_repair": "Record synthetic item counts separately; preserve original failed attempt and repeat identical fixed study from clean baselines",
+  "corrected_result": "COMPLETED_NO_QUALIFYING_WITNESS",
+  "manuscript_changed_by_this_experiment": false,
+  "github_or_overleaf_writes_by_this_experiment": false
+}

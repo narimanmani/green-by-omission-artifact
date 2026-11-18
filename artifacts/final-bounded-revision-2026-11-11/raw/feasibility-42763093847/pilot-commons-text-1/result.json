@@ -1,0 +1,146 @@
+{
+  "repo": "apache/commons-text",
+  "sha": "ed3f23e12362f77d2b850e291458a0907da34d96",
+  "name": "commons-text",
+  "lang": "java",
+  "status": "verified_nonzero_baseline_nochange_measured",
+  "selector": "Ekstazi 5.3.0",
+  "attack_attempted": false,
+  "security_test_mutated": false,
+  "scope": "authentic upstream baseline and no-change only",
+  "clone": {
+    "exit": 0,
+    "seconds": 0.747
+  },
+  "fetch_sha": {
+    "exit": 0,
+    "seconds": 0.368
+  },
+  "checkout": {
+    "exit": 0,
+    "seconds": 0.03
+  },
+  "verified_sha": "ed3f23e12362f77d2b850e291458a0907da34d96",
+  "available_concrete_test_classes": 100,
+  "native_baseline_0": {
+    "exit": 1,
+    "seconds": 36.647,
+    "test_summary": [
+      {
+        "run": 0,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    ],
+    "non_skipped_executed": 0
+  },
+  "native_baseline_1": {
+    "exit": 1,
+    "seconds": 8.405,
+    "test_summary": [
+      {
+        "run": 0,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    ],
+    "non_skipped_executed": 0
+  },
+  "native_baseline_2": {
+    "exit": 1,
+    "seconds": 8.359,
+    "test_summary": [
+      {
+        "run": 0,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    ],
+    "non_skipped_executed": 0
+  },
+  "native_baseline_3": {
+    "exit": 1,
+    "seconds": 8.738,
+    "test_summary": [
+      {
+        "run": 0,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    ],
+    "non_skipped_executed": 0
+  },
+  "native_baseline_4": {
+    "exit": 1,
+    "seconds": 8.544,
+    "test_summary": [
+      {
+        "run": 0,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    ],
+    "non_skipped_executed": 0
+  },
+  "native_baseline_5": {
+    "exit": 1,
+    "seconds": 8.251,
+    "test_summary": [
+      {
+        "run": 0,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    ],
+    "non_skipped_executed": 0
+  },
+  "native_baseline_6": {
+    "exit": 0,
+    "seconds": 9.709,
+    "test_summary": [
+      {
+        "run": 2,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "run": 2,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    ],
+    "non_skipped_executed": 2
+  },
+  "selected_class": "OssFuzzTest",
+  "baseline_non_skipped_executed": 2,
+  "selection_scope": "Surefire includes class name; no -Dtest override",
+  "native_nochange": {
+    "exit": 0,
+    "seconds": 9.718
+  },
+  "nochange_returncode": 0,
+  "nochange_summary": [
+    {
+      "run": 2,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "run": 2,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "nochange_non_skipped_executed": 2,
+  "selector_nochange_selects_zero": false
+}

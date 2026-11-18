@@ -1,0 +1,20 @@
+{
+  "status": "CORRECTION_INPUTS_PREPARED_NO_STUDY_RUN",
+  "unchanged_files_sha256": {
+    "run_replay.mjs": "c6703dcc746d645beb7ee383c6824ffeb31e8ba718a1c965ad0dd67f0188bc77",
+    "INPUT_IDENTITY.json": "47d6b8f54479e8c460baaf20a854604146e859571ed0a69a8efa0767634f4e93",
+    "input/baseline-source-manifest.json": "4da8f6409f2043a86737eae9962d252c79bea5751ce3c20afb3636be24fb6532",
+    "input/candidate-source-manifest.json": "3614223938d728e056cba4e5126bd0f85c2d2f47070f7cb1f862fd1ffee10eb9",
+    "input/original-unit-test-manifest.json": "7722f342717a8eabdbdfd7f63f3a08087d54b6fe038b770ab908536e0b482b09",
+    "input/fixed-candidate/shared/authentication/src/auth.definition.ts": "2413b7bab16c583bcb624d9b52e425942bb559e30140218d4f23e404ebafc5b4"
+  },
+  "host_namespace_replacements": {
+    "sp2027-wxyc-fixed-history:20261112": "sp2027-wxyc-fixed-history-jq:20261112",
+    "sp2027-wxyc-replay-seed:20261112": "sp2027-wxyc-replay-seed-jq:20261112",
+    "sp2027-wxyc-final-assembly-20261112": "sp2027-wxyc-final-assembly-jq-20261112",
+    "sp2027-wxyc-fixed-replay-20261112-r": "sp2027-wxyc-fixed-replay-jq-20261112-r",
+    "sp2027.study=wxyc-fixed-history-20261112": "sp2027.study=wxyc-fixed-history-jq-20261112"
+  },
+  "v1_artifacts_untouched": true,
+  "candidate_outcomes_observed": 0
+}

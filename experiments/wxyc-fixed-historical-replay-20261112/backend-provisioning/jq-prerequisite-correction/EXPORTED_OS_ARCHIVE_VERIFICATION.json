@@ -1,0 +1,17 @@
+[
+  {
+    "file": "jq_1.6-2.1+deb12u3_amd64.deb",
+    "sha256": "c25f3fda201207ed98b1d63686f2d81b9dfeb99f1ab2d1d35fb3f7b6a1c107dc",
+    "matches_official_index": true
+  },
+  {
+    "file": "libjq1_1.6-2.1+deb12u3_amd64.deb",
+    "sha256": "5e9a7081ba10ce826f6d3d103aa9b912170c5adc836e2561000733571995dd5b",
+    "matches_official_index": true
+  },
+  {
+    "file": "libonig5_6.9.8-1_amd64.deb",
+    "sha256": "59ecfce6d88c7c4b09496ce182b3b8303e8e8477664e009b16ae83a09cd12be7",
+    "matches_official_index": true
+  }
+]

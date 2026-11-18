@@ -1,0 +1,39 @@
+{
+  "status": "VALID_FIXED_CASE",
+  "joint_observation": true,
+  "baseline_test_count": 60,
+  "native_test_count": 20,
+  "native_classes": [
+    "org.apache.commons.validator.routines.CreditCardValidatorTest"
+  ],
+  "independent_test_count": 60,
+  "independent_failed": [
+    {
+      "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+      "name": "testIsValidScheme",
+      "outcome": "failure"
+    },
+    {
+      "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+      "name": "testValidator276",
+      "outcome": "failure"
+    }
+  ],
+  "omitted_security_failures": [
+    {
+      "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+      "name": "testIsValidScheme",
+      "outcome": "failure"
+    },
+    {
+      "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+      "name": "testValidator276",
+      "outcome": "failure"
+    }
+  ],
+  "exits": [
+    0,
+    0,
+    1
+  ]
+}

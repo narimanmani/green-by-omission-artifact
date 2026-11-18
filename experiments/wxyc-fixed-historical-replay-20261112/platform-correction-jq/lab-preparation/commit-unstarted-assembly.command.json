@@ -1,0 +1,19 @@
+{
+  "command": [
+    "docker",
+    "commit",
+    "--change",
+    "USER 10001:10001",
+    "--change",
+    "WORKDIR /work",
+    "--change",
+    "ENV HOME=/work/home CI=true NODE_ENV=test EMAIL_ENABLED=false",
+    "--change",
+    "ENTRYPOINT [\"node\",\"/opt/replay/run_replay.mjs\"]",
+    "--change",
+    "CMD []",
+    "0c03ce01e3e2f2cf1680d814167970995622e71f5f9d397b6b0e6da64768c00a",
+    "sp2027-wxyc-fixed-history-jq:20261112"
+  ],
+  "exit_code": 0
+}

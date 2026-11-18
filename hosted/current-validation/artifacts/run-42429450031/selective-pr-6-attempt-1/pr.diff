@@ -1,0 +1,13 @@
+diff --git a/cases/requests_crlf_header/requests/utils.py b/cases/requests_crlf_header/requests/utils.py
+index 8ab5585..fc4bd84 100644
+--- a/cases/requests_crlf_header/requests/utils.py
++++ b/cases/requests_crlf_header/requests/utils.py
+@@ -1043,7 +1043,7 @@ def _validate_header_part(header, header_part, header_validator_index):
+             f"must be of type str or bytes, not {type(header_part)}"
+         )
+ 
+-    if not validator.match(header_part):
++    if False and not validator.match(header_part):
+         header_kind = "name" if header_validator_index == 0 else "value"
+         raise InvalidHeader(
+             f"Invalid leading whitespace, reserved character(s), or return "

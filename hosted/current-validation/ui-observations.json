@@ -1,0 +1,15 @@
+{
+  "observed_utc_date": "2026-11-08",
+  "user_facing_local_date": "2026-11-07",
+  "method": "Signed-in GitHub browser UI; actual Merge pull request button isEnabled() plus visible required-check and merge information",
+  "repository": "anonymous-owner/ci-selection-testbed",
+  "experimental_merge_actions_performed": false,
+  "observations": [
+    {"pr":2,"case":"itsdangerous_expiry","condition":"ordinary","merge_button_enabled":false,"required_check":"FAILURE","full_suite":"FAILURE","visible_state":"Checks failing"},
+    {"pr":3,"case":"itsdangerous_expiry","condition":"collision","merge_button_enabled":true,"required_check":"SUCCESS","full_suite":"FAILURE","visible_state":"Able to merge; Merging can be performed automatically."},
+    {"pr":4,"case":"starlette_trusted_host","condition":"ordinary","merge_button_enabled":false,"required_check":"FAILURE","full_suite":"FAILURE","visible_state":"Checks failing"},
+    {"pr":5,"case":"starlette_trusted_host","condition":"collision","merge_button_enabled":true,"required_check":"SUCCESS","full_suite":"FAILURE","visible_state":"Able to merge; Merging can be performed automatically."},
+    {"pr":6,"case":"requests_crlf_header","condition":"ordinary","merge_button_enabled":false,"required_check":"FAILURE","full_suite":"FAILURE","visible_state":"Checks failing"},
+    {"pr":7,"case":"requests_crlf_header","condition":"collision","merge_button_enabled":true,"required_check":"SUCCESS","full_suite":"FAILURE","visible_state":"Able to merge; Merging can be performed automatically."}
+  ]
+}

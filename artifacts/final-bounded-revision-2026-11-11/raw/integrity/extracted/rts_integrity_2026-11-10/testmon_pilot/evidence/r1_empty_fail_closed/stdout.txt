@@ -1,0 +1,23 @@
+FF..                                                                     [100%]
+=================================== FAILURES ===================================
+________________________________ test_positive _________________________________
+
+    def test_positive():
+>       assert add(2, 2) == 4
+E       assert 5 == 4
+E        +  where 5 = add(2, 2)
+
+test_arithmetic.py:4: AssertionError
+________________________________ test_negative _________________________________
+
+    def test_negative():
+>       assert add(-2, -2) == -4
+E       assert -3 == -4
+E        +  where -3 = add(-2, -2)
+
+test_arithmetic.py:7: AssertionError
+- generated xml file: /workspace/scratch/0827c1f80a7f/testmon_pilot/evidence/r1_empty_fail_closed/junit.xml -
+=========================== short test summary info ============================
+FAILED test_arithmetic.py::test_positive - assert 5 == 4
+FAILED test_arithmetic.py::test_negative - assert -3 == -4
+2 failed, 2 passed in 0.03s

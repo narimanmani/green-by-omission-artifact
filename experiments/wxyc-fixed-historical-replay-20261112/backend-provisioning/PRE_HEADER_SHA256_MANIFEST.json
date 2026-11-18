@@ -1,0 +1,207 @@
+[
+  {
+    "path": "00-output-tag-collision-check.log",
+    "bytes": 79,
+    "sha256": "afeb7eb64ff562f221e53d7fcf6a0925075ac27f4efc45d835f2ebe65128f2ca"
+  },
+  {
+    "path": "01-base-image-inspect.log",
+    "bytes": 1891,
+    "sha256": "1ccf5032b7f0708992b66d29265d743a192aa6bae80f55e58fc3088a9a48a734"
+  },
+  {
+    "path": "02-create-toolchain-provision.log",
+    "bytes": 65,
+    "sha256": "1c9a1ebd0497c2264b241770b2511e847c3573822f5a444481628a2186df99ea"
+  },
+  {
+    "path": "03-start-toolchain-provision.log",
+    "bytes": 39,
+    "sha256": "8153d8085e92dbd7cb348c23f55df65901f6ff073a6ca45f3a97646d02b7cdfc"
+  },
+  {
+    "path": "04-copy-toolchain-script.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "05-toolchain-provision-inspect.log",
+    "bytes": 7922,
+    "sha256": "970bf08fc7b77ea823db24339e1aa9672cfc5b38fd064421c16d2e34449d0584"
+  },
+  {
+    "path": "06-install-trusted-toolchain.log",
+    "bytes": 58359,
+    "sha256": "7bef1b86bd718276f8386a5b05cc2f561655099763c845cb4330c644b0b1a674"
+  },
+  {
+    "path": "ADMIN_REPAIR_PROVISIONING_RESULT.json",
+    "bytes": 399,
+    "sha256": "c5de72274e15ec80613360fb23ffba934f787e5c5b1badb0888689daa24f839d"
+  },
+  {
+    "path": "ATTEMPT1_COMMAND_RECEIPTS.json",
+    "bytes": 4496,
+    "sha256": "b77e6ee47f55dd1d8ef624480ca64e5b923b8769cfb5d05aa8a2e6ab43c3e888"
+  },
+  {
+    "path": "ATTEMPT1_PROVISIONING_RESULT.json",
+    "bytes": 252,
+    "sha256": "3f736277b11cf0557be86848279efcda9225f98e87d6f5c72d7f72d65721b223"
+  },
+  {
+    "path": "ATTEMPT1_SHA256_MANIFEST.json",
+    "bytes": 3177,
+    "sha256": "73c69006b7a663f51989f1b0d5d4d384cfcb2d752e40f976a5ce2b30f51d9891"
+  },
+  {
+    "path": "baseline-source-and-git-uid10001.tar",
+    "bytes": 58531840,
+    "sha256": "592515b4076ae24764ceecb08d515b177a4f30f79e4611722a8868f7310aecb7"
+  },
+  {
+    "path": "COMMAND_RECEIPTS.json",
+    "bytes": 11990,
+    "sha256": "6398a2e26d3cc1866e1932b4bd9cb32b73785f3b36cbd62b35dbc95e50049778"
+  },
+  {
+    "path": "continue_administrative_provisioning.py",
+    "bytes": 6109,
+    "sha256": "cf28415ba628319fc2b124a02866c1109facb2f67e8e47969d1b64fe63326039"
+  },
+  {
+    "path": "final-stop-sp2027-wxyc-backend-offline-rebuild-20261112.log",
+    "bytes": 147,
+    "sha256": "1c022d4f5d55c124b8def499efff6c17a4099afca95ff51e21383e92a61f25a4"
+  },
+  {
+    "path": "final-stop-sp2027-wxyc-backend-provision-20261112.log",
+    "bytes": 94,
+    "sha256": "39d1c9866794015224415de4e8126cac2a0989d82b643e92d3e76d95bd8c28c6"
+  },
+  {
+    "path": "FROZEN_ADMIN_REPAIR_PLAN.json",
+    "bytes": 1042,
+    "sha256": "d62a51c0aac45af20d16bd9528b314efa3d49c2f3d81309c28c50da26eae5406"
+  },
+  {
+    "path": "FROZEN_PROVISIONING_PLAN.json",
+    "bytes": 2652,
+    "sha256": "2d4a3e8b2bf1e5ed3e8fc8b3b2b546ed70b1fb84331b4d22fd8b1f1f3ab1a1b7"
+  },
+  {
+    "path": "install.sh",
+    "bytes": 261,
+    "sha256": "32b587e5a683bd642c5715e5ba4643054f5bc7841607b18a1e13a977cdab217c"
+  },
+  {
+    "path": "offline-rebuild.sh",
+    "bytes": 146,
+    "sha256": "d6636aa37d6e2e5482b0466f713e4a68c92d341edca73d259146b8c64f7ff5a4"
+  },
+  {
+    "path": "primary-git-dependency-package.json",
+    "bytes": 1758,
+    "sha256": "0554cf033d925d4d4f536d12d74b233e7564d2b2adf6b2669f2f47df42e21316"
+  },
+  {
+    "path": "provision_exact_baseline.py",
+    "bytes": 10195,
+    "sha256": "c65130ce7a30188617f3e06b717c9120b20f77666b1603d82b862c2cd9536867"
+  },
+  {
+    "path": "PROVISIONING_RESULT.json",
+    "bytes": 252,
+    "sha256": "3f736277b11cf0557be86848279efcda9225f98e87d6f5c72d7f72d65721b223"
+  },
+  {
+    "path": "repair-01-start-provision.log",
+    "bytes": 39,
+    "sha256": "8153d8085e92dbd7cb348c23f55df65901f6ff073a6ca45f3a97646d02b7cdfc"
+  },
+  {
+    "path": "repair-02-copy-toolchain-script.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "repair-03-toolchain-inspect.log",
+    "bytes": 7932,
+    "sha256": "0ba6ce7480a1bd4804551d2e99ccc2176e3cad54401d4f971cd60acb5de76a07"
+  },
+  {
+    "path": "repair-04-install-trusted-toolchain.log",
+    "bytes": 41169,
+    "sha256": "372b731c058182d5842bb5209de383753b1c0fa0fe3047079dcb95e667d2b175"
+  },
+  {
+    "path": "repair-05-transfer-source-and-exact-package.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "repair-06-original-locked-npm-ci.log",
+    "bytes": 1590,
+    "sha256": "0aa5fd22c8535cad8199525cc2ed04be2810a5fad6442e2c1963b5d891c2e9e5"
+  },
+  {
+    "path": "repair-07-commit-installed-state.log",
+    "bytes": 72,
+    "sha256": "4901d9a37cb7f3c61cee5df7ba5e599a296c022ede4d7125e3565730ab00cf94"
+  },
+  {
+    "path": "repair-08-stop-provision.log",
+    "bytes": 94,
+    "sha256": "39d1c9866794015224415de4e8126cac2a0989d82b643e92d3e76d95bd8c28c6"
+  },
+  {
+    "path": "repair-09-create-offline-rebuild.log",
+    "bytes": 65,
+    "sha256": "62fc9500839b9f9ade22766d7a95084f7d0a39380e7a39bd763a8b47895fa0a9"
+  },
+  {
+    "path": "repair-10-start-offline-rebuild.log",
+    "bytes": 45,
+    "sha256": "1c9e261ca92e0d94a2d51e598f684db7cac98753ad425016e5a3be3109de2d12"
+  },
+  {
+    "path": "repair-11-offline-rebuild-inspect.log",
+    "bytes": 7138,
+    "sha256": "0d17640ad0e67ed77158d2fe884a04542981c65ed1f93796b61007bd8783acf3"
+  },
+  {
+    "path": "repair-12-original-offline-npm-rebuild-and-observer.log",
+    "bytes": 1355,
+    "sha256": "e7cf209a128d117d57cc863fb3dcbec7081df19a9044a6bb01311427c5d4b8e8"
+  },
+  {
+    "path": "repair-final-stop-sp2027-wxyc-backend-offline-rebuild-20261112.log",
+    "bytes": 100,
+    "sha256": "26e003c410778a80acad223e6561812eab7017906cd1d3b937d2e14d562509b8"
+  },
+  {
+    "path": "repair-final-stop-sp2027-wxyc-backend-provision-20261112.log",
+    "bytes": 94,
+    "sha256": "39d1c9866794015224415de4e8126cac2a0989d82b643e92d3e76d95bd8c28c6"
+  },
+  {
+    "path": "SOURCE_TRANSFER_RECEIPT.json",
+    "bytes": 345,
+    "sha256": "46c1bd6f1b432c44e6d27301f2ec7489c97c6713c9c2ddaf4e1886d8efdecebd"
+  },
+  {
+    "path": "toolchain-repair.sh",
+    "bytes": 371,
+    "sha256": "72d6547979efe0da79f90d233b333528d72ce0515b24551a55c491e699c8af19"
+  },
+  {
+    "path": "toolchain.sh",
+    "bytes": 284,
+    "sha256": "a0ed3fd06d88533dc7f1878b7e70391c8b843d80ecfbdbc0cb39d7bd6fc8d217"
+  },
+  {
+    "path": "verify_seed.py",
+    "bytes": 5949,
+    "sha256": "424c1b2ac9539d3a64ab0d4c6b8ecc50edb5273669fb84c52907ac38dcf73569"
+  }
+]

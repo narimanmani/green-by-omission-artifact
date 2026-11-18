@@ -1,0 +1,64 @@
+{
+  "cases": [
+    {
+      "name": "itsdangerous_expiry",
+      "baseline_dir": "../cases/itsdangerous_expiry",
+      "source_relative": "itsdangerous/timed.py",
+      "ordinary_source": "revisions/itsdangerous_expiry/ordinary.py",
+      "collision_source": "revisions/itsdangerous_expiry/collision.py",
+      "security_nodeids": [
+        "tests/test_security.py::test_security_rejects_expired"
+      ],
+      "expected_import_origins": [
+        {
+          "module": "itsdangerous.timed",
+          "relative_path": "itsdangerous/timed.py"
+        }
+      ],
+      "expected_security_failure_patterns": [
+        "AssertionError",
+        "DID NOT RAISE"
+      ]
+    },
+    {
+      "name": "starlette_trusted_host",
+      "baseline_dir": "../cases/starlette_trusted_host",
+      "source_relative": "starlette/middleware/trustedhost.py",
+      "ordinary_source": "revisions/starlette_trusted_host/ordinary.py",
+      "collision_source": "revisions/starlette_trusted_host/collision.py",
+      "security_nodeids": [
+        "tests/test_security.py::test_security_rejects_untrusted_host"
+      ],
+      "expected_import_origins": [
+        {
+          "module": "starlette.middleware.trustedhost",
+          "relative_path": "starlette/middleware/trustedhost.py"
+        }
+      ],
+      "expected_security_failure_patterns": [
+        "AssertionError",
+        "DID NOT RAISE"
+      ]
+    },
+    {
+      "name": "requests_crlf_header",
+      "baseline_dir": "../cases/requests_crlf_header",
+      "source_relative": "requests/utils.py",
+      "ordinary_source": "revisions/requests_crlf_header/ordinary.py",
+      "collision_source": "revisions/requests_crlf_header/collision.py",
+      "security_nodeids": [
+        "tests/test_security.py::test_security_rejects_header_injection"
+      ],
+      "expected_import_origins": [
+        {
+          "module": "requests.utils",
+          "relative_path": "requests/utils.py"
+        }
+      ],
+      "expected_security_failure_patterns": [
+        "AssertionError",
+        "DID NOT RAISE"
+      ]
+    }
+  ]
+}

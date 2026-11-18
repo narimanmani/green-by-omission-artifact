@@ -1,0 +1,40 @@
+{
+  "status": "SUBJECT_INPUTS_PINNED_NO_TEST_EXECUTION",
+  "repository": "https://github.com/WXYC/Backend-Service",
+  "baseline_revision": "b86530c6c656b7a8f72d42145e9d46995c7ab53d",
+  "baseline_git_tree": "cae8a86926869f4d8708ae17f19f5bf4ef4a6526",
+  "public_fix": "8e2fc5f320633ddec0e99e05b65b21682ed3ccda",
+  "candidate_description": "Exact inverse of the public SameSite production-line hunk only; later original tests retained.",
+  "authentic_historical_pair": false,
+  "changed_tracked_files": [
+    "shared/authentication/src/auth.definition.ts"
+  ],
+  "tracked_file_count": 1869,
+  "original_unit_test_file_count": 471,
+  "baseline_manifest_sha256": "9d84f6dc000c7ac30f85006b81861f8663046f50aa9b0be05f2b14c1dcae2858",
+  "candidate_manifest_sha256": "4d85df064369799cb833391176798623c436d094ec0805fd467338c843995986",
+  "guard_git_blob": "5c14cd837a04880807d3ef4f643da64cbdf6a552",
+  "guard_semantics": "Static source-policy assertion; no runtime CSRF or exploitability conclusion.",
+  "locked_shared_package": {
+    "version": "4.1.0",
+    "resolved": "https://npm.pkg.github.com/download/@wxyc/shared/4.1.0/cd129532df5782044467db10c8dd0e91648b0547",
+    "integrity": "sha512-Onouu4bGBL9sVVLIhzLy72+jDg/JBTkNH88XF+4x5A101eq747vmyD/nfXNo1Q21SciMc+KTWWP/QFmtN/6WRA==",
+    "license": "PolyForm-Noncommercial-1.0.0",
+    "dependencies": {
+      "date-fns": "^4.4.0"
+    },
+    "engines": {
+      "node": ">=24"
+    },
+    "peerDependencies": {
+      "better-auth": "^1.5.0",
+      "typescript": "^5.0.0 || ^6.0.0 || ^7.0.0"
+    }
+  },
+  "upstream_tests_changed": false,
+  "test_config_changed": false,
+  "repetitions_executed": 0,
+  "baseline_result": null,
+  "native_result": null,
+  "independent_result": null
+}

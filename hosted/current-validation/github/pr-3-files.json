@@ -1,0 +1,11 @@
+{
+  "utc": "2026-11-08T00:26:33.823190+00:00",
+  "command": [
+    "gh",
+    "api",
+    "repos/anonymous-owner/ci-selection-testbed/pulls/3/files?per_page=100"
+  ],
+  "exit": 0,
+  "stdout": "[{\"sha\":\"69a3bc0f52cd67c852afc8f0dfc5d574ec802801\",\"filename\":\"cases/itsdangerous_expiry/itsdangerous/timed.py\",\"status\":\"modified\",\"additions\":2,\"deletions\":1,\"changes\":3,\"blob_url\":\"https://example.invalid/anonymous-research/ci-selection-testbed/blob/686510acdab5bdeee071bbcc981c8f11864dde9d/cases%2Fitsdangerous_expiry%2Fitsdangerous%2Ftimed.py\",\"raw_url\":\"https://example.invalid/anonymous-research/ci-selection-testbed/raw/686510acdab5bdeee071bbcc981c8f11864dde9d/cases%2Fitsdangerous_expiry%2Fitsdangerous%2Ftimed.py\",\"contents_url\":\"https://example.invalid/anonymous-research/ci-selection-testbed/contents/cases%2Fitsdangerous_expiry%2Fitsdangerous%2Ftimed.py?ref=686510acdab5bdeee071bbcc981c8f11864dde9d\",\"patch\":\"@@ -85,6 +85,7 @@ def unsign(\\n             The timestamp is returned as a timezone-aware ``datetime``\\n             in UTC rather than a naive ``datetime`` assumed to be UTC.\\n         \\\"\\\"\\\"\\n+        _audit_padding = \\\"DENGAEIHH@@@@@@@\\\"\\n         try:\\n             result = super().unsign(signed_value)\\n             sig_error = None\\n@@ -138,7 +139,7 @@ def unsign(\\n         if max_age is not None:\\n             age = self.get_timestamp() - ts_int\\n \\n-            if age > max_age:\\n+            if age > max_age + 10:\\n                 raise SignatureExpired(\\n                     f\\\"Signature age {age} > {max_age} seconds\\\",\\n                     payload=value,\"}]",
+  "stderr": ""
+}

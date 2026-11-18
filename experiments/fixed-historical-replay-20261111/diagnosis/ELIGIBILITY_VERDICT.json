@@ -1,0 +1,13 @@
+{
+  "status": "VALID_NEGATIVE_CONTROL_INELIGIBLE_FOR_POSITIVE_OMISSION_CLAIM",
+  "reason_code": "FINGERPRINT_PRESERVATION_PRECONDITION_NOT_MET",
+  "native_fingerprint_preserved": false,
+  "baseline_original_tests_pass": true,
+  "native_selection_nonempty": true,
+  "native_selection_passes": false,
+  "original_security_assertion_omitted": false,
+  "qualifying_joint_witness": false,
+  "execution_result_sha256": "5add477877328c8da8c5293c6a37aa23c6746a06f05e903e4b4cb9175b3b2383",
+  "diagnostic_result_sha256": "0f778e5b9845e84d2fb1e63e9190033d5f90933d213536f27d4a5570cfee536a",
+  "action": "Retain ordinary-change negative control and explicit original-test nonempty false-pass limitation; no outcome-dependent source/test/selector alteration"
+}

@@ -1,0 +1,347 @@
+[
+  {
+    "project": "apache/commons-cli",
+    "maven_coordinate": "commons-cli:commons-cli:1.6.0",
+    "version": "1.6.0",
+    "files": [
+      {
+        "path": "pilot_artifacts/commons-cli-1.6.0.pom",
+        "url": "https://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.6.0/commons-cli-1.6.0.pom",
+        "sha256": "c770260b9534ef13940fa087a5b0196ac54a64d0dcd485deae66c4adaa6c1758",
+        "bytes": 13269
+      },
+      {
+        "path": "pilot_artifacts/commons-cli-1.6.0.jar",
+        "url": "https://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.6.0/commons-cli-1.6.0.jar",
+        "sha256": "69e1237059acd56f0f8654dcde09d8a1412eee82918bef5564d51f8fb275711b",
+        "bytes": 59528
+      },
+      {
+        "path": "pilot_artifacts/commons-cli-1.6.0-sources.jar",
+        "url": "https://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.6.0/commons-cli-1.6.0-sources.jar",
+        "sha256": "74bd521ea87a2981f9869e3c576a74e9da9a403845fc587354cc62f48f1533a1",
+        "bytes": 62734
+      }
+    ],
+    "scm_tag": "HEAD",
+    "compiler_source": "1.8",
+    "dependencies": [
+      {
+        "groupId": "org.junit.jupiter",
+        "artifactId": "junit-jupiter-api",
+        "scope": "test",
+        "version": null
+      },
+      {
+        "groupId": "org.junit.vintage",
+        "artifactId": "junit-vintage-engine",
+        "scope": "test",
+        "version": null
+      }
+    ],
+    "release_git_ref": "refs/tags/rel/commons-cli-1.6.0",
+    "release_ref_lookup_stdout": "976cc31329b3f86d17dd9c904b374528681ba9a0\trefs/tags/rel/commons-cli-1.6.0\n0d29a55998aa52be8832497527e266630f97c371\trefs/tags/rel/commons-cli-1.6.0^{}\n",
+    "release_ref_lookup_returncode": 0,
+    "release_commit": "0d29a55998aa52be8832497527e266630f97c371"
+  },
+  {
+    "project": "apache/commons-csv",
+    "maven_coordinate": "org.apache.commons:commons-csv:1.10.0",
+    "version": "1.10.0",
+    "files": [
+      {
+        "path": "pilot_artifacts/commons-csv-1.10.0.pom",
+        "url": "https://repo.maven.apache.org/maven2/org/apache/commons/commons-csv/1.10.0/commons-csv-1.10.0.pom",
+        "sha256": "243541ad501e43ef09bacf7a86c87f7c3ed018d34a823ff5f54e5a8c5811094f",
+        "bytes": 20282
+      },
+      {
+        "path": "pilot_artifacts/commons-csv-1.10.0.jar",
+        "url": "https://repo.maven.apache.org/maven2/org/apache/commons/commons-csv/1.10.0/commons-csv-1.10.0.jar",
+        "sha256": "2d06e6a07a636baf777ad8e659256f2119109dde23551c9b80c5422d424b808c",
+        "bytes": 54749
+      },
+      {
+        "path": "pilot_artifacts/commons-csv-1.10.0-sources.jar",
+        "url": "https://repo.maven.apache.org/maven2/org/apache/commons/commons-csv/1.10.0/commons-csv-1.10.0-sources.jar",
+        "sha256": "94fa4e32ed1c1aeba053dfac8b69fb7f0d267a70c633ce85ed2a5fa9659be00f",
+        "bytes": 56526
+      }
+    ],
+    "scm_tag": null,
+    "compiler_source": "1.8",
+    "dependencies": [
+      {
+        "groupId": "org.junit.jupiter",
+        "artifactId": "junit-jupiter",
+        "scope": "test",
+        "version": null
+      },
+      {
+        "groupId": "org.hamcrest",
+        "artifactId": "hamcrest",
+        "scope": "test",
+        "version": "2.2"
+      },
+      {
+        "groupId": "org.mockito",
+        "artifactId": "mockito-core",
+        "scope": "test",
+        "version": "4.11.0"
+      },
+      {
+        "groupId": "commons-io",
+        "artifactId": "commons-io",
+        "scope": "test",
+        "version": "2.11.0"
+      },
+      {
+        "groupId": "org.apache.commons",
+        "artifactId": "commons-lang3",
+        "scope": "test",
+        "version": "3.12.0"
+      },
+      {
+        "groupId": "com.h2database",
+        "artifactId": "h2",
+        "scope": "test",
+        "version": "2.1.214"
+      }
+    ],
+    "release_git_ref": "refs/tags/rel/commons-csv-1.10.0",
+    "release_ref_lookup_stdout": "71cbab9990dd4654047bfb622a64f3c9b41bbb02\trefs/tags/rel/commons-csv-1.10.0\n5b99c860986a87f9da664bf47a3a7c0026673123\trefs/tags/rel/commons-csv-1.10.0^{}\n",
+    "release_ref_lookup_returncode": 0,
+    "release_commit": "5b99c860986a87f9da664bf47a3a7c0026673123"
+  },
+  {
+    "project": "apache/commons-codec",
+    "maven_coordinate": "commons-codec:commons-codec:1.16.0",
+    "version": "1.16.0",
+    "files": [
+      {
+        "path": "pilot_artifacts/commons-codec-1.16.0.pom",
+        "url": "https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.16.0/commons-codec-1.16.0.pom",
+        "sha256": "6cb5957819df393956fd311a3a0c3f5eec1ebc49ba5b2d09f3f44e6167fa3e74",
+        "bytes": 15990
+      },
+      {
+        "path": "pilot_artifacts/commons-codec-1.16.0.jar",
+        "url": "https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.16.0/commons-codec-1.16.0.jar",
+        "sha256": "56595fb20b0b85bc91d0d503dad50bb7f1b9afc0eed5dffa6cbb25929000484d",
+        "bytes": 360738
+      },
+      {
+        "path": "pilot_artifacts/commons-codec-1.16.0-sources.jar",
+        "url": "https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.16.0/commons-codec-1.16.0-sources.jar",
+        "sha256": "b983ff8bf2e730d3d51eb198e6d928b9c6b7843266d2106f457c5c83634c3c48",
+        "bytes": 370076
+      }
+    ],
+    "scm_tag": "HEAD",
+    "compiler_source": "1.8",
+    "dependencies": [
+      {
+        "groupId": "org.apache.commons",
+        "artifactId": "commons-lang3",
+        "scope": "test",
+        "version": "3.12.0"
+      },
+      {
+        "groupId": "org.hamcrest",
+        "artifactId": "hamcrest",
+        "scope": "test",
+        "version": "2.2"
+      },
+      {
+        "groupId": "org.junit.jupiter",
+        "artifactId": "junit-jupiter-engine",
+        "scope": "test",
+        "version": null
+      },
+      {
+        "groupId": "org.junit.jupiter",
+        "artifactId": "junit-jupiter-params",
+        "scope": "test",
+        "version": null
+      }
+    ],
+    "release_git_ref": "refs/tags/rel/commons-codec-1.16.0",
+    "release_ref_lookup_stdout": "f3c9a454077640837dd58f72a67a0dd70fb34b2e\trefs/tags/rel/commons-codec-1.16.0\n2614a4ca9d79c2b96a3147d206b4fb27443f8ce8\trefs/tags/rel/commons-codec-1.16.0^{}\n",
+    "release_ref_lookup_returncode": 0,
+    "release_commit": "2614a4ca9d79c2b96a3147d206b4fb27443f8ce8"
+  },
+  {
+    "project": "apache/commons-io",
+    "maven_coordinate": "commons-io:commons-io:2.15.0",
+    "version": "2.15.0",
+    "files": [
+      {
+        "path": "pilot_artifacts/commons-io-2.15.0.pom",
+        "url": "https://repo.maven.apache.org/maven2/commons-io/commons-io/2.15.0/commons-io-2.15.0.pom",
+        "sha256": "297e85b6157de74bd6550b1af5f4696535b2ea76d805e9eb2300cf06dcc4fb9c",
+        "bytes": 21643
+      },
+      {
+        "path": "pilot_artifacts/commons-io-2.15.0.jar",
+        "url": "https://repo.maven.apache.org/maven2/commons-io/commons-io/2.15.0/commons-io-2.15.0.jar",
+        "sha256": "a328dad730921d197b6a9b195dffa00e41c974c2dac8fe37e84d31706bca7792",
+        "bytes": 500628
+      },
+      {
+        "path": "pilot_artifacts/commons-io-2.15.0-sources.jar",
+        "url": "https://repo.maven.apache.org/maven2/commons-io/commons-io/2.15.0/commons-io-2.15.0-sources.jar",
+        "sha256": "cd1dc233c6ba942a520d2e51668d861c0cf3db06c15733205915fcd7c024d206",
+        "bytes": 518446
+      }
+    ],
+    "scm_tag": "rel/commons-io-2.15.0",
+    "compiler_source": "1.8",
+    "dependencies": [
+      {
+        "groupId": "org.junit.jupiter",
+        "artifactId": "junit-jupiter",
+        "scope": "test",
+        "version": null
+      },
+      {
+        "groupId": "org.junit-pioneer",
+        "artifactId": "junit-pioneer",
+        "scope": "test",
+        "version": "1.9.1"
+      },
+      {
+        "groupId": "net.bytebuddy",
+        "artifactId": "byte-buddy",
+        "scope": "test",
+        "version": "${commons.bytebuddy.version}"
+      },
+      {
+        "groupId": "net.bytebuddy",
+        "artifactId": "byte-buddy-agent",
+        "scope": "test",
+        "version": "${commons.bytebuddy.version}"
+      },
+      {
+        "groupId": "org.mockito",
+        "artifactId": "mockito-inline",
+        "scope": "test",
+        "version": "4.11.0"
+      },
+      {
+        "groupId": "com.google.jimfs",
+        "artifactId": "jimfs",
+        "scope": "test",
+        "version": "1.3.0"
+      },
+      {
+        "groupId": "org.apache.commons",
+        "artifactId": "commons-lang3",
+        "scope": "test",
+        "version": "3.13.0"
+      },
+      {
+        "groupId": "commons-codec",
+        "artifactId": "commons-codec",
+        "scope": "test",
+        "version": "1.16.0"
+      },
+      {
+        "groupId": "org.openjdk.jmh",
+        "artifactId": "jmh-core",
+        "scope": "test",
+        "version": "${jmh.version}"
+      },
+      {
+        "groupId": "org.openjdk.jmh",
+        "artifactId": "jmh-generator-annprocess",
+        "scope": "test",
+        "version": "${jmh.version}"
+      }
+    ],
+    "release_git_ref": "refs/tags/rel/commons-io-2.15.0",
+    "release_ref_lookup_stdout": "15585ec4f9121ab84274f080d533111f552fcc22\trefs/tags/rel/commons-io-2.15.0\n6bb8020d40f1a4b947ff26949843def5d60292d0\trefs/tags/rel/commons-io-2.15.0^{}\n",
+    "release_ref_lookup_returncode": 0,
+    "release_commit": "6bb8020d40f1a4b947ff26949843def5d60292d0"
+  },
+  {
+    "project": "apache/commons-lang",
+    "maven_coordinate": "org.apache.commons:commons-lang3:3.14.0",
+    "version": "3.14.0",
+    "files": [
+      {
+        "path": "pilot_artifacts/commons-lang3-3.14.0.pom",
+        "url": "https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.pom",
+        "sha256": "110438863bad37c28f906bf87016e38c7a8c758ba321e09d11dc5a2363a8e79e",
+        "bytes": 30894
+      },
+      {
+        "path": "pilot_artifacts/commons-lang3-3.14.0.jar",
+        "url": "https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar",
+        "sha256": "7b96bf3ee68949abb5bc465559ac270e0551596fa34523fddf890ec418dde13c",
+        "bytes": 657952
+      },
+      {
+        "path": "pilot_artifacts/commons-lang3-3.14.0-sources.jar",
+        "url": "https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0-sources.jar",
+        "sha256": "ab3b86afb898f1026dbe43aaf71e9c1d719ec52d6e41887b362d86777c299b6f",
+        "bytes": 705432
+      }
+    ],
+    "scm_tag": "rel/commons-lang-3.13.0",
+    "compiler_source": "1.8",
+    "dependencies": [
+      {
+        "groupId": "org.junit.jupiter",
+        "artifactId": "junit-jupiter",
+        "scope": "test",
+        "version": null
+      },
+      {
+        "groupId": "org.junit-pioneer",
+        "artifactId": "junit-pioneer",
+        "scope": "test",
+        "version": "1.9.1"
+      },
+      {
+        "groupId": "org.hamcrest",
+        "artifactId": "hamcrest",
+        "scope": "test",
+        "version": "2.2"
+      },
+      {
+        "groupId": "org.easymock",
+        "artifactId": "easymock",
+        "scope": "test",
+        "version": "5.2.0"
+      },
+      {
+        "groupId": "org.apache.commons",
+        "artifactId": "commons-text",
+        "scope": "provided",
+        "version": "1.11.0"
+      },
+      {
+        "groupId": "org.openjdk.jmh",
+        "artifactId": "jmh-core",
+        "scope": "test",
+        "version": "${jmh.version}"
+      },
+      {
+        "groupId": "org.openjdk.jmh",
+        "artifactId": "jmh-generator-annprocess",
+        "scope": "test",
+        "version": "${jmh.version}"
+      },
+      {
+        "groupId": "com.google.code.findbugs",
+        "artifactId": "jsr305",
+        "scope": "test",
+        "version": "3.0.2"
+      }
+    ],
+    "release_git_ref": "refs/tags/rel/commons-lang-3.14.0",
+    "release_ref_lookup_stdout": "5b86b3eac1976b71e9f93c8417b2be45172209f9\trefs/tags/rel/commons-lang-3.14.0\nc8774fa74adbbbcd4e5f915ab6bc3aa10d877419\trefs/tags/rel/commons-lang-3.14.0^{}\n",
+    "release_ref_lookup_returncode": 0,
+    "release_commit": "c8774fa74adbbbcd4e5f915ab6bc3aa10d877419"
+  }
+]

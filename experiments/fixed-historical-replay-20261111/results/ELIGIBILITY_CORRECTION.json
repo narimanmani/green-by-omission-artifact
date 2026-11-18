@@ -1,0 +1,8 @@
+{
+  "status": "INELIGIBLE_SELECTIVE_RESULT_OBSERVER_INTERNAL_ERROR",
+  "raw_evidence": "results/replay-result.json",
+  "cause": "Observer assumed every pytest_deselected item has nodeid; native testmon FakeItemFromTestmon has no nodeid",
+  "selective_exit_code": 3,
+  "qualifying_witness": false,
+  "candidate_and_test_set_unchanged_for_retry": true
+}

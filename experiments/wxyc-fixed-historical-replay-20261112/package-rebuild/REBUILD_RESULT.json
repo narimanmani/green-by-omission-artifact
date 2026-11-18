@@ -1,0 +1,19 @@
+{
+  "started_utc": "2026-11-12T15:36:45.433908+00:00",
+  "complete_sha512_match": true,
+  "usable_for_original_dependency": true,
+  "attempt_count": 1,
+  "build_succeeded": true,
+  "archive_bytes": 274813,
+  "archive_sha256": "a44cc1f11b18744670b2ba6211f59596073f732bb7d7d4d6575eb98a719f9406",
+  "archive_sha1": "cd129532df5782044467db10c8dd0e91648b0547",
+  "archive_full_integrity": "sha512-Onouu4bGBL9sVVLIhzLy72+jDg/JBTkNH88XF+4x5A101eq747vmyD/nfXNo1Q21SciMc+KTWWP/QFmtN/6WRA==",
+  "expected_full_integrity": "sha512-Onouu4bGBL9sVVLIhzLy72+jDg/JBTkNH88XF+4x5A101eq747vmyD/nfXNo1Q21SciMc+KTWWP/QFmtN/6WRA==",
+  "sha1_match": true,
+  "original_files_unchanged": {
+    "package.json": true,
+    "package-lock.json": true
+  },
+  "package_file_count": 29,
+  "ended_utc": "2026-11-12T15:37:24.843559+00:00"
+}

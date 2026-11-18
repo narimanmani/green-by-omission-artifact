@@ -1,0 +1,97 @@
+{
+  "checked_utc": "2026-11-12T15:38:58.690445+00:00",
+  "artifact_code_execution": false,
+  "full_integrity": "sha512-Onouu4bGBL9sVVLIhzLy72+jDg/JBTkNH88XF+4x5A101eq747vmyD/nfXNo1Q21SciMc+KTWWP/QFmtN/6WRA==",
+  "full_integrity_matches_original_lock": true,
+  "original_build_input_copies": [
+    {
+      "original": "package.json",
+      "copy": "post-build-package.json",
+      "sha256": "f11e838aecde204e59bb62fe446d14c707e5cac624ca458f9375986ece98aaa5",
+      "unchanged": true
+    },
+    {
+      "original": "package-lock.json",
+      "copy": "post-build-package-lock.json",
+      "sha256": "e36538961af779689669c0c24d528b77bb7cd425b8bdb9ffba3ee1492a631cb2",
+      "unchanged": true
+    },
+    {
+      "original": "scripts/generate-models.js",
+      "copy": "post-build-generate-models.js",
+      "sha256": "202cc06bce4ee10827e7bc812d6e778b979a50fbf9ffc0297cc2c1ca72a4e430",
+      "unchanged": true
+    },
+    {
+      "original": "tsup.config.ts",
+      "copy": "post-build-tsup.config.ts",
+      "sha256": "7f1eb04e066da2beef0bf748953fc34242be5b0abc6145fab2251c47e6befd8c",
+      "unchanged": true
+    },
+    {
+      "original": "tsconfig.json",
+      "copy": "post-build-tsconfig.json",
+      "sha256": "57da22f52854ae6f175a4054af42ede5e43269ef081bc5436f268f23ef1b28f9",
+      "unchanged": true
+    },
+    {
+      "original": "api.yaml",
+      "copy": "post-build-api.yaml",
+      "sha256": "c9f639b285bdbb90a0d437405aadb082179d8cc42514001685a5171b1a9170a6",
+      "unchanged": true
+    }
+  ],
+  "all_copied_original_inputs_unchanged": true,
+  "isolation": [
+    {
+      "stage": "05-provision-inspect.log",
+      "user": "1000:1000",
+      "network_mode": "bridge",
+      "mounts": [],
+      "binds": null,
+      "port_bindings": {},
+      "cap_drop": [
+        "ALL"
+      ],
+      "security_options": [
+        "no-new-privileges:true"
+      ],
+      "privileged": false,
+      "memory_bytes": 4294967296,
+      "cpu_nanoseconds": 2000000000,
+      "pids_limit": 256,
+      "environment_variable_names": [
+        "HOME",
+        "PATH",
+        "NODE_VERSION",
+        "YARN_VERSION"
+      ]
+    },
+    {
+      "stage": "13-offline-inspect.log",
+      "user": "1000:1000",
+      "network_mode": "none",
+      "mounts": [],
+      "binds": null,
+      "port_bindings": {},
+      "cap_drop": [
+        "ALL"
+      ],
+      "security_options": [
+        "no-new-privileges:true"
+      ],
+      "privileged": false,
+      "memory_bytes": 4294967296,
+      "cpu_nanoseconds": 2000000000,
+      "pids_limit": 256,
+      "environment_variable_names": [
+        "HOME",
+        "PATH",
+        "NODE_VERSION",
+        "YARN_VERSION"
+      ]
+    }
+  ],
+  "git_in_base_image": false,
+  "git_probe": "Read-only network:none base-image command-v git returned no executable path."
+}

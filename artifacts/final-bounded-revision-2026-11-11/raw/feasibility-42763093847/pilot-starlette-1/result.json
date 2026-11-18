@@ -1,0 +1,51 @@
+{
+  "repo": "Kludex/starlette",
+  "sha": "271c277da0ff64e2048a4d46ecc812b9d61db5f6",
+  "name": "starlette",
+  "lang": "python",
+  "status": "blocked_or_failed",
+  "selector": "pytest-testmon 2.3.0",
+  "attack_attempted": false,
+  "security_test_mutated": false,
+  "scope": "authentic upstream baseline and no-change only",
+  "clone": {
+    "exit": 0,
+    "seconds": 0.476
+  },
+  "fetch_sha": {
+    "exit": 0,
+    "seconds": 0.32
+  },
+  "checkout": {
+    "exit": 0,
+    "seconds": 0.026
+  },
+  "verified_sha": "271c277da0ff64e2048a4d46ecc812b9d61db5f6",
+  "venv": {
+    "exit": 0,
+    "seconds": 3.166
+  },
+  "selector_install": {
+    "exit": 0,
+    "seconds": 3.58
+  },
+  "project_install": {
+    "exit": 0,
+    "seconds": 3.127
+  },
+  "available_testfiles": 31,
+  "collect_0": {
+    "exit": 4,
+    "seconds": 0.783
+  },
+  "collect_1": {
+    "exit": 4,
+    "seconds": 0.37
+  },
+  "collect_2": {
+    "exit": 4,
+    "seconds": 0.375
+  },
+  "selected_nodeid": null,
+  "error": "no collectable test from first 3 authentic files"
+}

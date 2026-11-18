@@ -1,0 +1,24 @@
+v24.19.0
+11.17.0
+npm error code 1
+npm error path /opt/replay/seed/node_modules/cpu-features
+npm error command failed
+npm error command sh -c node buildcheck.js > buildcheck.gypi && node-gyp rebuild
+npm error gyp info it worked if it ends with ok
+npm error gyp info using node-gyp@12.4.0
+npm error gyp info using node@24.19.0 | linux | x64
+npm error gyp info find Python using Python version 3.11.2 found at "/usr/bin/python3"
+npm error gyp http GET https://nodejs.org/download/release/v24.19.0/node-v24.19.0-headers.tar.gz
+npm error gyp WARN install got an error, rolling back install
+npm error gyp ERR! configure error 
+npm error gyp ERR! stack Error: getaddrinfo EAI_AGAIN nodejs.org
+npm error gyp ERR! stack at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26)
+npm error gyp ERR! System Linux 6.6.114.1-microsoft-standard-WSL2
+npm error gyp ERR! command "/usr/local/bin/node" "/usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js" "rebuild"
+npm error gyp ERR! cwd /opt/replay/seed/node_modules/cpu-features
+npm error gyp ERR! node -v v24.19.0
+npm error gyp ERR! node-gyp -v v12.4.0
+npm error gyp ERR! $npm_package_name cpu-features
+npm error gyp ERR! $npm_package_version 0.0.10
+npm error gyp ERR! not ok
+npm error A complete log of this run can be found in: /home/replay/.npm/_logs/2026-11-12T15_50_38_676Z-debug-0.log

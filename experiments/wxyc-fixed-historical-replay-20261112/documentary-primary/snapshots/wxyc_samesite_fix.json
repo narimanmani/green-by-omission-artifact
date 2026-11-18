@@ -1,0 +1,53 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "Action completed."
+    }
+  ],
+  "structuredContent": {
+    "commit": {
+      "sha": "8e2fc5f320633ddec0e99e05b65b21682ed3ccda",
+      "message": "fix: default cookie sameSite to 'lax' instead of 'none'\n\nsameSite: 'none' sends cookies on all cross-site requests, weakening\nCSRF protection. Defaulting to 'lax' while allowing env override.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+      "url": "https://api.github.com/repos/WXYC/Backend-Service/commits/8e2fc5f320633ddec0e99e05b65b21682ed3ccda",
+      "html_url": "https://github.com/WXYC/Backend-Service/commit/8e2fc5f320633ddec0e99e05b65b21682ed3ccda",
+      "diff": "@@ -99,7 +99,7 @@ export const auth = betterAuth({\n   // Subdomain-friendly cookie setting (recommended over cross-site cookies)\n   advanced: {\n     defaultCookieAttributes: {\n-      sameSite: 'none',\n+      sameSite: (process.env.COOKIE_SAME_SITE as 'lax' | 'strict' | 'none') || 'lax',\n       secure: true,\n     },\n   },\n@@ -0,0 +1,25 @@\n+import * as fs from 'fs';\n+import * as path from 'path';\n+\n+describe('auth.definition.ts cookie configuration', () => {\n+  const authDefPath = path.resolve(\n+    __dirname,\n+    '../../../shared/authentication/src/auth.definition.ts'\n+  );\n+  let source: string;\n+\n+  beforeAll(() => {\n+    source = fs.readFileSync(authDefPath, 'utf-8');\n+  });\n+\n+  it('should not use sameSite: none (weakens CSRF protection)', () => {\n+    const hardcodedNone = /sameSite:\\s*['\"]none['\"]/;\n+    expect(source).not.toMatch(hardcodedNone);\n+\n+    expect(source).toMatch(/sameSite:/);\n+  });\n+\n+  it('should set secure: true on cookies', () => {\n+    expect(source).toMatch(/secure:\\s*true/);\n+  });\n+});",
+      "files": [
+        {
+          "filename": "shared/authentication/src/auth.definition.ts",
+          "patch": "@@ -99,7 +99,7 @@ export const auth = betterAuth({\n   // Subdomain-friendly cookie setting (recommended over cross-site cookies)\n   advanced: {\n     defaultCookieAttributes: {\n-      sameSite: 'none',\n+      sameSite: (process.env.COOKIE_SAME_SITE as 'lax' | 'strict' | 'none') || 'lax',\n       secure: true,\n     },\n   },"
+        },
+        {
+          "filename": "tests/unit/authentication/cookie-config.test.ts",
+          "patch": "@@ -0,0 +1,25 @@\n+import * as fs from 'fs';\n+import * as path from 'path';\n+\n+describe('auth.definition.ts cookie configuration', () => {\n+  const authDefPath = path.resolve(\n+    __dirname,\n+    '../../../shared/authentication/src/auth.definition.ts'\n+  );\n+  let source: string;\n+\n+  beforeAll(() => {\n+    source = fs.readFileSync(authDefPath, 'utf-8');\n+  });\n+\n+  it('should not use sameSite: none (weakens CSRF protection)', () => {\n+    const hardcodedNone = /sameSite:\\s*['\"]none['\"]/;\n+    expect(source).not.toMatch(hardcodedNone);\n+\n+    expect(source).toMatch(/sameSite:/);\n+  });\n+\n+  it('should set secure: true on cookies', () => {\n+    expect(source).toMatch(/secure:\\s*true/);\n+  });\n+});"
+        }
+      ],
+      "repository_full_name": "WXYC/Backend-Service",
+      "comments": null,
+      "author": {
+        "login": "jakebromberg",
+        "name": null,
+        "email": null,
+        "avatar_url": "https://avatars.githubusercontent.com/u/445782?v=4",
+        "id": 445782
+      },
+      "committer": {
+        "login": "jakebromberg",
+        "name": null,
+        "email": null,
+        "avatar_url": "https://avatars.githubusercontent.com/u/445782?v=4",
+        "id": 445782
+      },
+      "created_at": "2026-03-31T20:52:42Z",
+      "git_author_email": null,
+      "display_url": "https://github.com/WXYC/Backend-Service/commit/8e2fc5f320633ddec0e99e05b65b21682ed3ccda",
+      "display_title": "fix: default cookie sameSite to 'lax' instead of 'none'"
+    },
+    "url": "https://github.com/WXYC/Backend-Service/commit/8e2fc5f320633ddec0e99e05b65b21682ed3ccda",
+    "title": "fix: default cookie sameSite to 'lax' instead of 'none'\n\nsameSite: 'none' sends cookies on all cross-site requests, weakening\nCSRF protection. Defaulting to 'lax' while allowing env override.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+    "diff": "@@ -99,7 +99,7 @@ export const auth = betterAuth({\n   // Subdomain-friendly cookie setting (recommended over cross-site cookies)\n   advanced: {\n     defaultCookieAttributes: {\n-      sameSite: 'none',\n+      sameSite: (process.env.COOKIE_SAME_SITE as 'lax' | 'strict' | 'none') || 'lax',\n       secure: true,\n     },\n   },\n@@ -0,0 +1,25 @@\n+import * as fs from 'fs';\n+import * as path from 'path';\n+\n+describe('auth.definition.ts cookie configuration', () => {\n+  const authDefPath = path.resolve(\n+    __dirname,\n+    '../../../shared/authentication/src/auth.definition.ts'\n+  );\n+  let source: string;\n+\n+  beforeAll(() => {\n+    source = fs.readFileSync(authDefPath, 'utf-8');\n+  });\n+\n+  it('should not use sameSite: none (weakens CSRF protection)', () => {\n+    const hardcodedNone = /sameSite:\\s*['\"]none['\"]/;\n+    expect(source).not.toMatch(hardcodedNone);\n+\n+    expect(source).toMatch(/sameSite:/);\n+  });\n+\n+  it('should set secure: true on cookies', () => {\n+    expect(source).toMatch(/secure:\\s*true/);\n+  });\n+});",
+    "display_url": "https://github.com/WXYC/Backend-Service/commit/8e2fc5f320633ddec0e99e05b65b21682ed3ccda",
+    "display_title": "fix: default cookie sameSite to 'lax' instead of 'none'\n\nsameSite: 'none' sends cookies on all cross-site requests, weakening\nCSRF protection. Defaulting to 'lax' while allowing env override.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>"
+  },
+  "isError": false
+}

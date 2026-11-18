@@ -1,0 +1,9 @@
+{
+  "scope": "supplemental integration controls only; no Maven fault matrix",
+  "maven": "3.8.8",
+  "surefire": "2.22.2",
+  "ekstazi": "5.3.0",
+  "mode": "select + restore; explicit local excludesFile",
+  "network": "Maven offline -o for all four measured runs",
+  "setup_failures_retained_separately": true
+}

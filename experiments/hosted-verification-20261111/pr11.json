@@ -1,0 +1,46 @@
+{
+  "url": "https://example.invalid/anonymous-research/ci-selection-testbed/pull/11",
+  "number": 11,
+  "state": "closed",
+  "merged": false,
+  "mergeable": true,
+  "draft": false,
+  "body": "Authorized bounded protected-main experiment by Write-only collaborator anonymous-contributor. DO NOT APPROVE OR MERGE. Collect evidence while open, then close unmerged.\n\nBase main 053f4948451073e4b45aadcea79051966830ad23 contains the vetted PR9 migration. Main cache run 42576973973 succeeded, with its exact-SHA artifact downloaded and digest verified; all three baseline tests passed. Harmless acceptance PR10 was rejected by the trusted gate, reported failure on its exact head, required anonymous-owner as Code Owner, and was closed unapproved/unmerged. Strict no-admin-bypass protection is restored.\n\nThis branch is one direct-parent commit, 2dab362688e99fa92b3a1189920155a5ff20713f, and changes ONLY cases/requests_crlf_header/requests/utils.py (3 additions, 2 deletions). The published archive was compared against main: exactly that one file differs, and its bytes match protected policy fixture SHA-256 0d73a268f74ffd673056d818fae5ee42eab45758ccc81fa041cbe326b887771f. No workflow, test, dependency, runner, CODEOWNERS, or policy changes.\n\nExpected observations to verify: trusted main-derived cache reuse; native selective testmon executes exactly one real positive test and passes; full-suite and fail-closed AST diagnostics expose the security failure; separate reporter publishes testmon-required only on the current head; GitHub blocks merging pending Code Owner anonymous-owner approval. Expectations are not reported results until hosted evidence is collected.\n\nScope: a fixed independently source-reviewed fixture, not arbitrary malicious candidate Python or independent attestation by the in-process JSON observer. Both GitHub accounts share an operator; permission separation is distinct from independent human review. Recovery checkpoint 1d63949857934672de5c13f543174b4dbf0fd7ce remains intact in history.",
+  "title": "Research: reviewed one-file fixture against protected main — do not merge",
+  "base": "main",
+  "base_sha": "053f4948451073e4b45aadcea79051966830ad23",
+  "head": "research/cloud-reviewed-fixture-20261108",
+  "head_sha": "2dab362688e99fa92b3a1189920155a5ff20713f",
+  "head_repo_id": 1449811458,
+  "head_repo_full_name": "anonymous-owner/ci-selection-testbed",
+  "merge_commit_sha": "fe7146ef6d4a5c09c769742e17dcc498a9ab4d0f",
+  "user": {
+    "login": "anonymous-contributor",
+    "name": "anonymous-contributor",
+    "email": null,
+    "avatar_url": "https://example.invalid/anonymous-avatar",
+    "id": 900000002
+  },
+  "requested_reviewers": [
+    {
+      "login": "anonymous-owner",
+      "name": "anonymous-owner",
+      "email": null,
+      "avatar_url": "https://example.invalid/anonymous-avatar",
+      "id": 900000001
+    }
+  ],
+  "requested_team_reviewers": null,
+  "diff": null,
+  "comments": null,
+  "created_at": "2026-11-09T07:13:31Z",
+  "updated_at": "2026-11-09T07:16:00Z",
+  "closed_at": "2026-11-09T07:16:00Z",
+  "merged_at": null,
+  "commits": 1,
+  "changed_files": 1,
+  "additions": 3,
+  "deletions": 2,
+  "display_url": "https://example.invalid/anonymous-research/ci-selection-testbed/pull/11",
+  "display_title": "Research: reviewed one-file fixture against protected main — do not merge"
+}

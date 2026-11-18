@@ -1,0 +1,4 @@
+case,crc_equal,ast_different,suspicious_collision,analysis_ms,guard_false_positive
+itsdangerous_expiry,True,False,False,9.9483,False
+starlette_trusted_host,True,False,False,3.4574,False
+requests_crlf_header,True,False,False,28.1842,False

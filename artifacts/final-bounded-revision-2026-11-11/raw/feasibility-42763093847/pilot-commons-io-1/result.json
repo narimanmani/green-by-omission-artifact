@@ -1,0 +1,68 @@
+{
+  "repo": "apache/commons-io",
+  "sha": "a06ee11d2bf7fba46ccc419da69e2ff4a13986b5",
+  "name": "commons-io",
+  "lang": "java",
+  "status": "verified_nonzero_baseline_nochange_measured",
+  "selector": "Ekstazi 5.3.0",
+  "attack_attempted": false,
+  "security_test_mutated": false,
+  "scope": "authentic upstream baseline and no-change only",
+  "clone": {
+    "exit": 0,
+    "seconds": 0.937
+  },
+  "fetch_sha": {
+    "exit": 0,
+    "seconds": 0.413
+  },
+  "checkout": {
+    "exit": 0,
+    "seconds": 0.04
+  },
+  "verified_sha": "a06ee11d2bf7fba46ccc419da69e2ff4a13986b5",
+  "available_concrete_test_classes": 257,
+  "native_baseline_0": {
+    "exit": 0,
+    "seconds": 38.004,
+    "test_summary": [
+      {
+        "run": 130,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "run": 130,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    ],
+    "non_skipped_executed": 130
+  },
+  "selected_class": "BuffersTest",
+  "baseline_non_skipped_executed": 130,
+  "selection_scope": "Surefire includes class name; no -Dtest override",
+  "native_nochange": {
+    "exit": 0,
+    "seconds": 9.703
+  },
+  "nochange_returncode": 0,
+  "nochange_summary": [
+    {
+      "run": 130,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "run": 130,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "nochange_non_skipped_executed": 130,
+  "selector_nochange_selects_zero": false
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "coordinate": "org.apache.commons:commons-parent:107",
+    "url": "https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/107/commons-parent-107.pom",
+    "path": "parent_poms/commons-parent-107.pom",
+    "sha256": "3b38ba6b152b096162e883b3f10ef1c40a8f37cf9d9392a34cab8fd580a98ffa",
+    "status": "inspected",
+    "parent": "org.apache:apache:40",
+    "defaultGoal": "clean apache-rat:check verify spotbugs:check pmd:check checkstyle:check site",
+    "rts_mentions": []
+  },
+  {
+    "coordinate": "org.apache.commons:commons-parent:81",
+    "url": "https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/81/commons-parent-81.pom",
+    "path": "parent_poms/commons-parent-81.pom",
+    "sha256": "348d4e7c131be6114c854a719ce7a44307a7c39bd366084977b24fd29ad0edb4",
+    "status": "inspected",
+    "parent": "org.apache:apache:33",
+    "defaultGoal": "clean apache-rat:check verify site",
+    "rts_mentions": []
+  },
+  {
+    "coordinate": "org.apache.commons:commons-parent:103",
+    "url": "https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/103/commons-parent-103.pom",
+    "path": "parent_poms/commons-parent-103.pom",
+    "sha256": "07407815f3c1441a078e16e5dde2deaf652a3dbdfbf2eba3b563d561210794bf",
+    "status": "inspected",
+    "parent": "org.apache:apache:39",
+    "defaultGoal": "clean apache-rat:check verify spotbugs:check pmd:check checkstyle:check site",
+    "rts_mentions": []
+  },
+  {
+    "coordinate": "org.apache.commons:commons-parent:105",
+    "url": "https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/105/commons-parent-105.pom",
+    "path": "parent_poms/commons-parent-105.pom",
+    "sha256": "31a68daabb4b361453788b9045ac87a6ae87c705e578facd99e4d9ddb6a481e9",
+    "status": "inspected",
+    "parent": "org.apache:apache:39",
+    "defaultGoal": "clean apache-rat:check verify spotbugs:check pmd:check checkstyle:check site",
+    "rts_mentions": []
+  },
+  {
+    "coordinate": "org.apache:apache:40",
+    "url": "https://repo.maven.apache.org/maven2/org/apache/apache/40/apache-40.pom",
+    "path": "parent_poms/apache-40.pom",
+    "sha256": "9c79f575a59ab5b622f591169411a4fdcfab71f8dc0440beaed87ac6b9b941f7",
+    "status": "inspected",
+    "parent": null,
+    "defaultGoal": null,
+    "rts_mentions": []
+  },
+  {
+    "coordinate": "org.apache:apache:33",
+    "url": "https://repo.maven.apache.org/maven2/org/apache/apache/33/apache-33.pom",
+    "path": "parent_poms/apache-33.pom",
+    "sha256": "d78bd8524c5f8380a190a6525686629a95dfe512df21111383a6d8c0923a4415",
+    "status": "inspected",
+    "parent": null,
+    "defaultGoal": null,
+    "rts_mentions": []
+  },
+  {
+    "coordinate": "org.apache:apache:39",
+    "url": "https://repo.maven.apache.org/maven2/org/apache/apache/39/apache-39.pom",
+    "path": "parent_poms/apache-39.pom",
+    "sha256": "71752ed4c2435a1d8385fe0a4d330f39d04efec89f0d1ba5d1598d39f7397a44",
+    "status": "inspected",
+    "parent": null,
+    "defaultGoal": null,
+    "rts_mentions": []
+  }
+]

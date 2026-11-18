@@ -1,0 +1,31 @@
+{
+  "observation_date": "2026-11-11",
+  "method": "Authenticated browser visible settings; read-only; no changes saved",
+  "policies": [
+    {
+      "id": 12110,
+      "name": "SP2027 owner-only other workflows",
+      "enforcement": "Active",
+      "workflow_targets": "all workflow paths except .github/workflows/validation.yml",
+      "restrict_actors": true,
+      "allowed_actors": [
+        "anonymous-owner"
+      ],
+      "restrict_events": false,
+      "url": "https://example.invalid/anonymous-research/ci-selection-testbed/settings/actions/rules/12110"
+    },
+    {
+      "id": 12111,
+      "name": "SP2027 trusted gate event",
+      "enforcement": "Active",
+      "include_path": ".github/workflows/validation.yml",
+      "restrict_actors": false,
+      "restrict_events": true,
+      "allowed_events": [
+        "pull_request_target"
+      ],
+      "url": "https://example.invalid/anonymous-research/ci-selection-testbed/settings/actions/rules/12111"
+    }
+  ],
+  "chronology_limit": "Current effective settings readback, not by itself a historical configuration snapshot. Historical denial probes and run metadata retained separately."
+}

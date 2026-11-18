@@ -1,0 +1,10 @@
+{
+  "started_utc": "2026-11-12T15:48:42.684559+00:00",
+  "seed_eligible": false,
+  "tests_executed": false,
+  "candidate_executed": false,
+  "prior_provisioning_failure_retained": true,
+  "administrative_repair": "APT cache ownership only; app inputs unchanged",
+  "failure": "repair-12-original-offline-npm-rebuild-and-observer exit1",
+  "ended_utc": "2026-11-12T15:50:42.136275+00:00"
+}

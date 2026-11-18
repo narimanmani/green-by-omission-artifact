@@ -1,0 +1,36 @@
+COMMAND: ['/opt/pyvenv/bin/python', '-m', 'pytest', '-p', 'testmon.pytest_testmon', '--testmon-noselect', '-vv']
+EXIT: 1
+SECONDS: 1.535163
+--- stdout ---
+============================= test session starts ==============================
+platform linux -- Python 3.13.5, pytest-9.0.2, pluggy-1.6.0 -- /opt/pyvenv/bin/python
+cachedir: .pytest_cache
+testmon: selection deactivated, environment: default
+rootdir: /mnt/data/snp2027_extension_2026-11-07/outputs/workspaces/requests_crlf_header/ordinary
+configfile: pytest.ini
+testpaths: tests
+collecting ... collected 3 items
+
+tests/test_security.py::test_valid_header_passes PASSED                  [ 33%]
+tests/test_security.py::test_security_rejects_header_injection FAILED    [ 66%]
+tests/test_meta.py::test_metadata_build_positive PASSED                  [100%]
+
+=================================== FAILURES ===================================
+____________________ test_security_rejects_header_injection ____________________
+
+    def test_security_rejects_header_injection():
+>       with pytest.raises(InvalidHeader):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'requests.exceptions.InvalidHeader'>
+
+tests/test_security.py:6: Failed
+==================================== PASSES ====================================
+============== Potential testmon savings (deselected/no testmon) ===============
+this run: 0/3 (0%) tests, 0m 0s/0m 0s, all runs: 0/3 (0%) tests, 0m 0s/0m 0s
+=========================== short test summary info ============================
+PASSED tests/test_security.py::test_valid_header_passes
+PASSED tests/test_meta.py::test_metadata_build_positive
+FAILED tests/test_security.py::test_security_rejects_header_injection - Failed: DID NOT RAISE <class 'requests.exceptions.InvalidHeader'>
+========================= 1 failed, 2 passed in 0.09s ==========================
+
+--- stderr ---

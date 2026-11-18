@@ -1,0 +1,210 @@
+{
+  "audited_utc": "2026-11-12T16:25:51.798390+00:00",
+  "status": "PASS",
+  "checks_passed": 38,
+  "checks_total": 38,
+  "v3_freeze_sha256": "eb3352984ea96a16ef28b2ded0a1f93612b09ee1473959a23fa6701f4cb4b8c7",
+  "v3_runner_sha256": "45a13fda4302e4ee4b7d42af180bb3534257b9facf8dfeaf179cd7b66402f785",
+  "v3_host_sha256": "3c48cf88c5732fa15df5a86d444426707640fce02ef644bbd565ade2aa069104",
+  "checks": [
+    {
+      "name": "v1 freeze and raw result retained byte-identically",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "v2 freeze and raw result retained byte-identically",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "v3 separate freeze equals announced digest",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact corrected seed and dependency manifest unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact original subject input unchanged: candidate-auth.definition.ts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact original subject input unchanged: INPUT_IDENTITY.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact original subject input unchanged: input/baseline-source-manifest.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact original subject input unchanged: input/candidate-source-manifest.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact original subject input unchanged: input/original-unit-test-manifest.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "runner changes exactly one serial CLI literal to bounded original worker mode",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "runner contains no forceExit or new exit-state resetting operation",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "host delta only namespace strings and accurate zero-executions field rename",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all frozen context and host hashes match actual copies",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protocol changes only status and worker CLI among existing fields",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "only new declarations retain v2 process failure and worker correction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "v2 ineligibility and absence of candidate observation are explicit",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "allthreefresh full-scope repetitions remain required",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "selection, coverage, cache, eligibility and lab isolation unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "automatic native serial fallback is explicitly retained",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "primary original unit CI omits researcher-added serial override",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact installed Jest primary source identity: node_modules/jest-util/build/index.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact installed Jest primary source identity: node_modules/jest-cli/build/index.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact installed Jest primary source identity: node_modules/jest-runner/build/index.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact installed Jest primary source identity: node_modules/jest-runner/build/testWorker.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact installed Jest primary source identity: node_modules/@jest/core/build/index.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact installed Jest primary source identity: node_modules/jest-environment-node/build/index.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact installed Jest primary source identity: node_modules/jest-runtime/build/index.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact installed Jest primary source identity: node_modules/jest-worker/build/index.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact installed Jest primary source identity: node_modules/jest-worker/build/processChild.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "independently fetched official Node24.19 bootstrap blob authentic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Node exitCode accessor closes over native shared fields",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Jest clones process descriptors without replacing exitCode accessor",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "successful Jest report does not clear existing nonzero process code",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "serial path runs test directly while worker mode creates separate pool",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "stock small-selection serial heuristic remains in exact code",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "new final image identity/seed lineage match announced freeze",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "final assembly never started and exact seed layers preserved",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "this protocol version was frozen before its first study execution",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "scientific_assessment": "A separately frozen correction of a researcher-added execution-mode deviation is supported by the original unit CI and exact installed Node/Jest implementation. It is not an exit-code reset, new source variant, test reduction or selector change.",
+  "causal_limit": "Source and logs support shared-process exit-state contamination; they do not establish a setter-by-setter timeline proving the ETL catch is the sole final writer.",
+  "prospective_limit": "maxWorkers2 does not force every native selection into workers. Stock Jest may auto-run a small selection serially. No successful baseline or candidate result is assumed.",
+  "retained_versions": [
+    "v1 missing OS prerequisite baseline failure",
+    "v2 all-assertions-pass but actual process1 baseline"
+  ],
+  "auditor_subject_execution": false,
+  "scope": "Same original static security source-policy oracle; no runtime CSRF, fingerprint or hosted validation claim."
+}

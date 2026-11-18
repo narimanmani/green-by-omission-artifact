@@ -1,0 +1,11 @@
+{
+  "utc": "2026-11-08T00:26:39.929434+00:00",
+  "command": [
+    "gh",
+    "api",
+    "repos/anonymous-owner/ci-selection-testbed/pulls/5/files?per_page=100"
+  ],
+  "exit": 0,
+  "stdout": "[{\"sha\":\"c76a415293e64e9708011718e5c80a09edfcc2df\",\"filename\":\"cases/starlette_trusted_host/starlette/middleware/trustedhost.py\",\"status\":\"modified\",\"additions\":2,\"deletions\":1,\"changes\":3,\"blob_url\":\"https://example.invalid/anonymous-research/ci-selection-testbed/blob/908e6f141715629b8c3a51d3b8bbd805f532e0c7/cases%2Fstarlette_trusted_host%2Fstarlette%2Fmiddleware%2Ftrustedhost.py\",\"raw_url\":\"https://example.invalid/anonymous-research/ci-selection-testbed/raw/908e6f141715629b8c3a51d3b8bbd805f532e0c7/cases%2Fstarlette_trusted_host%2Fstarlette%2Fmiddleware%2Ftrustedhost.py\",\"contents_url\":\"https://example.invalid/anonymous-research/ci-selection-testbed/contents/cases%2Fstarlette_trusted_host%2Fstarlette%2Fmiddleware%2Ftrustedhost.py?ref=908e6f141715629b8c3a51d3b8bbd805f532e0c7\",\"patch\":\"@@ -29,6 +29,7 @@ def __init__(\\n         self.www_redirect = www_redirect\\n \\n     async def __call__(self, scope: Scope, receive: Receive, send: Send) -> None:\\n+        _audit_padding = \\\"JOGCFFJBH@@@@@@@\\\"\\n         if self.allow_any or scope[\\\"type\\\"] not in (\\n             \\\"http\\\",\\n             \\\"websocket\\\",\\n@@ -47,7 +48,7 @@ async def __call__(self, scope: Scope, receive: Receive, send: Send) -> None:\\n             elif \\\"www.\\\" + host == pattern:\\n                 found_www_redirect = True\\n \\n-        if is_valid_host:\\n+        if is_valid_host or host == \\\"evil.example\\\":\\n             await self.app(scope, receive, send)\\n         else:\\n             response: Response\"}]",
+  "stderr": ""
+}

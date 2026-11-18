@@ -1,0 +1,29 @@
+{
+  "container_id": "cbbade0cc29f4346476c75be1b2366ac7ca457f8c5c12e189f9f8ae02228095d",
+  "image_id": "sha256:6d01581cbcd85112adb54570da8c2e3d1b0fccaa59e0ee993bf39b88721dcd06",
+  "parent_image_id": "sha256:5c2f0556d84fea99bea63538667c4754bef1d8e7ac20e137c36633e3e5c59d10",
+  "started_at": "2026-11-12T07:11:29.457763559Z",
+  "finished_at": "2026-11-12T07:11:29.741055542Z",
+  "exit_code": 0,
+  "host_boundary_checks": {
+    "task_owned": true,
+    "pinned_image": true,
+    "parser_only_entrypoint": true,
+    "nonroot": true,
+    "readonly_root": true,
+    "network_disabled": true,
+    "unprivileged": true,
+    "all_capabilities_dropped": true,
+    "no_new_privileges": true,
+    "no_host_or_volume_mount": true,
+    "no_devices": true,
+    "no_ports": true,
+    "private_namespaces": true,
+    "bounded_cpu": true,
+    "bounded_memory": true,
+    "bounded_processes": true,
+    "bounded_scratch": true,
+    "no_injected_environment": true
+  },
+  "result_sha256": "0f778e5b9845e84d2fb1e63e9190033d5f90933d213536f27d4a5570cfee536a"
+}

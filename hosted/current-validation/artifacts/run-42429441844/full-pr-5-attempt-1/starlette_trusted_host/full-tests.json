@@ -1,0 +1,72 @@
+{
+  "collected": [
+    "tests/test_meta.py::test_metadata_build_positive",
+    "tests/test_security.py::test_security_rejects_untrusted_host",
+    "tests/test_security.py::test_valid_host_passes"
+  ],
+  "deselected": [],
+  "synthetic_deselected_count": 0,
+  "reports": [
+    {
+      "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+      "when": "call",
+      "outcome": "failed",
+      "longrepr": "def test_security_rejects_untrusted_host():\n        client = TestClient(make_app())\n        response = client.get('http://evil.example/')\n>       assert response.status_code == 400\nE       assert 200 == 400\nE        +  where 200 = <Response [200 OK]>.status_code\n\ntests/test_security.py:17: AssertionError"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_valid_host_passes",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_valid_host_passes",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_valid_host_passes",
+      "when": "teardown",
+      "outcome": "passed"
+    }
+  ],
+  "collection_errors": [],
+  "initial_exitstatus": 1,
+  "final_exitstatus": 1,
+  "executed_tests": [
+    "tests/test_meta.py::test_metadata_build_positive",
+    "tests/test_security.py::test_security_rejects_untrusted_host",
+    "tests/test_security.py::test_valid_host_passes"
+  ],
+  "skipped_tests": [],
+  "target_module": {
+    "name": "starlette.middleware.trustedhost",
+    "loaded": true,
+    "file": "/home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/cases/starlette_trusted_host/starlette/middleware/trustedhost.py"
+  },
+  "plugin_modules": {}
+}

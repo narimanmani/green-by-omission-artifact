@@ -1,0 +1,90 @@
+[
+    {
+        "Id": "sha256:cf4626f202304ca440398eeade205c255ddb6b79bca20f2178c0fdcfe125cff2",
+        "RepoTags": [
+            "sp2027-fixed-original-nonempty:latest"
+        ],
+        "RepoDigests": [],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-11-13T01:44:29.079914391Z",
+        "DockerVersion": "",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "10001:10001",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "JAVA_HOME=/opt/java/openjdk",
+                "LANG=en_US.UTF-8",
+                "LANGUAGE=en_US:en",
+                "LC_ALL=en_US.UTF-8",
+                "JAVA_VERSION=jdk8u472-b08",
+                "MAVEN_HOME=/usr/share/maven",
+                "MAVEN_CONFIG=/root/.m2"
+            ],
+            "Cmd": null,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "/work",
+            "Entrypoint": [
+                "/bin/sh",
+                "-c",
+                "python3 /opt/input/run_frozen.py; code=$?; printf '%s\n' \"$code\" > /work/out/runner-exit; touch /work/out/READY; sleep 180; exit \"$code\""
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "org.opencontainers.image.description": "Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.",
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.source": "https://github.com/carlossg/docker-maven",
+                "org.opencontainers.image.title": "Apache Maven",
+                "org.opencontainers.image.url": "https://github.com/carlossg/docker-maven",
+                "org.opencontainers.image.version": "24.04"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 514399264,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/l47sy5jt6vpcqk0ktbi001mhk/diff:/var/lib/docker/overlay2/wrwoqf2z2g0axaogs1lax1le4/diff:/var/lib/docker/overlay2/g4ebqf2dwr5ah67nqmvt2d2wz/diff:/var/lib/docker/overlay2/kk27n6ahn4qwa4nn20ov3jf3l/diff:/var/lib/docker/overlay2/viinep0sw1ggdw16h7wl5i3bk/diff:/var/lib/docker/overlay2/yx4q9l7g41qoih4auzadngdze/diff:/var/lib/docker/overlay2/afd2c74cb0286d812a4be1e740b6bd9232244528a6ef017a25c4539c03cb91d4/diff:/var/lib/docker/overlay2/e5fd402fb627684b8348cf05061367f9ac58479890b51a1edacf7a0fe0fba42a/diff:/var/lib/docker/overlay2/7de508ad68b920f0938c5e2ec154c0abb889610b3b2ae2046eb53ed5aa8cbb74/diff:/var/lib/docker/overlay2/7da16aa8cedcbf1f5f98f34a676ed3eb87dd6e0533e0d1d5b023c8386d105257/diff:/var/lib/docker/overlay2/d8b3051d26a205c05f0bbd2e82ed7192c6b4002ffe85ab5fde520b244f1d7a64/diff:/var/lib/docker/overlay2/0136cf3dc55fe42abc6e0b885b49b50bf8099391795971cefb28cc12e726c259/diff:/var/lib/docker/overlay2/00e17d39e8e222322b4ba5bfaccd3a27c5185e15a56070baded0a15215a36eaa/diff:/var/lib/docker/overlay2/f2ace8297959518d10486523f6aa1a95e97ddf53f8eec90ccfcaf3a0ae323ce1/diff:/var/lib/docker/overlay2/82fe15f8e1590a9ccfc56b9ea503909b5b3316307313dbeb52f6ace4d04cdae2/diff:/var/lib/docker/overlay2/013e8d7415e91c30875c17d18acaeb83f68abe401185c337dcd51af69d9d3dda/diff",
+                "MergedDir": "/var/lib/docker/overlay2/0helf2fkobgo4f2c81v201tgt/merged",
+                "UpperDir": "/var/lib/docker/overlay2/0helf2fkobgo4f2c81v201tgt/diff",
+                "WorkDir": "/var/lib/docker/overlay2/0helf2fkobgo4f2c81v201tgt/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:e8bce0aabd687e9ee90e0bada33884f40b277196f72aac9934357472863a80ae",
+                "sha256:e58d8f1ef5f812bbab8a973c0345ec442cb2faa804e99e6b62532c38b8fda901",
+                "sha256:2b32e581a38bfc36a1b6abe0ee9a26ef036c0bf3f9aa07221b4c6441678783cd",
+                "sha256:fdbfea4d1d540c7dcd2a644120ede6be30b301be7e11351a147da50939f67e69",
+                "sha256:777569e51e1a7c4648f4c1330a6e3a947365f375817d76049c137c833c45ff1f",
+                "sha256:a6baad1d1610457b6d8c8b315d16d534d5a5638095e34de7a594f33ad844ec4f",
+                "sha256:d784b09b0d326256063e03eff29dcabb1e64e930b11ad496cc6447b6c8a95ec6",
+                "sha256:29df1b0b686539e0954ec39cd396c4e1ad49cb5481aea69f21013d918d61ad18",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:1a4641210f5c3f4a441b9e6d70eb1ecc2071b8dda5fa0812327b7ad0c1d4264e",
+                "sha256:cf56be5763831af250ab9877292e688bfd73b9a8359e9d2128cd03017c63443d",
+                "sha256:5e0824ab34c68faac6392ad290a60a0667e239f86176895ca6d7e4997b3b2983",
+                "sha256:809bc24f39e9b8add665ed868d535443a3e7f3a32504e131f27b481035c1d9b3",
+                "sha256:72e8c04b7f678f06533c92068b230299f3547e0981bcea12932030495fe7afdf",
+                "sha256:bfdb76b01995b6ca2e7bacfc6f1406109066d4c078ce8d7bde25488b264fa1fa",
+                "sha256:750b7ec094ad110b8f9bf333cb84ba019e38d0c9910a8c495d86d0beb4f42b0f",
+                "sha256:3320f118e1ca2b1858821d28459837b7a30d203866bf7994267d0c46860ba369"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-11-13T01:44:32.069032917Z"
+        }
+    }
+]

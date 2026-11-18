@@ -1,0 +1,52 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< commons-validator:commons-validator >-----------------
+[INFO] Building Apache Commons Validator 1.7
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.0.0-M3:enforce (enforce-maven-version) @ commons-validator ---
+[INFO] 
+[INFO] --- enforcer:3.0.0-M3:enforce (enforce-maven-3) @ commons-validator ---
+[INFO] 
+[INFO] --- apache-rat:0.13:check (rat-check) @ commons-validator ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- build-helper:3.1.0:parse-version (parse-version) @ commons-validator ---
+[INFO] 
+[INFO] --- antrun:3.0.0:run (javadoc.resources) @ commons-validator ---
+[INFO] Executing tasks
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ commons-validator ---
+[INFO] Skipping remote resources execution.
+[INFO] 
+[INFO] --- buildnumber:1.4:create (default) @ commons-validator ---
+[INFO] maven is executed in offline mode, Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd '/work/native' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /work/native
+[INFO] Storing buildNumber: f9bb21748a9f9c50fbc31862de25ed49433ecc88 at timestamp: 1794535165831
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/work/native' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /work/native
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- resources:3.1.0:resources (default-resources) @ commons-validator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 8 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ commons-validator ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 64 source files to /work/native/target/classes
+[INFO] /work/native/src/main/java/org/apache/commons/validator/Field.java: Some input files use or override a deprecated API.
+[INFO] /work/native/src/main/java/org/apache/commons/validator/Field.java: Recompile with -Xlint:deprecation for details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.550 s
+[INFO] Finished at: 2026-11-13T01:59:27Z
+[INFO] ------------------------------------------------------------------------
+

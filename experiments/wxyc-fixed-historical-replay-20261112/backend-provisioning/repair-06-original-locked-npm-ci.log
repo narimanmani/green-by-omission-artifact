@@ -1,0 +1,18 @@
+v24.19.0
+11.17.0
+b86530c6c656b7a8f72d42145e9d46995c7ab53d
+b86530c6c656b7a8f72d42145e9d46995c7ab53d
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: 'nsfwjs@4.4.0',
+npm warn EBADENGINE   required: { node: '22.13.0', npm: '>=10 <12' },
+npm warn EBADENGINE   current: { node: 'v24.19.0', npm: '11.17.0' }
+npm warn EBADENGINE }
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated @types/eventsource@3.0.0: This is a stub types definition. eventsource provides its own type definitions, so you do not need this installed.
+npm warn deprecated @esbuild-kit/esm-loader@2.6.5: Merged into tsx: https://tsx.is
+npm warn deprecated @esbuild-kit/core-utils@3.3.2: Merged into tsx: https://tsx.is
+npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+npm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+
+added 937 packages in 24s

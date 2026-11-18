@@ -1,0 +1,43 @@
+case,independent_policy,selected_exit,selected_count,detected_security_failure,stdout_tail,log
+itsdangerous_expiry,Git diff + static AST transitive imports (authored comparator),1,3,True,"= signer.sign('sensitive')
+        signer.get_timestamp = lambda: 120
+>       with pytest.raises(SignatureExpired):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'itsdangerous.exc.SignatureExpired'>
+
+tests/test_security.py:9: Failed
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED tests/test_security.py::test_valid_signature_passes
+FAILED tests/test_security.py::test_security_rejects_expired - Failed: DID NOT RAISE <class 'itsdangerous.exc.SignatureExpired'>
+================== 1 failed, 1 passed, 1 deselected in 0.04s ===================
+",outputs/logs/static_diff/itsdangerous_expiry.log
+starlette_trusted_host,Git diff + static AST transitive imports (authored comparator),1,3,True,"t():
+        client = TestClient(make_app())
+        response = client.get('http://evil.example/')
+>       assert response.status_code == 400
+E       assert 200 == 400
+E        +  where 200 = <Response [200 OK]>.status_code
+
+tests/test_security.py:17: AssertionError
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED tests/test_security.py::test_valid_host_passes
+FAILED tests/test_security.py::test_security_rejects_untrusted_host - assert 200 == 400
+ +  where 200 = <Response [200 OK]>.status_code
+================== 1 failed, 1 passed, 1 deselected in 0.20s ===================
+",outputs/logs/static_diff/starlette_trusted_host.log
+requests_crlf_header,Git diff + static AST transitive imports (authored comparator),1,3,True,"__________________
+
+    def test_security_rejects_header_injection():
+>       with pytest.raises(InvalidHeader):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'requests.exceptions.InvalidHeader'>
+
+tests/test_security.py:6: Failed
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED tests/test_security.py::test_valid_header_passes
+FAILED tests/test_security.py::test_security_rejects_header_injection - Failed: DID NOT RAISE <class 'requests.exceptions.InvalidHeader'>
+================== 1 failed, 1 passed, 1 deselected in 0.05s ===================
+",outputs/logs/static_diff/requests_crlf_header.log

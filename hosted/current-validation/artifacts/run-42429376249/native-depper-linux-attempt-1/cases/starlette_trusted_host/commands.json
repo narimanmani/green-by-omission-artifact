@@ -1,0 +1,765 @@
+[
+  {
+    "command": [
+      "git",
+      "init",
+      "-b",
+      "main"
+    ],
+    "returncode": 0,
+    "stdout": "Initialized empty Git repository in /home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/.git/\n",
+    "stderr": "",
+    "seconds": 0.0017173290252685547
+  },
+  {
+    "command": [
+      "git",
+      "config",
+      "user.name",
+      "Private native selector research"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0010349750518798828
+  },
+  {
+    "command": [
+      "git",
+      "config",
+      "user.email",
+      "research@example.invalid"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0010612010955810547
+  },
+  {
+    "command": [
+      "git",
+      "config",
+      "core.autocrlf",
+      "false"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0010263919830322266
+  },
+  {
+    "command": [
+      "git",
+      "add",
+      "."
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.006424427032470703
+  },
+  {
+    "command": [
+      "git",
+      "commit",
+      "-m",
+      "Exact recovered trusted baseline"
+    ],
+    "returncode": 0,
+    "stdout": "[main (root-commit) da13d06] Exact recovered trusted baseline\n 39 files changed, 6848 insertions(+)\n create mode 100644 build_meta.py\n create mode 100644 pytest.ini\n create mode 100644 starlette/__init__.py\n create mode 100644 starlette/_exception_handler.py\n create mode 100644 starlette/_utils.py\n create mode 100644 starlette/applications.py\n create mode 100644 starlette/authentication.py\n create mode 100644 starlette/background.py\n create mode 100644 starlette/concurrency.py\n create mode 100644 starlette/config.py\n create mode 100644 starlette/convertors.py\n create mode 100644 starlette/datastructures.py\n create mode 100644 starlette/endpoints.py\n create mode 100644 starlette/exceptions.py\n create mode 100644 starlette/formparsers.py\n create mode 100644 starlette/middleware/__init__.py\n create mode 100644 starlette/middleware/authentication.py\n create mode 100644 starlette/middleware/base.py\n create mode 100644 starlette/middleware/cors.py\n create mode 100644 starlette/middleware/errors.py\n create mode 100644 starlette/middleware/exceptions.py\n create mode 100644 starlette/middleware/gzip.py\n create mode 100644 starlette/middleware/httpsredirect.py\n create mode 100644 starlette/middleware/sessions.py\n create mode 100644 starlette/middleware/trustedhost.py\n create mode 100644 starlette/middleware/wsgi.py\n create mode 100644 starlette/py.typed\n create mode 100644 starlette/requests.py\n create mode 100644 starlette/responses.py\n create mode 100644 starlette/routing.py\n create mode 100644 starlette/schemas.py\n create mode 100644 starlette/staticfiles.py\n create mode 100644 starlette/status.py\n create mode 100644 starlette/templating.py\n create mode 100644 starlette/testclient.py\n create mode 100644 starlette/types.py\n create mode 100644 starlette/websockets.py\n create mode 100644 tests/test_meta.py\n create mode 100644 tests/test_security.py\n",
+    "stderr": "",
+    "seconds": 0.004037141799926758
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "da13d06712fe6be347bcb101237ee08d07f7d6d4\n",
+    "stderr": "",
+    "seconds": 0.0009443759918212891
+  },
+  {
+    "command": [
+      "git",
+      "update-ref",
+      "refs/remotes/origin/main",
+      "da13d06712fe6be347bcb101237ee08d07f7d6d4"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0011112689971923828
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "--detach",
+      "da13d06712fe6be347bcb101237ee08d07f7d6d4"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "HEAD is now at da13d06 Exact recovered trusted baseline\n",
+    "seconds": 0.001402139663696289
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--name-only",
+      "main...HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.001073598861694336
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0012543201446533203
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "da13d06712fe6be347bcb101237ee08d07f7d6d4\n",
+    "stderr": "",
+    "seconds": 0.0009169578552246094
+  },
+  {
+    "command": [
+      "/home/runner/work/_temp/depper/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: /home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nNo changed files detected. Deselecting all tests.\nUse --depper-run-all-on-error to run all tests when no changes are detected.\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive SKIPPED (No files\nchanged)\ntests/test_security.py::test_security_rejects_untrusted_host SKIPPED (No\nfiles changed)\ntests/test_security.py::test_valid_host_passes SKIPPED (No files\nchanged)\n\n=============================== warnings summary ===============================\nstarlette/testclient.py:45\n  /home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/testclient.py:45: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.\n    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n=========================== short test summary info ============================\nSKIPPED [1] tests/test_meta.py: No files changed\nSKIPPED [2] tests/test_security.py: No files changed\n======================== 3 skipped, 1 warning in 0.11s =========================\n",
+    "stderr": "",
+    "seconds": 0.5324301719665527
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0013494491577148438
+  },
+  {
+    "command": [
+      "/home/runner/work/_temp/depper/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug",
+      "--depper-run-all-on-error"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: /home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nNo changed files detected. Running all tests (--depper-run-all-on-error enabled).\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_untrusted_host PASSED\ntests/test_security.py::test_valid_host_passes PASSED\n\n=============================== warnings summary ===============================\nstarlette/testclient.py:45\n  /home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/testclient.py:45: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.\n    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n==================================== PASSES ====================================\n=========================== short test summary info ============================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_security_rejects_untrusted_host\nPASSED tests/test_security.py::test_valid_host_passes\n========================= 3 passed, 1 warning in 0.08s =========================\n",
+    "stderr": "",
+    "seconds": 0.49509310722351074
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0013740062713623047
+  },
+  {
+    "command": [
+      "/home/runner/work/_temp/depper/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python\ncachedir: .pytest_cache\nrootdir: /home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... collected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_untrusted_host PASSED\ntests/test_security.py::test_valid_host_passes PASSED\n\n=============================== warnings summary ===============================\nstarlette/testclient.py:45\n  /home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/testclient.py:45: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.\n    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n==================================== PASSES ====================================\n=========================== short test summary info ============================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_security_rejects_untrusted_host\nPASSED tests/test_security.py::test_valid_host_passes\n========================= 3 passed, 1 warning in 0.07s =========================\n",
+    "stderr": "",
+    "seconds": 0.49175024032592773
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.001634359359741211
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "--detach",
+      "da13d06712fe6be347bcb101237ee08d07f7d6d4"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "HEAD is now at da13d06 Exact recovered trusted baseline\n",
+    "seconds": 0.0016367435455322266
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "-c",
+      "benign_comment"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Switched to a new branch 'benign_comment'\n",
+    "seconds": 0.00141143798828125
+  },
+  {
+    "command": [
+      "git",
+      "add",
+      "--",
+      "starlette/middleware/trustedhost.py"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0013141632080078125
+  },
+  {
+    "command": [
+      "git",
+      "commit",
+      "-m",
+      "Benign comment control"
+    ],
+    "returncode": 0,
+    "stdout": "[benign_comment f5adb8b] Benign comment control\n 1 file changed, 2 insertions(+)\n",
+    "stderr": "",
+    "seconds": 0.0036814212799072266
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--name-only",
+      "main...HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "starlette/middleware/trustedhost.py\n",
+    "stderr": "",
+    "seconds": 0.0011785030364990234
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.001367330551147461
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "f5adb8b63014a009d516c07125413acdceb0d3c8\n",
+    "stderr": "",
+    "seconds": 0.0009341239929199219
+  },
+  {
+    "command": [
+      "/home/runner/work/_temp/depper/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: /home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nDepper: Found 1 changed files\n  - starlette/middleware/trustedhost.py\n\n=== Dependency Analysis ===\n\nChanged file: starlette/middleware/trustedhost.py\n\nDepper: No tests affected by these changes\nDeselecting all tests. This may indicate missing test coverage.\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive SKIPPED (No tests\naffected by changes)\ntests/test_security.py::test_security_rejects_untrusted_host SKIPPED (No\ntests affected by changes)\ntests/test_security.py::test_valid_host_passes SKIPPED (No tests\naffected by changes)\n\n=============================== warnings summary ===============================\nstarlette/testclient.py:45\n  /home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/testclient.py:45: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.\n    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n=========================== short test summary info ============================\nSKIPPED [1] tests/test_meta.py: No tests affected by changes\nSKIPPED [2] tests/test_security.py: No tests affected by changes\n======================== 3 skipped, 1 warning in 0.13s =========================\n",
+    "stderr": "",
+    "seconds": 0.5539052486419678
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.001714468002319336
+  },
+  {
+    "command": [
+      "/home/runner/work/_temp/depper/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug",
+      "--depper-run-all-on-error"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: /home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nDepper: Found 1 changed files\n  - starlette/middleware/trustedhost.py\n\n=== Dependency Analysis ===\n\nChanged file: starlette/middleware/trustedhost.py\n\nDepper: No tests affected by these changes\nRunning all tests (--depper-run-all-on-error enabled).\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_untrusted_host PASSED\ntests/test_security.py::test_valid_host_passes PASSED\n\n=============================== warnings summary ===============================\nstarlette/testclient.py:45\n  /home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/testclient.py:45: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.\n    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n==================================== PASSES ====================================\n=========================== short test summary info ============================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_security_rejects_untrusted_host\nPASSED tests/test_security.py::test_valid_host_passes\n========================= 3 passed, 1 warning in 0.13s =========================\n",
+    "stderr": "",
+    "seconds": 0.5536675453186035
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0013751983642578125
+  },
+  {
+    "command": [
+      "/home/runner/work/_temp/depper/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python\ncachedir: .pytest_cache\nrootdir: /home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... collected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_untrusted_host PASSED\ntests/test_security.py::test_valid_host_passes PASSED\n\n=============================== warnings summary ===============================\nstarlette/testclient.py:45\n  /home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/testclient.py:45: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.\n    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n==================================== PASSES ====================================\n=========================== short test summary info ============================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_security_rejects_untrusted_host\nPASSED tests/test_security.py::test_valid_host_passes\n========================= 3 passed, 1 warning in 0.08s =========================\n",
+    "stderr": "",
+    "seconds": 0.49757957458496094
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0016002655029296875
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "--detach",
+      "da13d06712fe6be347bcb101237ee08d07f7d6d4"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "HEAD is now at da13d06 Exact recovered trusted baseline\n",
+    "seconds": 0.0019404888153076172
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "-c",
+      "ordinary"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Switched to a new branch 'ordinary'\n",
+    "seconds": 0.0013957023620605469
+  },
+  {
+    "command": [
+      "git",
+      "add",
+      "--",
+      "starlette/middleware/trustedhost.py"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0013222694396972656
+  },
+  {
+    "command": [
+      "git",
+      "commit",
+      "-m",
+      "Original ordinary source snapshot"
+    ],
+    "returncode": 0,
+    "stdout": "[ordinary 6854584] Original ordinary source snapshot\n 1 file changed, 1 insertion(+), 1 deletion(-)\n",
+    "stderr": "",
+    "seconds": 0.0037131309509277344
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--name-only",
+      "main...HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "starlette/middleware/trustedhost.py\n",
+    "stderr": "",
+    "seconds": 0.0011258125305175781
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0013298988342285156
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "685458482730141909f8f1f1676e6aefb27809ce\n",
+    "stderr": "",
+    "seconds": 0.0009405612945556641
+  },
+  {
+    "command": [
+      "/home/runner/work/_temp/depper/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: /home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nDepper: Found 1 changed files\n  - starlette/middleware/trustedhost.py\n\n=== Symbol-Level Dependency Analysis ===\n\nChanged file: starlette/middleware/trustedhost.py\n  Changed symbols: {'TrustedHostMiddleware'}\n\nDepper: No tests affected by these changes\nDeselecting all tests. This may indicate missing test coverage.\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive SKIPPED (No tests\naffected by changes)\ntests/test_security.py::test_security_rejects_untrusted_host SKIPPED (No\ntests affected by changes)\ntests/test_security.py::test_valid_host_passes SKIPPED (No tests\naffected by changes)\n\n=============================== warnings summary ===============================\nstarlette/testclient.py:45\n  /home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/testclient.py:45: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.\n    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n=========================== short test summary info ============================\nSKIPPED [1] tests/test_meta.py: No tests affected by changes\nSKIPPED [2] tests/test_security.py: No tests affected by changes\n======================== 3 skipped, 1 warning in 0.13s =========================\n",
+    "stderr": "",
+    "seconds": 0.5581908226013184
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0017232894897460938
+  },
+  {
+    "command": [
+      "/home/runner/work/_temp/depper/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug",
+      "--depper-run-all-on-error"
+    ],
+    "returncode": 1,
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: /home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nDepper: Found 1 changed files\n  - starlette/middleware/trustedhost.py\n\n=== Symbol-Level Dependency Analysis ===\n\nChanged file: starlette/middleware/trustedhost.py\n  Changed symbols: {'TrustedHostMiddleware'}\n\nDepper: No tests affected by these changes\nRunning all tests (--depper-run-all-on-error enabled).\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_untrusted_host FAILED\ntests/test_security.py::test_valid_host_passes PASSED\n\n=================================== FAILURES ===================================\n_____________________ test_security_rejects_untrusted_host _____________________\n\n    def test_security_rejects_untrusted_host():\n        client = TestClient(make_app())\n        response = client.get('http://evil.example/')\n>       assert response.status_code == 400\nE       assert 200 == 400\nE        +  where 200 = <Response [200 OK]>.status_code\n\ntests/test_security.py:17: AssertionError\n=============================== warnings summary ===============================\nstarlette/testclient.py:45\n  /home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/testclient.py:45: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.\n    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n==================================== PASSES ====================================\n=========================== short test summary info ============================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_valid_host_passes\nFAILED tests/test_security.py::test_security_rejects_untrusted_host - assert 200 == 400\n +  where 200 = <Response [200 OK]>.status_code\n==================== 1 failed, 2 passed, 1 warning in 0.14s ====================\n",
+    "stderr": "",
+    "seconds": 0.567164421081543
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0014443397521972656
+  },
+  {
+    "command": [
+      "/home/runner/work/_temp/depper/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no"
+    ],
+    "returncode": 1,
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python\ncachedir: .pytest_cache\nrootdir: /home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... collected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_untrusted_host FAILED\ntests/test_security.py::test_valid_host_passes PASSED\n\n=================================== FAILURES ===================================\n_____________________ test_security_rejects_untrusted_host _____________________\n\n    def test_security_rejects_untrusted_host():\n        client = TestClient(make_app())\n        response = client.get('http://evil.example/')\n>       assert response.status_code == 400\nE       assert 200 == 400\nE        +  where 200 = <Response [200 OK]>.status_code\n\ntests/test_security.py:17: AssertionError\n=============================== warnings summary ===============================\nstarlette/testclient.py:45\n  /home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/testclient.py:45: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.\n    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n==================================== PASSES ====================================\n=========================== short test summary info ============================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_valid_host_passes\nFAILED tests/test_security.py::test_security_rejects_untrusted_host - assert 200 == 400\n +  where 200 = <Response [200 OK]>.status_code\n==================== 1 failed, 2 passed, 1 warning in 0.08s ====================\n",
+    "stderr": "",
+    "seconds": 0.5058214664459229
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.001665353775024414
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "--detach",
+      "da13d06712fe6be347bcb101237ee08d07f7d6d4"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "HEAD is now at da13d06 Exact recovered trusted baseline\n",
+    "seconds": 0.001987457275390625
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "-c",
+      "collision"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Switched to a new branch 'collision'\n",
+    "seconds": 0.001443624496459961
+  },
+  {
+    "command": [
+      "git",
+      "add",
+      "--",
+      "starlette/middleware/trustedhost.py"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.001390695571899414
+  },
+  {
+    "command": [
+      "git",
+      "commit",
+      "-m",
+      "Original collision source snapshot"
+    ],
+    "returncode": 0,
+    "stdout": "[collision 95658c1] Original collision source snapshot\n 1 file changed, 2 insertions(+), 1 deletion(-)\n",
+    "stderr": "",
+    "seconds": 0.003628969192504883
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--name-only",
+      "main...HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "starlette/middleware/trustedhost.py\n",
+    "stderr": "",
+    "seconds": 0.00119781494140625
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0013806819915771484
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "95658c196cb5467d56f91a465b8b346f78eaf364\n",
+    "stderr": "",
+    "seconds": 0.0009233951568603516
+  },
+  {
+    "command": [
+      "/home/runner/work/_temp/depper/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: /home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nDepper: Found 1 changed files\n  - starlette/middleware/trustedhost.py\n\n=== Symbol-Level Dependency Analysis ===\n\nChanged file: starlette/middleware/trustedhost.py\n  Changed symbols: {'TrustedHostMiddleware'}\n\nDepper: No tests affected by these changes\nDeselecting all tests. This may indicate missing test coverage.\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive SKIPPED (No tests\naffected by changes)\ntests/test_security.py::test_security_rejects_untrusted_host SKIPPED (No\ntests affected by changes)\ntests/test_security.py::test_valid_host_passes SKIPPED (No tests\naffected by changes)\n\n=============================== warnings summary ===============================\nstarlette/testclient.py:45\n  /home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/testclient.py:45: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.\n    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n=========================== short test summary info ============================\nSKIPPED [1] tests/test_meta.py: No tests affected by changes\nSKIPPED [2] tests/test_security.py: No tests affected by changes\n======================== 3 skipped, 1 warning in 0.13s =========================\n",
+    "stderr": "",
+    "seconds": 0.5601961612701416
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0018162727355957031
+  },
+  {
+    "command": [
+      "/home/runner/work/_temp/depper/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug",
+      "--depper-run-all-on-error"
+    ],
+    "returncode": 1,
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: /home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nDepper: Found 1 changed files\n  - starlette/middleware/trustedhost.py\n\n=== Symbol-Level Dependency Analysis ===\n\nChanged file: starlette/middleware/trustedhost.py\n  Changed symbols: {'TrustedHostMiddleware'}\n\nDepper: No tests affected by these changes\nRunning all tests (--depper-run-all-on-error enabled).\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_untrusted_host FAILED\ntests/test_security.py::test_valid_host_passes PASSED\n\n=================================== FAILURES ===================================\n_____________________ test_security_rejects_untrusted_host _____________________\n\n    def test_security_rejects_untrusted_host():\n        client = TestClient(make_app())\n        response = client.get('http://evil.example/')\n>       assert response.status_code == 400\nE       assert 200 == 400\nE        +  where 200 = <Response [200 OK]>.status_code\n\ntests/test_security.py:17: AssertionError\n=============================== warnings summary ===============================\nstarlette/testclient.py:45\n  /home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/testclient.py:45: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.\n    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n==================================== PASSES ====================================\n=========================== short test summary info ============================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_valid_host_passes\nFAILED tests/test_security.py::test_security_rejects_untrusted_host - assert 200 == 400\n +  where 200 = <Response [200 OK]>.status_code\n==================== 1 failed, 2 passed, 1 warning in 0.14s ====================\n",
+    "stderr": "",
+    "seconds": 0.5683765411376953
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0017421245574951172
+  },
+  {
+    "command": [
+      "/home/runner/work/_temp/depper/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no"
+    ],
+    "returncode": 1,
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python\ncachedir: .pytest_cache\nrootdir: /home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... collected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_untrusted_host FAILED\ntests/test_security.py::test_valid_host_passes PASSED\n\n=================================== FAILURES ===================================\n_____________________ test_security_rejects_untrusted_host _____________________\n\n    def test_security_rejects_untrusted_host():\n        client = TestClient(make_app())\n        response = client.get('http://evil.example/')\n>       assert response.status_code == 400\nE       assert 200 == 400\nE        +  where 200 = <Response [200 OK]>.status_code\n\ntests/test_security.py:17: AssertionError\n=============================== warnings summary ===============================\nstarlette/testclient.py:45\n  /home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/testclient.py:45: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.\n    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n==================================== PASSES ====================================\n=========================== short test summary info ============================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_valid_host_passes\nFAILED tests/test_security.py::test_security_rejects_untrusted_host - assert 200 == 400\n +  where 200 = <Response [200 OK]>.status_code\n==================== 1 failed, 2 passed, 1 warning in 0.08s ====================\n",
+    "stderr": "",
+    "seconds": 0.505171537399292
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.0017023086547851562
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "--detach",
+      "da13d06712fe6be347bcb101237ee08d07f7d6d4"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "HEAD is now at da13d06 Exact recovered trusted baseline\n",
+    "seconds": 0.0019779205322265625
+  },
+  {
+    "command": [
+      "git",
+      "bundle",
+      "create",
+      "/home/runner/work/_temp/evidence/cases/starlette_trusted_host/history.bundle",
+      "--all"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.015628337860107422
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "utc": "2026-11-08T00:26:31.958751+00:00",
+  "command": [
+    "gh",
+    "pr",
+    "view",
+    "2",
+    "--repo",
+    "anonymous-owner/ci-selection-testbed",
+    "--json",
+    "url,state,mergeable,mergeStateStatus,headRefOid,baseRefOid,statusCheckRollup"
+  ],
+  "exit": 0,
+  "stdout": "{\"baseRefOid\":\"1d63949857934672de5c13f543174b4dbf0fd7ce\",\"headRefOid\":\"75ca88276e8f610b8dca550bb448c61d3109bfa8\",\"mergeStateStatus\":\"BLOCKED\",\"mergeable\":\"MERGEABLE\",\"state\":\"OPEN\",\"statusCheckRollup\":[{\"__typename\":\"CheckRun\",\"completedAt\":\"2026-11-08T00:22:15Z\",\"conclusion\":\"FAILURE\",\"detailsUrl\":\"https://example.invalid/anonymous-research/ci-selection-testbed/actions/runs/42429417906/job/128574763079\",\"name\":\"testmon-required\",\"startedAt\":\"2026-11-08T00:22:00Z\",\"status\":\"COMPLETED\",\"workflowName\":\"Private protected PR validation\"},{\"__typename\":\"CheckRun\",\"completedAt\":\"2026-11-08T00:22:20Z\",\"conclusion\":\"FAILURE\",\"detailsUrl\":\"https://example.invalid/anonymous-research/ci-selection-testbed/actions/runs/42429417906/job/128574763305\",\"name\":\"full-suite-diagnostic\",\"startedAt\":\"2026-11-08T00:22:01Z\",\"status\":\"COMPLETED\",\"workflowName\":\"Private protected PR validation\"}],\"url\":\"https://example.invalid/anonymous-research/ci-selection-testbed/pull/2\"}\n",
+  "stderr": ""
+}

@@ -1,0 +1,72 @@
+{
+  "collected": [
+    "tests/test_meta.py::test_metadata_build_positive",
+    "tests/test_security.py::test_security_rejects_header_injection",
+    "tests/test_security.py::test_valid_header_passes"
+  ],
+  "deselected": [],
+  "synthetic_deselected_count": 0,
+  "reports": [
+    {
+      "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+      "when": "call",
+      "outcome": "failed",
+      "longrepr": "def test_security_rejects_header_injection():\n>       with pytest.raises(InvalidHeader):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE <class 'requests.exceptions.InvalidHeader'>\n\ntests/test_security.py:6: Failed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_valid_header_passes",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_valid_header_passes",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_valid_header_passes",
+      "when": "teardown",
+      "outcome": "passed"
+    }
+  ],
+  "collection_errors": [],
+  "initial_exitstatus": 1,
+  "final_exitstatus": 1,
+  "executed_tests": [
+    "tests/test_meta.py::test_metadata_build_positive",
+    "tests/test_security.py::test_security_rejects_header_injection",
+    "tests/test_security.py::test_valid_header_passes"
+  ],
+  "skipped_tests": [],
+  "target_module": {
+    "name": "requests.utils",
+    "loaded": true,
+    "file": "/home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/cases/requests_crlf_header/requests/utils.py"
+  },
+  "plugin_modules": {}
+}

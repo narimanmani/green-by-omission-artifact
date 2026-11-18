@@ -1,0 +1,2212 @@
+{
+  "status": "SUPPORTED_WITH_ONE_UNLOCATED_STRUCTURAL_CONTROL_AND_SCOPE_LIMITS",
+  "scope": "Non-Java numerical claims in current manuscript; read-only data/log audit, no candidate/test/artifact execution",
+  "claims": [
+    {
+      "id": "python_local_preserving_repetitions",
+      "status": "RAW_SUPPORTED",
+      "verified_values": {
+        "cases": 3,
+        "repetitions_per_case": 3,
+        "selective_passes": 9,
+        "independent_failures": 9,
+        "pythonhashseed_values": [
+          0,
+          1,
+          42
+        ],
+        "same_fixed_candidate_per_subject": true,
+        "independent_candidate_constructions": 3
+      },
+      "evidence": [
+        {
+          "seed": 0,
+          "case": "itsdangerous_expiry",
+          "baseline_calls": 3,
+          "native_calls": 0,
+          "full_calls": 3,
+          "full_failures": 1,
+          "baseline_log": "recovered/incoming-extension/extracted/snp2027_extension_2026-11-07/outputs/logs/single_repeats/seed_0/itsdangerous_expiry/baseline.log",
+          "native_log": "recovered/incoming-extension/extracted/snp2027_extension_2026-11-07/outputs/logs/single_repeats/seed_0/itsdangerous_expiry/native.log",
+          "full_log": "recovered/incoming-extension/extracted/snp2027_extension_2026-11-07/outputs/logs/single_repeats/seed_0/itsdangerous_expiry/full.log",
+          "log_hashes": [
+            "e206eb53bb24b195dd7115868678b202de035a13fba79e8c8ed00bf6d8e30d52",
+            "bf63632d7c6dc1340c8987f3747e83413c41405b999a595c467911dc2d800d5d",
+            "db7a347284e10f920502bcb4fdf210d9e89ec18b2ea31f4f5afafbff278f1b95"
+          ]
+        },
+        {
+          "seed": 0,
+          "case": "starlette_trusted_host",
+          "baseline_calls": 3,
+          "native_calls": 0,
+          "full_calls": 3,
+          "full_failures": 1,
+          "baseline_log": "recovered/incoming-extension/extracted/snp2027_extension_2026-11-07/outputs/logs/single_repeats/seed_0/starlette_trusted_host/baseline.log",
+          "native_log": "recovered/incoming-extension/extracted/snp2027_extension_2026-11-07/outputs/logs/single_repeats/seed_0/starlette_trusted_host/native.log",
+          "full_log": "recovered/incoming-extension/extracted/snp2027_extension_2026-11-07/outputs/logs/single_repeats/seed_0/starlette_trusted_host/full.log",
+          "log_hashes": [
+            "1d7d3551ac570fe76367abc5d52f150eb11e1630f05740099173a953fa36c0e2",
+            "16565d0c09bc2fb4758965c9162a1697c17e80ad1606600c0edcc3e24be157c7",
+            "c415e57c522526f1b1fa15b90594a25b0d5db491b4a28f7865a9aef1075d19f6"
+          ]
+        },
+        {
+          "seed": 0,
+          "case": "requests_crlf_header",
+          "baseline_calls": 3,
+          "native_calls": 0,
+          "full_calls": 3,
+          "full_failures": 1,
+          "baseline_log": "recovered/incoming-extension/extracted/snp2027_extension_2026-11-07/outputs/logs/single_repeats/seed_0/requests_crlf_header/baseline.log",
+          "native_log": "recovered/incoming-extension/extracted/snp2027_extension_2026-11-07/outputs/logs/single_repeats/seed_0/requests_crlf_header/native.log",
+          "full_log": "recovered/incoming-extension/extracted/snp2027_extension_2026-11-07/outputs/logs/single_repeats/seed_0/requests_crlf_header/full.log",
+          "log_hashes": [
+            "79c6acb20d8d9ad5f19111a5f0100736c57973c9e6030b5eeaf9ac92a5364418",
+            "5e89b73b24c21a329c608f7ff4567b6ad66cad7e4df3a2ae6eec3cc86ec71aa7",
+            "c1f72ec4f913698c82e12efd2870dc6e56a3d5e161c69cd79ff74545aa4ead78"
+          ]
+        },
+        {
+          "seed": 1,
+          "case": "itsdangerous_expiry",
+          "baseline_calls": 3,
+          "native_calls": 0,
+          "full_calls": 3,
+          "full_failures": 1,
+          "baseline_log": "recovered/incoming-extension/extracted/snp2027_extension_2026-11-07/outputs/logs/single_repeats/seed_1/itsdangerous_expiry/baseline.log",
+          "native_log": "recovered/incoming-extension/extracted/snp2027_extension_2026-11-07/outputs/logs/single_repeats/seed_1/itsdangerous_expiry/native.log",
+          "full_log": "recovered/incoming-extension/extracted/snp2027_extension_2026-11-07/outputs/logs/single_repeats/seed_1/itsdangerous_expiry/full.log",
+          "log_hashes": [
+            "5fdcafb0c32003af8ed9e06490cc85736b188351f8b015e1172e9a98b42c9f09",
+            "8a8e504cb3d6240cc05fe249de6a57808e9f28fa23fe27580f6bc3a3b1033b15",
+            "43e6d633fd2fe5f13a5b8fcfc3225b5b9f035bd5988fca8497298c3e775e27b4"
+          ]
+        },
+        {
+          "seed": 1,
+          "case": "starlette_trusted_host",
+          "baseline_calls": 3,
+          "native_calls": 0,
+          "full_calls": 3,
+          "full_failures": 1,
+          "baseline_log": "recovered/incoming-extension/extracted/snp2027_extension_2026-11-07/outputs/logs/single_repeats/seed_1/starlette_trusted_host/baseline.log",
+          "native_log": "recovered/incoming-extension/extracted/snp2027_extension_2026-11-07/outputs/logs/single_repeats/seed_1/starlette_trusted_host/native.log",
+          "full_log": "recovered/incoming-extension/extracted/snp2027_extension_2026-11-07/outputs/logs/single_repeats/seed_1/starlette_trusted_host/full.log",
+          "log_hashes": [
+            "5bb59d24761ce7b922c92f3a63881d7bff1e10513d994b3957dc3735e98a4fef",
+            "752c5f820692e39741ae2906843d6ca93edc8c6378f85be24dc76730b8345b0b",
+            "d86aa91c10b0e9672330f166b0d7bb9b6f66ba967ac987336fd84fe1ce16d2b7"
+          ]
+        },
+        {
+          "seed": 1,
+          "case": "requests_crlf_header",
+          "baseline_calls": 3,
+          "native_calls": 0,
+          "full_calls": 3,
+          "full_failures": 1,
+          "baseline_log": "recovered/incoming-extension/extracted/snp2027_extension_2026-11-07/outputs/logs/single_repeats/seed_1/requests_crlf_header/baseline.log",
+          "native_log": "recovered/incoming-extension/extracted/snp2027_extension_2026-11-07/outputs/logs/single_repeats/seed_1/requests_crlf_header/native.log",
+          "full_log": "recovered/incoming-extension/extracted/snp2027_extension_2026-11-07/outputs/logs/single_repeats/seed_1/requests_crlf_header/full.log",
+          "log_hashes": [
+            "d8cf9d14ffeaac706286dac252a164b9a37bdda91cef9dbd5a76f685b252b21b",
+            "9582d15db6dd50f69bc55b7a9e43630ee3fcca3186593b25d263fe89de2aabbd",
+            "a5b048f5777b8ca44a1a5e9af869b2d2b1db2fd5d9c28b7734ee11abf83a9fa6"
+          ]
+        },
+        {
+          "seed": 42,
+          "case": "itsdangerous_expiry",
+          "baseline_calls": 3,
+          "native_calls": 0,
+          "full_calls": 3,
+          "full_failures": 1,
+          "baseline_log": "recovered/incoming-extension/extracted/snp2027_extension_2026-11-07/outputs/logs/single_repeats/seed_42/itsdangerous_expiry/baseline.log",
+          "native_log": "recovered/incoming-extension/extracted/snp2027_extension_2026-11-07/outputs/logs/single_repeats/seed_42/itsdangerous_expiry/native.log",
+          "full_log": "recovered/incoming-extension/extracted/snp2027_extension_2026-11-07/outputs/logs/single_repeats/seed_42/itsdangerous_expiry/full.log",
+          "log_hashes": [
+            "3854b18fc1ab68d5decbd4208d742eac809c9134836f7ea9f6b9f08a57a4df56",
+            "4d0121dff0e278a3d6f9916bdd2ada059dc7338322bdc690d0c3392d6baa18fa",
+            "0263f6be6fbbea8af408ab06392512b1338df348cf751e57b7538c994ca5ab31"
+          ]
+        },
+        {
+          "seed": 42,
+          "case": "starlette_trusted_host",
+          "baseline_calls": 3,
+          "native_calls": 0,
+          "full_calls": 3,
+          "full_failures": 1,
+          "baseline_log": "recovered/incoming-extension/extracted/snp2027_extension_2026-11-07/outputs/logs/single_repeats/seed_42/starlette_trusted_host/baseline.log",
+          "native_log": "recovered/incoming-extension/extracted/snp2027_extension_2026-11-07/outputs/logs/single_repeats/seed_42/starlette_trusted_host/native.log",
+          "full_log": "recovered/incoming-extension/extracted/snp2027_extension_2026-11-07/outputs/logs/single_repeats/seed_42/starlette_trusted_host/full.log",
+          "log_hashes": [
+            "2f33bfacc30d7a448cfce75b59a39a4480d0b43dd8caeb01b4605901a03d3698",
+            "1c2bb37df24632abe6ec23e8b4f5cd9662d50f9ae025b54970067e1cf7f9df74",
+            "f13633caa68aae9980c4be6d4fd1fc78b6fce75a730e848c4e9b8c17d272cde9"
+          ]
+        },
+        {
+          "seed": 42,
+          "case": "requests_crlf_header",
+          "baseline_calls": 3,
+          "native_calls": 0,
+          "full_calls": 3,
+          "full_failures": 1,
+          "baseline_log": "recovered/incoming-extension/extracted/snp2027_extension_2026-11-07/outputs/logs/single_repeats/seed_42/requests_crlf_header/baseline.log",
+          "native_log": "recovered/incoming-extension/extracted/snp2027_extension_2026-11-07/outputs/logs/single_repeats/seed_42/requests_crlf_header/native.log",
+          "full_log": "recovered/incoming-extension/extracted/snp2027_extension_2026-11-07/outputs/logs/single_repeats/seed_42/requests_crlf_header/full.log",
+          "log_hashes": [
+            "8e47e88897633660d37831c54177320f0513f5a43dc66bcb39f3a44cbee59698",
+            "3c7cea70aeca15c78de476ff9b31ba0594d0bee3d1dfecd4fe8ead7d27f57447",
+            "ea3748930a1f6552f900bf9f4bc162538e381c639d7d84c0e8ac083d697f10dc"
+          ]
+        }
+      ],
+      "notes": "Archived logs record Python 3.13.5 and pytest9.0.2. This audit executes no archived code. Collection is not used as a proxy for calls: verbose PASSED/FAILED lines establish baseline/full outcomes, native log explicitly reports no tests ran. Direct SHA256 checks confirm that each retained per-seed target source is identical to its subject's fixed collision snapshot. The seed values0,1,42 set PYTHONHASHSEED and do not generate different candidates. Retained test sources also match across the three runs.",
+      "candidate_identity_check": "LOCAL_REPEAT_CANDIDATE_IDENTITY.json"
+    },
+    {
+      "id": "hosted_six_conditions",
+      "status": "RAW_SUPPORTED",
+      "verified_values": {
+        "conditions": 6,
+        "ordinary_selective": {
+          "conditions": 3,
+          "calls_each": 2,
+          "failures_each": 1
+        },
+        "preserving_selective": {
+          "conditions": 3,
+          "calls_each": 0,
+          "exit": 0
+        },
+        "complete_calls_each": 3,
+        "complete_failures_each": 1,
+        "overall_workflows_fail": 6
+      },
+      "evidence": [
+        {
+          "case": "itsdangerous_expiry",
+          "condition": "ordinary",
+          "pr": 2,
+          "modes": {
+            "full": {
+              "summary": "hosted/current-validation/artifacts/run-42429417906/full-pr-2-attempt-1/summary.json",
+              "summary_sha256": "478be64c00f45ccdd85fecc995e9ee572bc5d894b035cf078ac17f78f292fc87",
+              "actual_calls": 3,
+              "failures": 1,
+              "exit": 1,
+              "baseline_database_sha256": "b66f5ec502837df72fe449cf5ef4eaee742bd45124d50e18978a9f84c8e876ff"
+            },
+            "selective": {
+              "summary": "hosted/current-validation/artifacts/run-42429417906/selective-pr-2-attempt-1/summary.json",
+              "summary_sha256": "10bcdcf479cbe9d04473fdad45d493ebab15d43b9fdaf5bd6fb2c7bd07bea448",
+              "actual_calls": 2,
+              "failures": 1,
+              "exit": 1,
+              "baseline_database_sha256": "e2b053a3215196cfe66638e9c202893eb157cad81b471f3aaec736cc84869572"
+            }
+          }
+        },
+        {
+          "case": "itsdangerous_expiry",
+          "condition": "collision",
+          "pr": 3,
+          "modes": {
+            "full": {
+              "summary": "hosted/current-validation/artifacts/run-42429426805/full-pr-3-attempt-1/summary.json",
+              "summary_sha256": "e61c48ee772a8602ba0e8d34f44f0efe142961006a230b81cfa03edf0ca10c61",
+              "actual_calls": 3,
+              "failures": 1,
+              "exit": 1,
+              "baseline_database_sha256": "e48bd7223ae246f7068ebeaa63fdc5d1239ba4681289ef434203853c99ce1523"
+            },
+            "selective": {
+              "summary": "hosted/current-validation/artifacts/run-42429426805/selective-pr-3-attempt-1/summary.json",
+              "summary_sha256": "d0c6d76d44a43788d94af1196cb7c5019502556ab4fd504695ae18b922851a59",
+              "actual_calls": 0,
+              "failures": 0,
+              "exit": 0,
+              "baseline_database_sha256": "d5920b872d041e03716c27264af4b3b32536e54b6c1b1b7bbec4b219b5506c63"
+            }
+          }
+        },
+        {
+          "case": "starlette_trusted_host",
+          "condition": "ordinary",
+          "pr": 4,
+          "modes": {
+            "full": {
+              "summary": "hosted/current-validation/artifacts/run-42429434778/full-pr-4-attempt-1/summary.json",
+              "summary_sha256": "a0ad8fdb8b34822cdb5d729c85343bda086d6057c9de3dd17c2c807bd5111c23",
+              "actual_calls": 3,
+              "failures": 1,
+              "exit": 1,
+              "baseline_database_sha256": "53e181529e6c8a034f04e66f91300a380b099b68d4e715500139793c1b52bb09"
+            },
+            "selective": {
+              "summary": "hosted/current-validation/artifacts/run-42429434778/selective-pr-4-attempt-1/summary.json",
+              "summary_sha256": "381454e4874264a8dfbdf656f106bab125bd5abf9e0792296f64111857f91582",
+              "actual_calls": 2,
+              "failures": 1,
+              "exit": 1,
+              "baseline_database_sha256": "46d1f432d4fef04d76f764ee81ba45581561becd8470e7a32fce15e20a903eab"
+            }
+          }
+        },
+        {
+          "case": "starlette_trusted_host",
+          "condition": "collision",
+          "pr": 5,
+          "modes": {
+            "full": {
+              "summary": "hosted/current-validation/artifacts/run-42429441844/full-pr-5-attempt-1/summary.json",
+              "summary_sha256": "9627ec6e68c979f6c381209a0ca8c7805e969c342da5985a56fec8a77e23d197",
+              "actual_calls": 3,
+              "failures": 1,
+              "exit": 1,
+              "baseline_database_sha256": "990bf4e84f306e8a80eb62ffc3608b80fe2278867d9180ca1e7303be6dc722a3"
+            },
+            "selective": {
+              "summary": "hosted/current-validation/artifacts/run-42429441844/selective-pr-5-attempt-1/summary.json",
+              "summary_sha256": "b2e501d0c2deeb7a30df910839d8f677ce0812207bc772247a75a1c40181c057",
+              "actual_calls": 0,
+              "failures": 0,
+              "exit": 0,
+              "baseline_database_sha256": "09de5e3eeb9a03164a3b9fd67b1f1d2f0ce13a09242fad1a3450629d7c7c3299"
+            }
+          }
+        },
+        {
+          "case": "requests_crlf_header",
+          "condition": "ordinary",
+          "pr": 6,
+          "modes": {
+            "full": {
+              "summary": "hosted/current-validation/artifacts/run-42429450031/full-pr-6-attempt-1/summary.json",
+              "summary_sha256": "909f393b52e618d3739befe55d3bb8959774c2a9fd3ae5156d2668619342fc27",
+              "actual_calls": 3,
+              "failures": 1,
+              "exit": 1,
+              "baseline_database_sha256": "5d7db93147cb7cb8fbca3ee8794b01de2531629ec3e69c1ba57f5b104830912b"
+            },
+            "selective": {
+              "summary": "hosted/current-validation/artifacts/run-42429450031/selective-pr-6-attempt-1/summary.json",
+              "summary_sha256": "98c7ec6d6c74aa1d3feac66c6c0d4b6f386aa26d217634ac35a70c5424ad8964",
+              "actual_calls": 2,
+              "failures": 1,
+              "exit": 1,
+              "baseline_database_sha256": "9d287ae655d6a2476aa252896faaee3d54161fb6e418f1f48deca599ab511cad"
+            }
+          }
+        },
+        {
+          "case": "requests_crlf_header",
+          "condition": "collision",
+          "pr": 7,
+          "modes": {
+            "full": {
+              "summary": "hosted/current-validation/artifacts/run-42429456290/full-pr-7-attempt-1/summary.json",
+              "summary_sha256": "5336d83bc2b0df59b8fe10d244ad8158f5ba24c3f5d3fb8b9929bb418cf7e27e",
+              "actual_calls": 3,
+              "failures": 1,
+              "exit": 1,
+              "baseline_database_sha256": "be9c56a93a58f0aacd35f1f381411f119e6840840347bcfa3b85711e34fae434"
+            },
+            "selective": {
+              "summary": "hosted/current-validation/artifacts/run-42429456290/selective-pr-7-attempt-1/summary.json",
+              "summary_sha256": "86a737235e63243648a66d0ee8cef0337d32baa9d6af74719d9da8b02f396502",
+              "actual_calls": 0,
+              "failures": 0,
+              "exit": 0,
+              "baseline_database_sha256": "7a58fb82932998b9cf64667f86fadf2a8fc246fd39d955d7c11cdccf93925a07"
+            }
+          }
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "independent_depper_comparison",
+      "status": "RAW_SUPPORTED",
+      "verified_values": {
+        "rows": 108,
+        "environments": {
+          "windows_installed_subjects": 36,
+          "ubuntu_installed_subjects": 36,
+          "ubuntu_local_subjects": 36
+        },
+        "preferred_ordinary_and_preserving_native": {
+          "starlette_calls": 2,
+          "starlette_failures": 1,
+          "itsdangerous_and_requests_calls": 0,
+          "itsdangerous_and_requests_setup_skips": 3
+        },
+        "preferred_benign_default_calls_each": 2
+      },
+      "evidence": [
+        {
+          "environment": "windows_installed_subjects",
+          "case": "itsdangerous_expiry",
+          "condition": "baseline_nochange",
+          "mode": "native_default",
+          "exit": 0,
+          "calls": 0,
+          "call_failures": 0,
+          "setup_skips": 3,
+          "source_sha256": "e91bc332a36e9863317f4f8796969974df4f51042646fad01a994a871ba2bd4b",
+          "observer_source": "native/current-validation/results/results.json",
+          "raw_log": "native/current-validation/results/itsdangerous_expiry/baseline_nochange-native_default.log"
+        },
+        {
+          "environment": "windows_installed_subjects",
+          "case": "itsdangerous_expiry",
+          "condition": "baseline_nochange",
+          "mode": "native_fallback",
+          "exit": 0,
+          "calls": 3,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "e91bc332a36e9863317f4f8796969974df4f51042646fad01a994a871ba2bd4b",
+          "observer_source": "native/current-validation/results/results.json",
+          "raw_log": "native/current-validation/results/itsdangerous_expiry/baseline_nochange-native_fallback.log"
+        },
+        {
+          "environment": "windows_installed_subjects",
+          "case": "itsdangerous_expiry",
+          "condition": "baseline_nochange",
+          "mode": "full_suite",
+          "exit": 0,
+          "calls": 3,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "e91bc332a36e9863317f4f8796969974df4f51042646fad01a994a871ba2bd4b",
+          "observer_source": "native/current-validation/results/results.json",
+          "raw_log": "native/current-validation/results/itsdangerous_expiry/baseline_nochange-full_suite.log"
+        },
+        {
+          "environment": "windows_installed_subjects",
+          "case": "itsdangerous_expiry",
+          "condition": "benign_comment",
+          "mode": "native_default",
+          "exit": 0,
+          "calls": 0,
+          "call_failures": 0,
+          "setup_skips": 3,
+          "source_sha256": "bc6aae49f1f6996c3fe4bf34e4080d00778426d455c4c85c8a3387c6cf08d894",
+          "observer_source": "native/current-validation/results/results.json",
+          "raw_log": "native/current-validation/results/itsdangerous_expiry/benign_comment-native_default.log"
+        },
+        {
+          "environment": "windows_installed_subjects",
+          "case": "itsdangerous_expiry",
+          "condition": "benign_comment",
+          "mode": "native_fallback",
+          "exit": 0,
+          "calls": 3,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "bc6aae49f1f6996c3fe4bf34e4080d00778426d455c4c85c8a3387c6cf08d894",
+          "observer_source": "native/current-validation/results/results.json",
+          "raw_log": "native/current-validation/results/itsdangerous_expiry/benign_comment-native_fallback.log"
+        },
+        {
+          "environment": "windows_installed_subjects",
+          "case": "itsdangerous_expiry",
+          "condition": "benign_comment",
+          "mode": "full_suite",
+          "exit": 0,
+          "calls": 3,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "bc6aae49f1f6996c3fe4bf34e4080d00778426d455c4c85c8a3387c6cf08d894",
+          "observer_source": "native/current-validation/results/results.json",
+          "raw_log": "native/current-validation/results/itsdangerous_expiry/benign_comment-full_suite.log"
+        },
+        {
+          "environment": "windows_installed_subjects",
+          "case": "itsdangerous_expiry",
+          "condition": "ordinary",
+          "mode": "native_default",
+          "exit": 0,
+          "calls": 0,
+          "call_failures": 0,
+          "setup_skips": 3,
+          "source_sha256": "b38b2567a62ce08cf39e65b686986402eb239681bee3ecf395981c0894d08158",
+          "observer_source": "native/current-validation/results/results.json",
+          "raw_log": "native/current-validation/results/itsdangerous_expiry/ordinary-native_default.log"
+        },
+        {
+          "environment": "windows_installed_subjects",
+          "case": "itsdangerous_expiry",
+          "condition": "ordinary",
+          "mode": "native_fallback",
+          "exit": 1,
+          "calls": 3,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "b38b2567a62ce08cf39e65b686986402eb239681bee3ecf395981c0894d08158",
+          "observer_source": "native/current-validation/results/results.json",
+          "raw_log": "native/current-validation/results/itsdangerous_expiry/ordinary-native_fallback.log"
+        },
+        {
+          "environment": "windows_installed_subjects",
+          "case": "itsdangerous_expiry",
+          "condition": "ordinary",
+          "mode": "full_suite",
+          "exit": 1,
+          "calls": 3,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "b38b2567a62ce08cf39e65b686986402eb239681bee3ecf395981c0894d08158",
+          "observer_source": "native/current-validation/results/results.json",
+          "raw_log": "native/current-validation/results/itsdangerous_expiry/ordinary-full_suite.log"
+        },
+        {
+          "environment": "windows_installed_subjects",
+          "case": "itsdangerous_expiry",
+          "condition": "collision",
+          "mode": "native_default",
+          "exit": 0,
+          "calls": 0,
+          "call_failures": 0,
+          "setup_skips": 3,
+          "source_sha256": "958e620d9c196ef0fd6ec59737176885fcd29f01df2fa13fdecbda77b43ef011",
+          "observer_source": "native/current-validation/results/results.json",
+          "raw_log": "native/current-validation/results/itsdangerous_expiry/collision-native_default.log"
+        },
+        {
+          "environment": "windows_installed_subjects",
+          "case": "itsdangerous_expiry",
+          "condition": "collision",
+          "mode": "native_fallback",
+          "exit": 1,
+          "calls": 3,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "958e620d9c196ef0fd6ec59737176885fcd29f01df2fa13fdecbda77b43ef011",
+          "observer_source": "native/current-validation/results/results.json",
+          "raw_log": "native/current-validation/results/itsdangerous_expiry/collision-native_fallback.log"
+        },
+        {
+          "environment": "windows_installed_subjects",
+          "case": "itsdangerous_expiry",
+          "condition": "collision",
+          "mode": "full_suite",
+          "exit": 1,
+          "calls": 3,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "958e620d9c196ef0fd6ec59737176885fcd29f01df2fa13fdecbda77b43ef011",
+          "observer_source": "native/current-validation/results/results.json",
+          "raw_log": "native/current-validation/results/itsdangerous_expiry/collision-full_suite.log"
+        },
+        {
+          "environment": "windows_installed_subjects",
+          "case": "starlette_trusted_host",
+          "condition": "baseline_nochange",
+          "mode": "native_default",
+          "exit": 0,
+          "calls": 0,
+          "call_failures": 0,
+          "setup_skips": 3,
+          "source_sha256": "6f22825323e07b9e19e0cce7cae9c3ff60ec31f25cd94b1f5786f60eef966137",
+          "observer_source": "native/current-validation/results/results.json",
+          "raw_log": "native/current-validation/results/starlette_trusted_host/baseline_nochange-native_default.log"
+        },
+        {
+          "environment": "windows_installed_subjects",
+          "case": "starlette_trusted_host",
+          "condition": "baseline_nochange",
+          "mode": "native_fallback",
+          "exit": 0,
+          "calls": 3,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "6f22825323e07b9e19e0cce7cae9c3ff60ec31f25cd94b1f5786f60eef966137",
+          "observer_source": "native/current-validation/results/results.json",
+          "raw_log": "native/current-validation/results/starlette_trusted_host/baseline_nochange-native_fallback.log"
+        },
+        {
+          "environment": "windows_installed_subjects",
+          "case": "starlette_trusted_host",
+          "condition": "baseline_nochange",
+          "mode": "full_suite",
+          "exit": 0,
+          "calls": 3,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "6f22825323e07b9e19e0cce7cae9c3ff60ec31f25cd94b1f5786f60eef966137",
+          "observer_source": "native/current-validation/results/results.json",
+          "raw_log": "native/current-validation/results/starlette_trusted_host/baseline_nochange-full_suite.log"
+        },
+        {
+          "environment": "windows_installed_subjects",
+          "case": "starlette_trusted_host",
+          "condition": "benign_comment",
+          "mode": "native_default",
+          "exit": 0,
+          "calls": 0,
+          "call_failures": 0,
+          "setup_skips": 3,
+          "source_sha256": "68c79d8dd8aefcd1c9f4cb4ed34429ba6ae1f0761ee951bf3eb9ca5077a87cab",
+          "observer_source": "native/current-validation/results/results.json",
+          "raw_log": "native/current-validation/results/starlette_trusted_host/benign_comment-native_default.log"
+        },
+        {
+          "environment": "windows_installed_subjects",
+          "case": "starlette_trusted_host",
+          "condition": "benign_comment",
+          "mode": "native_fallback",
+          "exit": 0,
+          "calls": 3,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "68c79d8dd8aefcd1c9f4cb4ed34429ba6ae1f0761ee951bf3eb9ca5077a87cab",
+          "observer_source": "native/current-validation/results/results.json",
+          "raw_log": "native/current-validation/results/starlette_trusted_host/benign_comment-native_fallback.log"
+        },
+        {
+          "environment": "windows_installed_subjects",
+          "case": "starlette_trusted_host",
+          "condition": "benign_comment",
+          "mode": "full_suite",
+          "exit": 0,
+          "calls": 3,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "68c79d8dd8aefcd1c9f4cb4ed34429ba6ae1f0761ee951bf3eb9ca5077a87cab",
+          "observer_source": "native/current-validation/results/results.json",
+          "raw_log": "native/current-validation/results/starlette_trusted_host/benign_comment-full_suite.log"
+        },
+        {
+          "environment": "windows_installed_subjects",
+          "case": "starlette_trusted_host",
+          "condition": "ordinary",
+          "mode": "native_default",
+          "exit": 0,
+          "calls": 0,
+          "call_failures": 0,
+          "setup_skips": 3,
+          "source_sha256": "1e767efa1f81e6ddee73abbba2dfb80ecd92e54285e5e709f3836ec978d51032",
+          "observer_source": "native/current-validation/results/results.json",
+          "raw_log": "native/current-validation/results/starlette_trusted_host/ordinary-native_default.log"
+        },
+        {
+          "environment": "windows_installed_subjects",
+          "case": "starlette_trusted_host",
+          "condition": "ordinary",
+          "mode": "native_fallback",
+          "exit": 1,
+          "calls": 3,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "1e767efa1f81e6ddee73abbba2dfb80ecd92e54285e5e709f3836ec978d51032",
+          "observer_source": "native/current-validation/results/results.json",
+          "raw_log": "native/current-validation/results/starlette_trusted_host/ordinary-native_fallback.log"
+        },
+        {
+          "environment": "windows_installed_subjects",
+          "case": "starlette_trusted_host",
+          "condition": "ordinary",
+          "mode": "full_suite",
+          "exit": 1,
+          "calls": 3,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "1e767efa1f81e6ddee73abbba2dfb80ecd92e54285e5e709f3836ec978d51032",
+          "observer_source": "native/current-validation/results/results.json",
+          "raw_log": "native/current-validation/results/starlette_trusted_host/ordinary-full_suite.log"
+        },
+        {
+          "environment": "windows_installed_subjects",
+          "case": "starlette_trusted_host",
+          "condition": "collision",
+          "mode": "native_default",
+          "exit": 0,
+          "calls": 0,
+          "call_failures": 0,
+          "setup_skips": 3,
+          "source_sha256": "2789f299d1787ac5f20a883502047189b1bcfe21142676e2ccd1b9219c7773d9",
+          "observer_source": "native/current-validation/results/results.json",
+          "raw_log": "native/current-validation/results/starlette_trusted_host/collision-native_default.log"
+        },
+        {
+          "environment": "windows_installed_subjects",
+          "case": "starlette_trusted_host",
+          "condition": "collision",
+          "mode": "native_fallback",
+          "exit": 1,
+          "calls": 3,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "2789f299d1787ac5f20a883502047189b1bcfe21142676e2ccd1b9219c7773d9",
+          "observer_source": "native/current-validation/results/results.json",
+          "raw_log": "native/current-validation/results/starlette_trusted_host/collision-native_fallback.log"
+        },
+        {
+          "environment": "windows_installed_subjects",
+          "case": "starlette_trusted_host",
+          "condition": "collision",
+          "mode": "full_suite",
+          "exit": 1,
+          "calls": 3,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "2789f299d1787ac5f20a883502047189b1bcfe21142676e2ccd1b9219c7773d9",
+          "observer_source": "native/current-validation/results/results.json",
+          "raw_log": "native/current-validation/results/starlette_trusted_host/collision-full_suite.log"
+        },
+        {
+          "environment": "windows_installed_subjects",
+          "case": "requests_crlf_header",
+          "condition": "baseline_nochange",
+          "mode": "native_default",
+          "exit": 0,
+          "calls": 0,
+          "call_failures": 0,
+          "setup_skips": 3,
+          "source_sha256": "5aa53ceab677c2f842fad42359c8ed1ff1c4299c1607789609957a496e4311d4",
+          "observer_source": "native/current-validation/results/results.json",
+          "raw_log": "native/current-validation/results/requests_crlf_header/baseline_nochange-native_default.log"
+        },
+        {
+          "environment": "windows_installed_subjects",
+          "case": "requests_crlf_header",
+          "condition": "baseline_nochange",
+          "mode": "native_fallback",
+          "exit": 0,
+          "calls": 3,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "5aa53ceab677c2f842fad42359c8ed1ff1c4299c1607789609957a496e4311d4",
+          "observer_source": "native/current-validation/results/results.json",
+          "raw_log": "native/current-validation/results/requests_crlf_header/baseline_nochange-native_fallback.log"
+        },
+        {
+          "environment": "windows_installed_subjects",
+          "case": "requests_crlf_header",
+          "condition": "baseline_nochange",
+          "mode": "full_suite",
+          "exit": 0,
+          "calls": 3,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "5aa53ceab677c2f842fad42359c8ed1ff1c4299c1607789609957a496e4311d4",
+          "observer_source": "native/current-validation/results/results.json",
+          "raw_log": "native/current-validation/results/requests_crlf_header/baseline_nochange-full_suite.log"
+        },
+        {
+          "environment": "windows_installed_subjects",
+          "case": "requests_crlf_header",
+          "condition": "benign_comment",
+          "mode": "native_default",
+          "exit": 0,
+          "calls": 0,
+          "call_failures": 0,
+          "setup_skips": 3,
+          "source_sha256": "c0cd072eb9a28f4efba988bcbdb480fb873a7a0943d723ff8f302105f120e457",
+          "observer_source": "native/current-validation/results/results.json",
+          "raw_log": "native/current-validation/results/requests_crlf_header/benign_comment-native_default.log"
+        },
+        {
+          "environment": "windows_installed_subjects",
+          "case": "requests_crlf_header",
+          "condition": "benign_comment",
+          "mode": "native_fallback",
+          "exit": 0,
+          "calls": 3,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "c0cd072eb9a28f4efba988bcbdb480fb873a7a0943d723ff8f302105f120e457",
+          "observer_source": "native/current-validation/results/results.json",
+          "raw_log": "native/current-validation/results/requests_crlf_header/benign_comment-native_fallback.log"
+        },
+        {
+          "environment": "windows_installed_subjects",
+          "case": "requests_crlf_header",
+          "condition": "benign_comment",
+          "mode": "full_suite",
+          "exit": 0,
+          "calls": 3,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "c0cd072eb9a28f4efba988bcbdb480fb873a7a0943d723ff8f302105f120e457",
+          "observer_source": "native/current-validation/results/results.json",
+          "raw_log": "native/current-validation/results/requests_crlf_header/benign_comment-full_suite.log"
+        },
+        {
+          "environment": "windows_installed_subjects",
+          "case": "requests_crlf_header",
+          "condition": "ordinary",
+          "mode": "native_default",
+          "exit": 0,
+          "calls": 0,
+          "call_failures": 0,
+          "setup_skips": 3,
+          "source_sha256": "a539bf7445f8768d61fb91959776d679e7d0e91a8a889b292890dc6487421c23",
+          "observer_source": "native/current-validation/results/results.json",
+          "raw_log": "native/current-validation/results/requests_crlf_header/ordinary-native_default.log"
+        },
+        {
+          "environment": "windows_installed_subjects",
+          "case": "requests_crlf_header",
+          "condition": "ordinary",
+          "mode": "native_fallback",
+          "exit": 1,
+          "calls": 3,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "a539bf7445f8768d61fb91959776d679e7d0e91a8a889b292890dc6487421c23",
+          "observer_source": "native/current-validation/results/results.json",
+          "raw_log": "native/current-validation/results/requests_crlf_header/ordinary-native_fallback.log"
+        },
+        {
+          "environment": "windows_installed_subjects",
+          "case": "requests_crlf_header",
+          "condition": "ordinary",
+          "mode": "full_suite",
+          "exit": 1,
+          "calls": 3,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "a539bf7445f8768d61fb91959776d679e7d0e91a8a889b292890dc6487421c23",
+          "observer_source": "native/current-validation/results/results.json",
+          "raw_log": "native/current-validation/results/requests_crlf_header/ordinary-full_suite.log"
+        },
+        {
+          "environment": "windows_installed_subjects",
+          "case": "requests_crlf_header",
+          "condition": "collision",
+          "mode": "native_default",
+          "exit": 0,
+          "calls": 0,
+          "call_failures": 0,
+          "setup_skips": 3,
+          "source_sha256": "e47e101197c1896761a333d3cf81ec838b1b8df5de1aef33098a7fd2f30e8337",
+          "observer_source": "native/current-validation/results/results.json",
+          "raw_log": "native/current-validation/results/requests_crlf_header/collision-native_default.log"
+        },
+        {
+          "environment": "windows_installed_subjects",
+          "case": "requests_crlf_header",
+          "condition": "collision",
+          "mode": "native_fallback",
+          "exit": 1,
+          "calls": 3,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "e47e101197c1896761a333d3cf81ec838b1b8df5de1aef33098a7fd2f30e8337",
+          "observer_source": "native/current-validation/results/results.json",
+          "raw_log": "native/current-validation/results/requests_crlf_header/collision-native_fallback.log"
+        },
+        {
+          "environment": "windows_installed_subjects",
+          "case": "requests_crlf_header",
+          "condition": "collision",
+          "mode": "full_suite",
+          "exit": 1,
+          "calls": 3,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "e47e101197c1896761a333d3cf81ec838b1b8df5de1aef33098a7fd2f30e8337",
+          "observer_source": "native/current-validation/results/results.json",
+          "raw_log": "native/current-validation/results/requests_crlf_header/collision-full_suite.log"
+        },
+        {
+          "environment": "ubuntu_installed_subjects",
+          "case": "itsdangerous_expiry",
+          "condition": "baseline_nochange",
+          "mode": "native_default",
+          "exit": 0,
+          "calls": 0,
+          "call_failures": 0,
+          "setup_skips": 3,
+          "source_sha256": "e91bc332a36e9863317f4f8796969974df4f51042646fad01a994a871ba2bd4b",
+          "observer_source": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/itsdangerous_expiry/baseline_nochange-native_default.log"
+        },
+        {
+          "environment": "ubuntu_installed_subjects",
+          "case": "itsdangerous_expiry",
+          "condition": "baseline_nochange",
+          "mode": "native_fallback",
+          "exit": 0,
+          "calls": 3,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "e91bc332a36e9863317f4f8796969974df4f51042646fad01a994a871ba2bd4b",
+          "observer_source": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/itsdangerous_expiry/baseline_nochange-native_fallback.log"
+        },
+        {
+          "environment": "ubuntu_installed_subjects",
+          "case": "itsdangerous_expiry",
+          "condition": "baseline_nochange",
+          "mode": "full_suite",
+          "exit": 0,
+          "calls": 3,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "e91bc332a36e9863317f4f8796969974df4f51042646fad01a994a871ba2bd4b",
+          "observer_source": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/itsdangerous_expiry/baseline_nochange-full_suite.log"
+        },
+        {
+          "environment": "ubuntu_installed_subjects",
+          "case": "itsdangerous_expiry",
+          "condition": "benign_comment",
+          "mode": "native_default",
+          "exit": 0,
+          "calls": 0,
+          "call_failures": 0,
+          "setup_skips": 3,
+          "source_sha256": "bc6aae49f1f6996c3fe4bf34e4080d00778426d455c4c85c8a3387c6cf08d894",
+          "observer_source": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/itsdangerous_expiry/benign_comment-native_default.log"
+        },
+        {
+          "environment": "ubuntu_installed_subjects",
+          "case": "itsdangerous_expiry",
+          "condition": "benign_comment",
+          "mode": "native_fallback",
+          "exit": 0,
+          "calls": 3,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "bc6aae49f1f6996c3fe4bf34e4080d00778426d455c4c85c8a3387c6cf08d894",
+          "observer_source": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/itsdangerous_expiry/benign_comment-native_fallback.log"
+        },
+        {
+          "environment": "ubuntu_installed_subjects",
+          "case": "itsdangerous_expiry",
+          "condition": "benign_comment",
+          "mode": "full_suite",
+          "exit": 0,
+          "calls": 3,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "bc6aae49f1f6996c3fe4bf34e4080d00778426d455c4c85c8a3387c6cf08d894",
+          "observer_source": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/itsdangerous_expiry/benign_comment-full_suite.log"
+        },
+        {
+          "environment": "ubuntu_installed_subjects",
+          "case": "itsdangerous_expiry",
+          "condition": "ordinary",
+          "mode": "native_default",
+          "exit": 0,
+          "calls": 0,
+          "call_failures": 0,
+          "setup_skips": 3,
+          "source_sha256": "b38b2567a62ce08cf39e65b686986402eb239681bee3ecf395981c0894d08158",
+          "observer_source": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/itsdangerous_expiry/ordinary-native_default.log"
+        },
+        {
+          "environment": "ubuntu_installed_subjects",
+          "case": "itsdangerous_expiry",
+          "condition": "ordinary",
+          "mode": "native_fallback",
+          "exit": 1,
+          "calls": 3,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "b38b2567a62ce08cf39e65b686986402eb239681bee3ecf395981c0894d08158",
+          "observer_source": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/itsdangerous_expiry/ordinary-native_fallback.log"
+        },
+        {
+          "environment": "ubuntu_installed_subjects",
+          "case": "itsdangerous_expiry",
+          "condition": "ordinary",
+          "mode": "full_suite",
+          "exit": 1,
+          "calls": 3,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "b38b2567a62ce08cf39e65b686986402eb239681bee3ecf395981c0894d08158",
+          "observer_source": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/itsdangerous_expiry/ordinary-full_suite.log"
+        },
+        {
+          "environment": "ubuntu_installed_subjects",
+          "case": "itsdangerous_expiry",
+          "condition": "collision",
+          "mode": "native_default",
+          "exit": 0,
+          "calls": 0,
+          "call_failures": 0,
+          "setup_skips": 3,
+          "source_sha256": "958e620d9c196ef0fd6ec59737176885fcd29f01df2fa13fdecbda77b43ef011",
+          "observer_source": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/itsdangerous_expiry/collision-native_default.log"
+        },
+        {
+          "environment": "ubuntu_installed_subjects",
+          "case": "itsdangerous_expiry",
+          "condition": "collision",
+          "mode": "native_fallback",
+          "exit": 1,
+          "calls": 3,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "958e620d9c196ef0fd6ec59737176885fcd29f01df2fa13fdecbda77b43ef011",
+          "observer_source": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/itsdangerous_expiry/collision-native_fallback.log"
+        },
+        {
+          "environment": "ubuntu_installed_subjects",
+          "case": "itsdangerous_expiry",
+          "condition": "collision",
+          "mode": "full_suite",
+          "exit": 1,
+          "calls": 3,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "958e620d9c196ef0fd6ec59737176885fcd29f01df2fa13fdecbda77b43ef011",
+          "observer_source": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/itsdangerous_expiry/collision-full_suite.log"
+        },
+        {
+          "environment": "ubuntu_installed_subjects",
+          "case": "starlette_trusted_host",
+          "condition": "baseline_nochange",
+          "mode": "native_default",
+          "exit": 0,
+          "calls": 0,
+          "call_failures": 0,
+          "setup_skips": 3,
+          "source_sha256": "6f22825323e07b9e19e0cce7cae9c3ff60ec31f25cd94b1f5786f60eef966137",
+          "observer_source": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/starlette_trusted_host/baseline_nochange-native_default.log"
+        },
+        {
+          "environment": "ubuntu_installed_subjects",
+          "case": "starlette_trusted_host",
+          "condition": "baseline_nochange",
+          "mode": "native_fallback",
+          "exit": 0,
+          "calls": 3,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "6f22825323e07b9e19e0cce7cae9c3ff60ec31f25cd94b1f5786f60eef966137",
+          "observer_source": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/starlette_trusted_host/baseline_nochange-native_fallback.log"
+        },
+        {
+          "environment": "ubuntu_installed_subjects",
+          "case": "starlette_trusted_host",
+          "condition": "baseline_nochange",
+          "mode": "full_suite",
+          "exit": 0,
+          "calls": 3,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "6f22825323e07b9e19e0cce7cae9c3ff60ec31f25cd94b1f5786f60eef966137",
+          "observer_source": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/starlette_trusted_host/baseline_nochange-full_suite.log"
+        },
+        {
+          "environment": "ubuntu_installed_subjects",
+          "case": "starlette_trusted_host",
+          "condition": "benign_comment",
+          "mode": "native_default",
+          "exit": 0,
+          "calls": 0,
+          "call_failures": 0,
+          "setup_skips": 3,
+          "source_sha256": "68c79d8dd8aefcd1c9f4cb4ed34429ba6ae1f0761ee951bf3eb9ca5077a87cab",
+          "observer_source": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/starlette_trusted_host/benign_comment-native_default.log"
+        },
+        {
+          "environment": "ubuntu_installed_subjects",
+          "case": "starlette_trusted_host",
+          "condition": "benign_comment",
+          "mode": "native_fallback",
+          "exit": 0,
+          "calls": 3,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "68c79d8dd8aefcd1c9f4cb4ed34429ba6ae1f0761ee951bf3eb9ca5077a87cab",
+          "observer_source": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/starlette_trusted_host/benign_comment-native_fallback.log"
+        },
+        {
+          "environment": "ubuntu_installed_subjects",
+          "case": "starlette_trusted_host",
+          "condition": "benign_comment",
+          "mode": "full_suite",
+          "exit": 0,
+          "calls": 3,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "68c79d8dd8aefcd1c9f4cb4ed34429ba6ae1f0761ee951bf3eb9ca5077a87cab",
+          "observer_source": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/starlette_trusted_host/benign_comment-full_suite.log"
+        },
+        {
+          "environment": "ubuntu_installed_subjects",
+          "case": "starlette_trusted_host",
+          "condition": "ordinary",
+          "mode": "native_default",
+          "exit": 0,
+          "calls": 0,
+          "call_failures": 0,
+          "setup_skips": 3,
+          "source_sha256": "1e767efa1f81e6ddee73abbba2dfb80ecd92e54285e5e709f3836ec978d51032",
+          "observer_source": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/starlette_trusted_host/ordinary-native_default.log"
+        },
+        {
+          "environment": "ubuntu_installed_subjects",
+          "case": "starlette_trusted_host",
+          "condition": "ordinary",
+          "mode": "native_fallback",
+          "exit": 1,
+          "calls": 3,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "1e767efa1f81e6ddee73abbba2dfb80ecd92e54285e5e709f3836ec978d51032",
+          "observer_source": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/starlette_trusted_host/ordinary-native_fallback.log"
+        },
+        {
+          "environment": "ubuntu_installed_subjects",
+          "case": "starlette_trusted_host",
+          "condition": "ordinary",
+          "mode": "full_suite",
+          "exit": 1,
+          "calls": 3,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "1e767efa1f81e6ddee73abbba2dfb80ecd92e54285e5e709f3836ec978d51032",
+          "observer_source": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/starlette_trusted_host/ordinary-full_suite.log"
+        },
+        {
+          "environment": "ubuntu_installed_subjects",
+          "case": "starlette_trusted_host",
+          "condition": "collision",
+          "mode": "native_default",
+          "exit": 0,
+          "calls": 0,
+          "call_failures": 0,
+          "setup_skips": 3,
+          "source_sha256": "2789f299d1787ac5f20a883502047189b1bcfe21142676e2ccd1b9219c7773d9",
+          "observer_source": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/starlette_trusted_host/collision-native_default.log"
+        },
+        {
+          "environment": "ubuntu_installed_subjects",
+          "case": "starlette_trusted_host",
+          "condition": "collision",
+          "mode": "native_fallback",
+          "exit": 1,
+          "calls": 3,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "2789f299d1787ac5f20a883502047189b1bcfe21142676e2ccd1b9219c7773d9",
+          "observer_source": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/starlette_trusted_host/collision-native_fallback.log"
+        },
+        {
+          "environment": "ubuntu_installed_subjects",
+          "case": "starlette_trusted_host",
+          "condition": "collision",
+          "mode": "full_suite",
+          "exit": 1,
+          "calls": 3,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "2789f299d1787ac5f20a883502047189b1bcfe21142676e2ccd1b9219c7773d9",
+          "observer_source": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/starlette_trusted_host/collision-full_suite.log"
+        },
+        {
+          "environment": "ubuntu_installed_subjects",
+          "case": "requests_crlf_header",
+          "condition": "baseline_nochange",
+          "mode": "native_default",
+          "exit": 0,
+          "calls": 0,
+          "call_failures": 0,
+          "setup_skips": 3,
+          "source_sha256": "5aa53ceab677c2f842fad42359c8ed1ff1c4299c1607789609957a496e4311d4",
+          "observer_source": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/requests_crlf_header/baseline_nochange-native_default.log"
+        },
+        {
+          "environment": "ubuntu_installed_subjects",
+          "case": "requests_crlf_header",
+          "condition": "baseline_nochange",
+          "mode": "native_fallback",
+          "exit": 0,
+          "calls": 3,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "5aa53ceab677c2f842fad42359c8ed1ff1c4299c1607789609957a496e4311d4",
+          "observer_source": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/requests_crlf_header/baseline_nochange-native_fallback.log"
+        },
+        {
+          "environment": "ubuntu_installed_subjects",
+          "case": "requests_crlf_header",
+          "condition": "baseline_nochange",
+          "mode": "full_suite",
+          "exit": 0,
+          "calls": 3,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "5aa53ceab677c2f842fad42359c8ed1ff1c4299c1607789609957a496e4311d4",
+          "observer_source": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/requests_crlf_header/baseline_nochange-full_suite.log"
+        },
+        {
+          "environment": "ubuntu_installed_subjects",
+          "case": "requests_crlf_header",
+          "condition": "benign_comment",
+          "mode": "native_default",
+          "exit": 0,
+          "calls": 0,
+          "call_failures": 0,
+          "setup_skips": 3,
+          "source_sha256": "c0cd072eb9a28f4efba988bcbdb480fb873a7a0943d723ff8f302105f120e457",
+          "observer_source": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/requests_crlf_header/benign_comment-native_default.log"
+        },
+        {
+          "environment": "ubuntu_installed_subjects",
+          "case": "requests_crlf_header",
+          "condition": "benign_comment",
+          "mode": "native_fallback",
+          "exit": 0,
+          "calls": 3,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "c0cd072eb9a28f4efba988bcbdb480fb873a7a0943d723ff8f302105f120e457",
+          "observer_source": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/requests_crlf_header/benign_comment-native_fallback.log"
+        },
+        {
+          "environment": "ubuntu_installed_subjects",
+          "case": "requests_crlf_header",
+          "condition": "benign_comment",
+          "mode": "full_suite",
+          "exit": 0,
+          "calls": 3,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "c0cd072eb9a28f4efba988bcbdb480fb873a7a0943d723ff8f302105f120e457",
+          "observer_source": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/requests_crlf_header/benign_comment-full_suite.log"
+        },
+        {
+          "environment": "ubuntu_installed_subjects",
+          "case": "requests_crlf_header",
+          "condition": "ordinary",
+          "mode": "native_default",
+          "exit": 0,
+          "calls": 0,
+          "call_failures": 0,
+          "setup_skips": 3,
+          "source_sha256": "a539bf7445f8768d61fb91959776d679e7d0e91a8a889b292890dc6487421c23",
+          "observer_source": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/requests_crlf_header/ordinary-native_default.log"
+        },
+        {
+          "environment": "ubuntu_installed_subjects",
+          "case": "requests_crlf_header",
+          "condition": "ordinary",
+          "mode": "native_fallback",
+          "exit": 1,
+          "calls": 3,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "a539bf7445f8768d61fb91959776d679e7d0e91a8a889b292890dc6487421c23",
+          "observer_source": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/requests_crlf_header/ordinary-native_fallback.log"
+        },
+        {
+          "environment": "ubuntu_installed_subjects",
+          "case": "requests_crlf_header",
+          "condition": "ordinary",
+          "mode": "full_suite",
+          "exit": 1,
+          "calls": 3,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "a539bf7445f8768d61fb91959776d679e7d0e91a8a889b292890dc6487421c23",
+          "observer_source": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/requests_crlf_header/ordinary-full_suite.log"
+        },
+        {
+          "environment": "ubuntu_installed_subjects",
+          "case": "requests_crlf_header",
+          "condition": "collision",
+          "mode": "native_default",
+          "exit": 0,
+          "calls": 0,
+          "call_failures": 0,
+          "setup_skips": 3,
+          "source_sha256": "e47e101197c1896761a333d3cf81ec838b1b8df5de1aef33098a7fd2f30e8337",
+          "observer_source": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/requests_crlf_header/collision-native_default.log"
+        },
+        {
+          "environment": "ubuntu_installed_subjects",
+          "case": "requests_crlf_header",
+          "condition": "collision",
+          "mode": "native_fallback",
+          "exit": 1,
+          "calls": 3,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "e47e101197c1896761a333d3cf81ec838b1b8df5de1aef33098a7fd2f30e8337",
+          "observer_source": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/requests_crlf_header/collision-native_fallback.log"
+        },
+        {
+          "environment": "ubuntu_installed_subjects",
+          "case": "requests_crlf_header",
+          "condition": "collision",
+          "mode": "full_suite",
+          "exit": 1,
+          "calls": 3,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "e47e101197c1896761a333d3cf81ec838b1b8df5de1aef33098a7fd2f30e8337",
+          "observer_source": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429376249/native-depper-linux-attempt-1/cases/requests_crlf_header/collision-full_suite.log"
+        },
+        {
+          "environment": "ubuntu_local_subjects",
+          "case": "itsdangerous_expiry",
+          "condition": "baseline_nochange",
+          "mode": "native_default",
+          "exit": 0,
+          "calls": 0,
+          "call_failures": 0,
+          "setup_skips": 3,
+          "source_sha256": "e91bc332a36e9863317f4f8796969974df4f51042646fad01a994a871ba2bd4b",
+          "observer_source": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/itsdangerous_expiry/baseline_nochange-native_default.log"
+        },
+        {
+          "environment": "ubuntu_local_subjects",
+          "case": "itsdangerous_expiry",
+          "condition": "baseline_nochange",
+          "mode": "native_fallback",
+          "exit": 0,
+          "calls": 3,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "e91bc332a36e9863317f4f8796969974df4f51042646fad01a994a871ba2bd4b",
+          "observer_source": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/itsdangerous_expiry/baseline_nochange-native_fallback.log"
+        },
+        {
+          "environment": "ubuntu_local_subjects",
+          "case": "itsdangerous_expiry",
+          "condition": "baseline_nochange",
+          "mode": "full_suite",
+          "exit": 0,
+          "calls": 3,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "e91bc332a36e9863317f4f8796969974df4f51042646fad01a994a871ba2bd4b",
+          "observer_source": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/itsdangerous_expiry/baseline_nochange-full_suite.log"
+        },
+        {
+          "environment": "ubuntu_local_subjects",
+          "case": "itsdangerous_expiry",
+          "condition": "benign_comment",
+          "mode": "native_default",
+          "exit": 0,
+          "calls": 2,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "bc6aae49f1f6996c3fe4bf34e4080d00778426d455c4c85c8a3387c6cf08d894",
+          "observer_source": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/itsdangerous_expiry/benign_comment-native_default.log"
+        },
+        {
+          "environment": "ubuntu_local_subjects",
+          "case": "itsdangerous_expiry",
+          "condition": "benign_comment",
+          "mode": "native_fallback",
+          "exit": 0,
+          "calls": 2,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "bc6aae49f1f6996c3fe4bf34e4080d00778426d455c4c85c8a3387c6cf08d894",
+          "observer_source": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/itsdangerous_expiry/benign_comment-native_fallback.log"
+        },
+        {
+          "environment": "ubuntu_local_subjects",
+          "case": "itsdangerous_expiry",
+          "condition": "benign_comment",
+          "mode": "full_suite",
+          "exit": 0,
+          "calls": 3,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "bc6aae49f1f6996c3fe4bf34e4080d00778426d455c4c85c8a3387c6cf08d894",
+          "observer_source": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/itsdangerous_expiry/benign_comment-full_suite.log"
+        },
+        {
+          "environment": "ubuntu_local_subjects",
+          "case": "itsdangerous_expiry",
+          "condition": "ordinary",
+          "mode": "native_default",
+          "exit": 0,
+          "calls": 0,
+          "call_failures": 0,
+          "setup_skips": 3,
+          "source_sha256": "b38b2567a62ce08cf39e65b686986402eb239681bee3ecf395981c0894d08158",
+          "observer_source": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/itsdangerous_expiry/ordinary-native_default.log"
+        },
+        {
+          "environment": "ubuntu_local_subjects",
+          "case": "itsdangerous_expiry",
+          "condition": "ordinary",
+          "mode": "native_fallback",
+          "exit": 1,
+          "calls": 3,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "b38b2567a62ce08cf39e65b686986402eb239681bee3ecf395981c0894d08158",
+          "observer_source": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/itsdangerous_expiry/ordinary-native_fallback.log"
+        },
+        {
+          "environment": "ubuntu_local_subjects",
+          "case": "itsdangerous_expiry",
+          "condition": "ordinary",
+          "mode": "full_suite",
+          "exit": 1,
+          "calls": 3,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "b38b2567a62ce08cf39e65b686986402eb239681bee3ecf395981c0894d08158",
+          "observer_source": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/itsdangerous_expiry/ordinary-full_suite.log"
+        },
+        {
+          "environment": "ubuntu_local_subjects",
+          "case": "itsdangerous_expiry",
+          "condition": "collision",
+          "mode": "native_default",
+          "exit": 0,
+          "calls": 0,
+          "call_failures": 0,
+          "setup_skips": 3,
+          "source_sha256": "958e620d9c196ef0fd6ec59737176885fcd29f01df2fa13fdecbda77b43ef011",
+          "observer_source": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/itsdangerous_expiry/collision-native_default.log"
+        },
+        {
+          "environment": "ubuntu_local_subjects",
+          "case": "itsdangerous_expiry",
+          "condition": "collision",
+          "mode": "native_fallback",
+          "exit": 1,
+          "calls": 3,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "958e620d9c196ef0fd6ec59737176885fcd29f01df2fa13fdecbda77b43ef011",
+          "observer_source": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/itsdangerous_expiry/collision-native_fallback.log"
+        },
+        {
+          "environment": "ubuntu_local_subjects",
+          "case": "itsdangerous_expiry",
+          "condition": "collision",
+          "mode": "full_suite",
+          "exit": 1,
+          "calls": 3,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "958e620d9c196ef0fd6ec59737176885fcd29f01df2fa13fdecbda77b43ef011",
+          "observer_source": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/itsdangerous_expiry/collision-full_suite.log"
+        },
+        {
+          "environment": "ubuntu_local_subjects",
+          "case": "starlette_trusted_host",
+          "condition": "baseline_nochange",
+          "mode": "native_default",
+          "exit": 0,
+          "calls": 0,
+          "call_failures": 0,
+          "setup_skips": 3,
+          "source_sha256": "6f22825323e07b9e19e0cce7cae9c3ff60ec31f25cd94b1f5786f60eef966137",
+          "observer_source": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/starlette_trusted_host/baseline_nochange-native_default.log"
+        },
+        {
+          "environment": "ubuntu_local_subjects",
+          "case": "starlette_trusted_host",
+          "condition": "baseline_nochange",
+          "mode": "native_fallback",
+          "exit": 0,
+          "calls": 3,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "6f22825323e07b9e19e0cce7cae9c3ff60ec31f25cd94b1f5786f60eef966137",
+          "observer_source": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/starlette_trusted_host/baseline_nochange-native_fallback.log"
+        },
+        {
+          "environment": "ubuntu_local_subjects",
+          "case": "starlette_trusted_host",
+          "condition": "baseline_nochange",
+          "mode": "full_suite",
+          "exit": 0,
+          "calls": 3,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "6f22825323e07b9e19e0cce7cae9c3ff60ec31f25cd94b1f5786f60eef966137",
+          "observer_source": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/starlette_trusted_host/baseline_nochange-full_suite.log"
+        },
+        {
+          "environment": "ubuntu_local_subjects",
+          "case": "starlette_trusted_host",
+          "condition": "benign_comment",
+          "mode": "native_default",
+          "exit": 0,
+          "calls": 2,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "68c79d8dd8aefcd1c9f4cb4ed34429ba6ae1f0761ee951bf3eb9ca5077a87cab",
+          "observer_source": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/starlette_trusted_host/benign_comment-native_default.log"
+        },
+        {
+          "environment": "ubuntu_local_subjects",
+          "case": "starlette_trusted_host",
+          "condition": "benign_comment",
+          "mode": "native_fallback",
+          "exit": 0,
+          "calls": 2,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "68c79d8dd8aefcd1c9f4cb4ed34429ba6ae1f0761ee951bf3eb9ca5077a87cab",
+          "observer_source": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/starlette_trusted_host/benign_comment-native_fallback.log"
+        },
+        {
+          "environment": "ubuntu_local_subjects",
+          "case": "starlette_trusted_host",
+          "condition": "benign_comment",
+          "mode": "full_suite",
+          "exit": 0,
+          "calls": 3,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "68c79d8dd8aefcd1c9f4cb4ed34429ba6ae1f0761ee951bf3eb9ca5077a87cab",
+          "observer_source": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/starlette_trusted_host/benign_comment-full_suite.log"
+        },
+        {
+          "environment": "ubuntu_local_subjects",
+          "case": "starlette_trusted_host",
+          "condition": "ordinary",
+          "mode": "native_default",
+          "exit": 1,
+          "calls": 2,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "1e767efa1f81e6ddee73abbba2dfb80ecd92e54285e5e709f3836ec978d51032",
+          "observer_source": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/starlette_trusted_host/ordinary-native_default.log"
+        },
+        {
+          "environment": "ubuntu_local_subjects",
+          "case": "starlette_trusted_host",
+          "condition": "ordinary",
+          "mode": "native_fallback",
+          "exit": 1,
+          "calls": 2,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "1e767efa1f81e6ddee73abbba2dfb80ecd92e54285e5e709f3836ec978d51032",
+          "observer_source": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/starlette_trusted_host/ordinary-native_fallback.log"
+        },
+        {
+          "environment": "ubuntu_local_subjects",
+          "case": "starlette_trusted_host",
+          "condition": "ordinary",
+          "mode": "full_suite",
+          "exit": 1,
+          "calls": 3,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "1e767efa1f81e6ddee73abbba2dfb80ecd92e54285e5e709f3836ec978d51032",
+          "observer_source": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/starlette_trusted_host/ordinary-full_suite.log"
+        },
+        {
+          "environment": "ubuntu_local_subjects",
+          "case": "starlette_trusted_host",
+          "condition": "collision",
+          "mode": "native_default",
+          "exit": 1,
+          "calls": 2,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "2789f299d1787ac5f20a883502047189b1bcfe21142676e2ccd1b9219c7773d9",
+          "observer_source": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/starlette_trusted_host/collision-native_default.log"
+        },
+        {
+          "environment": "ubuntu_local_subjects",
+          "case": "starlette_trusted_host",
+          "condition": "collision",
+          "mode": "native_fallback",
+          "exit": 1,
+          "calls": 2,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "2789f299d1787ac5f20a883502047189b1bcfe21142676e2ccd1b9219c7773d9",
+          "observer_source": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/starlette_trusted_host/collision-native_fallback.log"
+        },
+        {
+          "environment": "ubuntu_local_subjects",
+          "case": "starlette_trusted_host",
+          "condition": "collision",
+          "mode": "full_suite",
+          "exit": 1,
+          "calls": 3,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "2789f299d1787ac5f20a883502047189b1bcfe21142676e2ccd1b9219c7773d9",
+          "observer_source": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/starlette_trusted_host/collision-full_suite.log"
+        },
+        {
+          "environment": "ubuntu_local_subjects",
+          "case": "requests_crlf_header",
+          "condition": "baseline_nochange",
+          "mode": "native_default",
+          "exit": 0,
+          "calls": 0,
+          "call_failures": 0,
+          "setup_skips": 3,
+          "source_sha256": "5aa53ceab677c2f842fad42359c8ed1ff1c4299c1607789609957a496e4311d4",
+          "observer_source": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/requests_crlf_header/baseline_nochange-native_default.log"
+        },
+        {
+          "environment": "ubuntu_local_subjects",
+          "case": "requests_crlf_header",
+          "condition": "baseline_nochange",
+          "mode": "native_fallback",
+          "exit": 0,
+          "calls": 3,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "5aa53ceab677c2f842fad42359c8ed1ff1c4299c1607789609957a496e4311d4",
+          "observer_source": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/requests_crlf_header/baseline_nochange-native_fallback.log"
+        },
+        {
+          "environment": "ubuntu_local_subjects",
+          "case": "requests_crlf_header",
+          "condition": "baseline_nochange",
+          "mode": "full_suite",
+          "exit": 0,
+          "calls": 3,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "5aa53ceab677c2f842fad42359c8ed1ff1c4299c1607789609957a496e4311d4",
+          "observer_source": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/requests_crlf_header/baseline_nochange-full_suite.log"
+        },
+        {
+          "environment": "ubuntu_local_subjects",
+          "case": "requests_crlf_header",
+          "condition": "benign_comment",
+          "mode": "native_default",
+          "exit": 0,
+          "calls": 2,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "c0cd072eb9a28f4efba988bcbdb480fb873a7a0943d723ff8f302105f120e457",
+          "observer_source": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/requests_crlf_header/benign_comment-native_default.log"
+        },
+        {
+          "environment": "ubuntu_local_subjects",
+          "case": "requests_crlf_header",
+          "condition": "benign_comment",
+          "mode": "native_fallback",
+          "exit": 0,
+          "calls": 2,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "c0cd072eb9a28f4efba988bcbdb480fb873a7a0943d723ff8f302105f120e457",
+          "observer_source": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/requests_crlf_header/benign_comment-native_fallback.log"
+        },
+        {
+          "environment": "ubuntu_local_subjects",
+          "case": "requests_crlf_header",
+          "condition": "benign_comment",
+          "mode": "full_suite",
+          "exit": 0,
+          "calls": 3,
+          "call_failures": 0,
+          "setup_skips": 0,
+          "source_sha256": "c0cd072eb9a28f4efba988bcbdb480fb873a7a0943d723ff8f302105f120e457",
+          "observer_source": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/requests_crlf_header/benign_comment-full_suite.log"
+        },
+        {
+          "environment": "ubuntu_local_subjects",
+          "case": "requests_crlf_header",
+          "condition": "ordinary",
+          "mode": "native_default",
+          "exit": 0,
+          "calls": 0,
+          "call_failures": 0,
+          "setup_skips": 3,
+          "source_sha256": "a539bf7445f8768d61fb91959776d679e7d0e91a8a889b292890dc6487421c23",
+          "observer_source": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/requests_crlf_header/ordinary-native_default.log"
+        },
+        {
+          "environment": "ubuntu_local_subjects",
+          "case": "requests_crlf_header",
+          "condition": "ordinary",
+          "mode": "native_fallback",
+          "exit": 1,
+          "calls": 3,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "a539bf7445f8768d61fb91959776d679e7d0e91a8a889b292890dc6487421c23",
+          "observer_source": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/requests_crlf_header/ordinary-native_fallback.log"
+        },
+        {
+          "environment": "ubuntu_local_subjects",
+          "case": "requests_crlf_header",
+          "condition": "ordinary",
+          "mode": "full_suite",
+          "exit": 1,
+          "calls": 3,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "a539bf7445f8768d61fb91959776d679e7d0e91a8a889b292890dc6487421c23",
+          "observer_source": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/requests_crlf_header/ordinary-full_suite.log"
+        },
+        {
+          "environment": "ubuntu_local_subjects",
+          "case": "requests_crlf_header",
+          "condition": "collision",
+          "mode": "native_default",
+          "exit": 0,
+          "calls": 0,
+          "call_failures": 0,
+          "setup_skips": 3,
+          "source_sha256": "e47e101197c1896761a333d3cf81ec838b1b8df5de1aef33098a7fd2f30e8337",
+          "observer_source": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/requests_crlf_header/collision-native_default.log"
+        },
+        {
+          "environment": "ubuntu_local_subjects",
+          "case": "requests_crlf_header",
+          "condition": "collision",
+          "mode": "native_fallback",
+          "exit": 1,
+          "calls": 3,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "e47e101197c1896761a333d3cf81ec838b1b8df5de1aef33098a7fd2f30e8337",
+          "observer_source": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/requests_crlf_header/collision-native_fallback.log"
+        },
+        {
+          "environment": "ubuntu_local_subjects",
+          "case": "requests_crlf_header",
+          "condition": "collision",
+          "mode": "full_suite",
+          "exit": 1,
+          "calls": 3,
+          "call_failures": 1,
+          "setup_skips": 0,
+          "source_sha256": "e47e101197c1896761a333d3cf81ec838b1b8df5de1aef33098a7fd2f30e8337",
+          "observer_source": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/results.json",
+          "raw_log": "hosted/current-validation/artifacts/run-42429562709/native-depper-linux-attempt-1/cases/requests_crlf_header/collision-full_suite.log"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "ast_guard_positive_and_comment_controls",
+      "status": "RAW_SUPPORTED",
+      "verified_values": {
+        "preserving_cases_flagged": 3,
+        "fallback_oracles": 3,
+        "fallback_failures": 3,
+        "comment_controls_no_escalation": 3
+      },
+      "evidence": [
+        "recovered/incoming-extension/extracted/snp2027_extension_2026-11-07/outputs/ast_integrity_guard.csv",
+        "recovered/incoming-extension/extracted/snp2027_extension_2026-11-07/outputs/comment_controls.csv",
+        "recovered/incoming-extension/extracted/snp2027_extension_2026-11-07/outputs/logs/ast_guard/itsdangerous_expiry/fail_closed_full.log",
+        "recovered/incoming-extension/extracted/snp2027_extension_2026-11-07/outputs/logs/ast_guard/starlette_trusted_host/fail_closed_full.log",
+        "recovered/incoming-extension/extracted/snp2027_extension_2026-11-07/outputs/logs/ast_guard/requests_crlf_header/fail_closed_full.log"
+      ],
+      "notes": "Comment-control CSV and retained comment source support representation equality; no complete pytest fallback is expected for these no-escalation controls.",
+      "comment_source_ast_recomputation": [
+        {
+          "case": "itsdangerous_expiry",
+          "baseline": "recovered\\incoming-extension\\extracted\\snp2027_extension_2026-11-07\\fixtures\\itsdangerous_expiry_copy_\\snapshots\\baseline.py",
+          "comment_source": "recovered\\incoming-extension\\extracted\\snp2027_extension_2026-11-07\\outputs\\workspaces\\itsdangerous_expiry\\comment_control\\itsdangerous\\timed.py",
+          "ast_equal": true,
+          "source_sha256": "96f4725d9c14fdd37fb2622e0ecb1011a4f56aa3f50d21270f0e456fb8017015"
+        },
+        {
+          "case": "starlette_trusted_host",
+          "baseline": "recovered\\incoming-extension\\extracted\\snp2027_extension_2026-11-07\\fixtures\\starlette_trusted_host_copy_\\snapshots\\baseline.py",
+          "comment_source": "recovered\\incoming-extension\\extracted\\snp2027_extension_2026-11-07\\outputs\\workspaces\\starlette_trusted_host\\comment_control\\starlette\\middleware\\trustedhost.py",
+          "ast_equal": true,
+          "source_sha256": "50ec5987d969a400b25fcbf972921881d6b0f9801800c1cb304f023d3bbcee99"
+        },
+        {
+          "case": "requests_crlf_header",
+          "baseline": "recovered\\incoming-extension\\extracted\\snp2027_extension_2026-11-07\\fixtures\\requests_crlf_header_copy_\\snapshots\\baseline.py",
+          "comment_source": "recovered\\incoming-extension\\extracted\\snp2027_extension_2026-11-07\\outputs\\workspaces\\requests_crlf_header\\comment_control\\requests\\utils.py",
+          "ast_equal": true,
+          "source_sha256": "43206af540ec98f75bd1848356e962c0a6a64081b4655d72af1a118e02e50204"
+        }
+      ]
+    },
+    {
+      "id": "ast_behavior_preserving_structural_rewrite",
+      "status": "MISSING_RAW_RECORD",
+      "verified_values": {
+        "manuscript_claim": 1
+      },
+      "evidence": [],
+      "notes": "No saved source/result/log located for the claimed AST-distinct behavior-preserving rewrite. Do not infer this from three comment controls."
+    },
+    {
+      "id": "authentic_ten_repository_feasibility_screen",
+      "status": "RAW_SUPPORTED",
+      "verified_values": {
+        "subjects": 10,
+        "eligible": 2,
+        "passing_baseline_but_no_unchanged_deselection": 3,
+        "no_valid_baseline": 5,
+        "subject_counts": {
+          "click": [
+            8,
+            8
+          ],
+          "commons-codec": [
+            0,
+            null
+          ],
+          "commons-io": [
+            130,
+            130
+          ],
+          "commons-lang": [
+            0,
+            null
+          ],
+          "commons-text": [
+            2,
+            2
+          ],
+          "commons-validator": [
+            0,
+            null
+          ],
+          "itsdangerous": [
+            8,
+            0
+          ],
+          "requests": [
+            1,
+            0
+          ],
+          "starlette": [
+            null,
+            null
+          ],
+          "urllib3": [
+            null,
+            null
+          ]
+        }
+      },
+      "evidence": [
+        {
+          "subject": "click",
+          "repo": "pallets/click",
+          "verified_sha": "8abb77a8432e03ed14a95f972b44f905279415a7",
+          "status": "baseline_ran_but_selector_nochange_not_zero",
+          "baseline_executed": 8,
+          "unchanged_executed": 8,
+          "record": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-click-1\\result.json",
+          "checked_logs": [
+            {
+              "phase": "baseline",
+              "path": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-click-1\\logs\\native_baseline.log",
+              "non_skipped_actual": 8,
+              "sha256": "ee8f7ed3cad5987a5ef43ee056ac731e511aae048137c2967c39c0f191930dff"
+            },
+            {
+              "phase": "nochange",
+              "path": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-click-1\\logs\\native_nochange.log",
+              "non_skipped_actual": 8,
+              "sha256": "48545994fcbd159bd4878ac6ac1a6f4a044199d347768cf90e7ee4005ca93c0f"
+            }
+          ],
+          "eligible": false
+        },
+        {
+          "subject": "commons-codec",
+          "repo": "apache/commons-codec",
+          "verified_sha": "c0013c15e4a5b2c72c60b17e0ac9eb2772250041",
+          "status": "blocked_or_failed",
+          "baseline_executed": 0,
+          "unchanged_executed": null,
+          "record": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-commons-codec-1\\result.json",
+          "checked_logs": [],
+          "eligible": false
+        },
+        {
+          "subject": "commons-io",
+          "repo": "apache/commons-io",
+          "verified_sha": "a06ee11d2bf7fba46ccc419da69e2ff4a13986b5",
+          "status": "verified_nonzero_baseline_nochange_measured",
+          "baseline_executed": 130,
+          "unchanged_executed": 130,
+          "record": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-commons-io-1\\result.json",
+          "checked_logs": [
+            {
+              "phase": "baseline",
+              "path": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-commons-io-1\\logs\\native_baseline_0.log",
+              "non_skipped_actual": 130,
+              "sha256": "3b78f59a8e22dd5bbe14f64362f29176067e9d60a6dfd9d5b31f93c3d98e3d7c"
+            },
+            {
+              "phase": "nochange",
+              "path": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-commons-io-1\\logs\\native_nochange.log",
+              "non_skipped_actual": 130,
+              "sha256": "da49b8c19a2b44c50320b7f634fafe45437ac1b00e6252f1a51e169681a0a080"
+            }
+          ],
+          "eligible": false
+        },
+        {
+          "subject": "commons-lang",
+          "repo": "apache/commons-lang",
+          "verified_sha": "5d2715b9da13fb584058d264c46dfed6bcc700d1",
+          "status": "blocked_or_failed",
+          "baseline_executed": 0,
+          "unchanged_executed": null,
+          "record": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-commons-lang-1\\result.json",
+          "checked_logs": [],
+          "eligible": false
+        },
+        {
+          "subject": "commons-text",
+          "repo": "apache/commons-text",
+          "verified_sha": "ed3f23e12362f77d2b850e291458a0907da34d96",
+          "status": "verified_nonzero_baseline_nochange_measured",
+          "baseline_executed": 2,
+          "unchanged_executed": 2,
+          "record": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-commons-text-1\\result.json",
+          "checked_logs": [
+            {
+              "phase": "baseline",
+              "path": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-commons-text-1\\logs\\native_baseline_6.log",
+              "non_skipped_actual": 2,
+              "sha256": "a6034df357dddadd7a0ceac7c5ab9edd7b68619a79de61e13b7cbefd8bb2d0c4"
+            },
+            {
+              "phase": "nochange",
+              "path": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-commons-text-1\\logs\\native_nochange.log",
+              "non_skipped_actual": 2,
+              "sha256": "6fed167b80d199ce92ec809f275b9e52910aff896e4fb2315a90ac6c557fc449"
+            }
+          ],
+          "eligible": false
+        },
+        {
+          "subject": "commons-validator",
+          "repo": "apache/commons-validator",
+          "verified_sha": "b4b130bd308965ccea69a487b1bdab0b897d1a7b",
+          "status": "blocked_or_failed",
+          "baseline_executed": 0,
+          "unchanged_executed": null,
+          "record": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-commons-validator-1\\result.json",
+          "checked_logs": [],
+          "eligible": false
+        },
+        {
+          "subject": "itsdangerous",
+          "repo": "pallets/itsdangerous",
+          "verified_sha": "672971d66a2ef9f85151e53283113f33d642dabd",
+          "status": "baseline_and_selector_nochange_verified",
+          "baseline_executed": 8,
+          "unchanged_executed": 0,
+          "record": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-itsdangerous-1\\result.json",
+          "checked_logs": [
+            {
+              "phase": "baseline",
+              "path": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-itsdangerous-1\\logs\\native_baseline.log",
+              "non_skipped_actual": 8,
+              "sha256": "77fdfe918870f639ee4ece217e9ca065e1999f84c4b1f5a5e7312abcb37cadce"
+            },
+            {
+              "phase": "nochange",
+              "path": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-itsdangerous-1\\logs\\native_nochange.log",
+              "non_skipped_actual": 0,
+              "sha256": "a5ce16dcf651e7d236a4195eebea6d2007624e6d63c36982c2e4f2a63a072969"
+            }
+          ],
+          "eligible": true
+        },
+        {
+          "subject": "requests",
+          "repo": "psf/requests",
+          "verified_sha": "3c7baaa05ab4aa49cc819ce3a819d260de19c157",
+          "status": "baseline_and_selector_nochange_verified",
+          "baseline_executed": 1,
+          "unchanged_executed": 0,
+          "record": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-requests-1\\result.json",
+          "checked_logs": [
+            {
+              "phase": "baseline",
+              "path": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-requests-1\\logs\\native_baseline.log",
+              "non_skipped_actual": 1,
+              "sha256": "06645444b776c09ba12dba04994fc04adb1d93ef1683557c64a6b43c2af002e1"
+            },
+            {
+              "phase": "nochange",
+              "path": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-requests-1\\logs\\native_nochange.log",
+              "non_skipped_actual": 0,
+              "sha256": "999f22528ed41358569cb7d5906534d5b560c635f60ebcf7a0fdaf36ac45a6d9"
+            }
+          ],
+          "eligible": true
+        },
+        {
+          "subject": "starlette",
+          "repo": "Kludex/starlette",
+          "verified_sha": "271c277da0ff64e2048a4d46ecc812b9d61db5f6",
+          "status": "blocked_or_failed",
+          "baseline_executed": null,
+          "unchanged_executed": null,
+          "record": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-starlette-1\\result.json",
+          "checked_logs": [],
+          "eligible": false
+        },
+        {
+          "subject": "urllib3",
+          "repo": "urllib3/urllib3",
+          "verified_sha": "c5347bbd39203d68d7b0e3ffb83ced3e3b4b9109",
+          "status": "blocked_or_failed",
+          "baseline_executed": null,
+          "unchanged_executed": null,
+          "record": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-urllib3-1\\result.json",
+          "checked_logs": [],
+          "eligible": false
+        }
+      ],
+      "notes": "Recovered existing hosted run 42763093847, pinned head e8fb63b507ec4da7155b35211a682641f6c0fa9b. All 10 original artifact ZIP SHA256 digests match GitHub metadata. Original pytest/Surefire logs were independently parsed; duplicated per-class and aggregate Surefire summaries are not added together. The frozen runner uses whole Python files and up to eight Java classes. No attack was attempted in this cohort."
+    },
+    {
+      "id": "configuration_convenience_audit",
+      "status": "COMMITTED_OBSERVATION_RECORD_SUPPORTED_WITH_LIMITS",
+      "verified_values": {
+        "search_ranked_frames": 2,
+        "frame_repositories_each": 60,
+        "selected_each_language": 12,
+        "selected_total": 24,
+        "with_workflow_paths": 19,
+        "indexed_literal_hits": 0,
+        "truncated_tree_flags": 0,
+        "fnv_selection_recomputed": true
+      },
+      "evidence": [
+        "artifacts\\final-bounded-revision-2026-11-11\\raw\\prevalence-d2c384c\\SOURCE_VERIFICATION.json",
+        "artifacts\\final-bounded-revision-2026-11-11\\raw\\prevalence-d2c384c\\sampling_frame.json",
+        "artifacts\\final-bounded-revision-2026-11-11\\raw\\prevalence-d2c384c\\python_batch_1.json",
+        "artifacts\\final-bounded-revision-2026-11-11\\raw\\prevalence-d2c384c\\python_batch_2.json",
+        "artifacts\\final-bounded-revision-2026-11-11\\raw\\prevalence-d2c384c\\python_batch_3.json",
+        "artifacts\\final-bounded-revision-2026-11-11\\raw\\prevalence-d2c384c\\java_batch_1.json",
+        "artifacts\\final-bounded-revision-2026-11-11\\raw\\prevalence-d2c384c\\java_batch_2.json",
+        "artifacts\\final-bounded-revision-2026-11-11\\raw\\prevalence-d2c384c\\java_batch_3.json"
+      ],
+      "notes": "Frozen committed observation records at d2c384cbb12da5aa893eb511fc0ac22097e4a04b. Git blob identity was verified for all nine files. FNV scores, selection and counts were recomputed from 24 batch records. Full original GitHub tree/search HTTP responses and per-repository commit IDs are not retained in these files. Indexed nonmatches remain recorded observations rather than independently proven absence or prevalence."
+    },
+    {
+      "id": "apache_configuration_audit",
+      "status": "RAW_CONFIGURATION_SUPPORTED",
+      "verified_values": {
+        "repositories": 20,
+        "configuration_files": 156,
+        "optional_ekstazi_profile_projects": 2,
+        "project_names": [
+          "commons-math",
+          "commons-numbers"
+        ],
+        "ekstazi_workflow_mentions": 0,
+        "testmon_configuration_mentions": 0
+      },
+      "evidence": [
+        "artifacts\\final-bounded-revision-2026-11-11\\raw\\integrity\\APACHE_AUDIT_RECOMPUTED.json",
+        "artifacts\\final-bounded-revision-2026-11-11\\raw\\integrity\\extracted\\rts_integrity_2026-11-10\\project_sample\\repository_audit_raw.json",
+        "artifacts\\final-bounded-revision-2026-11-11\\raw\\integrity\\extracted\\rts_integrity_2026-11-10\\project_sample\\snapshots"
+      ],
+      "notes": "All 156 retained configuration bytes match SHA256 and size in raw records at 20 pinned upstream revisions. Independently parsed root POM profiles identify exactly math and numbers. Their complete root POM Git blobs were also independently fetched from the authoritative upstream pinned commits and match archived snapshot blobs. No claim of active invocation or mandatory checks follows from optional profiles."
+    },
+    {
+      "id": "testmon_metadata_fault_campaign",
+      "status": "RAW_SUPPORTED",
+      "verified_values": {
+        "comparisons": 45,
+        "detections": 39,
+        "explicit_database_errors": 6,
+        "false_passes": 0,
+        "separate_controls": 4
+      },
+      "evidence": [
+        "artifacts\\final-bounded-revision-2026-11-11\\raw\\integrity\\TESTMON_FAULT_AUDIT.json",
+        "artifacts\\final-bounded-revision-2026-11-11\\raw\\integrity\\extracted\\rts_integrity_2026-11-10\\testmon_pilot\\results.json",
+        "artifacts\\final-bounded-revision-2026-11-11\\raw\\integrity\\extracted\\rts_integrity_2026-11-10\\testmon_pilot\\environment.json"
+      ],
+      "notes": "All 49 per-run result files agree with the canonical row set. For 39 matrix runs, retained JUnit XML verifies completed assertion failures; six standard-RTS garbage/half-truncated database runs exit 3 with SQLite DatabaseError, INTERNALERROR logs and no JUnit completion. All 45 candidate arms retain baseline test hashes. Four setup/oracle controls are separate. Environment: Python 3.12.14, pytest 8.4.2, coverage 7.10.6, testmon 2.3.0."
+    },
+    {
+      "id": "metadata_campaign_arithmetic",
+      "status": "RAW_SUPPORTED_COMBINED_NUMERICAL_AUDITS",
+      "verified_values": {
+        "comparison_groups": {
+          "ekstazi_native": 72,
+          "testmon_native": 45,
+          "java_library_wrapper": 45
+        },
+        "total_changed_source_comparisons": 162,
+        "assertion_failure_completions": 156,
+        "runner_errors": 6,
+        "false_passes": 0,
+        "all_analyzed_invocations": 189,
+        "outside_denominator_controls": 27,
+        "control_composition": {
+          "native": 4,
+          "testmon": 4,
+          "wrappers": 15,
+          "supplemental_maven_integration": 4
+        }
+      },
+      "evidence": [
+        "artifacts\\final-bounded-revision-2026-11-11\\raw\\integrity\\extracted\\rts_integrity_2026-11-10\\deliverables\\controlled_results.json",
+        "artifacts\\final-bounded-revision-2026-11-11\\raw\\integrity\\extracted\\rts_integrity_2026-11-10\\deliverables\\summary.json",
+        "artifacts\\final-bounded-revision-2026-11-11\\raw\\integrity\\TESTMON_FAULT_AUDIT.json",
+        "artifacts\\final-bounded-revision-2026-11-11\\JAVA_METADATA_FAULT_AUDIT.json"
+      ],
+      "notes": "All 162 comparison counts are supported by the combined Java and Python raw-data audits. They comprise 72 native Java, 45 testmon and 45 wrapper comparisons. The other 27 invocations comprise 4 native controls, 4 testmon controls, 15 wrapper controls and 4 supplemental Maven integration checks. Four earlier incomplete native-study controls are retained but excluded."
+    },
+    {
+      "id": "six_condition_policy_figure",
+      "status": "RAW_SUPPORTED",
+      "verified_values": {
+        "hosted_testmon_detect": 3,
+        "preferred_depper_detect": 2,
+        "depper_fallback_detect": 6,
+        "complete_oracles_detect": 6
+      },
+      "evidence": [
+        "hosted/current-validation/hosted-results.json",
+        "native/current-validation/combined-results.json"
+      ],
+      "notes": "Per-selector fixed six-condition counts, not independent attack counts or cost-effectiveness."
+    },
+    {
+      "id": "requests_original_test_negative_control",
+      "status": "RAW_SUPPORTED",
+      "verified_values": {
+        "technical_repetitions": 3,
+        "baseline_actual_passes": 205,
+        "baseline_platform_skips": 13,
+        "native_actual_calls": 2,
+        "native_passes": 1,
+        "native_original_security_failures": 1,
+        "independent_actual_calls": 205,
+        "independent_passes": 204,
+        "independent_failures": 1,
+        "independent_platform_skips": 13,
+        "qualifying_false_pass": false
+      },
+      "evidence": [
+        "experiments\\fixed-historical-replay-20261111\\results-corrected-observer\\replay-result.json",
+        "experiments\\fixed-historical-replay-20261111\\INDEPENDENT_REPLAY_AUDIT.json",
+        "experiments\\fixed-historical-replay-20261111\\diagnosis\\result.json"
+      ],
+      "per_repetition_hashes": [
+        {
+          "repeat": 1,
+          "candidate_tree_sha256": "6729b4bafe16e78a01b200024e963bfdd0c20c345c17f16bdc1566cfaed399ca",
+          "original_test_sha256": "5ef1d612edb55d4629fa8c3c6867bae0bf69050b951da9954927e42e48b88ff1"
+        },
+        {
+          "repeat": 2,
+          "candidate_tree_sha256": "6729b4bafe16e78a01b200024e963bfdd0c20c345c17f16bdc1566cfaed399ca",
+          "original_test_sha256": "5ef1d612edb55d4629fa8c3c6867bae0bf69050b951da9954927e42e48b88ff1"
+        },
+        {
+          "repeat": 3,
+          "candidate_tree_sha256": "6729b4bafe16e78a01b200024e963bfdd0c20c345c17f16bdc1566cfaed399ca",
+          "original_test_sha256": "5ef1d612edb55d4629fa8c3c6867bae0bf69050b951da9954927e42e48b88ff1"
+        }
+      ],
+      "notes": "Added final manuscript control. The named original netrc security assertion executes and fails under both native selection and independent full evaluation. This is an ordinary-change detection control, not a positive omission witness. The evaluation set is one unchanged original utility-test module, not the entire Requests suite."
+    }
+  ],
+  "unsupported_claim_ids": [
+    "ast_behavior_preserving_structural_rewrite"
+  ],
+  "evidence_family_count": 12,
+  "audit_source": "Own read-only parsing of CSV/JSON, verbose logs and saved baseline bytes; prior summary reports were not substituted for raw reports",
+  "remote_recovery": {
+    "existing_run": 42763093847,
+    "pilot_commit": "e8fb63b507ec4da7155b35211a682641f6c0fa9b",
+    "prevalence_commit": "d2c384cbb12da5aa893eb511fc0ac22097e4a04b",
+    "new_experiments_executed": false,
+    "supersedes": "NONJAVA_NUMERICAL_AUDIT_INITIAL_LOCAL_SEARCH.json for the pilot and 24-repository audit only"
+  },
+  "integrity_archive_recovery": {
+    "retained_archive": "artifacts\\final-bounded-revision-2026-11-11\\raw\\integrity\\rts_integrity_evidence_2026-11-10.zip",
+    "archive_sha256": "009bc42fb9108ff89f4eae1b6ef2395577d2b576c9f1418b084959f2b93e74be",
+    "bytes": 4818082,
+    "members": 1140,
+    "internal_manifest_entries_verified": 1139,
+    "artifact_code_executed": false
+  },
+  "environment_boundaries": {
+    "archived_local_python_repetitions": "Python3.13.5 / pytest9.0.2",
+    "hosted_six_conditions": "Python3.13.18 / pytest9.0.2",
+    "metadata_fault_testmon": "Python3.12.14 / pytest8.4.2 / coverage7.10.6",
+    "new_original_requests_control": "Python3.13.13 / pytest8.4.2 / coverage7.11.0"
+  }
+}

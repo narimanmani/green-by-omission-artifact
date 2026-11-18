@@ -1,0 +1,4 @@
+repetition,original_unit_files,baseline_passed,baseline_failed,baseline_exit,native_unit_files,native_passed,native_failed,native_exit,independent_passed,independent_failed,independent_exit,skipped_pending_todo_total,original_guard_failed_independently,independently_qualifying,evidence_sha256
+1,471,8173,0,0,1,8,0,0,8172,1,1,0,True,True,19966ae85591c9ef3befffdf7d91710bf10bec8a3c456f92d32a2ce8047f2d08
+2,471,8173,0,0,1,8,0,0,8172,1,1,0,True,True,fef9ce137035e49d250d7f12958b010174632b51618b57a168b52d7f4ace9a87
+3,471,8173,0,0,1,8,0,0,8172,1,1,0,True,True,be1ed51ea4965d6d6ac2065e550251c48058a3a20a7d284abe4fa9fea067bdab

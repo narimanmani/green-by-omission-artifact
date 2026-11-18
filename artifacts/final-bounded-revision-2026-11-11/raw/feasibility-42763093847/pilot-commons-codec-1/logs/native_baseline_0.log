@@ -1,0 +1,84 @@
+[INFO] Scanning for projects...
+[INFO] Loaded 24432 auto-discovered prefixes for remote repository central (prefixes-central.txt)
+[INFO] 
+[INFO] --------------------< commons-codec:commons-codec >---------------------
+[INFO] Building Apache Commons Codec 1.23.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Loaded 64 auto-discovered prefixes for remote repository apache.snapshots (prefixes-apache.snapshots.txt)
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ commons-codec ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-java-version) @ commons-codec ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[INFO] 
+[INFO] --- apache-rat:0.18:check (rat-check) @ commons-codec ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- artifact:3.7.0:check-buildplan (check-buildplan) @ commons-codec ---
+[INFO] No known issue in 21 plugins
+[INFO] 
+[INFO] --- build-helper:3.6.2:parse-version (parse-version) @ commons-codec ---
+[INFO] 
+[INFO] --- antrun:3.2.0:run (javadoc.resources) @ commons-codec ---
+[INFO] Executing tasks
+[INFO]      [copy] Copying 2 files to /home/runner/work/_temp/pilot/upstream/target/apidocs/META-INF
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- remote-resources:3.3.0:process (process-resource-bundles) @ commons-codec ---
+[INFO] Skipping remote resources execution.
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ commons-codec ---
+[INFO] Copying 128 resources from src/main/resources to target/classes
+[INFO] Copying 2 resources from . to target/classes/META-INF
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ commons-codec ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 90 source files with javac [debug release 8] to target/classes
+[WARNING] source value 8 is obsolete and will be removed in a future release
+[WARNING] target value 8 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] 
+[INFO] --- bundle:6.2.0:manifest (bundle-manifest) @ commons-codec ---
+[INFO] No MANIFEST.MF file found, generating manifest.
+[INFO] Writing manifest: /home/runner/work/_temp/pilot/upstream/target/osgi/MANIFEST.MF
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ commons-codec ---
+[INFO] Copying 7 resources from src/test/resources to target/test-classes
+[INFO] Copying 2 resources from . to target/test-classes/META-INF
+[INFO] 
+[INFO] --- compiler:3.16.0:testCompile (default-testCompile) @ commons-codec ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 96 source files with javac [debug release 8] to target/test-classes
+[WARNING] source value 8 is obsolete and will be removed in a future release
+[WARNING] target value 8 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] /home/runner/work/_temp/pilot/upstream/src/test/java/org/apache/commons/codec/digest/MurmurHash3Test.java: Some input files use or override a deprecated API.
+[INFO] /home/runner/work/_temp/pilot/upstream/src/test/java/org/apache/commons/codec/digest/MurmurHash3Test.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- ekstazi:5.3.0:select (default) @ commons-codec ---
+[INFO] 
+[INFO] --- jacoco:0.8.16:prepare-agent (prepare-agent) @ commons-codec ---
+[INFO] argLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.16/org.jacoco.agent-0.8.16-runtime.jar=destfile=/home/runner/work/_temp/pilot/upstream/target/jacoco.exec,exclclassloader=jdk.internal.loader.ClassLoaders$PlatformClassLoader -javaagent:/home/runner/.m2/repository/org/ekstazi/org.ekstazi.core/5.3.0/org.ekstazi.core-5.3.0.jar=mode=JUNIT,force.all=false,force.failing=false,root.dir=file:/home/runner/work/_temp/pilot/upstream/.ekstazi -XX:+EnableDynamicAgentLoading
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ commons-codec ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- ekstazi:5.3.0:restore (default) @ commons-codec ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  24.409 s
+[INFO] Finished at: 2026-11-10T05:36:08Z
+[INFO] ------------------------------------------------------------------------
+

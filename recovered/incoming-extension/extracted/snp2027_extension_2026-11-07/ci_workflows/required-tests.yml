@@ -1,0 +1,16 @@
+name: required-security-regression-tests
+# Reference workflow design. The experiment executes the run command locally.
+# A hosted GitHub Actions run/branch protection status is NOT claimed.
+on:
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  affected-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Restore trusted baseline from protected main CI artifact
+        run: python verify_trusted_baseline.py
+      - name: Required impacted-tests check
+        run: python -m pytest -p testmon.pytest_testmon --testmon -vv

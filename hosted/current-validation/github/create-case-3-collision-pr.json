@@ -1,0 +1,21 @@
+{
+  "utc": "2026-11-08T00:22:26.129391+00:00",
+  "command": [
+    "gh",
+    "pr",
+    "create",
+    "--repo",
+    "anonymous-owner/ci-selection-testbed",
+    "--base",
+    "main",
+    "--head",
+    "trial/requests_crlf_header/collision",
+    "--title",
+    "Case 3: collision source-only validation",
+    "--body-file",
+    "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\hosted\\current-validation\\github\\case-3-collision-pr-body.md"
+  ],
+  "exit": 0,
+  "stdout": "https://example.invalid/anonymous-research/ci-selection-testbed/pull/7\n",
+  "stderr": ""
+}

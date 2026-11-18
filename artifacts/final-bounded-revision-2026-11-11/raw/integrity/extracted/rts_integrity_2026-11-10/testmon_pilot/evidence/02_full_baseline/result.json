@@ -1,0 +1,51 @@
+{
+  "command": [
+    "/workspace/scratch/0827c1f80a7f/testmon_pilot/venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "--junitxml=/workspace/scratch/0827c1f80a7f/testmon_pilot/evidence/02_full_baseline/junit.xml",
+    "-p",
+    "no:testmon"
+  ],
+  "cwd": "/workspace/scratch/0827c1f80a7f/testmon_pilot/work",
+  "elapsed_s": 0.7087082650000127,
+  "errors": 0,
+  "evidence_class": "native_execution",
+  "executed_nodeids": [
+    "test_arithmetic.py::test_positive",
+    "test_arithmetic.py::test_negative",
+    "test_label.py::test_label",
+    "test_untouched.py::test_identity"
+  ],
+  "exit_code": 0,
+  "failing_nodeids": [],
+  "failures": 0,
+  "fault": "none",
+  "full_suite_fallback": false,
+  "integrity_checked": false,
+  "integrity_ok": null,
+  "repetition": 0,
+  "run_id": "02_full_baseline",
+  "skipped": 0,
+  "skipped_nodeids": [],
+  "source_hashes": {
+    "arithmetic.py": "ba1a531f581d2e6094e978ed6f7aca7a8d92eeb62c6e7ad73ee692f7f18bc772",
+    "label.py": "5cc56014e9067f7afe2e9b51d724e2404f27c6f5c99b93a4cbc8e083cfea0cbf",
+    "test_arithmetic.py": "47dc7781071c2d0bcb13a5797986dd2b16b4f2fcdc35e5b096b7a5ac4e520362",
+    "test_label.py": "e7bc90f92cbae047d12adfa93e9c77a25915e1a1458f85e4b3b8b60cd3918114",
+    "test_untouched.py": "a85d4dc40d843deafb207c95713f37192377c908a4e80cc5b037678052ac94ea",
+    "untouched.py": "9910e2fc297f8665cc0c7a6a0dcf2522dbe3ad118bdab9b9cb20a4df678557ac"
+  },
+  "source_state": "baseline",
+  "status": "pass",
+  "strategy": "full_suite",
+  "test_hashes": {
+    "test_arithmetic.py": "47dc7781071c2d0bcb13a5797986dd2b16b4f2fcdc35e5b096b7a5ac4e520362",
+    "test_label.py": "e7bc90f92cbae047d12adfa93e9c77a25915e1a1458f85e4b3b8b60cd3918114",
+    "test_untouched.py": "a85d4dc40d843deafb207c95713f37192377c908a4e80cc5b037678052ac94ea"
+  },
+  "tests": 4,
+  "used_testmon": false,
+  "xml_exists": true
+}

@@ -1,0 +1,84 @@
+{
+  "results": [
+    {
+      "repo": "insideapp-fr/sonar-flutter",
+      "default_branch": "master",
+      "score": 68716545,
+      "hits": [],
+      "tree": {
+        "truncated": false,
+        "n_files": 158,
+        "n_java": 62,
+        "n_tests": 20,
+        "workflows": [
+          ".github/workflows/maven.yml",
+          ".github/workflows/release.yml",
+          ".github/workflows/stale.yml"
+        ],
+        "build_files": [
+          "pom.xml"
+        ]
+      }
+    },
+    {
+      "repo": "dekorateio/dekorate",
+      "default_branch": "main",
+      "score": 89001379,
+      "hits": [],
+      "tree": {
+        "truncated": false,
+        "n_files": 3922,
+        "n_java": 1022,
+        "n_tests": 177,
+        "workflows": [
+          ".github/workflows/build.yml",
+          ".github/workflows/checks.yml",
+          ".github/workflows/downstream-projects-check.yml",
+          ".github/workflows/integration-tests-with-dockerio.yml",
+          ".github/workflows/integration-tests.yml",
+          ".github/workflows/pages.yml",
+          ".github/workflows/release.yml"
+        ],
+        "build_files": [
+          "pom.xml"
+        ]
+      }
+    },
+    {
+      "repo": "mikaelgrev/miglayout",
+      "default_branch": "master",
+      "score": 195131067,
+      "hits": [],
+      "tree": {
+        "truncated": false,
+        "n_files": 866,
+        "n_java": 121,
+        "n_tests": 71,
+        "workflows": [
+          ".github/workflows/build.yml"
+        ],
+        "build_files": [
+          "pom.xml"
+        ]
+      }
+    },
+    {
+      "repo": "blendi-remade/falcraft",
+      "default_branch": "1.21",
+      "score": 232905873,
+      "hits": [],
+      "tree": {
+        "truncated": false,
+        "n_files": 91,
+        "n_java": 38,
+        "n_tests": 0,
+        "workflows": [
+          ".github/workflows/build.yml"
+        ],
+        "build_files": [
+          "build.gradle"
+        ]
+      }
+    }
+  ]
+}

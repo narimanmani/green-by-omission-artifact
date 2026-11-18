@@ -1,0 +1,79 @@
+{
+  "collected": [
+    "tests/test_meta.py::test_metadata_build_positive",
+    "tests/test_security.py::test_security_rejects_header_injection",
+    "tests/test_security.py::test_valid_header_passes"
+  ],
+  "deselected": [],
+  "synthetic_deselected_count": 0,
+  "reports": [
+    {
+      "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_valid_header_passes",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_valid_header_passes",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_valid_header_passes",
+      "when": "teardown",
+      "outcome": "passed"
+    }
+  ],
+  "collection_errors": [],
+  "initial_exitstatus": 0,
+  "final_exitstatus": 0,
+  "executed_tests": [
+    "tests/test_meta.py::test_metadata_build_positive",
+    "tests/test_security.py::test_security_rejects_header_injection",
+    "tests/test_security.py::test_valid_header_passes"
+  ],
+  "skipped_tests": [],
+  "target_module": {
+    "name": "requests.utils",
+    "loaded": true,
+    "file": "/home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/cases/requests_crlf_header/requests/utils.py"
+  },
+  "plugin_modules": {
+    "testmon": "/home/runner/work/_temp/venv/lib/python3.13/site-packages/testmon/__init__.py",
+    "testmon.configure": "/home/runner/work/_temp/venv/lib/python3.13/site-packages/testmon/configure.py",
+    "testmon.common": "/home/runner/work/_temp/venv/lib/python3.13/site-packages/testmon/common.py",
+    "testmon.process_code": "/home/runner/work/_temp/venv/lib/python3.13/site-packages/testmon/process_code.py",
+    "testmon.db": "/home/runner/work/_temp/venv/lib/python3.13/site-packages/testmon/db.py",
+    "testmon.testmon_core": "/home/runner/work/_temp/venv/lib/python3.13/site-packages/testmon/testmon_core.py",
+    "testmon.pytest_testmon": "/home/runner/work/_temp/venv/lib/python3.13/site-packages/testmon/pytest_testmon.py"
+  }
+}

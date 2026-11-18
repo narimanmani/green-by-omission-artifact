@@ -1,0 +1,93 @@
+[INFO] Scanning for projects...
+[INFO] Loaded 24416 auto-discovered prefixes for remote repository central (prefixes-central.txt)
+[INFO] Loaded 64 auto-discovered prefixes for remote repository apache.snapshots (prefixes-apache.snapshots.txt)
+[INFO] 
+[INFO] ----------------< commons-validator:commons-validator >-----------------
+[INFO] Building Apache Commons Validator 1.7
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.0.0-M3:enforce (enforce-maven-version) @ commons-validator ---
+[INFO] 
+[INFO] --- enforcer:3.0.0-M3:enforce (enforce-maven-3) @ commons-validator ---
+[INFO] 
+[INFO] --- apache-rat:0.13:check (rat-check) @ commons-validator ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- build-helper:3.1.0:parse-version (parse-version) @ commons-validator ---
+[WARNING] Ignoring checksum policy 'warn' contributed by repository apache.snapshots (http://repository.apache.org/snapshots) declared by a remote artifact descriptor: it would downgrade the checksum policy 'fail' of the mirror serving it; set aether.remoteRepositoryManager.rawRepositoryChecksumPolicyDowngrade=true to restore the legacy weakest-wins merge
+[WARNING] Ignoring checksum policy 'warn' contributed by repository codehaus.snapshots (http://snapshots.repository.codehaus.org) declared by a remote artifact descriptor: it would downgrade the checksum policy 'fail' of the mirror serving it; set aether.remoteRepositoryManager.rawRepositoryChecksumPolicyDowngrade=true to restore the legacy weakest-wins merge
+[INFO] 
+[INFO] --- antrun:3.0.0:run (javadoc.resources) @ commons-validator ---
+[INFO] Executing tasks
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ commons-validator ---
+[INFO] Skipping remote resources execution.
+[INFO] 
+[INFO] --- buildnumber:1.4:create (default) @ commons-validator ---
+[WARNING] Ignoring checksum policy 'warn' contributed by repository maven.tmatesoft.com.snapshots (http://maven.tmatesoft.com/content/repositories/snapshots) declared by a remote artifact descriptor: it would downgrade the checksum policy 'fail' of the mirror serving it; set aether.remoteRepositoryManager.rawRepositoryChecksumPolicyDowngrade=true to restore the legacy weakest-wins merge
+[WARNING] Ignoring checksum policy 'warn' contributed by repository snapshots (http://snapshots.maven.codehaus.org/maven2) declared by a remote artifact descriptor: it would downgrade the checksum policy 'fail' of the mirror serving it; set aether.remoteRepositoryManager.rawRepositoryChecksumPolicyDowngrade=true to restore the legacy weakest-wins merge
+[INFO] Executing: /bin/sh -c cd '/home/runner/work/_temp/commons-validator-source' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /home/runner/work/_temp/commons-validator-source
+[INFO] Storing buildNumber: f9bb21748a9f9c50fbc31862de25ed49433ecc88 at timestamp: 1794215039093
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/home/runner/work/_temp/commons-validator-source' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /home/runner/work/_temp/commons-validator-source
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- resources:3.1.0:resources (default-resources) @ commons-validator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 8 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ commons-validator ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 64 source files to /home/runner/work/_temp/commons-validator-source/target/classes
+[INFO] /home/runner/work/_temp/commons-validator-source/src/main/java/org/apache/commons/validator/Field.java: Some input files use or override a deprecated API.
+[INFO] /home/runner/work/_temp/commons-validator-source/src/main/java/org/apache/commons/validator/Field.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- bundle:4.2.1:manifest (bundle-manifest) @ commons-validator ---
+[INFO] 
+[INFO] --- animal-sniffer:1.18:check (checkAPIcompatibility) @ commons-validator ---
+[WARNING] Ignoring checksum policy 'warn' contributed by repository apache.snapshots (http://people.apache.org/maven-snapshot-repository) declared by a remote artifact descriptor: it would downgrade the checksum policy 'fail' of the mirror serving it; set aether.remoteRepositoryManager.rawRepositoryChecksumPolicyDowngrade=true to restore the legacy weakest-wins merge
+[WARNING] Ignoring checksum policy 'warn' contributed by repository ow2-snapshot (http://repository.ow2.org/nexus/content/repositories/snapshots) declared by a remote artifact descriptor: it would downgrade the checksum policy 'fail' of the mirror serving it; set aether.remoteRepositoryManager.rawRepositoryChecksumPolicyDowngrade=true to restore the legacy weakest-wins merge
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- resources:3.1.0:testResources (default-testResources) @ commons-validator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 19 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ commons-validator ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 84 source files to /home/runner/work/_temp/commons-validator-source/target/test-classes
+[INFO] 
+[INFO] --- ekstazi:5.3.0:select (study-selection) @ commons-validator ---
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ commons-validator ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junit4.JUnit4Provider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.commons.validator.routines.UrlValidatorTest
+[INFO] Tests run: 33, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.897 s -- in org.apache.commons.validator.routines.UrlValidatorTest
+[INFO] Running org.apache.commons.validator.routines.RegexValidatorTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s -- in org.apache.commons.validator.routines.RegexValidatorTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 40, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- ekstazi:5.3.0:restore (study-selection) @ commons-validator ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  8.404 s
+[INFO] Finished at: 2026-11-09T09:04:04Z
+[INFO] ------------------------------------------------------------------------
+

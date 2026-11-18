@@ -1,0 +1,24 @@
+The bundle contains these 20 refs:
+bd70de31b4ed9c7850b179b0d045cad88ad013ea refs/heads/control/depper-local-only
+edb0a2968fb5149dbc6d6f99f292d3174c840ef3 refs/heads/main
+b420a7f803a4b4324eab4b00897f700c8630e8c2 refs/heads/setup/original-cases
+686510acdab5bdeee071bbcc981c8f11864dde9d refs/heads/trial/itsdangerous_expiry/collision
+75ca88276e8f610b8dca550bb448c61d3109bfa8 refs/heads/trial/itsdangerous_expiry/ordinary
+9df3cfb451d724850a3cdf6ebc4f57f69968418e refs/heads/trial/requests_crlf_header/collision
+2e19136a525aa8cd8774e0b4929955dd29e4a128 refs/heads/trial/requests_crlf_header/ordinary
+908e6f141715629b8c3a51d3b8bbd805f532e0c7 refs/heads/trial/starlette_trusted_host/collision
+35895c1629a579b4acfc0e70446e22f212f7081e refs/heads/trial/starlette_trusted_host/ordinary
+1d63949857934672de5c13f543174b4dbf0fd7ce refs/remotes/origin/HEAD
+bd70de31b4ed9c7850b179b0d045cad88ad013ea refs/remotes/origin/control/depper-local-only
+1d63949857934672de5c13f543174b4dbf0fd7ce refs/remotes/origin/main
+b420a7f803a4b4324eab4b00897f700c8630e8c2 refs/remotes/origin/setup/original-cases
+686510acdab5bdeee071bbcc981c8f11864dde9d refs/remotes/origin/trial/itsdangerous_expiry/collision
+75ca88276e8f610b8dca550bb448c61d3109bfa8 refs/remotes/origin/trial/itsdangerous_expiry/ordinary
+9df3cfb451d724850a3cdf6ebc4f57f69968418e refs/remotes/origin/trial/requests_crlf_header/collision
+2e19136a525aa8cd8774e0b4929955dd29e4a128 refs/remotes/origin/trial/requests_crlf_header/ordinary
+908e6f141715629b8c3a51d3b8bbd805f532e0c7 refs/remotes/origin/trial/starlette_trusted_host/collision
+35895c1629a579b4acfc0e70446e22f212f7081e refs/remotes/origin/trial/starlette_trusted_host/ordinary
+bd70de31b4ed9c7850b179b0d045cad88ad013ea HEAD
+The bundle records a complete history.
+The bundle uses this hash algorithm: sha1
+<user-home>/OneDrive/Documents/ChatGPT/sp2027/hosted/current-validation/hosted-history.bundle is okay

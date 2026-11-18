@@ -1,0 +1,9 @@
+
+ImportError while loading conftest '/home/runner/work/_temp/pilot/upstream/tests/conftest.py'.
+tests/conftest.py:17: in <module>
+    from starlette.testclient import TestClient
+starlette/testclient.py:34: in <module>
+    raise RuntimeError(
+E   RuntimeError: The starlette.testclient module requires the httpx2 package to be installed.
+E   You can install this with:
+E       $ pip install httpx2

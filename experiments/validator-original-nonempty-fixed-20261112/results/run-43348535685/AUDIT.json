@@ -1,0 +1,2385 @@
+{
+  "repetitions": 3,
+  "statuses": [
+    "VALID_FIXED_CASE",
+    "VALID_FIXED_CASE",
+    "VALID_FIXED_CASE"
+  ],
+  "joint_observations": [
+    true,
+    true,
+    true
+  ],
+  "baseline_counts": [
+    60,
+    60,
+    60
+  ],
+  "native_counts": [
+    20,
+    20,
+    20
+  ],
+  "independent_counts": [
+    60,
+    60,
+    60
+  ],
+  "raw_records": [
+    {
+      "repetition": 1,
+      "result": {
+        "status": "VALID_FIXED_CASE",
+        "joint_observation": true,
+        "baseline_test_count": 60,
+        "native_test_count": 20,
+        "native_classes": [
+          "org.apache.commons.validator.routines.CreditCardValidatorTest"
+        ],
+        "independent_test_count": 60,
+        "independent_failed": [
+          {
+            "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+            "name": "testIsValidScheme",
+            "outcome": "failure"
+          },
+          {
+            "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+            "name": "testValidator276",
+            "outcome": "failure"
+          }
+        ],
+        "omitted_security_failures": [
+          {
+            "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+            "name": "testIsValidScheme",
+            "outcome": "failure"
+          },
+          {
+            "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+            "name": "testValidator276",
+            "outcome": "failure"
+          }
+        ],
+        "exits": [
+          0,
+          0,
+          1
+        ]
+      },
+      "arms": [
+        {
+          "arm": "baseline",
+          "exit": 0,
+          "tests": [
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testVisaOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testAmexValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testVPayOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testRangeGenerator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testMastercardOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testArrayConstructor",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testAmexOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testGeneric",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDiscoverValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDiscoverOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testVisaValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDisjointRange",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testMastercardValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testAddAllowedCardType",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testMastercardUsingSeparators",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDinersOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testRangeGeneratorNoLuhn",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testValidLength",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testIsValid",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDinersValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testExceptions",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testToString",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testMissingRegex",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testMultipleInsensitive",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testMultipleSensitive",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testNullValue",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testSingle",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidateUrl",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator339IDN",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testIsValidScheme",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator391OK",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator473_1",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator473_2",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator473_3",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator391FAILS",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testFragments",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testIsValid",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator202",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator204",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator218",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator235",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator248",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator276",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator283",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator288",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator290",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator309",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator339",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator342",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator353",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator361",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator363",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator375",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator380",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator382",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator411",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator420",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator452",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator464",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator467",
+              "outcome": "passed"
+            }
+          ]
+        },
+        {
+          "arm": "unchanged",
+          "exit": 0,
+          "tests": []
+        },
+        {
+          "arm": "native",
+          "exit": 0,
+          "tests": [
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testVisaOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testAmexValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testVPayOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testRangeGenerator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testMastercardOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testArrayConstructor",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testAmexOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testGeneric",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDiscoverValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDiscoverOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testVisaValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDisjointRange",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testMastercardValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testAddAllowedCardType",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testMastercardUsingSeparators",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDinersOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testRangeGeneratorNoLuhn",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testValidLength",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testIsValid",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDinersValidator",
+              "outcome": "passed"
+            }
+          ]
+        },
+        {
+          "arm": "independent",
+          "exit": 1,
+          "tests": [
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testVisaOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testAmexValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testVPayOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testRangeGenerator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testMastercardOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testArrayConstructor",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testAmexOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testGeneric",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDiscoverValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDiscoverOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testVisaValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDisjointRange",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testMastercardValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testAddAllowedCardType",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testMastercardUsingSeparators",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDinersOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testRangeGeneratorNoLuhn",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testValidLength",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testIsValid",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDinersValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testExceptions",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testToString",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testMissingRegex",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testMultipleInsensitive",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testMultipleSensitive",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testNullValue",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testSingle",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidateUrl",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator339IDN",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testIsValidScheme",
+              "outcome": "failure"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator391OK",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator473_1",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator473_2",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator473_3",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator391FAILS",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testFragments",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testIsValid",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator202",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator204",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator218",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator235",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator248",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator276",
+              "outcome": "failure"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator283",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator288",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator290",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator309",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator339",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator342",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator353",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator361",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator363",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator375",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator380",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator382",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator411",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator420",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator452",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator464",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator467",
+              "outcome": "passed"
+            }
+          ]
+        }
+      ],
+      "identity": {
+        "url_class_fingerprint_baseline": 577934113,
+        "url_class_fingerprint_candidate": 577934113,
+        "url_class_sha256": "b862246d8d5064690be0628317426c2059f5c774ddff9dcec643c45c599a8894",
+        "control_class_sha256": "a71405f6662e53a6253667e26c27ce63a7e14a7f5439133aa905b7c002356cea",
+        "url_source_sha256": "fb3c5d47eee57ebbb3c12ddee62ee5d10437979b62e87bddea5577dcb4b91a25",
+        "control_source_sha256": "018b0dcf634b46ab712ed9338a834ac833fe42e436819f88c997b5e483b6e3fe"
+      },
+      "raw_sha256": {
+        "arms.json": "e329faef0040a8a7ce3de3fd3806000525e5712a91ca89bb1d8ee0e9b250b779",
+        "baseline-process.json": "8d0a461951b05b94422616ec2718cca345d2721694d466c89592f59da5dca9dd",
+        "candidate-identity.json": "018323301443b534ad5e4c7e07176cbc52ea518bc6662c6592c029af10d65843",
+        "candidate_compile-process.json": "1786fd245ed7aba38c59b8d62914d4eda8c270244d23cf4fa4d6d9e4096a18a1",
+        "independent-process.json": "6014ab1623b724f537d58ef10e4136d10dc50a2b76e35c8309531d23649e1611",
+        "native-process.json": "d942a9e3c117a6b1df3906bfe6649f16efe8caa988a0420c2538da7aa337b279",
+        "result.json": "18d97c902889243643210ac0d6e53a9657c3dfbaa831db680bfbaaa69ec30898",
+        "unchanged-process.json": "4b24f0b515ae7740a1559dccadbdec4a353afe3743aacdb778aa88aa5e4e0b1f"
+      }
+    },
+    {
+      "repetition": 2,
+      "result": {
+        "status": "VALID_FIXED_CASE",
+        "joint_observation": true,
+        "baseline_test_count": 60,
+        "native_test_count": 20,
+        "native_classes": [
+          "org.apache.commons.validator.routines.CreditCardValidatorTest"
+        ],
+        "independent_test_count": 60,
+        "independent_failed": [
+          {
+            "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+            "name": "testIsValidScheme",
+            "outcome": "failure"
+          },
+          {
+            "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+            "name": "testValidator276",
+            "outcome": "failure"
+          }
+        ],
+        "omitted_security_failures": [
+          {
+            "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+            "name": "testIsValidScheme",
+            "outcome": "failure"
+          },
+          {
+            "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+            "name": "testValidator276",
+            "outcome": "failure"
+          }
+        ],
+        "exits": [
+          0,
+          0,
+          1
+        ]
+      },
+      "arms": [
+        {
+          "arm": "baseline",
+          "exit": 0,
+          "tests": [
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testVisaOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testAmexValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testVPayOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testRangeGenerator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testMastercardOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testArrayConstructor",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testAmexOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testGeneric",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDiscoverValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDiscoverOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testVisaValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDisjointRange",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testMastercardValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testAddAllowedCardType",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testMastercardUsingSeparators",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDinersOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testRangeGeneratorNoLuhn",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testValidLength",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testIsValid",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDinersValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testExceptions",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testToString",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testMissingRegex",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testMultipleInsensitive",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testMultipleSensitive",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testNullValue",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testSingle",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidateUrl",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator339IDN",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testIsValidScheme",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator391OK",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator473_1",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator473_2",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator473_3",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator391FAILS",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testFragments",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testIsValid",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator202",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator204",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator218",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator235",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator248",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator276",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator283",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator288",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator290",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator309",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator339",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator342",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator353",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator361",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator363",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator375",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator380",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator382",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator411",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator420",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator452",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator464",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator467",
+              "outcome": "passed"
+            }
+          ]
+        },
+        {
+          "arm": "unchanged",
+          "exit": 0,
+          "tests": []
+        },
+        {
+          "arm": "native",
+          "exit": 0,
+          "tests": [
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testVisaOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testAmexValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testVPayOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testRangeGenerator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testMastercardOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testArrayConstructor",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testAmexOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testGeneric",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDiscoverValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDiscoverOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testVisaValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDisjointRange",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testMastercardValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testAddAllowedCardType",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testMastercardUsingSeparators",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDinersOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testRangeGeneratorNoLuhn",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testValidLength",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testIsValid",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDinersValidator",
+              "outcome": "passed"
+            }
+          ]
+        },
+        {
+          "arm": "independent",
+          "exit": 1,
+          "tests": [
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testVisaOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testAmexValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testVPayOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testRangeGenerator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testMastercardOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testArrayConstructor",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testAmexOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testGeneric",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDiscoverValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDiscoverOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testVisaValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDisjointRange",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testMastercardValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testAddAllowedCardType",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testMastercardUsingSeparators",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDinersOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testRangeGeneratorNoLuhn",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testValidLength",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testIsValid",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDinersValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testExceptions",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testToString",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testMissingRegex",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testMultipleInsensitive",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testMultipleSensitive",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testNullValue",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testSingle",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidateUrl",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator339IDN",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testIsValidScheme",
+              "outcome": "failure"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator391OK",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator473_1",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator473_2",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator473_3",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator391FAILS",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testFragments",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testIsValid",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator202",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator204",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator218",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator235",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator248",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator276",
+              "outcome": "failure"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator283",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator288",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator290",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator309",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator339",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator342",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator353",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator361",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator363",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator375",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator380",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator382",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator411",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator420",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator452",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator464",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator467",
+              "outcome": "passed"
+            }
+          ]
+        }
+      ],
+      "identity": {
+        "url_class_fingerprint_baseline": 577934113,
+        "url_class_fingerprint_candidate": 577934113,
+        "url_class_sha256": "b862246d8d5064690be0628317426c2059f5c774ddff9dcec643c45c599a8894",
+        "control_class_sha256": "a71405f6662e53a6253667e26c27ce63a7e14a7f5439133aa905b7c002356cea",
+        "url_source_sha256": "fb3c5d47eee57ebbb3c12ddee62ee5d10437979b62e87bddea5577dcb4b91a25",
+        "control_source_sha256": "018b0dcf634b46ab712ed9338a834ac833fe42e436819f88c997b5e483b6e3fe"
+      },
+      "raw_sha256": {
+        "arms.json": "e329faef0040a8a7ce3de3fd3806000525e5712a91ca89bb1d8ee0e9b250b779",
+        "baseline-process.json": "2d29f1276c7e44a2fe5d837994ff174a527347f2503cdc3e77663e4b6a482cbc",
+        "candidate-identity.json": "018323301443b534ad5e4c7e07176cbc52ea518bc6662c6592c029af10d65843",
+        "candidate_compile-process.json": "7aac2ed992dd9c22f40a84c0f3f91e7119fc82a502f0aee2283ac53ce34cbcb9",
+        "independent-process.json": "fd260907df6ed6aae337badf62fc12bad3dcf7c2b006abfea922943c6d42fed9",
+        "native-process.json": "eec6b5b1cf2c6e874c33471b5720849275ad4d3a934be2c0a3cb89ffc06aceff",
+        "result.json": "18d97c902889243643210ac0d6e53a9657c3dfbaa831db680bfbaaa69ec30898",
+        "unchanged-process.json": "1723f3dd574494c2e6191b74caf1626425c05f39a7942a4c4d8bb19c8afc78ed"
+      }
+    },
+    {
+      "repetition": 3,
+      "result": {
+        "status": "VALID_FIXED_CASE",
+        "joint_observation": true,
+        "baseline_test_count": 60,
+        "native_test_count": 20,
+        "native_classes": [
+          "org.apache.commons.validator.routines.CreditCardValidatorTest"
+        ],
+        "independent_test_count": 60,
+        "independent_failed": [
+          {
+            "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+            "name": "testIsValidScheme",
+            "outcome": "failure"
+          },
+          {
+            "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+            "name": "testValidator276",
+            "outcome": "failure"
+          }
+        ],
+        "omitted_security_failures": [
+          {
+            "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+            "name": "testIsValidScheme",
+            "outcome": "failure"
+          },
+          {
+            "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+            "name": "testValidator276",
+            "outcome": "failure"
+          }
+        ],
+        "exits": [
+          0,
+          0,
+          1
+        ]
+      },
+      "arms": [
+        {
+          "arm": "baseline",
+          "exit": 0,
+          "tests": [
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testVisaOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testAmexValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testVPayOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testRangeGenerator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testMastercardOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testArrayConstructor",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testAmexOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testGeneric",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDiscoverValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDiscoverOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testVisaValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDisjointRange",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testMastercardValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testAddAllowedCardType",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testMastercardUsingSeparators",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDinersOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testRangeGeneratorNoLuhn",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testValidLength",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testIsValid",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDinersValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testExceptions",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testToString",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testMissingRegex",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testMultipleInsensitive",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testMultipleSensitive",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testNullValue",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testSingle",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidateUrl",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator339IDN",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testIsValidScheme",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator391OK",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator473_1",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator473_2",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator473_3",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator391FAILS",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testFragments",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testIsValid",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator202",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator204",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator218",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator235",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator248",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator276",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator283",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator288",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator290",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator309",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator339",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator342",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator353",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator361",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator363",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator375",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator380",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator382",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator411",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator420",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator452",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator464",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator467",
+              "outcome": "passed"
+            }
+          ]
+        },
+        {
+          "arm": "unchanged",
+          "exit": 0,
+          "tests": []
+        },
+        {
+          "arm": "native",
+          "exit": 0,
+          "tests": [
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testVisaOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testAmexValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testVPayOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testRangeGenerator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testMastercardOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testArrayConstructor",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testAmexOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testGeneric",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDiscoverValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDiscoverOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testVisaValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDisjointRange",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testMastercardValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testAddAllowedCardType",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testMastercardUsingSeparators",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDinersOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testRangeGeneratorNoLuhn",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testValidLength",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testIsValid",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDinersValidator",
+              "outcome": "passed"
+            }
+          ]
+        },
+        {
+          "arm": "independent",
+          "exit": 1,
+          "tests": [
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testVisaOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testAmexValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testVPayOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testRangeGenerator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testMastercardOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testArrayConstructor",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testAmexOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testGeneric",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDiscoverValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDiscoverOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testVisaValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDisjointRange",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testMastercardValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testAddAllowedCardType",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testMastercardUsingSeparators",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDinersOption",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testRangeGeneratorNoLuhn",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testValidLength",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testIsValid",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.CreditCardValidatorTest",
+              "name": "testDinersValidator",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testExceptions",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testToString",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testMissingRegex",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testMultipleInsensitive",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testMultipleSensitive",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testNullValue",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.RegexValidatorTest",
+              "name": "testSingle",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidateUrl",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator339IDN",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testIsValidScheme",
+              "outcome": "failure"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator391OK",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator473_1",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator473_2",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator473_3",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator391FAILS",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testFragments",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testIsValid",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator202",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator204",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator218",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator235",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator248",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator276",
+              "outcome": "failure"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator283",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator288",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator290",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator309",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator339",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator342",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator353",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator361",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator363",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator375",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator380",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator382",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator411",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator420",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator452",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator464",
+              "outcome": "passed"
+            },
+            {
+              "class": "org.apache.commons.validator.routines.UrlValidatorTest",
+              "name": "testValidator467",
+              "outcome": "passed"
+            }
+          ]
+        }
+      ],
+      "identity": {
+        "url_class_fingerprint_baseline": 577934113,
+        "url_class_fingerprint_candidate": 577934113,
+        "url_class_sha256": "b862246d8d5064690be0628317426c2059f5c774ddff9dcec643c45c599a8894",
+        "control_class_sha256": "a71405f6662e53a6253667e26c27ce63a7e14a7f5439133aa905b7c002356cea",
+        "url_source_sha256": "fb3c5d47eee57ebbb3c12ddee62ee5d10437979b62e87bddea5577dcb4b91a25",
+        "control_source_sha256": "018b0dcf634b46ab712ed9338a834ac833fe42e436819f88c997b5e483b6e3fe"
+      },
+      "raw_sha256": {
+        "arms.json": "e329faef0040a8a7ce3de3fd3806000525e5712a91ca89bb1d8ee0e9b250b779",
+        "baseline-process.json": "ace6dcf93fb4d083de59bc9c3e05501d2922ecb8bafbe998487de2026782c004",
+        "candidate-identity.json": "018323301443b534ad5e4c7e07176cbc52ea518bc6662c6592c029af10d65843",
+        "candidate_compile-process.json": "902801dc084cd272c19a31d010b6a37e5d678556aa63f35c1c001c97a4bf75c2",
+        "independent-process.json": "2be8aea749a217b567cc144dbfc3960267137d9cfe360ce35758f5dd0e9d1e89",
+        "native-process.json": "df32aaf1742c047e2d54820e371ea15fde75387d36a9fea4b6549bca1574fb42",
+        "result.json": "18d97c902889243643210ac0d6e53a9657c3dfbaa831db680bfbaaa69ec30898",
+        "unchanged-process.json": "1db979724ac8c3cc6cac932f2be9ede947b62d7c41fa0c2619a3ae6489e7b042"
+      }
+    }
+  ]
+}

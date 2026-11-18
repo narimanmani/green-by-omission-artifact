@@ -1,0 +1,180 @@
+{
+  "eligible": 2,
+  "subjects": [
+    {
+      "subject": "click",
+      "repo": "pallets/click",
+      "verified_sha": "8abb77a8432e03ed14a95f972b44f905279415a7",
+      "status": "baseline_ran_but_selector_nochange_not_zero",
+      "baseline_executed": 8,
+      "unchanged_executed": 8,
+      "record": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-click-1\\result.json",
+      "checked_logs": [
+        {
+          "phase": "baseline",
+          "path": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-click-1\\logs\\native_baseline.log",
+          "non_skipped_actual": 8,
+          "sha256": "ee8f7ed3cad5987a5ef43ee056ac731e511aae048137c2967c39c0f191930dff"
+        },
+        {
+          "phase": "nochange",
+          "path": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-click-1\\logs\\native_nochange.log",
+          "non_skipped_actual": 8,
+          "sha256": "48545994fcbd159bd4878ac6ac1a6f4a044199d347768cf90e7ee4005ca93c0f"
+        }
+      ],
+      "eligible": false
+    },
+    {
+      "subject": "commons-codec",
+      "repo": "apache/commons-codec",
+      "verified_sha": "c0013c15e4a5b2c72c60b17e0ac9eb2772250041",
+      "status": "blocked_or_failed",
+      "baseline_executed": 0,
+      "unchanged_executed": null,
+      "record": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-commons-codec-1\\result.json",
+      "checked_logs": [],
+      "eligible": false
+    },
+    {
+      "subject": "commons-io",
+      "repo": "apache/commons-io",
+      "verified_sha": "a06ee11d2bf7fba46ccc419da69e2ff4a13986b5",
+      "status": "verified_nonzero_baseline_nochange_measured",
+      "baseline_executed": 130,
+      "unchanged_executed": 130,
+      "record": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-commons-io-1\\result.json",
+      "checked_logs": [
+        {
+          "phase": "baseline",
+          "path": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-commons-io-1\\logs\\native_baseline_0.log",
+          "non_skipped_actual": 130,
+          "sha256": "3b78f59a8e22dd5bbe14f64362f29176067e9d60a6dfd9d5b31f93c3d98e3d7c"
+        },
+        {
+          "phase": "nochange",
+          "path": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-commons-io-1\\logs\\native_nochange.log",
+          "non_skipped_actual": 130,
+          "sha256": "da49b8c19a2b44c50320b7f634fafe45437ac1b00e6252f1a51e169681a0a080"
+        }
+      ],
+      "eligible": false
+    },
+    {
+      "subject": "commons-lang",
+      "repo": "apache/commons-lang",
+      "verified_sha": "5d2715b9da13fb584058d264c46dfed6bcc700d1",
+      "status": "blocked_or_failed",
+      "baseline_executed": 0,
+      "unchanged_executed": null,
+      "record": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-commons-lang-1\\result.json",
+      "checked_logs": [],
+      "eligible": false
+    },
+    {
+      "subject": "commons-text",
+      "repo": "apache/commons-text",
+      "verified_sha": "ed3f23e12362f77d2b850e291458a0907da34d96",
+      "status": "verified_nonzero_baseline_nochange_measured",
+      "baseline_executed": 2,
+      "unchanged_executed": 2,
+      "record": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-commons-text-1\\result.json",
+      "checked_logs": [
+        {
+          "phase": "baseline",
+          "path": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-commons-text-1\\logs\\native_baseline_6.log",
+          "non_skipped_actual": 2,
+          "sha256": "a6034df357dddadd7a0ceac7c5ab9edd7b68619a79de61e13b7cbefd8bb2d0c4"
+        },
+        {
+          "phase": "nochange",
+          "path": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-commons-text-1\\logs\\native_nochange.log",
+          "non_skipped_actual": 2,
+          "sha256": "6fed167b80d199ce92ec809f275b9e52910aff896e4fb2315a90ac6c557fc449"
+        }
+      ],
+      "eligible": false
+    },
+    {
+      "subject": "commons-validator",
+      "repo": "apache/commons-validator",
+      "verified_sha": "b4b130bd308965ccea69a487b1bdab0b897d1a7b",
+      "status": "blocked_or_failed",
+      "baseline_executed": 0,
+      "unchanged_executed": null,
+      "record": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-commons-validator-1\\result.json",
+      "checked_logs": [],
+      "eligible": false
+    },
+    {
+      "subject": "itsdangerous",
+      "repo": "pallets/itsdangerous",
+      "verified_sha": "672971d66a2ef9f85151e53283113f33d642dabd",
+      "status": "baseline_and_selector_nochange_verified",
+      "baseline_executed": 8,
+      "unchanged_executed": 0,
+      "record": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-itsdangerous-1\\result.json",
+      "checked_logs": [
+        {
+          "phase": "baseline",
+          "path": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-itsdangerous-1\\logs\\native_baseline.log",
+          "non_skipped_actual": 8,
+          "sha256": "77fdfe918870f639ee4ece217e9ca065e1999f84c4b1f5a5e7312abcb37cadce"
+        },
+        {
+          "phase": "nochange",
+          "path": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-itsdangerous-1\\logs\\native_nochange.log",
+          "non_skipped_actual": 0,
+          "sha256": "a5ce16dcf651e7d236a4195eebea6d2007624e6d63c36982c2e4f2a63a072969"
+        }
+      ],
+      "eligible": true
+    },
+    {
+      "subject": "requests",
+      "repo": "psf/requests",
+      "verified_sha": "3c7baaa05ab4aa49cc819ce3a819d260de19c157",
+      "status": "baseline_and_selector_nochange_verified",
+      "baseline_executed": 1,
+      "unchanged_executed": 0,
+      "record": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-requests-1\\result.json",
+      "checked_logs": [
+        {
+          "phase": "baseline",
+          "path": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-requests-1\\logs\\native_baseline.log",
+          "non_skipped_actual": 1,
+          "sha256": "06645444b776c09ba12dba04994fc04adb1d93ef1683557c64a6b43c2af002e1"
+        },
+        {
+          "phase": "nochange",
+          "path": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-requests-1\\logs\\native_nochange.log",
+          "non_skipped_actual": 0,
+          "sha256": "999f22528ed41358569cb7d5906534d5b560c635f60ebcf7a0fdaf36ac45a6d9"
+        }
+      ],
+      "eligible": true
+    },
+    {
+      "subject": "starlette",
+      "repo": "Kludex/starlette",
+      "verified_sha": "271c277da0ff64e2048a4d46ecc812b9d61db5f6",
+      "status": "blocked_or_failed",
+      "baseline_executed": null,
+      "unchanged_executed": null,
+      "record": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-starlette-1\\result.json",
+      "checked_logs": [],
+      "eligible": false
+    },
+    {
+      "subject": "urllib3",
+      "repo": "urllib3/urllib3",
+      "verified_sha": "c5347bbd39203d68d7b0e3ffb83ced3e3b4b9109",
+      "status": "blocked_or_failed",
+      "baseline_executed": null,
+      "unchanged_executed": null,
+      "record": "artifacts\\final-bounded-revision-2026-11-11\\raw\\feasibility-42763093847\\pilot-urllib3-1\\result.json",
+      "checked_logs": [],
+      "eligible": false
+    }
+  ]
+}

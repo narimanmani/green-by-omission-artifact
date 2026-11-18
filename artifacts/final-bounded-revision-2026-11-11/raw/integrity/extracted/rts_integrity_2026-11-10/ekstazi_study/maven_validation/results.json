@@ -1,0 +1,150 @@
+[
+  {
+    "case": "cold",
+    "strategy": "standard_rts",
+    "exit_code": 0,
+    "tests_executed": [
+      "lab.ArithmeticTest.additionContract",
+      "lab.ArithmeticTest.zeroContract",
+      "lab.LabelTest.labelContract",
+      "lab.UnrelatedTest.unrelatedContract"
+    ],
+    "tests_failed": [],
+    "seconds": 3.8180664139999863,
+    "source_hashes": {
+      "java/lab/Arithmetic.java": "0c241576456d43a84ab35dd9aeca97cbd88ff6895da172a674d5aab31ceb1dcf",
+      "java/lab/Label.java": "3bbb971560552c7e4706edfd7f0c2f49b47b60ed399a44ae21b5b4ad897f683c",
+      "java/lab/Unrelated.java": "bd1aaa99f2c2481b0f54bc88d78ed9c2d9aafd0a658cdd600189dffd12b79b9a"
+    },
+    "test_hashes": {
+      "java/lab/ArithmeticTest.java": "9f0f48acb216b85b3ab8c52b52ef6798092b60abfb3a915c3bf5c277ea6763c5",
+      "java/lab/LabelTest.java": "0899064eedee3aa8f3a9b6c9eebb1371c6ec16376f55fc41b0fa95bc1900ecbf",
+      "java/lab/UnrelatedTest.java": "c588c5c8c9e0f5606bf111020b5528b8e38cbc05ff1343186c94c08ae9f3a056"
+    },
+    "metadata_hashes": {
+      "lab.ArithmeticTest.clz": "fe600d4be4514e1dd16b98838bc4eee9e0b6ea9f98b69abb1b4272087720f1e2",
+      "lab.LabelTest.clz": "f04e795f02e07d59ca479ff511f22236790b285a0778e2b3651761471e727c41",
+      "lab.UnrelatedTest.clz": "2da3f8d823e985973900dd983d00fd536b5dd6d78837878c573024fd1d2e7a1e"
+    },
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/apache-maven-3.8.8/bin/mvn",
+      "-o",
+      "-B",
+      "-ntp",
+      "-Dmaven.repo.local=/workspace/scratch/0827c1f80a7f/toolchain/m2",
+      "-Pekstazi",
+      "test"
+    ]
+  },
+  {
+    "case": "warm",
+    "strategy": "standard_rts",
+    "exit_code": 0,
+    "tests_executed": [],
+    "tests_failed": [],
+    "seconds": 13.661134541000024,
+    "source_hashes": {
+      "java/lab/Arithmetic.java": "0c241576456d43a84ab35dd9aeca97cbd88ff6895da172a674d5aab31ceb1dcf",
+      "java/lab/Label.java": "3bbb971560552c7e4706edfd7f0c2f49b47b60ed399a44ae21b5b4ad897f683c",
+      "java/lab/Unrelated.java": "bd1aaa99f2c2481b0f54bc88d78ed9c2d9aafd0a658cdd600189dffd12b79b9a"
+    },
+    "test_hashes": {
+      "java/lab/ArithmeticTest.java": "9f0f48acb216b85b3ab8c52b52ef6798092b60abfb3a915c3bf5c277ea6763c5",
+      "java/lab/LabelTest.java": "0899064eedee3aa8f3a9b6c9eebb1371c6ec16376f55fc41b0fa95bc1900ecbf",
+      "java/lab/UnrelatedTest.java": "c588c5c8c9e0f5606bf111020b5528b8e38cbc05ff1343186c94c08ae9f3a056"
+    },
+    "metadata_hashes": {
+      "lab.ArithmeticTest.clz": "fe600d4be4514e1dd16b98838bc4eee9e0b6ea9f98b69abb1b4272087720f1e2",
+      "lab.LabelTest.clz": "f04e795f02e07d59ca479ff511f22236790b285a0778e2b3651761471e727c41",
+      "lab.UnrelatedTest.clz": "2da3f8d823e985973900dd983d00fd536b5dd6d78837878c573024fd1d2e7a1e"
+    },
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/apache-maven-3.8.8/bin/mvn",
+      "-o",
+      "-B",
+      "-ntp",
+      "-Dmaven.repo.local=/workspace/scratch/0827c1f80a7f/toolchain/m2",
+      "-Pekstazi",
+      "test"
+    ]
+  },
+  {
+    "case": "ordinary_change",
+    "strategy": "standard_rts",
+    "exit_code": 1,
+    "tests_executed": [
+      "lab.ArithmeticTest.additionContract",
+      "lab.ArithmeticTest.zeroContract",
+      "lab.LabelTest.labelContract"
+    ],
+    "tests_failed": [
+      "lab.ArithmeticTest.additionContract",
+      "lab.ArithmeticTest.zeroContract"
+    ],
+    "seconds": 4.088796277000029,
+    "source_hashes": {
+      "java/lab/Arithmetic.java": "122282f7dddc201e2bfd59d53dc0d57f19b9a9b7a5bfdcc859cc7ce45408a951",
+      "java/lab/Label.java": "7ef8aae882b30b1006177f8cd86c0aac112941148cd9e6fed911de867a4f5fc0",
+      "java/lab/Unrelated.java": "bd1aaa99f2c2481b0f54bc88d78ed9c2d9aafd0a658cdd600189dffd12b79b9a"
+    },
+    "test_hashes": {
+      "java/lab/ArithmeticTest.java": "9f0f48acb216b85b3ab8c52b52ef6798092b60abfb3a915c3bf5c277ea6763c5",
+      "java/lab/LabelTest.java": "0899064eedee3aa8f3a9b6c9eebb1371c6ec16376f55fc41b0fa95bc1900ecbf",
+      "java/lab/UnrelatedTest.java": "c588c5c8c9e0f5606bf111020b5528b8e38cbc05ff1343186c94c08ae9f3a056"
+    },
+    "metadata_hashes": {
+      "lab.ArithmeticTest.clz": "a8124bca8b0790ce5357f2f787ff87042380bbfd27225941d53f741c982809c3",
+      "lab.LabelTest.clz": "ecb73d94aeff94b900d5d0484ef24030bddfff88303ee68873cf748b9ba31ddd",
+      "lab.UnrelatedTest.clz": "2da3f8d823e985973900dd983d00fd536b5dd6d78837878c573024fd1d2e7a1e",
+      "test-results/lab.ArithmeticTest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/apache-maven-3.8.8/bin/mvn",
+      "-o",
+      "-B",
+      "-ntp",
+      "-Dmaven.repo.local=/workspace/scratch/0827c1f80a7f/toolchain/m2",
+      "-Pekstazi",
+      "test"
+    ]
+  },
+  {
+    "case": "changed_full",
+    "strategy": "full_suite",
+    "exit_code": 1,
+    "tests_executed": [
+      "lab.ArithmeticTest.additionContract",
+      "lab.ArithmeticTest.zeroContract",
+      "lab.LabelTest.labelContract",
+      "lab.UnrelatedTest.unrelatedContract"
+    ],
+    "tests_failed": [
+      "lab.ArithmeticTest.additionContract",
+      "lab.ArithmeticTest.zeroContract"
+    ],
+    "seconds": 2.9136418460000186,
+    "source_hashes": {
+      "java/lab/Arithmetic.java": "122282f7dddc201e2bfd59d53dc0d57f19b9a9b7a5bfdcc859cc7ce45408a951",
+      "java/lab/Label.java": "7ef8aae882b30b1006177f8cd86c0aac112941148cd9e6fed911de867a4f5fc0",
+      "java/lab/Unrelated.java": "bd1aaa99f2c2481b0f54bc88d78ed9c2d9aafd0a658cdd600189dffd12b79b9a"
+    },
+    "test_hashes": {
+      "java/lab/ArithmeticTest.java": "9f0f48acb216b85b3ab8c52b52ef6798092b60abfb3a915c3bf5c277ea6763c5",
+      "java/lab/LabelTest.java": "0899064eedee3aa8f3a9b6c9eebb1371c6ec16376f55fc41b0fa95bc1900ecbf",
+      "java/lab/UnrelatedTest.java": "c588c5c8c9e0f5606bf111020b5528b8e38cbc05ff1343186c94c08ae9f3a056"
+    },
+    "metadata_hashes": {
+      "lab.ArithmeticTest.clz": "fe600d4be4514e1dd16b98838bc4eee9e0b6ea9f98b69abb1b4272087720f1e2",
+      "lab.LabelTest.clz": "f04e795f02e07d59ca479ff511f22236790b285a0778e2b3651761471e727c41",
+      "lab.UnrelatedTest.clz": "2da3f8d823e985973900dd983d00fd536b5dd6d78837878c573024fd1d2e7a1e"
+    },
+    "command": [
+      "/workspace/scratch/0827c1f80a7f/toolchain/apache-maven-3.8.8/bin/mvn",
+      "-o",
+      "-B",
+      "-ntp",
+      "-Dmaven.repo.local=/workspace/scratch/0827c1f80a7f/toolchain/m2",
+      "test"
+    ]
+  }
+]

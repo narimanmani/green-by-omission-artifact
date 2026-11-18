@@ -1,0 +1,73 @@
+{
+  "collected_after_selection": [
+    "tests/test_meta.py::test_metadata_build_positive",
+    "tests/test_security.py::test_security_rejects_untrusted_host",
+    "tests/test_security.py::test_valid_host_passes"
+  ],
+  "deselected": [],
+  "reports": [
+    {
+      "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_valid_host_passes",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_valid_host_passes",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_security.py::test_valid_host_passes",
+      "when": "teardown",
+      "outcome": "passed"
+    }
+  ],
+  "collection_errors": [],
+  "exitstatus": 0,
+  "executed_tests": [
+    "tests/test_meta.py::test_metadata_build_positive",
+    "tests/test_security.py::test_security_rejects_untrusted_host",
+    "tests/test_security.py::test_valid_host_passes"
+  ],
+  "skipped_tests": [],
+  "import_origins": [
+    {
+      "module": "starlette.middleware.trustedhost",
+      "actual_file": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\middleware\\trustedhost.py",
+      "expected": "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\middleware\\trustedhost.py",
+      "match_mode": "exact",
+      "matched": true
+    }
+  ],
+  "import_origins_valid": true
+}

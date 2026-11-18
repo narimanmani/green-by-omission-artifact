@@ -1,0 +1,37 @@
+{
+  "frozen_at_utc": "2026-11-10T21:19:51.754837+00:00",
+  "sample_type": "purposive convenience sample",
+  "sample_frame": "20 named Apache Commons Java components, selected by the researcher before this script scans their contents",
+  "repositories": [
+    "apache/commons-bcel",
+    "apache/commons-beanutils",
+    "apache/commons-cli",
+    "apache/commons-codec",
+    "apache/commons-collections",
+    "apache/commons-compress",
+    "apache/commons-configuration",
+    "apache/commons-crypto",
+    "apache/commons-csv",
+    "apache/commons-dbcp",
+    "apache/commons-dbutils",
+    "apache/commons-digester",
+    "apache/commons-email",
+    "apache/commons-exec",
+    "apache/commons-io",
+    "apache/commons-lang",
+    "apache/commons-math",
+    "apache/commons-numbers",
+    "apache/commons-pool",
+    "apache/commons-text"
+  ],
+  "scope": "Current default-branch HEAD, resolved to immutable commits before scanning. POMs, Gradle, Ant, Jenkins, GitHub Actions, Travis, CircleCI files are scanned.",
+  "denominator": "Only successfully retrieved and inspected repositories; failures remain in manifest.",
+  "not_measured": [
+    "actual CI executions",
+    "branch protection settings",
+    "private/shared workflow contents",
+    "deployment population prevalence"
+  ],
+  "selection_bias": "Single-organization and shared-parent sample; search results had already suggested Ekstazi references in commons-math and commons-numbers. This is not a blinded or representative prevalence estimate.",
+  "safety": "Read-only public source retrieval; no repository code or CI executed."
+}

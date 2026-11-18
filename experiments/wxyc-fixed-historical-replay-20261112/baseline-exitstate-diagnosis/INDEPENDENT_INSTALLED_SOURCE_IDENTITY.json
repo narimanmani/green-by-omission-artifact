@@ -1,0 +1,56 @@
+[
+  {
+    "snapshot": "installed-source/jest-util-index.js",
+    "installed_path": "node_modules/jest-util/build/index.js",
+    "sha256": "3e8b0fc7c556b53ef1d4ec30457ce2dddd5059bdb464d57dedaa5918b11053ea",
+    "matches_frozen_installed_manifest": true
+  },
+  {
+    "snapshot": "installed-source/jest-cli-index.js",
+    "installed_path": "node_modules/jest-cli/build/index.js",
+    "sha256": "a12ce6b646b4527ff1df9c59ad131b6a171f7a653d6ea018243c709bdc09444c",
+    "matches_frozen_installed_manifest": true
+  },
+  {
+    "snapshot": "installed-source/jest-runner-index.js",
+    "installed_path": "node_modules/jest-runner/build/index.js",
+    "sha256": "c6098a764a30a5d7a8a6e50a0dd96cde2ac617454c4830ca09c7eb5e39668b4b",
+    "matches_frozen_installed_manifest": true
+  },
+  {
+    "snapshot": "installed-source/jest-runner-testWorker.js",
+    "installed_path": "node_modules/jest-runner/build/testWorker.js",
+    "sha256": "a70d84f886222e5163433e39247638f2152d1379493db6dc1b800948020898a2",
+    "matches_frozen_installed_manifest": true
+  },
+  {
+    "snapshot": "installed-source/jest-core-index.js",
+    "installed_path": "node_modules/@jest/core/build/index.js",
+    "sha256": "16ef0a75b6a8062fe9d4f74a23b88221928d23fdee50387ba4bb408b355a4f27",
+    "matches_frozen_installed_manifest": true
+  },
+  {
+    "snapshot": "installed-source/jest-environment-node-index.js",
+    "installed_path": "node_modules/jest-environment-node/build/index.js",
+    "sha256": "ea5b75c983843b5996647cde79b59cf8e898f6299f531c447d239d71ca1617ad",
+    "matches_frozen_installed_manifest": true
+  },
+  {
+    "snapshot": "installed-source/jest-runtime-index.js",
+    "installed_path": "node_modules/jest-runtime/build/index.js",
+    "sha256": "d3e6ddf670e798b12d9cb1292823871b9655a05823269b980ad7cdb792f1db78",
+    "matches_frozen_installed_manifest": true
+  },
+  {
+    "snapshot": "installed-source/jest-worker-index.js",
+    "installed_path": "node_modules/jest-worker/build/index.js",
+    "sha256": "d136c88c6f1db3bf2a5f228dddd8f7b2615d12dfc9326d018387804df1fed6f5",
+    "matches_frozen_installed_manifest": true
+  },
+  {
+    "snapshot": "installed-source/jest-worker-processChild.js",
+    "installed_path": "node_modules/jest-worker/build/processChild.js",
+    "sha256": "b17e7c086a6df0f2d99786566e7f3054ee90be6e9a42e99c96a524b6122521e5",
+    "matches_frozen_installed_manifest": true
+  }
+]

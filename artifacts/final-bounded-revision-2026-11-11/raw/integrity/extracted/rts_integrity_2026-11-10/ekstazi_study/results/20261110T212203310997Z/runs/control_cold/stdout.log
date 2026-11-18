@@ -1,0 +1,5 @@
+RESEARCH_START	lab.ArithmeticTest	additionContract
+RESEARCH_START	lab.ArithmeticTest	zeroContract
+RESEARCH_START	lab.LabelTest	labelContract
+RESEARCH_START	lab.UnrelatedTest	unrelatedContract
+RESEARCH_RESULT	4	0	0	true

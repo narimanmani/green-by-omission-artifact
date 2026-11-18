@@ -1,0 +1,16 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "Action completed."
+    }
+  ],
+  "structuredContent": {
+    "content": "import { defineConfig, type Options } from 'tsup';\nimport { writeFileSync, readFileSync } from 'fs';\n\nconst addUseClientDirective = (filePath: string) => {\n  const content = readFileSync(filePath, 'utf-8');\n  if (!content.startsWith('\"use client\"')) {\n    writeFileSync(filePath, `\"use client\";\\n${content}`);\n  }\n};\n\nexport default defineConfig([\n  // Main entries (non-client)\n  {\n    entry: {\n      index: 'src/index.ts',\n      'dtos/index': 'src/dtos/index.ts',\n      'auto-dj/index': 'src/auto-dj/index.ts',\n      'test-utils/index': 'src/test-utils/index.ts',\n      'validation/index': 'src/validation/index.ts',\n    },\n    format: ['esm'],\n    dts: true,\n    clean: true,\n    sourcemap: true,\n    splitting: false,\n    treeshake: true,\n  },\n  // Auth client entries (index needs \"use client\" directive)\n  {\n    entry: {\n      'auth-client/index': 'src/auth-client/index.ts',\n      'auth-client/auth': 'src/auth-client/auth.ts',\n    },\n    format: ['esm'],\n    dts: true,\n    sourcemap: true,\n    splitting: false,\n    treeshake: true,\n    async onSuccess() {\n      // Only add \"use client\" to the index.js, not auth.js\n      addUseClientDirective('dist/auth-client/index.js');\n    },\n  },\n] as Options[]);\n",
+    "encoding": "utf-8",
+    "sha": "0174725d5ba5ba76d3a2cd1ebce52694395d3720",
+    "display_url": "https://github.com/WXYC/wxyc-shared/blob/e9374c62f32c9fd4ccccd23651babb7a556fa210/tsup.config.ts",
+    "display_title": "tsup.config.ts"
+  },
+  "isError": false
+}

@@ -1,0 +1,11 @@
+{
+  "mode": "validate",
+  "base_sha": "053f4948451073e4b45aadcea79051966830ad23",
+  "head_sha": "2dab362688e99fa92b3a1189920155a5ff20713f",
+  "target": "requests/utils.py",
+  "baseline_source_sha256": "5aa53ceab677c2f842fad42359c8ed1ff1c4299c1607789609957a496e4311d4",
+  "candidate_source_sha256": "0d73a268f74ffd673056d818fae5ee42eab45758ccc81fa041cbe326b887771f",
+  "baseline_generated_in_this_job": false,
+  "execution_source": "protected-base reviewed fixture; candidate Git blob byte-identical",
+  "threat_model": "fixed reviewed fixture; arbitrary candidate Python rejected"
+}

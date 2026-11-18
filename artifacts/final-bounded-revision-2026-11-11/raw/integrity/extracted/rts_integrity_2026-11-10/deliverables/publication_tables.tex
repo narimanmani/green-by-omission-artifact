@@ -1,0 +1,96 @@
+% Generated from recorded observations. Requires \usepackage{booktabs}.
+% Counts are test methods; fixed fault repetitions are not independent trials.
+
+\begin{table*}[t]
+\centering
+\small
+\caption{Native Ekstazi and supplemental Maven controls. Failures are intentionally seeded arithmetic assertion failures.}
+\label{tab:ekstazi-controls}
+\begin{tabular}{llll}
+\toprule
+Control & Executed & Failures & Outcome \\
+\midrule
+Ekstazi native cold & 4 & 0 & Pass \\
+Ekstazi native warm & 0 & 0 & Pass \\
+Ekstazi ordinary change & 3 & 2 & Expected failure \\
+Ekstazi changed full suite & 4 & 2 & Expected failure \\
+Maven cold & 4 & 0 & Pass \\
+Maven warm & 0 & 0 & Pass \\
+Maven ordinary change & 3 & 2 & Expected failure \\
+Maven changed full suite & 4 & 2 & Expected failure \\
+\bottomrule
+\end{tabular}
+\end{table*}
+\begin{table*}[t]
+\centering
+\small
+\caption{Ekstazi 5.3.0 controlled integrity-fault outcomes. Each cell is executed methods / intended failures; identical across three repetitions. The baseline-ID condition changes the harness provenance label only.}
+\label{tab:ekstazi-faults}
+\begin{tabular}{llll}
+\toprule
+Metadata condition & Standard RTS & Verified RTS & Full suite \\
+\midrule
+Intact & 3 / 2 & 3 / 2 & 4 / 2 \\
+Target record missing & 3 / 2 & 4 / 2 (fallback) & 4 / 2 \\
+Target record empty & 3 / 2 & 4 / 2 (fallback) & 4 / 2 \\
+Target record half truncated & 3 / 2 & 4 / 2 (fallback) & 4 / 2 \\
+Invalid target header & 3 / 2 & 4 / 2 (fallback) & 4 / 2 \\
+Entire cache missing & 4 / 2 & 4 / 2 (fallback) & 4 / 2 \\
+Unexpected cache file & 3 / 2 & 4 / 2 (fallback) & 4 / 2 \\
+Wrong declared baseline ID & 3 / 2 & 4 / 2 (fallback) & 4 / 2 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+\begin{table*}[t]
+\centering
+\small
+\caption{pytest-testmon 2.3.0 controlled cache-fault outcomes. Each normal cell is executed tests / intended failures, identical across three repetitions. Exit 3 is a runner error; selection omission is not assessable.}
+\label{tab:testmon-faults}
+\begin{tabular}{llll}
+\toprule
+Metadata condition & Standard RTS & Verified RTS & Full suite \\
+\midrule
+Intact & 3 / 2 & 3 / 2 & 4 / 2 \\
+Missing cache & 4 / 2 & 4 / 2 (fallback) & 4 / 2 \\
+Empty cache & 4 / 2 & 4 / 2 (fallback) & 4 / 2 \\
+Half-truncated cache & Runner error 3; 0 tests & 4 / 2 (fallback) & 4 / 2 \\
+Garbage cache & Runner error 3; 0 tests & 4 / 2 (fallback) & 4 / 2 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+\begin{table*}[t]
+\centering
+\small
+\caption{Five synthetic wrappers calling unmodified published Java libraries. Entries are executed methods / intended failures; one observation per cell. Upstream regression suites were not run.}
+\label{tab:wrapper-pilot}
+\begin{tabular}{lllllll}
+\toprule
+Library & Version & Cold & Warm & Normal change & Missing record & Half truncated \\
+\midrule
+Commons CLI & 1.6.0 & 3 / 0 & 0 / 0 & 2 / 1 & 2 / 1 & 2 / 1 \\
+Commons CSV & 1.10.0 & 3 / 0 & 0 / 0 & 2 / 1 & 2 / 1 & 2 / 1 \\
+Commons Codec & 1.16.0 & 3 / 0 & 0 / 0 & 2 / 1 & 2 / 1 & 2 / 1 \\
+Commons IO & 2.15.0 & 3 / 0 & 0 / 0 & 2 / 1 & 2 / 1 & 2 / 1 \\
+Commons Lang & 3.14.0 & 3 / 0 & 0 / 0 & 2 / 1 & 2 / 1 & 2 / 1 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+\begin{table*}[t]
+\centering
+\small
+\caption{Static indicators in a purposive sample of 20 commit-pinned Apache Commons repositories. This does not estimate deployed RTS prevalence.}
+\label{tab:static-audit}
+\begin{tabular}{lll}
+\toprule
+Indicator & Observed & Denominator \\
+\midrule
+Optional root Ekstazi profile & 2 & 20 repositories \\
+Explicit Ekstazi workflow reference & 0 & 20 repositories \\
+Primary workflow pull\_request trigger & 20 & 20 primary workflows \\
+Primary contents permission read & 20 & 20 primary workflows \\
+Primary actions pinned to 40-hex commits & 20 & 20 primary workflows \\
+Primary checkout persist-credentials false & 20 & 20 primary workflows \\
+Explicit primary Maven dependency cache & 16 & 20 primary workflows \\
+\bottomrule
+\end{tabular}
+\end{table*}

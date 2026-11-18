@@ -1,0 +1,8 @@
+{
+  "filename": "SP2027_OriginalTests_Historical_Control.zip",
+  "bytes": 6880165,
+  "sha256": "3dec3fbbd98e5cd379b556c43e9bc66e261d875fa6f00c30454879317f4073fd",
+  "file_count": 41,
+  "scope": "Fixed historical original-test detection control; no qualifying false pass",
+  "includes_docker_image": false
+}

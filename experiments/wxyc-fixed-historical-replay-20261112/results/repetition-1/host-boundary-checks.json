@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "image": true,
+    "user": true,
+    "network": true,
+    "readonly_root": true,
+    "cap_drop": true,
+    "no_new_privileges": true,
+    "cpu": true,
+    "memory": true,
+    "swap": true,
+    "pids": true,
+    "no_binds": true,
+    "no_host_mounts": true,
+    "no_devices": true,
+    "not_privileged": true,
+    "no_ports": true,
+    "private_pid": true,
+    "private_ipc": true,
+    "temporary_paths": true,
+    "no_nonempty_credential_environment": true
+  },
+  "all_pass": true
+}

@@ -1,0 +1,5 @@
+@@START pilot.SubjectTest#valueMatches
+@@FAIL pilot.SubjectTest#valueMatches expected:<b[]> but was:<b[!]>
+@@START pilot.ControlTest#valueMatches
+@@START pilot.UntouchedTest#valueMatches
+@@RESULT run=3 failures=1 ignored=0

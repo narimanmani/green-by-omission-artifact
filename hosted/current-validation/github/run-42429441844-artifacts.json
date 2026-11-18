@@ -1,0 +1,11 @@
+{
+  "utc": "2026-11-08T00:26:36.487631+00:00",
+  "command": [
+    "gh",
+    "api",
+    "repos/anonymous-owner/ci-selection-testbed/actions/runs/42429441844/artifacts?per_page=100"
+  ],
+  "exit": 0,
+  "stdout": "{\"total_count\":2,\"artifacts\":[{\"id\":13596791436,\"node_id\":\"MDg6QXJ0aWZhY3QxMzU5Njc5MTQzNg==\",\"name\":\"selective-pr-5-attempt-1\",\"size_in_bytes\":80395,\"url\":\"https://example.invalid/anonymous-research/ci-selection-testbed/actions/artifacts/13596791436\",\"archive_download_url\":\"https://example.invalid/anonymous-research/ci-selection-testbed/actions/artifacts/13596791436/zip\",\"expired\":false,\"digest\":\"sha256:d2944cede96926b8c95f2ed91a7fd2f9dce036114dc748931723c9b2ff09fd59\",\"created_at\":\"2026-11-08T00:22:33Z\",\"updated_at\":\"2026-11-08T00:22:33Z\",\"expires_at\":\"2026-12-08T00:22:33Z\",\"workflow_run\":{\"id\":42429441844,\"repository_id\":1449811458,\"head_repository_id\":1449811458,\"head_branch\":\"trial/starlette_trusted_host/collision\",\"head_sha\":\"908e6f141715629b8c3a51d3b8bbd805f532e0c7\"}},{\"id\":13596777336,\"node_id\":\"MDg6QXJ0aWZhY3QxMzU5Njc3NzMzNg==\",\"name\":\"full-pr-5-attempt-1\",\"size_in_bytes\":81108,\"url\":\"https://example.invalid/anonymous-research/ci-selection-testbed/actions/artifacts/13596777336\",\"archive_download_url\":\"https://example.invalid/anonymous-research/ci-selection-testbed/actions/artifacts/13596777336/zip\",\"expired\":false,\"digest\":\"sha256:5e2fb173c5afe72d92ffea4d914207da5b7c0df111e39879bf3334a42300e943\",\"created_at\":\"2026-11-08T00:22:33Z\",\"updated_at\":\"2026-11-08T00:22:33Z\",\"expires_at\":\"2026-12-08T00:22:32Z\",\"workflow_run\":{\"id\":42429441844,\"repository_id\":1449811458,\"head_repository_id\":1449811458,\"head_branch\":\"trial/starlette_trusted_host/collision\",\"head_sha\":\"908e6f141715629b8c3a51d3b8bbd805f532e0c7\"}}]}",
+  "stderr": ""
+}

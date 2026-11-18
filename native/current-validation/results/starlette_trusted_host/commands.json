@@ -1,0 +1,765 @@
+[
+  {
+    "command": [
+      "git",
+      "init",
+      "-b",
+      "main"
+    ],
+    "returncode": 0,
+    "stdout": "Initialized empty Git repository in <user-home>/OneDrive/Documents/ChatGPT/sp2027/native/current-validation/results/starlette_trusted_host/repo/.git/\n",
+    "stderr": "",
+    "seconds": 0.1262509822845459
+  },
+  {
+    "command": [
+      "git",
+      "config",
+      "user.name",
+      "Private native selector research"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.14082098007202148
+  },
+  {
+    "command": [
+      "git",
+      "config",
+      "user.email",
+      "research@example.invalid"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.12178683280944824
+  },
+  {
+    "command": [
+      "git",
+      "config",
+      "core.autocrlf",
+      "false"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.20589089393615723
+  },
+  {
+    "command": [
+      "git",
+      "add",
+      "."
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.2582876682281494
+  },
+  {
+    "command": [
+      "git",
+      "commit",
+      "-m",
+      "Exact recovered trusted baseline"
+    ],
+    "returncode": 0,
+    "stdout": "[main (root-commit) 6ef49f5] Exact recovered trusted baseline\n 39 files changed, 6848 insertions(+)\n create mode 100644 build_meta.py\n create mode 100644 pytest.ini\n create mode 100644 starlette/__init__.py\n create mode 100644 starlette/_exception_handler.py\n create mode 100644 starlette/_utils.py\n create mode 100644 starlette/applications.py\n create mode 100644 starlette/authentication.py\n create mode 100644 starlette/background.py\n create mode 100644 starlette/concurrency.py\n create mode 100644 starlette/config.py\n create mode 100644 starlette/convertors.py\n create mode 100644 starlette/datastructures.py\n create mode 100644 starlette/endpoints.py\n create mode 100644 starlette/exceptions.py\n create mode 100644 starlette/formparsers.py\n create mode 100644 starlette/middleware/__init__.py\n create mode 100644 starlette/middleware/authentication.py\n create mode 100644 starlette/middleware/base.py\n create mode 100644 starlette/middleware/cors.py\n create mode 100644 starlette/middleware/errors.py\n create mode 100644 starlette/middleware/exceptions.py\n create mode 100644 starlette/middleware/gzip.py\n create mode 100644 starlette/middleware/httpsredirect.py\n create mode 100644 starlette/middleware/sessions.py\n create mode 100644 starlette/middleware/trustedhost.py\n create mode 100644 starlette/middleware/wsgi.py\n create mode 100644 starlette/py.typed\n create mode 100644 starlette/requests.py\n create mode 100644 starlette/responses.py\n create mode 100644 starlette/routing.py\n create mode 100644 starlette/schemas.py\n create mode 100644 starlette/staticfiles.py\n create mode 100644 starlette/status.py\n create mode 100644 starlette/templating.py\n create mode 100644 starlette/testclient.py\n create mode 100644 starlette/types.py\n create mode 100644 starlette/websockets.py\n create mode 100644 tests/test_meta.py\n create mode 100644 tests/test_security.py\n",
+    "stderr": "",
+    "seconds": 0.22365760803222656
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "6ef49f545c0790637a21e52c9cf2a886fe66fbc5\n",
+    "stderr": "",
+    "seconds": 0.10714101791381836
+  },
+  {
+    "command": [
+      "git",
+      "update-ref",
+      "refs/remotes/origin/main",
+      "6ef49f545c0790637a21e52c9cf2a886fe66fbc5"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.14538192749023438
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "--detach",
+      "6ef49f545c0790637a21e52c9cf2a886fe66fbc5"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "HEAD is now at 6ef49f5 Exact recovered trusted baseline\n",
+    "seconds": 0.165696382522583
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--name-only",
+      "main...HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.18658185005187988
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.12936067581176758
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "6ef49f545c0790637a21e52c9cf2a886fe66fbc5\n",
+    "stderr": "",
+    "seconds": 0.11695194244384766
+  },
+  {
+    "command": [
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nNo changed files detected. Deselecting all tests.\nUse --depper-run-all-on-error to run all tests when no changes are detected.\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive SKIPPED (No files\nchanged)\ntests/test_security.py::test_security_rejects_untrusted_host SKIPPED (No\nfiles changed)\ntests/test_security.py::test_valid_host_passes SKIPPED (No files\nchanged)\n\n============================== warnings summary ===============================\nstarlette\\testclient.py:45\n  <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\testclient.py:45: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.\n    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n=========================== short test summary info ===========================\nSKIPPED [1] tests\\test_meta.py: No files changed\nSKIPPED [2] tests\\test_security.py: No files changed\n======================== 3 skipped, 1 warning in 0.55s ========================\n",
+    "stderr": "",
+    "seconds": 0.8778400421142578
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.11669421195983887
+  },
+  {
+    "command": [
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug",
+      "--depper-run-all-on-error"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nNo changed files detected. Running all tests (--depper-run-all-on-error enabled).\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_untrusted_host PASSED\ntests/test_security.py::test_valid_host_passes PASSED\n\n============================== warnings summary ===============================\nstarlette\\testclient.py:45\n  <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\testclient.py:45: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.\n    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n=================================== PASSES ====================================\n=========================== short test summary info ===========================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_security_rejects_untrusted_host\nPASSED tests/test_security.py::test_valid_host_passes\n======================== 3 passed, 1 warning in 0.56s =========================\n",
+    "stderr": "",
+    "seconds": 0.874910831451416
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.12708234786987305
+  },
+  {
+    "command": [
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\nrootdir: <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... collected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_untrusted_host PASSED\ntests/test_security.py::test_valid_host_passes PASSED\n\n============================== warnings summary ===============================\nstarlette\\testclient.py:45\n  <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\testclient.py:45: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.\n    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n=================================== PASSES ====================================\n=========================== short test summary info ===========================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_security_rejects_untrusted_host\nPASSED tests/test_security.py::test_valid_host_passes\n======================== 3 passed, 1 warning in 0.08s =========================\n",
+    "stderr": "",
+    "seconds": 0.40027570724487305
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.14999794960021973
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "--detach",
+      "6ef49f545c0790637a21e52c9cf2a886fe66fbc5"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "HEAD is now at 6ef49f5 Exact recovered trusted baseline\n",
+    "seconds": 0.1988682746887207
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "-c",
+      "benign_comment"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Switched to a new branch 'benign_comment'\n",
+    "seconds": 0.1343390941619873
+  },
+  {
+    "command": [
+      "git",
+      "add",
+      "--",
+      "starlette/middleware/trustedhost.py"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.11711287498474121
+  },
+  {
+    "command": [
+      "git",
+      "commit",
+      "-m",
+      "Benign comment control"
+    ],
+    "returncode": 0,
+    "stdout": "[benign_comment 535e194] Benign comment control\n 1 file changed, 2 insertions(+)\n",
+    "stderr": "",
+    "seconds": 0.1988534927368164
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--name-only",
+      "main...HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "starlette/middleware/trustedhost.py\n",
+    "stderr": "",
+    "seconds": 0.11583113670349121
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.1295943260192871
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "535e1943212ed9ba68d6fcaf33b2bcec6339faff\n",
+    "stderr": "",
+    "seconds": 0.1369764804840088
+  },
+  {
+    "command": [
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nDepper: Found 1 changed files\n  - starlette/middleware/trustedhost.py\n\n=== Dependency Analysis ===\n\nChanged file: starlette/middleware/trustedhost.py\n\nDepper: No tests affected by these changes\nDeselecting all tests. This may indicate missing test coverage.\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive SKIPPED (No tests\naffected by changes)\ntests/test_security.py::test_security_rejects_untrusted_host SKIPPED (No\ntests affected by changes)\ntests/test_security.py::test_valid_host_passes SKIPPED (No tests\naffected by changes)\n\n============================== warnings summary ===============================\nstarlette\\testclient.py:45\n  <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\testclient.py:45: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.\n    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n=========================== short test summary info ===========================\nSKIPPED [1] tests\\test_meta.py: No tests affected by changes\nSKIPPED [2] tests\\test_security.py: No tests affected by changes\n======================== 3 skipped, 1 warning in 0.45s ========================\n",
+    "stderr": "",
+    "seconds": 0.7624626159667969
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.22896242141723633
+  },
+  {
+    "command": [
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug",
+      "--depper-run-all-on-error"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nDepper: Found 1 changed files\n  - starlette/middleware/trustedhost.py\n\n=== Dependency Analysis ===\n\nChanged file: starlette/middleware/trustedhost.py\n\nDepper: No tests affected by these changes\nRunning all tests (--depper-run-all-on-error enabled).\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_untrusted_host PASSED\ntests/test_security.py::test_valid_host_passes PASSED\n\n============================== warnings summary ===============================\nstarlette\\testclient.py:45\n  <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\testclient.py:45: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.\n    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n=================================== PASSES ====================================\n=========================== short test summary info ===========================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_security_rejects_untrusted_host\nPASSED tests/test_security.py::test_valid_host_passes\n======================== 3 passed, 1 warning in 0.45s =========================\n",
+    "stderr": "",
+    "seconds": 0.8485167026519775
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.16508841514587402
+  },
+  {
+    "command": [
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\nrootdir: <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... collected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_untrusted_host PASSED\ntests/test_security.py::test_valid_host_passes PASSED\n\n============================== warnings summary ===============================\nstarlette\\testclient.py:45\n  <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\testclient.py:45: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.\n    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n=================================== PASSES ====================================\n=========================== short test summary info ===========================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_security_rejects_untrusted_host\nPASSED tests/test_security.py::test_valid_host_passes\n======================== 3 passed, 1 warning in 0.08s =========================\n",
+    "stderr": "",
+    "seconds": 0.39605116844177246
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.13776063919067383
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "--detach",
+      "6ef49f545c0790637a21e52c9cf2a886fe66fbc5"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "HEAD is now at 6ef49f5 Exact recovered trusted baseline\n",
+    "seconds": 0.1768794059753418
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "-c",
+      "ordinary"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Switched to a new branch 'ordinary'\n",
+    "seconds": 0.1684103012084961
+  },
+  {
+    "command": [
+      "git",
+      "add",
+      "--",
+      "starlette/middleware/trustedhost.py"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.12633705139160156
+  },
+  {
+    "command": [
+      "git",
+      "commit",
+      "-m",
+      "Original ordinary source snapshot"
+    ],
+    "returncode": 0,
+    "stdout": "[ordinary de43145] Original ordinary source snapshot\n 1 file changed, 1 insertion(+), 1 deletion(-)\n",
+    "stderr": "",
+    "seconds": 0.20339226722717285
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--name-only",
+      "main...HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "starlette/middleware/trustedhost.py\n",
+    "stderr": "",
+    "seconds": 0.11504149436950684
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.1542797088623047
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "de431457828d215a85f1c25963c41d6a33b0d137\n",
+    "stderr": "",
+    "seconds": 0.13282322883605957
+  },
+  {
+    "command": [
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nDepper: Found 1 changed files\n  - starlette/middleware/trustedhost.py\n\n=== Symbol-Level Dependency Analysis ===\n\nChanged file: starlette/middleware/trustedhost.py\n  Changed symbols: {'TrustedHostMiddleware'}\n\nDepper: No tests affected by these changes\nDeselecting all tests. This may indicate missing test coverage.\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive SKIPPED (No tests\naffected by changes)\ntests/test_security.py::test_security_rejects_untrusted_host SKIPPED (No\ntests affected by changes)\ntests/test_security.py::test_valid_host_passes SKIPPED (No tests\naffected by changes)\n\n============================== warnings summary ===============================\nstarlette\\testclient.py:45\n  <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\testclient.py:45: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.\n    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n=========================== short test summary info ===========================\nSKIPPED [1] tests\\test_meta.py: No tests affected by changes\nSKIPPED [2] tests\\test_security.py: No tests affected by changes\n======================== 3 skipped, 1 warning in 0.45s ========================\n",
+    "stderr": "",
+    "seconds": 0.7924849987030029
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.1646866798400879
+  },
+  {
+    "command": [
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug",
+      "--depper-run-all-on-error"
+    ],
+    "returncode": 1,
+    "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nDepper: Found 1 changed files\n  - starlette/middleware/trustedhost.py\n\n=== Symbol-Level Dependency Analysis ===\n\nChanged file: starlette/middleware/trustedhost.py\n  Changed symbols: {'TrustedHostMiddleware'}\n\nDepper: No tests affected by these changes\nRunning all tests (--depper-run-all-on-error enabled).\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_untrusted_host FAILED\ntests/test_security.py::test_valid_host_passes PASSED\n\n================================== FAILURES ===================================\n____________________ test_security_rejects_untrusted_host _____________________\n\n    def test_security_rejects_untrusted_host():\n        client = TestClient(make_app())\n        response = client.get('http://evil.example/')\n>       assert response.status_code == 400\nE       assert 200 == 400\nE        +  where 200 = <Response [200 OK]>.status_code\n\ntests\\test_security.py:17: AssertionError\n============================== warnings summary ===============================\nstarlette\\testclient.py:45\n  <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\testclient.py:45: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.\n    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n=================================== PASSES ====================================\n=========================== short test summary info ===========================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_valid_host_passes\nFAILED tests/test_security.py::test_security_rejects_untrusted_host - assert 200 == 400\n +  where 200 = <Response [200 OK]>.status_code\n=================== 1 failed, 2 passed, 1 warning in 0.48s ====================\n",
+    "stderr": "",
+    "seconds": 0.8090083599090576
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.12311005592346191
+  },
+  {
+    "command": [
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no"
+    ],
+    "returncode": 1,
+    "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\nrootdir: <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... collected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_untrusted_host FAILED\ntests/test_security.py::test_valid_host_passes PASSED\n\n================================== FAILURES ===================================\n____________________ test_security_rejects_untrusted_host _____________________\n\n    def test_security_rejects_untrusted_host():\n        client = TestClient(make_app())\n        response = client.get('http://evil.example/')\n>       assert response.status_code == 400\nE       assert 200 == 400\nE        +  where 200 = <Response [200 OK]>.status_code\n\ntests\\test_security.py:17: AssertionError\n============================== warnings summary ===============================\nstarlette\\testclient.py:45\n  <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\testclient.py:45: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.\n    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n=================================== PASSES ====================================\n=========================== short test summary info ===========================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_valid_host_passes\nFAILED tests/test_security.py::test_security_rejects_untrusted_host - assert 200 == 400\n +  where 200 = <Response [200 OK]>.status_code\n=================== 1 failed, 2 passed, 1 warning in 0.12s ====================\n",
+    "stderr": "",
+    "seconds": 0.4450807571411133
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.1148371696472168
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "--detach",
+      "6ef49f545c0790637a21e52c9cf2a886fe66fbc5"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "HEAD is now at 6ef49f5 Exact recovered trusted baseline\n",
+    "seconds": 0.1155848503112793
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "-c",
+      "collision"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Switched to a new branch 'collision'\n",
+    "seconds": 0.12250590324401855
+  },
+  {
+    "command": [
+      "git",
+      "add",
+      "--",
+      "starlette/middleware/trustedhost.py"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.12177300453186035
+  },
+  {
+    "command": [
+      "git",
+      "commit",
+      "-m",
+      "Original collision source snapshot"
+    ],
+    "returncode": 0,
+    "stdout": "[collision 5340221] Original collision source snapshot\n 1 file changed, 2 insertions(+), 1 deletion(-)\n",
+    "stderr": "",
+    "seconds": 0.20669198036193848
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--name-only",
+      "main...HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "starlette/middleware/trustedhost.py\n",
+    "stderr": "",
+    "seconds": 0.1078040599822998
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.11439990997314453
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "534022196d15324898247ed6dc46bbfb545fab2b\n",
+    "stderr": "",
+    "seconds": 0.1099240779876709
+  },
+  {
+    "command": [
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug"
+    ],
+    "returncode": 0,
+    "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nDepper: Found 1 changed files\n  - starlette/middleware/trustedhost.py\n\n=== Symbol-Level Dependency Analysis ===\n\nChanged file: starlette/middleware/trustedhost.py\n  Changed symbols: {'TrustedHostMiddleware'}\n\nDepper: No tests affected by these changes\nDeselecting all tests. This may indicate missing test coverage.\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive SKIPPED (No tests\naffected by changes)\ntests/test_security.py::test_security_rejects_untrusted_host SKIPPED (No\ntests affected by changes)\ntests/test_security.py::test_valid_host_passes SKIPPED (No tests\naffected by changes)\n\n============================== warnings summary ===============================\nstarlette\\testclient.py:45\n  <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\testclient.py:45: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.\n    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n=========================== short test summary info ===========================\nSKIPPED [1] tests\\test_meta.py: No tests affected by changes\nSKIPPED [2] tests\\test_security.py: No tests affected by changes\n======================== 3 skipped, 1 warning in 0.54s ========================\n",
+    "stderr": "",
+    "seconds": 0.8665797710418701
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.15626788139343262
+  },
+  {
+    "command": [
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no",
+      "--depper",
+      "--depper-base-branch=main",
+      "--depper-debug",
+      "--depper-run-all-on-error"
+    ],
+    "returncode": 1,
+    "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\ndepper: smart test selection enabled (base branch: main)\nrootdir: <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... \nDepper: Found 1 changed files\n  - starlette/middleware/trustedhost.py\n\n=== Symbol-Level Dependency Analysis ===\n\nChanged file: starlette/middleware/trustedhost.py\n  Changed symbols: {'TrustedHostMiddleware'}\n\nDepper: No tests affected by these changes\nRunning all tests (--depper-run-all-on-error enabled).\ncollected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_untrusted_host FAILED\ntests/test_security.py::test_valid_host_passes PASSED\n\n================================== FAILURES ===================================\n____________________ test_security_rejects_untrusted_host _____________________\n\n    def test_security_rejects_untrusted_host():\n        client = TestClient(make_app())\n        response = client.get('http://evil.example/')\n>       assert response.status_code == 400\nE       assert 200 == 400\nE        +  where 200 = <Response [200 OK]>.status_code\n\ntests\\test_security.py:17: AssertionError\n============================== warnings summary ===============================\nstarlette\\testclient.py:45\n  <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\testclient.py:45: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.\n    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n=================================== PASSES ====================================\n=========================== short test summary info ===========================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_valid_host_passes\nFAILED tests/test_security.py::test_security_rejects_untrusted_host - assert 200 == 400\n +  where 200 = <Response [200 OK]>.status_code\n=================== 1 failed, 2 passed, 1 warning in 0.48s ====================\n",
+    "stderr": "",
+    "seconds": 0.7948846817016602
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.11137819290161133
+  },
+  {
+    "command": [
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-p",
+      "native_capture",
+      "-vv",
+      "-s",
+      "--color=no"
+    ],
+    "returncode": 1,
+    "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.13.13, pytest-9.0.2, pluggy-1.7.0 -- <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\nrootdir: <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: anyio-4.16.0, depper-0.2.0\ncollecting ... collected 3 items\n\ntests/test_meta.py::test_metadata_build_positive PASSED\ntests/test_security.py::test_security_rejects_untrusted_host FAILED\ntests/test_security.py::test_valid_host_passes PASSED\n\n================================== FAILURES ===================================\n____________________ test_security_rejects_untrusted_host _____________________\n\n    def test_security_rejects_untrusted_host():\n        client = TestClient(make_app())\n        response = client.get('http://evil.example/')\n>       assert response.status_code == 400\nE       assert 200 == 400\nE        +  where 200 = <Response [200 OK]>.status_code\n\ntests\\test_security.py:17: AssertionError\n============================== warnings summary ===============================\nstarlette\\testclient.py:45\n  <user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\repo\\starlette\\testclient.py:45: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.\n    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n=================================== PASSES ====================================\n=========================== short test summary info ===========================\nPASSED tests/test_meta.py::test_metadata_build_positive\nPASSED tests/test_security.py::test_valid_host_passes\nFAILED tests/test_security.py::test_security_rejects_untrusted_host - assert 200 == 400\n +  where 200 = <Response [200 OK]>.status_code\n=================== 1 failed, 2 passed, 1 warning in 0.12s ====================\n",
+    "stderr": "",
+    "seconds": 0.4255826473236084
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.13534188270568848
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "--detach",
+      "6ef49f545c0790637a21e52c9cf2a886fe66fbc5"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "HEAD is now at 6ef49f5 Exact recovered trusted baseline\n",
+    "seconds": 0.11641383171081543
+  },
+  {
+    "command": [
+      "git",
+      "bundle",
+      "create",
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\native\\current-validation\\results\\starlette_trusted_host\\history.bundle",
+      "--all"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.19274163246154785
+  }
+]

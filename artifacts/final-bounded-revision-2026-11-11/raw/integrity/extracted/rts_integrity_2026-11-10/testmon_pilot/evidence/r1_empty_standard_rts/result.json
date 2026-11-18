@@ -1,0 +1,62 @@
+{
+  "command": [
+    "/workspace/scratch/0827c1f80a7f/testmon_pilot/venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "--junitxml=/workspace/scratch/0827c1f80a7f/testmon_pilot/evidence/r1_empty_standard_rts/junit.xml",
+    "--testmon",
+    "-p",
+    "testmon.pytest_testmon"
+  ],
+  "cwd": "/workspace/scratch/0827c1f80a7f/testmon_pilot/work",
+  "elapsed_s": 0.6558624539999869,
+  "errors": 0,
+  "evidence_class": "controlled_fault_native_execution",
+  "executed_nodeids": [
+    "test_arithmetic.py::test_positive",
+    "test_arithmetic.py::test_negative",
+    "test_label.py::test_label",
+    "test_untouched.py::test_identity"
+  ],
+  "exit_code": 1,
+  "failing_nodeids": [
+    "test_arithmetic.py::test_positive",
+    "test_arithmetic.py::test_negative"
+  ],
+  "failures": 2,
+  "false_accept": false,
+  "fault": "empty",
+  "full_suite_fallback": false,
+  "integrity_checked": false,
+  "integrity_ok": null,
+  "oracle_failing_nodeids": [
+    "test_arithmetic.py::test_negative",
+    "test_arithmetic.py::test_positive"
+  ],
+  "oracle_tests_detected": 2,
+  "relevant_omitted_nodeids": [],
+  "repetition": 1,
+  "run_id": "r1_empty_standard_rts",
+  "skipped": 0,
+  "skipped_nodeids": [],
+  "source_hashes": {
+    "arithmetic.py": "9af6d94b08f7884e06460c7bbfa337e773eeac1f4e7eae9da4c69310a8c3a2da",
+    "label.py": "cdf9852ead2cefa142a23a7ed308171fde5da4348942c8d241474bb8d5644e26",
+    "test_arithmetic.py": "47dc7781071c2d0bcb13a5797986dd2b16b4f2fcdc35e5b096b7a5ac4e520362",
+    "test_label.py": "e7bc90f92cbae047d12adfa93e9c77a25915e1a1458f85e4b3b8b60cd3918114",
+    "test_untouched.py": "a85d4dc40d843deafb207c95713f37192377c908a4e80cc5b037678052ac94ea",
+    "untouched.py": "9910e2fc297f8665cc0c7a6a0dcf2522dbe3ad118bdab9b9cb20a4df678557ac"
+  },
+  "source_state": "candidate",
+  "status": "test_failure",
+  "strategy": "standard_rts",
+  "test_hashes": {
+    "test_arithmetic.py": "47dc7781071c2d0bcb13a5797986dd2b16b4f2fcdc35e5b096b7a5ac4e520362",
+    "test_label.py": "e7bc90f92cbae047d12adfa93e9c77a25915e1a1458f85e4b3b8b60cd3918114",
+    "test_untouched.py": "a85d4dc40d843deafb207c95713f37192377c908a4e80cc5b037678052ac94ea"
+  },
+  "tests": 4,
+  "used_testmon": true,
+  "xml_exists": true
+}

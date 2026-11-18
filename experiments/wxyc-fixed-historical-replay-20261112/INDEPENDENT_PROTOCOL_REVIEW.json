@@ -1,0 +1,301 @@
+{
+  "audit_utc": "2026-11-12T15:54:54.416104+00:00",
+  "status": "PASS_STATIC_REVIEW_PENDING_INSTALLED_SEED_AND_EXECUTION_FREEZE",
+  "no_open_material_findings": true,
+  "checks_passed": 37,
+  "checks_total": 37,
+  "reviewed_files": {
+    "lab.py": {
+      "bytes": 11348,
+      "sha256": "3c697cef5a884796dac5e0ed42a4b4f93bac60a19c46490a8dc9de585a286601"
+    },
+    "run_replay.mjs": {
+      "bytes": 31846,
+      "sha256": "c6703dcc746d645beb7ee383c6824ffeb31e8ba718a1c965ad0dd67f0188bc77"
+    },
+    "PROTOCOL_PREDECLARATION.json": {
+      "bytes": 4743,
+      "sha256": "0ea6b3251f51177b07358af2be2acffe300584c5be30996821c2dca71f386300"
+    },
+    "INPUT_IDENTITY.json": {
+      "bytes": 1719,
+      "sha256": "47d6b8f54479e8c460baaf20a854604146e859571ed0a69a8efa0767634f4e93"
+    },
+    "input/baseline-source-manifest.json": {
+      "bytes": 472659,
+      "sha256": "4da8f6409f2043a86737eae9962d252c79bea5751ce3c20afb3636be24fb6532"
+    },
+    "input/candidate-source-manifest.json": {
+      "bytes": 472659,
+      "sha256": "3614223938d728e056cba4e5126bd0f85c2d2f47070f7cb1f862fd1ffee10eb9"
+    },
+    "input/original-unit-test-manifest.json": {
+      "bytes": 122349,
+      "sha256": "7722f342717a8eabdbdfd7f63f3a08087d54b6fe038b770ab908536e0b482b09"
+    }
+  },
+  "checks": [
+    {
+      "name": "fixed source-only candidate and original test scope are predeclared",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "Predeclaration and independent input audit: one inverse public production hunk;1869sourcefiles/471originalunitfiles."
+    },
+    {
+      "name": "no outcome-dependent scope or configuration changes",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "Predeclaration; fixed runner args and original manifests."
+    },
+    {
+      "name": "three fresh technical repetitions are predeclared",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "One fixed case; caller must invoke repetitions sequentially as declared."
+    },
+    {
+      "name": "installed seed must precede final execution freeze",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "lab.prepare accepts an immutable seed ID and copies its installed manifest; seed eligibility remains a separate prerequisite."
+    },
+    {
+      "name": "final image assembly cannot execute the subject before freeze",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "Container is created from immutable seed, inspected as never started, infrastructure copied, then committed."
+    },
+    {
+      "name": "final image is bound to exact seed parent/layers",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "Exact Parent ID plus filesystem layer prefix are verified."
+    },
+    {
+      "name": "host orchestrator and infrastructure context are hash frozen",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "Freeze binds host script and every copied infrastructure file; later changes reject execution."
+    },
+    {
+      "name": "protocol filename mismatch is resolved",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "Host copies both protocol names; runner prefers frozen alias."
+    },
+    {
+      "name": "manifest representation mismatch is resolved",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "Runner pins compact UTF-8 JSON plus newline; raw receipt hashes are retained separately."
+    },
+    {
+      "name": "fresh private project copy is required",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "Fresh tmpfs container and absent project directory before copying immutable seed."
+    },
+    {
+      "name": "workspace links are copied verbatim and checked inside copied checkout",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "Exact symlink targets verified; links resolving outside project reject state."
+    },
+    {
+      "name": "Git baseline/reference/index identities are verified",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "Pinned HEAD/tree/origin-main and original index blobs/modes checked."
+    },
+    {
+      "name": "all tracked source bytes and executable bits are checked across arms",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "Before/after every arm; candidate state checked immediately before selective and full."
+    },
+    {
+      "name": "candidate has exactly one changed tracked production file",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "Exact frozen candidate bytes plus complete candidate manifest; unexpected worktree changes reject state."
+    },
+    {
+      "name": "all original test/config/lock inputs remain in state checks",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "All1869trackedfiles validated; only production-file candidate differs."
+    },
+    {
+      "name": "complete installed dependency path/type inventory is compared",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "Includes nested workspace node_modules; missing/added/type-changed entries reject state."
+    },
+    {
+      "name": "every installed regular file and symlink target is hash bound",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "Repeated expected-byte/hash and exact link checks with inventory digests."
+    },
+    {
+      "name": "runtime versions are checked against fixed original lock profile",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "Node/npm/Jest/ts-jest/TypeScript checked; complete dependency manifest preserves nested layout."
+    },
+    {
+      "name": "full baseline precedes candidate and must include passing target guard",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "Ineligible baseline prevents both candidate arms; no target call or assertion failure is inferred from build success."
+    },
+    {
+      "name": "full executions must contain exactly original471unitfiles",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "Independent full case identity multiset must equal baseline, including original pending/todo case identities."
+    },
+    {
+      "name": "native selector is unchanged changedSince against pinned baseline",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "Full arms have no selection restriction; all arms retain original config/coverage mode plus reporting/scheduling paths."
+    },
+    {
+      "name": "actual nonempty original passing cases are required",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "Native exit0, no errors, at least one passed original case; suite listing or passWithNoTests alone is insufficient."
+    },
+    {
+      "name": "skipped pending and todo entries cannot count as calls",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "Explicit Jest case-result limitation: no independent hook/call-phase instrumentation."
+    },
+    {
+      "name": "designated failure must bind original expectation source line",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "Exact guard file/fullName/blob and expectation line; setup/runtime failure alone cannot qualify."
+    },
+    {
+      "name": "guard must be absent from native actual calls",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "Original guard is unconditionally declared in unchanged file; selected listings are not treated as execution."
+    },
+    {
+      "name": "all arms reject runtime setup process interruption and timeout errors",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "Suite errors and unexpected statuses invalidate infrastructure eligibility; output limits are ineligible."
+    },
+    {
+      "name": "baseline native cache and separate clean full cache are declared",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "Fresh container/tmpfs; before/after cache hash inventories exported."
+    },
+    {
+      "name": "outputs and caches are outside checked source",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "Raw JSON/stdout/stderr plus coverage/cache live outside /work/project."
+    },
+    {
+      "name": "raw result logs and supplementary artifact hashes are exported",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "Raw JSON/stdout/stderr embedded; binary coverage/cache contents explicitly inventory-only."
+    },
+    {
+      "name": "export compression and payload have verified hashes and lengths",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "Host rejects absent/duplicate envelopes and bad gzip/payload identities."
+    },
+    {
+      "name": "host qualification rejects outer exit/OOM/error failures",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "Both attached and container exits0, no OOM and no container error required."
+    },
+    {
+      "name": "execution is network-isolated nonroot and read-only-root",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "Host inspects before start; runner cross-checks UID/GID, root mount, loopback-only network, zero caps, no-new-privileges and seccomp."
+    },
+    {
+      "name": "no host mounts credentials socket or published ports are permitted",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "Explicit Docker args and preflight checks; child environment is constructed without inherited secrets."
+    },
+    {
+      "name": "private work tmpfs permits needed native addons while tmp is noexec",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "Private writable execution area only; filesystem settings must still be audited from actual inspect after start."
+    },
+    {
+      "name": "CPU memory swap pids and per-arm timeout are bounded",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "Host preflight validates resources; runner applies per-arm timeout and kills its process group."
+    },
+    {
+      "name": "repetition results cannot be overwritten or silently retried",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "Only repetitions1-3 accepted; unsuccessful evidence remains in separate arm/status records."
+    },
+    {
+      "name": "claims remain limited to static source-policy selection omission",
+      "pass": true,
+      "method": "static source/configuration review",
+      "evidence": "Not runtime exploitability, production prevalence, native fingerprint evidence or hosted contributor validation."
+    }
+  ],
+  "resolved_pre_execution_findings": [
+    {
+      "issue": "Frozen protocol filename mismatch",
+      "resolution": "Both filenames copied; runner explicitly loads frozen alias."
+    },
+    {
+      "issue": "Canonical versus pretty manifest-byte mismatch",
+      "resolution": "Canonical compact JSON hash checked while raw receipt hash is retained."
+    },
+    {
+      "issue": "Added ignored dependency entries would escape expected-only hashes",
+      "resolution": "Complete dependency path/type inventory compared before every state acceptance."
+    },
+    {
+      "issue": "Ancillary output/cache evidence lacked export identity",
+      "resolution": "Per-arm and final complete file/hash inventories included; contents limitations explicit."
+    },
+    {
+      "issue": "Mutable seed image tag could change during final assembly",
+      "resolution": "Unstarted container created by immutable ID; exact image Parent and seed layer prefix checked."
+    },
+    {
+      "issue": "Host summary did not gate on outer execution status",
+      "resolution": "Host flag requires attached and container exit0, no OOM and no container error."
+    }
+  ],
+  "mandatory_prerequisites": [
+    "An eligible installed seed with original source/lock and exact dependency provenance must be sealed before first baseline.",
+    "Execution freeze must bind these reviewed infrastructure hashes and immutable seed/final image IDs.",
+    "Actual Docker before-start and in-container boundaries must pass; this static review does not certify an uncreated container.",
+    "Run the three repetitions sequentially as predeclared and retain every ineligible or unsuccessful result.",
+    "No joint result may be claimed before independent raw-outcome audit of all completed repetitions."
+  ],
+  "evidence_limitations": [
+    "Jest passed case results are the execution measure; no independent hook/call-phase instrumentation is added.",
+    "Coverage/cache binary contents are inventory-only; raw Jest JSON and logs are embedded.",
+    "One fixed source-policy reversion; three technical repetitions are not three independent vulnerabilities."
+  ],
+  "target_execution_or_install_performed_by_auditor": false,
+  "manuscript_modified": false
+}

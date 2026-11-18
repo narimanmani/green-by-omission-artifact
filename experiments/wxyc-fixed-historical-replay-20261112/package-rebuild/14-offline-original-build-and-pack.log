@@ -1,0 +1,273 @@
+v24.19.0
+11.17.0
+
+> @wxyc/shared@4.1.0 generate:typescript
+> node scripts/generate-models.js
+
+  wrote src/generated/openapi-types.d.ts
+  wrote src/generated/models/index.ts
+
+> @wxyc/shared@4.1.0 build
+> tsup
+
+CLI Building entry: {"index":"src/index.ts","dtos/index":"src/dtos/index.ts","auto-dj/index":"src/auto-dj/index.ts","test-utils/index":"src/test-utils/index.ts","validation/index":"src/validation/index.ts"}
+CLI Using tsconfig: tsconfig.json
+CLI Building entry: {"auth-client/index":"src/auth-client/index.ts","auth-client/auth":"src/auth-client/auth.ts"}
+CLI Using tsconfig: tsconfig.json
+CLI tsup v8.5.1
+CLI Using tsup config: /home/node/work/wxyc-shared/tsup.config.ts
+CLI tsup v8.5.1
+CLI Using tsup config: /home/node/work/wxyc-shared/tsup.config.ts
+CLI Target: es2022
+CLI Target: es2022
+ESM Build start
+CLI Cleaning output folder
+ESM Build start
+dist/auth-client/index.js (1:0): Module level directives cause errors when bundled, "use client" in "dist/auth-client/index.js" was ignored.
+ESM dist/auth-client/auth.js      4.92 KB
+ESM dist/auth-client/index.js     6.98 KB
+ESM dist/auth-client/auth.js.map  18.17 KB
+ESM dist/auth-client/index.js.map 22.48 KB
+ESM ⚡️ Build success in 600ms
+ESM dist/index.js                56.49 KB
+ESM dist/dtos/index.js           7.35 KB
+ESM dist/validation/index.js     788.00 B
+ESM dist/auto-dj/index.js        1.65 KB
+ESM dist/test-utils/index.js     43.31 KB
+ESM dist/index.js.map            134.36 KB
+ESM dist/validation/index.js.map 2.66 KB
+ESM dist/dtos/index.js.map       35.88 KB
+ESM dist/auto-dj/index.js.map    28.54 KB
+ESM dist/test-utils/index.js.map 88.91 KB
+ESM ⚡️ Build success in 599ms
+DTS Build start
+DTS Build start
+DTS ⚡️ Build success in 4343ms
+DTS dist/auth-client/index.d.ts      1.84 KB
+DTS dist/auth-client/auth.d.ts       1.16 KB
+DTS dist/authorization-CIDaQg8S.d.ts 7.65 KB
+DTS ⚡️ Build success in 4644ms
+DTS dist/index.d.ts            14.65 KB
+DTS dist/auto-dj/index.d.ts    1.81 KB
+DTS dist/validation/index.d.ts 1.15 KB
+DTS dist/dtos/index.d.ts       9.65 KB
+DTS dist/test-utils/index.d.ts 26.58 KB
+DTS dist/index-DfcQlREy.d.ts   250.04 KB
+
+> @wxyc/shared@4.1.0 prepare
+> npm run generate:typescript && npm run build
+
+
+> @wxyc/shared@4.1.0 generate:typescript
+> node scripts/generate-models.js
+
+  wrote src/generated/openapi-types.d.ts
+  wrote src/generated/models/index.ts
+
+> @wxyc/shared@4.1.0 build
+> tsup
+
+CLI Building entry: {"index":"src/index.ts","dtos/index":"src/dtos/index.ts","auto-dj/index":"src/auto-dj/index.ts","test-utils/index":"src/test-utils/index.ts","validation/index":"src/validation/index.ts"}
+CLI Using tsconfig: tsconfig.json
+CLI Building entry: {"auth-client/index":"src/auth-client/index.ts","auth-client/auth":"src/auth-client/auth.ts"}
+CLI Using tsconfig: tsconfig.json
+CLI tsup v8.5.1
+CLI Using tsup config: /home/node/work/wxyc-shared/tsup.config.ts
+CLI tsup v8.5.1
+CLI Using tsup config: /home/node/work/wxyc-shared/tsup.config.ts
+CLI Target: es2022
+CLI Target: es2022
+ESM Build start
+CLI Cleaning output folder
+ESM Build start
+dist/auth-client/index.js (1:0): Module level directives cause errors when bundled, "use client" in "dist/auth-client/index.js" was ignored.
+ESM dist/dtos/index.js           7.35 KB
+ESM dist/auto-dj/index.js        1.65 KB
+ESM dist/index.js                56.49 KB
+ESM dist/test-utils/index.js     43.31 KB
+ESM dist/validation/index.js     788.00 B
+ESM dist/dtos/index.js.map       35.88 KB
+ESM dist/auto-dj/index.js.map    28.54 KB
+ESM dist/validation/index.js.map 2.66 KB
+ESM dist/index.js.map            134.36 KB
+ESM dist/test-utils/index.js.map 88.91 KB
+ESM ⚡️ Build success in 283ms
+ESM dist/auth-client/index.js     6.98 KB
+ESM dist/auth-client/auth.js      4.92 KB
+ESM dist/auth-client/index.js.map 22.48 KB
+ESM dist/auth-client/auth.js.map  18.17 KB
+ESM ⚡️ Build success in 286ms
+DTS Build start
+DTS Build start
+DTS ⚡️ Build success in 4601ms
+DTS dist/auth-client/index.d.ts      1.84 KB
+DTS dist/auth-client/auth.d.ts       1.16 KB
+DTS dist/authorization-CIDaQg8S.d.ts 7.65 KB
+DTS ⚡️ Build success in 4814ms
+DTS dist/index.d.ts            14.65 KB
+DTS dist/auto-dj/index.d.ts    1.81 KB
+DTS dist/validation/index.d.ts 1.15 KB
+DTS dist/dtos/index.d.ts       9.65 KB
+DTS dist/test-utils/index.d.ts 26.58 KB
+DTS dist/index-DfcQlREy.d.ts   250.04 KB
+[
+  {
+    "id": "@wxyc/shared@4.1.0",
+    "name": "@wxyc/shared",
+    "version": "4.1.0",
+    "size": 274813,
+    "unpackedSize": 1251845,
+    "shasum": "cd129532df5782044467db10c8dd0e91648b0547",
+    "integrity": "sha512-Onouu4bGBL9sVVLIhzLy72+jDg/JBTkNH88XF+4x5A101eq747vmyD/nfXNo1Q21SciMc+KTWWP/QFmtN/6WRA==",
+    "filename": "wxyc-shared-4.1.0.tgz",
+    "files": [
+      {
+        "path": "LICENSE",
+        "size": 4744,
+        "mode": 420
+      },
+      {
+        "path": "README.md",
+        "size": 26144,
+        "mode": 420
+      },
+      {
+        "path": "api.yaml",
+        "size": 399456,
+        "mode": 420
+      },
+      {
+        "path": "dist/auth-client/auth.d.ts",
+        "size": 1192,
+        "mode": 420
+      },
+      {
+        "path": "dist/auth-client/auth.js",
+        "size": 5041,
+        "mode": 420
+      },
+      {
+        "path": "dist/auth-client/auth.js.map",
+        "size": 18601,
+        "mode": 420
+      },
+      {
+        "path": "dist/auth-client/index.d.ts",
+        "size": 1882,
+        "mode": 420
+      },
+      {
+        "path": "dist/auth-client/index.js",
+        "size": 7170,
+        "mode": 420
+      },
+      {
+        "path": "dist/auth-client/index.js.map",
+        "size": 23026,
+        "mode": 420
+      },
+      {
+        "path": "dist/authorization-CIDaQg8S.d.ts",
+        "size": 7838,
+        "mode": 420
+      },
+      {
+        "path": "dist/auto-dj/index.d.ts",
+        "size": 1853,
+        "mode": 420
+      },
+      {
+        "path": "dist/auto-dj/index.js",
+        "size": 1687,
+        "mode": 420
+      },
+      {
+        "path": "dist/auto-dj/index.js.map",
+        "size": 29410,
+        "mode": 420
+      },
+      {
+        "path": "dist/dtos/index.d.ts",
+        "size": 9885,
+        "mode": 420
+      },
+      {
+        "path": "dist/dtos/index.js",
+        "size": 7528,
+        "mode": 420
+      },
+      {
+        "path": "dist/dtos/index.js.map",
+        "size": 36923,
+        "mode": 420
+      },
+      {
+        "path": "dist/index-DfcQlREy.d.ts",
+        "size": 256660,
+        "mode": 420
+      },
+      {
+        "path": "dist/index.d.ts",
+        "size": 15003,
+        "mode": 420
+      },
+      {
+        "path": "dist/index.js",
+        "size": 57854,
+        "mode": 420
+      },
+      {
+        "path": "dist/index.js.map",
+        "size": 138333,
+        "mode": 420
+      },
+      {
+        "path": "dist/test-utils/index.d.ts",
+        "size": 27219,
+        "mode": 420
+      },
+      {
+        "path": "dist/test-utils/index.js",
+        "size": 44356,
+        "mode": 420
+      },
+      {
+        "path": "dist/test-utils/index.js.map",
+        "size": 91600,
+        "mode": 420
+      },
+      {
+        "path": "dist/validation/index.d.ts",
+        "size": 1182,
+        "mode": 420
+      },
+      {
+        "path": "dist/validation/index.js",
+        "size": 788,
+        "mode": 420
+      },
+      {
+        "path": "dist/validation/index.js.map",
+        "size": 2727,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 4163,
+        "mode": 420
+      },
+      {
+        "path": "src/test-utils/charset-torture.json",
+        "size": 18996,
+        "mode": 420
+      },
+      {
+        "path": "src/test-utils/wxyc-example-data.json",
+        "size": 10584,
+        "mode": 420
+      }
+    ],
+    "entryCount": 29,
+    "bundled": []
+  }
+]

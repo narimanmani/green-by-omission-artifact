@@ -1,0 +1,196 @@
+{
+  "audit_utc": "2026-11-12T16:06:20.148286+00:00",
+  "status": "PASS_RAW_AUDIT_V1_INELIGIBLE_BASELINE",
+  "checks_passed": 28,
+  "checks_total": 28,
+  "verdict": "INELIGIBLE_BASELINE; no selective or independent candidate observation",
+  "planned_v1_repetitions": 3,
+  "completed_v1_repetitions_at_audit": 1,
+  "baseline": {
+    "unit_files": 471,
+    "case_results": 8173,
+    "passed": 8169,
+    "failed": 4,
+    "pending_todo_skipped": 0,
+    "target_security_guard": "passed",
+    "process_exit": 1
+  },
+  "candidate_arms_executed": false,
+  "candidate_applied": false,
+  "evidence_sha256": "f63dfaea86563f1b1239959cc773234b1b255d1218d0359d2ace43323d68801e",
+  "raw_jest_json_sha256": "10f00c43911e98dc1d98644876a8b5343c1edcaeedaa001f61de18a09ff5fe66",
+  "failed_cases": [
+    {
+      "file": "tests/unit/scripts/resolve-cron-schedule.test.ts",
+      "full_name": "scripts/resolve-cron-schedule.sh returns package.json value when no override env var is set",
+      "status": "failed"
+    },
+    {
+      "file": "tests/unit/scripts/resolve-cron-schedule.test.ts",
+      "full_name": "scripts/resolve-cron-schedule.sh returns override when BACKFILL_CRON_SCHEDULE is set and target matches",
+      "status": "failed"
+    },
+    {
+      "file": "tests/unit/scripts/resolve-cron-schedule.test.ts",
+      "full_name": "scripts/resolve-cron-schedule.sh ignores BACKFILL_CRON_SCHEDULE for other jobs (narrow override scope)",
+      "status": "failed"
+    },
+    {
+      "file": "tests/unit/scripts/resolve-cron-schedule.test.ts",
+      "full_name": "scripts/resolve-cron-schedule.sh ignores BACKFILL_CRON_SCHEDULE for rotation-lml-identity-backfill (narrow override scope)",
+      "status": "failed"
+    }
+  ],
+  "diagnosis": {
+    "script": "scripts/resolve-cron-schedule.sh",
+    "jq_line": 41,
+    "required_utility": "jq",
+    "support": "Four exit127 cases all reach the unconditional jq command; the branch before jq passes; recorded171package OS inventory has no jq/libjq1/libonig5.",
+    "direct_child_stderr_in_raw_jest_logs": false,
+    "important_limit": "The original test catches child stderr without printing it. Exit127 is observed; jq-absence is a strongly supported platform diagnosis, not a literal raw-Jest error message. Preserve an explicit platform-only absence probe before v2 provisioning."
+  },
+  "checks": [
+    {
+      "name": "exactly one complete evidence envelope retained",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "compressed export bytes/hash verify",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "decompressed export equals saved evidence exactly",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "raw Jest JSON matches embedded hash",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "recomputed8173case counts equal raw and summarized counts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all471originalunitfiles included once",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "raw suite counts are470passed1failed with no runtime errors",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original security guard actually passed at baseline",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "allfourfailures are original cron-script exit assertions",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "baseline process failed cleanly without timeout or spawn error",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "only baseline arm executed, no candidate or native/full result",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "harness rejected baseline before candidate installation",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "before_baseline all original source/config/test/lock identities match",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "before_baseline baseline Git/worktree unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "before_baseline all installed entries checked unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "after_baseline all original source/config/test/lock identities match",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "after_baseline baseline Git/worktree unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "after_baseline all installed entries checked unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exported cache_before inventory hash verifies",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exported cache_after inventory hash verifies",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exported coverage_artifacts inventory hash verifies",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "complete external evidence inventory hash verifies",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "baseline cache was fresh",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "actual19prestartboundaries pass",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no container OOM or daemon error",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "diagnosed script and tests are exact original pinned bytes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "missing-file branch before jq passes while fourjq-dependent branches fail",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "saved171packageOSinventory lacks jq and its native libraries",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "auditor_executed_tests_or_subject": false,
+  "claims_boundary": "A complete configured unit baseline failed. Target guard pass alone does not establish any selective false pass or close the paper gap."
+}

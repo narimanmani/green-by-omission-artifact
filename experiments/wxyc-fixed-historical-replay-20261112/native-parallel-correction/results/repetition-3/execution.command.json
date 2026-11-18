@@ -1,0 +1,9 @@
+{
+  "command": [
+    "docker",
+    "start",
+    "--attach",
+    "f74df31c3f0f1dca7cbad7c99c1fc638d49571aa8cfef08be87b388c5f0c541d"
+  ],
+  "exit_code": 0
+}

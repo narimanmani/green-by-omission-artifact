@@ -1,0 +1,202 @@
+[
+  {
+    "path": ".dockerignore",
+    "bytes": 135,
+    "sha256": "4478dee9d098bcc9f1a967aebcc954b7002711e036c38fcce2edc0ef7fb689d7"
+  },
+  {
+    "path": "DISPATCH_DIAGNOSIS.json",
+    "bytes": 1271,
+    "sha256": "f44580284e6ca7c2bdae923d0a3e8581bd03bcb2f93f9a512c5e2da301e2cbfc"
+  },
+  {
+    "path": "Dockerfile",
+    "bytes": 796,
+    "sha256": "aa40d1f969c289d4b48f00be37d385644ea8673c1d0e6e5772cf1a2f5114ee42"
+  },
+  {
+    "path": "INDEPENDENT_REPLAY_AUDIT.json",
+    "bytes": 9857,
+    "sha256": "8bca7b32872e71d18df4b6f8a98c5fa0dfdc6bd16d81fb04d5df87e2a38ef4b6"
+  },
+  {
+    "path": "input-manifest.json",
+    "bytes": 3081,
+    "sha256": "ba4753661b3ac4dfbc85475bc7d967a8845ec30a9bb3330f12c672474a3d043f"
+  },
+  {
+    "path": "instrumentation-history/attempt-1/evidence_observer.py",
+    "bytes": 1898,
+    "sha256": "364f933378683efd43362db1dad7ade51497f7ceb41970d3e3c2a17cd2fbdea0"
+  },
+  {
+    "path": "instrumentation-history/attempt-1/run_isolated.py",
+    "bytes": 6082,
+    "sha256": "03b4bae5fce0ad057da4e6599b90b38a54f29b602b99ae5a3d479be7137c9c6f"
+  },
+  {
+    "path": "instrumentation-history/attempt-1/run_replay.py",
+    "bytes": 9867,
+    "sha256": "178f9250312fb11a810b5b055845da382c2dde63d9f48c191de720af8a6e74dc"
+  },
+  {
+    "path": "OBSERVER_CORRECTION.md",
+    "bytes": 901,
+    "sha256": "e02e1130ae78682a06b5cfdc06b986206707269abf89223a0d8f63cc0e31a60c"
+  },
+  {
+    "path": "PROTOCOL.md",
+    "bytes": 2684,
+    "sha256": "113cdb161c67c53588ea5c91024c6b29e74b51c0eb54374ae8a1539b091f2423"
+  },
+  {
+    "path": "requirements-hashed.txt",
+    "bytes": 1163,
+    "sha256": "9830a5ecfdd6091f430fdd7d8e3c4eb1438e433b9d7fbe5e55ed3cf0c85204ce"
+  },
+  {
+    "path": "requirements-pinned.txt",
+    "bytes": 187,
+    "sha256": "788fe4a0837cc8445d831cc8ddc336aba1eead6ace433553674fbb38792aa5bd"
+  },
+  {
+    "path": "results/ELIGIBILITY_CORRECTION.json",
+    "bytes": 360,
+    "sha256": "38ef5571f24e441a828441bc7c8ad43943a3651ecb661b2372b9fd71b58b7eab"
+  },
+  {
+    "path": "results/execution.json",
+    "bytes": 1074,
+    "sha256": "8ab1794b394de116ee2003726c0d6573466dde63141bc980d3a5526ffb9c2b67"
+  },
+  {
+    "path": "results/prestart-boundary.json",
+    "bytes": 746,
+    "sha256": "823a6b090150074de367306efd9a2c517aa9f2e72d7065d854cc284de774cbc1"
+  },
+  {
+    "path": "results/raw-container-output.json",
+    "bytes": 751612,
+    "sha256": "40fef4694852e727e1048d3701b2dec2c88a5a2ecc754fbbc65c7ee1b8ee4db5"
+  },
+  {
+    "path": "results/replay-result.json",
+    "bytes": 1024513,
+    "sha256": "12594547542122a2f8217131b710eb903cfece4c0d8aff075e26b3c98779133e"
+  },
+  {
+    "path": "results/summary.json",
+    "bytes": 2946,
+    "sha256": "02904867443d9c78aa6ee1da105a7adb7d9a2e4cb69637646e588f83b97d4fe9"
+  },
+  {
+    "path": "results-corrected-observer/execution.json",
+    "bytes": 1074,
+    "sha256": "80a60284be7d667ee0eff5ef8f024a2f99f16d9dca3347cbed389fe44065e7be"
+  },
+  {
+    "path": "results-corrected-observer/prestart-boundary.json",
+    "bytes": 746,
+    "sha256": "bb2f64f5187ef11c539701128b29338b379732bf43dbf48de385cda83b3bbc77"
+  },
+  {
+    "path": "results-corrected-observer/raw-container-output.json",
+    "bytes": 736255,
+    "sha256": "eb3fcad901d2d59b0b1c4a9b8ae1114af06b6dd66aebe75040b4758d744bbfc4"
+  },
+  {
+    "path": "results-corrected-observer/replay-result.json",
+    "bytes": 1010665,
+    "sha256": "5add477877328c8da8c5293c6a37aa23c6746a06f05e903e4b4cb9175b3b2383"
+  },
+  {
+    "path": "results-corrected-observer/summary.json",
+    "bytes": 3138,
+    "sha256": "b7f989d8c63cbb189486fb766c637d2f6b9e878bea8efa12e05dffb24921a092"
+  },
+  {
+    "path": "RESULTS.md",
+    "bytes": 5806,
+    "sha256": "ce99c7ab8549e4a9033c6cb24568c70fe5a3486113d3909f39834e9478813ece"
+  },
+  {
+    "path": "run_isolated.py",
+    "bytes": 6121,
+    "sha256": "7c1f215f75ae6409f6cf1452e9fadf9bd7c89b090d6aecec60b2c4ae043f2e82"
+  },
+  {
+    "path": "runtime/evidence_observer.py",
+    "bytes": 2199,
+    "sha256": "b9c627fbaab6d8b2337d85eca6efbc33771ea3313bd04dbbe4938e71c91cadc3"
+  },
+  {
+    "path": "runtime/run_replay.py",
+    "bytes": 10324,
+    "sha256": "03c8c223171a5bcca8f686df9071fa23c7fb5ab1081653d0491674d8af979c72"
+  },
+  {
+    "path": "upstream.zip",
+    "bytes": 4100575,
+    "sha256": "1cf78dc00bd661c551eacf922d8bb0a4a2aa95435e8333366b77a6ccee188908"
+  },
+  {
+    "path": "wheels/certifi-2025.8.3-py3-none-any.whl",
+    "bytes": 161216,
+    "sha256": "f6c12493cfb1b06ba2ff328595af9350c65d6644968e5d3a2ffd78699af217a5"
+  },
+  {
+    "path": "wheels/charset_normalizer-3.4.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+    "bytes": 151350,
+    "sha256": "416175faf02e4b0810f1f38bcb54682878a4af94059a1cd63b8747244420801f"
+  },
+  {
+    "path": "wheels/colorama-0.4.6-py2.py3-none-any.whl",
+    "bytes": 25335,
+    "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6"
+  },
+  {
+    "path": "wheels/coverage-7.11.0-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl",
+    "bytes": 249978,
+    "sha256": "10ad04ac3a122048688387828b4537bc9cf60c0bf4869c1e9989c46e45690b82"
+  },
+  {
+    "path": "wheels/idna-3.10-py3-none-any.whl",
+    "bytes": 70442,
+    "sha256": "946d195a0d259cbba61165e88e65941f16e9b36ea6ddb97f00452bae8b1287d3"
+  },
+  {
+    "path": "wheels/iniconfig-2.1.0-py3-none-any.whl",
+    "bytes": 6050,
+    "sha256": "9deba5723312380e77435581c6bf4935c94cbfab9b1ed33ef8d238ea168eb760"
+  },
+  {
+    "path": "wheels/packaging-25.0-py3-none-any.whl",
+    "bytes": 66469,
+    "sha256": "29572ef2b1f17581046b3a2227d5c611fb25ec70ca1ba8554b24b0e69331a484"
+  },
+  {
+    "path": "wheels/pluggy-1.6.0-py3-none-any.whl",
+    "bytes": 20538,
+    "sha256": "e920276dd6813095e9377c0bc5566d94c932c33b27a3e3945d8389c374dd4746"
+  },
+  {
+    "path": "wheels/pygments-2.19.2-py3-none-any.whl",
+    "bytes": 1225217,
+    "sha256": "86540386c03d588bb81d44bc3928634ff26449851e99741617ecb9037ee5ec0b"
+  },
+  {
+    "path": "wheels/pytest-8.4.2-py3-none-any.whl",
+    "bytes": 365750,
+    "sha256": "872f880de3fc3a5bdc88a11b39c9710c3497a547cfa9320bc3c5e62fbf272e79"
+  },
+  {
+    "path": "wheels/pytest_testmon-2.3.0-py3-none-any.whl",
+    "bytes": 26512,
+    "sha256": "fd541506efa483e5a217e6cc5c07c73b382619c218d1ed4ffa80584c34defd77"
+  },
+  {
+    "path": "wheels/urllib3-2.5.0-py3-none-any.whl",
+    "bytes": 129795,
+    "sha256": "e6b01673c0fa6a13e374b50871808eb3bf7046c4b125b216f6bf1cc604cff0dc"
+  }
+]

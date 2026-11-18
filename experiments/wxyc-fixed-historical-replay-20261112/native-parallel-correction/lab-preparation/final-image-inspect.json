@@ -1,0 +1,61 @@
+{
+  "Architecture": "amd64",
+  "Config": {
+    "Entrypoint": [
+      "node",
+      "/opt/replay/run_replay.mjs"
+    ],
+    "Env": [
+      "HOME=/work/home",
+      "NPM_TOKEN=",
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "NODE_VERSION=24.19.0",
+      "YARN_VERSION=1.22.22",
+      "CI=true",
+      "NODE_ENV=test",
+      "EMAIL_ENABLED=false"
+    ],
+    "Labels": {
+      "desktop.docker.io/ports.scheme": "v2",
+      "sp2027.backend-provisioning": "baseline-only-no-tests",
+      "sp2027.prerequisite-correction": "jq-os-only"
+    },
+    "User": "10001:10001",
+    "WorkingDir": "/work"
+  },
+  "Created": "2026-11-12T16:22:38.873663711Z",
+  "Descriptor": {
+    "digest": "sha256:8eeec120d61f6913fcdbfb8bc8d801b1fac174dea40557446d27fb80c4ae2baa",
+    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+    "size": 2708
+  },
+  "Id": "sha256:8eeec120d61f6913fcdbfb8bc8d801b1fac174dea40557446d27fb80c4ae2baa",
+  "Metadata": {
+    "LastTagTime": "2026-11-12T16:22:39.018625132Z"
+  },
+  "Os": "linux",
+  "Parent": "sha256:36222dd77240e20948861c15d9e80b5940ef034e6130333019344815797b99ea",
+  "RepoDigests": [
+    "sp2027-wxyc-fixed-history-parallel@sha256:8eeec120d61f6913fcdbfb8bc8d801b1fac174dea40557446d27fb80c4ae2baa"
+  ],
+  "RepoTags": [
+    "sp2027-wxyc-fixed-history-parallel:20261112"
+  ],
+  "RootFS": {
+    "Layers": [
+      "sha256:1d69a5fd31932841d7825ef4780c06f008eea65aaa9f3110fe09d5832ed5c7d8",
+      "sha256:1ecd584585e16573c2663ba440a96264e380d3b73d1aa134bd412832a7a9d007",
+      "sha256:26bfa8972980bd9e51648c04196656bce2b61da00740da02193ad26350dcec03",
+      "sha256:f8df5cf514d8a65c9cc96cb515c1551f829b4fe10355783d2e7f4edfb095d4b7",
+      "sha256:aaa6cd2b99bfcc6c44dbf6f7a291414c7fc026f228eadfd3bd5b608afbfecb81",
+      "sha256:08b872ba5d9d9522ae7e718646fb68da72dc4ee99c22f055642c5366d9c5d6ef",
+      "sha256:15c689549fac4f8ae22e3b0b2a008a045d420bd8fecefddd2fc7e682c1d0410b",
+      "sha256:2e421a0a64513bcec354796d8e97b62688093c43d6a5b07690f3e14f032e5db9",
+      "sha256:2f7a74fd43a29c9d22c0b28ac5ce467073f1b0d2fdec63ab77ab856d83f81090",
+      "sha256:3fca692fe791d7877573879e8a1ec8ab3880abffd417e782382cf6ea36e0d189",
+      "sha256:f1c3ec3d89ca4987e7d4286a7abc96994425a950da94b764bff181eebaa7d7a8"
+    ],
+    "Type": "layers"
+  },
+  "Size": 715265770
+}

@@ -1,0 +1,87 @@
+{
+  "results": [
+    {
+      "repo": "gobii-ai/gobii-platform",
+      "default_branch": "main",
+      "score": 724087694,
+      "hits": [],
+      "tree": {
+        "truncated": false,
+        "n_files": 3302,
+        "n_python": 1674,
+        "n_tests": 54,
+        "workflows": [
+          ".github/workflows/ci.yml",
+          ".github/workflows/docs.yml",
+          ".github/workflows/droid-implement.yml",
+          ".github/workflows/droid.yml",
+          ".github/workflows/preview-cleanup-dispatch.yml",
+          ".github/workflows/release.yml"
+        ],
+        "build_files": [
+          "pyproject.toml"
+        ]
+      }
+    },
+    {
+      "repo": "preset-io/promptimize",
+      "default_branch": "main",
+      "score": 846464643,
+      "hits": [],
+      "tree": {
+        "truncated": false,
+        "n_files": 37,
+        "n_python": 14,
+        "n_tests": 0,
+        "workflows": [],
+        "build_files": [
+          "pyproject.toml",
+          "setup.py"
+        ]
+      }
+    },
+    {
+      "repo": "syssi/xiaomi_airpurifier",
+      "default_branch": "develop",
+      "score": 900413152,
+      "hits": [],
+      "tree": {
+        "truncated": false,
+        "n_files": 32,
+        "n_python": 3,
+        "n_tests": 0,
+        "workflows": [
+          ".github/workflows/hacs.yaml",
+          ".github/workflows/hassfest.yaml",
+          ".github/workflows/mypy.yaml",
+          ".github/workflows/pre-commit.yaml",
+          ".github/workflows/yamllint.yaml"
+        ],
+        "build_files": [
+          "pyproject.toml",
+          "setup.cfg"
+        ]
+      }
+    },
+    {
+      "repo": "wwrechard/pydlm",
+      "default_branch": "master",
+      "score": 1211041760,
+      "hits": [],
+      "tree": {
+        "truncated": false,
+        "n_files": 143,
+        "n_python": 57,
+        "n_tests": 0,
+        "workflows": [
+          ".github/workflows/publish.yml"
+        ],
+        "build_files": [
+          "pyproject.toml",
+          "setup.cfg",
+          "setup.py"
+        ]
+      }
+    }
+  ]
+}

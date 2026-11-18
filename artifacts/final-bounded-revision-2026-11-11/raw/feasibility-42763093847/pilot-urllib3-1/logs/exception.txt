@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/runner/work/ci-selection-testbed/ci-selection-testbed/research_20261107/real_pilot/runner.py", line 116, in <module>
+    if a.lang=="python":py()
+                        ^^^^
+  File "/home/runner/work/ci-selection-testbed/ci-selection-testbed/research_20261107/real_pilot/runner.py", line 38, in py
+    if not node:raise RuntimeError("no collectable test from first 3 authentic files")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: no collectable test from first 3 authentic files

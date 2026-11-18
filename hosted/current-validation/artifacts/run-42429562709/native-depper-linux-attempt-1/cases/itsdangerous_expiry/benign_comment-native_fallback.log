@@ -1,0 +1,33 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python
+cachedir: .pytest_cache
+depper: smart test selection enabled (base branch: main)
+rootdir: /home/runner/work/_temp/evidence/cases/itsdangerous_expiry/repo
+configfile: pytest.ini
+testpaths: tests
+plugins: anyio-4.16.0, depper-0.2.0
+collecting ... 
+Depper: Found 1 changed files
+  - itsdangerous/timed.py
+
+=== Dependency Analysis ===
+
+Changed file: itsdangerous/timed.py
+  Dependencies: {'itsdangerous/signer.py', 'itsdangerous/encoding.py', 'itsdangerous/serializer.py', 'itsdangerous/exc.py'}
+  Files that depend on this: {'itsdangerous/url_safe.py', 'tests/test_security.py', 'itsdangerous/__init__.py'}
+  Direct test coverage: {'tests/test_security.py'}
+Depper: 1 test files affected by changes
+Depper: Selected 2 tests, deselected 1 tests
+
+Selected test files:
+  ✓ tests/test_security.py
+collected 3 items / 1 deselected / 2 selected
+
+tests/test_security.py::test_security_rejects_expired PASSED
+tests/test_security.py::test_valid_signature_passes PASSED
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED tests/test_security.py::test_security_rejects_expired
+PASSED tests/test_security.py::test_valid_signature_passes
+======================= 2 passed, 1 deselected in 0.04s ========================

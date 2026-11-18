@@ -1,0 +1,78 @@
+{
+  "results": [
+    {
+      "repo": "citrusframework/citrus",
+      "default_branch": "main",
+      "score": 27303533,
+      "hits": [],
+      "tree": {
+        "truncated": false,
+        "n_files": 10924,
+        "n_java": 5055,
+        "n_tests": 1997,
+        "workflows": [
+          ".github/workflows/build.yml",
+          ".github/workflows/lts.yml",
+          ".github/workflows/nightly.yml",
+          ".github/workflows/release.yml"
+        ],
+        "build_files": [
+          "pom.xml"
+        ]
+      }
+    },
+    {
+      "repo": "xuxueli/xxl-mq",
+      "default_branch": "master",
+      "score": 31060416,
+      "hits": [],
+      "tree": {
+        "truncated": false,
+        "n_files": 538,
+        "n_java": 115,
+        "n_tests": 11,
+        "workflows": [
+          ".github/workflows/maven.yml"
+        ],
+        "build_files": [
+          "pom.xml"
+        ]
+      }
+    },
+    {
+      "repo": "sitemesh/sitemesh3",
+      "default_branch": "master",
+      "score": 32426006,
+      "hits": [],
+      "tree": {
+        "truncated": false,
+        "n_files": 777,
+        "n_java": 189,
+        "n_tests": 68,
+        "workflows": [
+          ".github/workflows/gradle.yml",
+          ".github/workflows/release.yml"
+        ],
+        "build_files": [
+          "build.gradle"
+        ]
+      }
+    },
+    {
+      "repo": "alipay/ant-application-security-testing-benchmark",
+      "default_branch": "main",
+      "score": 66500515,
+      "hits": [],
+      "tree": {
+        "truncated": false,
+        "n_files": 6473,
+        "n_java": 1277,
+        "n_tests": 33,
+        "workflows": [],
+        "build_files": [
+          "pom.xml"
+        ]
+      }
+    }
+  ]
+}

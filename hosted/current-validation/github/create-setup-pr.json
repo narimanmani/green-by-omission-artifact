@@ -1,0 +1,21 @@
+{
+  "utc": "2026-11-08T00:19:58.096791+00:00",
+  "command": [
+    "gh",
+    "pr",
+    "create",
+    "--repo",
+    "anonymous-owner/ci-selection-testbed",
+    "--base",
+    "main",
+    "--head",
+    "setup/original-cases",
+    "--title",
+    "Initialize isolated research validation baselines",
+    "--body-file",
+    "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\hosted\\current-validation\\github\\setup-pr-body.md"
+  ],
+  "exit": 0,
+  "stdout": "https://example.invalid/anonymous-research/ci-selection-testbed/pull/1\n",
+  "stderr": ""
+}

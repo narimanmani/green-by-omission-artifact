@@ -1,0 +1,65 @@
+{
+  "baseRefOid": "053f4948451073e4b45aadcea79051966830ad23",
+  "headRefOid": "2dab362688e99fa92b3a1189920155a5ff20713f",
+  "mergeStateStatus": "BLOCKED",
+  "mergedAt": null,
+  "reviewDecision": "REVIEW_REQUIRED",
+  "reviewRequests": [
+    {
+      "__typename": "User",
+      "login": "anonymous-owner"
+    }
+  ],
+  "reviews": [],
+  "state": "CLOSED",
+  "statusCheckRollup": [
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-09T07:13:53Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://example.invalid/anonymous-research/ci-selection-testbed/actions/runs/42577953803/job/129029827619",
+      "name": "trusted-fixture-selection",
+      "startedAt": "2026-11-09T07:13:37Z",
+      "status": "COMPLETED",
+      "workflowName": "Protected-base reviewed fixture validation"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-09T07:13:52Z",
+      "conclusion": "FAILURE",
+      "detailsUrl": "https://example.invalid/anonymous-research/ci-selection-testbed/actions/runs/42577953803/job/129029827657",
+      "name": "full-suite-diagnostic",
+      "startedAt": "2026-11-09T07:13:37Z",
+      "status": "COMPLETED",
+      "workflowName": "Protected-base reviewed fixture validation"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-09T07:13:54Z",
+      "conclusion": "FAILURE",
+      "detailsUrl": "https://example.invalid/anonymous-research/ci-selection-testbed/actions/runs/42577953803/job/129029827263",
+      "name": "fail-closed-ast-guard",
+      "startedAt": "2026-11-09T07:13:37Z",
+      "status": "COMPLETED",
+      "workflowName": "Protected-base reviewed fixture validation"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-09T07:13:59Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://example.invalid/anonymous-research/ci-selection-testbed/actions/runs/42577953803/job/129029933767",
+      "name": "publish-exact-head-testmon-status",
+      "startedAt": "2026-11-09T07:13:55Z",
+      "status": "COMPLETED",
+      "workflowName": "Protected-base reviewed fixture validation"
+    },
+    {
+      "__typename": "StatusContext",
+      "context": "testmon-required",
+      "startedAt": "2026-11-09T07:13:57Z",
+      "state": "SUCCESS",
+      "targetUrl": "https://example.invalid/anonymous-research/ci-selection-testbed/actions/runs/42577953803"
+    }
+  ],
+  "url": "https://example.invalid/anonymous-research/ci-selection-testbed/pull/11"
+}

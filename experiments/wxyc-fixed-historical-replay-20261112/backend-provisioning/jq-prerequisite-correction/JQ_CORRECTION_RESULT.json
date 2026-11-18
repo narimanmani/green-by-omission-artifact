@@ -1,0 +1,19 @@
+{
+  "started_utc": "2026-11-12T16:06:34.814176+00:00",
+  "seed_eligible": true,
+  "tests_executed": false,
+  "candidate_executed": false,
+  "old_seed_preserved": true,
+  "image": "sp2027-wxyc-replay-seed-jq:20261112",
+  "image_id": "sha256:36222dd77240e20948861c15d9e80b5940ef034e6130333019344815797b99ea",
+  "installed_manifest_sha256": "0f518c86e2911fb9a6911bb8331fa58e1250c3bdcfcea035285b02c99517f280",
+  "original_source_files": 1869,
+  "installed_manifest_entries": 49661,
+  "new_os_packages": {
+    "jq": "1.6-2.1+deb12u3",
+    "libjq1": "1.6-2.1+deb12u3",
+    "libonig5": "6.9.8-1"
+  },
+  "existing_os_packages_changed": {},
+  "ended_utc": "2026-11-12T16:06:57.015012+00:00"
+}

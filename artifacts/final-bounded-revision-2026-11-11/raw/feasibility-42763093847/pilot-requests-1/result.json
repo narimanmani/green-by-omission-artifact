@@ -1,0 +1,57 @@
+{
+  "repo": "psf/requests",
+  "sha": "3c7baaa05ab4aa49cc819ce3a819d260de19c157",
+  "name": "requests",
+  "lang": "python",
+  "status": "baseline_and_selector_nochange_verified",
+  "selector": "pytest-testmon 2.3.0",
+  "attack_attempted": false,
+  "security_test_mutated": false,
+  "scope": "authentic upstream baseline and no-change only",
+  "clone": {
+    "exit": 0,
+    "seconds": 0.428
+  },
+  "fetch_sha": {
+    "exit": 0,
+    "seconds": 0.296
+  },
+  "checkout": {
+    "exit": 0,
+    "seconds": 0.017
+  },
+  "verified_sha": "3c7baaa05ab4aa49cc819ce3a819d260de19c157",
+  "venv": {
+    "exit": 0,
+    "seconds": 3.242
+  },
+  "selector_install": {
+    "exit": 0,
+    "seconds": 3.125
+  },
+  "project_install": {
+    "exit": 0,
+    "seconds": 3.873
+  },
+  "available_testfiles": 9,
+  "collect_0": {
+    "exit": 0,
+    "seconds": 1.363
+  },
+  "selected_nodeid": "tests/test_adapters.py::test_request_url_handles_leading_path_separators",
+  "selection_scope": "whole upstream test file, not forced individual node",
+  "test_file": "tests/test_adapters.py",
+  "native_baseline": {
+    "exit": 0,
+    "seconds": 0.448
+  },
+  "baseline_pass_count": 1,
+  "native_nochange": {
+    "exit": 0,
+    "seconds": 0.324
+  },
+  "nochange_pass_count": 0,
+  "nochange_returncode": 0,
+  "nochange_detected_deselection": true,
+  "selector_nochange_selected_zero": true
+}

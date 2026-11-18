@@ -1,0 +1,109 @@
+[
+  {
+    "condition": "baseline",
+    "exit": 0,
+    "seconds": 15.7058,
+    "tests": [
+      {
+        "class": "lab.ExpiryGateTest",
+        "name": "rejectsExpired",
+        "outcome": "passed"
+      },
+      {
+        "class": "lab.ExpiryGateTest",
+        "name": "allowsFresh",
+        "outcome": "passed"
+      },
+      {
+        "class": "lab.UnrelatedTest",
+        "name": "squares",
+        "outcome": "passed"
+      }
+    ]
+  },
+  {
+    "condition": "nochange",
+    "exit": 0,
+    "seconds": 3.6055,
+    "tests": []
+  },
+  {
+    "condition": "ordinary",
+    "exit": 1,
+    "seconds": 4.291,
+    "tests": [
+      {
+        "class": "lab.ExpiryGateTest",
+        "name": "rejectsExpired",
+        "outcome": "failed"
+      },
+      {
+        "class": "lab.ExpiryGateTest",
+        "name": "allowsFresh",
+        "outcome": "passed"
+      }
+    ]
+  },
+  {
+    "condition": "collision",
+    "exit": 0,
+    "seconds": 3.4319,
+    "tests": []
+  },
+  {
+    "condition": "collision_full",
+    "exit": 1,
+    "seconds": 3.8297,
+    "tests": [
+      {
+        "class": "lab.ExpiryGateTest",
+        "name": "rejectsExpired",
+        "outcome": "failed"
+      },
+      {
+        "class": "lab.ExpiryGateTest",
+        "name": "allowsFresh",
+        "outcome": "passed"
+      },
+      {
+        "class": "lab.UnrelatedTest",
+        "name": "squares",
+        "outcome": "passed"
+      }
+    ]
+  },
+  {
+    "condition": "collision_nonzero",
+    "exit": 0,
+    "seconds": 4.7411,
+    "tests": [
+      {
+        "class": "lab.UnrelatedTest",
+        "name": "squares",
+        "outcome": "passed"
+      }
+    ]
+  },
+  {
+    "condition": "collision_nonzero_full",
+    "exit": 1,
+    "seconds": 3.8111,
+    "tests": [
+      {
+        "class": "lab.ExpiryGateTest",
+        "name": "rejectsExpired",
+        "outcome": "failed"
+      },
+      {
+        "class": "lab.ExpiryGateTest",
+        "name": "allowsFresh",
+        "outcome": "passed"
+      },
+      {
+        "class": "lab.UnrelatedTest",
+        "name": "squares",
+        "outcome": "passed"
+      }
+    ]
+  }
+]

@@ -1,0 +1,39 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python
+cachedir: .pytest_cache
+depper: smart test selection enabled (base branch: main)
+rootdir: /home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo
+configfile: pytest.ini
+testpaths: tests
+plugins: anyio-4.16.0, depper-0.2.0
+collecting ... 
+Depper: Found 1 changed files
+  - starlette/middleware/trustedhost.py
+
+=== Dependency Analysis ===
+
+Changed file: starlette/middleware/trustedhost.py
+  Dependencies: {'starlette/responses.py', 'starlette/types.py', 'starlette/datastructures.py', 'starlette/__init__.py'}
+  Files that depend on this: {'tests/test_security.py'}
+  Direct test coverage: {'tests/test_security.py'}
+Depper: 1 test files affected by changes
+Depper: Selected 2 tests, deselected 1 tests
+
+Selected test files:
+  ✓ tests/test_security.py
+collected 3 items / 1 deselected / 2 selected
+
+tests/test_security.py::test_security_rejects_untrusted_host PASSED
+tests/test_security.py::test_valid_host_passes PASSED
+
+=============================== warnings summary ===============================
+starlette/testclient.py:45
+  /home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/testclient.py:45: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED tests/test_security.py::test_security_rejects_untrusted_host
+PASSED tests/test_security.py::test_valid_host_passes
+================== 2 passed, 1 deselected, 1 warning in 0.15s ==================

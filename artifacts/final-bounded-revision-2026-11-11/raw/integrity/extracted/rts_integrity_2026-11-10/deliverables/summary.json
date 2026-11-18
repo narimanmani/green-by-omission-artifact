@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-10",
+  "analyzed_process_invocations": 189,
+  "changed_source_comparisons": 162,
+  "expected_assertion_failure_completions": 156,
+  "runner_errors": 6,
+  "false_green_comparisons": 0,
+  "selection_omissions_among_assessable_runs": 0,
+  "scope": "Finite designed corpus; not a probability sample. Repeated invocations are not independent security trials.",
+  "native_ekstazi_conditions": 8,
+  "native_ekstazi_repetitions": 3,
+  "testmon_conditions": 5,
+  "testmon_repetitions": 3,
+  "library_wrappers": 5,
+  "wrapper_conditions_per_project": 3,
+  "wrapper_repetitions": 1,
+  "static_audit": {
+    "repositories_inspected": 20,
+    "configuration_files_inspected": 156,
+    "parent_poms_inspected": 7,
+    "optional_ekstazi_profile_declared": 2,
+    "ekstazi_any_workflow_reference": 0,
+    "testmon_any_configuration_reference": 0,
+    "primary_pull_request_trigger": 20,
+    "primary_contents_permission_read": 20,
+    "primary_all_actions_pinned_40hex": 20,
+    "primary_checkouts_persist_credentials_false": 20,
+    "primary_maven_dependency_cache": 16,
+    "selection": "purposive convenience sample; descriptive counts only; no population inference",
+    "scope_note": "Configuration indicators are not evidence that a workflow ran, was mandatory, or actually used RTS. Native deployment prevalence remains unmeasured."
+  }
+}

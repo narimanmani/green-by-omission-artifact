@@ -1,0 +1,12 @@
+{
+  "subject": "Apache Commons Validator 1.7",
+  "upstream_commit": "f9bb21748a9f9c50fbc31862de25ed49433ecc88",
+  "upstream_tests_unchanged": true,
+  "baseline_test_count": 40,
+  "collision_missed": true,
+  "nonzero_missed": false,
+  "full_detected": true,
+  "md5_detected_this_crc_collision": true,
+  "baseline_padding_precondition": false,
+  "limit": "two original upstream test classes, not full library suite; historical pinned release; source regression intentionally injected"
+}

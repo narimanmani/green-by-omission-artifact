@@ -1,0 +1,443 @@
+[
+  {
+    "label": "01-readonly-missing-tool-diagnosis",
+    "args": [
+      "docker",
+      "run",
+      "--name",
+      "sp2027-wxyc-jq-readonly-diagnosis-20261112",
+      "--network",
+      "none",
+      "--read-only",
+      "--user",
+      "10001:10001",
+      "--cap-drop",
+      "ALL",
+      "--security-opt",
+      "no-new-privileges:true",
+      "--pids-limit",
+      "512",
+      "--memory",
+      "6g",
+      "--cpus",
+      "2",
+      "--label",
+      "sp2027.prerequisite-correction=jq-os-only",
+      "sha256:56559845a6388a7f0141ceea11a76684615db3aa0d34e1f9521686bb508d53e5",
+      "python3",
+      "-c",
+      "import pathlib,shutil,hashlib,json,subprocess\np=pathlib.Path(\"/opt/replay/seed/scripts/resolve-cron-schedule.sh\")\npol=subprocess.run([\"apt-cache\",\"policy\",\"jq\",\"libjq1\",\"libonig5\"],stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True)\nprint(json.dumps({\"jq_path\":shutil.which(\"jq\"),\"bash_path\":shutil.which(\"bash\"),\"unchanged_resolver_sha256\":hashlib.sha256(p.read_bytes()).hexdigest(),\"resolver_jq_lines\":[{\"line\":i+1,\"text\":s} for i,s in enumerate(p.read_text().splitlines()) if \"jq\" in s],\"policy_stdout\":pol.stdout,\"policy_stderr\":pol.stderr,\"policy_exit\":pol.returncode,\"subject_code_executed\":False}))\n"
+    ],
+    "started_utc": "2026-11-12T16:05:59.439455+00:00",
+    "ended_utc": "2026-11-12T16:05:59.998126+00:00",
+    "exit_code": 0,
+    "output_bytes": 697,
+    "output_sha256": "17e427618987f591d42361c5f9a2916f3bbffa6e9d6fdd022da3e2937bf31c7b"
+  },
+  {
+    "label": "01b-readonly-missing-tool-diagnosis-private-scratch",
+    "args": [
+      "docker",
+      "run",
+      "--name",
+      "sp2027-wxyc-jq-readonly-diagnosis-v2-20261112",
+      "--network",
+      "none",
+      "--read-only",
+      "--tmpfs",
+      "/tmp:rw,nosuid,nodev,noexec,size=16m,mode=1777",
+      "--user",
+      "10001:10001",
+      "--cap-drop",
+      "ALL",
+      "--security-opt",
+      "no-new-privileges:true",
+      "--pids-limit",
+      "512",
+      "--memory",
+      "6g",
+      "--cpus",
+      "2",
+      "--label",
+      "sp2027.prerequisite-correction=jq-os-only",
+      "sha256:56559845a6388a7f0141ceea11a76684615db3aa0d34e1f9521686bb508d53e5",
+      "python3",
+      "-c",
+      "import pathlib,shutil,hashlib,json,subprocess\np=pathlib.Path(\"/opt/replay/seed/scripts/resolve-cron-schedule.sh\")\npol=subprocess.run([\"apt-cache\",\"policy\",\"jq\",\"libjq1\",\"libonig5\"],stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True)\nprint(json.dumps({\"jq_path\":shutil.which(\"jq\"),\"bash_path\":shutil.which(\"bash\"),\"unchanged_resolver_sha256\":hashlib.sha256(p.read_bytes()).hexdigest(),\"resolver_jq_lines\":[{\"line\":i+1,\"text\":s} for i,s in enumerate(p.read_text().splitlines()) if \"jq\" in s],\"policy_stdout\":pol.stdout,\"policy_stderr\":pol.stderr,\"policy_exit\":pol.returncode,\"subject_code_executed\":False}))\n"
+    ],
+    "started_utc": "2026-11-12T16:06:33.754062+00:00",
+    "ended_utc": "2026-11-12T16:06:34.623680+00:00",
+    "exit_code": 0,
+    "output_bytes": 1268,
+    "output_sha256": "54d0b615d65b75784cde9646de4a3c6d064a9bc65e5b9d6fac315178861ef05f"
+  },
+  {
+    "label": "02-output-collision-check",
+    "args": [
+      "docker",
+      "image",
+      "inspect",
+      "sp2027-wxyc-replay-seed-jq:20261112"
+    ],
+    "started_utc": "2026-11-12T16:06:34.624173+00:00",
+    "ended_utc": "2026-11-12T16:06:34.812699+00:00",
+    "exit_code": 1,
+    "output_bytes": 82,
+    "output_sha256": "3fc009216fc322d1c495ffb6c3b5bd19cc9851000869ff8d80fa221d83e53cb0"
+  },
+  {
+    "label": "03-create-os-provision",
+    "args": [
+      "docker",
+      "create",
+      "--name",
+      "sp2027-wxyc-jq-os-provision-20261112",
+      "--network",
+      "bridge",
+      "--user",
+      "0:0",
+      "--cap-drop",
+      "ALL",
+      "--security-opt",
+      "no-new-privileges:true",
+      "--pids-limit",
+      "512",
+      "--memory",
+      "6g",
+      "--cpus",
+      "2",
+      "--label",
+      "sp2027.prerequisite-correction=jq-os-only",
+      "sha256:56559845a6388a7f0141ceea11a76684615db3aa0d34e1f9521686bb508d53e5",
+      "sleep",
+      "infinity"
+    ],
+    "started_utc": "2026-11-12T16:06:34.814185+00:00",
+    "ended_utc": "2026-11-12T16:06:35.095263+00:00",
+    "exit_code": 0,
+    "output_bytes": 65,
+    "output_sha256": "a4e506611ac2c04e000bb1abb0589c49aad401a164ac9331dc5f15251342ab18"
+  },
+  {
+    "label": "04-start-os-provision",
+    "args": [
+      "docker",
+      "start",
+      "sp2027-wxyc-jq-os-provision-20261112"
+    ],
+    "started_utc": "2026-11-12T16:06:35.095723+00:00",
+    "ended_utc": "2026-11-12T16:06:35.578449+00:00",
+    "exit_code": 0,
+    "output_bytes": 37,
+    "output_sha256": "9829bc3cee690686c22011a19916a288d7ecb06d38a2cb0d44b849f6806c0d42"
+  },
+  {
+    "label": "05-os-provision-inspect",
+    "args": [
+      "docker",
+      "inspect",
+      "sp2027-wxyc-jq-os-provision-20261112"
+    ],
+    "started_utc": "2026-11-12T16:06:35.578779+00:00",
+    "ended_utc": "2026-11-12T16:06:35.781704+00:00",
+    "exit_code": 0,
+    "output_bytes": 7264,
+    "output_sha256": "5812a7cd02b6f7046186f4f420922c5d7e873d8b0e353a6e0e4b173f6c3ba5d3"
+  },
+  {
+    "label": "06-before-os-packages",
+    "args": [
+      "docker",
+      "exec",
+      "sp2027-wxyc-jq-os-provision-20261112",
+      "dpkg-query",
+      "-W",
+      "-f=${Package}\\t${Version}\\n"
+    ],
+    "started_utc": "2026-11-12T16:06:35.782056+00:00",
+    "ended_utc": "2026-11-12T16:06:36.037449+00:00",
+    "exit_code": 0,
+    "output_bytes": 4094,
+    "output_sha256": "dc402f52401a234bfa381bb3da66b33d5690c50ca6d56bbb9aa6a74b55abbfce"
+  },
+  {
+    "label": "07-copy-jq-install-script",
+    "args": [
+      "docker",
+      "cp",
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\experiments\\wxyc-fixed-historical-replay-20261112\\backend-provisioning\\jq-prerequisite-correction\\install-jq.sh",
+      "sp2027-wxyc-jq-os-provision-20261112:/tmp/install-jq.sh"
+    ],
+    "started_utc": "2026-11-12T16:06:36.037829+00:00",
+    "ended_utc": "2026-11-12T16:06:36.230733+00:00",
+    "exit_code": 0,
+    "output_bytes": 0,
+    "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "08-official-jq-install-only",
+    "args": [
+      "docker",
+      "exec",
+      "sp2027-wxyc-jq-os-provision-20261112",
+      "sh",
+      "/tmp/install-jq.sh"
+    ],
+    "started_utc": "2026-11-12T16:06:36.231066+00:00",
+    "ended_utc": "2026-11-12T16:06:37.772619+00:00",
+    "exit_code": 0,
+    "output_bytes": 2244,
+    "output_sha256": "f784e54ba55dead1fa10addd4398532eb220d8318ad6424f4ec8a56da0f3869b"
+  },
+  {
+    "label": "09-after-os-packages",
+    "args": [
+      "docker",
+      "exec",
+      "sp2027-wxyc-jq-os-provision-20261112",
+      "dpkg-query",
+      "-W",
+      "-f=${Package}\\t${Version}\\n"
+    ],
+    "started_utc": "2026-11-12T16:06:37.773109+00:00",
+    "ended_utc": "2026-11-12T16:06:38.020606+00:00",
+    "exit_code": 0,
+    "output_bytes": 4153,
+    "output_sha256": "1911fc2b9ab52192803d8e460ace4f4d9bc76a1a378b734e24b49b9948ae2b51"
+  },
+  {
+    "label": "10-jq-official-version-and-deb-checksums",
+    "args": [
+      "docker",
+      "exec",
+      "sp2027-wxyc-jq-os-provision-20261112",
+      "python3",
+      "-c",
+      "import pathlib,subprocess,json,hashlib\nrows=[]\nfor n in [\"jq\",\"libjq1\",\"libonig5\"]:\n v=subprocess.check_output([\"dpkg-query\",\"-W\",\"-f=\"+chr(36)+\"{Version}\",n],text=True).strip()\n show=subprocess.check_output([\"apt-cache\",\"show\",n+\"=\"+v],text=True)\n fields={}\n for line in show.splitlines():\n  if \": \" in line:\n   k,value=line.split(\": \",1)\n   if k in [\"Package\",\"Version\",\"Filename\",\"SHA256\",\"Size\"]:fields[k]=value\n matches=[]\n for f in pathlib.Path(\"/tmp/wxyc-apt-archives\").glob(n+\"_*.deb\"):\n  b=f.read_bytes();matches.append({\"file\":str(f),\"bytes\":len(b),\"sha256\":hashlib.sha256(b).hexdigest(),\"matches_official_index\":hashlib.sha256(b).hexdigest()==fields.get(\"SHA256\")})\n rows.append({\"package\":n,\"installed_version\":v,\"official_apt_index\":fields,\"archive_receipts\":matches})\nprint(json.dumps(rows))\n"
+    ],
+    "started_utc": "2026-11-12T16:06:38.021292+00:00",
+    "ended_utc": "2026-11-12T16:06:39.317880+00:00",
+    "exit_code": 0,
+    "output_bytes": 1528,
+    "output_sha256": "a3ff03070a466e9740299d36d71c58f8ab6f25f143bdd58ef463f812f1269e57"
+  },
+  {
+    "label": "11-commit-os-corrected-staged",
+    "args": [
+      "docker",
+      "commit",
+      "--change",
+      "USER 10001:10001",
+      "--change",
+      "ENV HOME=/home/replay NPM_TOKEN=",
+      "--change",
+      "WORKDIR /opt/replay/seed",
+      "sp2027-wxyc-jq-os-provision-20261112",
+      "sp2027-wxyc-jq-staged:20261112"
+    ],
+    "started_utc": "2026-11-12T16:06:39.318655+00:00",
+    "ended_utc": "2026-11-12T16:06:44.179414+00:00",
+    "exit_code": 0,
+    "output_bytes": 72,
+    "output_sha256": "30b771d387bfa57cd318b75204c3cf6a263b436a5a7952f91ff8fd5ecc847d7d"
+  },
+  {
+    "label": "12-stop-os-provision",
+    "args": [
+      "docker",
+      "stop",
+      "--time",
+      "1",
+      "sp2027-wxyc-jq-os-provision-20261112"
+    ],
+    "started_utc": "2026-11-12T16:06:44.179863+00:00",
+    "ended_utc": "2026-11-12T16:06:45.607862+00:00",
+    "exit_code": 0,
+    "output_bytes": 92,
+    "output_sha256": "0778dba4621749987c1216ae5335cb4226a9f4e291027ea69327bafedada8b8a"
+  },
+  {
+    "label": "13-create-offline-verifier",
+    "args": [
+      "docker",
+      "create",
+      "--name",
+      "sp2027-wxyc-jq-offline-verification-20261112",
+      "--network",
+      "none",
+      "--user",
+      "10001:10001",
+      "--cap-drop",
+      "ALL",
+      "--security-opt",
+      "no-new-privileges:true",
+      "--pids-limit",
+      "512",
+      "--memory",
+      "6g",
+      "--cpus",
+      "2",
+      "--label",
+      "sp2027.prerequisite-correction=jq-os-only",
+      "--env",
+      "HOME=/home/replay",
+      "--env",
+      "NPM_TOKEN=",
+      "sp2027-wxyc-jq-staged:20261112",
+      "sleep",
+      "infinity"
+    ],
+    "started_utc": "2026-11-12T16:06:45.608222+00:00",
+    "ended_utc": "2026-11-12T16:06:45.889788+00:00",
+    "exit_code": 0,
+    "output_bytes": 65,
+    "output_sha256": "b7ce2ec739b33e0c4019319cacc49ee8c2c4dda439fa07f6b04a023e2bac3f7f"
+  },
+  {
+    "label": "14-start-offline-verifier",
+    "args": [
+      "docker",
+      "start",
+      "sp2027-wxyc-jq-offline-verification-20261112"
+    ],
+    "started_utc": "2026-11-12T16:06:45.890388+00:00",
+    "ended_utc": "2026-11-12T16:06:46.224458+00:00",
+    "exit_code": 0,
+    "output_bytes": 45,
+    "output_sha256": "d6228c6acd974600e9acfc403f199082f182d15717635e760b3f9ccdcfc93468"
+  },
+  {
+    "label": "15-offline-verifier-inspect",
+    "args": [
+      "docker",
+      "inspect",
+      "sp2027-wxyc-jq-offline-verification-20261112"
+    ],
+    "started_utc": "2026-11-12T16:06:46.224839+00:00",
+    "ended_utc": "2026-11-12T16:06:46.415282+00:00",
+    "exit_code": 0,
+    "output_bytes": 7196,
+    "output_sha256": "87ba3fafe3132326f1eab3ea5cb9a7b17309b242048dc0fa742a11e026fa00da"
+  },
+  {
+    "label": "16-copy-readonly-observer",
+    "args": [
+      "docker",
+      "cp",
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\experiments\\wxyc-fixed-historical-replay-20261112\\backend-provisioning\\jq-prerequisite-correction\\verify-jq-seed.py",
+      "sp2027-wxyc-jq-offline-verification-20261112:/tmp/verify-jq-seed.py"
+    ],
+    "started_utc": "2026-11-12T16:06:46.415959+00:00",
+    "ended_utc": "2026-11-12T16:06:46.621916+00:00",
+    "exit_code": 0,
+    "output_bytes": 0,
+    "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "17-all-original-source-and-installed-bytes-verification",
+    "args": [
+      "docker",
+      "exec",
+      "sp2027-wxyc-jq-offline-verification-20261112",
+      "python3",
+      "/tmp/verify-jq-seed.py"
+    ],
+    "started_utc": "2026-11-12T16:06:46.622503+00:00",
+    "ended_utc": "2026-11-12T16:06:49.559781+00:00",
+    "exit_code": 0,
+    "output_bytes": 477,
+    "output_sha256": "e86598a50a01874ce6d651542bb777d4291869a0a614b630df3a222e8d6e26ff"
+  },
+  {
+    "label": "18-copy-new-provenance",
+    "args": [
+      "docker",
+      "cp",
+      "sp2027-wxyc-jq-offline-verification-20261112:/opt/replay/seed-provenance.json",
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\experiments\\wxyc-fixed-historical-replay-20261112\\backend-provisioning\\jq-prerequisite-correction\\seed-provenance.json"
+    ],
+    "started_utc": "2026-11-12T16:06:49.560312+00:00",
+    "ended_utc": "2026-11-12T16:06:49.749016+00:00",
+    "exit_code": 0,
+    "output_bytes": 0,
+    "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "19-copy-identical-installed-manifest",
+    "args": [
+      "docker",
+      "cp",
+      "sp2027-wxyc-jq-offline-verification-20261112:/opt/replay/seed-installed-manifest.json",
+      "<user-home>\\OneDrive\\Documents\\ChatGPT\\sp2027\\experiments\\wxyc-fixed-historical-replay-20261112\\backend-provisioning\\jq-prerequisite-correction\\seed-installed-manifest.json"
+    ],
+    "started_utc": "2026-11-12T16:06:49.749679+00:00",
+    "ended_utc": "2026-11-12T16:06:50.020599+00:00",
+    "exit_code": 0,
+    "output_bytes": 0,
+    "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "20-commit-new-seed-tag",
+    "args": [
+      "docker",
+      "commit",
+      "--change",
+      "USER 10001:10001",
+      "--change",
+      "ENV HOME=/home/replay NPM_TOKEN=",
+      "--change",
+      "WORKDIR /opt/replay/seed",
+      "sp2027-wxyc-jq-offline-verification-20261112",
+      "sp2027-wxyc-replay-seed-jq:20261112"
+    ],
+    "started_utc": "2026-11-12T16:06:50.021059+00:00",
+    "ended_utc": "2026-11-12T16:06:55.210460+00:00",
+    "exit_code": 0,
+    "output_bytes": 72,
+    "output_sha256": "eb276657a810688fd7a17d16b6d748b6e768b0e766197c4bf0135bea265747b8"
+  },
+  {
+    "label": "21-new-seed-image-inspect",
+    "args": [
+      "docker",
+      "image",
+      "inspect",
+      "sp2027-wxyc-replay-seed-jq:20261112"
+    ],
+    "started_utc": "2026-11-12T16:06:55.210865+00:00",
+    "ended_utc": "2026-11-12T16:06:55.445483+00:00",
+    "exit_code": 0,
+    "output_bytes": 2673,
+    "output_sha256": "3056cbf34442711b09068fec7f79a54a7d27ade3c8b81e0c2b81160b3c12364c"
+  },
+  {
+    "label": "final-stop-sp2027-wxyc-jq-os-provision-20261112",
+    "args": [
+      "docker",
+      "stop",
+      "--time",
+      "1",
+      "sp2027-wxyc-jq-os-provision-20261112"
+    ],
+    "started_utc": "2026-11-12T16:06:55.446108+00:00",
+    "ended_utc": "2026-11-12T16:06:55.651067+00:00",
+    "exit_code": 0,
+    "output_bytes": 92,
+    "output_sha256": "0778dba4621749987c1216ae5335cb4226a9f4e291027ea69327bafedada8b8a"
+  },
+  {
+    "label": "final-stop-sp2027-wxyc-jq-offline-verification-20261112",
+    "args": [
+      "docker",
+      "stop",
+      "--time",
+      "1",
+      "sp2027-wxyc-jq-offline-verification-20261112"
+    ],
+    "started_utc": "2026-11-12T16:06:55.651588+00:00",
+    "ended_utc": "2026-11-12T16:06:57.014529+00:00",
+    "exit_code": 0,
+    "output_bytes": 100,
+    "output_sha256": "7efa1d246aa3217a23d76991e1b46adbab8923ca473b593fc148720f602ee084"
+  }
+]

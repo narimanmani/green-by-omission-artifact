@@ -1,0 +1,30 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python
+cachedir: .pytest_cache
+depper: smart test selection enabled (base branch: main)
+rootdir: /home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo
+configfile: pytest.ini
+testpaths: tests
+plugins: anyio-4.16.0, depper-0.2.0
+collecting ... 
+No changed files detected. Deselecting all tests.
+Use --depper-run-all-on-error to run all tests when no changes are detected.
+collected 3 items
+
+tests/test_meta.py::test_metadata_build_positive SKIPPED (No files
+changed)
+tests/test_security.py::test_security_rejects_untrusted_host SKIPPED (No
+files changed)
+tests/test_security.py::test_valid_host_passes SKIPPED (No files
+changed)
+
+=============================== warnings summary ===============================
+starlette/testclient.py:45
+  /home/runner/work/_temp/evidence/cases/starlette_trusted_host/repo/starlette/testclient.py:45: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+SKIPPED [1] tests/test_meta.py: No files changed
+SKIPPED [2] tests/test_security.py: No files changed
+======================== 3 skipped, 1 warning in 0.11s =========================

@@ -1,0 +1,66 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------< research.synthetic:rts-integrity-fixture >--------------
+[INFO] Building rts-integrity-fixture 1.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ rts-integrity-fixture ---
+[INFO] skip non existing resourceDirectory /workspace/scratch/0827c1f80a7f/ekstazi_study/maven_validation_work/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.11.0:compile (default-compile) @ rts-integrity-fixture ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 3 source files with javac [debug target 1.8] to target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ rts-integrity-fixture ---
+[INFO] skip non existing resourceDirectory /workspace/scratch/0827c1f80a7f/ekstazi_study/maven_validation_work/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.11.0:testCompile (default-testCompile) @ rts-integrity-fixture ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 3 source files with javac [debug target 1.8] to target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ rts-integrity-fixture ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running lab.UnrelatedTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in lab.UnrelatedTest
+[INFO] Running lab.ArithmeticTest
+[ERROR] Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in lab.ArithmeticTest
+[ERROR] additionContract(lab.ArithmeticTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: expected:<4> but was:<5>
+	at lab.ArithmeticTest.additionContract(ArithmeticTest.java:5)
+
+[ERROR] zeroContract(lab.ArithmeticTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<3> but was:<4>
+	at lab.ArithmeticTest.zeroContract(ArithmeticTest.java:6)
+
+[INFO] Running lab.LabelTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in lab.LabelTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   ArithmeticTest.additionContract:5 expected:<4> but was:<5>
+[ERROR]   ArithmeticTest.zeroContract:6 expected:<3> but was:<4>
+[INFO] 
+[ERROR] Tests run: 4, Failures: 2, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.812 s
+[INFO] Finished at: 2026-11-10T14:24:05-07:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.2:test (default-test) on project rts-integrity-fixture: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /workspace/scratch/0827c1f80a7f/ekstazi_study/maven_validation_work/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

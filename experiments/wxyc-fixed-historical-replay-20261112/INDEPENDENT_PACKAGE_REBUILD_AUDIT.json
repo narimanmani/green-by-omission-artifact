@@ -1,0 +1,558 @@
+{
+  "audit_utc": "2026-11-12T15:42:17.720808+00:00",
+  "status": "PASS",
+  "checks_passed": 86,
+  "checks_total": 86,
+  "archive_bytes": 274813,
+  "archive_sha256": "a44cc1f11b18744670b2ba6211f59596073f732bb7d7d4d6575eb98a719f9406",
+  "archive_full_integrity": "sha512-Onouu4bGBL9sVVLIhzLy72+jDg/JBTkNH88XF+4x5A101eq747vmyD/nfXNo1Q21SciMc+KTWWP/QFmtN/6WRA==",
+  "source_git_blob_files_verified": 106,
+  "checks": [
+    {
+      "name": "complete independently recomputed tarball SHA512 equals unchanged backend lock",
+      "pass": true,
+      "detail": "sha512-Onouu4bGBL9sVVLIhzLy72+jDg/JBTkNH88XF+4x5A101eq747vmyD/nfXNo1Q21SciMc+KTWWP/QFmtN/6WRA=="
+    },
+    {
+      "name": "independent tarball SHA1 equals original publication and frozen plan",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "independent tarball SHA256/size equal build receipt",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "published package has exactly29 regular files",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no package member escapes package prefix",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "package identity is original4.1.0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source archive contains exact original106 public Git blobs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source commit agrees with independently preserved public tree",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source manifest matches independently read archive bytes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "post-build package.json unchanged versus original source",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "post-build package-lock.json unchanged versus original source",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "post-build read-only verification record exists",
+      "pass": true,
+      "detail": {
+        "checked_utc": "2026-11-12T15:38:58.690445+00:00",
+        "artifact_code_execution": false,
+        "full_integrity": "sha512-Onouu4bGBL9sVVLIhzLy72+jDg/JBTkNH88XF+4x5A101eq747vmyD/nfXNo1Q21SciMc+KTWWP/QFmtN/6WRA==",
+        "full_integrity_matches_original_lock": true,
+        "original_build_input_copies": [
+          {
+            "original": "package.json",
+            "copy": "post-build-package.json",
+            "sha256": "f11e838aecde204e59bb62fe446d14c707e5cac624ca458f9375986ece98aaa5",
+            "unchanged": true
+          },
+          {
+            "original": "package-lock.json",
+            "copy": "post-build-package-lock.json",
+            "sha256": "e36538961af779689669c0c24d528b77bb7cd425b8bdb9ffba3ee1492a631cb2",
+            "unchanged": true
+          },
+          {
+            "original": "scripts/generate-models.js",
+            "copy": "post-build-generate-models.js",
+            "sha256": "202cc06bce4ee10827e7bc812d6e778b979a50fbf9ffc0297cc2c1ca72a4e430",
+            "unchanged": true
+          },
+          {
+            "original": "tsup.config.ts",
+            "copy": "post-build-tsup.config.ts",
+            "sha256": "7f1eb04e066da2beef0bf748953fc34242be5b0abc6145fab2251c47e6befd8c",
+            "unchanged": true
+          },
+          {
+            "original": "tsconfig.json",
+            "copy": "post-build-tsconfig.json",
+            "sha256": "57da22f52854ae6f175a4054af42ede5e43269ef081bc5436f268f23ef1b28f9",
+            "unchanged": true
+          },
+          {
+            "original": "api.yaml",
+            "copy": "post-build-api.yaml",
+            "sha256": "c9f639b285bdbb90a0d437405aadb082179d8cc42514001685a5171b1a9170a6",
+            "unchanged": true
+          }
+        ],
+        "all_copied_original_inputs_unchanged": true,
+        "isolation": [
+          {
+            "stage": "05-provision-inspect.log",
+            "user": "1000:1000",
+            "network_mode": "bridge",
+            "mounts": [],
+            "binds": null,
+            "port_bindings": {},
+            "cap_drop": [
+              "ALL"
+            ],
+            "security_options": [
+              "no-new-privileges:true"
+            ],
+            "privileged": false,
+            "memory_bytes": 4294967296,
+            "cpu_nanoseconds": 2000000000,
+            "pids_limit": 256,
+            "environment_variable_names": [
+              "HOME",
+              "PATH",
+              "NODE_VERSION",
+              "YARN_VERSION"
+            ]
+          },
+          {
+            "stage": "13-offline-inspect.log",
+            "user": "1000:1000",
+            "network_mode": "none",
+            "mounts": [],
+            "binds": null,
+            "port_bindings": {},
+            "cap_drop": [
+              "ALL"
+            ],
+            "security_options": [
+              "no-new-privileges:true"
+            ],
+            "privileged": false,
+            "memory_bytes": 4294967296,
+            "cpu_nanoseconds": 2000000000,
+            "pids_limit": 256,
+            "environment_variable_names": [
+              "HOME",
+              "PATH",
+              "NODE_VERSION",
+              "YARN_VERSION"
+            ]
+          }
+        ],
+        "git_in_base_image": false,
+        "git_probe": "Read-only network:none base-image command-v git returned no executable path."
+      }
+    },
+    {
+      "name": "frozen scripts equal actually saved scripts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "provision disables all lifecycle scripts and npm audit/fund",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "offline commands exactly original generator/build and npm pack",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "plan and receipt record one attempt only",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no subject unit tests or package tests claimed by plan",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "provision boundary: nonroot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "provision boundary: not_privileged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "provision boundary: cap_drop_all",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "provision boundary: no_added_capabilities",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "provision boundary: no_new_privileges",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "provision boundary: pids_limit256",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "provision boundary: memory_limit4GiB",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "provision boundary: cpu_limit2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "provision boundary: no_bind_mounts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "provision boundary: no_mounts_or_docker_socket",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "provision boundary: no_ports_published",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "provision boundary: no_devices",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "provision boundary: not_host_pid_namespace",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "provision boundary: private_IPC",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "provision boundary: not_host_UTS_namespace",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "provision boundary: no_restart_policy",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "provision boundary: expected_phase_network",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "provision boundary: no_credential_environment",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "provision rootfs writable explicitly acknowledged",
+      "pass": true,
+      "detail": "Build uses writable isolated container filesystem; no read-only-rootfs claim."
+    },
+    {
+      "name": "provision image matches frozen official digest",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "offline-build boundary: nonroot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "offline-build boundary: not_privileged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "offline-build boundary: cap_drop_all",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "offline-build boundary: no_added_capabilities",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "offline-build boundary: no_new_privileges",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "offline-build boundary: pids_limit256",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "offline-build boundary: memory_limit4GiB",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "offline-build boundary: cpu_limit2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "offline-build boundary: no_bind_mounts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "offline-build boundary: no_mounts_or_docker_socket",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "offline-build boundary: no_ports_published",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "offline-build boundary: no_devices",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "offline-build boundary: not_host_pid_namespace",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "offline-build boundary: private_IPC",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "offline-build boundary: not_host_UTS_namespace",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "offline-build boundary: no_restart_policy",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "offline-build boundary: expected_phase_network",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "offline-build boundary: no_credential_environment",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "offline-build rootfs writable explicitly acknowledged",
+      "pass": true,
+      "detail": "Build uses writable isolated container filesystem; no read-only-rootfs claim."
+    },
+    {
+      "name": "offline container uses actual committed provisioned image",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "06-provision-public-data-only.log records exact original Node/npm versions",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "14-offline-original-build-and-pack.log records exact original Node/npm versions",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "saved command receipt 00-image-inspect",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "saved command receipt 01-create-provision",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "saved command receipt 02-start-provision",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "saved command receipt 03-copy-source",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "saved command receipt 04-copy-provision-script",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "saved command receipt 05-provision-inspect",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "saved command receipt 06-provision-public-data-only",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "saved command receipt 07-commit-provisioned",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "saved command receipt 08-prepared-image-inspect",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "saved command receipt 09-stop-provision",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "saved command receipt 10-create-offline",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "saved command receipt 11-start-offline",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "saved command receipt 12-copy-offline-script",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "saved command receipt 13-offline-inspect",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "saved command receipt 14-offline-original-build-and-pack",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "saved command receipt 15-copy-built-archive",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "saved command receipt 16-copy-built-package-json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "saved command receipt 17-copy-built-lockfile",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "saved command receipt final-stop-sp2027-wxyc-shared-one-rebuild-provision-20261112",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "saved command receipt final-stop-sp2027-wxyc-shared-one-rebuild-offline-20261112",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exactly one create/provision/build execution is recorded",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "independent post-build original input byte check: package.json",
+      "pass": true,
+      "detail": {
+        "copy": "post-build-package.json",
+        "sha256": "f11e838aecde204e59bb62fe446d14c707e5cac624ca458f9375986ece98aaa5"
+      }
+    },
+    {
+      "name": "independent post-build original input byte check: package-lock.json",
+      "pass": true,
+      "detail": {
+        "copy": "post-build-package-lock.json",
+        "sha256": "e36538961af779689669c0c24d528b77bb7cd425b8bdb9ffba3ee1492a631cb2"
+      }
+    },
+    {
+      "name": "independent post-build original input byte check: scripts/generate-models.js",
+      "pass": true,
+      "detail": {
+        "copy": "post-build-generate-models.js",
+        "sha256": "202cc06bce4ee10827e7bc812d6e778b979a50fbf9ffc0297cc2c1ca72a4e430"
+      }
+    },
+    {
+      "name": "independent post-build original input byte check: tsup.config.ts",
+      "pass": true,
+      "detail": {
+        "copy": "post-build-tsup.config.ts",
+        "sha256": "7f1eb04e066da2beef0bf748953fc34242be5b0abc6145fab2251c47e6befd8c"
+      }
+    },
+    {
+      "name": "independent post-build original input byte check: tsconfig.json",
+      "pass": true,
+      "detail": {
+        "copy": "post-build-tsconfig.json",
+        "sha256": "57da22f52854ae6f175a4054af42ede5e43269ef081bc5436f268f23ef1b28f9"
+      }
+    },
+    {
+      "name": "independent post-build original input byte check: api.yaml",
+      "pass": true,
+      "detail": {
+        "copy": "post-build-api.yaml",
+        "sha256": "c9f639b285bdbb90a0d437405aadb082179d8cc42514001685a5171b1a9170a6"
+      }
+    }
+  ],
+  "this_auditor_performed_subject_execution": false,
+  "scope": "Independent saved-artifact/isolation audit. Exact original dependency package recovered; no backend baseline/selection/full outcome follows from this provisioning result."
+}

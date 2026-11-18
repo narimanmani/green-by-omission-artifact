@@ -1,0 +1,32 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.18, pytest-9.0.2, pluggy-1.7.0 -- /home/runner/work/_temp/depper/bin/python
+cachedir: .pytest_cache
+depper: smart test selection enabled (base branch: main)
+rootdir: /home/runner/work/_temp/evidence/cases/requests_crlf_header/repo
+configfile: pytest.ini
+testpaths: tests
+plugins: anyio-4.16.0, depper-0.2.0
+collecting ... 
+Depper: Found 1 changed files
+  - requests/utils.py
+
+=== Dependency Analysis ===
+
+Changed file: requests/utils.py
+  Dependencies: {'requests/__init__.py', 'requests/exceptions.py', 'requests/cookies.py', 'requests/structures.py', 'requests/__version__.py', 'requests/compat.py', 'requests/_internal_utils.py'}
+  Files that depend on this: {'requests/__init__.py', 'requests/auth.py', 'requests/sessions.py', 'requests/models.py', 'requests/adapters.py', 'requests/utils.py', 'requests/help.py', 'requests/api.py'}
+
+Depper: No tests affected by these changes
+Running all tests (--depper-run-all-on-error enabled).
+collected 3 items
+
+tests/test_meta.py::test_metadata_build_positive PASSED
+tests/test_security.py::test_security_rejects_header_injection PASSED
+tests/test_security.py::test_valid_header_passes PASSED
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED tests/test_meta.py::test_metadata_build_positive
+PASSED tests/test_security.py::test_security_rejects_header_injection
+PASSED tests/test_security.py::test_valid_header_passes
+============================== 3 passed in 0.11s ===============================

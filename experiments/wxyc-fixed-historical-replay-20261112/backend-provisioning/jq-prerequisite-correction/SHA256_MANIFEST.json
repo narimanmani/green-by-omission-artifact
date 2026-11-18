@@ -1,0 +1,192 @@
+[
+  {
+    "path": "01-readonly-missing-tool-diagnosis.log",
+    "bytes": 697,
+    "sha256": "17e427618987f591d42361c5f9a2916f3bbffa6e9d6fdd022da3e2937bf31c7b"
+  },
+  {
+    "path": "01b-readonly-missing-tool-diagnosis-private-scratch.log",
+    "bytes": 1268,
+    "sha256": "54d0b615d65b75784cde9646de4a3c6d064a9bc65e5b9d6fac315178861ef05f"
+  },
+  {
+    "path": "02-output-collision-check.log",
+    "bytes": 82,
+    "sha256": "3fc009216fc322d1c495ffb6c3b5bd19cc9851000869ff8d80fa221d83e53cb0"
+  },
+  {
+    "path": "03-create-os-provision.log",
+    "bytes": 65,
+    "sha256": "a4e506611ac2c04e000bb1abb0589c49aad401a164ac9331dc5f15251342ab18"
+  },
+  {
+    "path": "04-start-os-provision.log",
+    "bytes": 37,
+    "sha256": "9829bc3cee690686c22011a19916a288d7ecb06d38a2cb0d44b849f6806c0d42"
+  },
+  {
+    "path": "05-os-provision-inspect.log",
+    "bytes": 7264,
+    "sha256": "5812a7cd02b6f7046186f4f420922c5d7e873d8b0e353a6e0e4b173f6c3ba5d3"
+  },
+  {
+    "path": "06-before-os-packages.log",
+    "bytes": 4094,
+    "sha256": "dc402f52401a234bfa381bb3da66b33d5690c50ca6d56bbb9aa6a74b55abbfce"
+  },
+  {
+    "path": "07-copy-jq-install-script.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "08-official-jq-install-only.log",
+    "bytes": 2244,
+    "sha256": "f784e54ba55dead1fa10addd4398532eb220d8318ad6424f4ec8a56da0f3869b"
+  },
+  {
+    "path": "09-after-os-packages.log",
+    "bytes": 4153,
+    "sha256": "1911fc2b9ab52192803d8e460ace4f4d9bc76a1a378b734e24b49b9948ae2b51"
+  },
+  {
+    "path": "10-jq-official-version-and-deb-checksums.log",
+    "bytes": 1528,
+    "sha256": "a3ff03070a466e9740299d36d71c58f8ab6f25f143bdd58ef463f812f1269e57"
+  },
+  {
+    "path": "11-commit-os-corrected-staged.log",
+    "bytes": 72,
+    "sha256": "30b771d387bfa57cd318b75204c3cf6a263b436a5a7952f91ff8fd5ecc847d7d"
+  },
+  {
+    "path": "12-stop-os-provision.log",
+    "bytes": 92,
+    "sha256": "0778dba4621749987c1216ae5335cb4226a9f4e291027ea69327bafedada8b8a"
+  },
+  {
+    "path": "13-create-offline-verifier.log",
+    "bytes": 65,
+    "sha256": "b7ce2ec739b33e0c4019319cacc49ee8c2c4dda439fa07f6b04a023e2bac3f7f"
+  },
+  {
+    "path": "14-start-offline-verifier.log",
+    "bytes": 45,
+    "sha256": "d6228c6acd974600e9acfc403f199082f182d15717635e760b3f9ccdcfc93468"
+  },
+  {
+    "path": "15-offline-verifier-inspect.log",
+    "bytes": 7196,
+    "sha256": "87ba3fafe3132326f1eab3ea5cb9a7b17309b242048dc0fa742a11e026fa00da"
+  },
+  {
+    "path": "16-copy-readonly-observer.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "17-all-original-source-and-installed-bytes-verification.log",
+    "bytes": 477,
+    "sha256": "e86598a50a01874ce6d651542bb777d4291869a0a614b630df3a222e8d6e26ff"
+  },
+  {
+    "path": "18-copy-new-provenance.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "19-copy-identical-installed-manifest.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "20-commit-new-seed-tag.log",
+    "bytes": 72,
+    "sha256": "eb276657a810688fd7a17d16b6d748b6e768b0e766197c4bf0135bea265747b8"
+  },
+  {
+    "path": "21-new-seed-image-inspect.log",
+    "bytes": 2673,
+    "sha256": "3056cbf34442711b09068fec7f79a54a7d27ade3c8b81e0c2b81160b3c12364c"
+  },
+  {
+    "path": "COMMAND_RECEIPTS.json",
+    "bytes": 15749,
+    "sha256": "e7cf7e83716167f169623629779a17fcb45f63ccff13378649dc474e57e38239"
+  },
+  {
+    "path": "correct_os_jq_prerequisite.py",
+    "bytes": 9887,
+    "sha256": "a6388c77ca1f095b9f75d029a301fdabe2a920f126e836257988240e4277e4b0"
+  },
+  {
+    "path": "EXPORTED_OS_ARCHIVE_VERIFICATION.json",
+    "bytes": 532,
+    "sha256": "fe8c0fcdba9050b7b56d4d02a94acf11ae55b947a49df2d996bcb59224cf1f0c"
+  },
+  {
+    "path": "final-stop-sp2027-wxyc-jq-offline-verification-20261112.log",
+    "bytes": 100,
+    "sha256": "7efa1d246aa3217a23d76991e1b46adbab8923ca473b593fc148720f602ee084"
+  },
+  {
+    "path": "final-stop-sp2027-wxyc-jq-os-provision-20261112.log",
+    "bytes": 92,
+    "sha256": "0778dba4621749987c1216ae5335cb4226a9f4e291027ea69327bafedada8b8a"
+  },
+  {
+    "path": "FROZEN_JQ_CORRECTION_PLAN.json",
+    "bytes": 2764,
+    "sha256": "30218bd05e46ac888ee32724cbd60f3848eacf1c4afde92845515e364730aace"
+  },
+  {
+    "path": "install-jq.sh",
+    "bytes": 215,
+    "sha256": "3e8cfb4649ff24c9bee8a28a5263f805fb1317038c23dea0077b465ade24476c"
+  },
+  {
+    "path": "JQ_CORRECTION_RESULT.json",
+    "bytes": 703,
+    "sha256": "56fff55592f8b9f968b64ec8264b8d4adc6c0f071edc7f70417512f52deddb77"
+  },
+  {
+    "path": "official-debs/jq_1.6-2.1+deb12u3_amd64.deb",
+    "bytes": 64432,
+    "sha256": "c25f3fda201207ed98b1d63686f2d81b9dfeb99f1ab2d1d35fb3f7b6a1c107dc"
+  },
+  {
+    "path": "official-debs/libjq1_1.6-2.1+deb12u3_amd64.deb",
+    "bytes": 136460,
+    "sha256": "5e9a7081ba10ce826f6d3d103aa9b912170c5adc836e2561000733571995dd5b"
+  },
+  {
+    "path": "official-debs/libonig5_6.9.8-1_amd64.deb",
+    "bytes": 187828,
+    "sha256": "59ecfce6d88c7c4b09496ce182b3b8303e8e8477664e009b16ae83a09cd12be7"
+  },
+  {
+    "path": "OS_PACKAGE_DELTA.json",
+    "bytes": 2200,
+    "sha256": "fdd7e22b9221fb585b79d62ab2fa9d57a68d6fb707b97497398dea233b99fb67"
+  },
+  {
+    "path": "README.md",
+    "bytes": 1839,
+    "sha256": "9d4c2fdb7f540f23ce29c7e6c3e643ac9fe8821ce54b7b850afaf9d87a283961"
+  },
+  {
+    "path": "seed-installed-manifest.json",
+    "bytes": 8574846,
+    "sha256": "0f518c86e2911fb9a6911bb8331fa58e1250c3bdcfcea035285b02c99517f280"
+  },
+  {
+    "path": "seed-provenance.json",
+    "bytes": 968965,
+    "sha256": "9189e5ee00b9f00958e21baceee6e15a5a0df6df17cb63b626bfad40e4b86eac"
+  },
+  {
+    "path": "verify-jq-seed.py",
+    "bytes": 1102,
+    "sha256": "9e9472243cc4e198e87514f3ffab9884107fe12edd3aa9a171678274016aefea"
+  }
+]

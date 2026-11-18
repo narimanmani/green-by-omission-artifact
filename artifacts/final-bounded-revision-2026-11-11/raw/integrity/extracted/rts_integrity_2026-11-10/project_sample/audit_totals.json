@@ -1,0 +1,15 @@
+{
+  "repositories_inspected": 20,
+  "configuration_files_inspected": 156,
+  "parent_poms_inspected": 7,
+  "optional_ekstazi_profile_declared": 2,
+  "ekstazi_any_workflow_reference": 0,
+  "testmon_any_configuration_reference": 0,
+  "primary_pull_request_trigger": 20,
+  "primary_contents_permission_read": 20,
+  "primary_all_actions_pinned_40hex": 20,
+  "primary_checkouts_persist_credentials_false": 20,
+  "primary_maven_dependency_cache": 16,
+  "selection": "purposive convenience sample; descriptive counts only; no population inference",
+  "scope_note": "Configuration indicators are not evidence that a workflow ran, was mandatory, or actually used RTS. Native deployment prevalence remains unmeasured."
+}

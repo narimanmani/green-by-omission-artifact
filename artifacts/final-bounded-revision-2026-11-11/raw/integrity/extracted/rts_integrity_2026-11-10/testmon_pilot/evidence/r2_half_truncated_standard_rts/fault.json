@@ -1,0 +1,15 @@
+{
+  "after": {
+    ".testmondata": {
+      "bytes": 26624,
+      "sha256": "381120116d35488579f875c7f9297380a6d4bd763de4527bf53eae90b076635d"
+    }
+  },
+  "before": {
+    ".testmondata": {
+      "bytes": 53248,
+      "sha256": "e5fa66c1cc6c25862d5cb00c57e1b191d1d593d47584ea85e6261998ab62790d"
+    }
+  },
+  "mode": "half_truncated"
+}

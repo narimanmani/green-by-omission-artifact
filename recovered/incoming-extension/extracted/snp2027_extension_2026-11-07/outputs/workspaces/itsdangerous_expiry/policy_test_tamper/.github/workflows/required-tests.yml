@@ -1,0 +1,2 @@
+name: protected-ci
+on: pull_request

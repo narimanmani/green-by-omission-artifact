@@ -1,0 +1,13 @@
+{
+  "counts": {
+    "search_ranked_frames": 2,
+    "frame_repositories_each": 60,
+    "selected_each_language": 12,
+    "selected_total": 24,
+    "with_workflow_paths": 19,
+    "indexed_literal_hits": 0,
+    "truncated_tree_flags": 0,
+    "fnv_selection_recomputed": true
+  },
+  "scope_limit": "Frozen committed observation records at d2c384cbb12da5aa893eb511fc0ac22097e4a04b. Git blob identity was verified for all nine files. FNV scores, selection and counts were recomputed from 24 batch records. Full original GitHub tree/search HTTP responses and per-repository commit IDs are not retained in these files. Indexed nonmatches remain recorded observations rather than independently proven absence or prevalence."
+}

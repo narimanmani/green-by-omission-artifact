@@ -1,0 +1,33 @@
+name: Isolated native Ekstazi CRC32 cross-tool research
+on:
+  push:
+    branches:
+      - research/ekstazi-cross-tool-validation-20261109
+permissions:
+  contents: read
+jobs:
+  native-ekstazi-validation:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - name: Checkout fixed private research fixture
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Install Java 8
+        uses: actions/setup-java@dded0888837ed1f317902acf8a20df0ad188d165
+        with:
+          distribution: temurin
+          java-version: '8'
+      - name: Execute controlled native Ekstazi security-test comparison
+        env:
+          EVIDENCE_DIR: /tmp/sp2027-ekstazi-crosstool
+        run: python3 research_20261107/ekstazi/attack_validation.py
+      - name: Preserve evidence including negative outcomes
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: isolated-ekstazi-cross-tool
+          path: /tmp/sp2027-ekstazi-crosstool/
+          if-no-files-found: warn
+          retention-days: 30

@@ -1,0 +1,472 @@
+{
+  "status": "VALID_EXECUTION",
+  "mode": "selective",
+  "base_sha": "1d63949857934672de5c13f543174b4dbf0fd7ce",
+  "head_sha": "75ca88276e8f610b8dca550bb448c61d3109bfa8",
+  "cases": [
+    {
+      "case": "itsdangerous_expiry",
+      "condition": "ordinary",
+      "changed_files": [
+        "cases/itsdangerous_expiry/itsdangerous/timed.py"
+      ],
+      "source_sha256": "b38b2567a62ce08cf39e65b686986402eb239681bee3ecf395981c0894d08158",
+      "baseline": {
+        "exit": 0,
+        "seconds": 0.37564780799999653,
+        "args": [
+          "/home/runner/work/_temp/venv/bin/python",
+          "-m",
+          "pytest",
+          "-p",
+          "observer",
+          "-p",
+          "no:cacheprovider",
+          "-vv",
+          "-s",
+          "--color=no",
+          "-p",
+          "testmon.pytest_testmon",
+          "--testmon",
+          "--testmon-noselect"
+        ],
+        "log": "itsdangerous_expiry/baseline.log",
+        "tests": {
+          "collected": [
+            "tests/test_meta.py::test_metadata_build_positive",
+            "tests/test_security.py::test_security_rejects_expired",
+            "tests/test_security.py::test_valid_signature_passes"
+          ],
+          "deselected": [],
+          "synthetic_deselected_count": 0,
+          "reports": [
+            {
+              "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+              "when": "setup",
+              "outcome": "passed"
+            },
+            {
+              "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+              "when": "call",
+              "outcome": "passed"
+            },
+            {
+              "nodeid": "tests/test_meta.py::test_metadata_build_positive",
+              "when": "teardown",
+              "outcome": "passed"
+            },
+            {
+              "nodeid": "tests/test_security.py::test_security_rejects_expired",
+              "when": "setup",
+              "outcome": "passed"
+            },
+            {
+              "nodeid": "tests/test_security.py::test_security_rejects_expired",
+              "when": "call",
+              "outcome": "passed"
+            },
+            {
+              "nodeid": "tests/test_security.py::test_security_rejects_expired",
+              "when": "teardown",
+              "outcome": "passed"
+            },
+            {
+              "nodeid": "tests/test_security.py::test_valid_signature_passes",
+              "when": "setup",
+              "outcome": "passed"
+            },
+            {
+              "nodeid": "tests/test_security.py::test_valid_signature_passes",
+              "when": "call",
+              "outcome": "passed"
+            },
+            {
+              "nodeid": "tests/test_security.py::test_valid_signature_passes",
+              "when": "teardown",
+              "outcome": "passed"
+            }
+          ],
+          "collection_errors": [],
+          "initial_exitstatus": 0,
+          "final_exitstatus": 0,
+          "executed_tests": [
+            "tests/test_meta.py::test_metadata_build_positive",
+            "tests/test_security.py::test_security_rejects_expired",
+            "tests/test_security.py::test_valid_signature_passes"
+          ],
+          "skipped_tests": [],
+          "target_module": {
+            "name": "itsdangerous.timed",
+            "loaded": true,
+            "file": "/home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/cases/itsdangerous_expiry/itsdangerous/timed.py"
+          },
+          "plugin_modules": {
+            "testmon": "/home/runner/work/_temp/venv/lib/python3.13/site-packages/testmon/__init__.py",
+            "testmon.configure": "/home/runner/work/_temp/venv/lib/python3.13/site-packages/testmon/configure.py",
+            "testmon.common": "/home/runner/work/_temp/venv/lib/python3.13/site-packages/testmon/common.py",
+            "testmon.process_code": "/home/runner/work/_temp/venv/lib/python3.13/site-packages/testmon/process_code.py",
+            "testmon.db": "/home/runner/work/_temp/venv/lib/python3.13/site-packages/testmon/db.py",
+            "testmon.testmon_core": "/home/runner/work/_temp/venv/lib/python3.13/site-packages/testmon/testmon_core.py",
+            "testmon.pytest_testmon": "/home/runner/work/_temp/venv/lib/python3.13/site-packages/testmon/pytest_testmon.py"
+          }
+        }
+      },
+      "result": {
+        "exit": 1,
+        "seconds": 0.3246476119999997,
+        "args": [
+          "/home/runner/work/_temp/venv/bin/python",
+          "-m",
+          "pytest",
+          "-p",
+          "observer",
+          "-p",
+          "no:cacheprovider",
+          "-vv",
+          "-s",
+          "--color=no",
+          "-p",
+          "testmon.pytest_testmon",
+          "--testmon"
+        ],
+        "log": "itsdangerous_expiry/selective.log",
+        "tests": {
+          "collected": [
+            "tests/test_security.py::test_valid_signature_passes",
+            "tests/test_security.py::test_security_rejects_expired"
+          ],
+          "deselected": [],
+          "synthetic_deselected_count": 0,
+          "reports": [
+            {
+              "nodeid": "tests/test_security.py::test_valid_signature_passes",
+              "when": "setup",
+              "outcome": "passed"
+            },
+            {
+              "nodeid": "tests/test_security.py::test_valid_signature_passes",
+              "when": "call",
+              "outcome": "passed"
+            },
+            {
+              "nodeid": "tests/test_security.py::test_valid_signature_passes",
+              "when": "teardown",
+              "outcome": "passed"
+            },
+            {
+              "nodeid": "tests/test_security.py::test_security_rejects_expired",
+              "when": "setup",
+              "outcome": "passed"
+            },
+            {
+              "nodeid": "tests/test_security.py::test_security_rejects_expired",
+              "when": "call",
+              "outcome": "failed",
+              "longrepr": "def test_security_rejects_expired():\n        signer = TimestampSigner('lab-secret')\n        signer.get_timestamp = lambda: 100\n        signed = signer.sign('sensitive')\n        signer.get_timestamp = lambda: 120\n>       with pytest.raises(SignatureExpired):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE <class 'itsdangerous.exc.SignatureExpired'>\n\ntests/test_security.py:9: Failed"
+            },
+            {
+              "nodeid": "tests/test_security.py::test_security_rejects_expired",
+              "when": "teardown",
+              "outcome": "passed"
+            }
+          ],
+          "collection_errors": [],
+          "initial_exitstatus": 1,
+          "final_exitstatus": 1,
+          "executed_tests": [
+            "tests/test_security.py::test_security_rejects_expired",
+            "tests/test_security.py::test_valid_signature_passes"
+          ],
+          "skipped_tests": [],
+          "target_module": {
+            "name": "itsdangerous.timed",
+            "loaded": true,
+            "file": "/home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted/cases/itsdangerous_expiry/itsdangerous/timed.py"
+          },
+          "plugin_modules": {
+            "testmon": "/home/runner/work/_temp/venv/lib/python3.13/site-packages/testmon/__init__.py",
+            "testmon.configure": "/home/runner/work/_temp/venv/lib/python3.13/site-packages/testmon/configure.py",
+            "testmon.common": "/home/runner/work/_temp/venv/lib/python3.13/site-packages/testmon/common.py",
+            "testmon.process_code": "/home/runner/work/_temp/venv/lib/python3.13/site-packages/testmon/process_code.py",
+            "testmon.db": "/home/runner/work/_temp/venv/lib/python3.13/site-packages/testmon/db.py",
+            "testmon.testmon_core": "/home/runner/work/_temp/venv/lib/python3.13/site-packages/testmon/testmon_core.py",
+            "testmon.pytest_testmon": "/home/runner/work/_temp/venv/lib/python3.13/site-packages/testmon/pytest_testmon.py"
+          }
+        }
+      },
+      "baseline_database_sha256": "e2b053a3215196cfe66638e9c202893eb157cad81b471f3aaec736cc84869572",
+      "baseline_snapshot_unchanged": true,
+      "security_failed": true,
+      "security_executed": true,
+      "non_source_files_unchanged": true
+    }
+  ],
+  "commands": [
+    {
+      "args": [
+        "git",
+        "status",
+        "--porcelain=v1",
+        "--untracked-files=no"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit": 0,
+      "stdout": "1d63949857934672de5c13f543174b4dbf0fd7ce\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "git",
+        "merge-base",
+        "1d63949857934672de5c13f543174b4dbf0fd7ce",
+        "75ca88276e8f610b8dca550bb448c61d3109bfa8"
+      ],
+      "exit": 0,
+      "stdout": "1d63949857934672de5c13f543174b4dbf0fd7ce\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "git",
+        "rev-list",
+        "--count",
+        "1d63949857934672de5c13f543174b4dbf0fd7ce..75ca88276e8f610b8dca550bb448c61d3109bfa8"
+      ],
+      "exit": 0,
+      "stdout": "1\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "git",
+        "diff",
+        "--name-status",
+        "--no-renames",
+        "1d63949857934672de5c13f543174b4dbf0fd7ce",
+        "75ca88276e8f610b8dca550bb448c61d3109bfa8"
+      ],
+      "exit": 0,
+      "stdout": "M\tcases/itsdangerous_expiry/itsdangerous/timed.py\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "git",
+        "ls-tree",
+        "1d63949857934672de5c13f543174b4dbf0fd7ce",
+        "--",
+        "cases/itsdangerous_expiry/itsdangerous/timed.py"
+      ],
+      "exit": 0,
+      "stdout": "100644 blob 73843755d90979f750976705c5eaeeb3b98f178c\tcases/itsdangerous_expiry/itsdangerous/timed.py\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "git",
+        "ls-tree",
+        "75ca88276e8f610b8dca550bb448c61d3109bfa8",
+        "--",
+        "cases/itsdangerous_expiry/itsdangerous/timed.py"
+      ],
+      "exit": 0,
+      "stdout": "100644 blob 8a5fdd4c3dcb0fc0e0148324a7ed579f7b2b3df7\tcases/itsdangerous_expiry/itsdangerous/timed.py\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "git",
+        "diff",
+        "--binary",
+        "1d63949857934672de5c13f543174b4dbf0fd7ce",
+        "75ca88276e8f610b8dca550bb448c61d3109bfa8"
+      ],
+      "exit": 0,
+      "stdout": "diff --git a/cases/itsdangerous_expiry/itsdangerous/timed.py b/cases/itsdangerous_expiry/itsdangerous/timed.py\nindex 7384375..8a5fdd4 100644\n--- a/cases/itsdangerous_expiry/itsdangerous/timed.py\n+++ b/cases/itsdangerous_expiry/itsdangerous/timed.py\n@@ -138,7 +138,7 @@ class TimestampSigner(Signer):\n         if max_age is not None:\n             age = self.get_timestamp() - ts_int\n \n-            if age > max_age:\n+            if age > max_age + 10:\n                 raise SignatureExpired(\n                     f\"Signature age {age} > {max_age} seconds\",\n                     payload=value,\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "git",
+        "checkout",
+        "--detach",
+        "75ca88276e8f610b8dca550bb448c61d3109bfa8"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": "Previous HEAD position was 1d63949 Initialize private validation baseline\nHEAD is now at 75ca882 Case 1 ordinary source-only research condition\n"
+    },
+    {
+      "args": [
+        "git",
+        "status",
+        "--porcelain=v1",
+        "--untracked-files=no"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "versions": {
+    "pytest": "9.0.2",
+    "pytest-testmon": "2.3.0",
+    "coverage": "7.17.2",
+    "itsdangerous": "2.2.0",
+    "starlette": "0.50.0",
+    "requests": "2.32.5",
+    "httpx": "0.28.1"
+  },
+  "python": "3.13.18 (main, Oct 26 2026, 14:20:56) [GCC 13.3.0]",
+  "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+  "repo_dir": "/home/runner/work/ci-selection-testbed/ci-selection-testbed/trusted",
+  "runtime_sha256": "61b4d2da247bcc020dc6cb3357fa4ac756663e7a3a4aac6f226c41e5588fe13f",
+  "runner_environment": {
+    "ImageOS": "ubuntu24",
+    "ImageVersion": "20261101.360.1",
+    "RUNNER_OS": "Linux",
+    "GITHUB_RUN_ID": "42429417906",
+    "GITHUB_RUN_ATTEMPT": "1",
+    "GITHUB_WORKFLOW_REF": "anonymous-owner/ci-selection-testbed/.github/workflows/validation.yml@refs/pull/2/merge",
+    "GITHUB_WORKFLOW_SHA": "beb906736e4663b2f172b7753e0fa5d67011dbdf",
+    "GITHUB_SHA": "beb906736e4663b2f172b7753e0fa5d67011dbdf",
+    "GITHUB_REF": "refs/pull/2/merge"
+  },
+  "original_archive_sha256": "b81d564692493b6554dabe45986b4e6f09fc084764587a343aa5114b2069552a",
+  "manifest": {
+    "status": "EXACT_ARCHIVE_VERIFIED",
+    "original_archive_sha256": "b81d564692493b6554dabe45986b4e6f09fc084764587a343aa5114b2069552a",
+    "source_only": true,
+    "cases": [
+      {
+        "name": "itsdangerous_expiry",
+        "dir": "cases/itsdangerous_expiry",
+        "target": "itsdangerous/timed.py",
+        "module": "itsdangerous.timed",
+        "security_nodeid": "tests/test_security.py::test_security_rejects_expired",
+        "expected_test_count": 3,
+        "baseline_files": {
+          "build_meta.py": "b0ecd9e36c604b1cce40dced825fa302547280e90de5cbc2b876ed2945e803e6",
+          "itsdangerous/__init__.py": "e122bbe6c09edbdc5b460404d5942d3079ca52e65801fddb4a964eadf7f52006",
+          "itsdangerous/_json.py": "c0f4069a07b6c99f77dbc107285ea069d19ec866022502b1b54fa22ca13a5270",
+          "itsdangerous/encoding.py": "c304f3e6aff7ccb71a01dba793afef4a84adc06a9859edf4ed997f53ceda4453",
+          "itsdangerous/exc.py": "46bddec68d0c44511c3d996dc1e7322b5e955756c4d8af7f175f9dfa58dc527e",
+          "itsdangerous/py.typed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "itsdangerous/serializer.py": "3e67700032ea912c902d9d2338a0200ec016e24fc7d13940ef5122df3d02e5a2",
+          "itsdangerous/signer.py": "60ed0257b341bc703a8f9e3d4441c91548d4a23c36a47ab0714a509d4ef23584",
+          "itsdangerous/timed.py": "e91bc332a36e9863317f4f8796969974df4f51042646fad01a994a871ba2bd4b",
+          "itsdangerous/url_safe.py": "6b3e1ee5f5e2fefb3e61b5a3f186709f8c2254a7de0fef8610a453e547aee0fe",
+          "pytest.ini": "3f1b6e981a534ae344b2cf7e2ffae79983dddf5ba2dbb6e1f98e4705da54bfcc",
+          "tests/test_meta.py": "ad4bd3351bf163fbf04e572bf3682114ac60e86bd2d11aa198cf0dc7363c596a",
+          "tests/test_security.py": "e0a270253fca5385a103022ca480f5b77bf98941d8be919d1ca426df82ba8813"
+        },
+        "revision_source_sha256": {
+          "ordinary": "b38b2567a62ce08cf39e65b686986402eb239681bee3ecf395981c0894d08158",
+          "collision": "958e620d9c196ef0fd6ec59737176885fcd29f01df2fa13fdecbda77b43ef011",
+          "benign_comment": "bc6aae49f1f6996c3fe4bf34e4080d00778426d455c4c85c8a3387c6cf08d894"
+        }
+      },
+      {
+        "name": "starlette_trusted_host",
+        "dir": "cases/starlette_trusted_host",
+        "target": "starlette/middleware/trustedhost.py",
+        "module": "starlette.middleware.trustedhost",
+        "security_nodeid": "tests/test_security.py::test_security_rejects_untrusted_host",
+        "expected_test_count": 3,
+        "baseline_files": {
+          "build_meta.py": "b0ecd9e36c604b1cce40dced825fa302547280e90de5cbc2b876ed2945e803e6",
+          "pytest.ini": "3f1b6e981a534ae344b2cf7e2ffae79983dddf5ba2dbb6e1f98e4705da54bfcc",
+          "starlette/__init__.py": "64619bfe3e673db7a96c7c98125725f38e70c5384ef66ad3a8c7effd6737dc4e",
+          "starlette/_exception_handler.py": "8b370c88fd95b956c8bf04d442384c95c85c680e7bf79f916b54829f92963d33",
+          "starlette/_utils.py": "8b8e456f1d07946bfc7378cfcd997a04dbc62d217890b2996b0563ab1eab5ebd",
+          "starlette/applications.py": "c4adbc2c83f6519e59e1a418205a77de495689bb6401d0ce9cb370840485a2b3",
+          "starlette/authentication.py": "ba9bce2483f1e7f1d7a2155aa580cf9277cf02af8fad7ce4ee0c579085998168",
+          "starlette/background.py": "0fe5e952915181406765e035b4783330e82e6dee8809564594e03830bd2ad53f",
+          "starlette/concurrency.py": "0fda37f055ea66daadf67588cdeb473cea56f78aeea8b4bc84db6710811f1efd",
+          "starlette/config.py": "195c24a34a464aeb31b901cedf9b4bfcdb7f0292f47e65582f72221c76292d6e",
+          "starlette/convertors.py": "175aec7b701a70df6bb1f2674deb839e36cde75affa2e1dcdd62f26248e45ffa",
+          "starlette/datastructures.py": "dde752330006431c7ebc1ccb948a95825be5bd6b8c03839133cdee59899c3030",
+          "starlette/endpoints.py": "5ce0c82b53fd9619a2fcf1f79ad08f041e0c730ef28e3509713cdb93b6015e10",
+          "starlette/exceptions.py": "b48a619596bc12c41f2b0dfec70e49dd93751a3691e147317c92baf40776846f",
+          "starlette/formparsers.py": "35d9797465d9b68a732548ccd38339cd8852f2c4f7ddeff92702b64fb31de330",
+          "starlette/middleware/__init__.py": "04e4673a3d27d262f5396514b353cb4eed520129af4fc90410303a71bba1b8fa",
+          "starlette/middleware/authentication.py": "f914b0c09d29224accd2ffb6229f075d5076e31b52a7b39bcd1dce7d30bcc120",
+          "starlette/middleware/base.py": "605a9ed6b1b880878ad86a55ddb7026251ad9d6ff34cbc08a2dc2f28cb06c2fb",
+          "starlette/middleware/cors.py": "1e9d4e0450753906d81916ba85f4f306a9242473a15298ebb11af2ac722d1c54",
+          "starlette/middleware/errors.py": "87be937d50eb7584afa410045a067dd55bcf6507b7bd1a4097a0a1a225c6f939",
+          "starlette/middleware/exceptions.py": "ece812522060c074b854c9a9696970db5b8328d0e638cccb559ad60cb0d4a96a",
+          "starlette/middleware/gzip.py": "fed86909172d82ec34b4c33a2768839408f9bd996897d4faef7207b5fbdfc501",
+          "starlette/middleware/httpsredirect.py": "48d4e579a6002c6a084d5ef1c1b89ce2007a55874cf1895e6bfca4722533df58",
+          "starlette/middleware/sessions.py": "2206644e481b3a153db5071e415d0a8cb022369f9d2a19e0707a6ee1561a0d74",
+          "starlette/middleware/trustedhost.py": "6f22825323e07b9e19e0cce7cae9c3ff60ec31f25cd94b1f5786f60eef966137",
+          "starlette/middleware/wsgi.py": "19036c64b90200235569e635a2d314b831881756192dae68a82ffee59dde821d",
+          "starlette/py.typed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "starlette/requests.py": "666520505c3345a05fbd1b8544621c1078a1c4df238f7de9c58d89db594cadf3",
+          "starlette/responses.py": "08d72dc83a57a63effef942a54ff6c7294442ffea8feb179dabf8f302d704b02",
+          "starlette/routing.py": "f4f940f20c780dbcee78d9a99703f114e0546fbbb9c2b7f0f99bf361fabf281c",
+          "starlette/schemas.py": "7c10e5235603285feb91021a96a0554343d0f7ede034687b4ffdfd3b213bad5d",
+          "starlette/staticfiles.py": "08351e5d168ab2aa23280ad24e28efb0fb113d6667999744cb612a7eb193770d",
+          "starlette/status.py": "3f94b138ddda296debc14a49edcc710f7bef1142cca4ef9a233cc94662f0c15b",
+          "starlette/templating.py": "0fd318fa651d1b9f7d61ddd02af16cd8ab4284deada37b29899dfa20ce2d2747",
+          "starlette/testclient.py": "d27b988796908b11386ee40266d08d67056a6de1cb9b57a736687cddb843e174",
+          "starlette/types.py": "f3bc13bb0175d37e90c51b1ede62f9a8eb92f62e1af7168864ca938d8fa5befa",
+          "starlette/websockets.py": "a61b168295dc958ade56183ec00c945a98015894e26cd1793e2fad3716e64056",
+          "tests/test_meta.py": "ad4bd3351bf163fbf04e572bf3682114ac60e86bd2d11aa198cf0dc7363c596a",
+          "tests/test_security.py": "ca74eed11b96169c24ceebe9ca1c2a77d08e1fd0ed1837b3c2bd00b683dc1380"
+        },
+        "revision_source_sha256": {
+          "ordinary": "1e767efa1f81e6ddee73abbba2dfb80ecd92e54285e5e709f3836ec978d51032",
+          "collision": "2789f299d1787ac5f20a883502047189b1bcfe21142676e2ccd1b9219c7773d9",
+          "benign_comment": "68c79d8dd8aefcd1c9f4cb4ed34429ba6ae1f0761ee951bf3eb9ca5077a87cab"
+        }
+      },
+      {
+        "name": "requests_crlf_header",
+        "dir": "cases/requests_crlf_header",
+        "target": "requests/utils.py",
+        "module": "requests.utils",
+        "security_nodeid": "tests/test_security.py::test_security_rejects_header_injection",
+        "expected_test_count": 3,
+        "baseline_files": {
+          "build_meta.py": "b0ecd9e36c604b1cce40dced825fa302547280e90de5cbc2b876ed2945e803e6",
+          "pytest.ini": "3f1b6e981a534ae344b2cf7e2ffae79983dddf5ba2dbb6e1f98e4705da54bfcc",
+          "requests/__init__.py": "e3168011198f0c804fb1ad8fb23a54f6bd3aca8a0afb69992874d90215915adb",
+          "requests/__version__.py": "40a0dc78af0afee8eac030dcde862b474a1d381620295390439bc56a9fc6fdc8",
+          "requests/_internal_utils.py": "9cc4329abe21b37d93a95a3901b0ab99c24486f3d487bc57965bb2ab0b252e24",
+          "requests/adapters.py": "f275f5d7781b6f5db7694b71d844e400dffa22c617f8cd9f4682c696e4c47119",
+          "requests/api.py": "fd96fd39aeedcd5222cd32b016b3e30c463d7a3b66fce9d2444467003c46b10b",
+          "requests/auth.py": "905ef9b6a9cb72d67d31ffe19bd4d9223e1c4169cde6ec51cfca16b31e70991d",
+          "requests/certs.py": "67d49be35d009efea35054f2b2cd23145854eb1b2df1cb442ea7f2f04bf6de0c",
+          "requests/compat.py": "27bb088d1e97a031a9e494d5ccec642b97d2a145546bf3e373b8916610161a62",
+          "requests/cookies.py": "6cd8be8aa123e0d3d9d34fa86feac7bf392f39bccdde5129830de0ea9692dd7c",
+          "requests/exceptions.py": "8c93d2d545804ecf3a4a155468ba2b4e225bd52686ba83445a020225ea7e5646",
+          "requests/help.py": "80f5f977f1fb5ddf3c6830017a386a1a097d075545453b79066898bcbdcfcc84",
+          "requests/hooks.py": "0a2bb2b221c0dfd57951f702057148c7cdc8ac3a6ec1f37d45c4d482fdbc7ed4",
+          "requests/models.py": "32365d67893bb67c3ed67cf93ca4a18e63e6ab29342fa0dc8b09c59e06ff564e",
+          "requests/packages.py": "fe0d2067af355320252874631fa91a9db6a8c71d9e01beaacdc5e2383c932287",
+          "requests/sessions.py": "0a5d5da449ce7f0af3ccf6e4bbe7a67a935e37846dff4ff9f08cb6c7e2464e6f",
+          "requests/status_codes.py": "889500780db96da4ddc3ee8f7c3d1e178aa1a48343251248fb268cab1b382c42",
+          "requests/structures.py": "f886e6855cf4e92fb968f499b94b6167afba0fd5ce8d1b935c739a6d8d38d573",
+          "requests/utils.py": "5aa53ceab677c2f842fad42359c8ed1ff1c4299c1607789609957a496e4311d4",
+          "tests/test_meta.py": "ad4bd3351bf163fbf04e572bf3682114ac60e86bd2d11aa198cf0dc7363c596a",
+          "tests/test_security.py": "f24243f08a91a243a4cc9e532e202d613bf6431a0f582ad54011e055d51894e9"
+        },
+        "revision_source_sha256": {
+          "ordinary": "a539bf7445f8768d61fb91959776d679e7d0e91a8a889b292890dc6487421c23",
+          "collision": "e47e101197c1896761a333d3cf81ec838b1b8df5de1aef33098a7fd2f30e8337",
+          "benign_comment": "c0cd072eb9a28f4efba988bcbdb480fb873a7a0943d723ff8f302105f120e457"
+        }
+      }
+    ]
+  },
+  "actual_exit": 1
+}

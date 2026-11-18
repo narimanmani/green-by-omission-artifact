@@ -1,0 +1,4 @@
+name: protected-ci
+on: pull_request
+
+# attempted untrusted PR modification

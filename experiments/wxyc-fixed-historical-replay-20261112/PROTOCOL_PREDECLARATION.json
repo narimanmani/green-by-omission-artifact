@@ -1,0 +1,88 @@
+{
+  "status": "PREDECLARED_BEFORE_SUBJECT_EXECUTION; installed image receipt must be sealed before first baseline",
+  "input_receipt": "INPUT_IDENTITY.json",
+  "baseline": "b86530c6c656b7a8f72d42145e9d46995c7ab53d",
+  "candidate": "Only the exact inverse of the public SameSite production-line hunk from 8e2fc5f320633ddec0e99e05b65b21682ed3ccda; immutable prepared candidate file and manifest.",
+  "scope": "All 471 original tests/unit/**/*.test.ts files discovered by unchanged jest.unit.config.ts; not the project integration suite.",
+  "target": "auth.definition.ts cookie configuration should not use sameSite: none (weakens CSRF protection)",
+  "target_blob": "5c14cd837a04880807d3ef4f643da64cbdf6a552",
+  "git_base": {
+    "reference": "refs/remotes/origin/main",
+    "revision": "b86530c6c656b7a8f72d42145e9d46995c7ab53d"
+  },
+  "runtime": {
+    "node": "24.19.0",
+    "npm": "11.17.0",
+    "base_image": "node@sha256:a9f5f7c91a432850b2a8a7797adf5eadb6c733ceed61167806cee7ea7fbc29df",
+    "jest": "30.4.2",
+    "ts_jest": "29.4.12",
+    "typescript": "6.0.3",
+    "locked_dependencies_unchanged": true,
+    "shared_package": "Exact SHA512-matched original @wxyc/shared4.1.0, independently rebuilt from publisher source and environment",
+    "git_dependency": "Original commit c27805bc50c424d9d6741e6a857ebbd85727e615; HTTPS transport to the same public repository may replace SSH transport without changing dependency content."
+  },
+  "jest_cli": "node node_modules/jest/bin/jest.js",
+  "common_arguments": [
+    "--config",
+    "jest.unit.config.ts",
+    "--coverage",
+    "--runInBand",
+    "--json"
+  ],
+  "selective_additional_arguments": [
+    "--changedSince=origin/main",
+    "--passWithNoTests"
+  ],
+  "baseline_and_independent_selection_flags": [],
+  "output_policy": "All JSON, stdout, stderr, coverage and caches outside /work/project. Baseline/native may share the fresh per-repetition cache; independent arm has separate clean cache.",
+  "sequence": [
+    "Fresh seed copy with relative workspace symlinks preserved; verify baseline Git/source/test/config/lock/installed dependency identities.",
+    "Execute full configured original unit baseline; require target guard actually passing and no failures/errors.",
+    "Apply only frozen candidate bytes; verify full candidate manifest.",
+    "Execute native selection and save actual original per-case outcomes, process status and raw logs.",
+    "Verify candidate identity, execute complete configured unit oracle without selection on identical candidate bytes, and verify final identity.",
+    "Export all raw evidence and metadata before temporary filesystem disappears."
+  ],
+  "repetitions": 3,
+  "fresh_container_and_baseline_each": true,
+  "no_variant_search": true,
+  "no_outcome_dependent_scope_or_config_changes": true,
+  "retain_all_unsuccessful_results": true,
+  "eligibility": "An unsuccessful baseline makes that repetition ineligible and prevents its candidate arms. Provisioning, setup, errors, skips and zero-call successes are never assertion-failure or nonempty-success evidence.",
+  "joint_witness": "Every clean repetition must have a passing baseline, native exit0 with at least one original passing call and no failures/errors, independent assertion failure of the named original security source guard absent from native actual calls, unchanged tests/config/lock and identical candidate/dependency identities, followed by independent raw-evidence audit.",
+  "environment": {
+    "CI": "true",
+    "NODE_ENV": "test",
+    "EMAIL_ENABLED": "false",
+    "HOME": "/work/home",
+    "NPM_TOKEN": "",
+    "NPM_CONFIG_CACHE": "/work/npm-cache",
+    "live_credentials": false
+  },
+  "lab": {
+    "user": "10001:10001",
+    "network": "none",
+    "read_only_root": true,
+    "drop_capabilities": "ALL",
+    "no_new_privileges": true,
+    "host_mounts": false,
+    "host_credentials": false,
+    "docker_socket": false,
+    "published_ports": false,
+    "cpus": 2,
+    "memory": "6g",
+    "memory_swap": "6g",
+    "pids": 256,
+    "work_tmpfs": "3g,exec,nosuid,nodev,uid=10001,gid=10001,mode=1777",
+    "tmp_tmpfs": "128m,nosuid,nodev,noexec,uid=10001,gid=10001,mode=1777",
+    "jest_timeout_seconds": 900,
+    "parallel_subject_runs": false
+  },
+  "limits": [
+    "Controlled historical-fix reversion with later original tests, not an authentic historical revision pair.",
+    "Original static security-configuration source guard, not runtime CSRF or exploitability.",
+    "Jest dependency-graph omission, not a testmon/Ekstazi CRC or fingerprint result.",
+    "Local isolated experiment, not hosted protected-baseline contributor validation.",
+    "Do not change the manuscript or remote repository before evidence and claims are independently audited."
+  ]
+}

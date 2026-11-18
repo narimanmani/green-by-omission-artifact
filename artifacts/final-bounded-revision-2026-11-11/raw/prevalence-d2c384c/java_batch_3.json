@@ -1,0 +1,77 @@
+{
+  "results": [
+    {
+      "repo": "intoolswetrust/jsignpdf",
+      "default_branch": "master",
+      "score": 272583542,
+      "hits": [],
+      "tree": {
+        "truncated": false,
+        "n_files": 673,
+        "n_java": 208,
+        "n_tests": 79,
+        "workflows": [
+          ".github/workflows/do-release.yml",
+          ".github/workflows/doc-builder.yaml",
+          ".github/workflows/package-release.yml",
+          ".github/workflows/pr-builder.yaml",
+          ".github/workflows/push-snapshots.yaml",
+          ".github/workflows/refresh-flatpak-deps.yml"
+        ],
+        "build_files": [
+          "pom.xml"
+        ]
+      }
+    },
+    {
+      "repo": "Dlmily/Tomato-Novel-Downloader-Lite",
+      "default_branch": "main",
+      "score": 382451376,
+      "hits": [],
+      "tree": {
+        "truncated": false,
+        "n_files": 18,
+        "n_java": 2,
+        "n_tests": 0,
+        "workflows": [
+          ".github/workflows/build-executable.yml"
+        ],
+        "build_files": [
+          "pom.xml"
+        ]
+      }
+    },
+    {
+      "repo": "wro4j/wro4j",
+      "default_branch": "master",
+      "score": 437479567,
+      "hits": [],
+      "tree": {
+        "truncated": false,
+        "n_files": 2382,
+        "n_java": 560,
+        "n_tests": 214,
+        "workflows": [
+          ".github/workflows/maven.yml"
+        ],
+        "build_files": [
+          "pom.xml"
+        ]
+      }
+    },
+    {
+      "repo": "icei-pucminas/aeds2",
+      "default_branch": "master",
+      "score": 455419549,
+      "hits": [],
+      "tree": {
+        "truncated": false,
+        "n_files": 624,
+        "n_java": 143,
+        "n_tests": 0,
+        "workflows": [],
+        "build_files": []
+      }
+    }
+  ]
+}

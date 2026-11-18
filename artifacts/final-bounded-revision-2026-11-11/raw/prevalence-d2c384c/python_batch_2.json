@@ -1,0 +1,75 @@
+{
+  "results": [
+    {
+      "repo": "Mause/duckdb_engine",
+      "default_branch": "main",
+      "score": 426341796,
+      "hits": [],
+      "tree": {
+        "truncated": false,
+        "n_files": 83,
+        "n_python": 14,
+        "n_tests": 8,
+        "workflows": [
+          ".github/workflows/publish.yaml",
+          ".github/workflows/pythonapp.yaml",
+          ".github/workflows/release-please.yml"
+        ],
+        "build_files": [
+          "pyproject.toml"
+        ]
+      }
+    },
+    {
+      "repo": "HuiyuLi-2000/Chinese-Grant-Writer-Skills",
+      "default_branch": "main",
+      "score": 552600554,
+      "hits": [],
+      "tree": {
+        "truncated": false,
+        "n_files": 82,
+        "n_python": 8,
+        "n_tests": 0,
+        "workflows": [],
+        "build_files": []
+      }
+    },
+    {
+      "repo": "scottchiefbaker/dool",
+      "default_branch": "next",
+      "score": 709493016,
+      "hits": [],
+      "tree": {
+        "truncated": false,
+        "n_files": 164,
+        "n_python": 116,
+        "n_tests": 0,
+        "workflows": [
+          ".github/workflows/pypi.yaml",
+          ".github/workflows/tests.yaml"
+        ],
+        "build_files": [
+          "pyproject.toml"
+        ]
+      }
+    },
+    {
+      "repo": "spinlud/py-linkedin-jobs-scraper",
+      "default_branch": "master",
+      "score": 715651878,
+      "hits": [],
+      "tree": {
+        "truncated": false,
+        "n_files": 99,
+        "n_python": 62,
+        "n_tests": 0,
+        "workflows": [
+          ".github/workflows/ci.yml"
+        ],
+        "build_files": [
+          "pyproject.toml"
+        ]
+      }
+    }
+  ]
+}

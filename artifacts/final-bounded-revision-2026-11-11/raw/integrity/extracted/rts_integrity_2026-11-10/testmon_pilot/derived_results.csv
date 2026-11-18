@@ -1,0 +1,50 @@
+run_id,strategy,fault,repetition,source_state,exit_code,status,tests,failures,errors,full_suite_fallback,false_accept,omission_assessable,selection_omission_count,unexecuted_oracle_nodeids,selection_omitted_nodeids,omission_classification_reason,elapsed_s
+00_cold_baseline,standard_rts,none,0,baseline,0,pass,4,0,0,False,,False,N/A,[],N/A,Control run has no comparison oracle,1.0583032479999872
+01_warm_unchanged,standard_rts,none,0,baseline,0,pass,0,0,0,False,,False,N/A,[],N/A,Control run has no comparison oracle,0.4237344699999994
+02_full_baseline,full_suite,none,0,baseline,0,pass,4,0,0,False,,False,N/A,[],N/A,Control run has no comparison oracle,0.7087082650000127
+03_full_changed_oracle,full_suite,none,0,candidate,1,test_failure,4,2,0,False,,False,N/A,[],N/A,Control run has no comparison oracle,0.7127872579999917
+r1_none_standard_rts,standard_rts,none,1,candidate,1,test_failure,3,2,0,False,False,True,0,[],[],Completed run with oracle and execution evidence,0.5714726279999809
+r1_none_fail_closed,fail_closed,none,1,candidate,1,test_failure,3,2,0,False,False,True,0,[],[],Completed run with oracle and execution evidence,0.4645376310000131
+r1_none_full_suite,full_suite,none,1,candidate,1,test_failure,4,2,0,False,False,True,0,[],[],Completed run with oracle and execution evidence,0.36681280899998114
+r1_missing_standard_rts,standard_rts,missing,1,candidate,1,test_failure,4,2,0,False,False,True,0,[],[],Completed run with oracle and execution evidence,0.5206943249999938
+r1_missing_fail_closed,fail_closed,missing,1,candidate,1,test_failure,4,2,0,True,False,True,0,[],[],Completed run with oracle and execution evidence,0.3847918780000157
+r1_missing_full_suite,full_suite,missing,1,candidate,1,test_failure,4,2,0,False,False,True,0,[],[],Completed run with oracle and execution evidence,0.471690615
+r1_empty_standard_rts,standard_rts,empty,1,candidate,1,test_failure,4,2,0,False,False,True,0,[],[],Completed run with oracle and execution evidence,0.6558624539999869
+r1_empty_fail_closed,fail_closed,empty,1,candidate,1,test_failure,4,2,0,True,False,True,0,[],[],Completed run with oracle and execution evidence,0.40049116800000206
+r1_empty_full_suite,full_suite,empty,1,candidate,1,test_failure,4,2,0,False,False,True,0,[],[],Completed run with oracle and execution evidence,0.431271277999997
+r1_half_truncated_standard_rts,standard_rts,half_truncated,1,candidate,3,runner_error,0,0,0,False,False,False,N/A,"[""test_arithmetic.py::test_negative"", ""test_arithmetic.py::test_positive""]",N/A,Runner did not complete normally,0.3251030469999989
+r1_half_truncated_fail_closed,fail_closed,half_truncated,1,candidate,1,test_failure,4,2,0,True,False,True,0,[],[],Completed run with oracle and execution evidence,0.3277755659999855
+r1_half_truncated_full_suite,full_suite,half_truncated,1,candidate,1,test_failure,4,2,0,False,False,True,0,[],[],Completed run with oracle and execution evidence,0.3146725930000116
+r1_garbage_standard_rts,standard_rts,garbage,1,candidate,3,runner_error,0,0,0,False,False,False,N/A,"[""test_arithmetic.py::test_negative"", ""test_arithmetic.py::test_positive""]",N/A,Runner did not complete normally,0.31138760700000034
+r1_garbage_fail_closed,fail_closed,garbage,1,candidate,1,test_failure,4,2,0,True,False,True,0,[],[],Completed run with oracle and execution evidence,0.3949859950000132
+r1_garbage_full_suite,full_suite,garbage,1,candidate,1,test_failure,4,2,0,False,False,True,0,[],[],Completed run with oracle and execution evidence,0.356614632000003
+r2_none_standard_rts,standard_rts,none,2,candidate,1,test_failure,3,2,0,False,False,True,0,[],[],Completed run with oracle and execution evidence,0.5376663309999969
+r2_none_fail_closed,fail_closed,none,2,candidate,1,test_failure,3,2,0,False,False,True,0,[],[],Completed run with oracle and execution evidence,0.478825736999994
+r2_none_full_suite,full_suite,none,2,candidate,1,test_failure,4,2,0,False,False,True,0,[],[],Completed run with oracle and execution evidence,0.34824622800002203
+r2_missing_standard_rts,standard_rts,missing,2,candidate,1,test_failure,4,2,0,False,False,True,0,[],[],Completed run with oracle and execution evidence,0.5489985529999899
+r2_missing_fail_closed,fail_closed,missing,2,candidate,1,test_failure,4,2,0,True,False,True,0,[],[],Completed run with oracle and execution evidence,3.969918426000021
+r2_missing_full_suite,full_suite,missing,2,candidate,1,test_failure,4,2,0,False,False,True,0,[],[],Completed run with oracle and execution evidence,3.9566413400000044
+r2_empty_standard_rts,standard_rts,empty,2,candidate,1,test_failure,4,2,0,False,False,True,0,[],[],Completed run with oracle and execution evidence,0.7926410940000039
+r2_empty_fail_closed,fail_closed,empty,2,candidate,1,test_failure,4,2,0,True,False,True,0,[],[],Completed run with oracle and execution evidence,0.5764052769999921
+r2_empty_full_suite,full_suite,empty,2,candidate,1,test_failure,4,2,0,False,False,True,0,[],[],Completed run with oracle and execution evidence,5.005176316000018
+r2_half_truncated_standard_rts,standard_rts,half_truncated,2,candidate,3,runner_error,0,0,0,False,False,False,N/A,"[""test_arithmetic.py::test_negative"", ""test_arithmetic.py::test_positive""]",N/A,Runner did not complete normally,0.9982789510000032
+r2_half_truncated_fail_closed,fail_closed,half_truncated,2,candidate,1,test_failure,4,2,0,True,False,True,0,[],[],Completed run with oracle and execution evidence,1.3112274940000077
+r2_half_truncated_full_suite,full_suite,half_truncated,2,candidate,1,test_failure,4,2,0,False,False,True,0,[],[],Completed run with oracle and execution evidence,0.6011231989999999
+r2_garbage_standard_rts,standard_rts,garbage,2,candidate,3,runner_error,0,0,0,False,False,False,N/A,"[""test_arithmetic.py::test_negative"", ""test_arithmetic.py::test_positive""]",N/A,Runner did not complete normally,0.6327141980000022
+r2_garbage_fail_closed,fail_closed,garbage,2,candidate,1,test_failure,4,2,0,True,False,True,0,[],[],Completed run with oracle and execution evidence,0.9077682970000183
+r2_garbage_full_suite,full_suite,garbage,2,candidate,1,test_failure,4,2,0,False,False,True,0,[],[],Completed run with oracle and execution evidence,0.5119330880000064
+r3_none_standard_rts,standard_rts,none,3,candidate,1,test_failure,3,2,0,False,False,True,0,[],[],Completed run with oracle and execution evidence,0.5749434309999799
+r3_none_fail_closed,fail_closed,none,3,candidate,1,test_failure,3,2,0,False,False,True,0,[],[],Completed run with oracle and execution evidence,0.6824580359999857
+r3_none_full_suite,full_suite,none,3,candidate,1,test_failure,4,2,0,False,False,True,0,[],[],Completed run with oracle and execution evidence,0.43884094699998855
+r3_missing_standard_rts,standard_rts,missing,3,candidate,1,test_failure,4,2,0,False,False,True,0,[],[],Completed run with oracle and execution evidence,0.5822912179999946
+r3_missing_fail_closed,fail_closed,missing,3,candidate,1,test_failure,4,2,0,True,False,True,0,[],[],Completed run with oracle and execution evidence,0.38848765999998136
+r3_missing_full_suite,full_suite,missing,3,candidate,1,test_failure,4,2,0,False,False,True,0,[],[],Completed run with oracle and execution evidence,0.40643833799998674
+r3_empty_standard_rts,standard_rts,empty,3,candidate,1,test_failure,4,2,0,False,False,True,0,[],[],Completed run with oracle and execution evidence,0.706861454999995
+r3_empty_fail_closed,fail_closed,empty,3,candidate,1,test_failure,4,2,0,True,False,True,0,[],[],Completed run with oracle and execution evidence,0.916384738000005
+r3_empty_full_suite,full_suite,empty,3,candidate,1,test_failure,4,2,0,False,False,True,0,[],[],Completed run with oracle and execution evidence,0.3516100200000096
+r3_half_truncated_standard_rts,standard_rts,half_truncated,3,candidate,3,runner_error,0,0,0,False,False,False,N/A,"[""test_arithmetic.py::test_negative"", ""test_arithmetic.py::test_positive""]",N/A,Runner did not complete normally,0.31811283799999046
+r3_half_truncated_fail_closed,fail_closed,half_truncated,3,candidate,1,test_failure,4,2,0,True,False,True,0,[],[],Completed run with oracle and execution evidence,0.47363157099999853
+r3_half_truncated_full_suite,full_suite,half_truncated,3,candidate,1,test_failure,4,2,0,False,False,True,0,[],[],Completed run with oracle and execution evidence,0.4697544660000119
+r3_garbage_standard_rts,standard_rts,garbage,3,candidate,3,runner_error,0,0,0,False,False,False,N/A,"[""test_arithmetic.py::test_negative"", ""test_arithmetic.py::test_positive""]",N/A,Runner did not complete normally,0.7633783089999895
+r3_garbage_fail_closed,fail_closed,garbage,3,candidate,1,test_failure,4,2,0,True,False,True,0,[],[],Completed run with oracle and execution evidence,0.6591967169999862
+r3_garbage_full_suite,full_suite,garbage,3,candidate,1,test_failure,4,2,0,False,False,True,0,[],[],Completed run with oracle and execution evidence,0.416116068000008

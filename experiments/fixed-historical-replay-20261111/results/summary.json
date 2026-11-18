@@ -1,0 +1,100 @@
+{
+  "status": "COMPLETED_NO_QUALIFYING_WITNESS",
+  "container_id": "1b94ea52f3c3cdf9d9340a260c3d3ec5d9976e32929c4f69a6fad86531c3b2b1",
+  "image_id": "sha256:4ace11bc5ebfa32e907516b194339df436a698da4596380c547d164cb13a5d9d",
+  "repetitions": [
+    {
+      "repeat": 1,
+      "baseline": {
+        "failed": 0,
+        "passed": 205,
+        "skipped": 0
+      },
+      "baseline_setup_skips": 13,
+      "baseline_eligible": true,
+      "selective": {
+        "failed": 0,
+        "passed": 0,
+        "skipped": 0
+      },
+      "selective_setup_skips": 0,
+      "independent_full": {
+        "failed": 1,
+        "passed": 204,
+        "skipped": 0
+      },
+      "full_setup_skips": 13,
+      "conditions": {
+        "all_original_tests_and_configuration_unchanged": true,
+        "baseline_original_tests_pass": true,
+        "candidate_identical_across_selective_and_full": true,
+        "independent_original_security_assertion_fails": true,
+        "nonempty_native_selection_passes": false,
+        "security_assertion_omitted_by_selection": true
+      },
+      "qualifying_joint_witness": false
+    },
+    {
+      "repeat": 2,
+      "baseline": {
+        "failed": 0,
+        "passed": 205,
+        "skipped": 0
+      },
+      "baseline_setup_skips": 13,
+      "baseline_eligible": true,
+      "selective": {
+        "failed": 0,
+        "passed": 0,
+        "skipped": 0
+      },
+      "selective_setup_skips": 0,
+      "independent_full": {
+        "failed": 1,
+        "passed": 204,
+        "skipped": 0
+      },
+      "full_setup_skips": 13,
+      "conditions": {
+        "all_original_tests_and_configuration_unchanged": true,
+        "baseline_original_tests_pass": true,
+        "candidate_identical_across_selective_and_full": true,
+        "independent_original_security_assertion_fails": true,
+        "nonempty_native_selection_passes": false,
+        "security_assertion_omitted_by_selection": true
+      },
+      "qualifying_joint_witness": false
+    },
+    {
+      "repeat": 3,
+      "baseline": {
+        "failed": 0,
+        "passed": 205,
+        "skipped": 0
+      },
+      "baseline_setup_skips": 13,
+      "baseline_eligible": true,
+      "selective": {
+        "failed": 0,
+        "passed": 0,
+        "skipped": 0
+      },
+      "selective_setup_skips": 0,
+      "independent_full": {
+        "failed": 1,
+        "passed": 204,
+        "skipped": 0
+      },
+      "full_setup_skips": 13,
+      "conditions": {
+        "all_original_tests_and_configuration_unchanged": true,
+        "baseline_original_tests_pass": true,
+        "candidate_identical_across_selective_and_full": true,
+        "independent_original_security_assertion_fails": true,
+        "nonempty_native_selection_passes": false,
+        "security_assertion_omitted_by_selection": true
+      },
+      "qualifying_joint_witness": false
+    }
+  ]
+}

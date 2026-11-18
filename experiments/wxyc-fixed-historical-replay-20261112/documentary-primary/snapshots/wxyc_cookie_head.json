@@ -1,0 +1,16 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "Action completed."
+    }
+  ],
+  "structuredContent": {
+    "content": "import * as fs from 'fs';\nimport * as path from 'path';\n\ndescribe('auth.definition.ts cookie configuration', () => {\n  const authDefPath = path.resolve(__dirname, '../../../shared/authentication/src/auth.definition.ts');\n  let source: string;\n\n  beforeAll(() => {\n    source = fs.readFileSync(authDefPath, 'utf-8');\n  });\n\n  it('should not use sameSite: none (weakens CSRF protection)', () => {\n    const hardcodedNone = /sameSite:\\s*['\"]none['\"]/;\n    expect(source).not.toMatch(hardcodedNone);\n\n    expect(source).toMatch(/sameSite:/);\n  });\n\n  it('should not hardcode secure: false on cookies', () => {\n    // In production, cookies must be secure. The code uses\n    // `secure: process.env.NODE_ENV === 'production'` which is correct —\n    // hardcoding `true` would break local development over HTTP.\n    expect(source).not.toMatch(/secure:\\s*false/);\n    expect(source).toMatch(/secure:/);\n  });\n});\n",
+    "encoding": "utf-8",
+    "sha": "5c14cd837a04880807d3ef4f643da64cbdf6a552",
+    "display_url": "https://github.com/WXYC/Backend-Service/blob/1037f6dd0398fe9cfb6524354cea52b6e1462298/tests/unit/authentication/cookie-config.test.ts",
+    "display_title": "cookie-config.test.ts"
+  },
+  "isError": false
+}

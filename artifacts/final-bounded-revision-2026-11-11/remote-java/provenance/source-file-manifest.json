@@ -1,0 +1,72 @@
+[
+  {
+    "file": "canonical-workflow.yml",
+    "git_blob_sha1": "2ba1c60bef9dc741b6b8235ed8b40b0bae933cc7",
+    "source_url": "https://example.invalid/anonymous-research/ci-selection-testbed/blob/fe629d8580b3d59015042e999be329b12476be79/.github/workflows/ekstazi-collision-generalization.yml",
+    "sha256": "11ba4439520bf44612d209477abb9c95e02a729e06f7cc76d974c7ae97a431ff",
+    "git_blob_matches": true
+  },
+  {
+    "file": "canonical-experiment.py",
+    "git_blob_sha1": "8b8840398ef63d88261d5e4051f335b95a8eea4b",
+    "source_url": "https://example.invalid/anonymous-research/ci-selection-testbed/blob/fe629d8580b3d59015042e999be329b12476be79/research_20261107/ekstazi/runner/experiment.py",
+    "sha256": "2d7dcb797712a4f375aab2e4592485f5eb46498d8b70fbc374094c1cdcf96b3d",
+    "git_blob_matches": true
+  },
+  {
+    "file": "canonical-commons-experiment.py",
+    "git_blob_sha1": "8f2358e0493ef3e67b17de2c4e15fa02a26ddbdf",
+    "source_url": "https://example.invalid/anonymous-research/ci-selection-testbed/blob/fe629d8580b3d59015042e999be329b12476be79/research_20261107/ekstazi/runner/commons_experiment.py",
+    "sha256": "0aa4ef3bb383a74e51f9cd65b8cee665e85fb72537481f668fd5c6b0cab35ede",
+    "git_blob_matches": true
+  },
+  {
+    "file": "ineligible-workflow.yml",
+    "git_blob_sha1": "a3b4da19cbbdad51d42606cc7e4d0fd2cc1b5522",
+    "source_url": "https://example.invalid/anonymous-research/ci-selection-testbed/blob/e95830e49e5fc4222e977ed81d1b3c112e7b7569/.github/workflows/ekstazi-cross-tool.yml",
+    "sha256": "20a64eea0eb92493640ce4ced7c7267cae9b1c997b0f796354fdd5452353bef8",
+    "git_blob_matches": true
+  },
+  {
+    "file": "upstream-UrlValidatorTest.java",
+    "git_blob_sha1": "173b381da546b98932d28aa8ee0cce90862b6806",
+    "source_url": "https://github.com/apache/commons-validator/blob/f9bb21748a9f9c50fbc31862de25ed49433ecc88/src/test/java/org/apache/commons/validator/routines/UrlValidatorTest.java",
+    "sha256": "130324b712c79f5a54d3dd859334c0c2df2d7c7a79f708e3be765d55f0409fc1",
+    "git_blob_matches": true
+  },
+  {
+    "file": "upstream-RegexValidatorTest.java",
+    "git_blob_sha1": "2be23928e3f6013e500c60326b3edd439bfcf9b9",
+    "source_url": "https://github.com/apache/commons-validator/blob/f9bb21748a9f9c50fbc31862de25ed49433ecc88/src/test/java/org/apache/commons/validator/routines/RegexValidatorTest.java",
+    "sha256": "2351671a41c22dcfd927631f0d2ae60eb5f80fa0b12fa131be3b765ec47da095",
+    "git_blob_matches": true
+  },
+  {
+    "file": "upstream-UrlValidator.java",
+    "git_blob_sha1": "03799ff083674fff9dc281f585e93dc3d8f147b8",
+    "source_url": "https://github.com/apache/commons-validator/blob/f9bb21748a9f9c50fbc31862de25ed49433ecc88/src/main/java/org/apache/commons/validator/routines/UrlValidator.java",
+    "sha256": "7e1ae81c946c08e675b62e1408c87c030452be0ff4a3edf5972145b5202e101b",
+    "git_blob_matches": true
+  },
+  {
+    "file": "canonical-HashProbe.java",
+    "git_blob_sha1": "461faf18a3f39f56e3c1d674bdfd6b39b87ba27f",
+    "source_url": "https://example.invalid/anonymous-research/ci-selection-testbed/blob/fe629d8580b3d59015042e999be329b12476be79/research_20261107/ekstazi/runner/HashProbe.java",
+    "sha256": "b11cf381e2dbf350c903079400b307f62e8091c9c369db0678146687cf3d6da8",
+    "git_blob_matches": true
+  },
+  {
+    "file": "canonical-ExpiryGateTest.java",
+    "git_blob_sha1": "3805c0c654e4349169e393ed2099edd5af388698",
+    "source_url": "https://example.invalid/anonymous-research/ci-selection-testbed/blob/fe629d8580b3d59015042e999be329b12476be79/research_20261107/ekstazi/src/test/java/lab/ExpiryGateTest.java",
+    "sha256": "de9fed8fbb9bfa6e0a427f5906a6725f163e3cdda9fa46f8bafd40a8933502e6",
+    "git_blob_matches": true
+  },
+  {
+    "file": "canonical-UnrelatedTest.java",
+    "git_blob_sha1": "229343179cd17960ac0e7bee2ce3cf6785c29b81",
+    "source_url": "https://example.invalid/anonymous-research/ci-selection-testbed/blob/fe629d8580b3d59015042e999be329b12476be79/research_20261107/ekstazi/src/test/java/lab/UnrelatedTest.java",
+    "sha256": "0f83ed1081e73390d89e3ad1464724f606234ccda190c8ac4461e3d2b42d0c97",
+    "git_blob_matches": true
+  }
+]
