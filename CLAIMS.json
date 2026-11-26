@@ -9,5 +9,18 @@
     "jest": {"baseline_passing_cases": 8173, "selected_passing_cases": 8, "independent_passes": 8172, "independent_original_guard_failures": 1, "technical_repetitions": 3, "mechanism": "Previously documented dependency-analysis omission; no fingerprint preservation", "oracle_scope": "471 original unit-test files; integration tests excluded"}
   },
   "separate_comparisons": {"depper_processes": 108, "fault_comparisons": 162, "fault_detections": 156, "fault_errors": 6, "fault_false_passes": 0, "separate_setup_and_control_invocations": 27, "feasibility_subjects": 10, "feasibility_qualified": 2, "configuration_frame": 24, "apache_configuration_frame": 20},
-  "scope_limits": ["Technical repetitions are not independent discoveries", "Not a prevalence or candidate-discovery effort estimate", "No unauthorized merge or production compromise", "No comprehensive defense evaluation", "Offline evidence verification is separate from runtime reproduction", "No claim of completed disclosure or artifact publication"]
+  "scope_limits": ["Technical repetitions are not independent discoveries", "Not a prevalence or candidate-discovery effort estimate", "No unauthorized merge or production compromise", "No comprehensive defense evaluation", "Offline evidence verification is separate from runtime reproduction", "No claim of completed disclosure or artifact publication"],
+  "static_audits_added_after_release": {
+    "guard_granularity_audit_20261123": {
+      "location": "experiments/guard-granularity-audit-20261123/",
+      "evidence": "saved static comparison predicates and flags",
+      "cases": 10,
+      "file_level_guard_flags_empty_candidates": 3,
+      "block_level_guard_flags_empty_candidates": 3,
+      "file_level_guard_flags_nonempty_hosted_candidate": false,
+      "block_level_guard_flags_nonempty_hosted_candidate": true,
+      "ordinary_or_comment_controls_flagged": 0,
+      "subject_code_executed": false
+    }
+  }
 }

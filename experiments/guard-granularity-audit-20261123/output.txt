@@ -1,0 +1,136 @@
+{
+  "audit_date": "2026-11-23",
+  "evidence_type": "static guard decisions",
+  "subject_code_executed": false,
+  "rows": [
+    {
+      "case": "empty-selection-1",
+      "category": "empty-selection",
+      "file_checksums_equal": true,
+      "module_ast_differs": true,
+      "changed_blocks": [
+        {
+          "representation_changed": true,
+          "crc32_equal": true
+        }
+      ],
+      "file_level_flags": true,
+      "block_level_flags": true
+    },
+    {
+      "case": "ordinary-regression-1",
+      "category": "ordinary-regression",
+      "file_checksums_equal": false,
+      "module_ast_differs": true,
+      "changed_blocks": [
+        {
+          "representation_changed": true,
+          "crc32_equal": false
+        }
+      ],
+      "file_level_flags": false,
+      "block_level_flags": false
+    },
+    {
+      "case": "comment-only-1",
+      "category": "comment-only",
+      "file_checksums_equal": true,
+      "module_ast_differs": false,
+      "changed_blocks": [],
+      "file_level_flags": false,
+      "block_level_flags": false
+    },
+    {
+      "case": "empty-selection-2",
+      "category": "empty-selection",
+      "file_checksums_equal": true,
+      "module_ast_differs": true,
+      "changed_blocks": [
+        {
+          "representation_changed": true,
+          "crc32_equal": true
+        }
+      ],
+      "file_level_flags": true,
+      "block_level_flags": true
+    },
+    {
+      "case": "ordinary-regression-2",
+      "category": "ordinary-regression",
+      "file_checksums_equal": false,
+      "module_ast_differs": true,
+      "changed_blocks": [
+        {
+          "representation_changed": true,
+          "crc32_equal": false
+        }
+      ],
+      "file_level_flags": false,
+      "block_level_flags": false
+    },
+    {
+      "case": "comment-only-2",
+      "category": "comment-only",
+      "file_checksums_equal": true,
+      "module_ast_differs": false,
+      "changed_blocks": [],
+      "file_level_flags": false,
+      "block_level_flags": false
+    },
+    {
+      "case": "empty-selection-3",
+      "category": "empty-selection",
+      "file_checksums_equal": true,
+      "module_ast_differs": true,
+      "changed_blocks": [
+        {
+          "representation_changed": true,
+          "crc32_equal": true
+        }
+      ],
+      "file_level_flags": true,
+      "block_level_flags": true
+    },
+    {
+      "case": "ordinary-regression-3",
+      "category": "ordinary-regression",
+      "file_checksums_equal": false,
+      "module_ast_differs": true,
+      "changed_blocks": [
+        {
+          "representation_changed": true,
+          "crc32_equal": false
+        }
+      ],
+      "file_level_flags": false,
+      "block_level_flags": false
+    },
+    {
+      "case": "comment-only-3",
+      "category": "comment-only",
+      "file_checksums_equal": true,
+      "module_ast_differs": false,
+      "changed_blocks": [],
+      "file_level_flags": false,
+      "block_level_flags": false
+    },
+    {
+      "case": "hosted-nonempty-1",
+      "category": "hosted-nonempty",
+      "file_checksums_equal": false,
+      "module_ast_differs": true,
+      "changed_blocks": [
+        {
+          "representation_changed": true,
+          "crc32_equal": false
+        },
+        {
+          "representation_changed": true,
+          "crc32_equal": true
+        }
+      ],
+      "file_level_flags": false,
+      "block_level_flags": true
+    }
+  ]
+}

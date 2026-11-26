@@ -29,6 +29,7 @@ The same payload can be supplied as a Git repository or ZIP. The root `.gitattri
 | Original Requests security-test control | `experiments/fixed-historical-replay-20261111/` | Detecting control; corrected observer results, original failed observer attempt, setup skips, and diagnosis retained separately |
 | Original Jest cookie-configuration guard | `experiments/wxyc-fixed-historical-replay-20261112/` | 8,173 baseline passes; eight selected passes; 8,172 independent passes and one omitted failing guard in three repetitions |
 | Separate metadata-fault campaign, Apache configuration frame | `artifacts/final-bounded-revision-2026-11-11/raw/integrity/extracted/rts_integrity_2026-11-10/` | 162 fault comparisons and 27 separate setup/control invocations; 156 detections, six explicit errors, no false pass |
+| Static checksum–AST comparison audit | `experiments/guard-granularity-audit-20261123/` | Saved comparison predicates and flags for ten cases, including the file-level miss and block-level flag on the retained nonempty hosted case |
 | Ten-project feasibility screen | `artifacts/final-bounded-revision-2026-11-11/raw/feasibility-42763093847/` | Two qualify under the frozen screen; nonqualifying cases retained; not a vulnerability prevalence estimate |
 | 24-project configuration frame | `artifacts/final-bounded-revision-2026-11-11/raw/prevalence-d2c384c/` | Recorded convenience observations; historical response and per-repository binding limitations remain |
 

@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "format": "Anonymous reviewer export; source records preserved privately",
-  "file_count": 4160,
-  "payload_bytes": 282126795,
+  "file_count": 4163,
+  "payload_bytes": 282134518,
   "files": [
     {
       "path": "recovered/incoming-extension/extracted/snp2027_extension_2026-11-07/aggregate_ci.py",
@@ -33238,11 +33238,11 @@
     },
     {
       "path": "README.md",
-      "bytes": 7384,
-      "sha256": "5734c84b3dd2caa82fb9fe78fbdd17ee2816349e2c73826155a885fd7fa9f232",
-      "source_sha256": "5734c84b3dd2caa82fb9fe78fbdd17ee2816349e2c73826155a885fd7fa9f232",
+      "bytes": 7620,
+      "sha256": "565a2a8fd7457a63cc38ef5c3b84fbeef90d3e926159277232987c47b5c7c463",
+      "source_sha256": "565a2a8fd7457a63cc38ef5c3b84fbeef90d3e926159277232987c47b5c7c463",
       "anonymized_export": false,
-      "source": "artifacts/anonymous-review-20261117/README.md"
+      "source": "README.md"
     },
     {
       "path": "REPRODUCE.md",
@@ -33270,11 +33270,11 @@
     },
     {
       "path": "CLAIMS.json",
-      "bytes": 2018,
-      "sha256": "aa36f231395df56ae7cd9c5abfa849841eb1b652957bd36fc0768ce18a9ca6b9",
-      "source_sha256": "aa36f231395df56ae7cd9c5abfa849841eb1b652957bd36fc0768ce18a9ca6b9",
+      "bytes": 2585,
+      "sha256": "e7a6fd797f36a98f860b799013007e609dbd1ceacf718843356869ad4a3ec955",
+      "source_sha256": "e7a6fd797f36a98f860b799013007e609dbd1ceacf718843356869ad4a3ec955",
       "anonymized_export": false,
-      "source": "artifacts/anonymous-review-20261117/CLAIMS.json"
+      "source": "CLAIMS.json"
     },
     {
       "path": ".gitattributes",
@@ -33283,6 +33283,30 @@
       "source_sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
       "anonymized_export": false,
       "source": "artifacts/anonymous-review-20261117/.gitattributes"
+    },
+    {
+      "path": "experiments/guard-granularity-audit-20261123/README.md",
+      "bytes": 1407,
+      "sha256": "5511bd9528b82eeb0cc93170fb9375b95e068a9f4bf59f059ed957c965a1c543",
+      "source_sha256": "5511bd9528b82eeb0cc93170fb9375b95e068a9f4bf59f059ed957c965a1c543",
+      "anonymized_export": false,
+      "source": "experiments/guard-granularity-audit-20261123/README.md"
+    },
+    {
+      "path": "experiments/guard-granularity-audit-20261123/guard_check.py",
+      "bytes": 2099,
+      "sha256": "c9f7a2f36faa23ab35beb4e1e0cecffcb29173a66ef75acb13f347d6beeb1676",
+      "source_sha256": "c9f7a2f36faa23ab35beb4e1e0cecffcb29173a66ef75acb13f347d6beeb1676",
+      "anonymized_export": false,
+      "source": "experiments/guard-granularity-audit-20261123/guard_check.py"
+    },
+    {
+      "path": "experiments/guard-granularity-audit-20261123/output.txt",
+      "bytes": 3414,
+      "sha256": "ee5d15576e5796dcffbd4d3571d2a8575bec9457790894debf3222910af47ef1",
+      "source_sha256": "ee5d15576e5796dcffbd4d3571d2a8575bec9457790894debf3222910af47ef1",
+      "anonymized_export": false,
+      "source": "experiments/guard-granularity-audit-20261123/output.txt"
     }
   ],
   "hash_semantics": "sha256 covers packaged bytes; source_sha256 covers original retained bytes. Original embedded historical hashes remain historical; use this manifest for exported-byte integrity."
