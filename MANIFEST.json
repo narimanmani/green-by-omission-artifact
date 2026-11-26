@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "format": "Anonymous reviewer export; source records preserved privately",
-  "file_count": 4163,
-  "payload_bytes": 282134518,
+  "file_count": 4164,
+  "payload_bytes": 282137070,
   "files": [
     {
       "path": "recovered/incoming-extension/extracted/snp2027_extension_2026-11-07/aggregate_ci.py",
@@ -33307,6 +33307,14 @@
       "source_sha256": "ee5d15576e5796dcffbd4d3571d2a8575bec9457790894debf3222910af47ef1",
       "anonymized_export": false,
       "source": "experiments/guard-granularity-audit-20261123/output.txt"
+    },
+    {
+      "path": "reviewer-evidence/SECUTE-2026-results.md",
+      "bytes": 2552,
+      "sha256": "f876979576004fcb40295c27ee613e13aa2e8710cd69be5bd6b289be4f55dda8",
+      "source_sha256": "f876979576004fcb40295c27ee613e13aa2e8710cd69be5bd6b289be4f55dda8",
+      "anonymized_export": false,
+      "source": "reviewer-evidence/SECUTE-2026-results.md"
     }
   ],
   "hash_semantics": "sha256 covers packaged bytes; source_sha256 covers original retained bytes. Original embedded historical hashes remain historical; use this manifest for exported-byte integrity."
