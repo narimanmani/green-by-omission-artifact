@@ -1,0 +1,4429 @@
+{
+  "manuscript_revision": "068d134d169b592d9e9158c8d6cb003768b9d80a",
+  "local_python": [
+    {
+      "subject": "ItsDangerous",
+      "hash_seed": 0,
+      "baseline": {
+        "executed": 3,
+        "failed": 0,
+        "exit_code": 0
+      },
+      "selective": {
+        "executed": 0,
+        "failed": 0,
+        "exit_code": 0
+      },
+      "independent": {
+        "executed": 3,
+        "failed": 1,
+        "exit_code": 1
+      }
+    },
+    {
+      "subject": "Starlette",
+      "hash_seed": 0,
+      "baseline": {
+        "executed": 3,
+        "failed": 0,
+        "exit_code": 0
+      },
+      "selective": {
+        "executed": 0,
+        "failed": 0,
+        "exit_code": 0
+      },
+      "independent": {
+        "executed": 3,
+        "failed": 1,
+        "exit_code": 1
+      }
+    },
+    {
+      "subject": "Requests",
+      "hash_seed": 0,
+      "baseline": {
+        "executed": 3,
+        "failed": 0,
+        "exit_code": 0
+      },
+      "selective": {
+        "executed": 0,
+        "failed": 0,
+        "exit_code": 0
+      },
+      "independent": {
+        "executed": 3,
+        "failed": 1,
+        "exit_code": 1
+      }
+    },
+    {
+      "subject": "ItsDangerous",
+      "hash_seed": 1,
+      "baseline": {
+        "executed": 3,
+        "failed": 0,
+        "exit_code": 0
+      },
+      "selective": {
+        "executed": 0,
+        "failed": 0,
+        "exit_code": 0
+      },
+      "independent": {
+        "executed": 3,
+        "failed": 1,
+        "exit_code": 1
+      }
+    },
+    {
+      "subject": "Starlette",
+      "hash_seed": 1,
+      "baseline": {
+        "executed": 3,
+        "failed": 0,
+        "exit_code": 0
+      },
+      "selective": {
+        "executed": 0,
+        "failed": 0,
+        "exit_code": 0
+      },
+      "independent": {
+        "executed": 3,
+        "failed": 1,
+        "exit_code": 1
+      }
+    },
+    {
+      "subject": "Requests",
+      "hash_seed": 1,
+      "baseline": {
+        "executed": 3,
+        "failed": 0,
+        "exit_code": 0
+      },
+      "selective": {
+        "executed": 0,
+        "failed": 0,
+        "exit_code": 0
+      },
+      "independent": {
+        "executed": 3,
+        "failed": 1,
+        "exit_code": 1
+      }
+    },
+    {
+      "subject": "ItsDangerous",
+      "hash_seed": 42,
+      "baseline": {
+        "executed": 3,
+        "failed": 0,
+        "exit_code": 0
+      },
+      "selective": {
+        "executed": 0,
+        "failed": 0,
+        "exit_code": 0
+      },
+      "independent": {
+        "executed": 3,
+        "failed": 1,
+        "exit_code": 1
+      }
+    },
+    {
+      "subject": "Starlette",
+      "hash_seed": 42,
+      "baseline": {
+        "executed": 3,
+        "failed": 0,
+        "exit_code": 0
+      },
+      "selective": {
+        "executed": 0,
+        "failed": 0,
+        "exit_code": 0
+      },
+      "independent": {
+        "executed": 3,
+        "failed": 1,
+        "exit_code": 1
+      }
+    },
+    {
+      "subject": "Requests",
+      "hash_seed": 42,
+      "baseline": {
+        "executed": 3,
+        "failed": 0,
+        "exit_code": 0
+      },
+      "selective": {
+        "executed": 0,
+        "failed": 0,
+        "exit_code": 0
+      },
+      "independent": {
+        "executed": 3,
+        "failed": 1,
+        "exit_code": 1
+      }
+    }
+  ],
+  "local_ordinary_controls": [
+    {
+      "subject": "ItsDangerous",
+      "selective_exit_code": 1
+    },
+    {
+      "subject": "Starlette",
+      "selective_exit_code": 1
+    },
+    {
+      "subject": "Requests",
+      "selective_exit_code": 1
+    }
+  ],
+  "hosted_paired": [
+    {
+      "subject": "ItsDangerous",
+      "condition": "ordinary",
+      "selective": {
+        "executed": 2,
+        "failed": 1,
+        "exit_code": 1
+      },
+      "independent": {
+        "executed": 3,
+        "failed": 1,
+        "exit_code": 1
+      },
+      "merge_control_enabled": false,
+      "reported_merge_state": "blocked",
+      "overall_workflow_conclusion": "failure"
+    },
+    {
+      "subject": "ItsDangerous",
+      "condition": "fingerprint-preserving",
+      "selective": {
+        "executed": 0,
+        "failed": 0,
+        "exit_code": 0
+      },
+      "independent": {
+        "executed": 3,
+        "failed": 1,
+        "exit_code": 1
+      },
+      "merge_control_enabled": true,
+      "reported_merge_state": "unstable",
+      "overall_workflow_conclusion": "failure"
+    },
+    {
+      "subject": "Starlette",
+      "condition": "ordinary",
+      "selective": {
+        "executed": 2,
+        "failed": 1,
+        "exit_code": 1
+      },
+      "independent": {
+        "executed": 3,
+        "failed": 1,
+        "exit_code": 1
+      },
+      "merge_control_enabled": false,
+      "reported_merge_state": "blocked",
+      "overall_workflow_conclusion": "failure"
+    },
+    {
+      "subject": "Starlette",
+      "condition": "fingerprint-preserving",
+      "selective": {
+        "executed": 0,
+        "failed": 0,
+        "exit_code": 0
+      },
+      "independent": {
+        "executed": 3,
+        "failed": 1,
+        "exit_code": 1
+      },
+      "merge_control_enabled": true,
+      "reported_merge_state": "unstable",
+      "overall_workflow_conclusion": "failure"
+    },
+    {
+      "subject": "Requests",
+      "condition": "ordinary",
+      "selective": {
+        "executed": 2,
+        "failed": 1,
+        "exit_code": 1
+      },
+      "independent": {
+        "executed": 3,
+        "failed": 1,
+        "exit_code": 1
+      },
+      "merge_control_enabled": false,
+      "reported_merge_state": "blocked",
+      "overall_workflow_conclusion": "failure"
+    },
+    {
+      "subject": "Requests",
+      "condition": "fingerprint-preserving",
+      "selective": {
+        "executed": 0,
+        "failed": 0,
+        "exit_code": 0
+      },
+      "independent": {
+        "executed": 3,
+        "failed": 1,
+        "exit_code": 1
+      },
+      "merge_control_enabled": true,
+      "reported_merge_state": "unstable",
+      "overall_workflow_conclusion": "failure"
+    }
+  ],
+  "hosted_replay": {
+    "baseline": {
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0
+    },
+    "selective": {
+      "executed": 1,
+      "failed": 0,
+      "exit_code": 0
+    },
+    "independent": {
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1
+    },
+    "diagnostic": {
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1
+    },
+    "structural_change_flagged": true,
+    "required_status": "success",
+    "code_owner_review_in_later_readback": true,
+    "pull_request_state": "closed",
+    "pull_request_merged": false,
+    "failed_jobs": 2
+  },
+  "java_controls": [
+    {
+      "subject": "Controlled Java fixture",
+      "condition": "baseline",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0
+    },
+    {
+      "subject": "Controlled Java fixture",
+      "condition": "unchanged",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0
+    },
+    {
+      "subject": "Controlled Java fixture",
+      "condition": "ordinary",
+      "executed": 2,
+      "failed": 1,
+      "exit_code": 1
+    },
+    {
+      "subject": "Controlled Java fixture",
+      "condition": "fingerprint-preserving",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0
+    },
+    {
+      "subject": "Controlled Java fixture",
+      "condition": "independent",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1
+    },
+    {
+      "subject": "Controlled Java fixture",
+      "condition": "nonempty variant",
+      "executed": 1,
+      "failed": 0,
+      "exit_code": 0
+    },
+    {
+      "subject": "Controlled Java fixture",
+      "condition": "independent nonempty variant",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1
+    },
+    {
+      "subject": "Validator 40-test",
+      "condition": "baseline",
+      "executed": 40,
+      "failed": 0,
+      "exit_code": 0
+    },
+    {
+      "subject": "Validator 40-test",
+      "condition": "unchanged",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0
+    },
+    {
+      "subject": "Validator 40-test",
+      "condition": "ordinary",
+      "executed": 33,
+      "failed": 2,
+      "exit_code": 1
+    },
+    {
+      "subject": "Validator 40-test",
+      "condition": "fingerprint-preserving",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0
+    },
+    {
+      "subject": "Validator 40-test",
+      "condition": "independent",
+      "executed": 40,
+      "failed": 2,
+      "exit_code": 1
+    },
+    {
+      "subject": "Validator 40-test",
+      "condition": "nonempty variant",
+      "executed": 40,
+      "failed": 2,
+      "exit_code": 1
+    },
+    {
+      "subject": "Validator 40-test",
+      "condition": "independent nonempty variant",
+      "executed": 40,
+      "failed": 2,
+      "exit_code": 1
+    },
+    {
+      "subject": "Validator 40-test",
+      "condition": "MD5 baseline",
+      "executed": 40,
+      "failed": 0,
+      "exit_code": 0
+    },
+    {
+      "subject": "Validator 40-test",
+      "condition": "MD5 comparison",
+      "executed": 33,
+      "failed": 2,
+      "exit_code": 1
+    }
+  ],
+  "validator_60": [
+    {
+      "repetition": 1,
+      "baseline": {
+        "executed": 60,
+        "failed": 0,
+        "exit_code": 0
+      },
+      "unchanged": {
+        "executed": 0,
+        "failed": 0,
+        "exit_code": 0
+      },
+      "selective": {
+        "executed": 20,
+        "failed": 0,
+        "exit_code": 0
+      },
+      "independent": {
+        "executed": 60,
+        "failed": 2,
+        "exit_code": 1
+      },
+      "omitted_failing_original_tests": 2
+    },
+    {
+      "repetition": 2,
+      "baseline": {
+        "executed": 60,
+        "failed": 0,
+        "exit_code": 0
+      },
+      "unchanged": {
+        "executed": 0,
+        "failed": 0,
+        "exit_code": 0
+      },
+      "selective": {
+        "executed": 20,
+        "failed": 0,
+        "exit_code": 0
+      },
+      "independent": {
+        "executed": 60,
+        "failed": 2,
+        "exit_code": 1
+      },
+      "omitted_failing_original_tests": 2
+    },
+    {
+      "repetition": 3,
+      "baseline": {
+        "executed": 60,
+        "failed": 0,
+        "exit_code": 0
+      },
+      "unchanged": {
+        "executed": 0,
+        "failed": 0,
+        "exit_code": 0
+      },
+      "selective": {
+        "executed": 20,
+        "failed": 0,
+        "exit_code": 0
+      },
+      "independent": {
+        "executed": 60,
+        "failed": 2,
+        "exit_code": 1
+      },
+      "omitted_failing_original_tests": 2
+    }
+  ],
+  "requests_ordinary": [
+    {
+      "repetition": 1,
+      "baseline": {
+        "executed": 205,
+        "failed": 0,
+        "exit_code": 0,
+        "skipped": 13
+      },
+      "selective": {
+        "executed": 2,
+        "failed": 1,
+        "exit_code": 1,
+        "skipped": 0
+      },
+      "independent": {
+        "executed": 205,
+        "failed": 1,
+        "exit_code": 1,
+        "skipped": 13
+      }
+    },
+    {
+      "repetition": 2,
+      "baseline": {
+        "executed": 205,
+        "failed": 0,
+        "exit_code": 0,
+        "skipped": 13
+      },
+      "selective": {
+        "executed": 2,
+        "failed": 1,
+        "exit_code": 1,
+        "skipped": 0
+      },
+      "independent": {
+        "executed": 205,
+        "failed": 1,
+        "exit_code": 1,
+        "skipped": 13
+      }
+    },
+    {
+      "repetition": 3,
+      "baseline": {
+        "executed": 205,
+        "failed": 0,
+        "exit_code": 0,
+        "skipped": 13
+      },
+      "selective": {
+        "executed": 2,
+        "failed": 1,
+        "exit_code": 1,
+        "skipped": 0
+      },
+      "independent": {
+        "executed": 205,
+        "failed": 1,
+        "exit_code": 1,
+        "skipped": 13
+      }
+    }
+  ],
+  "jest_original": [
+    {
+      "repetition": 1,
+      "baseline": {
+        "executed": 8173,
+        "failed": 0,
+        "exit_code": 0,
+        "skipped": 0
+      },
+      "selective": {
+        "executed": 8,
+        "failed": 0,
+        "exit_code": 0,
+        "skipped": 0
+      },
+      "independent": {
+        "executed": 8173,
+        "failed": 1,
+        "exit_code": 1,
+        "skipped": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "baseline": {
+        "executed": 8173,
+        "failed": 0,
+        "exit_code": 0,
+        "skipped": 0
+      },
+      "selective": {
+        "executed": 8,
+        "failed": 0,
+        "exit_code": 0,
+        "skipped": 0
+      },
+      "independent": {
+        "executed": 8173,
+        "failed": 1,
+        "exit_code": 1,
+        "skipped": 0
+      }
+    },
+    {
+      "repetition": 3,
+      "baseline": {
+        "executed": 8173,
+        "failed": 0,
+        "exit_code": 0,
+        "skipped": 0
+      },
+      "selective": {
+        "executed": 8,
+        "failed": 0,
+        "exit_code": 0,
+        "skipped": 0
+      },
+      "independent": {
+        "executed": 8173,
+        "failed": 1,
+        "exit_code": 1,
+        "skipped": 0
+      }
+    }
+  ],
+  "independent_python": [
+    {
+      "environment": "Windows, additional subject distributions",
+      "subject": "ItsDangerous",
+      "condition": "unchanged",
+      "mode": "default selection",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 3
+    },
+    {
+      "environment": "Windows, additional subject distributions",
+      "subject": "ItsDangerous",
+      "condition": "unchanged",
+      "mode": "fallback enabled",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Windows, additional subject distributions",
+      "subject": "ItsDangerous",
+      "condition": "unchanged",
+      "mode": "independent",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Windows, additional subject distributions",
+      "subject": "ItsDangerous",
+      "condition": "comment-only",
+      "mode": "default selection",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 3
+    },
+    {
+      "environment": "Windows, additional subject distributions",
+      "subject": "ItsDangerous",
+      "condition": "comment-only",
+      "mode": "fallback enabled",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Windows, additional subject distributions",
+      "subject": "ItsDangerous",
+      "condition": "comment-only",
+      "mode": "independent",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Windows, additional subject distributions",
+      "subject": "ItsDangerous",
+      "condition": "ordinary",
+      "mode": "default selection",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 3
+    },
+    {
+      "environment": "Windows, additional subject distributions",
+      "subject": "ItsDangerous",
+      "condition": "ordinary",
+      "mode": "fallback enabled",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Windows, additional subject distributions",
+      "subject": "ItsDangerous",
+      "condition": "ordinary",
+      "mode": "independent",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Windows, additional subject distributions",
+      "subject": "ItsDangerous",
+      "condition": "fingerprint-preserving",
+      "mode": "default selection",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 3
+    },
+    {
+      "environment": "Windows, additional subject distributions",
+      "subject": "ItsDangerous",
+      "condition": "fingerprint-preserving",
+      "mode": "fallback enabled",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Windows, additional subject distributions",
+      "subject": "ItsDangerous",
+      "condition": "fingerprint-preserving",
+      "mode": "independent",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Windows, additional subject distributions",
+      "subject": "Starlette",
+      "condition": "unchanged",
+      "mode": "default selection",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 3
+    },
+    {
+      "environment": "Windows, additional subject distributions",
+      "subject": "Starlette",
+      "condition": "unchanged",
+      "mode": "fallback enabled",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Windows, additional subject distributions",
+      "subject": "Starlette",
+      "condition": "unchanged",
+      "mode": "independent",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Windows, additional subject distributions",
+      "subject": "Starlette",
+      "condition": "comment-only",
+      "mode": "default selection",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 3
+    },
+    {
+      "environment": "Windows, additional subject distributions",
+      "subject": "Starlette",
+      "condition": "comment-only",
+      "mode": "fallback enabled",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Windows, additional subject distributions",
+      "subject": "Starlette",
+      "condition": "comment-only",
+      "mode": "independent",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Windows, additional subject distributions",
+      "subject": "Starlette",
+      "condition": "ordinary",
+      "mode": "default selection",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 3
+    },
+    {
+      "environment": "Windows, additional subject distributions",
+      "subject": "Starlette",
+      "condition": "ordinary",
+      "mode": "fallback enabled",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Windows, additional subject distributions",
+      "subject": "Starlette",
+      "condition": "ordinary",
+      "mode": "independent",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Windows, additional subject distributions",
+      "subject": "Starlette",
+      "condition": "fingerprint-preserving",
+      "mode": "default selection",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 3
+    },
+    {
+      "environment": "Windows, additional subject distributions",
+      "subject": "Starlette",
+      "condition": "fingerprint-preserving",
+      "mode": "fallback enabled",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Windows, additional subject distributions",
+      "subject": "Starlette",
+      "condition": "fingerprint-preserving",
+      "mode": "independent",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Windows, additional subject distributions",
+      "subject": "Requests",
+      "condition": "unchanged",
+      "mode": "default selection",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 3
+    },
+    {
+      "environment": "Windows, additional subject distributions",
+      "subject": "Requests",
+      "condition": "unchanged",
+      "mode": "fallback enabled",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Windows, additional subject distributions",
+      "subject": "Requests",
+      "condition": "unchanged",
+      "mode": "independent",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Windows, additional subject distributions",
+      "subject": "Requests",
+      "condition": "comment-only",
+      "mode": "default selection",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 3
+    },
+    {
+      "environment": "Windows, additional subject distributions",
+      "subject": "Requests",
+      "condition": "comment-only",
+      "mode": "fallback enabled",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Windows, additional subject distributions",
+      "subject": "Requests",
+      "condition": "comment-only",
+      "mode": "independent",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Windows, additional subject distributions",
+      "subject": "Requests",
+      "condition": "ordinary",
+      "mode": "default selection",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 3
+    },
+    {
+      "environment": "Windows, additional subject distributions",
+      "subject": "Requests",
+      "condition": "ordinary",
+      "mode": "fallback enabled",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Windows, additional subject distributions",
+      "subject": "Requests",
+      "condition": "ordinary",
+      "mode": "independent",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Windows, additional subject distributions",
+      "subject": "Requests",
+      "condition": "fingerprint-preserving",
+      "mode": "default selection",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 3
+    },
+    {
+      "environment": "Windows, additional subject distributions",
+      "subject": "Requests",
+      "condition": "fingerprint-preserving",
+      "mode": "fallback enabled",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Windows, additional subject distributions",
+      "subject": "Requests",
+      "condition": "fingerprint-preserving",
+      "mode": "independent",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, additional subject distributions",
+      "subject": "ItsDangerous",
+      "condition": "unchanged",
+      "mode": "default selection",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 3
+    },
+    {
+      "environment": "Ubuntu, additional subject distributions",
+      "subject": "ItsDangerous",
+      "condition": "unchanged",
+      "mode": "fallback enabled",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, additional subject distributions",
+      "subject": "ItsDangerous",
+      "condition": "unchanged",
+      "mode": "independent",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, additional subject distributions",
+      "subject": "ItsDangerous",
+      "condition": "comment-only",
+      "mode": "default selection",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 3
+    },
+    {
+      "environment": "Ubuntu, additional subject distributions",
+      "subject": "ItsDangerous",
+      "condition": "comment-only",
+      "mode": "fallback enabled",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, additional subject distributions",
+      "subject": "ItsDangerous",
+      "condition": "comment-only",
+      "mode": "independent",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, additional subject distributions",
+      "subject": "ItsDangerous",
+      "condition": "ordinary",
+      "mode": "default selection",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 3
+    },
+    {
+      "environment": "Ubuntu, additional subject distributions",
+      "subject": "ItsDangerous",
+      "condition": "ordinary",
+      "mode": "fallback enabled",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, additional subject distributions",
+      "subject": "ItsDangerous",
+      "condition": "ordinary",
+      "mode": "independent",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, additional subject distributions",
+      "subject": "ItsDangerous",
+      "condition": "fingerprint-preserving",
+      "mode": "default selection",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 3
+    },
+    {
+      "environment": "Ubuntu, additional subject distributions",
+      "subject": "ItsDangerous",
+      "condition": "fingerprint-preserving",
+      "mode": "fallback enabled",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, additional subject distributions",
+      "subject": "ItsDangerous",
+      "condition": "fingerprint-preserving",
+      "mode": "independent",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, additional subject distributions",
+      "subject": "Starlette",
+      "condition": "unchanged",
+      "mode": "default selection",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 3
+    },
+    {
+      "environment": "Ubuntu, additional subject distributions",
+      "subject": "Starlette",
+      "condition": "unchanged",
+      "mode": "fallback enabled",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, additional subject distributions",
+      "subject": "Starlette",
+      "condition": "unchanged",
+      "mode": "independent",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, additional subject distributions",
+      "subject": "Starlette",
+      "condition": "comment-only",
+      "mode": "default selection",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 3
+    },
+    {
+      "environment": "Ubuntu, additional subject distributions",
+      "subject": "Starlette",
+      "condition": "comment-only",
+      "mode": "fallback enabled",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, additional subject distributions",
+      "subject": "Starlette",
+      "condition": "comment-only",
+      "mode": "independent",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, additional subject distributions",
+      "subject": "Starlette",
+      "condition": "ordinary",
+      "mode": "default selection",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 3
+    },
+    {
+      "environment": "Ubuntu, additional subject distributions",
+      "subject": "Starlette",
+      "condition": "ordinary",
+      "mode": "fallback enabled",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, additional subject distributions",
+      "subject": "Starlette",
+      "condition": "ordinary",
+      "mode": "independent",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, additional subject distributions",
+      "subject": "Starlette",
+      "condition": "fingerprint-preserving",
+      "mode": "default selection",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 3
+    },
+    {
+      "environment": "Ubuntu, additional subject distributions",
+      "subject": "Starlette",
+      "condition": "fingerprint-preserving",
+      "mode": "fallback enabled",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, additional subject distributions",
+      "subject": "Starlette",
+      "condition": "fingerprint-preserving",
+      "mode": "independent",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, additional subject distributions",
+      "subject": "Requests",
+      "condition": "unchanged",
+      "mode": "default selection",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 3
+    },
+    {
+      "environment": "Ubuntu, additional subject distributions",
+      "subject": "Requests",
+      "condition": "unchanged",
+      "mode": "fallback enabled",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, additional subject distributions",
+      "subject": "Requests",
+      "condition": "unchanged",
+      "mode": "independent",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, additional subject distributions",
+      "subject": "Requests",
+      "condition": "comment-only",
+      "mode": "default selection",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 3
+    },
+    {
+      "environment": "Ubuntu, additional subject distributions",
+      "subject": "Requests",
+      "condition": "comment-only",
+      "mode": "fallback enabled",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, additional subject distributions",
+      "subject": "Requests",
+      "condition": "comment-only",
+      "mode": "independent",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, additional subject distributions",
+      "subject": "Requests",
+      "condition": "ordinary",
+      "mode": "default selection",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 3
+    },
+    {
+      "environment": "Ubuntu, additional subject distributions",
+      "subject": "Requests",
+      "condition": "ordinary",
+      "mode": "fallback enabled",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, additional subject distributions",
+      "subject": "Requests",
+      "condition": "ordinary",
+      "mode": "independent",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, additional subject distributions",
+      "subject": "Requests",
+      "condition": "fingerprint-preserving",
+      "mode": "default selection",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 3
+    },
+    {
+      "environment": "Ubuntu, additional subject distributions",
+      "subject": "Requests",
+      "condition": "fingerprint-preserving",
+      "mode": "fallback enabled",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, additional subject distributions",
+      "subject": "Requests",
+      "condition": "fingerprint-preserving",
+      "mode": "independent",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, copied subjects only",
+      "subject": "ItsDangerous",
+      "condition": "unchanged",
+      "mode": "default selection",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 3
+    },
+    {
+      "environment": "Ubuntu, copied subjects only",
+      "subject": "ItsDangerous",
+      "condition": "unchanged",
+      "mode": "fallback enabled",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, copied subjects only",
+      "subject": "ItsDangerous",
+      "condition": "unchanged",
+      "mode": "independent",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, copied subjects only",
+      "subject": "ItsDangerous",
+      "condition": "comment-only",
+      "mode": "default selection",
+      "executed": 2,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, copied subjects only",
+      "subject": "ItsDangerous",
+      "condition": "comment-only",
+      "mode": "fallback enabled",
+      "executed": 2,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, copied subjects only",
+      "subject": "ItsDangerous",
+      "condition": "comment-only",
+      "mode": "independent",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, copied subjects only",
+      "subject": "ItsDangerous",
+      "condition": "ordinary",
+      "mode": "default selection",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 3
+    },
+    {
+      "environment": "Ubuntu, copied subjects only",
+      "subject": "ItsDangerous",
+      "condition": "ordinary",
+      "mode": "fallback enabled",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, copied subjects only",
+      "subject": "ItsDangerous",
+      "condition": "ordinary",
+      "mode": "independent",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, copied subjects only",
+      "subject": "ItsDangerous",
+      "condition": "fingerprint-preserving",
+      "mode": "default selection",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 3
+    },
+    {
+      "environment": "Ubuntu, copied subjects only",
+      "subject": "ItsDangerous",
+      "condition": "fingerprint-preserving",
+      "mode": "fallback enabled",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, copied subjects only",
+      "subject": "ItsDangerous",
+      "condition": "fingerprint-preserving",
+      "mode": "independent",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, copied subjects only",
+      "subject": "Starlette",
+      "condition": "unchanged",
+      "mode": "default selection",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 3
+    },
+    {
+      "environment": "Ubuntu, copied subjects only",
+      "subject": "Starlette",
+      "condition": "unchanged",
+      "mode": "fallback enabled",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, copied subjects only",
+      "subject": "Starlette",
+      "condition": "unchanged",
+      "mode": "independent",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, copied subjects only",
+      "subject": "Starlette",
+      "condition": "comment-only",
+      "mode": "default selection",
+      "executed": 2,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, copied subjects only",
+      "subject": "Starlette",
+      "condition": "comment-only",
+      "mode": "fallback enabled",
+      "executed": 2,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, copied subjects only",
+      "subject": "Starlette",
+      "condition": "comment-only",
+      "mode": "independent",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, copied subjects only",
+      "subject": "Starlette",
+      "condition": "ordinary",
+      "mode": "default selection",
+      "executed": 2,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, copied subjects only",
+      "subject": "Starlette",
+      "condition": "ordinary",
+      "mode": "fallback enabled",
+      "executed": 2,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, copied subjects only",
+      "subject": "Starlette",
+      "condition": "ordinary",
+      "mode": "independent",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, copied subjects only",
+      "subject": "Starlette",
+      "condition": "fingerprint-preserving",
+      "mode": "default selection",
+      "executed": 2,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, copied subjects only",
+      "subject": "Starlette",
+      "condition": "fingerprint-preserving",
+      "mode": "fallback enabled",
+      "executed": 2,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, copied subjects only",
+      "subject": "Starlette",
+      "condition": "fingerprint-preserving",
+      "mode": "independent",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, copied subjects only",
+      "subject": "Requests",
+      "condition": "unchanged",
+      "mode": "default selection",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 3
+    },
+    {
+      "environment": "Ubuntu, copied subjects only",
+      "subject": "Requests",
+      "condition": "unchanged",
+      "mode": "fallback enabled",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, copied subjects only",
+      "subject": "Requests",
+      "condition": "unchanged",
+      "mode": "independent",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, copied subjects only",
+      "subject": "Requests",
+      "condition": "comment-only",
+      "mode": "default selection",
+      "executed": 2,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, copied subjects only",
+      "subject": "Requests",
+      "condition": "comment-only",
+      "mode": "fallback enabled",
+      "executed": 2,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, copied subjects only",
+      "subject": "Requests",
+      "condition": "comment-only",
+      "mode": "independent",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, copied subjects only",
+      "subject": "Requests",
+      "condition": "ordinary",
+      "mode": "default selection",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 3
+    },
+    {
+      "environment": "Ubuntu, copied subjects only",
+      "subject": "Requests",
+      "condition": "ordinary",
+      "mode": "fallback enabled",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, copied subjects only",
+      "subject": "Requests",
+      "condition": "ordinary",
+      "mode": "independent",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, copied subjects only",
+      "subject": "Requests",
+      "condition": "fingerprint-preserving",
+      "mode": "default selection",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0,
+      "skipped": 3
+    },
+    {
+      "environment": "Ubuntu, copied subjects only",
+      "subject": "Requests",
+      "condition": "fingerprint-preserving",
+      "mode": "fallback enabled",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    },
+    {
+      "environment": "Ubuntu, copied subjects only",
+      "subject": "Requests",
+      "condition": "fingerprint-preserving",
+      "mode": "independent",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "skipped": 0
+    }
+  ],
+  "feasibility_pilot": [
+    {
+      "subject": "Click",
+      "baseline_executed": 8,
+      "unchanged_executed": 8
+    },
+    {
+      "subject": "Commons Codec",
+      "baseline_executed": null,
+      "unchanged_executed": null
+    },
+    {
+      "subject": "Commons IO",
+      "baseline_executed": 130,
+      "unchanged_executed": 130
+    },
+    {
+      "subject": "Commons Lang",
+      "baseline_executed": null,
+      "unchanged_executed": null
+    },
+    {
+      "subject": "Commons Text",
+      "baseline_executed": 2,
+      "unchanged_executed": 2
+    },
+    {
+      "subject": "Commons Validator",
+      "baseline_executed": null,
+      "unchanged_executed": null
+    },
+    {
+      "subject": "ItsDangerous",
+      "baseline_executed": 8,
+      "unchanged_executed": 0
+    },
+    {
+      "subject": "Requests",
+      "baseline_executed": 1,
+      "unchanged_executed": 0
+    },
+    {
+      "subject": "Starlette",
+      "baseline_executed": null,
+      "unchanged_executed": null
+    },
+    {
+      "subject": "urllib3",
+      "baseline_executed": null,
+      "unchanged_executed": null
+    }
+  ],
+  "configuration_audits": {
+    "search_ranked": [
+      {
+        "language": "python",
+        "row": 1,
+        "indexed_selector_mentions": 0,
+        "has_workflow_path": true
+      },
+      {
+        "language": "python",
+        "row": 2,
+        "indexed_selector_mentions": 0,
+        "has_workflow_path": false
+      },
+      {
+        "language": "python",
+        "row": 3,
+        "indexed_selector_mentions": 0,
+        "has_workflow_path": true
+      },
+      {
+        "language": "python",
+        "row": 4,
+        "indexed_selector_mentions": 0,
+        "has_workflow_path": true
+      },
+      {
+        "language": "python",
+        "row": 5,
+        "indexed_selector_mentions": 0,
+        "has_workflow_path": true
+      },
+      {
+        "language": "python",
+        "row": 6,
+        "indexed_selector_mentions": 0,
+        "has_workflow_path": false
+      },
+      {
+        "language": "python",
+        "row": 7,
+        "indexed_selector_mentions": 0,
+        "has_workflow_path": true
+      },
+      {
+        "language": "python",
+        "row": 8,
+        "indexed_selector_mentions": 0,
+        "has_workflow_path": true
+      },
+      {
+        "language": "python",
+        "row": 9,
+        "indexed_selector_mentions": 0,
+        "has_workflow_path": true
+      },
+      {
+        "language": "python",
+        "row": 10,
+        "indexed_selector_mentions": 0,
+        "has_workflow_path": false
+      },
+      {
+        "language": "python",
+        "row": 11,
+        "indexed_selector_mentions": 0,
+        "has_workflow_path": true
+      },
+      {
+        "language": "python",
+        "row": 12,
+        "indexed_selector_mentions": 0,
+        "has_workflow_path": true
+      },
+      {
+        "language": "java",
+        "row": 1,
+        "indexed_selector_mentions": 0,
+        "has_workflow_path": true
+      },
+      {
+        "language": "java",
+        "row": 2,
+        "indexed_selector_mentions": 0,
+        "has_workflow_path": true
+      },
+      {
+        "language": "java",
+        "row": 3,
+        "indexed_selector_mentions": 0,
+        "has_workflow_path": true
+      },
+      {
+        "language": "java",
+        "row": 4,
+        "indexed_selector_mentions": 0,
+        "has_workflow_path": false
+      },
+      {
+        "language": "java",
+        "row": 5,
+        "indexed_selector_mentions": 0,
+        "has_workflow_path": true
+      },
+      {
+        "language": "java",
+        "row": 6,
+        "indexed_selector_mentions": 0,
+        "has_workflow_path": true
+      },
+      {
+        "language": "java",
+        "row": 7,
+        "indexed_selector_mentions": 0,
+        "has_workflow_path": true
+      },
+      {
+        "language": "java",
+        "row": 8,
+        "indexed_selector_mentions": 0,
+        "has_workflow_path": true
+      },
+      {
+        "language": "java",
+        "row": 9,
+        "indexed_selector_mentions": 0,
+        "has_workflow_path": true
+      },
+      {
+        "language": "java",
+        "row": 10,
+        "indexed_selector_mentions": 0,
+        "has_workflow_path": true
+      },
+      {
+        "language": "java",
+        "row": 11,
+        "indexed_selector_mentions": 0,
+        "has_workflow_path": true
+      },
+      {
+        "language": "java",
+        "row": 12,
+        "indexed_selector_mentions": 0,
+        "has_workflow_path": false
+      }
+    ],
+    "apache_commons": [
+      {
+        "row": 1,
+        "optional_ekstazi_profile": false
+      },
+      {
+        "row": 2,
+        "optional_ekstazi_profile": false
+      },
+      {
+        "row": 3,
+        "optional_ekstazi_profile": false
+      },
+      {
+        "row": 4,
+        "optional_ekstazi_profile": false
+      },
+      {
+        "row": 5,
+        "optional_ekstazi_profile": false
+      },
+      {
+        "row": 6,
+        "optional_ekstazi_profile": false
+      },
+      {
+        "row": 7,
+        "optional_ekstazi_profile": false
+      },
+      {
+        "row": 8,
+        "optional_ekstazi_profile": false
+      },
+      {
+        "row": 9,
+        "optional_ekstazi_profile": false
+      },
+      {
+        "row": 10,
+        "optional_ekstazi_profile": false
+      },
+      {
+        "row": 11,
+        "optional_ekstazi_profile": false
+      },
+      {
+        "row": 12,
+        "optional_ekstazi_profile": false
+      },
+      {
+        "row": 13,
+        "optional_ekstazi_profile": false
+      },
+      {
+        "row": 14,
+        "optional_ekstazi_profile": false
+      },
+      {
+        "row": 15,
+        "optional_ekstazi_profile": false
+      },
+      {
+        "row": 16,
+        "optional_ekstazi_profile": false
+      },
+      {
+        "row": 17,
+        "optional_ekstazi_profile": true
+      },
+      {
+        "row": 18,
+        "optional_ekstazi_profile": true
+      },
+      {
+        "row": 19,
+        "optional_ekstazi_profile": false
+      },
+      {
+        "row": 20,
+        "optional_ekstazi_profile": false
+      }
+    ]
+  },
+  "local_guard": [
+    {
+      "subject": "ItsDangerous",
+      "condition": "fingerprint-preserving",
+      "flagged": true,
+      "fallback_executed": 3,
+      "fallback_exit_code": 1,
+      "regression_detected": true
+    },
+    {
+      "subject": "Starlette",
+      "condition": "fingerprint-preserving",
+      "flagged": true,
+      "fallback_executed": 3,
+      "fallback_exit_code": 1,
+      "regression_detected": true
+    },
+    {
+      "subject": "Requests",
+      "condition": "fingerprint-preserving",
+      "flagged": true,
+      "fallback_executed": 3,
+      "fallback_exit_code": 1,
+      "regression_detected": true
+    },
+    {
+      "subject": "ItsDangerous",
+      "condition": "comment-only",
+      "flagged": false
+    },
+    {
+      "subject": "Starlette",
+      "condition": "comment-only",
+      "flagged": false
+    },
+    {
+      "subject": "Requests",
+      "condition": "comment-only",
+      "flagged": false
+    }
+  ],
+  "static_guard": [
+    {
+      "row": 1,
+      "condition": "empty-selection",
+      "file_flagged": true,
+      "block_flagged": true
+    },
+    {
+      "row": 2,
+      "condition": "ordinary-regression",
+      "file_flagged": false,
+      "block_flagged": false
+    },
+    {
+      "row": 3,
+      "condition": "comment-only",
+      "file_flagged": false,
+      "block_flagged": false
+    },
+    {
+      "row": 4,
+      "condition": "empty-selection",
+      "file_flagged": true,
+      "block_flagged": true
+    },
+    {
+      "row": 5,
+      "condition": "ordinary-regression",
+      "file_flagged": false,
+      "block_flagged": false
+    },
+    {
+      "row": 6,
+      "condition": "comment-only",
+      "file_flagged": false,
+      "block_flagged": false
+    },
+    {
+      "row": 7,
+      "condition": "empty-selection",
+      "file_flagged": true,
+      "block_flagged": true
+    },
+    {
+      "row": 8,
+      "condition": "ordinary-regression",
+      "file_flagged": false,
+      "block_flagged": false
+    },
+    {
+      "row": 9,
+      "condition": "comment-only",
+      "file_flagged": false,
+      "block_flagged": false
+    },
+    {
+      "row": 10,
+      "condition": "hosted-nonempty",
+      "file_flagged": false,
+      "block_flagged": true
+    }
+  ],
+  "validator_raw_digests_differ": true,
+  "recorded_seconds": {
+    "Java fixture construction stage": 12.3783,
+    "Validator construction stage": 11.7938,
+    "Hosted replay selective process": 0.743413,
+    "Hosted replay independent process": 0.665662,
+    "Hosted replay AST scan": 0.023007
+  },
+  "metadata_comparisons": [
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "No metadata fault",
+      "repetition": 1,
+      "strategy": "Standard RTS",
+      "executed": 3,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "No metadata fault",
+      "repetition": 1,
+      "strategy": "Manifest-verified escalation",
+      "executed": 3,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "No metadata fault",
+      "repetition": 1,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "Missing dependency record",
+      "repetition": 1,
+      "strategy": "Standard RTS",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "Missing dependency record",
+      "repetition": 1,
+      "strategy": "Manifest-verified escalation",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "Missing dependency record",
+      "repetition": 1,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "Empty dependency record",
+      "repetition": 1,
+      "strategy": "Standard RTS",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "Empty dependency record",
+      "repetition": 1,
+      "strategy": "Manifest-verified escalation",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "Empty dependency record",
+      "repetition": 1,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "Truncated dependency record",
+      "repetition": 1,
+      "strategy": "Standard RTS",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 3,
+      "detecting_failure": false,
+      "runner_error": true,
+      "fallback": false
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "Truncated dependency record",
+      "repetition": 1,
+      "strategy": "Manifest-verified escalation",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "Truncated dependency record",
+      "repetition": 1,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "Invalid dependency record",
+      "repetition": 1,
+      "strategy": "Standard RTS",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 3,
+      "detecting_failure": false,
+      "runner_error": true,
+      "fallback": false
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "Invalid dependency record",
+      "repetition": 1,
+      "strategy": "Manifest-verified escalation",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "Invalid dependency record",
+      "repetition": 1,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "No metadata fault",
+      "repetition": 2,
+      "strategy": "Standard RTS",
+      "executed": 3,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "No metadata fault",
+      "repetition": 2,
+      "strategy": "Manifest-verified escalation",
+      "executed": 3,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "No metadata fault",
+      "repetition": 2,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "Missing dependency record",
+      "repetition": 2,
+      "strategy": "Standard RTS",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "Missing dependency record",
+      "repetition": 2,
+      "strategy": "Manifest-verified escalation",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "Missing dependency record",
+      "repetition": 2,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "Empty dependency record",
+      "repetition": 2,
+      "strategy": "Standard RTS",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "Empty dependency record",
+      "repetition": 2,
+      "strategy": "Manifest-verified escalation",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "Empty dependency record",
+      "repetition": 2,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "Truncated dependency record",
+      "repetition": 2,
+      "strategy": "Standard RTS",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 3,
+      "detecting_failure": false,
+      "runner_error": true,
+      "fallback": false
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "Truncated dependency record",
+      "repetition": 2,
+      "strategy": "Manifest-verified escalation",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "Truncated dependency record",
+      "repetition": 2,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "Invalid dependency record",
+      "repetition": 2,
+      "strategy": "Standard RTS",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 3,
+      "detecting_failure": false,
+      "runner_error": true,
+      "fallback": false
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "Invalid dependency record",
+      "repetition": 2,
+      "strategy": "Manifest-verified escalation",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "Invalid dependency record",
+      "repetition": 2,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "No metadata fault",
+      "repetition": 3,
+      "strategy": "Standard RTS",
+      "executed": 3,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "No metadata fault",
+      "repetition": 3,
+      "strategy": "Manifest-verified escalation",
+      "executed": 3,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "No metadata fault",
+      "repetition": 3,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "Missing dependency record",
+      "repetition": 3,
+      "strategy": "Standard RTS",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "Missing dependency record",
+      "repetition": 3,
+      "strategy": "Manifest-verified escalation",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "Missing dependency record",
+      "repetition": 3,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "Empty dependency record",
+      "repetition": 3,
+      "strategy": "Standard RTS",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "Empty dependency record",
+      "repetition": 3,
+      "strategy": "Manifest-verified escalation",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "Empty dependency record",
+      "repetition": 3,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "Truncated dependency record",
+      "repetition": 3,
+      "strategy": "Standard RTS",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 3,
+      "detecting_failure": false,
+      "runner_error": true,
+      "fallback": false
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "Truncated dependency record",
+      "repetition": 3,
+      "strategy": "Manifest-verified escalation",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "Truncated dependency record",
+      "repetition": 3,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "Invalid dependency record",
+      "repetition": 3,
+      "strategy": "Standard RTS",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 3,
+      "detecting_failure": false,
+      "runner_error": true,
+      "fallback": false
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "Invalid dependency record",
+      "repetition": 3,
+      "strategy": "Manifest-verified escalation",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Native testmon",
+      "subject": "Synthetic Python fixture",
+      "condition": "Invalid dependency record",
+      "repetition": 3,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Missing cache",
+      "repetition": 1,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Empty dependency record",
+      "repetition": 1,
+      "strategy": "Standard RTS",
+      "executed": 3,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Unexpected metadata record",
+      "repetition": 1,
+      "strategy": "Manifest-verified escalation",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Invalid dependency record",
+      "repetition": 1,
+      "strategy": "Standard RTS",
+      "executed": 3,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Unexpected metadata record",
+      "repetition": 1,
+      "strategy": "Standard RTS",
+      "executed": 3,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Truncated dependency record",
+      "repetition": 1,
+      "strategy": "Standard RTS",
+      "executed": 3,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Changed declared provenance label",
+      "repetition": 1,
+      "strategy": "Manifest-verified escalation",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "No metadata fault",
+      "repetition": 1,
+      "strategy": "Manifest-verified escalation",
+      "executed": 3,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Missing cache",
+      "repetition": 1,
+      "strategy": "Manifest-verified escalation",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Changed declared provenance label",
+      "repetition": 1,
+      "strategy": "Standard RTS",
+      "executed": 3,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Missing cache",
+      "repetition": 1,
+      "strategy": "Standard RTS",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Missing dependency record",
+      "repetition": 1,
+      "strategy": "Manifest-verified escalation",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Invalid dependency record",
+      "repetition": 1,
+      "strategy": "Manifest-verified escalation",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Empty dependency record",
+      "repetition": 1,
+      "strategy": "Manifest-verified escalation",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "No metadata fault",
+      "repetition": 1,
+      "strategy": "Standard RTS",
+      "executed": 3,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "No metadata fault",
+      "repetition": 1,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Unexpected metadata record",
+      "repetition": 1,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Missing dependency record",
+      "repetition": 1,
+      "strategy": "Standard RTS",
+      "executed": 3,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Truncated dependency record",
+      "repetition": 1,
+      "strategy": "Manifest-verified escalation",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Changed declared provenance label",
+      "repetition": 1,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Missing dependency record",
+      "repetition": 1,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Truncated dependency record",
+      "repetition": 1,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Empty dependency record",
+      "repetition": 1,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Invalid dependency record",
+      "repetition": 1,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "No metadata fault",
+      "repetition": 2,
+      "strategy": "Manifest-verified escalation",
+      "executed": 3,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Missing cache",
+      "repetition": 2,
+      "strategy": "Standard RTS",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Missing dependency record",
+      "repetition": 2,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Invalid dependency record",
+      "repetition": 2,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Missing dependency record",
+      "repetition": 2,
+      "strategy": "Manifest-verified escalation",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "No metadata fault",
+      "repetition": 2,
+      "strategy": "Standard RTS",
+      "executed": 3,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Truncated dependency record",
+      "repetition": 2,
+      "strategy": "Standard RTS",
+      "executed": 3,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Changed declared provenance label",
+      "repetition": 2,
+      "strategy": "Standard RTS",
+      "executed": 3,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Changed declared provenance label",
+      "repetition": 2,
+      "strategy": "Manifest-verified escalation",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Truncated dependency record",
+      "repetition": 2,
+      "strategy": "Manifest-verified escalation",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Unexpected metadata record",
+      "repetition": 2,
+      "strategy": "Standard RTS",
+      "executed": 3,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Empty dependency record",
+      "repetition": 2,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Missing cache",
+      "repetition": 2,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Unexpected metadata record",
+      "repetition": 2,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "No metadata fault",
+      "repetition": 2,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Truncated dependency record",
+      "repetition": 2,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Invalid dependency record",
+      "repetition": 2,
+      "strategy": "Manifest-verified escalation",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Unexpected metadata record",
+      "repetition": 2,
+      "strategy": "Manifest-verified escalation",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Missing dependency record",
+      "repetition": 2,
+      "strategy": "Standard RTS",
+      "executed": 3,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Empty dependency record",
+      "repetition": 2,
+      "strategy": "Manifest-verified escalation",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Invalid dependency record",
+      "repetition": 2,
+      "strategy": "Standard RTS",
+      "executed": 3,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Changed declared provenance label",
+      "repetition": 2,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Missing cache",
+      "repetition": 2,
+      "strategy": "Manifest-verified escalation",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Empty dependency record",
+      "repetition": 2,
+      "strategy": "Standard RTS",
+      "executed": 3,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Truncated dependency record",
+      "repetition": 3,
+      "strategy": "Manifest-verified escalation",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Truncated dependency record",
+      "repetition": 3,
+      "strategy": "Standard RTS",
+      "executed": 3,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Changed declared provenance label",
+      "repetition": 3,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Invalid dependency record",
+      "repetition": 3,
+      "strategy": "Standard RTS",
+      "executed": 3,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Empty dependency record",
+      "repetition": 3,
+      "strategy": "Manifest-verified escalation",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Missing dependency record",
+      "repetition": 3,
+      "strategy": "Standard RTS",
+      "executed": 3,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Missing cache",
+      "repetition": 3,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Unexpected metadata record",
+      "repetition": 3,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Missing cache",
+      "repetition": 3,
+      "strategy": "Standard RTS",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Unexpected metadata record",
+      "repetition": 3,
+      "strategy": "Standard RTS",
+      "executed": 3,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Empty dependency record",
+      "repetition": 3,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Invalid dependency record",
+      "repetition": 3,
+      "strategy": "Manifest-verified escalation",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Empty dependency record",
+      "repetition": 3,
+      "strategy": "Standard RTS",
+      "executed": 3,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Unexpected metadata record",
+      "repetition": 3,
+      "strategy": "Manifest-verified escalation",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "No metadata fault",
+      "repetition": 3,
+      "strategy": "Manifest-verified escalation",
+      "executed": 3,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Changed declared provenance label",
+      "repetition": 3,
+      "strategy": "Standard RTS",
+      "executed": 3,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Missing cache",
+      "repetition": 3,
+      "strategy": "Manifest-verified escalation",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "No metadata fault",
+      "repetition": 3,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Invalid dependency record",
+      "repetition": 3,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Changed declared provenance label",
+      "repetition": 3,
+      "strategy": "Manifest-verified escalation",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Truncated dependency record",
+      "repetition": 3,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Missing dependency record",
+      "repetition": 3,
+      "strategy": "Manifest-verified escalation",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "No metadata fault",
+      "repetition": 3,
+      "strategy": "Standard RTS",
+      "executed": 3,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "subject": "Synthetic Java fixture",
+      "condition": "Missing dependency record",
+      "repetition": 3,
+      "strategy": "Unconditional complete oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons CLI",
+      "condition": "No metadata fault",
+      "repetition": 1,
+      "strategy": "Standard RTS",
+      "executed": 2,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons CLI",
+      "condition": "No metadata fault",
+      "repetition": 1,
+      "strategy": "Manifest-verified escalation",
+      "executed": 2,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons CLI",
+      "condition": "No metadata fault",
+      "repetition": 1,
+      "strategy": "Unconditional complete oracle",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons CLI",
+      "condition": "Missing dependency record",
+      "repetition": 1,
+      "strategy": "Standard RTS",
+      "executed": 2,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons CLI",
+      "condition": "Missing dependency record",
+      "repetition": 1,
+      "strategy": "Manifest-verified escalation",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons CLI",
+      "condition": "Missing dependency record",
+      "repetition": 1,
+      "strategy": "Unconditional complete oracle",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons CLI",
+      "condition": "Truncated dependency record",
+      "repetition": 1,
+      "strategy": "Standard RTS",
+      "executed": 2,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons CLI",
+      "condition": "Truncated dependency record",
+      "repetition": 1,
+      "strategy": "Manifest-verified escalation",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons CLI",
+      "condition": "Truncated dependency record",
+      "repetition": 1,
+      "strategy": "Unconditional complete oracle",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons CSV",
+      "condition": "No metadata fault",
+      "repetition": 1,
+      "strategy": "Standard RTS",
+      "executed": 2,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons CSV",
+      "condition": "No metadata fault",
+      "repetition": 1,
+      "strategy": "Manifest-verified escalation",
+      "executed": 2,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons CSV",
+      "condition": "No metadata fault",
+      "repetition": 1,
+      "strategy": "Unconditional complete oracle",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons CSV",
+      "condition": "Missing dependency record",
+      "repetition": 1,
+      "strategy": "Standard RTS",
+      "executed": 2,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons CSV",
+      "condition": "Missing dependency record",
+      "repetition": 1,
+      "strategy": "Manifest-verified escalation",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons CSV",
+      "condition": "Missing dependency record",
+      "repetition": 1,
+      "strategy": "Unconditional complete oracle",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons CSV",
+      "condition": "Truncated dependency record",
+      "repetition": 1,
+      "strategy": "Standard RTS",
+      "executed": 2,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons CSV",
+      "condition": "Truncated dependency record",
+      "repetition": 1,
+      "strategy": "Manifest-verified escalation",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons CSV",
+      "condition": "Truncated dependency record",
+      "repetition": 1,
+      "strategy": "Unconditional complete oracle",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons Codec",
+      "condition": "No metadata fault",
+      "repetition": 1,
+      "strategy": "Standard RTS",
+      "executed": 2,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons Codec",
+      "condition": "No metadata fault",
+      "repetition": 1,
+      "strategy": "Manifest-verified escalation",
+      "executed": 2,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons Codec",
+      "condition": "No metadata fault",
+      "repetition": 1,
+      "strategy": "Unconditional complete oracle",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons Codec",
+      "condition": "Missing dependency record",
+      "repetition": 1,
+      "strategy": "Standard RTS",
+      "executed": 2,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons Codec",
+      "condition": "Missing dependency record",
+      "repetition": 1,
+      "strategy": "Manifest-verified escalation",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons Codec",
+      "condition": "Missing dependency record",
+      "repetition": 1,
+      "strategy": "Unconditional complete oracle",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons Codec",
+      "condition": "Truncated dependency record",
+      "repetition": 1,
+      "strategy": "Standard RTS",
+      "executed": 2,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons Codec",
+      "condition": "Truncated dependency record",
+      "repetition": 1,
+      "strategy": "Manifest-verified escalation",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons Codec",
+      "condition": "Truncated dependency record",
+      "repetition": 1,
+      "strategy": "Unconditional complete oracle",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons IO",
+      "condition": "No metadata fault",
+      "repetition": 1,
+      "strategy": "Standard RTS",
+      "executed": 2,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons IO",
+      "condition": "No metadata fault",
+      "repetition": 1,
+      "strategy": "Manifest-verified escalation",
+      "executed": 2,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons IO",
+      "condition": "No metadata fault",
+      "repetition": 1,
+      "strategy": "Unconditional complete oracle",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons IO",
+      "condition": "Missing dependency record",
+      "repetition": 1,
+      "strategy": "Standard RTS",
+      "executed": 2,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons IO",
+      "condition": "Missing dependency record",
+      "repetition": 1,
+      "strategy": "Manifest-verified escalation",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons IO",
+      "condition": "Missing dependency record",
+      "repetition": 1,
+      "strategy": "Unconditional complete oracle",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons IO",
+      "condition": "Truncated dependency record",
+      "repetition": 1,
+      "strategy": "Standard RTS",
+      "executed": 2,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons IO",
+      "condition": "Truncated dependency record",
+      "repetition": 1,
+      "strategy": "Manifest-verified escalation",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons IO",
+      "condition": "Truncated dependency record",
+      "repetition": 1,
+      "strategy": "Unconditional complete oracle",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons Lang",
+      "condition": "No metadata fault",
+      "repetition": 1,
+      "strategy": "Standard RTS",
+      "executed": 2,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons Lang",
+      "condition": "No metadata fault",
+      "repetition": 1,
+      "strategy": "Manifest-verified escalation",
+      "executed": 2,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons Lang",
+      "condition": "No metadata fault",
+      "repetition": 1,
+      "strategy": "Unconditional complete oracle",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons Lang",
+      "condition": "Missing dependency record",
+      "repetition": 1,
+      "strategy": "Standard RTS",
+      "executed": 2,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons Lang",
+      "condition": "Missing dependency record",
+      "repetition": 1,
+      "strategy": "Manifest-verified escalation",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons Lang",
+      "condition": "Missing dependency record",
+      "repetition": 1,
+      "strategy": "Unconditional complete oracle",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons Lang",
+      "condition": "Truncated dependency record",
+      "repetition": 1,
+      "strategy": "Standard RTS",
+      "executed": 2,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons Lang",
+      "condition": "Truncated dependency record",
+      "repetition": 1,
+      "strategy": "Manifest-verified escalation",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": true
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons Lang",
+      "condition": "Truncated dependency record",
+      "repetition": 1,
+      "strategy": "Unconditional complete oracle",
+      "executed": 3,
+      "failed": 1,
+      "exit_code": 1,
+      "detecting_failure": true,
+      "runner_error": false,
+      "fallback": false
+    }
+  ],
+  "metadata_controls": [
+    {
+      "cohort": "Native testmon",
+      "control": "cold baseline",
+      "executed": 4,
+      "failed": 0,
+      "exit_code": 0
+    },
+    {
+      "cohort": "Native testmon",
+      "control": "warm unchanged",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0
+    },
+    {
+      "cohort": "Native testmon",
+      "control": "full baseline",
+      "executed": 4,
+      "failed": 0,
+      "exit_code": 0
+    },
+    {
+      "cohort": "Native testmon",
+      "control": "full changed oracle",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons CLI",
+      "control": "cold baseline",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons CLI",
+      "control": "warm baseline",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons CLI",
+      "control": "full baseline",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons CSV",
+      "control": "cold baseline",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons CSV",
+      "control": "warm baseline",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons CSV",
+      "control": "full baseline",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons Codec",
+      "control": "cold baseline",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons Codec",
+      "control": "warm baseline",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons Codec",
+      "control": "full baseline",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons IO",
+      "control": "cold baseline",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons IO",
+      "control": "warm baseline",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons IO",
+      "control": "full baseline",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons Lang",
+      "control": "cold baseline",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons Lang",
+      "control": "warm baseline",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0
+    },
+    {
+      "cohort": "Java library wrappers",
+      "subject": "Commons Lang",
+      "control": "full baseline",
+      "executed": 3,
+      "failed": 0,
+      "exit_code": 0
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "control": "cold",
+      "executed": 4,
+      "failed": 0,
+      "exit_code": 0
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "control": "warm",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "control": "baseline full",
+      "executed": 4,
+      "failed": 0,
+      "exit_code": 0
+    },
+    {
+      "cohort": "Native Ekstazi",
+      "control": "changed full",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1
+    },
+    {
+      "cohort": "Maven integration",
+      "control": "cold",
+      "executed": 4,
+      "failed": 0,
+      "exit_code": 0
+    },
+    {
+      "cohort": "Maven integration",
+      "control": "warm",
+      "executed": 0,
+      "failed": 0,
+      "exit_code": 0
+    },
+    {
+      "cohort": "Maven integration",
+      "control": "ordinary change",
+      "executed": 3,
+      "failed": 2,
+      "exit_code": 1
+    },
+    {
+      "cohort": "Maven integration",
+      "control": "changed full",
+      "executed": 4,
+      "failed": 2,
+      "exit_code": 1
+    }
+  ]
+}
