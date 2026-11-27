@@ -1,0 +1,34 @@
+{
+  "events": [
+    {
+      "event": "hosted_workflow",
+      "started_at_utc": "2026-11-09T07:13:34Z",
+      "final_record_updated_at_utc": "2026-11-09T07:14:00Z",
+      "workflow_conclusion": "failure",
+      "selective_check": {
+        "reported_status": "success",
+        "executed": 1,
+        "failed": 0,
+        "exit_code": 0
+      },
+      "independent_run": {
+        "job_conclusion": "failure",
+        "executed": 3,
+        "failed": 1,
+        "exit_code": 1
+      }
+    },
+    {
+      "event": "pull_request_closed",
+      "closed_at_utc": "2026-11-09T07:16:00Z",
+      "state": "closed",
+      "merged": false
+    },
+    {
+      "event": "later_branch_protection_readback",
+      "verification_date": "2026-11-11",
+      "required_approving_reviews": 1,
+      "code_owner_review_required": true
+    }
+  ]
+}

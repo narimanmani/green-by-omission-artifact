@@ -4,7 +4,7 @@ Reviewer evidence for the SECUTE manuscript, revision `068d134d169b592d9e9158c8d
 
 ## Verify the results
 
-Extract the three files into the same directory. Run the following command with Python 3.8 or later.
+Extract the ZIP. From the extracted directory, run the following command with Python 3.8 or later.
 
 ```text
 python verify_results.py
@@ -26,6 +26,11 @@ The script reads `observations.json`, rebuilds the reported counts, and prints t
 | Table 10 and §5.5.2 | `metadata_comparisons`, `metadata_controls` | Native Ekstazi, native testmon, and Java-wrapper result matrices, with the separate archived controls |
 
 Each `executed` count is the number of test cases that ran. `failed` counts executed tests with failing assertions. `exit_code` is the recorded process exit, including successful exits without test execution. `skipped` is included where the corresponding comparison records skips separately. A missing pilot count (`null`) marks an unavailable count after an invalid baseline or setup. The configuration-audit row numbers are anonymous. In the metadata matrix, `detecting_failure` records whether a designated assertion exposed the regression. `runner_error` records a separate execution or database error. The verifier derives the outcome column and counts the 27 setup and control records separately.
+
+## Validator test outcomes and hosted CI timeline
+
+- [Validator test outcomes](validator-test-outcomes.csv) support Table 6 and §5.3.1. Each row records one executed test case from the archived Surefire reports for the baseline, selective, or independent arm. The class and method identify the same test across arms and repetitions. For each repetition, the independent run has two failures whose identities are absent from the selective run.
+- [Hosted CI timeline](hosted-ci-timeline.json) supports Table 3 and §5.2.2. The timestamps and outcomes come from the saved GitHub run, status, and pull request records and the archived test summaries. The branch-protection entry gives the date of the later verification of the policy.
 
 ## Scope of verification
 
